@@ -1,0 +1,38 @@
+{%- from 'header/macro.njk' import header -%}
+{%- from 'footer/macro.njk' import footer -%}
+{%- from 'skip-link/macro.njk' import skipLink -%}
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link href="/assets/nhsuk.css" rel="stylesheet" />
+    <link href="/assets/nhsapp.css" rel="stylesheet" />
+  </head>
+  <body>
+    {% block header %}
+      {{ skipLink({
+        "URL": "#maincontent",
+        "heading": "Skip to main content"
+      }) }}
+
+      {{ header({
+        "showNav": "false",
+        "showSearch": "false",
+        "homeHref": baseUrl
+      }) }}
+    {% endblock %}
+
+    {% block body %}
+      <div id="maincontent" class="nhsuk-width-container">
+        <main class="nhsuk-main-wrapper">
+          {% block content %}{% endblock %}
+        </main>
+      </div>
+    {% endblock body %}
+    {% block footer %}{% endblock %}
+  </body>
+</html>

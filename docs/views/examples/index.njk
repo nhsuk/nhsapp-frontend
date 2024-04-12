@@ -1,0 +1,9 @@
+{% extends 'layout.njk' %}
+
+{% from "card/macro.njk" import card %}
+
+{% block content %}
+  <h1>Examples</h1>
+
+  {{ card("Cards", href="./cards.html") }}
+{% endblock %}

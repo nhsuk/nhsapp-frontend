@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{%- from 'hero/macro.njk' import hero -%}
+{%- from 'card/macro.njk' import card -%}
+
+{% block header %}
+  {{ super() }}
+
+  {{ hero({
+    "heading": "NHS App frontend",
+    "text": "A CSS library built on top of nhsuk-frontend providing styles for the NHS App."
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {{ card("Examples", href="/examples/") }}
+{% endblock %}

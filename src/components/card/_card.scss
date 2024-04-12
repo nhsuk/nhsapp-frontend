@@ -1,0 +1,77 @@
+// ==========================================================================
+// COMPONENTS / #CARD
+// ==========================================================================
+
+$card-border-width: 1px;
+$card-border-color: $color_nhsuk-grey-5;
+
+.app-card {
+  @include nhsuk-responsive-margin(5, "bottom");
+
+  background-color: $color_nhsuk-white;
+  border: $card-border-width solid $card-border-color;
+  position: relative; // Set to relative so the entire card can be clickable
+
+  padding: 0;
+
+  .app-icon {
+    height: 24px;
+    width: 24px;
+    flex: none; // Prevents icons from shrinking
+
+    @include mq($from: tablet) {
+      height: 28px;
+      width: 28px;
+    }
+    fill: $nhsuk-link-color;
+  }
+  &:hover {
+    .app-icon {
+      fill: $nhsuk-link-hover-color;
+    }
+  }
+}
+
+.app-card__container {
+  display: flex;
+  align-items: center;
+  gap: nhsuk-spacing(3);
+
+  margin: 0 nhsuk-spacing(3);
+  padding: 20px 0;
+  @include mq($from: tablet) {
+    margin: 0 nhsuk-spacing(4);
+    padding: nhsuk-spacing(4) 0;
+  }
+}
+
+.app-card__content {
+  flex-grow: 1;
+}
+
+.app-card__link {
+  @include nhsuk-typography-responsive(22);
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  // Makes the entire card clickable
+  &::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.app-card__below {
+  :last-child {
+    margin-bottom: 0;
+  }
+}

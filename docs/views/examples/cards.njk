@@ -1,0 +1,13 @@
+{% extends 'layout.njk' %}
+
+{% from "card/macro.njk" import card %}
+
+{% block content %}
+  <h1>Cards</h1>
+
+  <h2>Card Link</h2>
+  {{ card('Title') }}
+
+  <h2>Card Link with text</h2>
+  {{ card('Title', description='Supporting text') }}
+{% endblock %}
