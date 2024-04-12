@@ -52,6 +52,13 @@ function copyAssets() {
   return gulp.src('src/assets/**').pipe(gulp.dest('dist/assets/'))
 }
 
+/**
+ * Copy nunjucks templates into a namespaced folder
+ */
+function copyNunjucks() {
+  return gulp.src('src/**/*.njk').pipe(gulp.dest('dist/nhs-app'))
+}
+
 /* Recompile CSS and docs when there are any changes */
 function watch() {
   gulp.watch(['src/**/*', 'docs/**/*'], gulp.series([compileCSS, docs.build]))
@@ -67,7 +74,13 @@ export default gulp.series([
   gulp.parallel([docs.serve, watch])
 ])
 
-const bundle = gulp.series([clean, compileCSS, minifyCSS, copyAssets])
+const bundle = gulp.series([
+  clean,
+  compileCSS,
+  minifyCSS,
+  copyAssets,
+  copyNunjucks
+])
 const buildDocs = docs.build
 
 export { clean, bundle, buildDocs }
