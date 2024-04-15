@@ -2,8 +2,13 @@
 // COMPONENTS / #CARD
 // ==========================================================================
 
+/** These variables are not defined in a separate scss file in the nhsuk-frontend,
+ * so we can't import them without bringing in the actual classes also.
+ */
 $card-border-width: 1px;
-$card-border-color: $color_nhsuk-grey-5;
+$card-border-bottom-width: nhsuk-spacing(1);
+$card-border-color: $color_nhsuk-grey-4;
+$card-border-hover-color: $color_nhsuk-grey-3;
 
 .app-card {
   @include nhsuk-responsive-margin(5, "bottom");
