@@ -1,6 +1,6 @@
 {
-  "name": "nhs-app-frontend",
-  "version": "0.0.1",
+  "name": "nhsapp-frontend",
+  "version": "0.0.2",
   "description": "A CSS library built on top of nhsuk-frontend providing styles for the NHS App.",
   "main": "index.js",
   "files": [
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhsuk/nhs-app-frontend.git"
+    "url": "git+https://github.com/nhsuk/nhsapp-frontend.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nhsuk/nhs-app-frontend/issues"
+    "url": "https://github.com/nhsuk/nhsapp-frontend/issues"
   },
-  "homepage": "https://github.com/nhsuk/nhs-app-frontend#readme",
+  "homepage": "https://github.com/nhsuk/nhsapp-frontend#readme",
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",

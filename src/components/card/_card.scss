@@ -10,7 +10,7 @@ $card-border-bottom-width: nhsuk-spacing(1);
 $card-border-color: $color_nhsuk-grey-4;
 $card-border-hover-color: $color_nhsuk-grey-3;
 
-.app-card {
+.nhsapp-card {
   @include nhsuk-responsive-margin(5, "bottom");
 
   background-color: $color_nhsuk-white;
@@ -19,7 +19,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
 
   padding: 0;
 
-  .app-icon {
+  .nhsapp-icon {
     height: 24px;
     width: 24px;
     flex: none; // Prevents icons from shrinking
@@ -31,13 +31,13 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     fill: $nhsuk-link-color;
   }
   &:hover {
-    .app-icon {
+    .nhsapp-icon {
       fill: $nhsuk-link-hover-color;
     }
   }
 }
 
-.app-card__container {
+.nhsapp-card__container {
   display: flex;
   align-items: center;
   gap: nhsuk-spacing(3);
@@ -50,11 +50,11 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 }
 
-.app-card__content {
+.nhsapp-card__content {
   flex-grow: 1;
 }
 
-.app-card__link {
+.nhsapp-card__link {
   @include nhsuk-typography-responsive(22);
   font-weight: bold;
   text-decoration: none;
@@ -75,7 +75,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 }
 
-.app-card__below {
+.nhsapp-card__below {
   :last-child {
     margin-bottom: 0;
   }

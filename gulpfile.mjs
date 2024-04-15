@@ -56,7 +56,7 @@ function copyAssets() {
  * Copy nunjucks templates into a namespaced folder
  */
 function copyNunjucks() {
-  return gulp.src('src/**/*.njk').pipe(gulp.dest('dist/nhs-app'))
+  return gulp.src('src/**/*.njk').pipe(gulp.dest('dist/nhsapp'))
 }
 
 /* Recompile CSS and docs when there are any changes */
