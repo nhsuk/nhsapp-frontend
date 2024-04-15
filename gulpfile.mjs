@@ -81,6 +81,7 @@ const bundle = gulp.series([
   copyAssets,
   copyNunjucks
 ])
-const buildDocs = docs.build
+
+const buildDocs = gulp.series([compileCSS, docs.build])
 
 export { clean, bundle, buildDocs }
