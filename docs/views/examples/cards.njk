@@ -6,8 +6,15 @@
   <h1>Cards</h1>
 
   <h2>Card Link</h2>
-  {{ card('Title') }}
+  {{ card({
+    title: 'Title',
+    href: '#'
+  }) }}
 
   <h2>Card Link with text</h2>
-  {{ card('Title', description='Supporting text') }}
+  {{ card({
+    title: 'Title',
+    href: '#',
+    description: 'Supporting text'
+  }) }}
 {% endblock %}

@@ -5,5 +5,8 @@
 {% block content %}
   <h1>Examples</h1>
 
-  {{ card("Cards", href="./cards.html") }}
+  {{ card({
+    title: "Cards",
+    href: "./cards.html"
+  }) }}
 {% endblock %}
