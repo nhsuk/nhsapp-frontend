@@ -1,12 +1,12 @@
 <div class="app-card">
   <div class="app-card__container">
     <div class="app-card__content">
-      <a href="{{ href }}" class="app-card__link nhsuk-link--no-visited-state">
-        {{ title }}
+      <a href="{{ params.href }}" class="app-card__link nhsuk-link--no-visited-state">
+        {{ params.title }}
       </a>
-      {% if description %}
+      {% if params.description %}
         <div class="app-card__below">
-          <p>{{ description }}</p>
+          <p>{{ params.description }}</p>
         </div>
       {% endif %}
     </div>
