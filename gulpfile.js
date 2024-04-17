@@ -6,9 +6,6 @@ import rename from 'gulp-rename'
 import cleanCSS from 'gulp-clean-css'
 import packageJson from './package.json' with { type: 'json' }
 
-/* Import gulp tasks used for creating our website pages. */
-import * as docs from './tasks/docs.mjs'
-
 /* Configure the sass compiler */
 const sass = gulpSass(dartSass)
 
@@ -30,7 +27,7 @@ function compileCSS() {
 }
 
 /* Minify CSS and add a min.css suffix */
-export function minifyCSS() {
+function minifyCSS() {
   return gulp
     .src([
       'dist/*.css',
@@ -59,20 +56,15 @@ function copyNunjucks() {
   return gulp.src('src/**/*.njk').pipe(gulp.dest('dist/nhsapp'))
 }
 
-/* Recompile CSS and docs when there are any changes */
+/* Recompile CSS when there are any changes */
 function watch() {
-  gulp.watch(['src/**/*', 'docs/**/*'], gulp.series([compileCSS, docs.build]))
+  gulp.watch(['src/**/*'], compileCSS)
 }
 
 /**
- * The default task is to build everything, serve the docs and watch for changes
+ * The default task is to build everything, and watch for changes
  */
-export default gulp.series([
-  clean,
-  compileCSS,
-  docs.build,
-  gulp.parallel([docs.serve, watch])
-])
+export default gulp.series([clean, compileCSS, watch])
 
 const bundle = gulp.series([
   clean,
@@ -82,6 +74,4 @@ const bundle = gulp.series([
   copyNunjucks
 ])
 
-const buildDocs = gulp.series([compileCSS, docs.build])
-
-export { clean, bundle, buildDocs }
+export { clean, bundle }
