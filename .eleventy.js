@@ -24,6 +24,7 @@ export default function (eleventyConfig) {
 
   // Watch for changes in these directories and files
   eleventyConfig.addWatchTarget('./docs/')
+  eleventyConfig.addWatchTarget('./src/')
   eleventyConfig.addWatchTarget('./dist/nhsapp.css')
 
   // We need this HtmlBase plugin for serving our docs on github pages at a subdirectory
