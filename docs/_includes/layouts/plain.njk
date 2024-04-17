@@ -1,0 +1,9 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+  <h1 class="govuk-heading-xl">
+    {{ title }}
+  </h1>
+
+  {{ content | safe }}
+{% endblock %}

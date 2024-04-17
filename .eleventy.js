@@ -6,7 +6,7 @@ const nunjucksEnv = nunjucks.configure([
   'src/components',
 
   // Includes specific to our documentation
-  'docs/_templates/',
+  'docs/_includes',
 
   // NHS.UK frontend components
   'node_modules/nhsuk-frontend/packages/components'
@@ -32,7 +32,7 @@ export default function (eleventyConfig) {
 
   return {
     dir: {
-      input: 'docs/views',
+      input: 'docs',
       output: 'dist/docs'
     },
     markdownTemplateEngine: 'njk'
