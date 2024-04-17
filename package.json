@@ -3,15 +3,18 @@
   "version": "0.0.2",
   "description": "A CSS library built on top of nhsuk-frontend providing styles for the NHS App.",
   "main": "index.js",
+  "type": "module",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
     "prepack": "gulp bundle",
-    "build:docs": "gulp buildDocs",
     "lint": "prettier --check .",
-    "start": "gulp",
+    "start": "concurrently npm:serve npm:build:css",
+    "serve": "npx @11ty/eleventy --serve",
+    "build:docs": "npx @11ty/eleventy",
+    "build:css": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +28,8 @@
   },
   "homepage": "https://github.com/nhsuk/nhsapp-frontend#readme",
   "devDependencies": {
+    "@11ty/eleventy": "3.0.0-alpha.6",
+    "concurrently": "^8.2.2",
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
@@ -35,6 +40,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "nhsuk-frontend": "^8.1.1",
+    "nunjucks": "^3.2.4",
     "prettier": "^3.2.5",
     "sass": "^1.74.1"
   }
