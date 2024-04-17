@@ -34,6 +34,7 @@ export default function (eleventyConfig) {
     dir: {
       input: 'docs/views',
       output: 'dist/docs'
-    }
+    },
+    markdownTemplateEngine: 'njk'
   }
 }
