@@ -74,4 +74,4 @@ const bundle = gulp.series([
   copyNunjucks
 ])
 
-export { clean, bundle }
+export { clean, bundle, compileCSS }
