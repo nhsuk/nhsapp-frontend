@@ -16,7 +16,8 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - run: npm publish ${IS_PRERELEASE:+--tag=prerelease}
+      - run: echo npm publish ${IS_PRERELEASE:+--tag=prerelease}
+      - run: npm publish --tag=prerelease
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           IS_PRERELEASE: ${{github.event.release.prerelease}}
