@@ -17,13 +17,14 @@ function clean() {
 /* Build the CSS from source */
 function compileCSS() {
   return gulp
-    .src(['src/nhsapp.scss'])
+    .src(['src/all.scss'])
     .pipe(sass())
     .on('error', (err) => {
       console.log(err)
       throw new Error(err)
     })
-    .pipe(gulp.dest('dist/'))
+    .pipe(rename('nhsapp.css'))
+    .pipe(gulp.dest('dist'))
 }
 
 /* Minify CSS and add a min.css suffix */
@@ -50,10 +51,10 @@ function copyAssets() {
 }
 
 /**
- * Copy nunjucks templates into a namespaced folder
+ * Copy nunjucks and source scss files into a namespaced directory
  */
-function copyNunjucks() {
-  return gulp.src('src/**/*.njk').pipe(gulp.dest('dist/nhsapp'))
+function copySource() {
+  return gulp.src('src/**/*').pipe(gulp.dest('dist/nhsapp'))
 }
 
 /* Recompile CSS when there are any changes */
@@ -71,7 +72,7 @@ const bundle = gulp.series([
   compileCSS,
   minifyCSS,
   copyAssets,
-  copyNunjucks
+  copySource
 ])
 
 export { clean, bundle, compileCSS }
