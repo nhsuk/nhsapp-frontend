@@ -6,7 +6,7 @@ const nunjucksEnv = nunjucks.configure([
   'src/components',
 
   // Includes specific to our documentation
-  'docs/_templates/',
+  'docs/_includes',
 
   // NHS.UK frontend components
   'node_modules/nhsuk-frontend/packages/components'
@@ -24,6 +24,7 @@ export default function (eleventyConfig) {
 
   // Watch for changes in these directories and files
   eleventyConfig.addWatchTarget('./docs/')
+  eleventyConfig.addWatchTarget('./src/')
   eleventyConfig.addWatchTarget('./dist/nhsapp.css')
 
   // We need this HtmlBase plugin for serving our docs on github pages at a subdirectory
@@ -32,8 +33,9 @@ export default function (eleventyConfig) {
 
   return {
     dir: {
-      input: 'docs/views',
+      input: 'docs',
       output: 'dist/docs'
-    }
+    },
+    markdownTemplateEngine: 'njk'
   }
 }
