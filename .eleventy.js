@@ -1,4 +1,5 @@
 import nunjucks from 'nunjucks'
+import sass from 'sass'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 
 const nunjucksEnv = nunjucks.configure([
@@ -16,16 +17,22 @@ export default function (eleventyConfig) {
   // Configure a custom nunjucks environment
   eleventyConfig.setLibrary('njk', nunjucksEnv)
 
-  // Copy static files
-  eleventyConfig.addPassthroughCopy({
-    'node_modules/nhsuk-frontend/dist/nhsuk.css': 'assets/nhsuk.css',
-    'dist/nhsapp.css': 'assets/nhsapp.css'
-  })
-
   // Watch for changes in these directories and files
-  eleventyConfig.addWatchTarget('./docs/')
   eleventyConfig.addWatchTarget('./src/')
-  eleventyConfig.addWatchTarget('./dist/nhsapp.css')
+
+  eleventyConfig.addTemplateFormats('scss')
+  eleventyConfig.addExtension('scss', {
+    outputFileExtension: 'css',
+    compile: async function (inputContent) {
+      let result = sass.compileString(inputContent, {
+        // Allow us to import scss files relative to the project root
+        loadPaths: ['.']
+      })
+      return async (data) => {
+        return result.css
+      }
+    }
+  })
 
   // We need this HtmlBase plugin for serving our docs on github pages at a subdirectory
   // https://www.11ty.dev/docs/plugins/html-base/
