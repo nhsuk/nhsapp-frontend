@@ -17,5 +17,5 @@ jobs:
       - run: npm ci
       - run: npm publish ${IS_PRERELEASE:+--tag=prerelease}
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           IS_PRERELEASE: ${{github.event.release.prerelease}}
