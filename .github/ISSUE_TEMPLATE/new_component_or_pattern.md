@@ -8,7 +8,7 @@ assignees: ""
 ## What
 
 <!--
-Briefly describe the thing. 
+Briefly describe the thing.
 - where is it being used?
 - add a screenshot
 -->
@@ -22,5 +22,5 @@ If you can, include these:
 - research or design thinking
 - screenshots (ideally tested examples)
 - any user research insight
-- code 
+- code
 -->
