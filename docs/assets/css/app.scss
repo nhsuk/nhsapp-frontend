@@ -1,0 +1,10 @@
+// Import all of the NHS.UK frontend core styles
+@import "node_modules/nhsuk-frontend/packages/core/all.scss";
+
+// Import specific components that we need from nhsuk-frontend
+@import "node_modules/nhsuk-frontend/packages/components/skip-link/skip-link.scss";
+@import "node_modules/nhsuk-frontend/packages/components/header/header.scss";
+@import "node_modules/nhsuk-frontend/packages/components/hero/hero.scss";
+
+// Import all styles from the NHS App frontend library
+@import "src/all.scss";
