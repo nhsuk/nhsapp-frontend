@@ -22,7 +22,7 @@
 .app-side-navigation__list {
   list-style: none;
   margin: 0 0 nhsuk-spacing(4);
-  padding: 0; 
+  padding: 0;
 }
 
 .app-side-navigation__item {
@@ -49,11 +49,9 @@
     color: $nhsuk-focus-text-color;
     position: relative;
   }
-
 }
 
 .app-side-navigation__item--active {
-
   a:link,
   a:visited {
     border-color: $nhsuk-link-color;
@@ -72,7 +70,6 @@
     box-shadow: none;
     color: $nhsuk-focus-text-color;
   }
-
 }
 
 .app-side-navigation--desktop {
