@@ -1,3 +1,4 @@
+import path from 'path'
 import nunjucks from 'nunjucks'
 import sass from 'sass'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
@@ -23,7 +24,11 @@ export default function (eleventyConfig) {
   eleventyConfig.addTemplateFormats('scss')
   eleventyConfig.addExtension('scss', {
     outputFileExtension: 'css',
-    compile: async function (inputContent) {
+    compile: async function (inputContent, inputPath) {
+      let parsed = path.parse(inputPath)
+      if (parsed.name.startsWith('_')) {
+        return
+      }
       let result = sass.compileString(inputContent, {
         // Allow us to import scss files relative to the project root
         loadPaths: ['.']
