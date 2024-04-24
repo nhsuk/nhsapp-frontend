@@ -2,6 +2,12 @@
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
+{% macro sideNavigation(config) %}
+  {% set config = config|addActiveAttribute(page.filePathStem | url) %}
+
+  {{ appSideNavigation(config) }}
+{% endmacro %}
+
 {% block content %}
   <div class="nhsuk-width-container">
     <div class="nhsuk-grid-row">
