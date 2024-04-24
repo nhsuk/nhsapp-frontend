@@ -8,3 +8,7 @@
 
 // Import all styles from the NHS App frontend library
 @import "src/all.scss";
+
+
+// Import all styles specific for the design system docs
+@import 'docs/assets/css/components/side-navigation';
