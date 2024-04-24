@@ -1,11 +1,23 @@
-<nav class="app-side-navigation {{- ' ' + params.classes if params.classes }}" {%- if (params.label) %} aria-label="{{ params.label }}"{% endif %} {% for attribute, value in params.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
-  {%- if params.sections %}
-    {%- for section in params.sections %}
-      <h{{ section.heading.headingLevel | default(4) }} class="app-side-navigation__title {{- ' ' + section.heading.classes if section.heading.classes }}"{% for attribute, value in section.heading.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
-        {{- section.heading.html | safe if section.heading.html else section.heading.text -}}
-      </h{{ section.heading.headingLevel | default(4) }}>
+{% macro appSideNavigation(params) %}
+  <nav class="app-side-navigation {{- ' ' + params.classes if params.classes }}" {%- if (params.label) %} aria-label="{{ params.label }}"{% endif %} {% for attribute, value in params.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+    {%- if params.sections %}
+      {%- for section in params.sections %}
+        <h{{ section.heading.headingLevel | default(4) }} class="app-side-navigation__title {{- ' ' + section.heading.classes if section.heading.classes }}"{% for attribute, value in section.heading.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+          {{- section.heading.html | safe if section.heading.html else section.heading.text -}}
+        </h{{ section.heading.headingLevel | default(4) }}>
+        <ul class="app-side-navigation__list">
+          {%- for item in section.items %}
+            <li class="app-side-navigation__item{% if item.active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+              <a href="{{ item.href }}"{% if item.active %} aria-current="location"{% endif %}>
+                {{- item.html | safe if item.html else item.text -}}
+              </a>
+            </li>
+          {% endfor -%}
+        </ul>
+      {% endfor -%}
+    {% else %}
       <ul class="app-side-navigation__list">
-        {%- for item in section.items %}
+        {%- for item in params.items %}
           <li class="app-side-navigation__item{% if item.active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
             <a href="{{ item.href }}"{% if item.active %} aria-current="location"{% endif %}>
               {{- item.html | safe if item.html else item.text -}}
@@ -13,16 +25,6 @@
           </li>
         {% endfor -%}
       </ul>
-    {% endfor -%}
-  {% else %}
-    <ul class="app-side-navigation__list">
-      {%- for item in params.items %}
-        <li class="app-side-navigation__item{% if item.active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
-          <a href="{{ item.href }}"{% if item.active %} aria-current="location"{% endif %}>
-            {{- item.html | safe if item.html else item.text -}}
-          </a>
-        </li>
-      {% endfor -%}
-    </ul>
-  {% endif -%}
-</nav>
+    {% endif -%}
+  </nav>
+{% endmacro %}

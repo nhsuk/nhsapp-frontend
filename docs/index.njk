@@ -1,6 +1,6 @@
 {% extends "layouts/base.njk" %}
 
-{% set title = "NHS App frontend" %}
+{% set title = "NHS App design system" %}
 
 {%- from 'hero/macro.njk' import hero -%}
 {%- from 'card/macro.njk' import card -%}
@@ -15,8 +15,16 @@
 {% endblock %}
 
 {% block content %}
-  {{ card({
-    title: "Components",
-    href: "./components/"
-  }) }}
+  <div class="app-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+          {{ card({
+            title: "Components",
+            href: "./components/"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

@@ -12,3 +12,24 @@
 
 // Import all styles specific for the design system docs
 @import 'docs/assets/css/components/side-navigation';
+
+/**
+ * Custom style for the homepage
+ */
+
+ .app-section {
+  @include nhsuk-responsive-padding(6, 'bottom');
+  @include nhsuk-responsive-padding(6, 'top');
+
+  @include mq($until: desktop) {
+
+    .nhsuk-grid-column-one-half:last-child {
+      padding-top: nhsuk-spacing(3);
+    }
+
+  }
+}
+
+.app-section--white {
+  background-color: $color_nhsuk-white;
+}

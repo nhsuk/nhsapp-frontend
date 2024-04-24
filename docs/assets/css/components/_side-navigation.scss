@@ -48,6 +48,7 @@
   }
   
   .app-side-navigation__item {
+    @include nhsuk-font($size: 16);
   
    @include mq($until: tablet) {
       display: flex;
@@ -56,21 +57,19 @@
     a,
     a:link,
     a:visited {
-      background-color: inherit;
       color: $nhsuk-link-color;
       display: block;
       text-decoration: none;
   
      @include mq($until: tablet) {
         border-bottom: 4px solid transparent;
-        padding: nhsuk-spacing(3);
-        padding-bottom: nhsuk-spacing(3) - 4px; // Compensate for 4px border
+        padding: nhsuk-spacing(2);
+        padding-bottom: nhsuk-spacing(2) - 4px; // Compensate for 4px border
       }
   
       @include mq($from: tablet) {
-        background-color: inherit;
         border-left: 4px solid transparent;
-        padding: nhsuk-spacing(2);
+        padding: nhsuk-spacing(1) nhsuk-spacing(2);
       }
   
   
@@ -84,6 +83,7 @@
       color: $nhsuk-focus-text-color;
       background-color: $nhsuk-focus-color;
       border-color: $nhsuk-focus-text-color;
+      box-shadow: none;
       position: relative;
     }
   
@@ -107,19 +107,15 @@
       color: $nhsuk-focus-text-color;
       background-color: $nhsuk-focus-color;
       border-color: $nhsuk-focus-text-color;
+      box-shadow: none;
     }
   
     @include mq($from: tablet) {
-      a:link,
-      a:visited {
-        background-color: $color_nhsuk-grey-4;
-      }
   
       a:focus {
         color: $nhsuk-focus-text-color;
         background-color: $nhsuk-focus-color;
       }
     }
-  
   
   }
