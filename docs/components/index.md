@@ -4,4 +4,6 @@ isIndex: true
 title: Components
 ---
 
-[Card links](./card-links)
+Components are reusable elements of the user interface. 
+
+Individual components can be used in multiple different pages, patterns and context.
