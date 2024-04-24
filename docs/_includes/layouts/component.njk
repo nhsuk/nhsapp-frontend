@@ -11,36 +11,50 @@
 {% block content %}
   <div class="nhsuk-width-container">
     <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-third">
-      {{ appSideNavigation({
-        classes: 'nhsuk-u-padding-top-6',
-        sections: [
-          {
-            heading: {
-              text: "Components"
-            },
-            items: [
+      <div class="nhsuk-grid-column-one-third">    
+        {{ appSideNavigation({
+          classes: 'app-side-navigation--desktop nhsuk-u-padding-top-6',
+          sections: [
             {
-              text: 'Card links',
-              href: ('/components/card-links' | url)
+              heading: {
+                text: "Components"
+              },
+              items: [
+              {
+                text: 'Card links',
+                href: ('/components/card-links' | url)
+              }
+              ]
             }
+          ]
+        }) }}
+      </div>
+      <div class="nhsuk-grid-column-two-thirds">
+        <main id="main-content" class="nhsuk-main-wrapper" role="main">
+          <h1 class="nhsuk-heading-xl">
+            {% if not isIndex %}<span class="nhsuk-caption-xl">Components</span>{% endif %}
+            {{ title }}
+          </h1>
+          {{ content | safe }}
+
+          {{ appSideNavigation({
+            classes: 'app-side-navigation--mobile',
+            sections: [
+              {
+                heading: {
+                  text: "Components"
+                },
+                items: [
+                {
+                  text: 'Card links',
+                  href: ('/components/card-links' | url)
+                }
+                ]
+              }
             ]
-          }
-        ]
-      }) }}
-
-    </div>
-
-    <div class="nhsuk-grid-column-two-thirds">
-      <main id="main-content" class="nhsuk-main-wrapper" role="main">
-        <h1 class="nhsuk-heading-xl">
-          {% if not isIndex %}<span class="nhsuk-caption-xl">Components</span>{% endif %}
-          {{ title }}
-        </h1>
-        {{ content | safe }}
-      </main>
-
-    </div>
+          }) }}
+        </main>
+      </div>
     </div>
   </div>
 {% endblock %}
