@@ -28,11 +28,11 @@
     {% endblock %}
 
     {% block body %}
-      <div id="maincontent" class="nhsuk-width-container">
-        <main class="nhsuk-main-wrapper">
-          {% block content %}{% endblock %}
+      {% block content %}
+        <main role="main">
+          {{ content | safe }}
         </main>
-      </div>
+      {% endblock %}
     {% endblock body %}
     {% block footer %}{% endblock %}
   </body>
