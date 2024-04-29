@@ -5,9 +5,15 @@
 @import "node_modules/nhsuk-frontend/packages/components/skip-link/skip-link.scss";
 @import "node_modules/nhsuk-frontend/packages/components/header/header.scss";
 @import "node_modules/nhsuk-frontend/packages/components/hero/hero.scss";
+@import "node_modules/nhsuk-frontend/packages/components/tabs/tabs.scss";
+
+@import "node_modules/prismjs/themes/prism";
 
 // Import all styles from the NHS App frontend library
 @import "src/all.scss";
 
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/side-navigation";
+@import "docs/assets/css/tabs.scss";
+@import "docs/assets/css/example.scss";
+@import "docs/assets/css/utilities.scss";

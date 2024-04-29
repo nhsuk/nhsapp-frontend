@@ -1,0 +1,67 @@
+/* ==========================================================================
+   #TABS
+   ========================================================================== */
+
+.app-tabs {
+  margin-bottom: nhsuk-spacing(6);
+}
+
+.app-tabs__list {
+  background: $color_nhsuk-white;
+  border: 1px solid $nhsuk-border-color;
+  border-top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.app-tabs__list-item {
+  border-right: 1px solid $nhsuk-border-color;
+  margin: 0;
+
+  z-index: 2;
+}
+
+.app-tabs__tab {
+  @include nhsuk-font($size: 19, $weight: bold);
+  background-color: $color_nhsuk-white;
+  color: $color_nhsuk-blue;
+  display: block;
+  padding: 20px;
+  position: relative;
+  text-decoration: none;
+
+  &[aria-selected="true"] {
+    background-color: $color_nhsuk-grey-5;
+    color: $color_nhsuk-black;
+    margin-bottom: -1px;
+    padding-bottom: 21px;
+
+    &:focus {
+      background-color: $nhsuk-focus-color;
+    }
+  }
+}
+
+.app-tabs__panel {
+  @include nhsuk-font($size: 16);
+  background-color: $color_nhsuk-grey-5;
+  border: 1px solid $nhsuk-border-color;
+  border-top: 0;
+  position: relative;
+
+  &--hidden {
+    display: none;
+  }
+
+  *:last-of-type {
+    margin-bottom: 0; // Remove margin bottom from any last element
+  }
+
+  p {
+    max-width: 100% !important;
+    padding: nhsuk-spacing(2);
+  }
+}

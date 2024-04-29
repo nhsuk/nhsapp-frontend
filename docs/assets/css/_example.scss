@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #EXAMPLE
+   ========================================================================== */
+
+.app-example {
+  background-color: $color_nhsuk-white;
+  border: 1px solid $nhsuk-border-color;
+  position: relative;
+}
+
+.app-example__frame {
+  background-color: $color_nhsuk-white;
+  border: 0;
+  display: block;
+  width: 100%;
+}
+
+.app-example-page {
+  margin-bottom: -1px;
+  padding: 30px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.app-example__new-window {
+  @include nhsuk-font($size: 14);
+  border: 1px solid $nhsuk-border-color;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  a,
+  a:link,
+  a:visited {
+    background-color: white;
+    color: $color_nhsuk-blue;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $nhsuk-link-hover-color;
+  }
+
+  a:focus {
+    color: $nhsuk-focus-text-color;
+    background-color: $nhsuk-focus-color;
+  }
+}

@@ -30,6 +30,8 @@ This is our preferred style. A concise phrase explains where the link goes. It c
 
 [embed short card link example]
 
+{% example "cards/card-link.njk" %}
+
 ### Card link with paragraph text
 
 On pages deeper in the structure of the NHS App, users may need more details to understand where links go. In this case, you can use paragraph text below the heading to give more information.
