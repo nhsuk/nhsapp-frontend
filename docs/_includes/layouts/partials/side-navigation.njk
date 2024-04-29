@@ -7,22 +7,14 @@
         </h{{ section.heading.headingLevel | default(4) }}>
         <ul class="app-side-navigation__list">
           {%- for item in section.items %}
-            <li class="app-side-navigation__item{% if item.active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
-              <a href="{{ item.href }}"{% if item.active %} aria-current="location"{% endif %}>
-                {{- item.html | safe if item.html else item.text -}}
-              </a>
-            </li>
+            {% include "./side-navigation-item.njk" %}
           {% endfor -%}
         </ul>
       {% endfor -%}
     {% else %}
       <ul class="app-side-navigation__list">
         {%- for item in params.items %}
-          <li class="app-side-navigation__item{% if item.active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
-            <a href="{{ item.href }}"{% if item.active %} aria-current="location"{% endif %}>
-              {{- item.html | safe if item.html else item.text -}}
-            </a>
-          </li>
+          {% include "./side-navigation-item.njk" %}
         {% endfor -%}
       </ul>
     {% endif -%}

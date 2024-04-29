@@ -2,29 +2,19 @@
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
-{% macro sideNavigation(config) %}
-  {% set config = config|addActiveAttribute(page.filePathStem | url) %}
-
-  {{ appSideNavigation(config) }}
-{% endmacro %}
-
 {% block content %}
   <div class="nhsuk-width-container">
     <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-third">    
+      <div class="nhsuk-grid-column-one-third">
         {{ appSideNavigation({
+          currentPath: page.url | url,
           classes: 'app-side-navigation--desktop nhsuk-u-padding-top-6',
           sections: [
             {
               heading: {
                 text: "Components"
               },
-              items: [
-              {
-                text: 'Card links',
-                href: ('/components/card-links' | url)
-              }
-              ]
+              items: collections.component
             }
           ]
         }) }}
@@ -39,17 +29,13 @@
 
           {{ appSideNavigation({
             classes: 'app-side-navigation--mobile',
+            currentPath: page.url | url,
             sections: [
               {
                 heading: {
                   text: "Components"
                 },
-                items: [
-                {
-                  text: 'Card links',
-                  href: ('/components/card-links' | url)
-                }
-                ]
+                items: collections.component
               }
             ]
           }) }}
