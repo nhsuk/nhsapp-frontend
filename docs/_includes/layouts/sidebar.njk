@@ -1,0 +1,30 @@
+{% extends "./base.njk" %}
+
+{% block container %}
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        {% block sidebar_desktop %}
+          <div class="app-side-navigation--desktop">
+            {{ sidebar | safe }}
+          </div>
+        {% endblock %}
+      </div>
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper">
+          {% block main %}
+            {{ content | safe }}
+          {% endblock main %}
+        </main>
+
+        {# Sidebar nav is at the bottom for mobile #}
+        {% block sidebar_mobile %}
+          <div class="app-side-navigation--mobile">
+            {{ sidebar | safe }}
+          </div>
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
