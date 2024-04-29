@@ -14,26 +14,34 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    {% block header %}
-      {{ skipLink({
-        "URL": "#maincontent",
-        "heading": "Skip to main content"
-      }) }}
-
-      {{ header({
-        "showNav": "false",
-        "showSearch": "false",
-        "homeHref": baseUrl
-      }) }}
-    {% endblock %}
-
     {% block body %}
-      {% block content %}
-        <main role="main">
-          {{ content | safe }}
-        </main>
+      {% block skiplink %}
+        {{ skipLink({
+          "URL": "#maincontent",
+          "heading": "Skip to main content"
+        }) }}
+      {% endblock skiplink %}
+
+      {% block header %}
+        {{ header({
+          "showNav": "false",
+          "showSearch": "false",
+          "homeHref": baseUrl
+        }) }}
       {% endblock %}
+
+      {% block container %}
+        <div class="nhsuk-width-container">
+          <main role="main" id="maincontent" class="nhsuk-main-wrapper">
+            {% block main %}
+              {{ content | safe }}
+            {% endblock main %}
+          </main>
+        </div>
+      {% endblock container %}
+
+      {% block footer %}{% endblock %}
+
     {% endblock body %}
-    {% block footer %}{% endblock %}
   </body>
 </html>

@@ -14,17 +14,13 @@
   }) }}
 {% endblock %}
 
-{% block content %}
-  <div class="app-section">
-    <div class="nhsuk-width-container">
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-          {{ card({
-            title: "Components",
-            href: "./components/"
-          }) }}
-        </div>
-      </div>
+{% block main %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      {{ card({
+        title: "Components",
+        href: "./components/"
+      }) }}
     </div>
   </div>
 {% endblock %}
