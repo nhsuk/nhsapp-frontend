@@ -37,7 +37,7 @@ On pages deeper in the structure of the NHS App, users may need more details to 
 
 Only use this variation if you have found a user need for more detailed links on a particular page. A form of this variation is currently used on the “Messages” hub to explain different inboxes to users.
 
-[embed paragraph text example]
+{% example "cards/card-link-with-description.njk" %}
 
 ### Using icons
 
