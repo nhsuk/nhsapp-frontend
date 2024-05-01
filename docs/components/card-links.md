@@ -1,11 +1,10 @@
 ---
 layout: layouts/component.njk
 title: Card links
+description: Use card links to help users reach the next stage of their NHS App journey.
 tags:
   - component
 ---
-
-<p class="nhsuk-body-l">Use card links to help users reach the next stage of their NHS App journey.</p>
 
 {% example "cards/card-link.njk" %}
 

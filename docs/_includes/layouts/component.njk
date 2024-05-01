@@ -18,9 +18,10 @@
 {% endset %}
 
 {% block main %}
-  <h1 class="nhsuk-heading-xl">
-    {% if tags and "component" in tags %}<span class="nhsuk-caption-xl">Components</span>{% endif %}
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {% if tags and "component" in tags %}<span class="nhsuk-caption-l">Components</span>{% endif %}
     {{ title }}
   </h1>
+  <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>
   {{ content | safe }}
 {% endblock %}
