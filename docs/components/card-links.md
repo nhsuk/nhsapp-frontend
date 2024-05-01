@@ -45,6 +45,8 @@ Icons may help users to understand the meaning of a card link. We currently only
 
 [embed icon example]
 
+If you are using icons, they should have [aria labels/hidden text?] so that screen reader users also benefit from this additional prompt on the card link.
+
 ### Using badges
 
 Use badges to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.
@@ -63,9 +65,11 @@ In usability testing, we did not see evidence of this mixture of phrasing causin
 
 Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
 
+[embed list example]
+
 If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.
 
-If you are using icons, they should have [aria labels/hidden text?] so that screen reader users also benefit from this additional prompt on the card link.
+[embed list with headings example]
 
 ## Research
 
