@@ -30,17 +30,17 @@
 .app-example__new-window {
   @include nhsuk-font($size: 14);
   border-bottom: 1px solid $nhsuk-border-color;
-  position: absolute;
-  top: 0;
   left: 0;
+  position: absolute;
+  padding: 5px 10px;
+  top: 0;
   width: 100%;
 
   a,
   a:link,
   a:visited {
     color: $color_nhsuk-blue;
-    display: block;
-    padding: 5px 10px;
+    display: inline-block;
     text-decoration: underline;
   }
 
@@ -51,6 +51,7 @@
   a:focus {
     color: $nhsuk-focus-text-color;
     background-color: $nhsuk-focus-color;
+    text-decoration: none;
   }
 }
 

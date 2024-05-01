@@ -35,7 +35,7 @@ This is our preferred style. A concise phrase explains where the link goes. It c
 
 On pages deeper in the structure of the NHS App, users may need more details to understand where links go. In this case, you can use paragraph text below the heading to give more information.
 
-Only use this variation if you have found a user need for more detailed links on a particular page. A form of this variation is currently used on the “Messages” hub to explain different inboxes to users.
+Only use this variation if you have found a user need for more detailed links on a particular page.
 
 {% example "cards/card-link-with-description.njk" %}
 
