@@ -4,12 +4,12 @@
 
 .app-example {
   border: 1px solid $nhsuk-border-color;
-  padding-top: 30px;
+  padding-top: 37px; //matches height of new window link
   margin-top: 24px;
   position: relative;
 
   @include mq($from: desktop) {
-    padding-top: 34px;
+    padding-top: 41px; //matches height of new window link
   }
 }
 
@@ -32,7 +32,7 @@
   border-bottom: 1px solid $nhsuk-border-color;
   left: 0;
   position: absolute;
-  padding: 5px 10px;
+  padding: 8px 16px;
   top: 0;
   width: 100%;
 
