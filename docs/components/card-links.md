@@ -29,7 +29,7 @@ Use the variation below that fits best with the context.
 
 This is our preferred style. A concise phrase explains where the link goes. It can be read quickly because of the short amount of text.
 
-{% example "cards/card-link.njk" %}
+{% example "cards/card-link-short.njk" %}
 
 ### Card link with paragraph text
 
