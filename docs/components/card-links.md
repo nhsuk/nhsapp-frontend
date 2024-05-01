@@ -7,6 +7,8 @@ tags:
 
 <p class="nhsuk-body-l">Use card links to help users reach the next stage of their NHS App journey.</p>
 
+{% example "cards/card-link.njk" %}
+
 ## When to use
 
 Use card links to take users:
@@ -27,8 +29,6 @@ Use the variation below that fits best with the context.
 ### Short card link
 
 This is our preferred style. A concise phrase explains where the link goes. It can be read quickly because of the short amount of text.
-
-[embed short card link example]
 
 {% example "cards/card-link.njk" %}
 

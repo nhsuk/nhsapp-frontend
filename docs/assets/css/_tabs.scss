@@ -7,7 +7,6 @@
 }
 
 .app-tabs__list {
-  background: $color_nhsuk-white;
   border: 1px solid $nhsuk-border-color;
   border-top: 0;
   list-style: none;
@@ -25,29 +24,33 @@
 }
 
 .app-tabs__tab {
-  @include nhsuk-font($size: 19, $weight: bold);
-  background-color: $color_nhsuk-white;
+  @include nhsuk-font($size: 19);
   color: $color_nhsuk-blue;
   display: block;
-  padding: 20px;
+  padding: 16px;
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
+
+  @include mq($from: desktop) {
+    padding: 16px 20px;
+  }
 
   &[aria-selected="true"] {
-    background-color: $color_nhsuk-grey-5;
+    background-color: $color_nhsuk-white;
     color: $color_nhsuk-black;
     margin-bottom: -1px;
     padding-bottom: 21px;
 
     &:focus {
       background-color: $nhsuk-focus-color;
+      box-shadow: 0 -2px $nhsuk-focus-color, inset 0 -4px $nhsuk-focus-text-color;
     }
   }
 }
 
 .app-tabs__panel {
   @include nhsuk-font($size: 16);
-  background-color: $color_nhsuk-grey-5;
+  background-color: $color_nhsuk-white;
   border: 1px solid $nhsuk-border-color;
   border-top: 0;
   position: relative;
