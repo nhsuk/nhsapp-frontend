@@ -43,7 +43,9 @@
 
     &:focus {
       background-color: $nhsuk-focus-color;
-      box-shadow: 0 -2px $nhsuk-focus-color, inset 0 -4px $nhsuk-focus-text-color;
+      box-shadow:
+        0 -2px $nhsuk-focus-color,
+        inset 0 -4px $nhsuk-focus-text-color;
     }
   }
 }
