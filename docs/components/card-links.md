@@ -1,11 +1,12 @@
 ---
 layout: layouts/component.njk
 title: Card links
+description: Use card links to help users reach the next stage of their NHS App journey.
 tags:
   - component
 ---
 
-<p class="nhsuk-body-l">Use card links to help users reach the next stage of their NHS App journey.</p>
+{% example "cards/card-link.njk" %}
 
 ## When to use
 
@@ -28,21 +29,23 @@ Use the variation below that fits best with the context.
 
 This is our preferred style. A concise phrase explains where the link goes. It can be read quickly because of the short amount of text.
 
-[embed short card link example]
+{% example "cards/card-link-short.njk" %}
 
 ### Card link with paragraph text
 
 On pages deeper in the structure of the NHS App, users may need more details to understand where links go. In this case, you can use paragraph text below the heading to give more information.
 
-Only use this variation if you have found a user need for more detailed links on a particular page. A form of this variation is currently used on the “Messages” hub to explain different inboxes to users.
+Only use this variation if you have found a user need for more detailed links on a particular page.
 
-[embed paragraph text example]
+{% example "cards/card-link-with-description.njk" %}
 
 ### Using icons
 
 Icons may help users to understand the meaning of a card link. We currently only use this variation for “Switch profiles” and “Messages” links on the homepage.
 
 [embed icon example]
+
+If you are using icons, they should have [aria labels/hidden text?] so that screen reader users also benefit from this additional prompt on the card link.
 
 ### Using badges
 
@@ -62,9 +65,11 @@ In usability testing, we did not see evidence of this mixture of phrasing causin
 
 Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
 
+[embed list example]
+
 If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.
 
-If you are using icons, they should have [aria labels/hidden text?] so that screen reader users also benefit from this additional prompt on the card link.
+[embed list with headings example]
 
 ## Research
 

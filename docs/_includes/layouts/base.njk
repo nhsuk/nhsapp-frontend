@@ -10,8 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/assets/js/app.js" defer></script>
 
     <title>{{ title }}</title>
+
+    {% block head %}{% endblock %}
   </head>
   <body>
     {% block body %}

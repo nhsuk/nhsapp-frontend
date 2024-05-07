@@ -1,0 +1,79 @@
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="{{ href | url }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
+  </span>
+  <iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height="{{ height }}"
+    src="{{ href | url }}"
+    title="{{ title }}"
+  ></iframe>
+</div>
+
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
+    {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
+    {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
+    {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
+  </ul>
+
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default-{{ id }}-code">Copy code</button>
+    <div id="html-default-{{ id }}-code">
+      {%- highlight "html" -%}
+        {{ htmlCode | safe }}
+      {%- endhighlight -%}
+    </div>
+  </div>
+
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default-{{ id }}" role="tabpanel" aria-labelledby="tab_nunjucks-default-{{ id }}">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default-{{ id }}-code">Copy code</button>
+
+    {%- if arguments -%}
+      <details class="nhsuk-details nhsuk-u-padding-3" data-module="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Nunjucks macro options
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+
+          {% include "./arguments/" + arguments + ".md" %}
+
+        </div>
+      </details>
+    {%- endif -%}
+
+<div id="nunjucks-default-{{ id }}-code">
+
+```jinja2
+{{ nunjucksCode | safe }}
+```
+
+</div>
+
+  </div>
+
+  {% if figmaLink -%}
+<div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default-{{ id }}" role="tabpanel" aria-labelledby="tab_figma-default-{{ id }}">
+
+  To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.
+
+  [View component in Figma]({{ figmaLink }})
+</div>
+  {% endif -%}
+
+  {% if vueLink -%}
+<div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default-{{ id }}" role="tabpanel" aria-labelledby="tab_vue-default-{{ id }}">
+
+  To use the component in your Vue application, install the NHS App Vue Component Library and import the component.
+
+  [View component in Vue]({{ vueLink }})
+</div>
+  {% endif -%}
+</div>
