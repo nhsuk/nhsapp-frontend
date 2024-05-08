@@ -24,4 +24,8 @@
   </h1>
   <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>
   {{ content | safe }}
+  {% if tags and "component" in tags %}
+    {% include "./partials/feedback-section.njk" %}
+  {% else %}
+  {% endif %}
 {% endblock %}
