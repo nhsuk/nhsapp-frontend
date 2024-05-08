@@ -1,6 +1,6 @@
 <div class="app-example">
   <span class="app-example__new-window">
-    <a href="{{ href | url }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
+    <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
   </span>
   <iframe
     onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
@@ -8,7 +8,7 @@
     scrolling="auto"
     frameborder="0"
     height="{{ height }}"
-    src="{{ href | url }}"
+    src="{{ href }}"
     title="{{ title }}"
   ></iframe>
 </div>
