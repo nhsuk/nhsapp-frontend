@@ -5,14 +5,7 @@
 {% set sidebar %}
   {{ appSideNavigation({
     currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: "Components"
-        },
-        items: collections.component
-      }
-    ]
+    items: collections.component
   }) }}
 {% endset %}
 
