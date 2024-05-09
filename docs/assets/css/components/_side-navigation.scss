@@ -7,7 +7,7 @@
 
   display: block;
   margin-left: - nhsuk-spacing(2);
-  padding: nhsuk-spacing(4) 0 0;
+  padding: nhsuk-spacing(6) 0 0;
 }
 
 .app-side-navigation__title {
@@ -79,6 +79,9 @@
 }
 
 .app-side-navigation--mobile {
+  .app-side-navigation {
+    padding: 0 0 nhsuk-spacing(4);
+  }
   @include mq($from: desktop) {
     display: none;
   }
