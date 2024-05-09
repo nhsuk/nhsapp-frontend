@@ -32,7 +32,3 @@ Bear in mind that the bottom navigation can be easier for users to reach than th
 The ‘Home’ link was previously placed on the top navigation of the NHS App. In usability testing, participants found it easier to use the link when it was placed on the bottom navigation. They also noticed that this placement was more consistent with other popular apps.
 
 We also tested recognition of the hub page icons. The icons were well recognised. The use of text labels was needed to help users differentiate the ‘Services’ and ‘Your health’ icons.
-
-## Contribute to this guidance
-
-Share feedback and research findings about this component on its Github page. 

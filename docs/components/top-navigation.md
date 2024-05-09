@@ -31,7 +31,3 @@ The top navigation icons do not have text labels. They have aria labels which ar
 ## Research
 
 In our research, people recognised the meaning of the icons without the need for text labels.
-
-## Contribute to this guidance
-
-Share feedback and research findings about this component on its Github page.
