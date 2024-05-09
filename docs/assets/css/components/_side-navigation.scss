@@ -7,12 +7,12 @@
 
   display: block;
   margin-left: - nhsuk-spacing(2);
-  padding: nhsuk-spacing(4) 0 0;
+  padding: nhsuk-spacing(6) 0 0;
 }
 
 .app-side-navigation__title {
   @include nhsuk-font($size: 19);
-  color: $color_nhsuk-grey-2;
+  color: $color_nhsuk-grey-1;
   font-weight: normal;
   margin: 0;
   padding: nhsuk-spacing(2);
@@ -40,6 +40,7 @@
 
   a:hover {
     color: $nhsuk-link-hover-color;
+    text-decoration: underline;
   }
 
   a:focus {
@@ -79,6 +80,9 @@
 }
 
 .app-side-navigation--mobile {
+  .app-side-navigation {
+    padding: 0 0 nhsuk-spacing(4);
+  }
   @include mq($from: desktop) {
     display: none;
   }

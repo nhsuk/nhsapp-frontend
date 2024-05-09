@@ -4,16 +4,8 @@
 
 {% set sidebar %}
   {{ appSideNavigation({
-    classes: 'nhsuk-u-padding-top-6',
     currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: "Components"
-        },
-        items: collections.component
-      }
-    ]
+    items: collections.component
   }) }}
 {% endset %}
 
