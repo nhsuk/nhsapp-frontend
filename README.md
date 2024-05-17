@@ -2,6 +2,9 @@
 
 NHS App Frontend is a CSS library built on top of [nhsuk-frontend](https://github.com/nhsuk/nhsuk-frontend) providing styles for the NHS App.
 
+> [!NOTE]
+> We are currently in the process of testing NHS App Frontend. The NHS App Frontend is not currently used on the NHS App.
+
 ## Contact the team
 
 NHS App Frontend is mainatined by staff at NHS England. If you have a question, you can use [GitHub issues](https://github.com/nhsuk/nhsapp-frontend/issues) or one of these Slack channels:
@@ -11,11 +14,11 @@ NHS App Frontend is mainatined by staff at NHS England. If you have a question, 
 
 ## Building on the NHS digital service manual
 
-The NHS App uses the [NHS design system](https://service-manual.nhs.uk/design-system), however it also uses many custom design styles, components and patterns that we need to document.
+The NHS App uses the [NHS design system](https://service-manual.nhs.uk/design-system), however it also uses many custom design styles, components and patterns that we need to document with guidance.
 
 ## Documenting NHS App design styles, components and patterns
 
-We use a GitHub project board to document design styles, components and patterns being used on the NHS app, along with any work, including visual design changes, hypotheses, user insights etc. All this information then links back to the [NHS digital service manual community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1) for others to learn from the work.
+We use a GitHub project board to track the design styles, components and patterns being used on the NHS app, including examples, feedback, questions and user insights. All this information links back to the [NHS digital service manual community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1) so anyone working on an NHS project can look and learn from it.
 
 ---
 
