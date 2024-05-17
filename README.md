@@ -14,11 +14,11 @@ NHS App Frontend is mainatined by staff at NHS England. If you have a question, 
 
 ## Building on the NHS digital service manual
 
-The NHS App uses the [NHS design system](https://service-manual.nhs.uk/design-system), however it also uses many custom design styles, components and patterns that we need to document with guidance.
+The NHS App uses the [NHS design system](https://service-manual.nhs.uk/design-system), however it also uses custom design styles, components and patterns that need documenting with guidance.
 
 ## Documenting NHS App design styles, components and patterns
 
-We use a GitHub project board to track the design styles, components and patterns being used on the NHS app, including examples, feedback, questions and user insights. All this information links back to the [NHS digital service manual community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1) so anyone working on an NHS project can look and learn from it.
+We use a GitHub project board to track the design styles, components and patterns being used on the NHS app, including progress, examples, feedback, questions and user insights. All this information links back to the [NHS digital service manual community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1) so anyone working on an NHS project can look and learn from it.
 
 ---
 
