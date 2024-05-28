@@ -6,7 +6,7 @@ tags:
   - component
 ---
 
-[add example]
+{% example "tags/tag.njk" %}
 
 ## When to use
 
