@@ -7,8 +7,6 @@ tags:
   - component
 ---
 
-[add example]
-
 ## When to use
 
 Badges can be placed:
@@ -29,7 +27,7 @@ There are different size and colour variations of badges.
 
 ### Large badges
 
-[add example]
+{% example "badges/badge-large.njk" %}
 
 Large badges always include a number count. This tells users how many items need their attention.
 
@@ -37,21 +35,19 @@ Above the count of 9, large badges always display 9+. This allows the width of t
 
 ### Small badges
 
-[add example]
-
 Small badges are simple circles. They can be placed:
 
 - on the edge of icons, such as on the bottom navigation
 - on cards, alongside text, such as “Document attached” on appointment cards
 
-[add example]
+{% example "badges/badge-small.njk" %}
 
 The colour of small badges can be:
 
 - red for important notifications that needs to stand out on a page
 - blue for secondary notifications that can afford to be less prominent
 
-[add example]
+{% example "badges/badge-small-red.njk" %}
 
 For example, users will see a red badge on the bottom navigation to indicate unread messages. When they then navigate to their messages inbox to view those messages, unread message headings are indicated by blue badges.
 

@@ -1,0 +1,13 @@
+---
+layout: layouts/example.njk
+title: Badge Large
+figmaLink: "https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-7303&t=UdzCaY5YPtBypveQ-0"
+vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhsbadge-large--docs"
+---
+
+{% from "badge/large/macro.njk" import badgeLarge %}
+
+{{ badgeLarge({
+  count: 3,
+  label: 'Something'
+}) }}

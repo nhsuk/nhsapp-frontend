@@ -1,0 +1,11 @@
+{%- if params.count -%}
+<span class="nhsapp-badge">
+    <span class="nhsuk-u-visually-hidden">You have</span>
+    {% if params.count > 9 %}
+        +9
+    {% else %}
+        {{ params.count }}
+    {% endif %}
+    <span class="nhsuk-u-visually-hidden">{{ params.label }}</span>
+</span>
+{%- endif -%}
