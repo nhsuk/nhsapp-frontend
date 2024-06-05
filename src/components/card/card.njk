@@ -1,6 +1,6 @@
 {% from "badge/large/macro.njk" import badgeLarge %}
 
-{% set hasBadgeLarge = true if item.badgeLarge.count %}
+{% set hasBadgeLarge = true if params.badgeLarge.count > 1 %}
 
 <div class="nhsapp-card">
   <div class="nhsapp-card__container">
@@ -16,8 +16,8 @@
     </div>
     {% if hasBadgeLarge %}
       {{ badgeLarge({
-        count: item.badgeLarge.count,
-        label: item.badgeLarge.label
+        count: params.badgeLarge.count,
+        label: params.badgeLarge.label
       }) }}
     {% endif %}
     <svg class="nhsapp-icon app-icon--chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
