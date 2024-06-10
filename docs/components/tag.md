@@ -1,6 +1,6 @@
 ---
 layout: layouts/component.njk
-title: Tags
+title: Tag
 description: Use tags to show a status. Tags only display information and are not interactive.
 backlogID: 174
 tags:
