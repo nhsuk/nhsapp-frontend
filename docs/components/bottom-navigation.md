@@ -7,7 +7,7 @@ tags:
   - component
 ---
 
-[add example]
+![bottom nav](bottom-nav.png)
 
 ## When to use
 
