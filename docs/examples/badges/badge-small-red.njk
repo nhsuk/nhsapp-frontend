@@ -7,10 +7,9 @@ vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?pat
 
 {% from "badge/small/macro.njk" import badgeSmall %}
 
-<p>
-    {{ badgeSmall({
-    label: 'New',
-    color: 'red',
-    text: 'Document attached'
-    }) }}
-</p>
+{{ badgeSmall({
+label: 'New',
+color: 'red',
+text: 'Document attached',
+classes: 'nhsuk-body-m'
+}) }}
