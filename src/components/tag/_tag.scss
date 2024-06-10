@@ -39,72 +39,50 @@ $color_tag-yellow-text: #5b4701;
 
 .nhsapp-tag--white {
   background-color: $color_nhsuk-white;
-  border-color: $color_nhsuk-black;
   color: $color_nhsuk-black;
 }
 
 .nhsapp-tag--grey {
   background-color: $color_tag-grey-background;
-  border-color: $color_tag-grey-text;
   color: $color_tag-grey-text;
 }
 
 .nhsapp-tag--green {
   background-color: $color_tag-green-background;
-  border-color: $color_tag-green-text;
   color: $color_tag-green-text;
 }
 
 .nhsapp-tag--aqua-green {
   background-color: $color_tag-aqua-green-background;
-  border-color: $color_tag-aqua-green-text;
   color: $color_tag-aqua-green-text;
 }
 
 .nhsapp-tag--blue {
   background-color: $color_tag-blue-background;
-  border-color: $color_tag-blue-text;
   color: $color_tag-blue-text;
 }
 
 .nhsapp-tag--purple {
   background-color: $color_tag-purple-background;
-  border-color: $color_tag-purple-text;
   color: $color_tag-purple-text;
 }
 
 .nhsapp-tag--pink {
   background-color: $color_tag-pink-background;
-  border-color: $color_tag-pink-text;
   color: $color_tag-pink-text;
 }
 
 .nhsapp-tag--red {
   background-color: $color_tag-red-background;
-  border-color: $color_tag-red-text;
   color: $color_tag-red-text;
 }
 
 .nhsapp-tag--orange {
   background-color: $color_tag-orange-background;
-  border-color: $color_tag-orange-text;
   color: $color_tag-orange-text;
 }
 
 .nhsapp-tag--yellow {
   background-color: $color_tag-yellow-background;
-  border-color: $color_tag-yellow-text;
   color: $color_tag-yellow-text;
-}
-
-.nhsapp-tag--text-color {
-  background-color: transparent;
-  border-color: transparent;
-  color: $nhsuk-text-color;
-}
-
-.nhsapp-tag--secondary-text-color {
-  background-color: transparent;
-  border-color: transparent;
-  color: $nhsuk-secondary-text-color;
 }
