@@ -29,7 +29,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./docs/assets/')
 
   // Add images to docs
-	eleventyConfig.addPassthroughCopy('docs/assets/images');
+  eleventyConfig.addPassthroughCopy('docs/assets/images')
 
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)
