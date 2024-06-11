@@ -24,9 +24,10 @@ $color_tag-yellow-text: #5b4701;
 .nhsapp-tag {
   @include nhsuk-font($size: 16, $weight: normal, $line-height: 1.25);
   background-color: $color_tag-blue-background;
+  border: 1px solid transparent;
   border-radius: 2px;
   color: $color_tag-blue-text;
-  padding: 4px 10px;
+  padding: 3px 9px; // Minus the border width
   display: inline-block;
 
   @include mq($from: tablet) {
@@ -39,6 +40,7 @@ $color_tag-yellow-text: #5b4701;
 
 .nhsapp-tag--white {
   background-color: $color_nhsuk-white;
+  border-color: $color_nhsuk-grey-4;
   color: $color_nhsuk-black;
 }
 
