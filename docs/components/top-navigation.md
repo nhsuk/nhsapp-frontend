@@ -6,7 +6,7 @@ tags:
   - component
 ---
 
-[add example]
+![](/assets/images/top-nav.png)
 
 ## When to use
 
@@ -23,6 +23,8 @@ On the web browser version of the NHS App, we use an [NHS.UK header](https://ser
 The top navigation includes a link to the NHS App help and support pages hosted on NHS.UK. This is a contextual link that takes users to a page relevant to their location in the app. For example, if a user is on a prescription screen, the help link will open a help page about prescriptions.
 
 The top also includes an ’Account and settings’ link. This opens the respective hub page.
+
+![ ](/assets/images/top-nav-2.png)
 
 ## Accessibility
 

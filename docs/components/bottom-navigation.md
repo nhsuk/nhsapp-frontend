@@ -7,7 +7,7 @@ tags:
   - component
 ---
 
-![bottom nav](bottom-nav.png)
+![](/assets/images/bottom-nav.png)
 
 ## When to use
 
@@ -22,6 +22,8 @@ The bottom navigation is not part of the web browser version of the NHS App. The
 ## How to use
 
 Each hub is represented by a text label and an icon. The text labels match the main heading on the respective hub page.
+
+![](/assets/images/bottom-nav-2.png)
 
 ## Accessibility
 
