@@ -7,7 +7,7 @@ tags:
   - component
 ---
 
-![](/assets/images/bottom-nav.png)
+![The bottom navigation menu. It contains four icons with text labels: Home, Services, Your health and Messages.](/assets/images/bottom-nav.png)
 
 ## When to use
 
@@ -23,7 +23,7 @@ The bottom navigation is not part of the web browser version of the NHS App. The
 
 Each hub is represented by a text label and an icon. The text labels match the main heading on the respective hub page.
 
-![](/assets/images/bottom-nav-2.png)
+![Details of the bottom navigation menu. Icons become highlighted when selected. An unread indicator can be placed over icons.](/assets/images/bottom-nav-2.png)
 
 ## Accessibility
 

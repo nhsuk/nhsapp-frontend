@@ -6,7 +6,7 @@ tags:
   - component
 ---
 
-![](/assets/images/top-nav.png)
+![The top navigation menu. There are two right-aligned icons: one is a question mark and the other is shaped like a person.](/assets/images/top-nav.png)
 
 ## When to use
 
@@ -24,7 +24,7 @@ The top navigation includes a link to the NHS App help and support pages hosted 
 
 The top also includes an ’Account and settings’ link. This opens the respective hub page.
 
-![ ](/assets/images/top-nav-2.png)
+![Details of the top navigation menu. The question mark icon links to Help and Support. The person icon links to Account.](/assets/images/top-nav-2.png)
 
 ## Accessibility
 
