@@ -27,8 +27,8 @@ $color_tag-yellow-text: #5b4701;
   border: 1px solid transparent;
   border-radius: 2px;
   color: $color_tag-blue-text;
-  padding: 3px 9px; // Minus the border width
   display: inline-block;
+  padding: 3px 9px; // Minus the border width
 
   @include mq($from: tablet) {
     line-height: 1.4285em;
