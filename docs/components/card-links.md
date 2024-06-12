@@ -52,7 +52,7 @@ If you are using icons, they should have [aria labels/hidden text?] so that scre
 
 Use badges to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.
 
-[embed badge example]
+{% example "cards/card-link-with-badge.njk" %}
 
 ## Content guidance
 
