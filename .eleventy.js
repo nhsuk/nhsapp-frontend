@@ -11,6 +11,7 @@ import prettier from 'prettier'
 const nunjucksEnv = nunjucks.configure([
   // Our own components which we will ship in the release
   'src/components',
+  'src/styles',
 
   // Includes specific to our documentation
   'docs/_includes',
