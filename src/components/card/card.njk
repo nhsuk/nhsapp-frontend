@@ -6,7 +6,7 @@
 <div class="nhsapp-card">
   <div class="nhsapp-card__container">
     {%- if params.prefixIcon -%}
-      {{ icon('messages', 'nhsapp-icon') }}
+      {{ icon(params.prefixIcon, 'nhsapp-icon') }}
     {%- endif -%}
     <div class="nhsapp-card__content">
       <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state">
