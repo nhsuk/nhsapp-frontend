@@ -1,0 +1,27 @@
+---
+layout: layouts/example.njk
+title: Timeline active
+figmaLink: [insert link to Figma file here]
+vueLink: [insert link to Vue component library here]
+---
+
+{% from "timeline/macro.njk" import timeline %}
+
+{{ timeline({
+  items: [
+    {
+      headingText: "Date referred",
+      isPastItem: true,
+      text: "8 June 2024"
+    },
+    {
+      headingText: "Current status",
+      active: true,
+      text: "Waiting for treatment"
+    },
+    {
+      headingText: "Estimated treatment start date",
+      text: "September 2024"
+    }
+  ]
+}) }}

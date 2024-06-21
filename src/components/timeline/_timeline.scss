@@ -1,0 +1,97 @@
+/* ==========================================================================
+  #TIMELINE
+  ========================================================================== */
+
+$timeline-badge-size-mobile: 16px;
+$timeline-badge-size-tablet: 20px;
+$timeline-badge-small-size-mobile: 12px;
+$timeline-badge-small-size-tablet: 16px;
+
+$timeline-border-width: 2px;
+
+.nhsapp-timeline {
+  @include nhsuk-responsive-margin(5, "bottom");
+  @include nhsuk-responsive-padding(2, "top");
+
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    @include nhsuk-responsive-padding(5, "bottom");
+
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-top: -6px;
+    position: relative;
+
+    &:last-child {
+      padding: 0;
+
+      &:before {
+        border: none;
+      }
+    }
+
+    &:before {
+      border-left: $timeline-border-width solid $color_nhsuk-grey-3;
+      bottom: 0;
+      content: "";
+      display: block;
+      left: -$timeline-border-width;
+      position: absolute;
+      top: nhsuk-spacing(2);
+      width: $timeline-border-width;
+    }
+
+    &--past {
+      &:before {
+        border-color: $color_nhsuk-blue;
+      }
+    }
+  }
+
+  &__badge {
+    flex-shrink: 0;
+    height: $timeline-badge-size-mobile;
+    margin-left: - calc(($timeline-badge-size-mobile / 2) + ($timeline-border-width / 2));
+    margin-right: nhsuk-spacing(4);
+    margin-top: 4px;
+    width: $timeline-badge-size-mobile;
+    z-index: 1;
+
+    @include mq($from: tablet) {
+      height: $timeline-badge-size-tablet;
+      margin-left: - calc(($timeline-badge-size-tablet / 2) + ($timeline-border-width / 2));
+      margin-top: 3px;
+      width: $timeline-badge-size-tablet;
+    }
+
+    &--small {
+      height: $timeline-badge-small-size-mobile;
+      margin-left: - calc(($timeline-badge-small-size-mobile / 2) + ($timeline-border-width / 2));
+      margin-right: 26px;
+      margin-top: 6px;
+      width: $timeline-badge-small-size-mobile;
+
+      @include mq($from: tablet) {
+        height: $timeline-badge-small-size-tablet;
+        margin-left: - calc(($timeline-badge-small-size-tablet / 2) + ($timeline-border-width / 2));
+        margin-top: 5px;
+        width: $timeline-badge-small-size-tablet;
+      }
+    }
+  }
+
+  &__header {
+    @include nhsuk-typography-responsive(19);
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    @include nhsuk-typography-responsive(16);
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
