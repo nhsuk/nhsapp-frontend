@@ -1,0 +1,31 @@
+---
+layout: layouts/example.njk
+title: Timeline active
+figmaLink: [insert link to Figma file here]
+vueLink: [insert link to Vue component library here]
+---
+
+{% from "timeline/macro.njk" import timeline %}
+
+{{ timeline({
+  items: [
+    {
+      headingText: "Request medication"
+    },
+    {
+      headingText: "GP Approval Process",
+      html: "
+        <p class='nhsapp-timeline__description'>Awaiting approval</p>
+        <p class='nhsapp-timeline__description'>Rejected</p>
+      "
+    },
+    {
+      headingText: "Pharmacy processing",
+      html: "
+        <p class='nhsapp-timeline__description'>Pharmacy processing prescription</p>
+        <p class='nhsapp-timeline__description'>Past prescription is ready to collect</p>
+        <p class='nhsapp-timeline__description'>Ready to collect from the pharmacy</p>
+      "
+    }
+  ]
+}) }}
