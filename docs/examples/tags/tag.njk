@@ -1,0 +1,129 @@
+---
+layout: layouts/example.njk
+title: Tag
+figmaLink: https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=4717-12197&t=YvsL72MynPbHVYr2-0
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhstag--docs
+---
+
+{% from 'tag/macro.njk' import tag %}
+
+<table class="nhsuk-table">
+  <thead class="nhsuk-table__head">
+    <tr class="nhsuk-table__row">
+      <th class="nhsuk-table__header" scope="col"> Class name </th>
+      <th class="nhsuk-table__header" scope="col"> Tag </th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--white </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Started",
+          classes: "nhsapp-tag--white"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--grey </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Not started",
+          classes: "nhsapp-tag--grey"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--green </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "New",
+          classes: "nhsapp-tag--green"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--aqua-green </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Active",
+          classes: "nhsapp-tag--aqua-green"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--blue </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Pending",
+          classes: "nhsapp-tag--blue"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--purple </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Received",
+          classes: "nhsapp-tag--purple"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--pink </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Sent",
+          classes: "nhsapp-tag--pink"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--red </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Rejected",
+          classes: "nhsapp-tag--red"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--orange </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Declined",
+          classes: "nhsapp-tag--orange"
+        })}}
+      </td>
+    </tr>
+    <tr class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">
+        <code> nhsapp-tag--yellow </code>
+      </td>
+      <td class="nhsuk-table__cell">
+        {{ tag({
+          text: "Delayed",
+          classes: "nhsapp-tag--yellow"
+        })}}
+      </td>
+    </tr>
+  </tbody>
+</table>
