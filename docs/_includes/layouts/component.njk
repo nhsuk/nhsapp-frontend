@@ -5,7 +5,7 @@
 {% set sidebar %}
   {{ appSideNavigation({
     currentPath: page.url,
-    items: collections.component
+    items: collections.component | sort(attribute="data.title")
   }) }}
 {% endset %}
 
