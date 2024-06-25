@@ -5,12 +5,12 @@
   
   <li class="nhsapp-timeline__item {{ isPastItem | trim }}">
     {% if item.active or item.isPastItem %}
-      <svg class="nhsapp-timeline__badge" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <circle cx="14" cy="14" r="13" transform="matrix(-1.19249e-08 -1 -1 1.19249e-08 28 28)" fill="#005EB8" stroke="#005EB8" stroke-width="2"/>
+      <svg class="nhsapp-timeline__badge" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+        <circle cx="14" cy="14" r="13" fill="#005EB8"/>
       </svg>
     {% else %}
       <svg class="nhsapp-timeline__badge nhsapp-timeline__badge--small" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-        <circle cx="7" cy="7" r="6" transform="matrix(-1.19249e-08 -1 -1 1.19249e-08 14 14)" fill="white" stroke="#AEB7BD" stroke-width="2"/>
+        <circle cx="7" cy="7" r="6" fill="white" stroke="#AEB7BD" stroke-width="2"/>
       </svg>
     {% endif %}
     <div class="nhsapp-timeline__content">
