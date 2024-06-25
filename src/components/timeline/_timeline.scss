@@ -1,13 +1,45 @@
-/* ==========================================================================
-  #TIMELINE
-  ========================================================================== */
-
 $timeline-badge-size-mobile: 16px;
-$timeline-badge-size-tablet: 20px;
 $timeline-badge-small-size-mobile: 12px;
-$timeline-badge-small-size-tablet: 16px;
-
 $timeline-border-width: 2px;
+
+@function dot-size($size) {
+  @if $size == "default" {
+    @return $timeline-badge-size-mobile;
+  } @else if $size == "small" {
+    @return $timeline-badge-small-size-mobile;
+  }
+}
+
+@function dot-ml($size) {
+  @return - calc(($size / 2) + ($timeline-border-width / 2));
+}
+
+@function dot-mt-tablet($margin) {
+  @return $margin - 1px;
+}
+
+@mixin nhsapp-timeline-badge($size) {
+  $mt: 4px;
+  $mt-small: 6px;
+
+  height: dot-size($size);
+  width: dot-size($size);
+
+  margin-left: dot-ml(dot-size($size));
+  margin-top: if($size == "default", $mt, $mt-small);
+  margin-right: if($size == "default", nhsuk-spacing(4), nhsuk-spacing(4) + 2px);
+
+  @include mq($from: tablet) {
+    $tablet: dot-size($size) + 4px;
+
+    @debug $tablet;
+
+    height: $tablet;
+    margin-left: dot-ml($tablet);
+    margin-top: if($size == "default", dot-mt-tablet($mt), dot-mt-tablet($mt-small));
+    width: $tablet;
+  }
+}
 
 .nhsapp-timeline {
   @include nhsuk-responsive-margin(5, "bottom");
@@ -53,33 +85,12 @@ $timeline-border-width: 2px;
 
   &__badge {
     flex-shrink: 0;
-    height: $timeline-badge-size-mobile;
-    margin-left: - calc(($timeline-badge-size-mobile / 2) + ($timeline-border-width / 2));
-    margin-right: nhsuk-spacing(4);
-    margin-top: 4px;
-    width: $timeline-badge-size-mobile;
     z-index: 1;
 
-    @include mq($from: tablet) {
-      height: $timeline-badge-size-tablet;
-      margin-left: - calc(($timeline-badge-size-tablet / 2) + ($timeline-border-width / 2));
-      margin-top: 3px;
-      width: $timeline-badge-size-tablet;
-    }
+    @include nhsapp-timeline-badge("default");
 
     &--small {
-      height: $timeline-badge-small-size-mobile;
-      margin-left: - calc(($timeline-badge-small-size-mobile / 2) + ($timeline-border-width / 2));
-      margin-right: 26px;
-      margin-top: 6px;
-      width: $timeline-badge-small-size-mobile;
-
-      @include mq($from: tablet) {
-        height: $timeline-badge-small-size-tablet;
-        margin-left: - calc(($timeline-badge-small-size-tablet / 2) + ($timeline-border-width / 2));
-        margin-top: 5px;
-        width: $timeline-badge-small-size-tablet;
-      }
+      @include nhsapp-timeline-badge("small");
     }
   }
 
