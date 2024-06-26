@@ -44,7 +44,7 @@ Only use this variation if you have found a user need for more detailed links on
 
 Icons may help users to understand the meaning of a card link. We currently only use this variation for “Switch profiles” and “Messages” links on the homepage.
 
-[embed icon example]
+{% example "cards/card-link-icon.njk" %}
 
 If you are using icons, they should have [aria labels/hidden text?] so that screen reader users also benefit from this additional prompt on the card link.
 

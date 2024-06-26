@@ -1,0 +1,5 @@
+{% import "icon/icons.njk" as iconHtml %}
+
+{% macro icon(iconName) %}
+  {{ iconHtml[iconName]() }}
+{% endmacro %}
