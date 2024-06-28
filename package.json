@@ -40,6 +40,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
+    "markdown-it-anchor": "^9.0.1",
     "nunjucks": "^3.2.4",
     "prettier": "^3.2.5",
     "sass": "^1.74.1"

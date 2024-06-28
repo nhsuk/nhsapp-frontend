@@ -1,0 +1,23 @@
+{% extends "./sidebar.njk" %}
+
+{%- from "./partials/side-navigation.njk" import appSideNavigation %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    currentPath: page.url,
+    items: collections.style | sort(attribute="data.title")
+  }) }}
+{% endset %}
+
+{% block main %}
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {% if tags and "style" in tags %}<span class="nhsuk-caption-l">Styles</span>{% endif %}
+    {{ title }}
+  </h1>
+  <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>
+  {{ content | safe }}
+  {% if tags and "style" in tags %}
+    {% include "./partials/feedback-section-general.njk" %}
+  {% else %}
+  {% endif %}
+{% endblock %}
