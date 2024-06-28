@@ -1,0 +1,24 @@
+---
+layout: layouts/example.njk
+title: Section heading
+vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhssectionheading--docs"
+---
+
+{% from "section-heading/macro.njk" import sectionHeading %}
+
+{{ sectionHeading({
+  headingText: "Section heading",
+  subheadingText: "Subheading text",
+  linkText: "Link text",
+  linkUrl: "#",
+  linkAriaLabel: "Link aria label"
+}) }}
+
+{{ sectionHeading({
+  headingText: "Section heading",
+  subheadingText: "Subheading text"
+}) }}
+
+{{ sectionHeading({
+  headingText: "Section heading"
+}) }}
