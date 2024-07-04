@@ -6,6 +6,7 @@
 @import "node_modules/nhsuk-frontend/packages/components/header/header.scss";
 @import "node_modules/nhsuk-frontend/packages/components/hero/hero.scss";
 @import "node_modules/nhsuk-frontend/packages/components/tabs/tabs.scss";
+@import "node_modules/nhsuk-frontend/packages/components/breadcrumb/breadcrumb.scss";
 
 @import "node_modules/prismjs/themes/prism";
 
@@ -19,11 +20,19 @@
 @import "docs/assets/css/example.scss";
 @import "docs/assets/css/utilities.scss";
 
-code {
-  @include nhsuk-font($size: 16);
-  background: $color_nhsuk-white;
-  border: 1px solid $nhsuk-border-color;
-  display: inline-block;
-  padding: nhsuk-spacing(3);
-  width: 100%;
+// Add correct spacing around code highlighter and content
+pre {
+  + p,
+  + li {
+    @include nhsuk-responsive-padding(4, "top");
+  }
+
+  + h2,
+  + h3 {
+    padding-top: nhsuk-spacing(5);
+
+    @include mq($from: desktop) {
+      padding-top: nhsuk-spacing(7);
+    }
+  }
 }

@@ -7,8 +7,6 @@ description: These are components designed specifically for the needs of NHS App
 
 Check the [NHS Design System](https://service-manual.nhs.uk/design-system) to see if the component or pattern you need is already being used across the NHS.
 
-## Can't find what you need?
-
 If you can't find what you need in the NHS Design System or the NHS App design components, you can:
 
 - see if it is being worked on by other teams across the NHS and add your findings in the [community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1)
@@ -21,10 +19,7 @@ All patterns must meet the [contribution criteria](https://service-manual.nhs.uk
 
 Each pattern includes coded examples. You will need to install [NHS App Frontend](/components/install-nhsapp-frontend-in-your-prototype) to use components with specific NHS App code not yet supported by the NHS Prototype Kit.
 
-Find out how to:
-
-- [set up the Prototype Kit](https://nhsuk-prototype-kit.azurewebsites.net/docs)
-- [update the Prototype Kit](https://nhsuk-prototype-kit.azurewebsites.net/docs/how-tos/updating-the-kit)
+Find out how to [set up the Prototype Kit](https://nhsuk-prototype-kit.azurewebsites.net/docs).
 
 ## Get help
 

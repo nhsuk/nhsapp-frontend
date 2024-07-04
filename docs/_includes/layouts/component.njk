@@ -2,6 +2,26 @@
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
+{% block breadcrumb %}
+  {% if title === "Components" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        }
+      ],
+      href: "/components",
+      text: "Components"
+    }) }}
+  {% endif %}
+{% endblock %}
+
 {% set sidebar %}
   {{ appSideNavigation({
     currentPath: page.url,
@@ -11,7 +31,6 @@
 
 {% block main %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
-    {% if tags and "component" in tags %}<span class="nhsuk-caption-l">Components</span>{% endif %}
     {{ title }}
   </h1>
   <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>

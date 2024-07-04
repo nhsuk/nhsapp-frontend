@@ -11,17 +11,23 @@ This guide explains how to install NHS App Frontend to support these styles. You
 
 Using GitBash or Terminal, navigate to where your prototype is. For example
 
-`cd ~/Documents/projects/project-prototype`
+```sh
+cd ~/Documents/projects/project-prototype
+```
 
 If your prototype is already running, to stop it use
 
-`Ctrl + C`
+```sh
+Ctrl + C
+```
 
 ## Step 2
 
 Enter
 
-`npm install --save nhsapp-frontend`
+```sh
+npm install --save nhsapp-frontend
+```
 
 Once you have installed NHS App Frontend, All NHS App patterns should work in your prototype.
 
