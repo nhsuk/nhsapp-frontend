@@ -5,7 +5,7 @@ title: Install NHS App Frontend in your prototype
 
 While most NHS App patterns are created to automatically work with the NHS Prototype Kit, some patterns have been created with specific NHS App styles.
 
-This guide explains how to install NHS App Frontend to support these styles. You will only have to follow these steps once for your prototype. You must use version 9.0.0 or later of the NHS Prototype Kit for these to work.
+This guide explains how to install NHS App Frontend to support these styles. You will only have to follow these steps once for your prototype. You must use version 4.0.0 or later of the NHS Prototype Kit for these to work.
 
 ## Step 1
 
