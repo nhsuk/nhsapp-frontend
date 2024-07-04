@@ -5,7 +5,7 @@ title: Components
 description: These are components designed specifically for the needs of NHS App users and are not yet in the NHS Design System.
 ---
 
-Check the [NHS Design System](https://service-manual.nhs.uk/design-system) to see if the component or pattern you need is already being used across government.
+Check the [NHS Design System](https://service-manual.nhs.uk/design-system) to see if the component or pattern you need is already being used across the NHS.
 
 ## Can't find what you need?
 
@@ -19,7 +19,7 @@ All patterns must meet the [contribution criteria](https://service-manual.nhs.uk
 
 ## Using code snippets in prototypes
 
-Each pattern includes coded examples. You will need to install [NHS App Frontend]() to use components with specific NHS App code not yet supported by the NHS Prototype Kit.
+Each pattern includes coded examples. You will need to install [NHS App Frontend](/components/install-nhsapp-frontend-in-your-prototype) to use components with specific NHS App code not yet supported by the NHS Prototype Kit.
 
 Find out how to:
 

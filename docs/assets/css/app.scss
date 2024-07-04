@@ -18,3 +18,12 @@
 @import "docs/assets/css/content.scss";
 @import "docs/assets/css/example.scss";
 @import "docs/assets/css/utilities.scss";
+
+code {
+  @include nhsuk-font($size: 16);
+  background: $color_nhsuk-white;
+  border: 1px solid $nhsuk-border-color;
+  display: inline-block;
+  padding: nhsuk-spacing(3);
+  width: 100%;
+}
