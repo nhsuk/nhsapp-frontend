@@ -1,0 +1,18 @@
+{% set stackedClass = 'nhsapp-cards--stacked' if params.stacked else '' %}
+
+{% from "./macro.njk" import card %}
+
+<ol class="nhsapp-cards {{ stackedClass }}">
+  {% for cardItem in params.cards %}
+    {{ card({
+      title: cardItem.title,
+      href: cardItem.href,
+      html: cardItem.html,
+      aboveContent: cardItem.aboveContent,
+      description: cardItem.description,
+      badgeLarge: cardItem.badgeLarge,
+      prefixIcon: cardItem.prefixIcon,
+      isListItem: true
+    }) }}
+  {% endfor %}
+</ol>

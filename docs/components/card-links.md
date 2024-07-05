@@ -66,11 +66,15 @@ In usability testing, we did not see evidence of this mixture of phrasing causin
 
 Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
 
-[embed list example]
+{% example "cards/card-group.njk" %}
+
+### Stacked
+
+{% example "cards/card-group-stacked.njk" %}
 
 If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.
 
-[embed list with headings example]
+{% example "cards/card-group-headings.njk" %}
 
 ## Research
 
