@@ -1,7 +1,3 @@
-// ==========================================================================
-// COMPONENTS / #CARD
-// ==========================================================================
-
 /** These variables are not defined in a separate scss file in the nhsuk-frontend,
  * so we can't import them without bringing in the actual classes also.
  */
@@ -30,53 +26,88 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     }
     fill: $nhsuk-link-color;
   }
+
   &:hover {
     .nhsapp-icon {
       fill: $nhsuk-link-hover-color;
     }
   }
-}
 
-.nhsapp-card__container {
-  display: flex;
-  align-items: center;
-  gap: nhsuk-spacing(3);
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: nhsuk-spacing(3);
 
-  margin: 0 nhsuk-spacing(3);
-  padding: 20px 0;
-  @include mq($from: tablet) {
-    margin: 0 nhsuk-spacing(4);
-    padding: nhsuk-spacing(4) 0;
+    margin: 0 nhsuk-spacing(3);
+    padding: 20px 0;
+
+    @include mq($from: tablet) {
+      margin: 0 nhsuk-spacing(4);
+      padding: nhsuk-spacing(4) 0;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__link {
+    @include nhsuk-typography-responsive(22);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    // Makes the entire card clickable
+    &::after {
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__below {
+    :last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
-.nhsapp-card__content {
-  flex-grow: 1;
-}
+// card group
+.nhsapp-cards {
+  @include nhsuk-responsive-margin(5, "bottom");
+  list-style: none; // Removes default list style
+  padding: 0; // Removes default list padding
 
-.nhsapp-card__link {
-  @include nhsuk-typography-responsive(22);
-  font-weight: bold;
-  text-decoration: none;
+  &--stacked {
+    @include nhsuk-responsive-margin(5, "bottom");
 
-  &:hover {
-    text-decoration: underline;
-  }
+    .nhsapp-card {
+      border-bottom: 0;
+      border-top: 0;
+      margin-bottom: 0;
 
-  // Makes the entire card clickable
-  &::after {
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
+      .nhsapp-card__container {
+        border-bottom: $card-border-width solid $card-border-color;
+      }
 
-.nhsapp-card__below {
-  :last-child {
-    margin-bottom: 0;
+      &:first-of-type {
+        border-top: $card-border-width solid $card-border-color;
+      }
+
+      &:last-of-type {
+        border-bottom: $card-border-width solid $card-border-color;
+
+        .nhsapp-card__container {
+          border-bottom: 0;
+        }
+      }
+    }
   }
 }
