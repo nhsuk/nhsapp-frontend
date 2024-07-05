@@ -1,5 +1,6 @@
 {%- from 'header/macro.njk' import header -%}
 {%- from 'footer/macro.njk' import footer -%}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
 {%- from 'skip-link/macro.njk' import skipLink -%}
 
 <!DOCTYPE html>
@@ -31,6 +32,9 @@
           "showSearch": "false",
           "homeHref": baseUrl
         }) }}
+      {% endblock %}
+
+      {% block breadcrumb %}
       {% endblock %}
 
       {% block container %}
