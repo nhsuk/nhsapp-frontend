@@ -1,9 +1,7 @@
 ---
-layout: layouts/style.njk
+layout: layouts/component.njk
 title: Icons
 description: Icons description goes here
-tags:
-  - style
 ---
 
 ## When to use
