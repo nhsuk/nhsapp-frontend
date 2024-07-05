@@ -3,6 +3,8 @@ import nunjucks from 'nunjucks'
 import sass from 'sass'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
+import markdownIt from 'markdown-it'
+import anchor from 'markdown-it-anchor'
 
 import matter from 'gray-matter'
 import fs from 'fs'
@@ -82,6 +84,8 @@ export default function (eleventyConfig) {
     }
     return nunjucksEnv.render('example.njk', templateData)
   })
+
+  eleventyConfig.setLibrary('md', markdownIt({ html: true }).use(anchor))
 
   return {
     dir: {

@@ -1,6 +1,10 @@
 @import "node_modules/nhsuk-frontend/packages/core/tools/all.scss";
 @import "node_modules/nhsuk-frontend/packages/core/settings/all.scss";
 
+// styles
+@import "styles/typography";
+
+// components
 @import "./components/card/card.scss";
 @import "./components/tag/tag.scss";
 @import "./components/badge/badge";

@@ -1,0 +1,15 @@
+---
+layout: layouts/example.njk
+title: Section heading with link
+figmaLink: "https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?m=dev&node-id=916-9803"
+vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhssectionheading--docs"
+---
+
+{% from "section-heading/macro.njk" import sectionHeading %}
+
+{{ sectionHeading({
+  headingText: "Services",
+  linkText: "View all",
+  linkUrl: "#",
+  linkAriaLabel: "View all services"
+}) }}
