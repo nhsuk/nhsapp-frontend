@@ -27,11 +27,13 @@ There are different size and colour variations of badges.
 
 ### Large badges
 
-{% example "badges/badge-large.njk" %}
-
 Large badges always include a number count. This tells users how many items need their attention.
 
+{% example "badges/badge-large.njk" %}
+
 Above the count of 9, large badges always display 9+. This allows the width of the badge to be restricted to two characters.
+
+{% example "badges/badge-large-9.njk" %}
 
 ### Small badges
 
@@ -40,16 +42,20 @@ Small badges are simple circles. They can be placed:
 - on the edge of icons, such as on the bottom navigation
 - on cards, alongside text, such as “Document attached” on appointment cards
 
-{% example "badges/badge-small.njk" %}
+{% example "badges/badge-small-red.njk" %}
 
 The colour of small badges can be:
 
 - red for important notifications that needs to stand out on a page
 - blue for secondary notifications that can afford to be less prominent
 
-{% example "badges/badge-small-red.njk" %}
+For example, users will see a red badge on the bottom navigation to indicate unread messages.
 
-For example, users will see a red badge on the bottom navigation to indicate unread messages. When they then navigate to their messages inbox to view those messages, unread message headings are indicated by blue badges.
+![The bottom navigation menu with a red badge on the messages item to indicate unread messages.](/assets/images/bottom-nav-badge.png)
+
+When they then navigate to their messages inbox to view those messages, unread message headings are indicated by blue badges.
+
+{% example "cards/card-messages.njk" %}
 
 ## Accessibility
 
