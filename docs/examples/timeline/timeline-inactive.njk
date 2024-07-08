@@ -1,0 +1,22 @@
+---
+layout: layouts/example.njk
+title: Timeline active
+figmaLink: [insert link to Figma file here]
+vueLink: [insert link to Vue component library here]
+---
+
+{% from "timeline/macro.njk" import timeline %}
+
+{{ timeline({
+  items: [
+    {
+      headingText: "Await approval",
+      text: "The request will either be approved or rejected. If rejected please contact your Healthcare Professional.",
+      active: true
+    },
+    {
+      headingText: "GP Approval Process",
+      text: "Once approved, it can take 3 to 5 working days for a nominated pharmacy to prepare your prescription."
+    }
+  ]
+}) }}

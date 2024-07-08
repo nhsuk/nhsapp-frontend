@@ -1,24 +1,24 @@
 // Import all of the NHS.UK frontend core styles
-@import "node_modules/nhsuk-frontend/packages/core/all.scss";
+@import "node_modules/nhsuk-frontend/packages/core/all";
 
 // Import specific components that we need from nhsuk-frontend
-@import "node_modules/nhsuk-frontend/packages/components/skip-link/skip-link.scss";
-@import "node_modules/nhsuk-frontend/packages/components/header/header.scss";
-@import "node_modules/nhsuk-frontend/packages/components/hero/hero.scss";
-@import "node_modules/nhsuk-frontend/packages/components/tabs/tabs.scss";
-@import "node_modules/nhsuk-frontend/packages/components/breadcrumb/breadcrumb.scss";
+@import "node_modules/nhsuk-frontend/packages/components/breadcrumb/breadcrumb";
+@import "node_modules/nhsuk-frontend/packages/components/skip-link/skip-link";
+@import "node_modules/nhsuk-frontend/packages/components/header/header";
+@import "node_modules/nhsuk-frontend/packages/components/hero/hero";
+@import "node_modules/nhsuk-frontend/packages/components/tabs/tabs";
 
 @import "node_modules/prismjs/themes/prism";
 
 // Import all styles from the NHS App frontend library
-@import "src/all.scss";
+@import "src/all";
 
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/side-navigation";
-@import "docs/assets/css/tabs.scss";
-@import "docs/assets/css/content.scss";
-@import "docs/assets/css/example.scss";
-@import "docs/assets/css/utilities.scss";
+@import "docs/assets/css/tabs";
+@import "docs/assets/css/content";
+@import "docs/assets/css/example";
+@import "docs/assets/css/utilities";
 
 // Add correct spacing around code highlighter and content
 pre {
