@@ -3,6 +3,7 @@
 {% set title = "NHS App design resources" %}
 
 {%- from 'hero/macro.njk' import hero -%}
+{% from "card/macro.njk" import cardGroup %}
 {%- from 'card/macro.njk' import card -%}
 
 {% block header %}
@@ -17,10 +18,51 @@
 {% block main %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
-      {{ card({
-        title: "Components",
-        href: "./components/"
+
+      <h2 class="nhsuk-heading-s">Styles, components and patterns</h2>
+
+      {{ cardGroup({
+        stacked: true,
+        cards: [
+          {
+            title: 'NHS design system',
+            href: 'https://service-manual.nhs.uk/design-system'
+          },
+          {
+            title: 'NHS App design components',
+            href: './components/'
+          }
+        ]
       }) }}
+
+      <h2 class="nhsuk-heading-s">Content design</h2>
+
+      {{ cardGroup({
+        stacked: true,
+        cards: [
+          {
+            title: 'NHS content guide',
+            href: 'https://service-manual.nhs.uk/content'
+          }
+        ]
+      }) }}
+
+      <h2 class="nhsuk-heading-s">Accessibility</h2>
+
+      {{ cardGroup({
+        stacked: true,
+        cards: [
+          {
+            title: 'NHS accessibility guidance',
+            href: 'https://service-manual.nhs.uk/accessibility'
+          },
+          {
+            title: 'Accessibility checklist',
+            href: 'https://nhsdigital.github.io/accessibility-checklist/checklist-full/'
+          }
+        ]
+      }) }}
+
     </div>
   </div>
 {% endblock %}
