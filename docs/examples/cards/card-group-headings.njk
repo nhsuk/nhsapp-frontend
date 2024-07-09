@@ -7,24 +7,38 @@ vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?pat
 
 {% from "card/macro.njk" import cardGroup %}
 {% from "card/macro.njk" import card %}
+{% from "section-heading/macro.njk" import sectionHeading %}
 
 
-<h3 class="nhsuk-u-margin-bottom-3">Services</h3>
+
+{{ sectionHeading({
+  headingText: "Your GP services"
+}) }}
+
 {{ cardGroup({
+  stacked: true,
   cards: [
     {
-      title: 'Book an appointment',
+      title: 'Request repeat prescriptions',
       href: '#'
     },
     {
-      title: 'Request repeat prescriptions',
+      title: 'Contact your GP surgery for a document or update',
+      href: '#'
+    },
+    {
+      title: 'Check for available GP appointments',
       href: '#'
     }
   ]
 }) }}
 
-<h3 class="nhsuk-u-margin-top-5 nhsuk-u-margin-bottom-3">Other</h3>
+{{ sectionHeading({
+  headingText: "Other NHS services"
+}) }}
+
 {{ cardGroup({
+  stacked: true,
   cards: [
     {
       title: 'Book',
