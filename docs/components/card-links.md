@@ -46,13 +46,21 @@ Icons may help users to understand the meaning of a card link. We currently only
 
 {% example "cards/card-link-icon.njk" %}
 
-If you are using icons, they should have [aria labels/hidden text?] so that screen reader users also benefit from this additional prompt on the card link.
-
 ### Using badges
 
 Use badges to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.
 
 {% example "cards/card-link-with-badge.njk" %}
+
+### Multiple card links
+
+Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
+
+{% example "cards/card-group-stacked.njk" %}
+
+If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.
+
+{% example "cards/card-group-headings.njk" %}
 
 ## Content guidance
 
@@ -61,20 +69,6 @@ Aim to use active phrasing for card link text. This means starting the link text
 However, you may find reasons to vary this to fit with the context. On the "Your health" hub, we mainly use noun phrases (such as "GP health record") for brevity and to avoid multiple links starting with the same verb.
 
 In usability testing, we did not see evidence of this mixture of phrasing causing problems for users. We also noted that GOV.UK also vary link phrasing in a similar way. However, more research on link phrasing may be helpful to validate the best approach.
-
-## Accessibility
-
-Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
-
-{% example "cards/card-group.njk" %}
-
-### Stacked
-
-{% example "cards/card-group-stacked.njk" %}
-
-If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.
-
-{% example "cards/card-group-headings.njk" %}
 
 ## Research
 
