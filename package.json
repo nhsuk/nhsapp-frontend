@@ -47,6 +47,6 @@
     "sass": "^1.74.1"
   },
   "peerDependencies": {
-    "nhsuk-frontend": "^8.1.1"
+    "nhsuk-frontend": "^8.0.0"
   }
 }
