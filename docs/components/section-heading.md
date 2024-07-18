@@ -2,6 +2,7 @@
 layout: layouts/component.njk
 title: Section heading
 description: Section headings are second-level headings (marked as H2 in the code). Use them to break pages up into sections.
+backlogID: 26
 tags:
   - component
 ---
