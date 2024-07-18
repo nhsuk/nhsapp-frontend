@@ -2,7 +2,7 @@
 layout: layouts/component.njk
 title: Bottom navigation
 description: The bottom navigation helps users return to the homepage or move to a hub page.
-backlogID: 518
+backlogID: 53
 tags:
   - component
 ---

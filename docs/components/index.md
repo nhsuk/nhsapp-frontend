@@ -21,7 +21,8 @@ Find out how to [set up the prototype kit](https://nhsuk-prototype-kit.azurewebs
 
 ## Get help
 
-If you have a question, idea or suggestion you can:
+If you have a question, idea or suggestion, you can use the:
 
-- [#general on NHS service manual Slack](https://nhs-service-manual.slack.com/archives/CDJ29AQCD)
 - [#forum-app-design-system on NHS England Slack](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+- [#general on NHS service manual Slack](https://nhs-service-manual.slack.com/archives/CDJ29AQCD)
+- [NHS App Frontend GitHub issues](https://github.com/nhsuk/nhsapp-frontend/issues/new/choose)
