@@ -1,0 +1,19 @@
+---
+layout: layouts/example.njk
+title: Icons all
+figmaLink: ""
+vueLink: ""
+---
+
+{% from "icon/macro.njk" import icon %}
+
+<dl class="nhsuk-summary-list">
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Chevron right
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      {{ icon('chevronRight') }}
+    </dd>
+  </div>
+</dl>

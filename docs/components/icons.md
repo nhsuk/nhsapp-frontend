@@ -6,6 +6,8 @@ tags:
   - component
 ---
 
+{% example "icons/icons-all.njk" %}
+
 ## When to use
 
 Use icons when you have evidence that doing so will:
