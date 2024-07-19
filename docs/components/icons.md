@@ -6,7 +6,7 @@ tags:
   - component
 ---
 
-{% example "icons/icons-all.njk" %}
+![The top navigation menu. There are two right-aligned icons: one is a question mark and the other is shaped like a person.](/assets/images/icons.png)
 
 ## When to use
 
@@ -31,6 +31,10 @@ Be mindful about how much an icon can make one piece of content on a page stand 
 ## How to use
 
 We use scalable vector graphics (SVG) files for icons. They can be used with or without supporting text.
+
+{% include "layouts/icons-example.njk" %}
+
+You can find the [icons in Figma](https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=5546-26410&t=QxURQEIfOYBfjOr8-1).
 
 ## Accessibility
 

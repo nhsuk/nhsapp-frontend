@@ -7,6 +7,7 @@
 @import "node_modules/nhsuk-frontend/packages/components/header/header";
 @import "node_modules/nhsuk-frontend/packages/components/hero/hero";
 @import "node_modules/nhsuk-frontend/packages/components/tabs/tabs";
+@import "node_modules/nhsuk-frontend/packages/components/summary-list/summary-list";
 
 @import "node_modules/prismjs/themes/prism";
 
@@ -34,5 +35,12 @@ pre {
     @include mq($from: desktop) {
       padding-top: nhsuk-spacing(7);
     }
+  }
+}
+
+// Stop table breaking container on small screens
+@include mq($until: tablet) {
+  .app-table tr td {
+    word-break: break-word;
   }
 }
