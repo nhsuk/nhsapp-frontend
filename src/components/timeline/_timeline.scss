@@ -32,8 +32,6 @@ $timeline-border-width: 2px;
   @include mq($from: tablet) {
     $tablet: dot-size($size) + 4px;
 
-    @debug $tablet;
-
     height: $tablet;
     margin-left: dot-ml($tablet);
     margin-top: if($size == "default", dot-mt-tablet($mt), dot-mt-tablet($mt-small));
