@@ -17,10 +17,6 @@ Use icons when you have evidence that doing so will:
 - improve comprehension
 - help with recognition
 
-People process visual information faster than text. Using icons may help users to quickly make a correct association.
-
-Icons also serve to highlight information on a page, making it more visibly noticeable than surrounding elements.
-
 ## When not to use
 
 Use icons sparingly. Too many icons on a page will reduce the effect.
