@@ -2,6 +2,7 @@
   fill: $nhsuk-link-color; // Set default icon colour to NHS blue
 }
 
-.nhsapp-icon--no-fill {
-  fill: none; // Remove fill colour
+.nhsapp-icon__unread-indicator {
+  fill: $color_nhsuk-red;
+  stroke: $color_nhsuk-white;
 }

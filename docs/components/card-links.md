@@ -42,13 +42,13 @@ Only use this variation if you have found a user need for more detailed links on
 
 ### Using icons
 
-Icons may help users to understand the meaning of a card link. We currently only use this variation for “Switch profiles” and “Messages” links on the homepage.
+[Icons](/components/icons/) may help users to understand the meaning of a card link. We currently only use this variation for “Switch profiles” and “Messages” links on the homepage.
 
 {% example "cards/card-link-icon.njk" %}
 
 ### Using badges
 
-Use badges to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.
+Use [badges](/components/badge/) to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.
 
 {% example "cards/card-link-with-badge.njk" %}
 
