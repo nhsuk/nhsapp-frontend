@@ -7,7 +7,7 @@ tags:
   - component
 ---
 
-![5 icons. Switch profiles, messages, home, cross and help.](/assets/images/icons.png)
+![5 icons. Switch profiles, messages, home, cross and help icons.](/assets/images/icons.png)
 
 ## When to use
 
