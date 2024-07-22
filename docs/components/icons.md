@@ -7,7 +7,7 @@ tags:
   - component
 ---
 
-![The top navigation menu. There are two right-aligned icons: one is a question mark and the other is shaped like a person.](/assets/images/icons.png)
+![5 icons. Switch profiles, messages, home, cross and help.](/assets/images/icons.png)
 
 ## When to use
 
