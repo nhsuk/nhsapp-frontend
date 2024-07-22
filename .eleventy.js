@@ -14,6 +14,7 @@ const nunjucksEnv = nunjucks.configure([
   // Our own components which we will ship in the release
   'src/components',
   'src/styles',
+  'src/assets',
 
   // Includes specific to our documentation
   'docs/_includes',
