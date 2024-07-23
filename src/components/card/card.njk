@@ -18,9 +18,13 @@
           {{ params.aboveContent.html | safe }}
         </div>
       {%- endif -%}
-      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state">
-        {{ params.title }}
-      </a>
+      {%- if params.readOnly -%}
+        <h3 class="nhsapp-card__title">{{ params.title }}</h3>
+      {%- else -%}
+        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          {{ params.title }}
+        </a>
+      {%- endif -%}
       {% if params.description %}
         <div class="nhsapp-card__below">
           <p class="nhsuk-u-margin-top-1">{{ params.description }}</p>
@@ -35,7 +39,9 @@
         label: params.badgeLarge.label
       }) }}
     {% endif %}
-    {{ icon('chevronRight') }}
+    {%- if not params.readOnly -%}
+      {{ icon('chevronRight') }}
+    {%- endif -%}
   </div>
 {%- if params.isListItem -%}
   </li>
