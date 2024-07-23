@@ -26,42 +26,8 @@
     }
 
     &:focus {
-      background-color: #ffeb3b;
+      background-color: $nhsuk-focus-color;
     }
-  }
-
-  &--tertiary {
-    background-color: transparent;
-    border: 2px solid $nhsuk-link-color;
-    box-shadow: none;
-    color: $nhsuk-link-color;
-
-    &:link,
-    &:visited {
-      color: $nhsuk-link-color;
-    }
-
-    &:hover {
-      background-color: $nhsuk-link-color;
-      color: $color_nhsuk-white;
-    }
-
-    &:active {
-      background-color: $nhsuk-link-color;
-      box-shadow: none;
-      top: 0;
-    }
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
-
-  &--loader {
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    justify-content: center;
   }
 
   // NHS UK overrides

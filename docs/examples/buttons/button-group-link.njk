@@ -1,0 +1,19 @@
+---
+layout: layouts/example.njk
+title: Button group with link
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsapp-button-group">
+
+  {{ button({
+    text: "Continue",
+    classes: "nhsapp-button"
+  }) }}
+
+  <a href="#" class="nhsuk-link">Cancel</a>
+
+</div>

@@ -1,0 +1,22 @@
+---
+layout: layouts/example.njk
+title: Button group
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsapp-button-group">
+
+{{ button({
+  text: "Save and continue",
+  classes: "nhsapp-button"
+}) }}
+
+{{ button({
+  text: "Save as draft",
+  classes: "nhsuk-button--secondary nhsapp-button"
+}) }}
+
+</div>
