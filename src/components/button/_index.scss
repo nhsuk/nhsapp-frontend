@@ -4,42 +4,6 @@
   @include mq($until: tablet) {
     width: 100%;
   }
-
-  // Button styled as a link
-  &--link {
-    @include nhsuk-link-style-default;
-    @include nhsuk-typography-responsive(19);
-
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    cursor: pointer;
-    font-weight: normal;
-    padding: 0;
-    text-decoration: underline;
-
-    &:hover,
-    &:active {
-      background-color: transparent;
-      top: 0;
-    }
-
-    &:focus {
-      background-color: $nhsuk-focus-color;
-    }
-  }
-
-  // NHS UK overrides
-  &--reverse {
-    .nhsuk-button {
-      &:visited,
-      &:active,
-      &:hover {
-        color: $nhsuk-focus-text-color;
-      }
-    }
-  }
 }
 
 // Button group
