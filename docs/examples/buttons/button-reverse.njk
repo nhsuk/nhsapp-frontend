@@ -1,0 +1,13 @@
+---
+layout: layouts/example.njk
+title: Button reverse
+figmaLink: "https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-4944&t=nezigF25kUAyUU2s-1"
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+{{ button({
+  text: "Continue",
+  classes: "nhsuk-button--reverse nhsapp-button"
+}) }}
