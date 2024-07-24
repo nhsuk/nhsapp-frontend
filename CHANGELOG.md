@@ -25,3 +25,9 @@ Minor updates to guidance
 ### Components and styles
 
 - Summary list now supports a two column display on mobile
+
+## `v1.2.0`
+
+### Components and styles
+
+- Button enhancements. Extending the `nhsuk-frontend` button styling to support default full width buttons on mobile.
