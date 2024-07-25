@@ -38,6 +38,4 @@ Minor updates to guidance
 
 Prefixed all Nunjucks macros with `nhsapp`.
 
->~~`card`~~ > `nhsappCard`
-
-
+> ~~`card`~~ > `nhsappCard`
