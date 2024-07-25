@@ -9,7 +9,7 @@ tags:
 
 ## How to use
 
-We use the [NHS design system button](https://service-manual.nhs.uk/design-system/components/buttons) with the modifier class `nhsapp-button` to make buttons full width on smaller screens.
+We use the [NHS design system button](https://service-manual.nhs.uk/design-system/components/buttons) with a modifier class of `nhsapp-button` to make buttons full width on smaller screens.
 
 ### Primary button
 
