@@ -2,16 +2,16 @@
 @import "node_modules/nhsuk-frontend/packages/core/settings/all";
 
 // styles
-@import "styles/icon/icons";
+@import "styles/nhsapp-icon/icons";
 @import "styles/typography";
 
 // components
-@import "components/badge/badge";
-@import "components/button";
-@import "components/card/card";
-@import "components/tag/tag";
-@import "components/timeline/timeline";
-@import "components/summary-list";
+@import "components/nhsapp-badge/badge";
+@import "components/nhsapp-button";
+@import "components/nhsapp-card/card";
+@import "components/nhsapp-tag/tag";
+@import "components/nhsapp-timeline/timeline";
+@import "components/nhsapp-summary-list";
 
 // utilities
 @import "utilities/truncate";
