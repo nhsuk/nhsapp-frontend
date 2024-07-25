@@ -3,8 +3,8 @@
 {% set title = "NHS App design resources" %}
 
 {%- from 'hero/macro.njk' import hero -%}
-{% from "card/macro.njk" import cardGroup %}
-{%- from 'card/macro.njk' import card -%}
+{% from "card/macro.njk" import nhsappCardGroup %}
+{% from "card/macro.njk" import nhsappCard %}
 
 {% block header %}
   {{ super() }}
@@ -21,7 +21,7 @@
 
       <h2 class="nhsuk-heading-s">Styles, components and patterns</h2>
 
-      {{ cardGroup({
+      {{ nhsappCardGroup({
         stacked: true,
         cards: [
           {
@@ -37,7 +37,7 @@
 
       <h2 class="nhsuk-heading-s">Content design</h2>
 
-      {{ cardGroup({
+      {{ nhsappCardGroup({
         stacked: true,
         cards: [
           {
@@ -49,7 +49,7 @@
 
       <h2 class="nhsuk-heading-s">Accessibility</h2>
 
-      {{ cardGroup({
+      {{ nhsappCardGroup({
         stacked: true,
         cards: [
           {

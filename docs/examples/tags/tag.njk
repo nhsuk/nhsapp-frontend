@@ -5,7 +5,7 @@ figmaLink: https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-Sy
 vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhstag--docs
 ---
 
-{% from 'tag/macro.njk' import tag %}
+{% from 'tag/macro.njk' import nhsappTag %}
 
 <table class="nhsuk-table">
   <thead class="nhsuk-table__head">
@@ -20,7 +20,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--white </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Started",
           classes: "nhsapp-tag--white"
         })}}
@@ -31,7 +31,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--grey </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Not started",
           classes: "nhsapp-tag--grey"
         })}}
@@ -42,7 +42,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--green </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "New",
           classes: "nhsapp-tag--green"
         })}}
@@ -53,7 +53,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--aqua-green </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Active",
           classes: "nhsapp-tag--aqua-green"
         })}}
@@ -64,7 +64,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--blue </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Pending",
           classes: "nhsapp-tag--blue"
         })}}
@@ -75,7 +75,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--purple </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Received",
           classes: "nhsapp-tag--purple"
         })}}
@@ -86,7 +86,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--pink </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Sent",
           classes: "nhsapp-tag--pink"
         })}}
@@ -97,7 +97,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--red </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Rejected",
           classes: "nhsapp-tag--red"
         })}}
@@ -108,7 +108,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--orange </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Declined",
           classes: "nhsapp-tag--orange"
         })}}
@@ -119,7 +119,7 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
         <code> nhsapp-tag--yellow </code>
       </td>
       <td class="nhsuk-table__cell">
-        {{ tag({
+        {{ nhsappTag({
           text: "Delayed",
           classes: "nhsapp-tag--yellow"
         })}}

@@ -5,17 +5,17 @@ figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-Sys
 vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs"
 ---
 
-{% from "card/macro.njk" import cardGroup %}
-{% from "card/macro.njk" import card %}
-{% from "section-heading/macro.njk" import sectionHeading %}
+{% from "card/macro.njk" import nhsappCardGroup %}
+{% from "card/macro.njk" import nhsappCard %}
+{% from "section-heading/macro.njk" import nhsappSectionHeading %}
 
 
 
-{{ sectionHeading({
+{{ nhsappSectionHeading({
   headingText: "Your GP services"
 }) }}
 
-{{ cardGroup({
+{{ nhsappCardGroup({
   stacked: true,
   cards: [
     {
@@ -33,11 +33,11 @@ vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?pat
   ]
 }) }}
 
-{{ sectionHeading({
+{{ nhsappSectionHeading({
   headingText: "Other NHS services"
 }) }}
 
-{{ cardGroup({
+{{ nhsappCardGroup({
   stacked: true,
   cards: [
     {
