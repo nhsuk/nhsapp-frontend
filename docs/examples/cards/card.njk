@@ -5,14 +5,14 @@ figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-Sys
 vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardbase--docs"
 ---
 
-{% from "card/macro.njk" import card %}
-{% from 'tag/macro.njk' import tag %}
+{% from "card/macro.njk" import nhsappCard %}
+{% from 'tag/macro.njk' import nhsappTag %}
 
 {% set tag %}
-  {{ tag({ text: "Rejected", classes: "nhsapp-tag--red nhsuk-u-margin-bottom-3" }) }}
+  {{ nhsappTag({ text: "Rejected", classes: "nhsapp-tag--red nhsuk-u-margin-bottom-3" }) }}
 {% endset %}
 
-{{ card({
+{{ nhsappCard({
   title: 'Select a clinic',
   href: '#',
   html: "

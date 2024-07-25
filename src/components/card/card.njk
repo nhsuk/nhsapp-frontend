@@ -1,5 +1,5 @@
-{% from "badge/large/macro.njk" import badgeLarge %}
-{% from "icon/macro.njk" import icon %}
+{% from "badge/large/macro.njk" import nhsappBadgeLarge %}
+{% from "icon/macro.njk" import nhsappIcon %}
 
 {% set hasBadgeLarge = true if params.badgeLarge.count > 1 %}
 
@@ -10,7 +10,7 @@
 {%- endif -%}
   <div class="nhsapp-card__container">
     {%- if params.prefixIcon -%}
-      {{ icon(params.prefixIcon) }}
+      {{ nhsappIcon(params.prefixIcon) }}
     {%- endif -%}
     <div class="nhsapp-card__content">
       {%- if params.aboveContent.html -%}
@@ -30,12 +30,12 @@
       {% endif %}
     </div>
     {% if hasBadgeLarge %}
-      {{ badgeLarge({
+      {{ nhsappBadgeLarge({
         count: params.badgeLarge.count,
         label: params.badgeLarge.label
       }) }}
     {% endif %}
-    {{ icon('chevronRight') }}
+    {{ nhsappIcon('chevronRight') }}
   </div>
 {%- if params.isListItem -%}
   </li>

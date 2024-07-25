@@ -1,10 +1,10 @@
 {% set stackedClass = 'nhsapp-cards--stacked' if params.stacked else '' %}
 
-{% from "./macro.njk" import card %}
+{% from "./macro.njk" import nhsappCard %}
 
 <ol class="nhsapp-cards {{ stackedClass }}">
   {% for cardItem in params.cards %}
-    {{ card({
+    {{ nhsappCard({
       title: cardItem.title,
       href: cardItem.href,
       html: cardItem.html,
