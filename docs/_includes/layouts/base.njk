@@ -28,9 +28,13 @@
 
       {% block header %}
         {{ header({
+        "service": {
+            "name": "App design resources"
+          },
           "showNav": "false",
           "showSearch": "false",
-          "homeHref": baseUrl
+          "homeHref": baseUrl,
+          "classes": "app-header"
         }) }}
       {% endblock %}
 

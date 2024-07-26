@@ -46,3 +46,40 @@ pre {
     word-break: break-word;
   }
 }
+
+// Header overrides
+// Fixes service name placement and style
+.app-header {
+  .nhsuk-header__link--service {
+    align-items: center;
+    color: $color_nhsuk-white;
+    display: flex;
+    gap: nhsuk-spacing(3);
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .nhsuk-logo {
+      flex-shrink: 0;
+    }
+
+    .nhsuk-header__service-name {
+      @include nhsuk-font($size: 19);
+      padding-left: 0;
+    }
+  }
+}
+
+// Hero overrides
+// Reduces spacing on mobile screens
+.app-hero {
+  .nhsuk-hero__wrapper{
+    @include mq($until: tablet) {
+      padding-bottom: nhsuk-spacing(5);
+      padding-top: nhsuk-spacing(5);  
+    }
+  }
+}
