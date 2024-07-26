@@ -47,7 +47,21 @@
         </div>
       {% endblock container %}
 
-      {% block footer %}{% endblock %}
+      {% block footer %}
+
+      {{ footer({
+        "links": [
+          {
+            "URL": "/help-and-feedback/",
+            "label": "Help and feedback"
+          },
+          {
+            "URL": "https://github.com/nhsuk/nhsapp-frontend",
+            "label": "Code on Github"
+          }
+        ]
+      })}}
+      {% endblock %}
 
     {% endblock body %}
   </body>
