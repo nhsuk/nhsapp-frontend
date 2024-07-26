@@ -29,7 +29,7 @@ assignees: ""
 
 ## Environment (where applicable)
 
-<!-- Details of your operating system, browser and the version of NHSApp Frontend you’re using may help us to reproduce your issue. -->
+<!-- Details of your operating system, browser and the version of NHS App Frontend you’re using may help us to reproduce your issue. -->
 
 - Operating system:
 - Browser:

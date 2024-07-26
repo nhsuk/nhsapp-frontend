@@ -1,6 +1,6 @@
 ---
-name: "🎨 Design defect"
-about: Report a visual design issue
+name: "♿ Accessibility issue"
+about: Report an accessibility or usability issue.
 title: ""
 labels: "\U0001F41B bug, awaiting triage"
 assignees: ""
@@ -8,7 +8,7 @@ assignees: ""
 
 <!--
     Welcome!
-    Thanks for taking the time to fill out the details below for this design defect.
+    Thanks for taking the time to fill out the details below for this accessibility issue.
 
     Please fill in as much of the template below as you’re able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
 
@@ -17,7 +17,7 @@ assignees: ""
 
 ## Description of the issue
 
-<!-- A clear and concise summary of what the design defect is. -->
+<!-- A clear and concise summary of what the accessibility issue is. -->
 
 ## Steps to reproduce the issue
 
@@ -30,3 +30,5 @@ assignees: ""
 - Operating system:
 - Browser:
 - Browser version:
+- Assistive technology:
+- Automated testing tool:
