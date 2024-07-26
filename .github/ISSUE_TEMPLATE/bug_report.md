@@ -9,7 +9,7 @@ assignees: ""
 <!--
     Welcome!
     Thanks for taking the time to fill out the details below for this bug.
-    
+
     Please fill in as much of the template below as you’re able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
 
     Your issue might already exist. If so, add a comment to the existing issue instead of creating a new one. You can find existing issues here: https://github.com/nhsuk/nhsapp-frontend/issues
