@@ -1,6 +1,6 @@
 ---
-name: "🐛 Bug report"
-about: Something not working as expected? This is the place to report your issue.
+name: "🎨 Design defect"
+about: Report a visual design issue
 title: ""
 labels: "\U0001F41B bug, awaiting triage"
 assignees: ""
@@ -8,8 +8,8 @@ assignees: ""
 
 <!--
     Welcome!
-    Thanks for taking the time to fill out the details below for this bug.
-    
+    Thanks for taking the time to fill out the details below for this design defect.
+
     Please fill in as much of the template below as you’re able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
 
     Your issue might already exist. If so, add a comment to the existing issue instead of creating a new one. You can find existing issues here: https://github.com/nhsuk/nhsapp-frontend/issues
@@ -17,15 +17,11 @@ assignees: ""
 
 ## Description of the issue
 
-<!-- A clear and concise summary of what the bug is. -->
+<!-- A clear and concise summary of what the design defect is. -->
 
 ## Steps to reproduce the issue
 
 <!-- How can we reproduce this issue? If you think it will be helpful, please provide a small code snippet and/or screenshots. -->
-
-## Actual vs expected behaviour
-
-<!-- What is happening vs what would you expect to happen instead? -->
 
 ## Environment (where applicable)
 
