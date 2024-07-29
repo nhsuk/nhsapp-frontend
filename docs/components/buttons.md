@@ -35,7 +35,7 @@ Any links within a button group will automatically align with the buttons.
 
 ## Research
 
-Testing on the NHS App has shown that having buttons full width on smaller screens isn't a problem for users but we will continue to test if:
+Testing on the NHS App has found that full width buttons are not a problem for users with smaller screens. But we will continue to test if:
 
 - full width buttons are problematic for users with low digital skills
 - users don’t actually see them as actionable things to click
