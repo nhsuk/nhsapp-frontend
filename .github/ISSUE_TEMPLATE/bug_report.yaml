@@ -1,5 +1,6 @@
-name: 🎨 Design defect
-description: Report a visual design issue
+name: 🐛 Bug report
+description:
+  Something not working as expected? This is the place to report your issue.
 title: '[Bug]: '
 labels: 'type: bug 🐛'
 body:
@@ -8,7 +9,7 @@ body:
       value: '## Welcome!'
   - type: markdown
     attributes:
-      value: Thanks for taking the time to fill out the details below for this design defect.
+      value: Thanks for taking the time to fill out this bug report.
   - type: markdown
     attributes:
       value: Please fill in as much of the template below as you're able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
@@ -40,17 +41,14 @@ body:
       placeholder: What did you see? What did you expect to see?
     validations:
       required: true
-  - type: textarea
-    id: example-url
-    attributes:
-      label: Screenshots
-      description: 'Provide screenshots of the problem'
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
       label: Steps to reproduce
-      description: 'How do we reproduce the problem displayed in the screenshots above?'
+      description:
+        'How do we reproduce the error you described using the
+        reproduction/example link above?'
     validations:
       required: true
