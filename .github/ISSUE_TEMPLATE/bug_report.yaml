@@ -29,7 +29,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Package version
+      label: NHS App Frontend version
       description: 'Which version(s) of the NHS App Frontend are you using? This can be found in your package.json file.'
       placeholder: e.g. v1.2.0
   - type: textarea

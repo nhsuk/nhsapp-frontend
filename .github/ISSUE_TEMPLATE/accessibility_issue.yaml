@@ -39,7 +39,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Package version
+      label: NHS App Frontend version
       description: 'Which version(s) of the NHS App Frontend are you using? This can be found in your package.json file.'
       placeholder: e.g. v1.2.0
   - type: input
@@ -67,7 +67,6 @@ body:
     attributes:
       label: Steps to reproduce
       description:
-        'How do we reproduce the accessibility violation you described using the
-        reproduction/example link above?'
+        'How do we reproduce the accessibility issue you described?'
     validations:
       required: true
