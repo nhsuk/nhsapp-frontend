@@ -52,5 +52,3 @@ body:
     attributes:
       label: Steps to reproduce
       description: 'How do we reproduce the problem displayed in the screenshots above?'
-    validations:
-      required: true

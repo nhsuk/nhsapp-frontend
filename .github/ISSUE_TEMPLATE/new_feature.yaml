@@ -23,12 +23,12 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Related component
+    id: related
     attributes:
       label: Related component
       description: 'Does this feature relate to an existing component?'
   - type: textarea
-    id: Context
+    id: context
     attributes:
       label: Context
       description: 'What are you trying to do? Is this something you think should behave differently, or something that you currently cannot do? Is this related to an existing issue/bug?'
@@ -38,7 +38,7 @@ body:
       label: Alternatives
       description: 'Are you currently using a workaround / alternative solution instead?'
   - type: textarea
-    id: Additional
+    id: additional
     attributes:
       label: Additional information (if applicable)
-      description: 'What evidence do you have that this meets the needs of users? It is useful for us to know of any user research / testing you have done with this feature.'
+      description: "What evidence do you have that this meets the needs of users? It's useful for us to know of any user research/testing you've done with this feature."

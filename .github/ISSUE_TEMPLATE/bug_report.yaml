@@ -46,5 +46,3 @@ body:
       label: Steps to reproduce
       description: 'How do we reproduce the error you described using the
         reproduction/example link above?'
-    validations:
-      required: true
