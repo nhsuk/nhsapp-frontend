@@ -59,7 +59,20 @@ pre {
     width: 100%;
 
     &:hover {
-      text-decoration: underline;
+      .nhsuk-header__service-name {
+        text-decoration: underline;
+      }
+    }
+
+    &:focus {
+      background-color: $nhsuk-focus-color;
+      box-shadow:
+        0 0 0 4px $nhsuk-focus-color,
+        0 4px 0 4px $nhsuk-focus-text-color;
+
+      .nhsuk-header__service-name {
+        text-decoration: none;
+      }
     }
 
     .nhsuk-logo {
