@@ -1,6 +1,5 @@
 name: 🐛 Bug report
-description:
-  Something not working as expected? This is the place to report your issue.
+description: Something not working as expected? This is the place to report your issue.
 title: '[Bug]: '
 labels: 'type: bug 🐛'
 body:
@@ -45,8 +44,7 @@ body:
     id: reproduce
     attributes:
       label: Steps to reproduce
-      description:
-        'How do we reproduce the error you described using the
+      description: 'How do we reproduce the error you described using the
         reproduction/example link above?'
     validations:
       required: true

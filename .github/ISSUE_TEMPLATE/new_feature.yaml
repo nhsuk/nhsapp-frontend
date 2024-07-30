@@ -19,7 +19,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "Briefly describe the thing."
+      description: 'Briefly describe the thing.'
     validations:
       required: true
   - type: textarea
@@ -41,4 +41,4 @@ body:
     id: Additional
     attributes:
       label: Additional information (if applicable)
-      description: 'What evidence do you have that this meets the needs of users? It's useful for us to know of any user research/testing you've done with this feature.'
+      description: 'What evidence do you have that this meets the needs of users? It is useful for us to know of any user research / testing you have done with this feature.'

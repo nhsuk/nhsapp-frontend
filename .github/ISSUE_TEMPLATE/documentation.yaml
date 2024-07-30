@@ -19,7 +19,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "Tell us more about the proposal or problem."
+      description: 'Tell us more about the proposal or problem.'
     validations:
       required: true
   - type: textarea
