@@ -1,6 +1,6 @@
 name: ♿ Accessibility Issue 
 description: Report an accessibility or usability issue.
-title: '[a11y]: '
+title: '[accessibility]: '
 labels: 'type: ♿ accessibility'
 body:
   - type: markdown
