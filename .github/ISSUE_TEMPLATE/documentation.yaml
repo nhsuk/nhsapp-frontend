@@ -1,7 +1,7 @@
 name: 📖 Documentation
 description: Add new documentation, or report missing, incorrect or unclear documentation
 title: '[Documentation]: '
-labels: 'type: documentation 📖'
+labels: 'type: documentation, awaiting triage'
 body:
   - type: markdown
     attributes:

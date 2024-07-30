@@ -1,7 +1,7 @@
 name: 🎨 Design defect
 description: Report a visual design issue
 title: '[Bug]: '
-labels: 'type: bug 🐛'
+labels: 'type: bug, awaiting triage'
 body:
   - type: markdown
     attributes:
