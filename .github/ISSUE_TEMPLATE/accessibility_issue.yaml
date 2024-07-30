@@ -40,7 +40,7 @@ body:
     id: version
     attributes:
       label: Package version
-      description: 'Which version(s) are you using?'
+      description: 'Which version(s) of the NHS App Frontend are you using? This can be found in your package.json file.'
       placeholder: e.g. v1.2.0
   - type: input
     id: technology
