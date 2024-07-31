@@ -1,0 +1,26 @@
+{% extends "./base.njk" %}
+
+{% block breadcrumb %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block container %}
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper app-content">
+          {% block main %}
+            <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+              {{ title }}
+            </h1>
+            <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>
+            {{ content | safe }}
+          {% endblock %}
+        </main>
+      </div>
+    </div>
+  </div>
+{% endblock %}

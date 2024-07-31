@@ -11,7 +11,8 @@
 
   {{ hero({
     "heading": "NHS App design resources",
-    "text": "Design, build, and deliver accessible and consistent services for the NHS App"
+    "text": "Design, build, and deliver accessible and consistent services for the NHS App",
+    "classes": "app-hero"
   }) }}
 {% endblock %}
 
@@ -19,7 +20,7 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-full">
 
-      <h2 class="nhsuk-heading-s">Styles, components and patterns</h2>
+      <h2 class="nhsuk-heading-l">Styles, components and patterns</h2>
 
       {{ nhsappCardGroup({
         stacked: true,
@@ -35,7 +36,7 @@
         ]
       }) }}
 
-      <h2 class="nhsuk-heading-s">Content design</h2>
+      <h2 class="nhsuk-heading-l">Content design</h2>
 
       {{ nhsappCardGroup({
         stacked: true,
@@ -47,7 +48,7 @@
         ]
       }) }}
 
-      <h2 class="nhsuk-heading-s">Accessibility</h2>
+      <h2 class="nhsuk-heading-l">Accessibility</h2>
 
       {{ nhsappCardGroup({
         stacked: true,
@@ -65,13 +66,12 @@
 
       <hr>
 
-      <h2 class="nhsuk-heading-s">Get help</h2>
-      <p>If you have a question, idea or suggestion, you can use the:</p>
-      <ul>
-        <li><a href="https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19">#forum-app-design-system on NHS England Slack</a></li>
-        <li><a href="https://nhs-service-manual.slack.com/archives/CDJ29AQCD">#general on NHS service manual Slack</a></li>
-        <li><a href="https://github.com/nhsuk/nhsapp-frontend/issues/new/choose">NHS App Frontend GitHub issues</a></li>
-      </ul>
+      <div class="nhsuk-u-reading-width">
+
+        <h2 class="nhsuk-heading-l">Get help</h2>
+        <p>The NHS App Design System Team provides support for users of the NHS App design resources. <a href="/help-and-feedback/">Contact us</a> to ask for help.
+
+      </div>
 
     </div>
   </div>

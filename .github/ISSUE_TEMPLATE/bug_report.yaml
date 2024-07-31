@@ -1,0 +1,48 @@
+name: 🐛 Bug report
+description: Something not working as expected? This is the place to report your issue.
+title: '[Bug]: '
+labels: 'type: bug, awaiting triage'
+body:
+  - type: markdown
+    attributes:
+      value: '## Welcome!'
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this bug report.
+  - type: markdown
+    attributes:
+      value: Please fill in as much of the template below as you're able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
+  - type: markdown
+    attributes:
+      value: Your issue might already exist. If so, add a comment to the existing issue instead of creating a new one. You can [find existing issues here](https://github.com/nhsuk/nhsapp-frontend/issues).
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser(s) are you experiencing the issue?
+      multiple: true
+      options:
+        - Chrome
+        - Safari
+        - Firefox
+        - Edge
+  - type: input
+    id: version
+    attributes:
+      label: NHS App Frontend version
+      description: 'Which version(s) of the NHS App Frontend are you using? This can be found in your package.json file.'
+      placeholder: e.g. v1.2.0
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Tell us more about the problem that you're running into"
+      placeholder: What did you see? What did you expect to see?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: 'How do we reproduce the error you described using the
+        reproduction/example link above?'

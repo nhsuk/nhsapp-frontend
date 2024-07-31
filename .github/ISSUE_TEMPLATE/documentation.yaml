@@ -1,0 +1,34 @@
+name: 📖 Documentation
+description: Add new documentation, or report missing, incorrect or unclear documentation
+title: '[Documentation]: '
+labels: 'type: documentation, awaiting triage'
+body:
+  - type: markdown
+    attributes:
+      value: '## Welcome!'
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out the details below for documentation.
+  - type: markdown
+    attributes:
+      value: Please fill in as much of the template below as you're able to. If you're unsure whether the issue already exists or how to fill in the template, open an issue anyway. Our team will help you to complete the rest.
+  - type: markdown
+    attributes:
+      value: Your issue might already exist. If so, add a comment to the existing issue instead of creating a new one. You can [find existing issues here](https://github.com/nhsuk/nhsapp-frontend/issues).
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 'Tell us more about the proposal or problem.'
+    validations:
+      required: true
+  - type: textarea
+    id: example-url
+    attributes:
+      label: Related documentation
+      description: 'Does this issue refer to a gap or mistake in some existing documentation? Provide a link if possible.'
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (where applicable)
+      description: 'Please provide any relevant user research or evidence to support this change.'
