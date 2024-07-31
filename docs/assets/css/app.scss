@@ -17,6 +17,8 @@
 @import "src/all";
 
 // Import all styles specific for the design system docs
+@import "docs/assets/css/components/header";
+@import "docs/assets/css/components/hero";
 @import "docs/assets/css/components/side-navigation";
 @import "docs/assets/css/tabs";
 @import "docs/assets/css/content";
@@ -44,55 +46,5 @@ pre {
 @include mq($until: tablet) {
   .app-table tr td {
     word-break: break-word;
-  }
-}
-
-// Header overrides
-// Fixes service name placement and style
-.app-header {
-  .nhsuk-header__link--service {
-    align-items: center;
-    color: $color_nhsuk-white;
-    display: flex;
-    gap: nhsuk-spacing(3);
-    text-decoration: none;
-    width: 100%;
-
-    &:hover {
-      .nhsuk-header__service-name {
-        text-decoration: underline;
-      }
-    }
-
-    &:focus {
-      background-color: $nhsuk-focus-color;
-      box-shadow:
-        0 0 0 4px $nhsuk-focus-color,
-        0 4px 0 4px $nhsuk-focus-text-color;
-
-      .nhsuk-header__service-name {
-        text-decoration: none;
-      }
-    }
-
-    .nhsuk-logo {
-      flex-shrink: 0;
-    }
-
-    .nhsuk-header__service-name {
-      @include nhsuk-font($size: 19);
-      padding-left: 0;
-    }
-  }
-}
-
-// Hero overrides
-// Reduces spacing on mobile screens
-.app-hero {
-  .nhsuk-hero__wrapper {
-    @include mq($until: tablet) {
-      padding-bottom: nhsuk-spacing(5);
-      padding-top: nhsuk-spacing(5);
-    }
   }
 }
