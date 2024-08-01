@@ -1,7 +1,7 @@
 name: ♿ Accessibility Issue
 description: Report an accessibility or usability issue.
-title: ''
-labels: 'accessibility, awaiting triage'
+title: '[accessibility]: '
+labels: 'type: accessibility, awaiting triage'
 body:
   - type: markdown
     attributes:
