@@ -34,6 +34,10 @@ Minor updates to guidance
 
 ## `v2.0.0`
 
+### Fixes
+
+Create symlink to `docs/_includes` so that the docs can include anything in `src`
+
 ### Breaking changes
 
 Prefixed all Nunjucks macros with `nhsapp`.
