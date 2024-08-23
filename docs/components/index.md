@@ -7,11 +7,12 @@ description: These are components designed specifically for the needs of NHS App
 
 Check the [NHS design system](https://service-manual.nhs.uk/design-system) to see if the component you need is already being used across the NHS.
 
-If you can't find what you need in the NHS design system or the NHS App design components, you can:
+## Can't find what you need?
 
-- [check the NHS community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1) to see if it is being worked on by other teams across the NHS and add your findings
-- [check the NHS App component backlog](https://github.com/orgs/nhsuk/projects/8) to see if it is being worked on by the NHS App and add your findings
-- [add a new component to the NHS App component backlog](https://github.com/nhsuk/nhsapp-frontend/issues/new?assignees=&labels=&projects=&template=new_component_or_pattern.md&title=)
+If you can't find what you need in the NHS design system or the NHS App design components, you can check the:
+
+- [NHS design system backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog/projects/1)
+- [NHS App component backlog](https://github.com/orgs/nhsuk/projects/8)
 
 ## Using code snippets in prototypes
 

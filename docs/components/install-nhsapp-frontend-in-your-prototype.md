@@ -1,6 +1,8 @@
 ---
 layout: layouts/component.njk
 title: Install NHS App frontend in your prototype
+tags:
+  - componentGuidance
 ---
 
 While most NHS App components are created to automatically work with the NHS prototype kit, some patterns have been created with specific NHS App styles.
