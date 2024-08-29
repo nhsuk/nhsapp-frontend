@@ -5,7 +5,7 @@ title: NHS App design components
 description: These are components designed specifically for the needs of NHS App users. They are not yet in the NHS design system.
 ---
 
-## Finding the component you need 
+## Finding the component you need
 
 Check the [NHS design system](https://service-manual.nhs.uk/design-system) to see if the component you need is already being used across the NHS.
 
