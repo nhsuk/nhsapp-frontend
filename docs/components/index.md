@@ -2,7 +2,7 @@
 layout: layouts/component.njk
 isIndex: true
 title: NHS App design components
-description: These are components designed specifically for the needs of NHS App users and are not yet in the NHS design system.
+description: These are components designed specifically for the needs of NHS App users. They are not yet in the NHS design system.
 ---
 
 ## Finding the component you need
