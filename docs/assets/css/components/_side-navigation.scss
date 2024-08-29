@@ -26,7 +26,7 @@
 
 .app-side-navigation__item {
   @include nhsuk-font($size: 16);
-  margin-left: - nhsuk-spacing(2);
+  margin-left: -12px;
 
   a {
     padding-left: nhsuk-spacing(2);
