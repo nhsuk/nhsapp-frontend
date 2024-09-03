@@ -27,6 +27,11 @@
     currentPath: page.url,
     items: collections.component | sort(attribute="data.title")
   }) }}
+  {{ appSideNavigation({
+    currentPath: page.url,
+    items: collections.componentGuidance | sort(attribute="data.title"),
+    classes: 'app-side-navigation--section'
+  }) }}
 {% endset %}
 
 {% block main %}

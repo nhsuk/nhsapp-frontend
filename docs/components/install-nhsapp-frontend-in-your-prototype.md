@@ -1,6 +1,8 @@
 ---
 layout: layouts/component.njk
 title: Install NHS App frontend in your prototype
+tags:
+  - componentGuidance
 ---
 
 While most NHS App components are created to automatically work with the NHS prototype kit, some patterns have been created with specific NHS App styles.
@@ -27,6 +29,85 @@ Enter
 
 ```sh
 npm install --save nhsapp-frontend
+```
+
+## Step 3
+
+In your HTML editor, open
+
+```sh
+/app/assets/sass/application.scss
+```
+
+After
+
+```sh
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+```
+
+Paste
+
+```sh
+// Import all styles from the NHS App frontend library
+@import 'node_modules/nhsapp-frontend/dist/nhsapp/all';
+```
+
+## Step 4
+
+In your root folder, open
+
+```sh
+/app.js
+```
+
+and find
+
+```sh
+appViews
+```
+
+After
+
+```sh
+path.join(__dirname, 'node_modules/nhsuk-frontend/packages/components'),
+```
+
+Add
+
+```sh
+path.join(__dirname, 'node_modules/nhsapp-frontend/dist'),
+```
+
+So it looks like this
+
+```sh
+const appViews = [
+  path.join(__dirname, 'app/views/'),
+  path.join(__dirname, 'node_modules/nhsuk-frontend/packages/components'),
+  path.join(__dirname, 'node_modules/nhsapp-frontend/dist'),
+  path.join(__dirname, 'docs/views/'),
+];
+```
+
+## Step 5
+
+In your root folder, open
+
+```sh
+/app.js
+```
+
+and find
+
+```sh
+app.use('/nhsuk-frontend', express.static(path.join(__dirname, 'node_modules/nhsuk-frontend/dist')));
+```
+
+and on the next line paste
+
+```sh
+app.use('/nhsapp-frontend', express.static(path.join(__dirname, 'node_modules/nhsapp-frontend/dist/nhsapp')));
 ```
 
 Once you have installed NHS App frontend, all NHS App components should work in your prototype.
