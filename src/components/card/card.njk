@@ -18,7 +18,7 @@
           {{ params.aboveContent.html | safe }}
         </div>
       {%- endif -%}
-      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state">
+      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" aria-label="{{ params.linkAriaLabel }}">
         {{ params.title }}
       </a>
       {% if params.description %}
