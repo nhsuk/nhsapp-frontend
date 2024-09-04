@@ -1,5 +1,5 @@
 name: 🎨 Design defect
-description: Report a visual design issue
+description: Report a visual or interaction design issue
 title: '[Bug]: '
 labels: 'type: bug, awaiting triage'
 body:
