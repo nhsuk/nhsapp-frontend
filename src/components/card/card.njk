@@ -32,7 +32,8 @@
     {% if hasBadgeLarge %}
       {{ nhsappBadgeLarge({
         count: params.badgeLarge.count,
-        label: params.badgeLarge.label
+        label: params.badgeLarge.label,
+        ariaHidden: params.badgeLarge.ariaHidden
       }) }}
     {% endif %}
     {{ nhsappIcon('chevronRight') }}

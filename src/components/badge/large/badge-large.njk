@@ -1,7 +1,5 @@
-{% set cardLink = 'true' if params.withCardLink else 'null' %}
-
 {%- if params.count -%}
-<p class="nhsapp-badge" aria-hidden="{{ true if params.withCardLink }}">
+<p class="nhsapp-badge" {{ 'aria-hidden' if params.ariaHidden }}>
     <span class="nhsuk-u-visually-hidden">You have</span>
     {% if params.count > 9 %}
         9+
