@@ -4,9 +4,11 @@
 {% set hasBadgeLarge = true if params.badgeLarge.count > 1 %}
 
 {%- if params.isListItem -%}
-  <li class="nhsapp-card">
+  <li class="nhsapp-card 
+  {{ params.classes if params.classes }}">
 {%- else -%}
-  <div class="nhsapp-card">
+  <div class="nhsapp-card 
+  {{ params.classes if params.classes }}">
 {%- endif -%}
   <div class="nhsapp-card__container">
     {%- if params.prefixIcon -%}
