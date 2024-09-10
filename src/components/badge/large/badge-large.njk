@@ -1,5 +1,7 @@
 {%- if params.count -%}
-<p class="nhsapp-badge" {{ 'aria-hidden' if params.ariaHidden }}>
+<p class="nhsapp-badge
+{{ params.classes if params.classes }}" 
+{%- if params.ariaHidden %} aria-hidden="{{ params.ariaHidden }}"{% endif %}>
     <span class="nhsuk-u-visually-hidden">You have</span>
     {% if params.count > 9 %}
         9+
