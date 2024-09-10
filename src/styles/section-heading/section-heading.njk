@@ -1,6 +1,7 @@
 {% set subheadingClass = 'nhsuk-u-margin-bottom-3' if params.subheadingText else '' %}
 
-<div class="nhsapp-section-heading">
+<div class="nhsapp-section-heading 
+{{ params.classes if params.classes }}">
   <h2 class="nhsuk-heading-s {{ subheadingClass }}">
     {{ params.headingText }}
   </h2>

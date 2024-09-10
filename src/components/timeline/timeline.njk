@@ -24,7 +24,8 @@
   </li>
 {% endmacro %}
 
-<ol class="nhsapp-timeline">
+<ol class="nhsapp-timeline 
+{{ params.classes if params.classes }}">
   {% for item in params.items %}
     {% if item %}{{ _timelineItem(params, item) }}{% endif %}
   {% endfor %}

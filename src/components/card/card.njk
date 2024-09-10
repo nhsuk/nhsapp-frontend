@@ -4,9 +4,11 @@
 {% set hasBadgeLarge = true if params.badgeLarge.count > 1 %}
 
 {%- if params.isListItem -%}
-  <li class="nhsapp-card">
+  <li class="nhsapp-card 
+  {{ params.classes if params.classes }}">
 {%- else -%}
-  <div class="nhsapp-card">
+  <div class="nhsapp-card 
+  {{ params.classes if params.classes }}">
 {%- endif -%}
   <div class="nhsapp-card__container">
     {%- if params.prefixIcon -%}
@@ -18,7 +20,8 @@
           {{ params.aboveContent.html | safe }}
         </div>
       {%- endif -%}
-      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state">
+      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
+      {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
         {{ params.title }}
       </a>
       {% if params.description %}
@@ -32,7 +35,9 @@
     {% if hasBadgeLarge %}
       {{ nhsappBadgeLarge({
         count: params.badgeLarge.count,
-        label: params.badgeLarge.label
+        label: params.badgeLarge.label,
+        classes: params.badgeLarge.classes,
+        ariaHidden: params.badgeLarge.ariaHidden
       }) }}
     {% endif %}
     {{ nhsappIcon('chevronRight') }}
