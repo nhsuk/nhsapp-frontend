@@ -21,7 +21,7 @@
         </div>
       {%- endif -%}
       {%- if params.readOnly -%}
-        <h3 class="nhsapp-card__title">{{ params.title }}</h3>
+        <p class="nhsapp-card__title">{{ params.title }}</p>
       {%- else -%}
         <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
       {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
@@ -45,7 +45,7 @@
       }) }}
     {% endif %}
     {%- if not params.readOnly -%}
-      {{ icon('chevronRight') }}
+      {{ nhsappIcon('chevronRight') }}
     {%- endif -%}
   </div>
 {%- if params.isListItem -%}
