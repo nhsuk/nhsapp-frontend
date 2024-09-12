@@ -48,6 +48,11 @@
       {{ nhsappIcon('chevronRight') }}
     {%- endif -%}
   </div>
+  {%- if params.footer.html -%}
+    <div class="nhsapp-card__footer">
+      {{ params.footer.html | safe }}
+    </div>
+  {%- endif -%}
 {%- if params.isListItem -%}
   </li>
 {%- else -%}
