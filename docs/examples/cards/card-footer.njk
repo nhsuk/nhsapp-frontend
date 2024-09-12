@@ -1,0 +1,17 @@
+---
+layout: layouts/example.njk
+title: Card with footer
+figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1"
+vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardbase--docs"
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+{{ nhsappCard({
+  title: 'Card title',
+  href: '#',
+  html: "
+    <p class='nhsuk-u-margin-top-2'>Card content</p>
+  ",
+  footer: { html: "<p>Card footer content</p>" }
+}) }} 

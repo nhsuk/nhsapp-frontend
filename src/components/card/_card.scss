@@ -55,6 +55,10 @@ $card-border-hover-color: $color_nhsuk-grey-3;
 
   &__content {
     flex-grow: 1;
+
+    :last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -79,6 +83,21 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 
   &__below {
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__footer {
+    border-top: $card-border-width solid $card-border-color;
+    margin: 0 nhsuk-spacing(3);
+    padding: 20px 0;
+
+    @include mq($from: tablet) {
+      margin: 0 nhsuk-spacing(4);
+      padding: nhsuk-spacing(4) 0;
+    }
+
     :last-child {
       margin-bottom: 0;
     }
