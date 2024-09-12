@@ -15,6 +15,12 @@ $card-border-hover-color: $color_nhsuk-grey-3;
 
   padding: 0;
 
+  &__title {
+    @include nhsuk-typography-responsive(22);
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
   .nhsapp-icon {
     height: 24px;
     width: 24px;

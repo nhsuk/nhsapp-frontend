@@ -20,10 +20,14 @@
           {{ params.aboveContent.html | safe }}
         </div>
       {%- endif -%}
-      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
+      {%- if params.readOnly -%}
+        <p class="nhsapp-card__title">{{ params.title }}</p>
+      {%- else -%}
+        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
       {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
-        {{ params.title }}
-      </a>
+          {{ params.title }}
+        </a>
+      {%- endif -%}
       {% if params.description %}
         <div class="nhsapp-card__below">
           <p class="nhsuk-u-margin-top-1">{{ params.description }}</p>
@@ -40,7 +44,9 @@
         ariaHidden: params.badgeLarge.ariaHidden
       }) }}
     {% endif %}
-    {{ nhsappIcon('chevronRight') }}
+    {%- if not params.readOnly -%}
+      {{ nhsappIcon('chevronRight') }}
+    {%- endif -%}
   </div>
 {%- if params.isListItem -%}
   </li>
