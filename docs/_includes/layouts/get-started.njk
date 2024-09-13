@@ -3,7 +3,7 @@
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
 {% block breadcrumb %}
-  {% if title === "Components" %}
+  {% if title === "Get started" %}
     {{ breadcrumb({
       href: "/",
       text: "Home"
@@ -16,8 +16,8 @@
           text: "Home"
         }
       ],
-      href: "/components",
-      text: "Components"
+      href: "/get-started",
+      text: "Get started"
     }) }}
   {% endif %}
 {% endblock %}
@@ -25,19 +25,13 @@
 {% set sidebar %}
   {{ appSideNavigation({
     currentPath: page.url,
-    items: collections.component | sort(attribute="data.title")
+    items: collections.getStarted | sort(attribute="data.title")
   }) }}
 {% endset %}
 
 {% block main %}
-  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-7">
     {{ title }}
   </h1>
-  <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>
   {{ content | safe }}
-  {% if tags and "component" in tags %}
-    {% include "layouts/partials/feedback-section.njk" %}
-  {% else %}
-  {% endif %}
-
 {% endblock %}

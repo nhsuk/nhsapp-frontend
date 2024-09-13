@@ -20,6 +20,7 @@
 @import "docs/assets/css/components/header";
 @import "docs/assets/css/components/hero";
 @import "docs/assets/css/components/side-navigation";
+@import "docs/assets/css/components/callout";
 @import "docs/assets/css/tabs";
 @import "docs/assets/css/content";
 @import "docs/assets/css/example";
@@ -47,4 +48,33 @@ pre {
   .app-table tr td {
     word-break: break-word;
   }
+}
+
+// Frontend button colour overrides
+.nhsuk-button--reverse {
+  color: $color_nhsuk-black;
+  
+  &:visited {
+    color: $color_nhsuk-black;
+  }
+}
+
+// Home page section
+.app-section {
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  &--white {
+    background-color: white;
+  }
+
+  &--with-bottom-border {
+    border-bottom: 2px solid $color_nhsuk-grey-4;
+  }
+}
+
+.app-section-break {
+  border-width: 2px;
+  border-color: $color_nhsuk-grey-4;
 }

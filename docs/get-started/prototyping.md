@@ -1,11 +1,9 @@
 ---
-layout: layouts/component.njk
-title: Install NHS App frontend in your prototype
+layout: layouts/get-started.njk
+title: Prototyping
 tags:
-  - componentGuidance
+  - getStarted
 ---
-
-While most NHS App components are created to automatically work with the NHS prototype kit, some patterns have been created with specific NHS App styles.
 
 This guide explains how to install NHS App frontend to support these styles. You will only have to follow these steps once for your prototype. You must use version 4.0.0 or later of the NHS prototype kit for these to work.
 

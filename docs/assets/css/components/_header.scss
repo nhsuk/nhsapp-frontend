@@ -1,6 +1,10 @@
 // Header overrides
 // Fixes service name placement and style
 .app-header {
+  .nhsuk-header__logo {
+    max-width: 100%;
+  }
+  
   .nhsuk-header__link--service {
     align-items: center;
     color: $color_nhsuk-white;
@@ -35,4 +39,23 @@
       padding-left: 0;
     }
   }
+}
+
+// Bump the border-bottom size up from 4px to 6px
+// - this gives the 'current' item more visual weight
+.nhsuk-header__navigation-link,
+.nhsuk-header__navigation-link:active,
+.nhsuk-header__navigation-link:focus {
+  border-bottom-width: 6px;
+}
+
+// A style to highlight the current section the user is in
+.app-header__navigation-link--current {
+  text-decoration: none;
+  border-bottom-color: $nhsuk-border-color;
+}
+
+// Hide home nav link
+.nhsuk-header__navigation-item--home {
+  display: none;
 }

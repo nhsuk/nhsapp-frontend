@@ -1,78 +1,61 @@
 {% extends "layouts/base.njk" %}
 
-{% set title = "NHS App design resources" %}
+{% set title = "NHS App design system" %}
 
-{%- from 'hero/macro.njk' import hero -%}
 {% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
 {% block header %}
   {{ super() }}
 
-  {{ hero({
-    "heading": "NHS App design resources",
-    "text": "Design, build, and deliver accessible and consistent services for the NHS App",
-    "classes": "app-hero"
-  }) }}
-{% endblock %}
-
-{% block main %}
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-
-      <h2 class="nhsuk-heading-l">Styles, components and patterns</h2>
-
-      {{ nhsappCardGroup({
-        stacked: true,
-        cards: [
-          {
-            title: 'NHS design system',
-            href: 'https://service-manual.nhs.uk/design-system'
-          },
-          {
-            title: 'NHS App design components',
-            href: './components/'
-          }
-        ]
-      }) }}
-
-      <h2 class="nhsuk-heading-l">Content design</h2>
-
-      {{ nhsappCardGroup({
-        stacked: true,
-        cards: [
-          {
-            title: 'NHS content guide',
-            href: 'https://service-manual.nhs.uk/content'
-          }
-        ]
-      }) }}
-
-      <h2 class="nhsuk-heading-l">Accessibility</h2>
-
-      {{ nhsappCardGroup({
-        stacked: true,
-        cards: [
-          {
-            title: 'NHS accessibility guidance',
-            href: 'https://service-manual.nhs.uk/accessibility'
-          },
-          {
-            title: 'Accessibility checklist',
-            href: 'https://nhsdigital.github.io/accessibility-checklist/checklist-full/'
-          }
-        ]
-      }) }}
-
-      <hr>
-
-      <div class="nhsuk-u-reading-width">
-
-        <h2 class="nhsuk-heading-l">Get help</h2>
-        <p>The NHS App Design System Team provides support for users of the NHS App design resources. <a href="/help-and-feedback/">Contact us</a> to ask for help.
-
+  <section class="nhsuk-hero app-hero">
+    <div class="nhsuk-width-container nhsuk-hero--border">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          <div class="nhsuk-hero__wrapper">
+            <h1 class="nhsuk-u-margin-bottom-3">NHS App design system</h1>
+            <p class="nhsuk-body-l">Design, build, and deliver accessible and consistent services for the NHS App</p>
+            <a href="/get-started/" class="nhsuk-button nhsuk-button--reverse nhsapp-button nhsuk-u-margin-bottom-0">Get started</a>
+          </div>
+        </div>
       </div>
-
     </div>
-  </div>
+  </section>
 {% endblock %}
+
+{% block container %}
+  <main role="main" id="maincontent">
+    <section class="app-section app-section--white app-section--with-bottom-border nhsuk-main-wrapper nhsuk-main-wrapper--l">
+      <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div class="nhsuk-u-reading-width">
+              <h2>What's new</h2>
+              <p>September 2024: We've released....</p>
+              <p>Read the <a href="#" class="nhsuk-link--no-visited-state">full release notes</a> to see what's changed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="app-section nhsuk-main-wrapper nhsuk-main-wrapper--l">
+      <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full">
+            <div class="nhsuk-u-reading-width">
+              <h2>Components</h2>
+              <p>Save time with reusable, accessible components.</p>
+              <p><a href="/components/" class="nhsuk-link--no-visited-state">Browse components</a></p>
+              <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break">
+              <h2>Contributing</h2>
+              <p>Anyone can contribute to the NHS App design system by proposing a new style, component, or pattern.</p>
+              <p><a href="/community/" class="nhsuk-link--no-visited-state">How to contribute</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+{% endblock container %}
+

@@ -1,7 +1,7 @@
-{%- from 'header/macro.njk' import header -%}
-{%- from 'footer/macro.njk' import footer -%}
+{% from 'header/macro.njk' import header %}
+{% from 'footer/macro.njk' import footer %}
 {% from 'breadcrumb/macro.njk' import breadcrumb %}
-{%- from 'skip-link/macro.njk' import skipLink -%}
+{% from 'skip-link/macro.njk' import skipLink %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,14 +28,14 @@
 
       {% block header %}
         {{ header({
-        "service": {
-            "name": "App design resources"
+          service: {
+            name: "App design system"
           },
-          "showNav": "false",
-          "showSearch": "false",
-          "homeHref": baseUrl,
-          "classes": "app-header",
-          "ariaLabel": "NHS App design resources homepage"
+          showNav: "false",
+          showSearch: "false",
+          homeHref: baseUrl,
+          classes: "app-header",
+          ariaLabel: "NHS App design system homepage"
         }) }}
       {% endblock %}
 
