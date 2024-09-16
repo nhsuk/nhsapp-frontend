@@ -24,8 +24,16 @@
 
 {% set sidebar %}
   {{ appSideNavigation({
+    label: 'How we work',
     currentPath: page.url,
-    items: collections.getStarted | sort(attribute="data.title")
+    sections: [
+      {
+        heading: {
+          text: 'How we work'
+        },
+        items: collections.getStarted | sort(attribute="data.title")
+      }
+    ]
   }) }}
 {% endset %}
 

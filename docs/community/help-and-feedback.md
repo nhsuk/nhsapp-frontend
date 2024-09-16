@@ -1,7 +1,9 @@
 ---
-layout: layouts/plain.njk
+layout: layouts/community.njk
 title: Help and feedback
 description: The NHS App Design System Team provides support for users of the NHS App design resources. Contact us to ask for help or to provide feedback.
+tags:
+  - community
 ---
 
 ## Contact us on Slack

@@ -24,8 +24,16 @@
 
 {% set sidebar %}
   {{ appSideNavigation({
+    label: 'Support',
     currentPath: page.url,
-    items: collections.community | sort(attribute="data.title")
+    sections: [
+      {
+        heading: {
+          text: 'Support'
+        },
+        items: collections.community | sort(attribute="data.title")
+      }
+    ]
   }) }}
 {% endset %}
 
