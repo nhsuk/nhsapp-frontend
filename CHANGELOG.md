@@ -32,7 +32,7 @@ Minor updates to guidance
 
 - Button enhancements. Extending the `nhsuk-frontend` button styling to support default full width buttons on mobile.
 
-## `v2.0.0`
+## `v2.0.1`
 
 ### Fixes
 
