@@ -32,7 +32,7 @@ Minor updates to guidance
 
 - Button enhancements. Extending the `nhsuk-frontend` button styling to support default full width buttons on mobile.
 
-## `v2.0.0`
+## `v2.0.1`
 
 ### Fixes
 
@@ -43,3 +43,16 @@ Create symlink to `docs/_includes` so that the docs can include anything in `src
 Prefixed all Nunjucks macros with `nhsapp`.
 
 > ~~`card`~~ > `nhsappCard`
+
+## `v2.1.0`
+
+Updates to guidance and the microsite
+
+### Fixes
+
+Card link with badge accessibility fix. Added option to provide `aria-hidden` to the badge when used with the card link. Plus, changed the badge HTML from a `span` to a `p`. This fixes issues we saw with MacOS Voiceover.
+
+### Components and styles
+
+- The card component now supports a footer section. The guidance for this will be coming very soon after this release
+- The card component now supports a "read only" view. The chevron icon is hidden and the title is no longer a link
