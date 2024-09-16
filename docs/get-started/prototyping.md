@@ -5,7 +5,9 @@ tags:
   - getStarted
 ---
 
-This guide explains how to install NHS App frontend to support these styles. You will only have to follow these steps once for your prototype. You must use version 4.0.0 or later of the NHS prototype kit for these to work.
+This guide explains how to create prototypes using the NHS App design system and [NHS prototype kit](https://nhsuk-prototype-kit.azurewebsites.net/docs).
+
+You must follow the [NHS prototype kit setup guide](https://nhsuk-prototype-kit.azurewebsites.net/docs) first.
 
 ## Step 1
 
