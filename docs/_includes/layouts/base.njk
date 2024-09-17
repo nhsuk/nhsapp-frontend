@@ -27,22 +27,13 @@
       {% endblock skiplink %}
 
       {% block header %}
-        <!--{{ header({
-          service: {
-            name: "App design system"
-          },
-          showNav: "false",
-          showSearch: "false",
-          homeHref: baseUrl,
-          classes: "app-header",
-          ariaLabel: "NHS App design system homepage"
-        }) }}-->
         {{ header({
           service: {
             name: "App design system"
           },
           showNav: "true",
           showSearch: "false",
+          homeHref: baseUrl,
           classes: "app-header nhsuk-header--white-nav",
           primaryLinks: [
               {
