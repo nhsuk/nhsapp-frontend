@@ -1,6 +1,8 @@
 // Hero overrides
 // Reduces spacing on mobile screens
 .app-hero {
+  background-color: $app-brand-color;
+  
   .nhsuk-hero__wrapper {
     @include mq($until: tablet) {
       padding-bottom: nhsuk-spacing(5);

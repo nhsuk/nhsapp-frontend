@@ -3,7 +3,7 @@
   @include nhsuk-responsive-margin(5, "bottom");
   @include nhsuk-responsive-padding(4);
 
-  border: nhsuk-spacing(1) solid $color_nhsuk-blue;
+  border: nhsuk-spacing(1) solid $app-brand-color;
 
   &__content {
     @include reading-width();

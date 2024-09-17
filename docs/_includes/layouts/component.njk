@@ -33,7 +33,7 @@
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>
-  <p class="nhsuk-body-l nhsuk-u-margin-bottom-7">{{ description }}</p>
+  <p class="nhsuk-u-margin-bottom-5">{{ description }}</p>
   {{ content | safe }}
   {% if tags and "component" in tags %}
     {% include "layouts/partials/feedback-section.njk" %}

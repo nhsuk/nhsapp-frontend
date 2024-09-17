@@ -5,7 +5,7 @@ tags:
   - getStarted
 ---
 
-This guide explains how to create prototypes using the NHS App design system and [NHS prototype kit](https://nhsuk-prototype-kit.azurewebsites.net/docs).
+This guide explains how to create prototypes using the NHS App design system with the [NHS prototype kit](https://nhsuk-prototype-kit.azurewebsites.net/docs).
 
 You must follow the [NHS prototype kit setup guide](https://nhsuk-prototype-kit.azurewebsites.net/docs) first.
 

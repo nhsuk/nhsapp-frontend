@@ -1,6 +1,8 @@
 // Header overrides
 // Fixes service name placement and style
 .app-header {
+  background-color: $app-brand-color;
+
   .nhsuk-header__logo {
     max-width: 100%;
   }
@@ -38,6 +40,15 @@
       @include nhsuk-font($size: 19);
       padding-left: 0;
     }
+  }
+
+  .nhsuk-header__navigation-list {
+    gap: 32px;
+  }
+
+  .nhsuk-header__navigation-link {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

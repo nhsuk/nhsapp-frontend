@@ -16,6 +16,9 @@
 // Import all styles from the NHS App frontend library
 @import "src/all";
 
+// Brand colour
+$app-brand-color: #003087;
+
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/header";
 @import "docs/assets/css/components/hero";
@@ -77,4 +80,9 @@ pre {
 .app-section-break {
   border-width: 2px;
   border-color: $color_nhsuk-grey-4;
+}
+
+// Footer border colour
+.nhsuk-footer-container {
+  border-color: $app-brand-color;
 }
