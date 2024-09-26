@@ -17,7 +17,7 @@
 @import "src/all";
 
 // Brand colour
-$app-brand-color: #003087;
+$app-brand-color: $color_nhsuk-blue;
 
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/header";
