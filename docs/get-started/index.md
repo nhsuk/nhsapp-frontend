@@ -3,13 +3,14 @@ layout: layouts/get-started.njk
 title: Get started
 ---
 
-To make your service consistent with the NHS, you should start by checking what exists in the [NHS Design System](https://service-manual.nhs.uk/design-system).
+To make your service consistent with the NHS, you should start by checking what exists in the [NHS design system](https://service-manual.nhs.uk/design-system).
 
-If something is not in the NHS Design System, you should check what exists in the:
+If something is not in the NHS design system, you should check what exists in the:
 
 - NHS App design system
-- [gov department pattern libraries](https://github.com/ctdesign/gov-design-systems-list)
+- [government department pattern libraries](https://github.com/ctdesign/gov-design-systems-list)
 - [NHS community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog)
+- [NHS App design system backlog](https://github.com/orgs/nhsuk/projects/8)
 
 Reuse as much as possible and iterate based on user needs.
 
