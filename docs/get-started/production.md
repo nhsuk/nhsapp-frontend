@@ -17,18 +17,16 @@ To start using NHS App styles, components and patterns contained here, you’ll 
 
 ### Option 1: install using npm
 
-We recommend installing NHS App frontend using npm. Using this option, you will be able to:
+We recommend [installing NHS App frontend using npm](/get-started/installing-with-npm/). Using this option, you will be able to:
 
 - selectively include the CSS or JavaScript for individual components
 - build your own styles or components based on the palette or typography and spacing mixins
 - customise the build (for example, overriding colours or enabling global styles)
 - use the component Nunjucks templates
 
-You will also need to set up JavaScript if you want to use any interactive components.
-
 ### Option 2: include compiled files
 
-If your project does not use npm, or if you want to try out NHS App frontend in your project without installing it through npm, you can download and include compiled stylesheets, JavaScript and the asset files.
+If your project does not use npm, or if you want to try out NHS App frontend in your project without installing it through npm, you can [download and include compiled stylesheets, JavaScript and the asset files](/get-started/installing-with-npm/).
 
 Using this option, you will be able to include all the CSS and JavaScript of NHS.UK fontend in your project.
 

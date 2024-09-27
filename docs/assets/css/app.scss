@@ -32,7 +32,8 @@ $app-brand-color: $color_nhsuk-blue;
 // Add correct spacing around code highlighter and content
 pre {
   + p,
-  + li {
+  + ol,
+  + ul {
     @include nhsuk-responsive-padding(4, "top");
   }
 
