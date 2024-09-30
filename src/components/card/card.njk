@@ -1,7 +1,7 @@
 {% from "../badge/large/macro.njk" import nhsappBadgeLarge %}
 {% from "../../styles/icon/macro.njk" import nhsappIcon %}
 
-{% set hasBadgeLarge = true if params.badgeLarge.count > 1 %}
+{% set hasBadgeLarge = true if params.badgeLarge.count > 0 %}
 
 {%- if params.isListItem -%}
   <li class="nhsapp-card 
