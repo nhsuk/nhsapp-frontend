@@ -8,9 +8,9 @@ To make your service consistent with the NHS, you should start by checking what 
 If something is not in the NHS design system, you should check what exists in the:
 
 - NHS App design system
-- [government department pattern libraries](https://github.com/ctdesign/gov-design-systems-list)
 - [NHS community backlog](https://github.com/nhsuk/nhsuk-service-manual-community-backlog)
 - [NHS App design system backlog](https://github.com/orgs/nhsuk/projects/8)
+- [government department pattern libraries](https://github.com/ctdesign/gov-design-systems-list)
 
 Reuse as much as possible and iterate based on user needs.
 
@@ -25,4 +25,5 @@ To use these components and patterns you can either:
 
 ## Contributing to the design system
 
-You can contribute your research findings, designs or code to the NHS App design system by commenting on [existing issues](https://github.com/orgs/nhsuk/projects/8) or starting a [new issue](https://github.com/nhsuk/nhsapp-frontend/issues/new/choose) on GitHub.
+<p>Anyone can contribute to the NHS App design system. You can share findings, suggest a change or propose a new component or pattern.</p>
+<p><a href="/community/" class="nhsuk-link--no-visited-state">Find out how to contribute</a></p>

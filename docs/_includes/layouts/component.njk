@@ -24,8 +24,16 @@
 
 {% set sidebar %}
   {{ appSideNavigation({
+    label: 'Components',
     currentPath: page.url,
-    items: collections.component | sort(attribute="data.title")
+    sections: [
+      {
+        heading: {
+          text: 'Components'
+        },
+        items: collections.component | sort(attribute="data.title")
+      }
+    ]
   }) }}
 {% endset %}
 
