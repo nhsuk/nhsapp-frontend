@@ -92,14 +92,14 @@
 
   .app-side-navigation {
     padding: 0 0 nhsuk-spacing(3);
+
+    .app-side-navigation__list:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .app-side-navigation--section {
     padding-top: nhsuk-spacing(3);
-  }
-
-  .app-side-navigation__list {
-    margin: 0;
   }
 
   .app-side-navigation__item {
