@@ -1,6 +1,7 @@
 .app-content {
   // So images do not break the container
   img {
+    border: 4px solid white;
     max-width: 100%;
   }
 }

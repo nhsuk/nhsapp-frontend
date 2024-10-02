@@ -29,6 +29,12 @@
     sections: [
       {
         heading: {
+          text: 'Contributing'
+        },
+        items: collections.contribution | sort(attribute="data.title")
+      },
+      {
+        heading: {
           text: 'Support'
         },
         items: collections.community | sort(attribute="data.title")
@@ -38,8 +44,9 @@
 {% endset %}
 
 {% block main %}
-  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-7">
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>
+  <p class="nhsuk-u-margin-bottom-5">{{ description }}</p>
   {{ content | safe }}
 {% endblock %}
