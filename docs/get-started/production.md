@@ -26,7 +26,7 @@ We recommend [installing NHS App frontend using npm](/get-started/installing-wit
 
 ### Option 2: include compiled files
 
-If your project does not use npm, or if you want to try out NHS App frontend in your project without installing it through npm, you can [download and include compiled stylesheets, JavaScript and the asset files](/get-started/installing-with-npm/).
+If your project does not use npm, or if you want to try out NHS App frontend in your project without installing it through npm, you can [download and include compiled stylesheets, JavaScript and the asset files](/get-started/installing-compiled/).
 
 Using this option, you will be able to include all the CSS and JavaScript of NHS.UK fontend in your project.
 
