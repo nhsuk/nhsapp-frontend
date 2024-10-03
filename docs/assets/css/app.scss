@@ -16,8 +16,9 @@
 // Import all styles from the NHS App frontend library
 @import "src/all";
 
-// Brand colour
+// Colours
 $app-brand-color: $color_nhsuk-blue;
+$app-img-border-color: #d7e5ef;
 
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/header";
