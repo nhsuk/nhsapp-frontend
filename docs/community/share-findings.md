@@ -11,7 +11,7 @@ Useful findings to share might be things like:
 - summaries of user research you’ve done
 - prototypes or ideas that you’ve tested
 - analytics from your service
-- responses to any calls for information we give in the ‘Research on this…’ section of our pages
+- responses to any calls for information we give in the ‘Research’ section of our pages
 
 ## 1. Find the thing you want to feedback on
 

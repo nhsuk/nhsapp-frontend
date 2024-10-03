@@ -25,5 +25,5 @@ To use these components and patterns you can either:
 
 ## Contributing to the design system
 
-<p>Anyone can contribute to the NHS App design system. You can share findings, suggest a change or propose a new component or pattern.</p>
+<p>Anyone can contribute to the NHS App design system. You can share findings or suggest a change.</p>
 <p><a href="/community/" class="nhsuk-link--no-visited-state">Find out how to contribute</a></p>

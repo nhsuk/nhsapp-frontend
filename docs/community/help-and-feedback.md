@@ -10,4 +10,6 @@ tags:
 
 The team monitors the following channels and provides support. If you have any questions or feedback, get in touch via Slack.
 
-- [#forum-app-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+- [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+
+If you mention the handle `@nhsapp-design-system-team`, it will notify all members of the team.

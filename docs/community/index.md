@@ -9,6 +9,5 @@ Anyone can contribute. You just need a [GitHub account](https://github.com/signu
 
 - [share your findings](/community/share-findings/)
 - [suggest a change](/community/suggest-a-change/)
-- [propose a new component or pattern](/community/propose-new-component/)
 
 If you need any help using GitHub, you can [contact the design system team](/community/help-and-feedback/).
