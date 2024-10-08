@@ -1,0 +1,15 @@
+// Custom component for the NHS App deign system documentation
+.app-callout {
+  @include nhsuk-responsive-margin(5, "bottom");
+  @include nhsuk-responsive-padding(4);
+
+  border: nhsuk-spacing(1) solid $app-brand-color;
+
+  &__content {
+    @include reading-width();
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}

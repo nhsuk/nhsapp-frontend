@@ -1,6 +1,6 @@
 .app-content {
-  // So images do not break the container
   img {
-    max-width: 100%;
+    border: nhsuk-spacing(1) solid $app-img-border-color;
+    max-width: 100%; // So images do not break the container
   }
 }

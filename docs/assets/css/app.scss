@@ -5,6 +5,7 @@
 @import "node_modules/nhsuk-frontend/packages/components/breadcrumb/breadcrumb";
 @import "node_modules/nhsuk-frontend/packages/components/skip-link/skip-link";
 @import "node_modules/nhsuk-frontend/packages/components/header/header";
+@import "node_modules/nhsuk-frontend/packages/components/header/header-service";
 @import "node_modules/nhsuk-frontend/packages/components/footer/footer";
 @import "node_modules/nhsuk-frontend/packages/components/hero/hero";
 @import "node_modules/nhsuk-frontend/packages/components/tabs/tabs";
@@ -16,10 +17,15 @@
 // Import all styles from the NHS App frontend library
 @import "src/all";
 
+// Colours
+$app-brand-color: $color_nhsuk-blue;
+$app-img-border-color: #d7e5ef;
+
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/header";
 @import "docs/assets/css/components/hero";
 @import "docs/assets/css/components/side-navigation";
+@import "docs/assets/css/components/callout";
 @import "docs/assets/css/tabs";
 @import "docs/assets/css/content";
 @import "docs/assets/css/example";
@@ -28,7 +34,8 @@
 // Add correct spacing around code highlighter and content
 pre {
   + p,
-  + li {
+  + ol,
+  + ul {
     @include nhsuk-responsive-padding(4, "top");
   }
 
@@ -47,4 +54,38 @@ pre {
   .app-table tr td {
     word-break: break-word;
   }
+}
+
+// Frontend button colour overrides
+.nhsuk-button--reverse {
+  color: $color_nhsuk-black;
+
+  &:visited {
+    color: $color_nhsuk-black;
+  }
+}
+
+// Home page section
+.app-section {
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  &--white {
+    background-color: white;
+  }
+
+  &--with-bottom-border {
+    border-bottom: 2px solid $color_nhsuk-grey-4;
+  }
+}
+
+.app-section-break {
+  border-width: 2px;
+  border-color: $color_nhsuk-grey-4;
+}
+
+// Footer border colour
+.nhsuk-footer-container {
+  border-color: $app-brand-color;
 }

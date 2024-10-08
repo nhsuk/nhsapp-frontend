@@ -3,7 +3,7 @@
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
 {% block breadcrumb %}
-  {% if title === "Components" %}
+  {% if title === "Community" %}
     {{ breadcrumb({
       href: "/",
       text: "Home"
@@ -16,22 +16,28 @@
           text: "Home"
         }
       ],
-      href: "/components",
-      text: "Components"
+      href: "/community",
+      text: "Community"
     }) }}
   {% endif %}
 {% endblock %}
 
 {% set sidebar %}
   {{ appSideNavigation({
-    label: 'Components',
+    label: 'Contributing and support',
     currentPath: page.url,
     sections: [
       {
         heading: {
-          text: 'Components'
+          text: 'Contributing'
         },
-        items: collections.component | sort(attribute="data.title")
+        items: collections.contribution | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Support'
+        },
+        items: collections.community | sort(attribute="data.title")
       }
     ]
   }) }}
@@ -43,9 +49,4 @@
   </h1>
   <p class="nhsuk-u-margin-bottom-5">{{ description }}</p>
   {{ content | safe }}
-  {% if tags and "component" in tags %}
-    {% include "layouts/partials/feedback-section.njk" %}
-  {% else %}
-  {% endif %}
-
 {% endblock %}

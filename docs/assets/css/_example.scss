@@ -88,3 +88,11 @@ pre[class*="language-"] {
     color: $nhsuk-focus-text-color;
   }
 }
+
+code:not([class*="language-"]) {
+  padding: 0 4px;
+  color: #c62950;
+  background-color: white;
+  font-family: monospace, monospace;
+  font-size: 1em;
+}

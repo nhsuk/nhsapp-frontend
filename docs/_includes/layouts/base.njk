@@ -1,7 +1,7 @@
-{%- from 'header/macro.njk' import header -%}
-{%- from 'footer/macro.njk' import footer -%}
+{% from 'header/macro.njk' import header %}
+{% from 'footer/macro.njk' import footer %}
 {% from 'breadcrumb/macro.njk' import breadcrumb %}
-{%- from 'skip-link/macro.njk' import skipLink -%}
+{% from 'skip-link/macro.njk' import skipLink %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +18,9 @@
     {% block head %}{% endblock %}
   </head>
   <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
     {% block body %}
       {% block skiplink %}
         {{ skipLink({
@@ -28,15 +31,29 @@
 
       {% block header %}
         {{ header({
-        "service": {
-            "name": "App design resources"
+          service: {
+            name: "App design system"
           },
-          "showNav": "false",
-          "showSearch": "false",
-          "homeHref": baseUrl,
-          "classes": "app-header",
-          "ariaLabel": "NHS App design resources homepage"
-        }) }}
+          showNav: "true",
+          showSearch: "false",
+          homeHref: baseUrl,
+          classes: "app-header",
+          primaryLinks: [
+              {
+                url  : "/get-started/",
+                label : "Get started"
+              },
+              {
+                url : '/components/',
+                label : 'Components'
+              },
+              {
+                url  : '/community/',
+                label : 'Community'
+              }
+            ]
+          })
+        }}
       {% endblock %}
 
       {% block breadcrumb %}
@@ -55,19 +72,24 @@
       {% block footer %}
 
       {{ footer({
-        "links": [
+        links: [
           {
-            "URL": "/help-and-feedback/",
-            "label": "Help and feedback"
+            URL: "/community/help-and-feedback/",
+            label: "Help and feedback"
           },
           {
-            "URL": "https://github.com/nhsuk/nhsapp-frontend",
-            "label": "Code on Github"
+            URL: "https://github.com/nhsuk/nhsapp-frontend",
+            label: "Code on Github"
           }
         ]
       })}}
       {% endblock %}
 
     {% endblock body %}
+    <script type="module">
+      import initHeader from '/nhsuk-frontend/components/header/header.js'
+
+      initHeader()
+    </script>
   </body>
 </html>
