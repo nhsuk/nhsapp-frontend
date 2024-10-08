@@ -11,7 +11,7 @@
     "prepack": "gulp bundle",
     "lint": "prettier --check .",
     "start": "concurrently npm:docs:serve npm:css:watch",
-    "docs:serve": "npx @11ty/eleventy --serve",
+    "docs:serve": "npm run css:build && npx @11ty/eleventy --serve",
     "docs:build": "npm run css:build && npx @11ty/eleventy",
     "css:watch": "gulp",
     "css:build": "gulp compileCSS",

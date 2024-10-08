@@ -35,8 +35,10 @@ export default function (eleventyConfig) {
   // Add images to docs
   eleventyConfig.addPassthroughCopy('docs/assets/images')
 
-  // Add NHSUK frontend JS to docs
-  eleventyConfig.addPassthroughCopy('node_modules/nhsuk-frontend/dist')
+  // Add NHSUK frontend JS components to docs
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/nhsuk-frontend/packages': 'nhsuk-frontend'
+  })
 
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)

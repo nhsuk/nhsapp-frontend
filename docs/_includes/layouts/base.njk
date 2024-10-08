@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <link href="/assets/css/app.css" rel="stylesheet" />
-    <script src="/node_modules/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
     <script src="/assets/js/app.js" defer></script>
 
     <title>{{ title }}</title>
@@ -19,6 +18,9 @@
     {% block head %}{% endblock %}
   </head>
   <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
     {% block body %}
       {% block skiplink %}
         {{ skipLink({
@@ -84,5 +86,10 @@
       {% endblock %}
 
     {% endblock body %}
+    <script type="module">
+      import initHeader from '/nhsuk-frontend/components/header/header.js'
+
+      initHeader()
+    </script>
   </body>
 </html>

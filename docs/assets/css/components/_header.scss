@@ -1,72 +1,72 @@
-// Header overrides
-// Fixes service name placement and style
-.app-header {
-  background-color: $app-brand-color;
+// // Header overrides
+// // Fixes service name placement and style
+// .app-header {
+//   background-color: $app-brand-color;
 
-  .nhsuk-header__logo {
-    max-width: 100%;
-  }
+//   .nhsuk-header__logo {
+//     max-width: 100%;
+//   }
 
-  .nhsuk-header__link--service {
-    align-items: center;
-    color: $color_nhsuk-white;
-    display: flex;
-    gap: nhsuk-spacing(3);
-    text-decoration: none;
-    width: 100%;
+//   .nhsuk-header__link--service {
+//     align-items: center;
+//     color: $color_nhsuk-white;
+//     display: flex;
+//     gap: nhsuk-spacing(3);
+//     text-decoration: none;
+//     width: 100%;
 
-    &:hover {
-      .nhsuk-header__service-name {
-        text-decoration: underline;
-      }
-    }
+//     &:hover {
+//       .nhsuk-header__service-name {
+//         text-decoration: underline;
+//       }
+//     }
 
-    &:focus {
-      background-color: $nhsuk-focus-color;
-      box-shadow:
-        0 0 0 4px $nhsuk-focus-color,
-        0 4px 0 4px $nhsuk-focus-text-color;
+//     &:focus {
+//       background-color: $nhsuk-focus-color;
+//       box-shadow:
+//         0 0 0 4px $nhsuk-focus-color,
+//         0 4px 0 4px $nhsuk-focus-text-color;
 
-      .nhsuk-header__service-name {
-        text-decoration: none;
-      }
-    }
+//       .nhsuk-header__service-name {
+//         text-decoration: none;
+//       }
+//     }
 
-    .nhsuk-logo {
-      flex-shrink: 0;
-    }
+//     .nhsuk-logo {
+//       flex-shrink: 0;
+//     }
 
-    .nhsuk-header__service-name {
-      @include nhsuk-font($size: 19);
-      padding-left: 0;
-    }
-  }
+//     .nhsuk-header__service-name {
+//       @include nhsuk-font($size: 19);
+//       padding-left: 0;
+//     }
+//   }
 
-  .nhsuk-header__navigation-list {
-    gap: 32px;
-  }
+//   .nhsuk-header__navigation-list {
+//     gap: 32px;
+//   }
 
-  .nhsuk-header__navigation-link {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+//   .nhsuk-header__navigation-link {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }
 
-// Bump the border-bottom size up from 4px to 6px
-// - this gives the 'current' item more visual weight
-.nhsuk-header__navigation-link,
-.nhsuk-header__navigation-link:active,
-.nhsuk-header__navigation-link:focus {
-  border-bottom-width: 6px;
-}
+// // Bump the border-bottom size up from 4px to 6px
+// // - this gives the 'current' item more visual weight
+// .nhsuk-header__navigation-link,
+// .nhsuk-header__navigation-link:active,
+// .nhsuk-header__navigation-link:focus {
+//   border-bottom-width: 6px;
+// }
 
-// A style to highlight the current section the user is in
-.app-header__navigation-link--current {
-  text-decoration: none;
-  border-bottom-color: $nhsuk-border-color;
-}
+// // A style to highlight the current section the user is in
+// .app-header__navigation-link--current {
+//   text-decoration: none;
+//   border-bottom-color: $nhsuk-border-color;
+// }
 
-// Hide home nav link
-.nhsuk-header__navigation-item--home {
-  display: none;
-}
+// // Hide home nav link
+// .nhsuk-header__navigation-item--home {
+//   display: none;
+// }
