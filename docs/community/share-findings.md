@@ -1,7 +1,11 @@
 ---
 layout: layouts/community.njk
 title: Share your findings
-description: We want to hear how users experience components and patterns in your service – it helps us improve the design system. You can do this by taking part in discussions on GitHub.
+description: We want to hear how users experience components and patterns in your service. It helps us improve the design system. 
+
+You can do this by taking part in discussions on GitHub.
+
+
 tags:
   - contribution
 ---
