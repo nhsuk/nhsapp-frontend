@@ -3,7 +3,7 @@ layout: layouts/community.njk
 title: Community
 ---
 
-The NHS App design system supports the design, build, and delivery of accessible and consistent services. It does this by helping people, teams, professions, and communities across the NHS App to learn from the experiences of each other, contribute and share knowledge, and reuse as much as possible.
+The NHS App design system helps people across the NHS App to learn from each other, share knowledge and reuse as much as possible.
 
 Anyone can contribute. You just need a [GitHub account](https://github.com/signup) so you can:
 
