@@ -21,8 +21,6 @@ If the thing is already published in the NHS App design system, go to the releva
 
 Or you can go directly to GitHub and look at the project board [NHS App design components and patterns](https://github.com/orgs/nhsuk/projects/8).
 
-![A screenshot of the GitHub board](/assets/images/github-board.png)
-
 You can use search to find things, for example "button".
 
 ![A screenshot of the GitHub board with the search term button](/assets/images/github-board-search.png)
@@ -37,11 +35,9 @@ You need to [sign up to GitHub](https://github.com/signup) if you want to commen
 
 Use the textbox at the bottom of the page to give your feedback or share insights.
 
-![A screenshot of the text box at the bottom of a GitHub page](/assets/images/github-comment.png)
+![A screenshot of the text box at the bottom of a GitHub page with a comment](/assets/images/github-comment-message.png)
 
 There is no set format for posting comments. Even short summaries can be helpful.
-
-![A screenshot of the text box at the bottom of a GitHub page with a comment](/assets/images/github-comment-message.png)
 
 You can edit your comment after you post it, so do not worry if you get something wrong or want to change it later.
 
