@@ -22,4 +22,4 @@ The content of error pages must tell users:
 - what has happened
 - what they can do next
 
-![Error page example](/assets/images/error-pages/connect-to-app.png)
+![Error page example](/assets/images/error-pages/connect-to-app-1120.png)
