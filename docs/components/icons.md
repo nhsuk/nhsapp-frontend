@@ -35,12 +35,12 @@ You can find the [icons in Figma](https://www.figma.com/design/6f2CbcZ7cnpNrtKEc
 
 ## Accessibility
 
-Icons that act as functional buttons should have aria labels, so that they are announced to screen reader users. If an icon is not functional, and it appears alongside supporting text that conveys the same meaning, it may not need alt-text or an aria label. 
+Icons that act as functional buttons should have aria labels, so that they are announced to screen reader users. If an icon is not functional, and it appears alongside supporting text that conveys the same meaning, it may not need alt-text or an aria label.
 
 Designers and developers should work together to understand the most accessible option in context, considering [NHS Service Manual accessibility guidance](https://service-manual.nhs.uk/accessibility/design).
 
 ## Research
 
-The icons used on the top navigation and bottom navigation of the NHS App were well-recognised when shown to users without supporting text in our research sessions. 
+The icons used on the top navigation and bottom navigation of the NHS App were well-recognised when shown to users without supporting text in our research sessions.
 
 Participants generally understood the meaning of the icons. However, the research supported the need for some icons to have accompanying text to make the meaning clear.
