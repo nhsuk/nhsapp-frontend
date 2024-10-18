@@ -59,8 +59,10 @@ Use the sub-heading “Find out more” to include supplementary information pag
 
 ### Give medical signposting
 
-If the error may be stopping a user from accessing particular medical help, it may be relevant to include signposting to NHS 111. Use inset text at the bottom of the page.
+If the error may be stopping a user from accessing particular medical help, it may be relevant to include signposting to a health service. This could be to their GP surgery if the error occurs while accessing a GP service, or to 111 online. 
 
-Check with the clinical team if you need guidance on whether or not to include this.
+Use [inset text](https://service-manual.nhs.uk/design-system/components/inset-text) at the bottom of the page to give 111 signposting. 
+
+Medical signposting is not always needed. There is a risk of users thinking health services can help with technical problems. Check with the clinical team if you need guidance.
 
 ![Error page example](/assets/images/error-pages/no-appointments-1120.png)
