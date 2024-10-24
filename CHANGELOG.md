@@ -56,3 +56,15 @@ Card link with badge accessibility fix. Added option to provide `aria-hidden` to
 
 - The card component now supports a footer section. The guidance for this will be coming very soon after this release
 - The card component now supports a "read only" view. The chevron icon is hidden and the title is no longer a link
+
+## `v2.2.0`
+
+### Fixes
+
+- Badge count now displaying correctly when value is 1
+- Cards in combination with a section heading spacing now fixed
+- Added missing card param to Nunjucks macro `linkAriaLabel`
+
+### Styles
+
+New icons added. [See full commit](https://github.com/nhsuk/nhsapp-frontend/commit/201556e91df539d9ec6dce4eda50a0f478ed3b05) for list of icons.
