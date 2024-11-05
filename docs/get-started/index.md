@@ -21,7 +21,7 @@ The NHS App design system brings together [components and patterns](/components/
 To use these components and patterns you can either:
 
 - copy the HTML code
-- copy the Nunjucks code (if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [NHS prototype kit](https://nhsuk-prototype-kit.azurewebsites.net/docs))
+- copy the Nunjucks code (if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk))
 
 ## Contributing to the design system
 
