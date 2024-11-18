@@ -1,11 +1,9 @@
 ---
 layout: layouts/get-started.njk
-title: Prototyping
-tags:
-  - getStarted
+title: How to add the NHS App frontend to a prototype
 ---
 
-This guide explains how to create prototypes using the NHS App design system with the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
+This guide explains how to add the NHS App frontend to the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
 
 You must follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) first.
 
