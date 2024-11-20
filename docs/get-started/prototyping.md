@@ -5,28 +5,27 @@ tags:
   - getStarted
 ---
 
-This guide explains how to create prototypes using the NHS App design system and NHS App prototype, so you can make interactive prototypes that will look like pages on the NHS App.
+This guide explains how to use the NHS App prototype. You can use it alongside the NHS App design system to make interactive prototypes that look like real NHS App pages.
+
+Anyone can use the prototype to:
+
+- try out ideas
+- get feedback from users or people you work with
 
 ## Before you start
 
-The NHS App prototype is a copy of the NHS prototype kit, with added NHS App code and templates.
-
-You must follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) first.
-
-## Download
-
-Download or clone a copy of the [NHS App prototype on GitHub](https://github.com/nhsuk/nhsapp-prototype).
+You first need to follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to make sure you have the tools and software required to run the prototype. This is because the NHS App prototype is a copy of the NHS prototype kit, with added NHS App code and templates.
 
 ## Guides
 
 [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) will show you how to use the prototype kit, from creating a simple page to building complex user journeys.
 
+## Download
+
+Once you are setup and familiar with using the NHS prototype kit, you can download or clone a copy of the [NHS App prototype on GitHub](https://github.com/nhsuk/nhsapp-prototype).
+
 ## Using components
 
-You can use [NHS design system components](https://service-manual.nhs.uk/design-system) and [NHS App specific components](/components/).
-
-There are 2 ways to use components. You can either use HTML or a Nunjucks macro.
-
-You can copy the code from the HTML or Nunjucks tabs below any examples:
+On the NHS and NHS App design systems, you'll find examples of components like the one below. To use any of these components in your prototype, you can select HTML or Nunjucks, then copy and paste the code.
 
 {% example "buttons/button-primary.njk" %}
