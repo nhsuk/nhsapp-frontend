@@ -5,117 +5,27 @@ tags:
   - getStarted
 ---
 
-This guide explains how to create prototypes using the NHS App design system with the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
+This guide explains how to use the NHS App prototype. You can use it alongside the NHS App design system to make interactive prototypes that look like real NHS App pages.
 
-You must follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) first.
+Anyone can use the prototype to:
 
-## Step 1
+- try out ideas
+- get feedback from users or people you work with
 
-Using GitBash or Terminal, navigate to where your prototype is. For example
+## Before you start
 
-```sh
-cd ~/Documents/projects/project-prototype
-```
+You first need to follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to make sure you have the tools and software required to run the prototype. This is because the NHS App prototype is a copy of the NHS prototype kit, with added NHS App code and templates.
 
-If your prototype is already running, to stop it use
+## Download
 
-```sh
-Ctrl + C
-```
+Once you are setup and familiar with using the NHS prototype kit, you can download or clone a copy of the [NHS App prototype on GitHub](https://github.com/nhsuk/nhsapp-prototype).
 
-## Step 2
+## Using components
 
-Enter
+On the NHS and NHS App design systems, you'll find examples of components like the one below. To use any of these components in your prototype, you can select HTML or Nunjucks, then copy and paste the code into your prototype.
 
-```sh
-npm install --save nhsapp-frontend
-```
+{% example "buttons/button-primary.njk" %}
 
-## Step 3
+## Guides
 
-In your HTML editor, open
-
-```sh
-/app/assets/sass/application.scss
-```
-
-After
-
-```sh
-// Import NHS.UK frontend library
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
-```
-
-Paste
-
-```sh
-// Import all styles from the NHS App frontend library
-@import 'node_modules/nhsapp-frontend/dist/nhsapp/all';
-```
-
-## Step 4
-
-In your root folder, open
-
-```sh
-/app.js
-```
-
-and find
-
-```sh
-appViews
-```
-
-After
-
-```sh
-path.join(__dirname, 'node_modules/nhsuk-frontend/packages/components'),
-```
-
-Add
-
-```sh
-path.join(__dirname, 'node_modules/nhsapp-frontend/dist'),
-```
-
-So it looks like this
-
-```sh
-const appViews = [
-  path.join(__dirname, 'app/views/'),
-  path.join(__dirname, 'node_modules/nhsuk-frontend/packages/components'),
-  path.join(__dirname, 'node_modules/nhsapp-frontend/dist'),
-  path.join(__dirname, 'docs/views/'),
-];
-```
-
-## Step 5
-
-In your root folder, open
-
-```sh
-/app.js
-```
-
-and find
-
-```sh
-app.use('/nhsuk-frontend', express.static(path.join(__dirname, 'node_modules/nhsuk-frontend/dist')));
-```
-
-and on the next line paste
-
-```sh
-app.use('/nhsapp-frontend', express.static(path.join(__dirname, 'node_modules/nhsapp-frontend/dist/nhsapp')));
-```
-
-Once you have installed NHS App frontend, all NHS App components should work in your prototype.
-
-You will now have the latest version installed, later you can easily update to the latest NHS App frontend
-
-To use the components, you should:
-
-- find the component in NHS App design components
-- copy the code from the example
-- paste the code into the page in your prototype
+[NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) will show you how to use the prototype kit, from creating a simple page to building complex user journeys.
