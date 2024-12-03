@@ -9,6 +9,6 @@ You should use these components in addition to those in the [NHS design system](
 
 ## Iterating a component
 
-Existing design components can be used as starting points but may need to be iterated to suit the needs of users of a particular service.
+You can use existing components as starting points, but you may need to iterate them to meet user needs for particular services.
 
 Before iterating a component make sure there is a clear user need to do so. [Share any changes you make or research findings](/community/share-findings/) in the [NHS App design system backlog](https://github.com/orgs/nhsuk/projects/8).
