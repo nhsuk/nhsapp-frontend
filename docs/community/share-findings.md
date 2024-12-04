@@ -19,7 +19,7 @@ Useful findings to share might be things like:
 
 If the thing is already published in the NHS App design system, go to the relevant page. You'll find a link to the GitHub issue at the bottom of the page.
 
-Or you can go directly to GitHub and look at the project board [NHS App design components and patterns](https://github.com/orgs/nhsuk/projects/8).
+Or you can go directly to GitHub and look at the [NHS App design system backlog](https://github.com/orgs/nhsuk/projects/8).
 
 You can use search to find things, for example "button".
 
