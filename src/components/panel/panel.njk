@@ -1,0 +1,13 @@
+{% set headingLevel = params.headingLevel if params.headingLevel else 1 -%}
+
+<div class="nhsapp-panel
+  {%- if params.classes %} {{ params.classes }}{% endif %}">
+  <h{{ headingLevel }} class="nhsapp-panel__title">
+    {{ params.titleHtml | safe if params.titleHtml else params.titleText }}
+  </h{{ headingLevel }}>
+  {% if caller or params.html or params.text %}
+  <div class="nhsapp-panel__body">
+    {{ caller() if caller else (params.html | safe | trim | indent(4) if params.html else params.text) }}
+  </div>
+  {% endif %}
+</div>

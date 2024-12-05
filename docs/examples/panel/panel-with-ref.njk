@@ -1,0 +1,13 @@
+---
+layout: layouts/example.njk
+title: Panel
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/panel/macro.njk" import nhsappPanel %}
+
+{{ nhsappPanel({
+  titleText: "Application complete",
+  html: "Your reference number<br><strong>HDJ2123F</strong>"
+}) }}

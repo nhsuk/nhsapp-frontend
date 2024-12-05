@@ -1,0 +1,12 @@
+---
+layout: layouts/example.njk
+title: Panel
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/panel/macro.njk" import nhsappPanel %}
+
+{{ nhsappPanel({
+  titleText: "Appointment confirmed"
+}) }}
