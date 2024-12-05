@@ -2,7 +2,7 @@ $button-shadow-size: 4px;
 $button-border-width: 2px;
 $button-padding-top-bottom-desktop: 12px;
 $button-padding-top-bottom-mobile: 8px;
-$button-padding-left-right: nhsuk-spacing(3);
+$button-padding-left-right: nhsuk-spacing(4);
 
 $nhsapp-secondary-button-color: transparent;
 $nhsapp-secondary-button-border-color: $color_nhsuk-blue;
@@ -14,7 +14,10 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
 // NHS App button
 // Makes the button full width on mobile
 .nhsapp-button {
+  padding: $button-padding-top-bottom-desktop $button-padding-left-right;
+
   @include mq($until: tablet) {
+    padding: $button-padding-top-bottom-mobile $button-padding-left-right;
     width: 100%;
   }
 }
