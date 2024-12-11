@@ -1,8 +1,8 @@
 $button-shadow-size: 4px;
 $button-border-width: 2px;
 $button-padding-top-bottom-desktop: 12px;
-$button-padding-top-bottom-mobile: 8px;
-$button-padding-left-right: nhsuk-spacing(4);
+$button-padding-top-bottom-mobile: 10px;
+$button-padding-left-right: nhsuk-spacing(4) - $button-border-width;
 
 $nhsapp-secondary-button-color: transparent;
 $nhsapp-secondary-button-border-color: $color_nhsuk-blue;
@@ -113,14 +113,19 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
   // Because we want the focus state to be tight around the link text, we use
   // margins where the buttons would use padding.
   .nhsuk-link {
-    @include nhsuk-font($size: 19, $line-height: 19px);
+    @include nhsuk-font($size: 19);
     display: inline-block;
     // Prevent links overflowing their container in IE10/11 because of bug
     // with align-items: center
     max-width: 100%;
-    margin-top: $link-spacing;
-    margin-bottom: $link-spacing + $vertical-gap;
+    margin-top: $button-padding-top-bottom-desktop + $button-border-width;
+    margin-bottom: $button-padding-top-bottom-desktop + $button-border-width;
     text-align: center;
+
+    @include mq($until: tablet) {
+      margin-top: $link-spacing;
+      margin-bottom: $link-spacing + $vertical-gap;
+    }
   }
 
   // Reduce the bottom margin to the size of the vertical gap (accommodating
@@ -137,7 +142,7 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
 
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: flex-start;
 
     .nhsuk-button,
     .nhsuk-link {
