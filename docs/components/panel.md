@@ -2,7 +2,7 @@
 layout: layouts/component.njk
 title: Panel
 description: The panel component is a visible container used on confirmation or results pages to highlight important content.
-backlogID: 32
+backlogID: 210
 tags:
   - component
 ---
