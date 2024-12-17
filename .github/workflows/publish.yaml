@@ -1,14 +1,9 @@
 name: Publish to NPM
 
-# on:
-#   release:
-#     types:
-#       - published
-
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types:
+      - prereleased
 
 jobs:
   publish:
