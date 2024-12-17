@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "prepack": "gulp bundle",
+    "release": "gulp release",
     "lint": "prettier --check .",
     "start": "concurrently npm:docs:serve npm:css:watch",
     "docs:serve": "npm run css:build && npx @11ty/eleventy --serve",
@@ -40,6 +41,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^6.0.0",
     "markdown-it-anchor": "^9.0.1",
     "nhsuk-frontend": "^8.1.1",
     "nunjucks": "^3.2.4",
