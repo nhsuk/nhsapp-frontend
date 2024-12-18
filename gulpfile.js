@@ -2,6 +2,7 @@ import gulp from 'gulp'
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 import gulpClean from 'gulp-clean'
+import zip from 'gulp-zip'
 import rename from 'gulp-rename'
 import cleanCSS from 'gulp-clean-css'
 import packageJson from './package.json' with { type: 'json' }
@@ -63,6 +64,16 @@ function watch() {
 }
 
 /**
+ * Release tasks
+ */
+function createZip() {
+  return gulp
+    .src(['dist/nhsapp/**', `dist/nhsapp-${packageJson.version}.min.css`])
+    .pipe(zip(`nhsapp-frontend-${packageJson.version}.zip`))
+    .pipe(gulp.dest('dist'))
+}
+
+/**
  * The default task is to build everything, and watch for changes
  */
 export default gulp.series([clean, compileCSS, watch])
@@ -75,4 +86,12 @@ const bundle = gulp.series([
   copySource
 ])
 
-export { clean, bundle, compileCSS }
+const release = gulp.series([
+  clean,
+  compileCSS,
+  minifyCSS,
+  copySource,
+  createZip
+])
+
+export { clean, bundle, compileCSS, release }
