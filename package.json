@@ -1,6 +1,6 @@
 {
   "name": "nhsapp-frontend",
-  "version": "2.2.0-test",
+  "version": "2.2.0",
   "description": "A CSS library built on top of nhsuk-frontend providing styles for the NHS App.",
   "main": "index.js",
   "type": "module",

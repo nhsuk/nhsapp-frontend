@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   release:
     types:
-      - prereleased
+      - published
 
 jobs:
   publish:
@@ -35,8 +35,8 @@ jobs:
           asset_name: nhsapp-frontend-${{ steps.get_version.outputs.VERSION }}.zip
           asset_content_type: application/zip
 
-      # - name: Publish NPM package
-      #   run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
-      #     IS_PRERELEASE: ${{github.event.release.prerelease}}
+      - name: Publish NPM package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
+          IS_PRERELEASE: ${{github.event.release.prerelease}}
