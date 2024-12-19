@@ -68,3 +68,14 @@ Card link with badge accessibility fix. Added option to provide `aria-hidden` to
 ### Styles
 
 New icons added. [See full commit](https://github.com/nhsuk/nhsapp-frontend/commit/201556e91df539d9ec6dce4eda50a0f478ed3b05) for list of icons.
+
+## `v2.3.0`
+
+### Fixes
+
+- Icons now use `rem` sizing to ensure consitency in different contexts
+
+### Components
+
+- New [Seconday Button](https://design-system.nhsapp.service.nhs.uk/components/buttons/) styling added
+- New [Confirmation Panel](https://design-system.nhsapp.service.nhs.uk/components/panel/) component
