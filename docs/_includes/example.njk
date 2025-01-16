@@ -15,11 +15,11 @@
 
 <div class="app-tabs" data-module="app-tabs">
   <ul class="app-tabs__list" role="tablist">
-    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
-    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
-    {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
-    {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
-    {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
+    {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
+    {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
+    {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
   </ul>
 
   <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">

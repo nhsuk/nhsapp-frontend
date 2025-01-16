@@ -1,0 +1,42 @@
+.app-top-nav-native {
+  background-color: $color_nhsuk-grey-5;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.app-top-nav-native__nav {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-top-nav-native__nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0 -12px 0 0;
+  padding: 0;
+}
+
+.app-top-nav-native__nav-item {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.app-top-nav-native__nav-link {
+  display: block;
+  padding: 12px;
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.app-top-nav-native__nav-icon {
+  fill: $nhsuk-focus-text-color;
+  flex-shrink: 0;
+  height: 32px;
+  width: 32px;
+}
