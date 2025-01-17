@@ -1,0 +1,16 @@
+{% extends "./base.njk" %}
+
+{% block skiplink %}{% endblock %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block header %}
+  {% include "layouts/partials/header-native.njk" %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
+{% endblock %}
