@@ -18,7 +18,7 @@ Use an error page when:
 
 ## When not to use
 
-Do not use an error page when a user makes a mistake while completing a form. Instead, follow the NHS service manual guidance for error messages and errors summaries, to help users understand what to do in context.
+Do not use an error page when a user makes a mistake while completing a form. Instead, follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary), to help users understand what to do in context.
 
 ## How to use
 
@@ -58,7 +58,7 @@ Our research suggests users rarely read content when it is placed beneath a butt
 
 You can use inset text to mention NHS 111 at the end of an error page.
 
-[A close-up of a text]
+{% example "error-pages/medical-signposting.njk" %}
 
 It is not always necessary to include this text. We particularly want to avoid giving the impression that 111 can help with technical problems. You might leave out this text on an error page about not being able to download a file, for example.
 
@@ -75,29 +75,21 @@ There are some scenarios where we encourage users to contact the NHS App team, t
 
 ## Examples
 
-### 404 error (page not found)
-
-#### App version
+### 404 error (page not found) - App version
 
 {% example "error-pages/page-not-found.njk" %}
 
-Description automatically generated
-
 If a 404 error occurs in the native app, it means there is a broken link that the NHS App team need to fix. We have included medical signposting because it’s possible that the broken link could lead a medical service.
 
-#### Browser version
+### 404 error (page not found) - Browser version
 
-[A screenshot of a computer]
-
-Description automatically generated
+{% example "error-pages/page-not-found-web.njk" %}
 
 In the browser version, the user is more likely to inputted the wrong web address, so the focus is on helping users to correct that problem.
 
 ### 500 error (internal server error)
 
-[A screenshot of a phone]
-
-Description automatically generated
+{% example "error-pages/problem-with-service.njk" %}
 
 In the above example, the exact problem may be unknown or lengthy to explain. We have used a simple “There is a problem with the service” explanation, similar to the GOV.UK Design System error page for 500 errors.
 
