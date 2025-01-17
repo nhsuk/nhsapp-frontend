@@ -7,24 +7,12 @@
 
 // components
 @import "components/badge/badge";
-@import "components/bottom-nav-native/bottom-nav-native";
 @import "components/button";
 @import "components/card/card";
 @import "components/panel/panel";
 @import "components/tag/tag";
 @import "components/timeline/timeline";
-@import "components/top-nav-native/top-nav-native";
 @import "components/summary-list";
 
 // utilities
 @import "utilities/truncate";
-
-// App main container
-.app-width-container {
-  padding-top: 60px; // to give correct spacing for sticky header
-}
-
-// App main wrapper
-.app-main-wrapper {
-  padding: 0 0 130px; // to give correct spacing for sticky footer
-}

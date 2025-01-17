@@ -32,11 +32,11 @@
     background-color: transparent;
     box-shadow: none;
   }
-}
 
-.app-top-nav-native__nav-icon {
-  fill: $nhsuk-focus-text-color;
-  flex-shrink: 0;
-  height: 32px;
-  width: 32px;
+  .nhsapp-icon {
+    fill: $nhsuk-focus-text-color;
+    flex-shrink: 0;
+    height: 32px;
+    width: 32px;
+  }
 }

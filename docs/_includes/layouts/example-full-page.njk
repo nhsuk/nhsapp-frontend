@@ -1,73 +1,27 @@
 {% extends "./base.njk" %}
 
-{% set containerClasses = "app-width-container" %}
-{% set mainClasses = "app-main-wrapper" %}
-
 {% block skiplink %}{% endblock %}
 
+{% if exampleLoggedIn === false %}
+  {% set mainClasses = "nhsuk-main-wrapper--s" %}
+{% else %}
+  {% set containerClasses = "app-width-container" %}
+  {% set mainClasses = "app-main-wrapper" %}
+{% endif %}
+
 {% block header %}
-  <header class="app-top-nav-native">
-    <div class="nhsuk-width-container">
-      <nav class="app-top-nav-native__nav">
-        <ul class="app-top-nav-native__nav-list">
-          <li class="app-top-nav-native__nav-item">
-            <a class="app-top-nav-native__nav-link" href="#">
-              <svg class="app-top-nav-native__nav-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path d="M20.3199 11.7333C20.1599 11.32 19.9066 10.9333 19.5466 10.5733C19.1866 10.2133 18.7199 9.91998 18.1333 9.67998C17.5466 9.43998 16.8133 9.31998 15.9333 9.31998C15.2533 9.31998 14.6399 9.43998 14.0933 9.66664C13.5466 9.89331 13.0799 10.2133 12.6799 10.6266C12.2933 11.04 11.9866 11.52 11.7733 12.0666C11.5866 12.5333 11.4666 13.0933 11.4399 13.5866C11.4399 13.7466 11.5733 13.88 11.7199 13.8933H13.9066C14.0266 13.8933 14.1333 13.76 14.1599 13.64C14.1599 13.6133 14.1999 13.16 14.2533 12.96C14.3333 12.6666 14.4399 12.4133 14.5999 12.2C14.7599 11.9866 14.9466 11.8133 15.1866 11.68C15.4266 11.5466 15.7199 11.48 16.0533 11.48C16.5466 11.48 16.9333 11.6133 17.2133 11.8933C17.4933 12.16 17.6266 12.5866 17.6266 13.16C17.6266 13.4933 17.5733 13.7733 17.4533 14C17.3199 14.2266 17.1466 14.4266 16.9466 14.6133C16.7333 14.8 16.5066 14.9866 16.2666 15.1733C16.0266 15.36 15.7866 15.5733 15.5599 15.8266C15.3333 16.08 15.1466 16.3866 14.9733 16.7466C14.8133 17.1066 14.7066 17.5466 14.6666 18.08V18.6533C14.6666 18.7733 14.7999 18.92 14.9333 18.92H16.8666C16.9999 18.92 17.1199 18.8266 17.1599 18.7066C17.1599 18.6933 17.1599 18.6266 17.1599 18.6133C17.1599 18.4666 17.1599 18.3066 17.1733 18.2133C17.1999 17.8133 17.3333 17.5333 17.5199 17.2933C17.7066 17.0533 17.9333 16.8266 18.1733 16.64C18.4133 16.4533 18.6799 16.2533 18.9599 16.0666C19.2399 15.88 19.4933 15.64 19.7199 15.3733C19.9466 15.1066 20.1466 14.7733 20.2933 14.3866C20.4533 14 20.5199 13.52 20.5199 12.92C20.5199 12.56 20.4399 12.1733 20.2933 11.76L20.3199 11.7333Z" fill="#212B32"/>
-                <path d="M16.8667 20.2133H14.9734C14.804 20.2133 14.6667 20.3506 14.6667 20.52V22.36C14.6667 22.5293 14.804 22.6666 14.9734 22.6666H16.8667C17.0361 22.6666 17.1734 22.5293 17.1734 22.36V20.52C17.1734 20.3506 17.0361 20.2133 16.8667 20.2133Z" fill="#212B32"/>
-                <path d="M16.04 29.36C8.72001 29.36 2.76001 23.3734 2.76001 16.0134C2.76001 8.65336 8.72001 2.68002 16.04 2.68002C23.36 2.68002 29.32 8.66669 29.32 16.0267C29.32 23.3867 23.36 29.3734 16.04 29.3734V29.36ZM16.04 4.68002C9.82668 4.68002 4.76001 9.76002 4.76001 16.0134C4.76001 22.2667 9.81334 27.36 16.04 27.36C22.2667 27.36 27.32 22.2667 27.32 16.0134C27.32 9.76002 22.2533 4.68002 16.04 4.68002Z"/>
-              </svg>
-              <span class="nhsuk-u-visually-hidden">Help</span>
-            </a>
-          </li>
-          <li class="app-top-nav-native__nav-item">
-            <a class="app-top-nav-native__nav-link" href="#">
-              <svg class="app-top-nav-native__nav-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path d="M29.32 16.0133C29.32 8.65332 23.36 2.66666 16.04 2.66666C8.72001 2.66666 2.76001 8.66666 2.76001 16.0133C2.76001 23.36 8.41334 29.0267 15.4667 29.32C15.6267 29.32 15.7733 29.3467 15.9333 29.3467C15.9867 29.3467 16.04 29.3467 16.0933 29.3467C17.0133 29.3467 17.8667 29.24 18.6667 29.08C18.7067 29.08 18.7467 29.0667 18.7867 29.0533C19.16 28.9733 19.52 28.88 19.8667 28.7733C19.9333 28.7467 20.0133 28.7333 20.08 28.7067C20.48 28.5733 20.8533 28.44 21.1867 28.2933C22.04 27.9333 22.72 27.5467 23.2 27.2267L23.6533 26.9333V26.9067C27.0667 24.4933 29.3067 20.5067 29.3067 16L29.32 16.0133ZM23.6 24.4C23.2667 21.5467 21.1733 19.3333 18.6 19.3333H13.3867C10.84 19.3333 8.74668 21.5067 8.40001 24.3333C6.17334 22.2533 4.76001 19.3067 4.76001 16.0133C4.76001 9.75999 9.82668 4.67999 16.04 4.67999C22.2533 4.67999 27.32 9.77332 27.32 16.0267C27.32 19.3467 25.88 22.3333 23.6 24.4133V24.4Z"/>
-                <path d="M15.9999 18.6933C19.0559 18.6933 21.5332 16.216 21.5332 13.16C21.5332 10.104 19.0559 7.62668 15.9999 7.62668C12.9439 7.62668 10.4666 10.104 10.4666 13.16C10.4666 16.216 12.9439 18.6933 15.9999 18.6933Z" />
-              </svg>
-              <span class="nhsuk-u-visually-hidden">Account and settings</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% if exampleLoggedIn === false %}
+    {% include "layouts/partials/header-native.njk" %}
+  {% else %}
+    {% include "layouts/partials/top-nav-native.njk" %}
+  {% endif %}
 {% endblock %}
 
 {% block footer %}
-  <nav class="app-bottom-nav-native">
-    <div class="nhsuk-width-container">
-      <div class="nhsuk-grid-row">
-        <ul class="app-bottom-nav-native__list">
-          <li class="app-bottom-nav-native__item">
-            <a class="app-bottom-nav-native__link" href="#">
-              {{ nhsappIcon('home') }}
-              <span class="app-bottom-nav-native__label ">Home</span>
-            </a>
-          </li>
-          <li class="app-bottom-nav-native__item">
-            <a class="app-bottom-nav-native__link" href="#">
-              {{ nhsappIcon('crossFilled') }}    
-              <span class="app-bottom-nav-native__label app-bottom-nav-native__label--active">Services</span>
-            </a>
-          </li>
-          <li class="app-bottom-nav-native__item">
-            <a class="app-bottom-nav-native__link" href="#">
-              {{ nhsappIcon('heart') }}
-              <span class="app-bottom-nav-native__label ">Your health</span>
-            </a>
-          </li>
-          <li class="app-bottom-nav-native__item">
-            <a class="app-bottom-nav-native__link" href="#">
-              {{ nhsappIcon('messages') }}
-              <span class="app-bottom-nav-native__label ">Messages</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {% if exampleLoggedIn === false %}
+  {% else %}
+    {% include "layouts/partials/bottom-nav-native.njk" %}
+  {% endif %}
 {% endblock %}
 
 {% block content %}

@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .app-example {
+  background-color: $color_nhsuk-white;
   border: 1px solid $nhsuk-border-color;
   padding-top: 37px; //matches height of new window link
   margin-top: 24px;
@@ -60,6 +61,10 @@
 pre[class*="language-"] {
   background: $color_nhsuk-white;
   margin: 0;
+}
+
+pre[class*="language-"] {
+  padding-top: 2em;
 }
 
 .app-copy__button {

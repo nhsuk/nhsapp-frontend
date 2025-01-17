@@ -1,8 +1,8 @@
 ---
 layout: layouts/pattern.njk
 title: Confirmation page
-description: ...
-backlogID: 0
+description: Use a confirmation page to show users they have completed a task. 
+backlogID: 32
 tags:
   - pattern
 ---

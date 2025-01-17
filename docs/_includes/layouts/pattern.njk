@@ -43,7 +43,7 @@
   </h1>
   <p>{{ description }}</p>
   {{ content | safe }}
-  {% if tags and "component" in tags %}
+  {% if tags and "pattern" in tags %}
     {% include "layouts/partials/feedback-section.njk" %}
   {% else %}
   {% endif %}
