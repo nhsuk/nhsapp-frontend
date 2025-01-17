@@ -101,3 +101,11 @@ code:not([class*="language-"]) {
   font-family: monospace, monospace;
   font-size: 1em;
 }
+
+.app-example--mobile {
+  max-width: 375px;
+
+  .app-example__frame {
+    min-height: 500px;
+  }
+}
