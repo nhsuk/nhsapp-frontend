@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .app-example {
-  background-color: $color_nhsuk-white;
   border: 1px solid $nhsuk-border-color;
   padding-top: 37px; //matches height of new window link
   margin-top: 24px;
@@ -103,9 +102,9 @@ code:not([class*="language-"]) {
 }
 
 .app-example--mobile {
-  max-width: 375px;
+  max-width: $mobile-example-width;
 
   .app-example__frame {
-    min-height: 500px;
+    min-height: $mobile-example-height;
   }
 }

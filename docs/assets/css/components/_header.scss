@@ -15,6 +15,13 @@
   .nhsuk-header__drop-down {
     .nhsuk-header__navigation-link {
       padding: 12px 16px;
+      margin-right: 0;
+    }
+  }
+
+  .nhsuk-header__navigation-list {
+    @include mq($from: desktop) {
+      justify-content: flex-start;
     }
   }
 }
