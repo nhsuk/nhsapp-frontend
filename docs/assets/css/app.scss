@@ -23,10 +23,6 @@
 $app-brand-color: $color_nhsuk-blue;
 $app-img-border-color: #d7e5ef;
 
-// Example sizes
-$mobile-example-width: 375px;
-$mobile-example-height: 500px;
-
 // Import all styles specific for the design system docs
 @import "docs/assets/css/components/header";
 @import "docs/assets/css/components/hero";
@@ -38,6 +34,7 @@ $mobile-example-height: 500px;
 @import "docs/assets/css/container";
 @import "docs/assets/css/tabs";
 @import "docs/assets/css/content";
+@import "docs/assets/css/mobile-iframe";
 @import "docs/assets/css/example";
 @import "docs/assets/css/utilities";
 

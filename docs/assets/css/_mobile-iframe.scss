@@ -1,0 +1,88 @@
+$phone-width: 375px;
+$phone-height: 700px;
+$phone-border-width: 12px;
+$phone-border-radius: 54px;
+$notch-height: 31px;
+$header-height: 44px;
+$phone-background-color: $color_nhsuk-grey-5;
+$bottom-nav-height: 80px; // Adjust this value to match your bottom navigation height
+$phone-inner-radius: $phone-border-radius - $phone-border-width;
+
+$page-background: tint(
+  $color_nhsuk-grey-5,
+  60%
+); // a bit lighter than normal to stand out against phone page background.
+
+html:has(.app-iframe__page) {
+  background-color: $page-background;
+}
+
+.app-iframe__page {
+  background-color: $page-background;
+}
+
+.app-iframe__header {
+  background-color: $phone-background-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  z-index: 1;
+}
+
+.app-iframe__header--blue {
+  background-color: $color_nhsuk-blue;
+}
+
+.app-iframe__container {
+  position: relative;
+  background-color: $phone-background-color;
+  margin: 60px auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $phone-height;
+  width: $phone-width;
+
+  @media (max-width: 420px) {
+    height: 600px;
+    width: 320px;
+  }
+
+  border: $phone-border-width solid black;
+  border-radius: $phone-border-radius;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow:
+    0px 2px 8px rgba(2, 8, 20, 0.2),
+    0px 8px 16px rgba(2, 8, 20, 0.2);
+  overflow: hidden;
+
+  iframe {
+    height: calc(100% - #{$notch-height});
+    width: 100%;
+    border: none;
+    // border-radius: $phone-inner-radius;
+    border-radius: 0;
+    position: absolute;
+    top: $notch-height;
+    left: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
+    }
+  }
+
+  .ios-notch {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 219px;
+    height: $notch-height;
+    z-index: 10;
+    fill: black;
+  }
+}

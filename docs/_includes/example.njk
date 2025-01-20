@@ -2,15 +2,25 @@
   <span class="app-example__new-window">
     <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
   </span>
+  {%- if mobile == true %}
+  <div class="app-iframe__container">
+    <div class="app-iframe__header {%- if mobileHeader == "blue" %} app-iframe__header--blue{% endif -%}"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  {% endif -%}
   <iframe
-    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    onload="{%- if mobile == true %}{% else %}this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';{% endif %}"
     class="app-example__frame"
     scrolling="auto"
     frameborder="0"
-    height="{{ height }}"
+    height="{%- if mobile == true %}700px{% else %}{{ height }}{% endif %}"
     src="{{ href }}"
     title="{{ title }}"
   ></iframe>
+  {%- if mobile == true %}
+  </div>
+  {% endif -%}
 </div>
 
 <div class="app-tabs{%- if mobile == true %} app-tabs--mobile{% endif -%}" data-module="app-tabs">

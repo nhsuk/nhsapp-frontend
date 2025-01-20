@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .app-tabs {
+  background-color: $color_nhsuk-white;
   margin-bottom: nhsuk-spacing(6);
 }
 
@@ -70,8 +71,4 @@
     max-width: 100% !important;
     padding: nhsuk-spacing(2);
   }
-}
-
-.app-tabs--mobile {
-  max-width: $mobile-example-width;
 }
