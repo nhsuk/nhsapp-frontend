@@ -1,4 +1,4 @@
-<div class="app-example{%- if mobile == true %} app-example--mobile{% endif -%}">
+<div class="app-example">
   <span class="app-example__new-window">
     <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
   </span>
@@ -23,7 +23,7 @@
   {% endif -%}
 </div>
 
-<div class="app-tabs{%- if mobile == true %} app-tabs--mobile{% endif -%}" data-module="app-tabs">
+<div class="app-tabs" data-module="app-tabs">
   <ul class="app-tabs__list" role="tablist">
     <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
     <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
