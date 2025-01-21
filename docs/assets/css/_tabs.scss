@@ -3,8 +3,9 @@
    ========================================================================== */
 
 .app-tabs {
+  @include nhsuk-responsive-margin(5, "bottom");
+
   background-color: $color_nhsuk-white;
-  margin-bottom: nhsuk-spacing(6);
 }
 
 .app-tabs__list {
@@ -71,4 +72,9 @@
     max-width: 100% !important;
     padding: nhsuk-spacing(2);
   }
+}
+
+.app-tabs + h2,
+.app-tabs + h3 {
+  @include nhsuk-responsive-padding(4, "top");
 }

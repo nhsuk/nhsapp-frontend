@@ -13,7 +13,7 @@ tags:
 
 Use the panel component to display important information when a transaction has been completed.
 
-In most cases, the panel component is used on confirmation pages, to tell the user they have successfully completed the transaction.
+In most cases, the panel component is used on [confirmation pages](/patterns/confirmation-page), to tell the user they have successfully completed the transaction.
 
 ## When not to use
 
