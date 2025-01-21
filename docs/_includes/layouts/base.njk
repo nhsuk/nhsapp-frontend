@@ -2,6 +2,7 @@
 {% from 'footer/macro.njk' import footer %}
 {% from 'breadcrumb/macro.njk' import breadcrumb %}
 {% from 'skip-link/macro.njk' import skipLink %}
+{% from "icon/macro.njk" import nhsappIcon %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -79,8 +80,8 @@
       {% endblock %}
 
       {% block container %}
-        <div class="nhsuk-width-container">
-          <main role="main" id="maincontent" class="nhsuk-main-wrapper">
+        <div class="nhsuk-width-container{% if containerClasses %} {{ containerClasses }}{% endif %}">
+          <main role="main" id="maincontent" class="nhsuk-main-wrapper{% if mainClasses %} {{ mainClasses }}{% endif %}">
             {% block main %}
               {{ content | safe }}
             {% endblock main %}

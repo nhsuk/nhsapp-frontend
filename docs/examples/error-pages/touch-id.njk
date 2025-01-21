@@ -1,0 +1,32 @@
+---
+layout: layouts/example-full-page-mobile-not-logged-in.njk
+mobile: true
+mobileHeader: "blue"
+title: Touch ID
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">Touch ID did not work</h1>
+
+    <p>Check you have:</p>
+
+    <ul>
+      <li>added a fingerprint scan on your device</li>
+      <li>turned on Touch ID in the account area of the NHS App</li>
+    </ul>
+
+    <p>You can still log in to the NHS App using your email address and password.</p>
+
+    {{ button({
+      text: "Go back to login",
+      classes: "nhsapp-button--secondary nhsapp-button"
+    }) }}
+
+  </div>
+</div>

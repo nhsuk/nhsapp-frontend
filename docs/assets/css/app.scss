@@ -11,6 +11,7 @@
 @import "node_modules/nhsuk-frontend/packages/components/tabs/tabs";
 @import "node_modules/nhsuk-frontend/packages/components/summary-list/summary-list";
 @import "node_modules/nhsuk-frontend/packages/components/button/button";
+@import "node_modules/nhsuk-frontend/packages/components/inset-text/inset-text";
 
 @import "node_modules/prismjs/themes/prism";
 @import "docs/assets/css/code-colours";
@@ -27,8 +28,13 @@ $app-img-border-color: #d7e5ef;
 @import "docs/assets/css/components/hero";
 @import "docs/assets/css/components/side-navigation";
 @import "docs/assets/css/components/callout";
+@import "docs/assets/css/components/bottom-nav-native";
+@import "docs/assets/css/components/top-nav-native";
+@import "docs/assets/css/components/header-native";
+@import "docs/assets/css/container";
 @import "docs/assets/css/tabs";
 @import "docs/assets/css/content";
+@import "docs/assets/css/mobile-iframe";
 @import "docs/assets/css/example";
 @import "docs/assets/css/utilities";
 

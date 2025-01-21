@@ -1,4 +1,10 @@
-<h2>Help improve this component</h2>
-<p>If you have used or researched this component, please let us know what you found so we can make it better for everyone.</p> 
+{% if tags and "pattern" in tags %}
+  <h2>Help improve this pattern</h2>
+  <p>If you have used or researched this pattern, please let us know what you found so we can make it better for everyone.</p> 
+{% else %}
+  <h2>Help improve this component</h2>
+  <p>If you have used or researched this component, please let us know what you found so we can make it better for everyone.</p> 
+{% endif %}
+
 <p><a href="https://github.com/nhsuk/nhsapp-frontend/issues/{{ backlogID }}">Discuss '{{ title }}'  on GitHub</a> where you can share anything you think might be useful.</p>
 <p>You can also <a href="/community/help-and-feedback/">share feedback with us on Slack</a>.</p>

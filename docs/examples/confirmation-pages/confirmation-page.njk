@@ -1,0 +1,25 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+title: Confirmation page
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/panel/macro.njk" import nhsappPanel %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    {{ nhsappPanel({
+      titleText: "Your medicines have been requested"
+    }) }}
+
+    <p>Your request has been sent to your GP surgery for approval.</p>
+
+    <h2>What happens next</h2>
+
+    <p>Once approved, it can take 3 to 5 working days for a pharmacy to prepare your prescription.</p>
+
+  </div>
+</div>

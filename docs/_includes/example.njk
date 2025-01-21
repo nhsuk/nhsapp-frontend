@@ -1,25 +1,35 @@
-<div class="app-example">
+<div class="app-example{%- if mobile == true %} app-example--mobile{% endif -%}">
   <span class="app-example__new-window">
     <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
   </span>
+  {%- if mobile == true %}
+  <div class="app-iframe__container">
+    <div class="app-iframe__header {%- if mobileHeader == "blue" %} app-iframe__header--blue{% endif -%}"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  {% endif -%}
   <iframe
-    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    onload="{%- if mobile == true %}{% else %}this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';{% endif %}"
     class="app-example__frame"
     scrolling="auto"
     frameborder="0"
-    height="{{ height }}"
+    height="{%- if mobile == true %}700px{% else %}{{ height }}{% endif %}"
     src="{{ href }}"
     title="{{ title }}"
   ></iframe>
+  {%- if mobile == true %}
+  </div>
+  {% endif -%}
 </div>
 
-<div class="app-tabs" data-module="app-tabs">
+<div class="app-tabs{%- if mobile == true %} app-tabs--mobile{% endif -%}" data-module="app-tabs">
   <ul class="app-tabs__list" role="tablist">
-    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
-    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
-    {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
-    {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
-    {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
+    {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
+    {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
+    {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
   </ul>
 
   <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">

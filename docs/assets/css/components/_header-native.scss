@@ -1,0 +1,20 @@
+.app-header--native {
+  .nhsuk-header__container {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+  }
+  .nhsuk-logo {
+    border: 0;
+    display: block;
+    height: 32px;
+    width: 80px;
+
+    .nhsuk-logo__background {
+      fill: $color_nhsuk-white;
+    }
+    .nhsuk-logo__text {
+      fill: $color_nhsuk-blue;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+title: Page not found
+figmaLink: 
+vueLink: 
+---
+
+{% from 'inset-text/macro.njk' import insetText %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">Page not found</h1>
+
+    <p>We will fix this link as soon as possible. Try again later or use a different services.</p>
+
+    {{ insetText({
+      html: "<p>For urgent medical advice, use <a href='#'>111 online</a> or call <a href='#'>111</a>.</p>",
+      classes:"nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4"
+    }) }}
+
+  </div>
+</div>

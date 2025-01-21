@@ -1,0 +1,51 @@
+{% extends "./sidebar.njk" %}
+
+{%- from "./partials/side-navigation.njk" import appSideNavigation %}
+
+{% block breadcrumb %}
+  {% if title === "Patterns" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        }
+      ],
+      href: "/patterns",
+      text: "Patterns"
+    }) }}
+  {% endif %}
+{% endblock %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    label: 'Patterns',
+    currentPath: page.url,
+    sections: [
+      {
+        heading: {
+          text: 'Patterns'
+        },
+        items: collections.pattern | sort(attribute="data.title")
+      }
+    ]
+  }) }}
+{% endset %}
+
+{% block main %}
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {{ title }}
+  </h1>
+  <p>{{ description }}</p>
+  {{ content | safe }}
+  {% if tags and "pattern" in tags %}
+    {% include "layouts/partials/feedback-section.njk" %}
+  {% else %}
+  {% endif %}
+
+{% endblock %}

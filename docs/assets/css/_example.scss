@@ -62,6 +62,10 @@ pre[class*="language-"] {
   margin: 0;
 }
 
+pre[class*="language-"] {
+  padding-top: 2em;
+}
+
 .app-copy__button {
   background-color: $color_nhsuk-white;
   border: 1px solid $color_nhsuk-green;

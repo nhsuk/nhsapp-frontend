@@ -86,7 +86,9 @@ export default function (eleventyConfig) {
       htmlCode: prettyHtmlCode,
       nunjucksCode: nunjucksCode,
       figmaLink: data.figmaLink,
-      vueLink: data.vueLink
+      vueLink: data.vueLink,
+      mobile: data.mobile,
+      mobileHeader: data.mobileHeader
     }
     return nunjucksEnv.render('example.njk', templateData)
   })

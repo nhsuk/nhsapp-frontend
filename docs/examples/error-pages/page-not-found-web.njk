@@ -1,0 +1,27 @@
+---
+layout: layouts/example-full-page-web.njk
+title: Page not found - web
+figmaLink: 
+vueLink: 
+---
+
+{% from 'inset-text/macro.njk' import insetText %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">Page not found</h1>
+
+    <p>If you typed the web address, check it was correct.</p>
+
+    <p>If you pasted the web address, check you copied the entire address.</p>
+
+    <p>Otherwise, this may be a broken link that we will fix as soon as possible. Try again later or use a different service.</p>
+
+    {{ insetText({
+      html: "<p>For urgent medical advice, use <a href='#'>111 online</a> or call <a href='#'>111</a>.</p>",
+      classes:"nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4"
+    }) }}
+
+  </div>
+</div>

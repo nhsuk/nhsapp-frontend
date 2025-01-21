@@ -1,0 +1,63 @@
+.app-bottom-nav-native {
+  background-color: $nhsuk-link-color;
+  bottom: 0;
+  padding-bottom: 8px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
+.app-bottom-nav-native__list {
+  display: flex;
+  gap: nhsuk-spacing(1);
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.app-bottom-nav-native__item {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+
+.app-bottom-nav-native__link {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: nhsuk-spacing(2);
+  padding: 12px 0 20px;
+  text-decoration: none;
+
+  .app-icon {
+    fill: $color_nhsuk-white;
+    height: 28px;
+    width: 28px;
+  }
+
+  .nhsapp-icon {
+    fill: $color_nhsuk-white;
+    height: 28px;
+    width: 28px;
+  }
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.app-bottom-nav-native__label {
+  color: $color_nhsuk-white;
+  font-size: 12px;
+
+  @include mq($from: tablet) {
+    font-size: 16px;
+  }
+}
+
+.app-bottom-nav-native__label--active {
+  font-weight: bold;
+}

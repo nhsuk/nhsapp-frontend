@@ -1,0 +1,18 @@
+{% extends "./base.njk" %}
+
+{% block skiplink %}{% endblock %}
+
+{% set containerClasses = "app-width-container" %}
+{% set mainClasses = "app-main-wrapper" %}
+
+{% block header %}
+  {% include "layouts/partials/top-nav-native.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "layouts/partials/bottom-nav-native.njk" %}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
+{% endblock %}

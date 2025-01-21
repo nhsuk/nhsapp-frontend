@@ -15,6 +15,13 @@
   .nhsuk-header__drop-down {
     .nhsuk-header__navigation-link {
       padding: 12px 16px;
+      margin-right: 0;
+    }
+  }
+
+  .nhsuk-header__navigation-list {
+    @include mq($from: desktop) {
+      justify-content: flex-start;
     }
   }
 }
@@ -22,4 +29,43 @@
 // Hide home nav link
 .nhsuk-header__navigation-item--home {
   display: none;
+}
+
+// App web header
+// Code needs refactoring as a part of bumping NHS.UK frotend version
+.app-header__secondary-nav {
+  display: flex;
+
+  @include mq($until: desktop) {
+    display: none;
+  }
+}
+
+.app-header__secondary-nav-list {
+  align-self: center;
+  color: white;
+  display: flex;
+  float: right;
+  gap: 8px;
+  height: 40px;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.app-header__secondary-nav-item {
+  @include nhsuk-font($size: 16);
+
+  margin-bottom: 0;
+  padding: 4px;
+}
+
+.app-header__secondary-nav-link {
+  color: white;
+}
+
+.app-header__navigation-item--hide-on-desktop {
+  @include mq($from: desktop) {
+    display: none;
+  }
 }

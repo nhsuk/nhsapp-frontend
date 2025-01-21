@@ -28,7 +28,7 @@ $nhsapp-border-width-panel: nhsuk-spacing(1);
   border: $nhsapp-border-width-panel solid transparent;
   box-sizing: border-box;
   color: $color_nhsuk-white;
-  padding: nhsuk-spacing(6) - $nhsapp-border-width-panel;
+  padding: nhsuk-spacing(5) - $nhsapp-border-width-panel;
 
   @include mq($until: tablet) {
     padding: nhsuk-spacing(4) - $nhsapp-border-width-panel;
