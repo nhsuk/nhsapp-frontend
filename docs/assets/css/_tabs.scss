@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .app-tabs {
-  @include nhsuk-responsive-margin(4, "bottom");
+  @include nhsuk-responsive-margin(5, "bottom");
 
   background-color: $color_nhsuk-white;
 }

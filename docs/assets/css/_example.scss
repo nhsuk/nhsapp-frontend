@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .app-example {
-  @include nhsuk-responsive-margin(4, "top");
+  @include nhsuk-responsive-margin(5, "top");
 
   border: 1px solid $nhsuk-border-color;
   padding-top: 37px; //matches height of new window link
