@@ -71,7 +71,7 @@ You should:
 
 ### Error codes
 
-There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then inputs that code when completing the form. See the 500 error example below.
+There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then input that code when completing the form. See the 500 error example below.
 
 ## Examples
 
