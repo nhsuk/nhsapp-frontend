@@ -11,6 +11,8 @@ tags:
 
 ## The structure of the homepage
 
+{% example "homepage/homepage-web.njk" %}
+
 ### Dynamic page title
 
 This main heading includes a greeting that changes depending on the time of day. Research suggested this helps the app feel more personal to users.
@@ -26,8 +28,6 @@ Selecting one of these card links takes a user either directly into the start of
 ### Campaign card
 
 This card can be used to promote seasonal or topical campaigns such as COVID or flu vaccines, blood donation or being part of health research.
-
-{% example "homepage/homepage-web.njk" %}
 
 ## Proposing changes to the homepage
 
