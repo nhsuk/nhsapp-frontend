@@ -13,13 +13,13 @@ tags:
 
 {% example "homepage/homepage-web.njk" %}
 
-### Dynamic page title
+### Page heading
 
-This main heading includes a greeting that changes depending on the time of day. Research suggested this helps the app feel more personal to users.
+This page heading includes a greeting that changes depending on the time of day. Research suggested this helps the app feel more personal to users.
 
-### Section titles with ‘view all’ links
+### Section headings
 
-Section titles are used to divide the card links across the page. This helps users understand how the journeys are organised within the app. The ‘view all’ links give users an in-page way to navigate to hub pages. In usability testing these links were the most common way that users proceeded from the homepage into the ‘Services’ and ‘Your health’ hubs.
+Section headings are used to divide the card links across the page. This helps users understand how the journeys are organised within the app. The ‘view all’ links give users an in-page way to navigate to hub pages. In usability testing these links were the most common way that users proceeded from the homepage into the ‘Services’ and ‘Your health’ hubs.
 
 ### Card links
 
@@ -33,7 +33,7 @@ This card can be used to promote seasonal or topical campaigns such as COVID or 
 
 We are careful to limit the number of links that are shown in the homepage. We need to ensure that users can quickly scan through the page and access the most popular features of the NHS App.
 
-The Navigation and Onboarding Team maintains and updates the homepage. We regularly review and test the selection of links displayed. If you would like to suggest changes to the homepage, please contact us.
+The Navigation and Onboarding Team maintains and updates the homepage. We regularly review and test the selection of links displayed. If you would like to suggest changes to the homepage, please contact the team.
 
 ## Research
 
