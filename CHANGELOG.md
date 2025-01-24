@@ -79,3 +79,9 @@ New icons added. [See full commit](https://github.com/nhsuk/nhsapp-frontend/comm
 
 - New [Seconday Button](https://design-system.nhsapp.service.nhs.uk/components/buttons/) styling added
 - New [Confirmation Panel](https://design-system.nhsapp.service.nhs.uk/components/panel/) component
+
+## `v2.4.0` - UNRELEASED
+
+### Components
+
+- Updated [Badge](https://design-system.nhsapp.service.nhs.uk/components/badge/) - removing small blue variant

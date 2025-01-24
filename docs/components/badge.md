@@ -42,18 +42,13 @@ Small badges are simple circles. They can be placed:
 - on the edge of icons, such as on the bottom navigation
 - on cards, alongside text, such as “Document attached” on appointment cards
 
-{% example "badges/badge-small-red.njk" %}
+{% example "badges/badge-small.njk" %}
 
-The colour of small badges can be:
-
-- red for important notifications that needs to stand out on a page
-- blue for secondary notifications that can afford to be less prominent
-
-For example, users will see a red badge on the bottom navigation to indicate unread messages.
+We show a red badge on the bottom navigation to indicate unread messages.
 
 ![The bottom navigation menu with a red badge on the messages item to indicate unread messages.](/assets/images/bottom-nav-badge.png)
 
-When they then navigate to their messages inbox to view those messages, unread message headings are indicated by blue badges.
+When users then navigate to their messages inbox to view those messages, unread message headings are indicated by red badges.
 
 {% example "cards/card-messages.njk" %}
 
