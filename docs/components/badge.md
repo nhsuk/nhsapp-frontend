@@ -23,8 +23,6 @@ Badges should be dynamic and temporary. After users have viewed the relevant inf
 - disappear
 - remain if there are still unread items (but with an adjusted number count, if one is used)
 
-There are different size and colour variations of badges.
-
 ### Large badges
 
 Large badges always include a number count. This tells users how many items need their attention.
