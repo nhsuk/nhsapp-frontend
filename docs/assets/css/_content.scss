@@ -1,5 +1,8 @@
 .app-content {
   img {
+    @include nhsuk-responsive-margin(5, "bottom");
+    @include nhsuk-responsive-margin(5, "top");
+
     border: nhsuk-spacing(1) solid $app-img-border-color;
     display: block; // To remove extra spacing beneath images
     max-width: 100%; // So images do not break the container

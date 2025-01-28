@@ -53,13 +53,7 @@ $nhsapp-badge-size-tablet: 12px;
     @include small-badge-position($nhsapp-badge-size-tablet);
   }
 
-  background-color: $color_nhsuk-blue;
-}
-
-.nhsapp-badge-small--red {
-  .nhsapp-badge-small__indicator {
-    background-color: $nhsuk-error-color;
-  }
+  background-color: $nhsuk-error-color;
 }
 
 .nhsapp-badge-small--absolute {
