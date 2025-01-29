@@ -5,7 +5,7 @@ tags:
   - getStarted
 ---
 
-Storing your prototype kit code securely and using Heroku to run prototypes for testing with users.
+You can use GitHub to store your prototype securely and Heroku to run it for user testing.
 
 ## Setting up Git
 
