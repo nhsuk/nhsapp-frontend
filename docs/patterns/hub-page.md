@@ -39,7 +39,7 @@ Back buttons are not used on hub pages, as they are the starting point for diffe
 
 ## Adding journeys to hub pages
 
-For help with adding journeys to hub pages, see our guidance on adding a new journey to the NHS App.
+The Navigation and Onboarding Team maintains and updates the hub pages. For help with adding journeys to hub pages, please contact the team.
 
 ## Research
 
