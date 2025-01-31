@@ -101,6 +101,18 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     :last-child {
       margin-bottom: 0;
     }
+
+    &--link {
+      align-items: center;
+      display: flex;
+      gap: nhsuk-spacing(3);
+      justify-content: flex-start;
+      position: relative;
+
+      .nhsapp-icon {
+        margin-left: auto;
+      }
+    }
   }
 }
 

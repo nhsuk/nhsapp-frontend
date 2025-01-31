@@ -20,10 +20,14 @@
           {{ params.aboveContent.html | safe }}
         </div>
       {%- endif -%}
-      {%- if params.readOnly -%}
-        <p class="nhsapp-card__title">{{ params.title }}</p>
+      {%- if params.readOnly or params.footer.href -%}
+        {%- if params.titleHeadingLevel -%}
+          <h{{ params.titleHeadingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.title }}</h{{ params.titleHeadingLevel }}>
+        {%- else -%}
+          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.title }}</p>
+        {%- endif -%}
       {%- else -%}
-        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
+        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}" 
       {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
           {{ params.title }}
         </a>
@@ -44,13 +48,22 @@
         ariaHidden: params.badgeLarge.ariaHidden
       }) }}
     {% endif %}
-    {%- if not params.readOnly -%}
+    {%- if params.readOnly or params.footer.href -%}
+    {%- else -%}
       {{ nhsappIcon('chevronRight') }}
     {%- endif -%}
   </div>
   {%- if params.footer.html -%}
     <div class="nhsapp-card__footer">
       {{ params.footer.html | safe }}
+    </div>
+  {%- elif params.footer.href -%}
+    <div class="nhsapp-card__footer nhsapp-card__footer--link">
+      <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
+      {%- if params.footer.linkAriaLabel %} aria-label="{{ params.footer.linkAriaLabel }}" {% endif %}>
+          {{ params.footer.title }}
+      </a>
+      {{ nhsappIcon('chevronRight') }}
     </div>
   {%- endif -%}
 {%- if params.isListItem -%}
