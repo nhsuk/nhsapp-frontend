@@ -1,0 +1,14 @@
+---
+layout: layouts/example.njk
+title: Card link secondary
+figmaLink: ""
+vueLink: ""
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+{{ nhsappCard({
+  title: 'Privacy and legal policies',
+  href: '#',
+  classes: 'nhsapp-card--secondary'
+}) }}

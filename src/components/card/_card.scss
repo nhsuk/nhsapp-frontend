@@ -116,6 +116,12 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 }
 
+// secondary card
+.nhsapp-cards--secondary .nhsapp-card,
+.nhsapp-card--secondary {
+  background: transparent;
+}
+
 // card group
 .nhsapp-cards {
   @include nhsuk-responsive-margin(5, "bottom");
