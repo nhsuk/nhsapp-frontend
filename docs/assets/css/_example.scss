@@ -63,8 +63,8 @@ pre[class*="language-"] {
   margin: 0;
 }
 
-pre[class*="language-"] {
-  padding-top: 2em;
+.app-tabs__panel pre[class*="language-"] {
+  padding-top: 2.5em;
 }
 
 .app-copy__button {
@@ -99,5 +99,9 @@ code:not([class*="language-"]) {
   color: #c62950;
   background-color: white;
   font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.language-html p {
   font-size: 1em;
 }
