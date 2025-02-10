@@ -21,7 +21,7 @@
 $nhsapp-border-width-panel: nhsuk-spacing(1);
 
 .nhsapp-panel {
-  @include nhsuk-typography-responsive(24);
+  @include nhsuk-typography-responsive(26);
   @include nhsuk-responsive-margin(4, "bottom");
 
   background: $color_nhsuk-green;
