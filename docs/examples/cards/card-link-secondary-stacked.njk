@@ -1,0 +1,47 @@
+---
+layout: layouts/example.njk
+title: Card link secondary stacked
+figmaLink: ""
+vueLink: ""
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from "nhsapp/styles/section-heading/macro.njk" import nhsappSectionHeading %}
+
+{{ nhsappSectionHeading({
+  headingText: "Settings"
+}) }}
+
+{{ nhsappCardGroup({
+  stacked: true,
+  cards: [
+    {
+      title: 'Login and security',
+      href: '#'
+    },
+    {
+      title: 'Face ID',
+      href: '#'
+    }
+  ]
+}) }}
+
+{{ nhsappSectionHeading({
+  headingText: "About the NHS App"
+}) }}
+
+{{ nhsappCardGroup({
+  stacked: true,
+  classes: 'nhsapp-cards--secondary',
+  cards: [
+    {
+      title: 'Privacy and legal policies',
+      href: '#'
+    },
+    {
+      title: 'Join our user research panel',
+      href: '#'
+    }
+  ]
+}) }}
