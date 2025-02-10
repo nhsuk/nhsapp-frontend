@@ -2,7 +2,7 @@
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
-{% block breadcrumb %}
+{% block beforeContent %}
   {% if title === "Components" %}
     {{ breadcrumb({
       href: "/",

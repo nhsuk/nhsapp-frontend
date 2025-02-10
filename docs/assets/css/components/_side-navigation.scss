@@ -6,11 +6,12 @@
   @include nhsuk-font($size: 16);
 
   display: block;
-  padding: nhsuk-spacing(2) 0 0;
+  padding: nhsuk-spacing(5) 0 0;
 }
 
 .app-side-navigation__title {
   @include nhsuk-font($size: 19);
+
   color: $color_nhsuk-grey-1;
   font-weight: normal;
   margin: 0;
@@ -88,7 +89,7 @@
 }
 
 .app-side-navigation--mobile {
-  padding-bottom: nhsuk-spacing(4);
+  padding: nhsuk-spacing(4) 0;
 
   .app-side-navigation {
     padding: 0 0 nhsuk-spacing(3);
@@ -100,6 +101,10 @@
 
   .app-side-navigation--section {
     padding-top: nhsuk-spacing(3);
+  }
+
+  .app-side-navigation__title {
+    font-weight: bold;
   }
 
   .app-side-navigation__item {

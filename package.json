@@ -43,12 +43,12 @@
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^6.0.0",
     "markdown-it-anchor": "^9.0.1",
-    "nhsuk-frontend": "^8.1.1",
+    "nhsuk-frontend": "^9.1.0",
     "nunjucks": "^3.2.4",
     "prettier": "^3.2.5",
     "sass": "^1.74.1"
   },
   "peerDependencies": {
-    "nhsuk-frontend": "^8.0.0"
+    "nhsuk-frontend": "^9.1.0"
   }
 }
