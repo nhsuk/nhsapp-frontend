@@ -58,7 +58,7 @@
       {{ params.footer.html | safe }}
     </div>
   {%- elif params.footer.href -%}
-    <div class="nhsapp-card__footer nhsapp-card__footer--link">
+    <div class="nhsapp-card__footer nhsapp-card__footer--with-link">
       <a href="{{ params.footer.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
       {%- if params.footer.linkAriaLabel %} aria-label="{{ params.footer.linkAriaLabel }}" {% endif %}>
           {{ params.footer.title }}
