@@ -4,26 +4,50 @@
       <ul class="app-bottom-nav-native__list">
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
-            {{ nhsappIcon('home') }}
-            <span class="app-bottom-nav-native__label ">Home</span>
+            {% if hub === "Home" %}
+              {{ nhsappIcon('homeFilled') }}
+            {% else %}
+              {{ nhsappIcon('home') }}
+            {% endif %}
+            <span class="app-bottom-nav-native__label{% if hub === 'Home' %} app-bottom-nav-native__label--active{% endif %}">Home</span>
           </a>
         </li>
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
-            {{ nhsappIcon('crossFilled') }}    
-            <span class="app-bottom-nav-native__label app-bottom-nav-native__label--active">Services</span>
+            {% if hub === "Services" %}
+              {{ nhsappIcon('crossFilled') }}
+            {% else %}
+              {{ nhsappIcon('cross') }}
+            {% endif %}        
+            <span class="app-bottom-nav-native__label{% if hub === 'Services' %} app-bottom-nav-native__label--active{% endif %}">Services</span>
           </a>
         </li>
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
-            {{ nhsappIcon('heart') }}
-            <span class="app-bottom-nav-native__label ">Your health</span>
+            {% if hub === "Your health" %}
+              {{ nhsappIcon('heartFilled') }}
+            {% else %}
+              {{ nhsappIcon('heart') }}
+            {% endif %} 
+            <span class="app-bottom-nav-native__label{% if hub === 'Your health' %} app-bottom-nav-native__label--active{% endif %}">Your health</span>
           </a>
         </li>
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
-            {{ nhsappIcon('messages') }}
-            <span class="app-bottom-nav-native__label ">Messages</span>
+            {% if hub === "Messages" %}
+              {% if data['messages'] > 0 %}
+                {{ nhsappIcon('messagesUnreadFilled') }}
+              {% else %}
+                {{ nhsappIcon('messagesFilled') }}
+              {% endif %}
+            {% else %}
+              {% if data['messages'] > 0 %}
+                {{ nhsappIcon('messagesUnread') }}
+              {% else %}
+                {{ nhsappIcon('messages') }}
+              {% endif %}
+            {% endif %}
+            <span class="app-bottom-nav-native__label{% if hub === 'Messages' %} app-bottom-nav-native__label--active{% endif %}">Messages</span>
           </a>
         </li>
       </ul>
