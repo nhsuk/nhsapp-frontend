@@ -1,7 +1,7 @@
 ---
 layout: layouts/component.njk
 title: Tag
-description: Use tags to show a status. Tags only display information and are not interactive.
+description: Use tags to show the status of a task or a process. 
 backlogID: 11
 tags:
   - component
@@ -13,34 +13,47 @@ tags:
 
 Use tags to help users:
 
-- understand the status of an activity or a process
 - keep track of progress
 - understand when they need to take an action
 
-For example, tags can help users to:
-
-- track prescription requests
-- understand when they need to take an action regarding a hospital referral
-
-## When not to use
-
-Too many tags, and lots of variation in tag colours, may clutter a page and overwhelm users. Tags can also affect the visual hierarchy of a page. This means tags should be used sparingly.
-
 ## How to use
 
-Tags can be placed within a card or outside of one. Inside a card, tags should always be left-aligned. Outside a card, tags can be aligned to the left or the right.
+You can place tags inside or outside a card. 
+
+### Choosing colours
+
+You should use colours that fit with the mental models of your users. Try to find this out through user research. You might find it works to use:
+
+- green to signify confirmation or a positive status  
+- red for a status that needs to stand out or be actioned
+- grey for a status that doesn't need to stand out
+
+Within the same NHS App service, you should always be consistent and match the same colour with the same tag text. 
+
+You should also try to align the colours and text with other areas of the NHS App. There may be some variation between services because they need different statuses to fit with their contexts. For example, a red status tag might be labelled "Cancelled" in one service but "Action needed" in another. We want to do more research into how users percieve these variations.
+
+### Writing tag text
 
 Tag text should:
 
 - be in sentence case
-- describe status in as few words as possible
+- describe the status in as few words as possible
+
+For example:
+
+- Requested
+- In progress
+- Ready for delivery
+- Done
+- Cancelled
 
 ## How not to use
 
-Do not use tags:
+Do not:
 
-- as a header or grouping-class for elements or information
-- as a selectable element
+- use lots of tags or lots of colour variation – it can clutter pages and overwhelm users
+- use tags as a header or grouping-class for elements or information
+- use tags as a selectable element
 
 Tag text should not:
 
@@ -53,4 +66,6 @@ Tag colours meet [WCAG 2.2 Success Criterion 1.4.3 Contrast (Minimum)](https://w
 
 ## Research
 
-In our research, we found that red tags could cause some participants to feel concerned. Red was associated with something having gone wrong.
+In our research, we found that red tags were associated with something having gone wrong.
+
+We want to do more research to understand how variations in tag colours and text across different NHS App services might affect users.
