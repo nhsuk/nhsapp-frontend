@@ -1,6 +1,6 @@
 # NHS App Frontend Changelog
 
-## `v3.0.0` - UNRELEASED
+## `v3.0.0`
 
 ### Breaking changes
 
