@@ -21,7 +21,8 @@ const nunjucksEnv = nunjucks.configure([
   'docs/assets',
 
   // NHS.UK frontend components
-  'node_modules/nhsuk-frontend/packages/components'
+  'node_modules/nhsuk-frontend/packages/components',
+  'node_modules/nhsuk-frontend/packages/macros'
 ])
 
 export default function (eleventyConfig) {

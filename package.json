@@ -1,6 +1,6 @@
 {
   "name": "nhsapp-frontend",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "A CSS library built on top of nhsuk-frontend providing styles for the NHS App.",
   "main": "index.js",
   "type": "module",
@@ -43,12 +43,12 @@
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^6.0.0",
     "markdown-it-anchor": "^9.0.1",
-    "nhsuk-frontend": "^8.1.1",
+    "nhsuk-frontend": "^9.2.0",
     "nunjucks": "^3.2.4",
     "prettier": "^3.2.5",
     "sass": "^1.74.1"
   },
   "peerDependencies": {
-    "nhsuk-frontend": "^8.0.0"
+    "nhsuk-frontend": "^9.0.0"
   }
 }
