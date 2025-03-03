@@ -1,0 +1,43 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+hub: Account
+title: Account
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <h1 class="nhsuk-u-margin-bottom-5">Account</h1>
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      cards: [
+        {
+          title: 'Manage services for another person',
+          href: '#'
+        },
+        {
+          title: 'Settings',
+          href: '#'
+        },
+        {
+          title: 'Help and support',
+          href: '#'
+        }
+      ]
+    }) }}
+
+    {{ button({
+      text: "Log out",
+      classes: "nhsapp-button--secondary nhsapp-button"
+    }) }}
+
+  </div>
+</div>

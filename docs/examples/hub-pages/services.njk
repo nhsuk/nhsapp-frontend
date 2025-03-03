@@ -1,0 +1,83 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+hub: Services
+title: Services
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from "nhsapp/styles/section-heading/macro.njk" import nhsappSectionHeading %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <h1 class="nhsuk-u-margin-bottom-3">Services</h1>
+    <p class="nhsuk-u-margin-bottom-5">Get care and support to help you stay well</p>
+
+    {{ nhsappSectionHeading({
+      headingText: "Your GP services"
+    }) }}
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      cards: [
+        {
+          title: 'Request medicines',
+          href: '#'
+        },
+        {
+          title: 'Contact your GP surgery for a document or update',
+          href: '#'
+        },
+        {
+          title: 'Check for available GP appointments',
+          href: '#'
+        }
+      ]
+    }) }}
+
+    {{ nhsappSectionHeading({
+      headingText: "Other NHS services"
+    }) }}
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      cards: [
+        {
+          title: 'Check if you need urgent medical help using 111 online',
+          href: '#'
+        },
+        {
+          title: 'Find NHS services near you',
+          href: '#'
+        }
+      ]
+    }) }}
+
+    {{ nhsappSectionHeading({
+      headingText: "Find health information"
+    }) }}
+
+    {{ nhsappCardGroup({
+        stacked: true,
+        cards: [
+          {
+            title: "Browse NHS health information",
+            href: "#"
+          },
+          {
+            title: "Browse NHS medicines information",
+            href: "#"
+          },
+          {
+            title: "Find COVID-19 guidance",
+            href: "#"
+          }
+        ]
+      })}}
+
+  </div>
+</div>

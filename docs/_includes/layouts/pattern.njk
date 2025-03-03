@@ -29,9 +29,9 @@
     sections: [
       {
         heading: {
-          text: 'Patterns'
+          text: 'Pages'
         },
-        items: collections.pattern | sort(attribute="data.title")
+        items: collections.page | sort(attribute="data.title")
       }
     ]
   }) }}
@@ -48,7 +48,7 @@
   {% endif %}
   <p>{{ description }}</p>
   {{ content | safe }}
-  {% if tags and "pattern" in tags %}
+  {% if tags and ("page" in tags or "pattern" in tags) %}
     {% include "layouts/partials/feedback-section.njk" %}
   {% else %}
   {% endif %}
