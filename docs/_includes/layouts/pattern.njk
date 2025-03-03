@@ -41,6 +41,11 @@
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>
+  {% if pageNotice %}
+    <div class="nhsuk-inset-text">
+      <p>{{ pageNotice }}</p>
+    </div>
+  {% endif %}
   <p>{{ description }}</p>
   {{ content | safe }}
   {% if tags and "pattern" in tags %}

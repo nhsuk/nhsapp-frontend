@@ -1,7 +1,8 @@
 ---
 layout: layouts/pattern.njk
 title: Homepage
-description: The homepage has quick links to the most popular services of the NHS App. We work this out using Adobe Analytics and user feedback. The homepage also displays the name of the user and their NHS number. 
+description: The homepage shows the user their name and NHS number, and gives links to the most popular parts of the NHS App. We work this out using Adobe Analytics and user feedback. The homepage is also used to promote important health campaigns. 
+pageNotice: We’re currently reviewing the homepage as part of an information architecture review. 
 backlogID: 66
 tags:
   - pattern
@@ -11,32 +12,29 @@ tags:
 
 ## The structure of the homepage
 
-{% example "homepage/homepage-web.njk" %}
+### Main heading
 
-### Page heading
+This main heading includes the name of the user and a greeting that changes depending on the time of day. The name is sourced from the [personal demographics service (PDS)](https://digital.nhs.uk/services/personal-demographics-service) and may display in sentence case or block capitals depending on the data.
 
-This page heading includes a greeting that changes depending on the time of day. Research suggested this helps the app feel more personal to users.
+Below the name, we display the NHS number of the user. In research, participants regularly tell us they find having their NHS number here to be useful.
 
-### Section headings
+### Section heading
 
-Section headings are used to divide the card links across the page. This helps users understand how the journeys are organised within the app. The ‘view all’ links give users an in-page way to navigate to hub pages. In usability testing these links were the most common way that users proceeded from the homepage into the ‘Services’ and ‘Your health’ hubs.
+We use [section headings](/components/section-heading/) to separate links by which hub page of the app they come from. Alongside these section headings, ‘View all’ links lead to the relevant hub page.
 
 ### Card links
 
-Selecting one of these card links takes a user either directly into the start of a journey, or deeper into the app to a sub-hub.
+[Card links](/components/card-links/) on the page lead either directly to the start of a journey, or to a hub page.
 
 ### Campaign card
 
-This card can be used to promote seasonal or topical campaigns such as COVID or flu vaccines, blood donation or being part of health research.
+The campaign card promotes public health messaging agreed on by the senior leadership team of the NHS App that:
+
+- is relevant to most NHS App users
+- has an onward digital journey that meets our [usability and accessibility standards](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app/standards-for-nhs-app-integration)
 
 ## Proposing changes to the homepage
 
-We are careful to limit the number of links that are shown in the homepage. We need to ensure that users can quickly scan through the page and access the most popular features of the NHS App.
+We’re careful to limit the number of links on the homepage. We need to make sure users can quickly scan through the page and access popular features.
 
-The Navigation and Onboarding Team maintains and updates the homepage. We regularly review and test the selection of links displayed. If you would like to suggest changes to the homepage, please contact the team.
-
-## Research
-
-In our research, users were able to complete a variety of tasks successfully from the starting point of the homepage. In one unmoderated usability test where people were tasked with booking an appointment for a relative, 90% completed the task successfully and all participants selected the correct onward link from the homepage.
-
-In research we also found that users perceived the display of personal information, particularly their NHS number, to be valuable.
+The Navigation and Onboarding team maintains and updates the homepage. We regularly review and test the selection of links that are included. If you'd like to suggest changes to the homepage, please contact us on Slack.
