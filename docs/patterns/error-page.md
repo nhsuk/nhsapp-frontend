@@ -4,7 +4,7 @@ title: Error page
 description: Use an error page to tell users there was a problem. Explain what has happened and what they can do next.
 backlogID: 119
 tags:
-  - pattern
+  - page
 ---
 
 {% example "error-pages/touch-id.njk" %}
