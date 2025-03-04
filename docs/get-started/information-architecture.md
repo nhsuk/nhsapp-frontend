@@ -1,8 +1,6 @@
 ---
 layout: layouts/get-started.njk
 title: Information architecture of the NHS App
-tags:
-  - getStarted
 ---
 
 Information architecture is about how content is structured, arranged and labelled. Good information architecture makes it easy for users to find what they need.
