@@ -10,6 +10,12 @@ Sub-hubs are lower-level menu pages. Users can access them through [hub pages](/
 
 Whereas hub pages represent broader groupings of information, sub-hubs contain more closely connected groups of links. They are positioned lower down in the [information architecture]().
 
+{% example "sub-hub-pages/care-plans.njk" %}
+
+{% example "sub-hub-pages/appointments.njk" %}
+
+{% example "sub-hub-pages/prescriptions.njk" %}
+
 ## Structure of sub-hubs
 
 ### Back link

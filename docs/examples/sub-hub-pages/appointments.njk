@@ -1,0 +1,48 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+hub: Your health
+title: Appointments
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <h1 class="nhsuk-u-margin-bottom-3">Upcoming and past appointments</h1>
+    <p class="nhsuk-u-margin-bottom-5">View or manage upcoming and past appointments, referrals and waiting lists</p>
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      cards: [
+        {
+          title: 'GP surgery appointments',
+          href: '#'
+        },
+        {
+          title: 'Referrals',
+          href: '#'
+        },
+        {
+          title: 'Hospital appointments',
+          href: '#',
+          linkAriaLabel: 'Hospital appointments, you have 1 new notification',
+          badgeLarge: {
+            count: 1,
+            label: 'notification',
+            ariaHidden: true
+          }
+        },
+        {
+          title: 'Waiting list',
+          href: '#'
+        }
+      ]
+    }) }}
+
+  </div>
+</div>
