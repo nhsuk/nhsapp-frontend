@@ -19,8 +19,6 @@ We want to make it quick and easy for users to find things in the NHS App. We ca
 
 We use a range of user research methods to discover where users expect to find things, including::
 
-
-
 - card sorts to understand how users naturally group information
 - tree tests to see how easily they can find things if we change the structure and labelling of the overarching sections
 - moderated and unmoderated usability testing, to find out how detailed designs compare in terms of findability and ease of use
