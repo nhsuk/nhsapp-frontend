@@ -5,7 +5,7 @@ description: The homepage shows the user their name and NHS number, and gives li
 pageNotice: We’re currently reviewing the homepage as part of an information architecture review. 
 backlogID: 66
 tags:
-  - pattern
+  - page
 ---
 
 {% example "homepage/homepage-native.njk" %}
