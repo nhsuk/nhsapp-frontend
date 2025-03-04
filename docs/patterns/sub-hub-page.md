@@ -12,10 +12,6 @@ Whereas hub pages represent broader groupings of information, sub-hubs contain m
 
 {% example "sub-hub-pages/care-plans.njk" %}
 
-{% example "sub-hub-pages/appointments.njk" %}
-
-{% example "sub-hub-pages/prescriptions.njk" %}
-
 ## Structure of sub-hubs
 
 ### Back link
@@ -47,3 +43,13 @@ Do not create further menu pages that sit one level below a sub-hub. Research sh
 Use a sub-hub when you have evidence that grouping several links as a distinct category, one level below a hub page, would be helpful for users.
 
 Before adding a new sub-hub, explore whether you could position the links on the hub page under a section heading instead.
+
+## Examples on the NHS App
+
+### Appointments
+
+{% example "sub-hub-pages/appointments.njk" %}
+
+### Prescriptions
+
+{% example "sub-hub-pages/prescriptions.njk" %}
