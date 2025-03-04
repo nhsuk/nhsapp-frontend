@@ -91,7 +91,9 @@ export default function (eleventyConfig) {
       mobile: data.mobile,
       mobileHeader: data.mobileHeader,
       hub: data.hub,
-      backlink: data.backlink || false
+      backlink: data.backlink || data.backLink || false,
+      backLinkHref: data.backLinkHref,
+      backLinkText: data.backLinkText
     }
     return nunjucksEnv.render('example.njk', templateData)
   })

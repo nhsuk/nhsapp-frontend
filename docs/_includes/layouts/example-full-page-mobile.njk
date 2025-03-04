@@ -15,13 +15,12 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {% if backLink %}
+  {% if backlink %}
     {{ backLink({
-      href: "#",
-      text: Back,
+      href: backLinkHref | default("#"),
+      text: backLinkText | default("Back"),
       classes: "nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4"
     }) }}
-  {% else %}
   {% endif %}
 {% endblock %}
 
