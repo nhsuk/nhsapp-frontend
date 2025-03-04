@@ -1,0 +1,47 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+hub: Your health
+title: Prescriptions
+backlink: true
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <h1 class="nhsuk-u-margin-bottom-3">View and manage prescriptions</h1>
+    <p class="nhsuk-u-margin-bottom-5">Check your prescriptions and choose the pharmacy they are collected or delivered from</p>
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      cards: [
+        {
+          title: "Requested medicines",
+          description: "Check if your GP has approved the medicines you requested in the app",
+          href: "/pages/your-health/requested-medicines"
+        },
+        {
+          title: "Check if your prescriptions are ready",
+          description: "View prescriptions being prepared by the pharmacy",
+          href: "/pages/your-health/your-approved-prescriptions"
+        },
+        {
+          title: "Choose a pharmacy",
+          description: "Choose or change a pharmacy for your prescriptions to be collected or delivered from",
+          href: "#"
+        },
+        {
+          title: "Hospital and other medicines",
+          description: "View your current and past medicines",
+          href: "#"
+        }
+      ]
+    })}}
+
+  </div>
+</div>

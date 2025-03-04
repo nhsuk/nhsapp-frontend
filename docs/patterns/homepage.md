@@ -2,7 +2,7 @@
 layout: layouts/pattern.njk
 title: Homepage
 description: The homepage shows the user their name and NHS number, and gives links to the most popular parts of the NHS App. We work this out using Adobe Analytics and user feedback. The homepage is also used to promote important health campaigns. 
-pageNotice: We’re currently reviewing the homepage as part of an information architecture review. 
+pageNotice: notice-homepage
 backlogID: 66
 tags:
   - page

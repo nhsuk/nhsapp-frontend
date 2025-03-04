@@ -1,0 +1,35 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+hub: Your health
+title: Care plans
+backlink: true
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <h1 class="nhsuk-u-margin-bottom-3">Care plans</h1>
+    <p class="nhsuk-u-margin-bottom-5">Check plans you've agreed with your health team about how you want to be cared for</p>
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      cards: [
+        {
+          title: 'Manage your health care plans',
+          href: '#'
+        },
+        {
+          title: 'View your universal health care plan',
+          href: '#'
+        }
+      ]
+    }) }}
+
+  </div>
+</div>

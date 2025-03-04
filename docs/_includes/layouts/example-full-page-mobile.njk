@@ -14,6 +14,16 @@
   {% include "layouts/partials/bottom-nav-native.njk" %}
 {% endblock %}
 
+{% block beforeContent %}
+  {% if backlink %}
+    {{ backLink({
+      href: backLinkHref | default("#"),
+      text: backLinkText | default("Back"),
+      classes: "nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4"
+    }) }}
+  {% endif %}
+{% endblock %}
+
 {% block content %}
   {{ content | safe }}
 {% endblock %}
