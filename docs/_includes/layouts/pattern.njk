@@ -42,9 +42,7 @@
     {{ title }}
   </h1>
   {% if pageNotice %}
-    <div class="nhsuk-inset-text">
-      <p>{{ pageNotice }}</p>
-    </div>
+    {% include "layouts/partials/" + pageNotice + ".njk" %}
   {% endif %}
   <p>{{ description }}</p>
   {{ content | safe }}
@@ -52,5 +50,4 @@
     {% include "layouts/partials/feedback-section.njk" %}
   {% else %}
   {% endif %}
-
 {% endblock %}
