@@ -1,6 +1,6 @@
 .app-content {
   @include mq($from: desktop) {
-    @include nhsuk-responsive-padding(7, "bottom");
+    padding-bottom: nhsuk-spacing(7);
   }
 
   img {
