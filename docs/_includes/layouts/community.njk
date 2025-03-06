@@ -44,6 +44,11 @@
 {% endset %}
 
 {% block main %}
+  {% if tags and "contribution" in tags %}
+    <span class="nhsuk-caption-xl">Contributing</span>
+  {% elif tags and "community" in tags %}
+    <span class="nhsuk-caption-xl">Support</span>
+  {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>

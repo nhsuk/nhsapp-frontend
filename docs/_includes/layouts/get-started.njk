@@ -38,6 +38,9 @@
 {% endset %}
 
 {% block main %}
+  {% if tags and "getStarted" in tags %}
+    <span class="nhsuk-caption-xl">How we work</span>
+  {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>

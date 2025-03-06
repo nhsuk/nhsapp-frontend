@@ -2,7 +2,7 @@
 layout: layouts/example-full-page-mobile.njk
 mobile: true
 hub: Services
-title: Problem with services
+title: Problem with service
 figmaLink: 
 vueLink: 
 ---
@@ -15,16 +15,9 @@ vueLink:
 
     <h1 class="nhsuk-u-margin-bottom-5">There is a problem with this service</h1>
 
-    <p>This may be a temporary problem. Try again later.</p>
+    <p>Try again later.</p>
 
-    <p>If the problem keeps happening, make a note of the error code <strong>3xxxx</strong> and then contact us.</p>
-
-    {{ button({
-      text: "Contact the NHS App team",
-      classes: "nhsapp-button--secondary nhsapp-button"
-    }) }}
-
-    <h2>Other options</h2>
+    <h2 class="nhsuk-heading-m">Other options</h2>
 
     {{ nhsappCard({
       title: 'Find NHS services near you',
