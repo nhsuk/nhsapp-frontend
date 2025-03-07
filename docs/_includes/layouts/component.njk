@@ -38,6 +38,9 @@
 {% endset %}
 
 {% block main %}
+  {% if tags and "component" in tags %}
+    <span class="nhsuk-caption-xl">Components</span>
+  {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>
@@ -45,7 +48,6 @@
   {{ content | safe }}
   {% if tags and "component" in tags %}
     {% include "layouts/partials/feedback-section.njk" %}
-  {% else %}
   {% endif %}
 
 {% endblock %}

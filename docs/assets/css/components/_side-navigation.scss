@@ -78,6 +78,9 @@
 }
 
 .app-side-navigation--desktop {
+  padding-bottom: nhsuk-spacing(4);
+  padding-right: nhsuk-spacing(1);
+
   @include mq($until: desktop) {
     display: none;
   }

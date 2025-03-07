@@ -29,6 +29,12 @@
     sections: [
       {
         heading: {
+          text: 'Help users to'
+        },
+        items: collections.helpUsers | sort(attribute="data.title")
+      },
+      {
+        heading: {
           text: 'Pages'
         },
         items: collections.page | sort(attribute="data.title")
@@ -38,6 +44,11 @@
 {% endset %}
 
 {% block main %}
+  {% if tags and "page" in tags %}
+    <span class="nhsuk-caption-xl">Pages</span>
+  {% elif tags and "helpUsers" in tags %}
+    <span class="nhsuk-caption-xl">Help users to</span>
+  {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>
@@ -46,8 +57,7 @@
   {% endif %}
   <p>{{ description }}</p>
   {{ content | safe }}
-  {% if tags and ("page" in tags or "pattern" in tags) %}
+  {% if tags and ("page" in tags or "helpUsers" in tags) %}
     {% include "layouts/partials/feedback-section.njk" %}
-  {% else %}
   {% endif %}
 {% endblock %}
