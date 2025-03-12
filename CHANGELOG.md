@@ -1,5 +1,11 @@
 # NHS App Frontend Changelog
 
+## `v3.1.0` - UNRELEASED
+
+### Components
+
+- Added [secondary card link](/components/card-links/#secondary-card-links)
+
 ## `v3.0.0`
 
 ### Breaking changes
