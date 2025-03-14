@@ -8,7 +8,7 @@ $nhsapp-secondary-button-color: transparent;
 $nhsapp-secondary-button-border-color: $color_nhsuk-blue;
 $nhsapp-secondary-button-text-color: $color_nhsuk-blue;
 $nhsapp-secondary-button-hover-color: tint($nhsapp-secondary-button-border-color, 85%);
-$nhsapp-secondary-button-active-color: tint($nhsapp-secondary-button-border-color, 75%);
+$nhsapp-secondary-button-active-color: tint($nhsapp-secondary-button-border-color, 78%);
 $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
 
 // NHS App button
@@ -52,6 +52,7 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
   }
 
   &:focus {
+    @include nhsuk-responsive-margin(5, "bottom", $adjustment: $button-shadow-size * 1.5);
     background: $nhsuk-focus-color;
     border-color: $nhsuk-focus-color;
     border-bottom: 0;
@@ -69,6 +70,7 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
   }
 
   &:active {
+    @include nhsuk-responsive-margin(5, "bottom", $adjustment: $button-shadow-size * 1.5);
     background: $nhsapp-secondary-button-active-color;
     border-color: $nhsapp-secondary-button-border-color;
     border-bottom: $button-border-width solid;
@@ -81,6 +83,10 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
     @include mq($until: tablet) {
       padding-bottom: $button-padding-top-bottom-mobile;
       padding-top: $button-padding-top-bottom-mobile;
+    }
+
+    &::before {
+      bottom: -($nhsuk-border-width-form-element + $button-shadow-size);
     }
   }
 }
