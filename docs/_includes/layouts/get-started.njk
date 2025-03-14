@@ -29,17 +29,25 @@
     sections: [
       {
         heading: {
-          text: 'How we work'
+          text: 'Prototyping'
         },
-        items: collections.getStarted
+        items: collections.prototyping
+      },
+      {
+        heading: {
+          text: 'Production'
+        },
+        items: collections.production
       }
     ]
   }) }}
 {% endset %}
 
 {% block main %}
-  {% if tags and "getStarted" in tags %}
-    <span class="nhsuk-caption-xl">How we work</span>
+  {% if tags and "prototyping" in tags %}
+    <span class="nhsuk-caption-xl">Prototyping</span>
+  {% elif tags and "production" in tags %}
+    <span class="nhsuk-caption-xl">Production</span>
   {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
