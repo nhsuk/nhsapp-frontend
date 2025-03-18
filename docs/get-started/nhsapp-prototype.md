@@ -1,11 +1,12 @@
 ---
 layout: layouts/get-started.njk
-title: Prototyping
+title: NHS App prototype
+order: 1
 tags:
-  - getStarted
+  - prototyping
 ---
 
-This guide explains how to use the NHS App prototype. You can use it alongside the NHS App design system to make interactive prototypes that look like real NHS App pages.
+This guide explains how to use the [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype). You can use it alongside the NHS App design system to make interactive prototypes that look like real NHS App pages.
 
 Anyone can use the prototype to:
 

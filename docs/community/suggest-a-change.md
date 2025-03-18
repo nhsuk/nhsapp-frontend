@@ -1,6 +1,7 @@
 ---
 layout: layouts/community.njk
 title: Suggest a change
+order: 1
 description: You may have questions about our current components and patterns guidance, or changes you want to suggest. There might be something you feel we haven’t covered, or a different approach you’ve noticed another organisation taking, for example. 
 tags:
   - contribution

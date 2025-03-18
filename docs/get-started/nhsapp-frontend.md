@@ -1,11 +1,11 @@
 ---
 layout: layouts/get-started.njk
-title: Production
+title: NHS App frontend
 tags:
-  - getStarted
+  - production
 ---
 
-This guide explains how to set up your project so you can start using the styles and coded examples in the NHS App design system in production.
+This guide explains how to set up the [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) in production.
 
 ## Before you start
 

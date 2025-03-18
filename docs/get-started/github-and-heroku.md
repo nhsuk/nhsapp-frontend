@@ -1,15 +1,12 @@
 ---
 layout: layouts/get-started.njk
-title: GitHub and Heroku
+title: Storing and sharing prototypes
+order: 2
 tags:
-  - getStarted
+  - prototyping
 ---
 
 You can use GitHub to store your prototype securely and Heroku to run it for user testing.
-
-## Setting up Git
-
-You first need to follow the NHS prototype guidance on [setting up Git](https://prototype-kit.service-manual.nhs.uk/how-tos/git).
 
 ## Storing your code in GitHub
 
