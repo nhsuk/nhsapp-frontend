@@ -1,6 +1,7 @@
 ---
 layout: layouts/community.njk
 title: Share your findings
+order: 2
 description: We want to hear how users experience components and patterns in your service. It helps us improve the design system. 
 tags:
   - contribution

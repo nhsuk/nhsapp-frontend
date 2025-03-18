@@ -31,13 +31,13 @@
         heading: {
           text: 'Prototyping'
         },
-        items: collections.prototyping
+        items: collections.prototyping | sort(attribute="data.order")
       },
       {
         heading: {
           text: 'Production'
         },
-        items: collections.production
+        items: collections.production | sort(attribute="data.order")
       }
     ]
   }) }}

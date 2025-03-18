@@ -31,13 +31,13 @@
         heading: {
           text: 'Contributing'
         },
-        items: collections.contribution | sort(attribute="data.title")
+        items: collections.contribution | sort(attribute="data.order")
       },
       {
         heading: {
           text: 'Support'
         },
-        items: collections.community | sort(attribute="data.title")
+        items: collections.community | sort(attribute="data.order")
       }
     ]
   }) }}
