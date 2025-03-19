@@ -30,6 +30,10 @@ Use a secondary button either:
 
 {% example "buttons/button-reverse.njk" %}
 
+### Warning button
+
+{% example "buttons/button-warning.njk" %}
+
 ### Grouping buttons
 
 Use a button group when two or more buttons are placed together.
