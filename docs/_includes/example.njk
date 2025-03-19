@@ -1,6 +1,6 @@
 <div class="app-example">
   <span class="app-example__new-window">
-    <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new window</a>
+    <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new tab</a>
   </span>
   {%- if mobile == true %}
   <div class="app-iframe__container">
@@ -74,7 +74,7 @@
 
   To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.
 
-  [View component in Figma]({{ figmaLink }})
+  <a href="{{ figmaLink }}" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a>
 </div>
   {% endif -%}
 
@@ -83,7 +83,7 @@
 
   To use the component in your Vue application, install the NHS App Vue Component Library and import the component.
 
-  [View component in Vue]({{ vueLink }})
+  <a href="{{ vueLink }}" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a>
 </div>
   {% endif -%}
 </div>
