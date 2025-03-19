@@ -31,7 +31,7 @@ We use scalable vector graphics (SVG) files for icons. They can be used with or 
 
 {% include "layouts/icons-example.njk" %}
 
-You can find the [icons in Figma](https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=5546-26410&t=QxURQEIfOYBfjOr8-1).
+<p>You can find the <a href="https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=9994-823&p=f&t=VHQbQWtP3hvHke31-0" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">icons in Figma (opens in a new tab)</a>
 
 ## Accessibility
 
