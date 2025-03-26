@@ -62,6 +62,16 @@ If a page has a long list of card links, consider breaking them up using heading
 
 {% example "cards/card-group-headings.njk" %}
 
+### Secondary card links
+
+Use secondary card links on hub pages to signpost groups of information on less important topics.
+
+{% example "cards/card-link-secondary.njk" %}
+
+Use them below primary card links which signpost more important information.
+
+{% example "cards/card-link-secondary-stacked.njk" %}
+
 ## Content guidance
 
 Aim to use active phrasing for card link text. This means starting the link text with a verb. For example: "Request repeat prescriptions" and "Check for available GP appointments". This follows content guidance on links and helps users to understand the action they can take.
