@@ -6,27 +6,27 @@ tags:
   - prototyping
 ---
 
-This guide explains how to use the [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype). You can use it alongside the NHS App design system to make interactive prototypes that look like real NHS App pages.
+The NHS App prototype is a copy of the NHS prototype kit with the [NHS App frontend](/get-started/nhsapp-frontend) and [components](/components) pre-installed, along with page templates.
 
-Anyone can use the prototype to:
+You can use it to create interactive prototypes that resemble real NHS App pages.
 
-- try out ideas
-- get feedback from users or people you work with
+The prototype is useful for anyone who wants to:
 
-## Before you start
+- test ideas
+- get feedback from users or colleagues
 
-You first need to follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to make sure you have the tools and software required to run the prototype. This is because the NHS App prototype is a copy of the NHS prototype kit, with added NHS App code and templates.
+To use the prototype you'll need some basic knowledge of HTML, for example what tags and attributes are and how to copy and paste code.
+
+You can learn basic HTML and CSS at [mdn](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started), [codecademy](https://www.codecademy.com/) or other online tutorials.
+
+## Setup
+
+To get started with the prototype, you'll need to install some additional tools and software. Follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to ensure you have everything required to run the prototype.
 
 ## Download
 
-Once you are setup and familiar with using the NHS prototype kit, you can download or clone a copy of the [NHS App prototype on GitHub](https://github.com/nhsuk/nhsapp-prototype).
-
-## Using components
-
-On the NHS and NHS App design systems, you'll find examples of components like the one below. To use any of these components in your prototype, you can select HTML or Nunjucks, then copy and paste the code into your prototype.
-
-{% example "buttons/button-primary.njk" %}
+Once you're set up, you can [download a copy of the NHS App prototype from GitHub](https://github.com/nhsuk/nhsapp-prototype).
 
 ## Guides
 
-[NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) will show you how to use the prototype kit, from creating a simple page to building complex user journeys.
+The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) will walk you through using the prototype kit, from creating a simple page to building complex user journeys.
