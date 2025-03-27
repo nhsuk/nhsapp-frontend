@@ -6,7 +6,7 @@ tags:
   - prototyping
 ---
 
-The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is a copy of the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/), pre-installed with the [NHS App frontend](/get-started/nhsapp-frontend) and [components](/components), as well as page templates. 
+The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is a copy of the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/), pre-installed with the [NHS App frontend](/get-started/nhsapp-frontend) and [components](/components), as well as page templates.
 
 This allows anyone to create interactive prototypes that resemble real NHS App pages.
 
@@ -24,7 +24,7 @@ Once you're set up, you can [download a copy of the NHS App prototype from GitHu
 
 ## Using the prototype
 
-To use the prototype, you'll need some basic knowledge of HTML, such as understanding tags and attributes, and how to copy and paste code. 
+To use the prototype, you'll need some basic knowledge of HTML, such as understanding tags and attributes, and how to copy and paste code.
 
 You can learn basic HTML and CSS at [mdn](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started), [codecademy](https://www.codecademy.com/), or other online tutorials.
 
@@ -33,5 +33,6 @@ Additionally, there are useful [NHS prototype kit guides](https://prototype-kit.
 ## Support
 
 For troubleshooting or support, you can ask the design Slack community at:
+
 - [#prototype-kit](https://nhsdigitalcorporate.enterprise.slack.com/archives/C042J3MTJG2)
 - [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
