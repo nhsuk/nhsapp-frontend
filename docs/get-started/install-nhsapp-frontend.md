@@ -1,11 +1,13 @@
 ---
 layout: layouts/get-started.njk
-title: How to add the NHS App frontend to a prototype
+title: Add the NHS App frontend to the NHS prototype kit
 ---
 
-This guide explains how to add the NHS App frontend to the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
+This guide explains how to add the [NHS App frontend](/get-started/nhsapp-frontend) to the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
 
-You must follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) first.
+<div class="nhsuk-inset-text nhsuk-u-margin-top-5">
+  <p>The <a href="/get-started/nhsapp-prototype">NHS App prototype</a> has the NHS App frontend pre-installed.</p>
+</div>
 
 ## Step 1
 
@@ -34,7 +36,7 @@ npm install --save nhsapp-frontend
 In your HTML editor, open
 
 ```sh
-/app/assets/sass/application.scss
+/app/assets/sass/main.scss
 ```
 
 After
@@ -82,9 +84,11 @@ So it looks like this
 ```sh
 const appViews = [
   path.join(__dirname, 'app/views/'),
+  path.join(__dirname, 'lib/example-templates/'),
+  path.join(__dirname, 'lib/prototype-admin/'),
   path.join(__dirname, 'node_modules/nhsuk-frontend/packages/components'),
+  path.join(__dirname, 'node_modules/nhsuk-frontend/packages/macros'),
   path.join(__dirname, 'node_modules/nhsapp-frontend/dist'),
-  path.join(__dirname, 'docs/views/'),
 ];
 ```
 
@@ -108,12 +112,6 @@ and on the next line paste
 app.use('/nhsapp-frontend', express.static(path.join(__dirname, 'node_modules/nhsapp-frontend/dist/nhsapp')));
 ```
 
-Once you have installed NHS App frontend, all NHS App components should work in your prototype.
+## Step 6
 
-You will now have the latest version installed, later you can easily update to the latest NHS App frontend
-
-To use the components, you should:
-
-- find the component in NHS App design components
-- copy the code from the example
-- paste the code into the page in your prototype
+Once you have installed NHS App frontend, all [NHS App components](/components) should work in your prototype.

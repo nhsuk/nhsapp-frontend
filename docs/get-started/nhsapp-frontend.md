@@ -5,7 +5,9 @@ tags:
   - production
 ---
 
-This guide explains how to set up the [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) in production.
+The [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) is a CSS library built on [NHS.UK frontend](https://github.com/nhsuk/nhsuk-frontend), providing NHS App-specific styles and [components](/components).
+
+This guide explains how to set up the NHS App frontend in production.
 
 ## Before you start
 
