@@ -6,18 +6,13 @@ tags:
   - prototyping
 ---
 
-The NHS App prototype is a copy of the NHS prototype kit with the [NHS App frontend](/get-started/nhsapp-frontend) and [components](/components) pre-installed, along with page templates.
+The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is a copy of the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/), pre-installed with the [NHS App frontend](/get-started/nhsapp-frontend) and [components](/components), as well as page templates. 
 
-You can use it to create interactive prototypes that resemble real NHS App pages.
+This allows anyone to create interactive prototypes that resemble real NHS App pages.
 
-The prototype is useful for anyone who wants to:
+For user testing, it's essential to code detailed prototypes using the NHS App prototype or NHS prototype kit, as stated in the [UCD centre of expertise guidance on SharePoint](https://nhs.sharepoint.com/:u:/r/sites/X26_URPG/SitePages/nhs-prototype-kit.aspx?csf=1&web=1&e=aZFAoj).
 
-- test ideas
-- get feedback from users or colleagues
-
-To use the prototype you'll need some basic knowledge of HTML, for example what tags and attributes are and how to copy and paste code.
-
-You can learn basic HTML and CSS at [mdn](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started), [codecademy](https://www.codecademy.com/) or other online tutorials.
+If you're already using the NHS prototype kit and want to use the NHS App components, you can [add the NHS App frontend to the prototype kit](/get-started/install-nhsapp-frontend). Note that you won't have the page templates included in the NHS App prototype.
 
 ## Setup
 
@@ -27,6 +22,16 @@ To get started with the prototype, you'll need to install some additional tools 
 
 Once you're set up, you can [download a copy of the NHS App prototype from GitHub](https://github.com/nhsuk/nhsapp-prototype).
 
-## Guides
+## Using the prototype
 
-The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) will walk you through using the prototype kit, from creating a simple page to building complex user journeys.
+To use the prototype, you'll need some basic knowledge of HTML, such as understanding tags and attributes, and how to copy and paste code. 
+
+You can learn basic HTML and CSS at [mdn](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started), [codecademy](https://www.codecademy.com/), or other online tutorials.
+
+Additionally, there are useful [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) that will walk you through using the prototype kit, from creating a simple page to building complex user journeys.
+
+## Support
+
+For troubleshooting or support, you can ask the design Slack community at:
+- [#prototype-kit](https://nhsdigitalcorporate.enterprise.slack.com/archives/C042J3MTJG2)
+- [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
