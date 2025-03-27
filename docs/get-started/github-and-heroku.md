@@ -23,3 +23,10 @@ If you plan to test your prototype with users, you might want to run it as a web
 We use [Heroku](https://www.heroku.com/) to host and publish NHS App prototypes online. To get started, review the [Heroku cloud platform guidance (on SharePoint)](https://nhs.sharepoint.com/:u:/r/sites/X26_URPG/SitePages/tools/Heroku-cloud-platform.aspx?csf=1&web=1&e=geWbJC) and the [guidance on publishing your prototype online](https://prototype-kit.service-manual.nhs.uk/how-tos/publish-your-prototype-online).
 
 Heroku can [automatically deploy code changes from your GitHub repository](https://devcenter.heroku.com/articles/github-integration#:~:text=specified%20GitHub%20repo.-,Enabling%20GitHub%20Integration,to%20configure%20automatic%20GitHub%20deploys.).
+
+## Support
+
+For troubleshooting or support, you can ask the design Slack community at:
+
+- [#help-with-heroku](https://nhsdigitalcorporate.enterprise.slack.com/archives/C089RQPDZ9V)
+- [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
