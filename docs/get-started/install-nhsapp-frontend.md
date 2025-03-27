@@ -3,10 +3,10 @@ layout: layouts/get-started.njk
 title: Add the NHS App frontend to the NHS prototype kit
 ---
 
-This guide explains how to add the [NHS App frontend](/get-started/nhsapp-frontend) to the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
+This guide shows you how to add the [NHS App frontend](/get-started/nhsapp-frontend) to the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).
 
 <div class="nhsuk-inset-text nhsuk-u-margin-top-5">
-  <p>The <a href="/get-started/nhsapp-prototype">NHS App prototype</a> has the NHS App frontend pre-installed.</p>
+  <p>If you're using the <a href="/get-started/nhsapp-prototype">NHS App prototype</a>, you'll find the NHS App frontend is already included.</p>
 </div>
 
 ## Step 1
@@ -114,4 +114,4 @@ app.use('/nhsapp-frontend', express.static(path.join(__dirname, 'node_modules/nh
 
 ## Step 6
 
-Once you have installed NHS App frontend, all [NHS App components](/components) should work in your prototype.
+After installing the NHS App frontend, all [NHS App components](/components) should work seamlessly in your prototype.
