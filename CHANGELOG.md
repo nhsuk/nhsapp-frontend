@@ -1,10 +1,14 @@
 # NHS App Frontend Changelog
 
-## `v3.1.0` - UNRELEASED
+## `v3.1.0`
 
 ### Components
 
 - Added [secondary card link](/components/card-links/#secondary-card-links)
+
+### Fixes
+
+- Fix layout shift on secondary button ([PR 277](https://github.com/nhsuk/nhsapp-frontend/pull/277))
 
 ## `v3.0.0`
 
