@@ -4,11 +4,11 @@
 
 ### Components
 
-- Added [secondary card link](/components/card-links/#secondary-card-links)
+- Added secondary card link ([PR 269](https://github.com/nhsuk/nhsapp-frontend/pull/269))
 
 ### Fixes
 
-- Fix layout shift on secondary button ([PR 277](https://github.com/nhsuk/nhsapp-frontend/pull/277))
+- Fixed layout shift on secondary button ([PR 277](https://github.com/nhsuk/nhsapp-frontend/pull/277))
 
 ## `v3.0.0`
 
