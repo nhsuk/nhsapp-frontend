@@ -79,6 +79,17 @@ pre {
   }
 }
 
+// Hot fix for main padding - https://github.com/nhsuk/nhsuk-frontend
+.nhsuk-main-wrapper--l {
+  padding-bottom: nhsuk-spacing(6);
+  padding-top: nhsuk-spacing(6);
+
+  @include mq($from: tablet) {
+    padding-bottom: nhsuk-spacing(8);
+    padding-top: nhsuk-spacing(8);
+  }
+}
+
 .app-section-break {
   border-width: 2px;
   border-color: $color_nhsuk-grey-4;
