@@ -10,8 +10,6 @@ The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is based on t
 
 This allows anyone to create interactive prototypes that look like real NHS App pages.
 
-## What to use it for
-
 For user testing, it's essential to code detailed prototypes using the NHS App prototype or NHS prototype kit. This is important, as noted in the [UCD centre of expertise guidance (on SharePoint)](https://nhs.sharepoint.com/:u:/r/sites/X26_URPG/SitePages/nhs-prototype-kit.aspx?csf=1&web=1&e=aZFAoj).
 
 ## Setup
