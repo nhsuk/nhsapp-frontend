@@ -6,9 +6,7 @@ tags:
   - prototyping
 ---
 
-The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is a copy of the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/), pre-installed with the [NHS App frontend](/get-started/nhsapp-frontend) and [components](/components), as well as page templates.
-
-This allows anyone to create interactive prototypes that resemble real NHS App pages.
+The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is a copy of the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/), pre-installed with the [NHS App frontend](/get-started/nhsapp-frontend), [components](/components) and page templates. This allows anyone to create interactive prototypes that resemble real NHS App pages.
 
 For user testing, it's essential to code detailed prototypes using the NHS App prototype or NHS prototype kit, as stated in the [UCD centre of expertise guidance on SharePoint](https://nhs.sharepoint.com/:u:/r/sites/X26_URPG/SitePages/nhs-prototype-kit.aspx?csf=1&web=1&e=aZFAoj).
 
@@ -18,9 +16,11 @@ If you're already using the NHS prototype kit and want to use the NHS App compon
 
 To get started with the prototype, you'll need to install some additional tools and software. Follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to ensure you have everything required to run the prototype.
 
-## Download
+## Download the NHS App prototype
 
-Once you're set up, you can [download a copy of the NHS App prototype from GitHub](https://github.com/nhsuk/nhsapp-prototype).
+Once you're set up, you can [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
+
+There's some guidance on how to download and keep prototypes for [Mac](https://prototype-kit.service-manual.nhs.uk/install/mac/download) and [Windows](https://prototype-kit.service-manual.nhs.uk/install/windows/download).
 
 ## Using the prototype
 
