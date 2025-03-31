@@ -1,13 +1,13 @@
 ---
 layout: layouts/get-started.njk
-title: Installing NHS App frontend with NPM
+title: Installing NHS App frontend with npm
 ---
 
 ## Requirements
 
-To use NHS App frontend with NPM you must:
+To use NHS App frontend with node package manager (npm) you must:
 
-1. Install the long-term support (LTS) version of [Node.js](https://nodejs.org/en/), which includes NPM.
+1. Install the long-term support (LTS) version of [Node.js](https://nodejs.org/en/), which includes npm.
 
 2. Create a [package.json file](https://docs.npmjs.com/files/package.json) if you don’t already have one. You can create a default `package.json` file by running `npm init` from the root of your application.
 
