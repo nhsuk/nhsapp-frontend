@@ -36,9 +36,9 @@ These pages should:
 These pages should not:
 
 - have breadcrumbs
-- display vague terms or jargon like “500”, “404”, “bad request” or “we are experiencing technical difficulties”
+- display vague terms or jargon like "500", "404", "bad request" or "we are experiencing technical difficulties"
 - use red text to warn people
-- use exclamation marks or informal language like “oops”
+- use exclamation marks or informal language like "oops"
 - blame the user
 
 ### Medical signposting
@@ -54,9 +54,17 @@ You should:
 
 ### Error codes
 
-There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then input that code when completing the form.
+Tell users how to contact the NHS App team for technical support, if contacting the NHS App team may help to resolve a technical problem.
 
 {% example "error-pages/contact-nhsapp.njk" %}
+
+The text should:
+
+- have a h2 of "If the problem continues" – you might adapt this depending on the other content on the page, for example to "If your GP surgery cannot help"
+- make clear that users should only contact the NHS App team if the problem keeps happening, and if other solutions haven’t worked
+- include the relevant error code before the link to the [NHS App contact form](https://www.nhs.uk/contact-us/nhs-app-contact-us/), to encourage users to note it down – it needs to be manually entered into the form
+
+If the user enters the error code on the form that follows, it can help the NHS App service management team to provide them with more direct support. We do not currently have the ability to auto-populate the code into the contact form.
 
 ## Examples
 
@@ -78,7 +86,7 @@ Use the sub-heading "Find out more" to include suplementary information pages us
 
 ### With unknown errors
 
-In this scenario, the exact problem may be unknown or lengthy to explain. We have used a simple “There is a problem with the service” explanation, similar to the [GOV.UK Design System error page for 500 errors](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/).
+In this scenario, the exact problem may be unknown or lengthy to explain. We have used a simple "There is a problem with the service" explanation, similar to the [GOV.UK Design System error page for 500 errors](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/).
 
 {% example "error-pages/problem-with-service.njk" %}
 
