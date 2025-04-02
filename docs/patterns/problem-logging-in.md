@@ -3,8 +3,6 @@ layout: layouts/pattern.njk
 title: Problem logging in
 description: Tell users what to do when there are problems logging in. 
 backlogID: 261
-tags:
-  - page
 ---
 
 {% example "problem-logging-in/default.njk" %}

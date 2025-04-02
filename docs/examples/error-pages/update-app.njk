@@ -1,0 +1,27 @@
+---
+layout: layouts/example-full-page-mobile-not-logged-in.njk
+mobile: true
+mobileHeader: "blue"
+title: Error page - Update app
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">You need to update the NHS App</h1>
+
+    <p>You will not be able to update the NHS App until you do.</p>
+
+    {{ button({
+      text: "Update the NHS App",
+      classes: "nhsapp-button--secondary nhsapp-button"
+    }) }}
+
+    <p>For urgent medical advice, use <a href="https://111.nhs.uk/">111 online</a> or call 111.</p>
+
+  </div>
+</div>

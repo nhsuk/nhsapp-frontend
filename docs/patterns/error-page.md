@@ -1,7 +1,7 @@
 ---
 layout: layouts/pattern.njk
-title: Error page
-description: Use an error page to tell users there was a problem. Explain what has happened and what they can do next.
+title: Error and status pages
+description: Use error and status pages to tell users there is a problem. Explain what has happened and what they can do next.
 backlogID: 119
 tags:
   - page
@@ -9,56 +9,43 @@ tags:
 
 ## When to use
 
-Use an error page when:
+Use error and status pages when:
 
 - something has gone wrong
 - users cannot continue to the next page
 
 ## When not to use
 
-Do not use an error page when a user makes a mistake while completing a form. Instead, follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary), to help users understand what to do in context.
+Do not use error and status pages when a user makes a mistake while completing a form. Instead, follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary), to help users understand what to do in context.
+
+To tell someone we cannot find the page they were trying to view, use a [page not found](/patterns/page-not-found) page.
 
 ## How to use
 
-Error pages should:
+The content for each type of error may vary depending on the circumstances.
 
-- have a main heading that tells users what has gone wrong
-- have body content that tells users what to do next
-- be short, with simple, uncluttered design
+To ensure that the content is clear and helpful for the user, ask a Content Designer to help you write it.
 
-You may also need to include signposting to medical help and an error code.
+These pages should:
 
-### Main heading
+- be clear and concise
+- summarise the problem in the <code>h1</code> heading
+- explain anything we are doing to fix the problem
+- let the user know if they need to do anything with a call to action if needed
 
-Use the main heading to describe the problem. For example:
+These pages should not:
 
-- “Face ID did not work”
-- “No internet connection”
-- “Not enough storage space”
-
-It can sometimes be helpful to start with “We” or “You” to show where the problem lies:
-
-- “We could not log you in”
-- “You need to update the NHS App”
-
-In our research, participants were less concerned with what had gone wrong, and more concerned about finding out how to fix the problem. Try to sum up the problem in the heading, then move on to a solution or next steps in the body text.
-
-### Body content
-
-Users are likely to scan the page very quickly. You might need to:
-
-- give an action
-- suggest alternative options
-
-Our research suggests users rarely read content when it is placed beneath a button.
+- have breadcrumbs
+- display vague terms or jargon like “500”, “404”, “bad request” or “we are experiencing technical difficulties”
+- use red text to warn people
+- use exclamation marks or informal language like “oops”
+- blame the user
 
 ### Medical signposting
 
-You can use inset text to mention NHS 111 at the end of an error page.
+{% example "error-pages/medical-signposting.njk" %}
 
-It is not always necessary to include this text. We particularly want to avoid giving the impression that 111 can help with technical problems. You might leave out this text on an error page about not being able to download a file, for example.
-
-If the error page already suggests contacting a GP surgery, you do not need to also mention 111.
+It is not always necessary to include this text. We particularly want to avoid giving the impression that 111 can help with technical problems. You might leave out this text on some error and status page, for exampe, if the error is about not being able to download a file.
 
 You should:
 
@@ -67,21 +54,39 @@ You should:
 
 ### Error codes
 
-There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then input that code when completing the form. See the 500 error example below.
+There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then input that code when completing the form. 
+
+{% example "error-pages/contact-nhsapp.njk" %}
 
 ## Examples
 
-### 404 error (page not found) - App version
+### With medical signposting
 
-If a 404 error occurs in the native app, it means there is a broken link that the NHS App team need to fix. We have included medical signposting because it’s possible that the broken link could lead a medical service.
+In this scenario, a user is stopped from accessing particular medical help, so [medical signposting](#medical-signposting) to 111 has been added. 
 
-### 404 error (page not found) - Browser version
+{% example "error-pages/no-appointments.njk" %}
 
-In the browser version, the user is more likely to inputted the wrong web address, so the focus is on helping users to correct that problem.
+### With alternative actions
 
-### 500 error (internal server error)
+In this scenario, there are alternative actions that the user could take.
 
-In the above example, the exact problem may be unknown or lengthy to explain. We have used a simple “There is a problem with the service” explanation, similar to the GOV.UK Design System error page for 500 errors.
+Use the sub-heading "other things you can do" to give alternative actions.
+
+Use the sub-heading "Find out more" to include suplementary information pages users might find helpful to read.
+
+{% example "error-pages/confirmed-prescriptions.njk" %}
+
+### With unknown errors
+
+In this scenario, the exact problem may be unknown or lengthy to explain. We have used a simple “There is a problem with the service” explanation, similar to the [GOV.UK Design System error page for 500 errors](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/).
+
+{% example "error-pages/problem-with-service.njk" %}
+
+### When a user is not logged in
+
+In this scenario, the [top navigation](/components/top-navigation) is not visible because the user is not logged in. 
+
+{% example "error-pages/update-app.njk" %}
 
 ## Research
 
