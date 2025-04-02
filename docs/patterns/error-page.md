@@ -54,7 +54,7 @@ You should:
 
 ### Error codes
 
-There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then input that code when completing the form. 
+There are some scenarios where we encourage users to contact the NHS App team, to report a problem using our online form. It can help them to reach a resolution more quickly if they copy or note down an error code, then input that code when completing the form.
 
 {% example "error-pages/contact-nhsapp.njk" %}
 
@@ -62,7 +62,7 @@ There are some scenarios where we encourage users to contact the NHS App team, t
 
 ### With medical signposting
 
-In this scenario, a user is stopped from accessing particular medical help, so [medical signposting](#medical-signposting) to 111 has been added. 
+In this scenario, a user is stopped from accessing particular medical help, so [medical signposting](#medical-signposting) to 111 has been added.
 
 {% example "error-pages/no-appointments.njk" %}
 
@@ -84,7 +84,7 @@ In this scenario, the exact problem may be unknown or lengthy to explain. We hav
 
 ### When a user is not logged in
 
-In this scenario, the [top navigation](/components/top-navigation) is not visible because the user is not logged in. 
+In this scenario, the [top navigation](/components/top-navigation) is not visible because the user is not logged in.
 
 {% example "error-pages/update-app.njk" %}
 
