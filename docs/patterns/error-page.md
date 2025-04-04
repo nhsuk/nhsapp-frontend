@@ -41,30 +41,42 @@ These pages should not:
 - use exclamation marks or informal language like "oops"
 - blame the user
 
+### Writing headings
+
+You can use the main heading to explain the problem in a neutral way. For example:
+
+- "No appointments available to book at this time"
+- "There is a problem with the service"
+
+Only include "you" in headings when you're telling the user to take a direct action. For example:
+
+- "You need to update the NHS App"
+- "Check you're registered with a GP in England"
+
+If the NHS App cannot show something for a technical reason, you can start the heading with "we" to make clear that it's not the user's fault. For example:
+
+- "We could not show your approved prescriptions"
+- "We could not log you in"
+
 ### Medical signposting
 
 {% example "error-pages/medical-signposting.njk" %}
 
-It is not always necessary to include this text. We particularly want to avoid giving the impression that 111 can help with technical problems. You might leave out this text on some error and status page, for exampe, if the error is about not being able to download a file.
+You may need to include medical signposting if users are being blocked from accessing medical help.
 
-You should:
-
-- think about whether or not the user is being blocked from accessing particular medical help
-- speak to the clinical team for advice if you are unsure
+Speak to the clinical team for advice about whether this is needed.
 
 ### Error codes
 
-Tell users how to contact the NHS App team for technical support, if contacting the NHS App team may help to resolve a technical problem.
+Tell users how to contact the NHS App team for technical support, if doing this may help resolve the problem.
 
 {% example "error-pages/contact-nhsapp.njk" %}
 
-The text should:
+Include the heading "If the problem continues". You might need to adapt this depending on the other content on the page, for example to "If your GP surgery cannot help".
 
-- have a h2 of "If the problem continues" – you might adapt this depending on the other content on the page, for example to "If your GP surgery cannot help"
-- make clear that users should only contact the NHS App team if the problem keeps happening, and if other solutions haven’t worked
-- include the relevant error code before the link to the [NHS App contact form](https://www.nhs.uk/contact-us/nhs-app-contact-us/), to encourage users to note it down – it needs to be manually entered into the form
+The service management team will need you to include an error code. Users can enter this code on the [NHS App contact form](https://www.nhs.uk/contact-us/nhs-app-contact-us/) to get more direct support from the team.
 
-If the user enters the error code on the form that follows, it can help the NHS App service management team to provide them with more direct support. We do not currently have the ability to auto-populate the code into the contact form.
+We have [research findings](#research) and [next steps](#next-steps) about error codes.
 
 ## Examples
 
@@ -78,7 +90,7 @@ In this scenario, a user is stopped from accessing particular medical help, so [
 
 In this scenario, there are alternative actions that the user could take.
 
-Use the sub-heading "other things you can do" to give alternative actions.
+Use the sub-heading "Other things you can do" to give alternative actions.
 
 Use the sub-heading "Find out more" to include suplementary information pages users might find helpful to read.
 
@@ -88,11 +100,15 @@ Use the sub-heading "Find out more" to include suplementary information pages us
 
 In this scenario, the exact problem may be unknown or lengthy to explain. We have used a simple "There is a problem with the service" explanation, similar to the [GOV.UK Design System error page for 500 errors](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/).
 
+We've used a [secondary button](/components/buttons#secondary-button) because this might solve the problem.
+
 {% example "error-pages/problem-with-service.njk" %}
 
 ### When a user is not logged in
 
 In this scenario, the [top navigation](/components/top-navigation) is not visible because the user is not logged in.
+
+We've used a [primary button](/components/buttons#primary-button) because this should directy solve the problem.
 
 {% example "error-pages/update-app.njk" %}
 
@@ -105,3 +121,9 @@ Research has shown that users may:
 - be unsure about whether the problem was their fault or not
 
 We should account for these challenges in our designs and continue to research and iterate the pattern.
+
+## Next steps
+
+[WORK IN PROGRESS]
+
+If the user enters the error code on the form that follows, it can help the NHS App service management team to provide them with more direct support. We do not currently have the ability to auto-populate the code into the contact form.
