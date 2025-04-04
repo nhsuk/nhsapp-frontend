@@ -6,8 +6,6 @@ figmaLink:
 vueLink: 
 ---
 
-{% from 'inset-text/macro.njk' import insetText %}
-
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
@@ -15,10 +13,7 @@ vueLink:
 
     <p>We'll fix this link as soon as possible. Try again later or use a different service.</p>
 
-    {{ insetText({
-      html: "<p>For urgent medical advice, use <a href='#'>111 online</a> or call <a href='#'>111</a>.</p>",
-      classes:"nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4"
-    }) }}
+    <p>For urgent medical advice, use <a href="https://111.nhs.uk/">111 online</a> or <a href="tel:111">call 111</a>.</p>
 
   </div>
 </div>
