@@ -124,6 +124,8 @@ We should account for these challenges in our designs and continue to research a
 
 ## Next steps
 
-[WORK IN PROGRESS]
+We want to learn more about:
 
-If the user enters the error code on the form that follows, it can help the NHS App service management team to provide them with more direct support. We do not currently have the ability to auto-populate the code into the contact form.
+- "try again" buttons on errors, and how we can best help users when they fail to solve the problem
+- how we can avoid users needing to manually input error codes, for example by pre-populating these codes on our contact form
+- how this guidance could evolve into separate pages covering specific errors, when we have enough evidence to do this
