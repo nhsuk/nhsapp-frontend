@@ -1,6 +1,6 @@
 ---
 layout: layouts/pattern.njk
-title: Hub page
+title: Hub pages
 description: Hubs pages are the main menu pages in the NHS App. Each hub page contains a group of related links.
 backlogID: 69
 tags:

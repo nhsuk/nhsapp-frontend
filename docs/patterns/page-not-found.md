@@ -1,7 +1,7 @@
 ---
 layout: layouts/pattern.njk
-title: Page not found
-description: A page not found tells someone we cannot find the page they were trying to view. They are also known as 404 pages.
+title: Page not found pages
+description: Tell users we cannot find the page they were trying to view. They are also known as 404 pages.
 backlogID: 260
 tags:
   - page
@@ -9,7 +9,7 @@ tags:
 
 ## When to use
 
-Use a page not found if someone is trying to view a page that does not exist.
+Use a page not found page if someone is trying to view a page that does not exist.
 
 ## How to use
 
