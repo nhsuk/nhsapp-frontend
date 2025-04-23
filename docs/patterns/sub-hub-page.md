@@ -2,8 +2,6 @@
 layout: layouts/pattern.njk
 title: Sub-hub pages
 backlogID: 249
-tags:
-  - page
 ---
 
 Sub-hubs are lower-level menu pages. Users can access them through [hub pages](/patterns/hub-page/).

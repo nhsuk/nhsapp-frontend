@@ -1,7 +1,7 @@
 ---
 layout: layouts/pattern.njk
-title: Error and status pages
-description: Use error and status pages to tell users there is a problem. Explain what has happened and what they can do next.
+title: Error pages
+description: Use error pages to tell users there is a problem. Explain what has happened and what they can do next.
 backlogID: 119
 tags:
   - page
@@ -9,16 +9,17 @@ tags:
 
 ## When to use
 
-Use error and status pages when:
+Use error pages when:
 
 - something has gone wrong
 - users cannot continue to the next page
 
 ## When not to use
 
-Do not use error and status pages when a user makes a mistake while completing a form. Instead, follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary), to help users understand what to do in context.
+Do not use this pattern when:
 
-To tell someone we cannot find the page they were trying to view, use a [page not found](/patterns/page-not-found) page.
+- rather than creating a bespoke error page, you can adapt the GOV.UK patterns for [page not found](https://design-system.service.gov.uk/patterns/page-not-found-pages/), [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
+- a user makes a mistake completing a form – instead follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary)
 
 ## How to use
 
@@ -29,88 +30,104 @@ To ensure that the content is clear and helpful for the user, ask a Content Desi
 These pages should:
 
 - be clear and concise
-- summarise the problem in the <code>h1</code> heading
+- summarise the problem, or give an instruction, in the h1 heading
 - explain anything we are doing to fix the problem
-- let the user know if they need to do anything with a call to action if needed
+- let the user know if they need to do anything
 
 These pages should not:
 
-- have breadcrumbs
-- display vague terms or jargon like "500", "404", "bad request" or "we are experiencing technical difficulties"
+- blame the user
+- include breadcrumbs
+- display vague terms of jargon like "500", "504", "bad request" or "we are experiencing technical difficulties
 - use red text to warn people
 - use exclamation marks or informal language like "oops"
-- blame the user
 
 ### Writing headings
 
-You can use the main heading to explain the problem in a neutral way. For example:
+Use the h1 heading to clearly explain the problem or a solution.
 
-- "No appointments available to book at this time"
-- "There is a problem with the service"
+Some error headings work better as instructions and some work better as descriptions.
 
-Only include "you" in headings when you're telling the user to take a direct action. For example:
+#### Instructive headings
 
-- "You need to update the NHS App"
-- "Check you're registered with a GP in England"
+If there’s a direct action the user can take to resolve the problem, use the h1 to tell them this. Start the h1 with the verb that indicates the action they need to take. For example:
 
-If the NHS App cannot show something for a technical reason, you can start the heading with "we" to make clear that it's not the user's fault. For example:
+- "Update the NHS App"
+- "Check you’re registered with a GP in England"
 
-- "We could not show your approved prescriptions"
+#### Descriptive headings
+
+For descriptive headings, starting the h1 with "we" can sometimes help to make clear that the problem lies with the NHS App, and not the user. For example:
+
 - "We could not log you in"
+- "We could not show your approved prescriptions"
 
-### Medical signposting
+#### Making headings clear
+
+Make sure headings are grammatically correct, and not abbreviated versions of full sentences like "Cannot log in" or "Prescriptions not available". Shortened headings like these can be harder to read and understand.
+
+### Using calls to action and links
+
+The components we use for calls to action and links depend on the context.
+
+Use:
+
+- [primary buttons](/components/buttons/#primary-button) to give a main call to action that will directly solve the problem
+- [secondary buttons](/components/buttons/#secondary-button) to give a more muted call to action – there is a chance it may help to solve the problem
+- [secondary card links](/components/card-links/#secondary-card-links) under a h2 of "Other options in the NHS App" for links to services in the NHS App
+- in-line links for pages that are external to the NHS App, such as NHS website pages
+
+Avoid giving users too many different links to choose from as a next step. This increases cognitive load, and is problematic for users experiencing high levels of stress or anxiety.
+
+### Helping users get care another way
+
+If there is another way to use the service through an offline channel, always tell users how to do this.
+
+Error pages will often need to signpost to services such as 111, if there’s a chance users may need more immediate medical help.
+
+Talk to your service’s clinical lead for advice on this.
 
 {% example "error-pages/medical-signposting.njk" %}
 
-You may need to include medical signposting if users are being blocked from accessing medical help.
-
-Speak to the clinical team for advice about whether this is needed.
-
 ### Error codes
 
-Tell users how to contact the NHS App team for technical support, if doing this may help resolve the problem.
+Some common issues with the NHS App are tracked by the service management team. Each of these issues has an associated error code.
+
+When you need to include an error code, use the h2 "If the problem continues" and link to the NHS App contact form.
+
+Speak to the service management team about whether you need to include an error code.
 
 {% example "error-pages/contact-nhsapp.njk" %}
 
-Include the heading "If the problem continues". You might need to adapt this depending on the other content on the page, for example to "If your GP surgery cannot help".
-
-The service management team will need you to include an error code. Users can enter this code on the [NHS App contact form](https://www.nhs.uk/contact-us/nhs-app-contact-us/) to get more direct support from the team.
-
-We have [research findings](#research) and [next steps](#next-steps) about error codes.
-
 ## Examples
 
-### With medical signposting
+### With an instructive heading
 
-In this scenario, a user is stopped from accessing particular medical help, so [medical signposting](#medical-signposting) to 111 has been added.
+In this example we give a direct instruction in the heading.
+
+We’ve used a primary button because the call to action is directly relevant to solving the problem.
 
 {% example "error-pages/no-appointments.njk" %}
 
-### With alternative actions
+### With a descriptive heading
 
-In this scenario, there are alternative actions that the user could take.
-
-Use the sub-heading "Other things you can do" to give alternative actions.
-
-Use the sub-heading "Find out more" to include suplementary information pages users might find helpful to read.
+In this scenario, we have described the problem and given alternative ways to get medical help.
 
 {% example "error-pages/confirmed-prescriptions.njk" %}
 
-### With unknown errors
-
-In this scenario, the exact problem may be unknown or lengthy to explain. We have used a simple "There is a problem with the service" explanation, similar to the [GOV.UK Design System error page for 500 errors](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/).
-
-We've used a [secondary button](/components/buttons#secondary-button) because this might solve the problem.
-
-{% example "error-pages/problem-with-service.njk" %}
-
 ### When a user is not logged in
 
-In this scenario, the [top navigation](/components/top-navigation) is not visible because the user is not logged in.
+The top navigation is not visible because the user is not logged in.
 
-We've used a [primary button](/components/buttons#primary-button) because this should directy solve the problem.
+We’ve used a secondary button because the call to action won’t definitely solve the problem.
 
-{% example "error-pages/update-app.njk" %}
+{% example "error-pages/check-internet-connection.njk" %}
+
+### With an error code
+
+This error scenario has an error code associated with it.
+
+{% example "error-pages/could-not-log-in.njk" %}
 
 ## Research
 
@@ -122,7 +139,7 @@ Research has shown that users may:
 
 We should account for these challenges in our designs and continue to research and iterate the pattern.
 
-## Next steps
+## Our next steps
 
 We want to learn more about:
 

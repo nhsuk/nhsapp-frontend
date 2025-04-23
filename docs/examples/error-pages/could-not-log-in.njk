@@ -1,0 +1,31 @@
+---
+layout: layouts/example-full-page-mobile-not-logged-in.njk
+mobile: true
+mobileHeader: "blue"
+title: Error page - Check internet connection
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">We could not log you in</h1>
+
+    <p>There was a problem getting your NHS login details. Try logging in again.</p>
+
+    {{ button({
+      text: "Go back to login",
+      classes: "nhsapp-button--secondary nhsapp-button"
+    }) }}
+
+    <h2 class="nhsuk-heading-m">If the problem continues</h2>
+
+    <p>Make a note of the error code <strong>3w4627</strong> and then <a href="#">contact the NHS App team</a>.</p>
+
+    <p>For urgent medical advice, use <a href="https://111.nhs.uk/">111 online</a> or call 111.</p>
+
+  </div>
+</div>
