@@ -25,8 +25,6 @@ Do not use this pattern when:
 
 The content for each type of error may vary depending on the circumstances.
 
-To ensure that the content is clear and helpful for the user, ask a Content Designer to help you write it.
-
 These pages should:
 
 - be clear and concise
