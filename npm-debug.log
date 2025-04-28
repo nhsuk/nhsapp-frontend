@@ -1,0 +1,1168 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/davidhunter/.nvm/v0.8.28/bin/node',
+1 verbose cli   '/Users/davidhunter/.nvm/v0.8.28/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.2.30
+3 info using node@v0.8.28
+4 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/davidhunter/Documents local/prototypes/nhsapp-frontend',
+6 verbose install   [ '@11ty/eleventy',
+6 verbose install     '@11ty/eleventy-plugin-syntaxhighlight',
+6 verbose install     'concurrently',
+6 verbose install     'gulp',
+6 verbose install     'gulp-clean',
+6 verbose install     'gulp-clean-css',
+6 verbose install     'gulp-cli',
+6 verbose install     'gulp-connect',
+6 verbose install     'gulp-nunjucks',
+6 verbose install     'gulp-rename',
+6 verbose install     'gulp-sass',
+6 verbose install     'gulp-uglify',
+6 verbose install     'gulp-zip',
+6 verbose install     'markdown-it-anchor',
+6 verbose install     'nhsuk-frontend',
+6 verbose install     'nunjucks',
+6 verbose install     'prettier',
+6 verbose install     'sass' ] ]
+7 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/package.json
+8 info preinstall nhsapp-frontend@3.1.0
+9 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/queue-microtask/package.json
+10 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/map-stream/package.json
+11 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-extendable/package.json
+12 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/reusify/package.json
+13 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/define-data-property/package.json
+14 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mute-stdout/package.json
+15 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-windows/package.json
+16 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/destroy/package.json
+17 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yazl/package.json
+18 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mdurl/package.json
+19 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-json/package.json
+20 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/posthtml/package.json
+21 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@types/package.json
+22 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob-stream/package.json
+23 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lodash/package.json
+24 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/process-nextick-args/package.json
+25 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/shebang-regex/package.json
+26 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/arr-diff/package.json
+27 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-is-absolute/package.json
+28 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/prismjs/package.json
+29 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/asap/package.json
+30 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/errno/package.json
+31 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob-watcher/package.json
+32 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/multimatch/package.json
+33 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-valid-glob/package.json
+34 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/spawn-command/package.json
+35 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/iso-639-1/package.json
+36 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-property-descriptors/package.json
+37 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-fs/package.json
+38 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/toidentifier/package.json
+39 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/extend/package.json
+40 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/isobject/package.json
+41 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulplog/package.json
+42 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/strip-ansi/package.json
+43 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-filepath/package.json
+44 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/detect-file/package.json
+45 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ssri/package.json
+46 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/each-props/package.json
+47 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/arr-union/package.json
+48 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/immutable/package.json
+49 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-root-regex/package.json
+50 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-uglify/package.json
+51 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/es-errors/package.json
+52 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/findup-sync/package.json
+53 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-proto/package.json
+54 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/a-sync-waterfall/package.json
+55 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/nhsuk-frontend/package.json
+56 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/cloneable-readable/package.json
+57 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ms/package.json
+58 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gray-matter/package.json
+59 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/call-bind/package.json
+60 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bcp-47-normalize/package.json
+61 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glogg/package.json
+62 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/htmlparser2/package.json
+63 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/escape-string-regexp/package.json
+64 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lru-cache/package.json
+65 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bl/package.json
+66 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-gulplog/package.json
+67 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/easy-transform-stream/package.json
+68 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/commander/package.json
+69 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/require-directory/package.json
+70 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/depd/package.json
+71 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/core-util-is/package.json
+72 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/rimraf/package.json
+73 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/escalade/package.json
+74 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/http-equiv-refresh/package.json
+75 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/range-parser/package.json
+76 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/balanced-match/package.json
+77 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/to-through/package.json
+78 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/prr/package.json
+79 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/resolve/package.json
+80 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bytes/package.json
+81 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp/package.json
+82 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-root/package.json
+83 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/concurrently/package.json
+84 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/unc-path-regex/package.json
+85 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/base64-js/package.json
+86 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-wrap/package.json
+87 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fastest-levenshtein/package.json
+88 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/buffer-crc32/package.json
+89 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/acorn/package.json
+90 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-slice/package.json
+91 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/regenerator-runtime/package.json
+92 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bcp-47-match/package.json
+93 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clean-css/package.json
+94 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@nodelib/package.json
+95 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-alphabetical/package.json
+96 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/encodeurl/package.json
+97 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/wrap-ansi/package.json
+98 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/y18n/package.json
+99 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/once/package.json
+100 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/please-upgrade-node/package.json
+101 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/prettier/package.json
+102 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/dev-ip/package.json
+103 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/global-modules/package.json
+104 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@gulpjs/package.json
+105 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/extend-shallow/package.json
+106 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/plugin-error/package.json
+107 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/string_decoder/package.json
+108 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/tslib/package.json
+109 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/argparse/package.json
+110 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-sourcemap/package.json
+111 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/esm-import-transformer/package.json
+112 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/picomatch/package.json
+113 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/safe-buffer/package.json
+114 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-relative/package.json
+115 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/function-bind/package.json
+116 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/value-or-function/package.json
+117 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-glob/package.json
+118 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/replace-ext/package.json
+119 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ee-first/package.json
+120 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-fullwidth-code-point/package.json
+121 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/punycode.js/package.json
+122 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/list-to-array/package.json
+123 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yargs-parser/package.json
+124 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-passwd/package.json
+125 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/inherits/package.json
+126 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/maximatch/package.json
+127 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/async-settle/package.json
+128 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-cli/package.json
+129 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/date-fns/package.json
+130 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/iconv-lite/package.json
+131 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/anymatch/package.json
+132 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/for-own/package.json
+133 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/color-name/package.json
+134 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-contents/package.json
+135 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/es-define-property/package.json
+136 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-differ/package.json
+137 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/v8flags/package.json
+138 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/websocket-driver/package.json
+139 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/chokidar/package.json
+140 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-uniq/package.json
+141 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/dom-serializer/package.json
+142 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fresh/package.json
+143 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-red/package.json
+144 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/get-intrinsic/package.json
+145 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-sass/package.json
+146 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object.entries/package.json
+147 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/body/package.json
+148 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/semver-greatest-satisfied-range/package.json
+149 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/qs/package.json
+150 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/js-yaml/package.json
+151 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@11ty/package.json
+152 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/pify/package.json
+153 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/arr-flatten/package.json
+154 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/rechoir/package.json
+155 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/junk/package.json
+156 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-binary-path/package.json
+157 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/slugify/package.json
+158 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/hasown/package.json
+159 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/safer-buffer/package.json
+160 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/moo/package.json
+161 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/run-parallel/package.json
+162 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/recursive-copy/package.json
+163 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mime-types/package.json
+164 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/undici-types/package.json
+165 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fs-mkdirp-stream/package.json
+166 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/end-of-stream/package.json
+167 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/minimist/package.json
+168 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/xtend/package.json
+169 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/assign-symbols/package.json
+170 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sver/package.json
+171 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/chalk/package.json
+172 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/continuable-cache/package.json
+173 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-regex/package.json
+174 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/esprima/package.json
+175 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-flag/package.json
+176 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/supports-color/package.json
+177 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sparkles/package.json
+178 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/nunjucks/package.json
+179 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/supports-preserve-symlinks-flag/package.json
+180 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-each/package.json
+181 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/color-convert/package.json
+182 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-key/package.json
+183 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/readdirp/package.json
+184 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/unpipe/package.json
+185 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-clean-css/package.json
+186 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/brace-expansion/package.json
+187 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fill-range/package.json
+188 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/resolve-options/package.json
+189 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/binary-extensions/package.json
+190 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/get-caller-file/package.json
+191 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/util-deprecate/package.json
+192 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-absolute/package.json
+193 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-parse/package.json
+194 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-symbols/package.json
+195 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-connect/package.json
+196 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/kind-of/package.json
+197 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/picocolors/package.json
+198 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-colors/package.json
+199 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ieee754/package.json
+200 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/slash/package.json
+201 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/safe-json-parse/package.json
+202 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/faye-websocket/package.json
+203 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/raw-body/package.json
+204 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-negated-glob/package.json
+205 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/tiny-lr/package.json
+206 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/semver/package.json
+207 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ini/package.json
+208 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/http-errors/package.json
+209 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/through2/package.json
+210 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/define-properties/package.json
+211 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/strip-bom-string/package.json
+212 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lead/package.json
+213 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/connect-livereload/package.json
+214 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/minimatch/package.json
+215 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/accepts/package.json
+216 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/livereload-js/package.json
+217 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@sindresorhus/package.json
+218 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/stream-exhaust/package.json
+219 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clone/package.json
+220 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/node-retrieve-globals/package.json
+221 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/undertaker-registry/package.json
+222 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-styles/package.json
+223 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-core-module/package.json
+224 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fancy-log/package.json
+225 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/websocket-extensions/package.json
+226 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/make-error-cause/package.json
+227 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/negotiator/package.json
+228 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/morphdom/package.json
+229 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/homedir-polyfill/package.json
+230 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/batch/package.json
+231 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/markdown-it/package.json
+232 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@babel/package.json
+233 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-number/package.json
+234 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/liftoff/package.json
+235 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fs.realpath/package.json
+236 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fast-fifo/package.json
+237 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/uc.micro/package.json
+238 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fined/package.json
+239 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/shell-quote/package.json
+240 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bach/package.json
+241 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-gray/package.json
+242 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/time-stamp/package.json
+243 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/utils-merge/package.json
+244 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-srcset/package.json
+245 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/side-channel/package.json
+246 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/concat-map/package.json
+247 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-zip/package.json
+248 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/markdown-it-anchor/package.json
+249 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/linkify-it/package.json
+250 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/evaluate-value/package.json
+251 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/get-stream/package.json
+252 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sprintf-js/package.json
+253 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/set-function-length/package.json
+254 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/interpret/package.json
+255 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/map-cache/package.json
+256 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/serve-static/package.json
+257 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/convert-source-map/package.json
+258 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/cliui/package.json
+259 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object-assign/package.json
+260 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object.defaults/package.json
+261 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/undertaker/package.json
+262 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/cross-spawn/package.json
+263 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mime/package.json
+264 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/dependency-graph/package.json
+265 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/domelementtype/package.json
+266 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-clean/package.json
+267 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/expand-tilde/package.json
+268 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/promise/package.json
+269 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yargs/package.json
+270 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/section-matter/package.json
+271 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/rxjs/package.json
+272 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/now-and-later/package.json
+273 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-rename/package.json
+274 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob/package.json
+275 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fast-levenshtein/package.json
+276 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/to-regex-range/package.json
+277 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-sourcemaps-apply/package.json
+278 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/source-map/package.json
+279 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-node-version/package.json
+280 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-union/package.json
+281 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object-keys/package.json
+282 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/flagged-respawn/package.json
+283 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/replace-homedir/package.json
+284 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clone-stats/package.json
+285 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gopd/package.json
+286 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/escape-html/package.json
+287 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/uglify-js/package.json
+288 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/statuses/package.json
+289 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/make-error/package.json
+290 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/string-width/package.json
+291 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/streamx/package.json
+292 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/minipass/package.json
+293 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yallist/package.json
+294 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/for-in/package.json
+295 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parseurl/package.json
+296 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-decimal/package.json
+297 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/etag/package.json
+298 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/string-template/package.json
+299 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bcp-47/package.json
+300 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl/package.json
+301 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/isarray/package.json
+302 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/micromatch/package.json
+303 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/wrappy/package.json
+304 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/http-parser-js/package.json
+305 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/connect/package.json
+306 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fast-glob/package.json
+307 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-plain-object/package.json
+308 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sass/package.json
+309 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/luxon/package.json
+310 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/semver-compare/package.json
+311 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/send/package.json
+312 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/global-prefix/package.json
+313 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-extglob/package.json
+314 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fastq/package.json
+315 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/copy-props/package.json
+316 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/finalhandler/package.json
+317 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/serve-index/package.json
+318 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/async-done/package.json
+319 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/error/package.json
+320 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-plugin-extras/package.json
+321 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/color-support/package.json
+322 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/merge2/package.json
+323 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/queue-tick/package.json
+324 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/teex/package.json
+325 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/domutils/package.json
+326 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-nunjucks/package.json
+327 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/kleur/package.json
+328 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-cyan/package.json
+329 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/stream-composer/package.json
+330 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/posthtml-render/package.json
+331 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-unc-path/package.json
+332 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/braces/package.json
+333 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/which/package.json
+334 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/emoji-regex/package.json
+335 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object-inspect/package.json
+336 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/readable-stream/package.json
+337 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object.pick/package.json
+338 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/last-run/package.json
+339 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mkdirp/package.json
+340 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-alphanumerical/package.json
+341 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/graceful-fs/package.json
+342 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/on-finished/package.json
+343 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/entities/package.json
+344 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/posthtml-parser/package.json
+345 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/normalize-path/package.json
+346 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fsevents/package.json
+347 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ws/package.json
+348 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/resolve-dir/package.json
+349 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/shebang-command/package.json
+350 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/acorn-walk/package.json
+351 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bare-events/package.json
+352 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/debug/package.json
+353 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob-parent/package.json
+354 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/domhandler/package.json
+355 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/source-map-js/package.json
+356 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/remove-trailing-separator/package.json
+357 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/buffer/package.json
+358 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/liquidjs/package.json
+359 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mime-db/package.json
+360 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lodash.clonedeep/package.json
+361 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/isexe/package.json
+362 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clone-buffer/package.json
+363 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/es-object-atoms/package.json
+364 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/tree-kill/package.json
+365 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/inflight/package.json
+366 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/setprototypeof/package.json
+367 warn package.json spawn-command@0.0.2 No repository field.
+368 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/package.json
+369 verbose readDependencies using package.json deps
+370 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/queue-microtask/package.json
+371 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/map-stream/package.json
+372 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-extendable/package.json
+373 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/reusify/package.json
+374 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/define-data-property/package.json
+375 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mute-stdout/package.json
+376 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-windows/package.json
+377 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/destroy/package.json
+378 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yazl/package.json
+379 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mdurl/package.json
+380 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-json/package.json
+381 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/posthtml/package.json
+382 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@types/package.json
+383 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob-stream/package.json
+384 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lodash/package.json
+385 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/process-nextick-args/package.json
+386 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/shebang-regex/package.json
+387 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/arr-diff/package.json
+388 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-is-absolute/package.json
+389 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/prismjs/package.json
+390 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/asap/package.json
+391 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/errno/package.json
+392 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob-watcher/package.json
+393 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/multimatch/package.json
+394 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-valid-glob/package.json
+395 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/spawn-command/package.json
+396 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/iso-639-1/package.json
+397 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-property-descriptors/package.json
+398 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-fs/package.json
+399 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/toidentifier/package.json
+400 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/extend/package.json
+401 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/isobject/package.json
+402 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulplog/package.json
+403 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/strip-ansi/package.json
+404 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-filepath/package.json
+405 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/detect-file/package.json
+406 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ssri/package.json
+407 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/each-props/package.json
+408 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/arr-union/package.json
+409 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/immutable/package.json
+410 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-root-regex/package.json
+411 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-uglify/package.json
+412 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/es-errors/package.json
+413 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/findup-sync/package.json
+414 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-proto/package.json
+415 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/a-sync-waterfall/package.json
+416 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/nhsuk-frontend/package.json
+417 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/cloneable-readable/package.json
+418 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ms/package.json
+419 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gray-matter/package.json
+420 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/call-bind/package.json
+421 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bcp-47-normalize/package.json
+422 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glogg/package.json
+423 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/htmlparser2/package.json
+424 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/escape-string-regexp/package.json
+425 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lru-cache/package.json
+426 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bl/package.json
+427 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-gulplog/package.json
+428 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/easy-transform-stream/package.json
+429 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/commander/package.json
+430 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/require-directory/package.json
+431 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/depd/package.json
+432 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/core-util-is/package.json
+433 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/rimraf/package.json
+434 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/escalade/package.json
+435 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/http-equiv-refresh/package.json
+436 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/range-parser/package.json
+437 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/balanced-match/package.json
+438 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/to-through/package.json
+439 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/prr/package.json
+440 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/resolve/package.json
+441 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bytes/package.json
+442 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp/package.json
+443 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-root/package.json
+444 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/concurrently/package.json
+445 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/unc-path-regex/package.json
+446 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/base64-js/package.json
+447 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-wrap/package.json
+448 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fastest-levenshtein/package.json
+449 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/buffer-crc32/package.json
+450 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/acorn/package.json
+451 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-slice/package.json
+452 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/regenerator-runtime/package.json
+453 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bcp-47-match/package.json
+454 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clean-css/package.json
+455 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@nodelib/package.json
+456 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-alphabetical/package.json
+457 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/encodeurl/package.json
+458 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/wrap-ansi/package.json
+459 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/y18n/package.json
+460 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/once/package.json
+461 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/please-upgrade-node/package.json
+462 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/prettier/package.json
+463 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/dev-ip/package.json
+464 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/global-modules/package.json
+465 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@gulpjs/package.json
+466 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/extend-shallow/package.json
+467 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/plugin-error/package.json
+468 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/string_decoder/package.json
+469 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/tslib/package.json
+470 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/argparse/package.json
+471 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-sourcemap/package.json
+472 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/esm-import-transformer/package.json
+473 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/picomatch/package.json
+474 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/safe-buffer/package.json
+475 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-relative/package.json
+476 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/function-bind/package.json
+477 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/value-or-function/package.json
+478 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-glob/package.json
+479 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/replace-ext/package.json
+480 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ee-first/package.json
+481 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-fullwidth-code-point/package.json
+482 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/punycode.js/package.json
+483 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/list-to-array/package.json
+484 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yargs-parser/package.json
+485 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-passwd/package.json
+486 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/inherits/package.json
+487 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/maximatch/package.json
+488 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/async-settle/package.json
+489 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-cli/package.json
+490 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/date-fns/package.json
+491 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/iconv-lite/package.json
+492 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/anymatch/package.json
+493 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/for-own/package.json
+494 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/color-name/package.json
+495 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-contents/package.json
+496 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/es-define-property/package.json
+497 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-differ/package.json
+498 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/v8flags/package.json
+499 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/websocket-driver/package.json
+500 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/chokidar/package.json
+501 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-uniq/package.json
+502 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/dom-serializer/package.json
+503 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fresh/package.json
+504 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-red/package.json
+505 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/get-intrinsic/package.json
+506 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-sass/package.json
+507 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object.entries/package.json
+508 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/body/package.json
+509 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/semver-greatest-satisfied-range/package.json
+510 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/qs/package.json
+511 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/js-yaml/package.json
+512 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@11ty/package.json
+513 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/pify/package.json
+514 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/arr-flatten/package.json
+515 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/rechoir/package.json
+516 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/junk/package.json
+517 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-binary-path/package.json
+518 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/slugify/package.json
+519 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/hasown/package.json
+520 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/safer-buffer/package.json
+521 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/moo/package.json
+522 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/run-parallel/package.json
+523 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/recursive-copy/package.json
+524 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mime-types/package.json
+525 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/undici-types/package.json
+526 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fs-mkdirp-stream/package.json
+527 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/end-of-stream/package.json
+528 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/minimist/package.json
+529 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/xtend/package.json
+530 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/assign-symbols/package.json
+531 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sver/package.json
+532 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/chalk/package.json
+533 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/continuable-cache/package.json
+534 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-regex/package.json
+535 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/esprima/package.json
+536 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-flag/package.json
+537 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/supports-color/package.json
+538 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sparkles/package.json
+539 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/nunjucks/package.json
+540 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/supports-preserve-symlinks-flag/package.json
+541 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-each/package.json
+542 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/color-convert/package.json
+543 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-key/package.json
+544 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/readdirp/package.json
+545 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/unpipe/package.json
+546 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-clean-css/package.json
+547 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/brace-expansion/package.json
+548 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fill-range/package.json
+549 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/resolve-options/package.json
+550 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/binary-extensions/package.json
+551 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/get-caller-file/package.json
+552 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/util-deprecate/package.json
+553 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-absolute/package.json
+554 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/path-parse/package.json
+555 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/has-symbols/package.json
+556 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-connect/package.json
+557 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/kind-of/package.json
+558 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/picocolors/package.json
+559 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-colors/package.json
+560 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ieee754/package.json
+561 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/slash/package.json
+562 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/safe-json-parse/package.json
+563 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/faye-websocket/package.json
+564 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/raw-body/package.json
+565 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-negated-glob/package.json
+566 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/tiny-lr/package.json
+567 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/semver/package.json
+568 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ini/package.json
+569 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/http-errors/package.json
+570 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/through2/package.json
+571 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/define-properties/package.json
+572 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/strip-bom-string/package.json
+573 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lead/package.json
+574 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/connect-livereload/package.json
+575 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/minimatch/package.json
+576 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/accepts/package.json
+577 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/livereload-js/package.json
+578 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@sindresorhus/package.json
+579 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/stream-exhaust/package.json
+580 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clone/package.json
+581 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/node-retrieve-globals/package.json
+582 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/undertaker-registry/package.json
+583 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-styles/package.json
+584 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-core-module/package.json
+585 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fancy-log/package.json
+586 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/websocket-extensions/package.json
+587 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/make-error-cause/package.json
+588 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/negotiator/package.json
+589 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/morphdom/package.json
+590 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/homedir-polyfill/package.json
+591 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/batch/package.json
+592 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/markdown-it/package.json
+593 verbose read json /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/@babel/package.json
+594 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-number/package.json
+595 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/liftoff/package.json
+596 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fs.realpath/package.json
+597 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fast-fifo/package.json
+598 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/uc.micro/package.json
+599 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fined/package.json
+600 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/shell-quote/package.json
+601 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bach/package.json
+602 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-gray/package.json
+603 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/time-stamp/package.json
+604 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/utils-merge/package.json
+605 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-srcset/package.json
+606 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/side-channel/package.json
+607 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/concat-map/package.json
+608 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-zip/package.json
+609 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/markdown-it-anchor/package.json
+610 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/linkify-it/package.json
+611 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/evaluate-value/package.json
+612 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/get-stream/package.json
+613 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sprintf-js/package.json
+614 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/set-function-length/package.json
+615 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/interpret/package.json
+616 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/map-cache/package.json
+617 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/serve-static/package.json
+618 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/convert-source-map/package.json
+619 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/cliui/package.json
+620 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object-assign/package.json
+621 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object.defaults/package.json
+622 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/undertaker/package.json
+623 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/cross-spawn/package.json
+624 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mime/package.json
+625 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/dependency-graph/package.json
+626 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/domelementtype/package.json
+627 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-clean/package.json
+628 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/expand-tilde/package.json
+629 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/promise/package.json
+630 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yargs/package.json
+631 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/section-matter/package.json
+632 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/rxjs/package.json
+633 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/now-and-later/package.json
+634 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-rename/package.json
+635 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob/package.json
+636 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fast-levenshtein/package.json
+637 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/to-regex-range/package.json
+638 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl-sourcemaps-apply/package.json
+639 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/source-map/package.json
+640 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parse-node-version/package.json
+641 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/array-union/package.json
+642 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object-keys/package.json
+643 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/flagged-respawn/package.json
+644 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/replace-homedir/package.json
+645 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clone-stats/package.json
+646 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gopd/package.json
+647 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/escape-html/package.json
+648 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/uglify-js/package.json
+649 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/statuses/package.json
+650 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/make-error/package.json
+651 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/string-width/package.json
+652 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/streamx/package.json
+653 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/minipass/package.json
+654 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/yallist/package.json
+655 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/for-in/package.json
+656 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/parseurl/package.json
+657 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-decimal/package.json
+658 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/etag/package.json
+659 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/string-template/package.json
+660 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bcp-47/package.json
+661 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/vinyl/package.json
+662 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/isarray/package.json
+663 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/micromatch/package.json
+664 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/wrappy/package.json
+665 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/http-parser-js/package.json
+666 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/connect/package.json
+667 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fast-glob/package.json
+668 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-plain-object/package.json
+669 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/sass/package.json
+670 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/luxon/package.json
+671 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/semver-compare/package.json
+672 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/send/package.json
+673 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/global-prefix/package.json
+674 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-extglob/package.json
+675 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fastq/package.json
+676 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/copy-props/package.json
+677 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/finalhandler/package.json
+678 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/serve-index/package.json
+679 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/async-done/package.json
+680 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/error/package.json
+681 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-plugin-extras/package.json
+682 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/color-support/package.json
+683 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/merge2/package.json
+684 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/queue-tick/package.json
+685 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/teex/package.json
+686 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/domutils/package.json
+687 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/gulp-nunjucks/package.json
+688 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/kleur/package.json
+689 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ansi-cyan/package.json
+690 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/stream-composer/package.json
+691 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/posthtml-render/package.json
+692 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-unc-path/package.json
+693 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/braces/package.json
+694 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/which/package.json
+695 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/emoji-regex/package.json
+696 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object-inspect/package.json
+697 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/readable-stream/package.json
+698 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/object.pick/package.json
+699 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/last-run/package.json
+700 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mkdirp/package.json
+701 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/is-alphanumerical/package.json
+702 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/graceful-fs/package.json
+703 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/on-finished/package.json
+704 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/entities/package.json
+705 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/posthtml-parser/package.json
+706 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/normalize-path/package.json
+707 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/fsevents/package.json
+708 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/ws/package.json
+709 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/resolve-dir/package.json
+710 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/shebang-command/package.json
+711 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/acorn-walk/package.json
+712 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/bare-events/package.json
+713 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/debug/package.json
+714 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/glob-parent/package.json
+715 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/domhandler/package.json
+716 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/source-map-js/package.json
+717 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/remove-trailing-separator/package.json
+718 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/buffer/package.json
+719 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/liquidjs/package.json
+720 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/mime-db/package.json
+721 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/lodash.clonedeep/package.json
+722 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/isexe/package.json
+723 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/clone-buffer/package.json
+724 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/es-object-atoms/package.json
+725 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/tree-kill/package.json
+726 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/inflight/package.json
+727 verbose from cache /Users/davidhunter/Documents local/prototypes/nhsapp-frontend/node_modules/setprototypeof/package.json
+728 verbose cache add [ '@11ty/eleventy@3.0.0-alpha.6', null ]
+729 verbose cache add name=undefined spec="@11ty/eleventy@3.0.0-alpha.6" args=["@11ty/eleventy@3.0.0-alpha.6",null]
+730 verbose parsed url { pathname: '@11ty/eleventy@3.0.0-alpha.6',
+730 verbose parsed url   path: '@11ty/eleventy@3.0.0-alpha.6',
+730 verbose parsed url   href: '@11ty/eleventy@3.0.0-alpha.6' }
+731 verbose cache add name="" spec="11ty/eleventy@3.0.0-alpha.6" args=["","11ty/eleventy@3.0.0-alpha.6"]
+732 verbose parsed url { pathname: '11ty/eleventy@3.0.0-alpha.6',
+732 verbose parsed url   path: '11ty/eleventy@3.0.0-alpha.6',
+732 verbose parsed url   href: '11ty/eleventy@3.0.0-alpha.6' }
+733 verbose cache add name="11ty/eleventy" spec="3.0.0-alpha.6" args=["11ty/eleventy","3.0.0-alpha.6"]
+734 verbose parsed url { pathname: '3.0.0-alpha.6',
+734 verbose parsed url   path: '3.0.0-alpha.6',
+734 verbose parsed url   href: '3.0.0-alpha.6' }
+735 verbose addNamed [ '11ty/eleventy', '3.0.0-alpha.6' ]
+736 verbose addNamed [ '3.0.0-alpha.6', '3.0.0-alpha.6' ]
+737 verbose cache add [ '@11ty/eleventy-plugin-syntaxhighlight@^5.0.0', null ]
+738 verbose cache add name=undefined spec="@11ty/eleventy-plugin-syntaxhighlight@^5.0.0" args=["@11ty/eleventy-plugin-syntaxhighlight@^5.0.0",null]
+739 verbose parsed url { pathname: '@11ty/eleventy-plugin-syntaxhighlight@^5.0.0',
+739 verbose parsed url   path: '@11ty/eleventy-plugin-syntaxhighlight@^5.0.0',
+739 verbose parsed url   href: '@11ty/eleventy-plugin-syntaxhighlight@^5.0.0' }
+740 verbose cache add name="" spec="11ty/eleventy-plugin-syntaxhighlight@^5.0.0" args=["","11ty/eleventy-plugin-syntaxhighlight@^5.0.0"]
+741 verbose parsed url { pathname: '11ty/eleventy-plugin-syntaxhighlight@^5.0.0',
+741 verbose parsed url   path: '11ty/eleventy-plugin-syntaxhighlight@^5.0.0',
+741 verbose parsed url   href: '11ty/eleventy-plugin-syntaxhighlight@^5.0.0' }
+742 verbose cache add name="11ty/eleventy-plugin-syntaxhighlight" spec="^5.0.0" args=["11ty/eleventy-plugin-syntaxhighlight","^5.0.0"]
+743 verbose parsed url { pathname: '^5.0.0', path: '^5.0.0', href: '^5.0.0' }
+744 verbose addNamed [ '11ty/eleventy-plugin-syntaxhighlight', '^5.0.0' ]
+745 verbose addNamed [ null, null ]
+746 verbose cache add [ 'concurrently@^8.2.2', null ]
+747 verbose cache add name=undefined spec="concurrently@^8.2.2" args=["concurrently@^8.2.2",null]
+748 verbose parsed url { pathname: 'concurrently@^8.2.2',
+748 verbose parsed url   path: 'concurrently@^8.2.2',
+748 verbose parsed url   href: 'concurrently@^8.2.2' }
+749 verbose cache add name="concurrently" spec="^8.2.2" args=["concurrently","^8.2.2"]
+750 verbose parsed url { pathname: '^8.2.2', path: '^8.2.2', href: '^8.2.2' }
+751 verbose addNamed [ 'concurrently', '^8.2.2' ]
+752 verbose addNamed [ null, null ]
+753 verbose cache add [ 'gulp@^5.0.0', null ]
+754 verbose cache add name=undefined spec="gulp@^5.0.0" args=["gulp@^5.0.0",null]
+755 verbose parsed url { pathname: 'gulp@^5.0.0',
+755 verbose parsed url   path: 'gulp@^5.0.0',
+755 verbose parsed url   href: 'gulp@^5.0.0' }
+756 verbose cache add name="gulp" spec="^5.0.0" args=["gulp","^5.0.0"]
+757 verbose parsed url { pathname: '^5.0.0', path: '^5.0.0', href: '^5.0.0' }
+758 verbose addNamed [ 'gulp', '^5.0.0' ]
+759 verbose addNamed [ null, null ]
+760 verbose cache add [ 'gulp-clean@^0.4.0', null ]
+761 verbose cache add name=undefined spec="gulp-clean@^0.4.0" args=["gulp-clean@^0.4.0",null]
+762 verbose parsed url { pathname: 'gulp-clean@^0.4.0',
+762 verbose parsed url   path: 'gulp-clean@^0.4.0',
+762 verbose parsed url   href: 'gulp-clean@^0.4.0' }
+763 verbose cache add name="gulp-clean" spec="^0.4.0" args=["gulp-clean","^0.4.0"]
+764 verbose parsed url { pathname: '^0.4.0', path: '^0.4.0', href: '^0.4.0' }
+765 verbose addNamed [ 'gulp-clean', '^0.4.0' ]
+766 verbose addNamed [ null, null ]
+767 verbose cache add [ 'gulp-clean-css@^4.3.0', null ]
+768 verbose cache add name=undefined spec="gulp-clean-css@^4.3.0" args=["gulp-clean-css@^4.3.0",null]
+769 verbose parsed url { pathname: 'gulp-clean-css@^4.3.0',
+769 verbose parsed url   path: 'gulp-clean-css@^4.3.0',
+769 verbose parsed url   href: 'gulp-clean-css@^4.3.0' }
+770 verbose cache add name="gulp-clean-css" spec="^4.3.0" args=["gulp-clean-css","^4.3.0"]
+771 verbose parsed url { pathname: '^4.3.0', path: '^4.3.0', href: '^4.3.0' }
+772 verbose addNamed [ 'gulp-clean-css', '^4.3.0' ]
+773 verbose addNamed [ null, null ]
+774 verbose cache add [ 'gulp-cli@^3.0.0', null ]
+775 verbose cache add name=undefined spec="gulp-cli@^3.0.0" args=["gulp-cli@^3.0.0",null]
+776 verbose parsed url { pathname: 'gulp-cli@^3.0.0',
+776 verbose parsed url   path: 'gulp-cli@^3.0.0',
+776 verbose parsed url   href: 'gulp-cli@^3.0.0' }
+777 verbose cache add name="gulp-cli" spec="^3.0.0" args=["gulp-cli","^3.0.0"]
+778 verbose parsed url { pathname: '^3.0.0', path: '^3.0.0', href: '^3.0.0' }
+779 verbose addNamed [ 'gulp-cli', '^3.0.0' ]
+780 verbose addNamed [ null, null ]
+781 verbose cache add [ 'gulp-connect@^5.7.0', null ]
+782 verbose cache add name=undefined spec="gulp-connect@^5.7.0" args=["gulp-connect@^5.7.0",null]
+783 verbose parsed url { pathname: 'gulp-connect@^5.7.0',
+783 verbose parsed url   path: 'gulp-connect@^5.7.0',
+783 verbose parsed url   href: 'gulp-connect@^5.7.0' }
+784 verbose cache add name="gulp-connect" spec="^5.7.0" args=["gulp-connect","^5.7.0"]
+785 verbose parsed url { pathname: '^5.7.0', path: '^5.7.0', href: '^5.7.0' }
+786 verbose addNamed [ 'gulp-connect', '^5.7.0' ]
+787 verbose addNamed [ null, null ]
+788 verbose cache add [ 'gulp-nunjucks@^6.0.0', null ]
+789 verbose cache add name=undefined spec="gulp-nunjucks@^6.0.0" args=["gulp-nunjucks@^6.0.0",null]
+790 verbose parsed url { pathname: 'gulp-nunjucks@^6.0.0',
+790 verbose parsed url   path: 'gulp-nunjucks@^6.0.0',
+790 verbose parsed url   href: 'gulp-nunjucks@^6.0.0' }
+791 verbose cache add name="gulp-nunjucks" spec="^6.0.0" args=["gulp-nunjucks","^6.0.0"]
+792 verbose parsed url { pathname: '^6.0.0', path: '^6.0.0', href: '^6.0.0' }
+793 verbose addNamed [ 'gulp-nunjucks', '^6.0.0' ]
+794 verbose addNamed [ null, null ]
+795 verbose cache add [ 'gulp-rename@^2.0.0', null ]
+796 verbose cache add name=undefined spec="gulp-rename@^2.0.0" args=["gulp-rename@^2.0.0",null]
+797 verbose parsed url { pathname: 'gulp-rename@^2.0.0',
+797 verbose parsed url   path: 'gulp-rename@^2.0.0',
+797 verbose parsed url   href: 'gulp-rename@^2.0.0' }
+798 verbose cache add name="gulp-rename" spec="^2.0.0" args=["gulp-rename","^2.0.0"]
+799 verbose parsed url { pathname: '^2.0.0', path: '^2.0.0', href: '^2.0.0' }
+800 verbose addNamed [ 'gulp-rename', '^2.0.0' ]
+801 verbose addNamed [ null, null ]
+802 verbose cache add [ 'gulp-sass@^5.1.0', null ]
+803 verbose cache add name=undefined spec="gulp-sass@^5.1.0" args=["gulp-sass@^5.1.0",null]
+804 verbose parsed url { pathname: 'gulp-sass@^5.1.0',
+804 verbose parsed url   path: 'gulp-sass@^5.1.0',
+804 verbose parsed url   href: 'gulp-sass@^5.1.0' }
+805 verbose cache add name="gulp-sass" spec="^5.1.0" args=["gulp-sass","^5.1.0"]
+806 verbose parsed url { pathname: '^5.1.0', path: '^5.1.0', href: '^5.1.0' }
+807 verbose addNamed [ 'gulp-sass', '^5.1.0' ]
+808 verbose addNamed [ null, null ]
+809 verbose cache add [ 'gulp-uglify@^3.0.2', null ]
+810 verbose cache add name=undefined spec="gulp-uglify@^3.0.2" args=["gulp-uglify@^3.0.2",null]
+811 verbose parsed url { pathname: 'gulp-uglify@^3.0.2',
+811 verbose parsed url   path: 'gulp-uglify@^3.0.2',
+811 verbose parsed url   href: 'gulp-uglify@^3.0.2' }
+812 verbose cache add name="gulp-uglify" spec="^3.0.2" args=["gulp-uglify","^3.0.2"]
+813 verbose parsed url { pathname: '^3.0.2', path: '^3.0.2', href: '^3.0.2' }
+814 verbose addNamed [ 'gulp-uglify', '^3.0.2' ]
+815 verbose addNamed [ null, null ]
+816 verbose cache add [ 'gulp-zip@^6.0.0', null ]
+817 verbose cache add name=undefined spec="gulp-zip@^6.0.0" args=["gulp-zip@^6.0.0",null]
+818 verbose parsed url { pathname: 'gulp-zip@^6.0.0',
+818 verbose parsed url   path: 'gulp-zip@^6.0.0',
+818 verbose parsed url   href: 'gulp-zip@^6.0.0' }
+819 verbose cache add name="gulp-zip" spec="^6.0.0" args=["gulp-zip","^6.0.0"]
+820 verbose parsed url { pathname: '^6.0.0', path: '^6.0.0', href: '^6.0.0' }
+821 verbose addNamed [ 'gulp-zip', '^6.0.0' ]
+822 verbose addNamed [ null, null ]
+823 verbose cache add [ 'markdown-it-anchor@^9.0.1', null ]
+824 verbose cache add name=undefined spec="markdown-it-anchor@^9.0.1" args=["markdown-it-anchor@^9.0.1",null]
+825 verbose parsed url { pathname: 'markdown-it-anchor@^9.0.1',
+825 verbose parsed url   path: 'markdown-it-anchor@^9.0.1',
+825 verbose parsed url   href: 'markdown-it-anchor@^9.0.1' }
+826 verbose cache add name="markdown-it-anchor" spec="^9.0.1" args=["markdown-it-anchor","^9.0.1"]
+827 verbose parsed url { pathname: '^9.0.1', path: '^9.0.1', href: '^9.0.1' }
+828 verbose addNamed [ 'markdown-it-anchor', '^9.0.1' ]
+829 verbose addNamed [ null, null ]
+830 silly lockFile 594e6f41-11ty-eleventy-3-0-0-alpha-6 11ty/eleventy@3.0.0-alpha.6
+831 verbose lock 11ty/eleventy@3.0.0-alpha.6 /Users/davidhunter/.npm/594e6f41-11ty-eleventy-3-0-0-alpha-6.lock
+832 silly lockFile 17a5e170-nty-plugin-syntaxhighlight-5-0-0 11ty/eleventy-plugin-syntaxhighlight@^5.0.0
+833 verbose lock 11ty/eleventy-plugin-syntaxhighlight@^5.0.0 /Users/davidhunter/.npm/17a5e170-nty-plugin-syntaxhighlight-5-0-0.lock
+834 silly lockFile da885c18-concurrently-8-2-2 concurrently@^8.2.2
+835 verbose lock concurrently@^8.2.2 /Users/davidhunter/.npm/da885c18-concurrently-8-2-2.lock
+836 silly lockFile fc14a45e-gulp-5-0-0 gulp@^5.0.0
+837 verbose lock gulp@^5.0.0 /Users/davidhunter/.npm/fc14a45e-gulp-5-0-0.lock
+838 silly lockFile a97679d3-gulp-clean-0-4-0 gulp-clean@^0.4.0
+839 verbose lock gulp-clean@^0.4.0 /Users/davidhunter/.npm/a97679d3-gulp-clean-0-4-0.lock
+840 silly lockFile 52c02aec-gulp-clean-css-4-3-0 gulp-clean-css@^4.3.0
+841 verbose lock gulp-clean-css@^4.3.0 /Users/davidhunter/.npm/52c02aec-gulp-clean-css-4-3-0.lock
+842 silly lockFile 90885b80-gulp-cli-3-0-0 gulp-cli@^3.0.0
+843 verbose lock gulp-cli@^3.0.0 /Users/davidhunter/.npm/90885b80-gulp-cli-3-0-0.lock
+844 silly lockFile 115e0107-gulp-connect-5-7-0 gulp-connect@^5.7.0
+845 verbose lock gulp-connect@^5.7.0 /Users/davidhunter/.npm/115e0107-gulp-connect-5-7-0.lock
+846 silly lockFile 0e91edf8-gulp-nunjucks-6-0-0 gulp-nunjucks@^6.0.0
+847 verbose lock gulp-nunjucks@^6.0.0 /Users/davidhunter/.npm/0e91edf8-gulp-nunjucks-6-0-0.lock
+848 silly lockFile 718bca5b-gulp-rename-2-0-0 gulp-rename@^2.0.0
+849 verbose lock gulp-rename@^2.0.0 /Users/davidhunter/.npm/718bca5b-gulp-rename-2-0-0.lock
+850 silly lockFile b7950831-gulp-sass-5-1-0 gulp-sass@^5.1.0
+851 verbose lock gulp-sass@^5.1.0 /Users/davidhunter/.npm/b7950831-gulp-sass-5-1-0.lock
+852 silly lockFile 0f9de84d-gulp-uglify-3-0-2 gulp-uglify@^3.0.2
+853 verbose lock gulp-uglify@^3.0.2 /Users/davidhunter/.npm/0f9de84d-gulp-uglify-3-0-2.lock
+854 silly lockFile 4c34ea54-gulp-zip-6-0-0 gulp-zip@^6.0.0
+855 verbose lock gulp-zip@^6.0.0 /Users/davidhunter/.npm/4c34ea54-gulp-zip-6-0-0.lock
+856 silly lockFile 049d3f77-markdown-it-anchor-9-0-1 markdown-it-anchor@^9.0.1
+857 verbose lock markdown-it-anchor@^9.0.1 /Users/davidhunter/.npm/049d3f77-markdown-it-anchor-9-0-1.lock
+858 info addNameTag [ '11ty/eleventy-plugin-syntaxhighlight', '^5.0.0' ]
+859 info addNameTag [ 'concurrently', '^8.2.2' ]
+860 info addNameTag [ 'gulp', '^5.0.0' ]
+861 info addNameTag [ 'gulp-clean', '^0.4.0' ]
+862 info addNameTag [ 'gulp-clean-css', '^4.3.0' ]
+863 info addNameTag [ 'gulp-connect', '^5.7.0' ]
+864 info addNameTag [ 'gulp-cli', '^3.0.0' ]
+865 info addNameTag [ 'gulp-nunjucks', '^6.0.0' ]
+866 info addNameTag [ 'gulp-rename', '^2.0.0' ]
+867 info addNameTag [ 'gulp-sass', '^5.1.0' ]
+868 info addNameTag [ 'gulp-zip', '^6.0.0' ]
+869 info addNameTag [ 'gulp-uglify', '^3.0.2' ]
+870 info addNameTag [ 'markdown-it-anchor', '^9.0.1' ]
+871 verbose url raw 11ty/eleventy/3.0.0-alpha.6
+872 verbose url resolving [ 'https://registry.npmjs.org/',
+872 verbose url resolving   './11ty/eleventy/3.0.0-alpha.6' ]
+873 verbose url resolved https://registry.npmjs.org/11ty/eleventy/3.0.0-alpha.6
+874 info trying registry request attempt 1 at 09:43:13
+875 http GET https://registry.npmjs.org/11ty/eleventy/3.0.0-alpha.6
+876 verbose url raw 11ty/eleventy-plugin-syntaxhighlight
+877 verbose url resolving [ 'https://registry.npmjs.org/',
+877 verbose url resolving   './11ty/eleventy-plugin-syntaxhighlight' ]
+878 verbose url resolved https://registry.npmjs.org/11ty/eleventy-plugin-syntaxhighlight
+879 info trying registry request attempt 1 at 09:43:13
+880 http GET https://registry.npmjs.org/11ty/eleventy-plugin-syntaxhighlight
+881 verbose url raw concurrently
+882 verbose url resolving [ 'https://registry.npmjs.org/', './concurrently' ]
+883 verbose url resolved https://registry.npmjs.org/concurrently
+884 info trying registry request attempt 1 at 09:43:13
+885 http GET https://registry.npmjs.org/concurrently
+886 verbose url raw gulp
+887 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+888 verbose url resolved https://registry.npmjs.org/gulp
+889 info trying registry request attempt 1 at 09:43:13
+890 http GET https://registry.npmjs.org/gulp
+891 verbose url raw gulp-clean
+892 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-clean' ]
+893 verbose url resolved https://registry.npmjs.org/gulp-clean
+894 info trying registry request attempt 1 at 09:43:13
+895 http GET https://registry.npmjs.org/gulp-clean
+896 verbose url raw gulp-connect
+897 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-connect' ]
+898 verbose url resolved https://registry.npmjs.org/gulp-connect
+899 info trying registry request attempt 1 at 09:43:13
+900 http GET https://registry.npmjs.org/gulp-connect
+901 verbose url raw gulp-clean-css
+902 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-clean-css' ]
+903 verbose url resolved https://registry.npmjs.org/gulp-clean-css
+904 info trying registry request attempt 1 at 09:43:13
+905 http GET https://registry.npmjs.org/gulp-clean-css
+906 verbose url raw gulp-cli
+907 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-cli' ]
+908 verbose url resolved https://registry.npmjs.org/gulp-cli
+909 info trying registry request attempt 1 at 09:43:13
+910 http GET https://registry.npmjs.org/gulp-cli
+911 verbose url raw gulp-nunjucks
+912 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-nunjucks' ]
+913 verbose url resolved https://registry.npmjs.org/gulp-nunjucks
+914 info trying registry request attempt 1 at 09:43:13
+915 http GET https://registry.npmjs.org/gulp-nunjucks
+916 verbose url raw gulp-rename
+917 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rename' ]
+918 verbose url resolved https://registry.npmjs.org/gulp-rename
+919 info trying registry request attempt 1 at 09:43:13
+920 http GET https://registry.npmjs.org/gulp-rename
+921 verbose url raw gulp-sass
+922 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-sass' ]
+923 verbose url resolved https://registry.npmjs.org/gulp-sass
+924 info trying registry request attempt 1 at 09:43:13
+925 http GET https://registry.npmjs.org/gulp-sass
+926 verbose url raw gulp-zip
+927 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-zip' ]
+928 verbose url resolved https://registry.npmjs.org/gulp-zip
+929 info trying registry request attempt 1 at 09:43:13
+930 http GET https://registry.npmjs.org/gulp-zip
+931 verbose url raw gulp-uglify
+932 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglify' ]
+933 verbose url resolved https://registry.npmjs.org/gulp-uglify
+934 info trying registry request attempt 1 at 09:43:13
+935 http GET https://registry.npmjs.org/gulp-uglify
+936 verbose url raw markdown-it-anchor
+937 verbose url resolving [ 'https://registry.npmjs.org/', './markdown-it-anchor' ]
+938 verbose url resolved https://registry.npmjs.org/markdown-it-anchor
+939 info trying registry request attempt 1 at 09:43:13
+940 http GET https://registry.npmjs.org/markdown-it-anchor
+941 verbose cache add [ 'nhsuk-frontend@^9.2.0', null ]
+942 verbose cache add name=undefined spec="nhsuk-frontend@^9.2.0" args=["nhsuk-frontend@^9.2.0",null]
+943 verbose parsed url { pathname: 'nhsuk-frontend@^9.2.0',
+943 verbose parsed url   path: 'nhsuk-frontend@^9.2.0',
+943 verbose parsed url   href: 'nhsuk-frontend@^9.2.0' }
+944 verbose cache add name="nhsuk-frontend" spec="^9.2.0" args=["nhsuk-frontend","^9.2.0"]
+945 verbose parsed url { pathname: '^9.2.0', path: '^9.2.0', href: '^9.2.0' }
+946 verbose addNamed [ 'nhsuk-frontend', '^9.2.0' ]
+947 verbose addNamed [ null, null ]
+948 silly lockFile 1a5c0553-nhsuk-frontend-9-2-0 nhsuk-frontend@^9.2.0
+949 verbose lock nhsuk-frontend@^9.2.0 /Users/davidhunter/.npm/1a5c0553-nhsuk-frontend-9-2-0.lock
+950 verbose cache add [ 'nunjucks@^3.2.4', null ]
+951 verbose cache add name=undefined spec="nunjucks@^3.2.4" args=["nunjucks@^3.2.4",null]
+952 verbose parsed url { pathname: 'nunjucks@^3.2.4',
+952 verbose parsed url   path: 'nunjucks@^3.2.4',
+952 verbose parsed url   href: 'nunjucks@^3.2.4' }
+953 verbose cache add name="nunjucks" spec="^3.2.4" args=["nunjucks","^3.2.4"]
+954 verbose parsed url { pathname: '^3.2.4', path: '^3.2.4', href: '^3.2.4' }
+955 verbose addNamed [ 'nunjucks', '^3.2.4' ]
+956 verbose addNamed [ null, null ]
+957 silly lockFile 8f7ff936-nunjucks-3-2-4 nunjucks@^3.2.4
+958 verbose lock nunjucks@^3.2.4 /Users/davidhunter/.npm/8f7ff936-nunjucks-3-2-4.lock
+959 verbose cache add [ 'prettier@^3.2.5', null ]
+960 verbose cache add name=undefined spec="prettier@^3.2.5" args=["prettier@^3.2.5",null]
+961 verbose parsed url { pathname: 'prettier@^3.2.5',
+961 verbose parsed url   path: 'prettier@^3.2.5',
+961 verbose parsed url   href: 'prettier@^3.2.5' }
+962 verbose cache add name="prettier" spec="^3.2.5" args=["prettier","^3.2.5"]
+963 verbose parsed url { pathname: '^3.2.5', path: '^3.2.5', href: '^3.2.5' }
+964 verbose addNamed [ 'prettier', '^3.2.5' ]
+965 verbose addNamed [ null, null ]
+966 silly lockFile c10893d2-prettier-3-2-5 prettier@^3.2.5
+967 verbose lock prettier@^3.2.5 /Users/davidhunter/.npm/c10893d2-prettier-3-2-5.lock
+968 verbose cache add [ 'sass@^1.74.1', null ]
+969 verbose cache add name=undefined spec="sass@^1.74.1" args=["sass@^1.74.1",null]
+970 verbose parsed url { pathname: 'sass@^1.74.1',
+970 verbose parsed url   path: 'sass@^1.74.1',
+970 verbose parsed url   href: 'sass@^1.74.1' }
+971 verbose cache add name="sass" spec="^1.74.1" args=["sass","^1.74.1"]
+972 verbose parsed url { pathname: '^1.74.1', path: '^1.74.1', href: '^1.74.1' }
+973 verbose addNamed [ 'sass', '^1.74.1' ]
+974 verbose addNamed [ null, null ]
+975 silly lockFile 43f1fc43-sass-1-74-1 sass@^1.74.1
+976 verbose lock sass@^1.74.1 /Users/davidhunter/.npm/43f1fc43-sass-1-74-1.lock
+977 info addNameTag [ 'nhsuk-frontend', '^9.2.0' ]
+978 info addNameTag [ 'prettier', '^3.2.5' ]
+979 info addNameTag [ 'nunjucks', '^3.2.4' ]
+980 info addNameTag [ 'sass', '^1.74.1' ]
+981 verbose url raw nhsuk-frontend
+982 verbose url resolving [ 'https://registry.npmjs.org/', './nhsuk-frontend' ]
+983 verbose url resolved https://registry.npmjs.org/nhsuk-frontend
+984 info trying registry request attempt 1 at 09:43:13
+985 http GET https://registry.npmjs.org/nhsuk-frontend
+986 verbose url raw prettier
+987 verbose url resolving [ 'https://registry.npmjs.org/', './prettier' ]
+988 verbose url resolved https://registry.npmjs.org/prettier
+989 info trying registry request attempt 1 at 09:43:13
+990 http GET https://registry.npmjs.org/prettier
+991 verbose url raw nunjucks
+992 verbose url resolving [ 'https://registry.npmjs.org/', './nunjucks' ]
+993 verbose url resolved https://registry.npmjs.org/nunjucks
+994 info trying registry request attempt 1 at 09:43:13
+995 http GET https://registry.npmjs.org/nunjucks
+996 verbose url raw sass
+997 verbose url resolving [ 'https://registry.npmjs.org/', './sass' ]
+998 verbose url resolved https://registry.npmjs.org/sass
+999 info trying registry request attempt 1 at 09:43:13
+1000 http GET https://registry.npmjs.org/sass
+1001 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1002 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1003 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1004 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1005 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1006 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1007 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1008 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1009 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1010 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1011 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1012 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1013 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1014 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1015 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1016 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1017 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1018 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1019 info trying registry request attempt 2 at 09:43:23
+1020 http GET https://registry.npmjs.org/gulp
+1021 info trying registry request attempt 2 at 09:43:23
+1022 http GET https://registry.npmjs.org/concurrently
+1023 info trying registry request attempt 2 at 09:43:23
+1024 http GET https://registry.npmjs.org/gulp-clean
+1025 info trying registry request attempt 2 at 09:43:23
+1026 http GET https://registry.npmjs.org/11ty/eleventy/3.0.0-alpha.6
+1027 info trying registry request attempt 2 at 09:43:23
+1028 http GET https://registry.npmjs.org/11ty/eleventy-plugin-syntaxhighlight
+1029 info trying registry request attempt 2 at 09:43:23
+1030 http GET https://registry.npmjs.org/gulp-connect
+1031 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1032 info trying registry request attempt 2 at 09:43:23
+1033 http GET https://registry.npmjs.org/gulp-clean-css
+1034 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1035 info trying registry request attempt 2 at 09:43:23
+1036 http GET https://registry.npmjs.org/gulp-rename
+1037 info trying registry request attempt 2 at 09:43:23
+1038 http GET https://registry.npmjs.org/gulp-nunjucks
+1039 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1040 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1041 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1042 info trying registry request attempt 2 at 09:43:23
+1043 http GET https://registry.npmjs.org/gulp-cli
+1044 info trying registry request attempt 2 at 09:43:23
+1045 http GET https://registry.npmjs.org/gulp-zip
+1046 info trying registry request attempt 2 at 09:43:23
+1047 http GET https://registry.npmjs.org/gulp-sass
+1048 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1049 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1050 info trying registry request attempt 2 at 09:43:23
+1051 http GET https://registry.npmjs.org/markdown-it-anchor
+1052 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1053 info trying registry request attempt 2 at 09:43:23
+1054 http GET https://registry.npmjs.org/gulp-uglify
+1055 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1056 info trying registry request attempt 2 at 09:43:23
+1057 http GET https://registry.npmjs.org/nhsuk-frontend
+1058 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1059 info trying registry request attempt 2 at 09:43:23
+1060 http GET https://registry.npmjs.org/prettier
+1061 info trying registry request attempt 2 at 09:43:23
+1062 http GET https://registry.npmjs.org/nunjucks
+1063 info trying registry request attempt 2 at 09:43:23
+1064 http GET https://registry.npmjs.org/sass
+1065 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1066 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1067 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1068 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1069 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1070 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1071 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1072 info retry will retry, error on last attempt: Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1073 info trying registry request attempt 3 at 09:44:23
+1074 http GET https://registry.npmjs.org/gulp
+1075 info trying registry request attempt 3 at 09:44:23
+1076 http GET https://registry.npmjs.org/concurrently
+1077 info trying registry request attempt 3 at 09:44:23
+1078 http GET https://registry.npmjs.org/11ty/eleventy-plugin-syntaxhighlight
+1079 info trying registry request attempt 3 at 09:44:23
+1080 http GET https://registry.npmjs.org/gulp-clean
+1081 info trying registry request attempt 3 at 09:44:23
+1082 http GET https://registry.npmjs.org/11ty/eleventy/3.0.0-alpha.6
+1083 silly lockFile fc14a45e-gulp-5-0-0 gulp@^5.0.0
+1084 silly lockFile fc14a45e-gulp-5-0-0 gulp@^5.0.0
+1085 error Error: 140704649042688:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+1085 error
+1085 error     at CleartextStream._puller (tls.js:670:24)
+1085 error     at CleartextStream.CryptoStream._pull (tls.js:604:19)
+1085 error     at SecurePair.cycle (tls.js:894:20)
+1085 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+1085 error     at Socket.ondata (stream.js:38:26)
+1085 error     at Socket.EventEmitter.emit (events.js:96:17)
+1085 error     at TCP.onread (net.js:397:14)
+1086 error If you need help, you may report this log at:
+1086 error     <http://github.com/isaacs/npm/issues>
+1086 error or email it to:
+1086 error     <npm-@googlegroups.com>
+1087 error System Darwin 24.3.0
+1088 error command "/Users/davidhunter/.nvm/v0.8.28/bin/node" "/Users/davidhunter/.nvm/v0.8.28/bin/npm" "install"
+1089 error cwd /Users/davidhunter/Documents local/prototypes/nhsapp-frontend
+1090 error node -v v0.8.28
+1091 error npm -v 1.2.30
+1092 verbose exit [ 1, true ]

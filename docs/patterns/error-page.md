@@ -46,12 +46,16 @@ Use the h1 heading to clearly explain the problem or a solution.
 
 Some error headings work better as instructions and some work better as descriptions.
 
+Make sure headings are grammatically correct, and not abbreviated versions of full sentences like "Cannot log in" or "Prescriptions not available". Shortened headings like these can be harder to read and understand.
+
 #### Instructive headings
 
 If there’s a direct action the user can take to resolve the problem, use the h1 to tell them this. Start the h1 with the verb that indicates the action they need to take. For example:
 
 - "Update the NHS App"
 - "Check you’re registered with a GP in England"
+
+{% example "error-pages/no-appointments.njk" %}
 
 #### Descriptive headings
 
@@ -60,9 +64,7 @@ For descriptive headings, starting the h1 with "we" can sometimes help to make c
 - "We could not log you in"
 - "We could not show your approved prescriptions"
 
-#### Making headings clear
-
-Make sure headings are grammatically correct, and not abbreviated versions of full sentences like "Cannot log in" or "Prescriptions not available". Shortened headings like these can be harder to read and understand.
+{% example "error-pages/confirmed-prescriptions.njk" %}
 
 ### Using calls to action and links
 
@@ -95,37 +97,13 @@ When you need to include an error code, use the h2 "If the problem continues" an
 
 Speak to the service management team about whether you need to include an error code.
 
-{% example "error-pages/contact-nhsapp.njk" %}
-
-## Examples
-
-### With an instructive heading
-
-In this example we give a direct instruction in the heading.
-
-We’ve used a primary button because the call to action is directly relevant to solving the problem.
-
-{% example "error-pages/no-appointments.njk" %}
-
-### With a descriptive heading
-
-In this scenario, we have described the problem and given alternative ways to get medical help.
-
-{% example "error-pages/confirmed-prescriptions.njk" %}
+{% example "error-pages/could-not-log-in.njk" %}
 
 ### When a user is not logged in
 
-The top navigation is not visible because the user is not logged in.
-
-We’ve used a secondary button because the call to action won’t definitely solve the problem.
+The top and bottom navigation are not visible because the user is not logged in.
 
 {% example "error-pages/check-internet-connection.njk" %}
-
-### With an error code
-
-This error scenario has an error code associated with it.
-
-{% example "error-pages/could-not-log-in.njk" %}
 
 ## Research
 
@@ -137,7 +115,7 @@ Research has shown that users may:
 
 We should account for these challenges in our designs and continue to research and iterate the pattern.
 
-## Our next steps
+### Next steps
 
 We want to learn more about:
 
