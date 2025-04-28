@@ -1,5 +1,5 @@
-$phone-width: 375px;
-$phone-height: 700px;
+$phone-width: 420px;
+$phone-height: 800px;
 $phone-border-width: 12px;
 $phone-border-radius: 54px;
 $notch-height: 31px;
@@ -45,7 +45,7 @@ html:has(.app-iframe__page) {
   height: $phone-height;
   width: $phone-width;
 
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     height: 600px;
     width: 320px;
   }

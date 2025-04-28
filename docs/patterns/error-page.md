@@ -7,6 +7,8 @@ tags:
   - page
 ---
 
+{% example "error-pages/show-gp-appointments.njk" %}
+
 ## When to use
 
 Use an error page when:
@@ -46,7 +48,7 @@ Use the main h1 heading to clearly explain the problem or a solution.
 
 Some error headings work better as instructions and some work better as descriptions.
 
-Headings should be grammatically correct. Avoid abbreviated headings like "Prescriptions not available" as they can make it harder for users to understand what's caused the problem. 
+Headings should be grammatically correct. Avoid abbreviated headings like "Prescriptions not available" as they can make it harder for users to understand what's caused the problem.
 
 #### Instructive headings
 
@@ -80,7 +82,7 @@ Avoid giving users too many different links to choose from as a next step. This 
 
 ### Helping users get care another way
 
-Always tell users how they can access the service through an alternative channel to complete their task. 
+Always tell users how they can access the service through an alternative channel to complete their task.
 
 Remember that the NHS App is a healthcare application. Errors can delay access to clinical care, and users may be experiencing urgent health needs. Error pages must clearly and promptly signpost users to alternative healthcare services, to reduce the risk of harm from delays.
 
@@ -90,9 +92,9 @@ Talk to your service’s clinical lead for advice when you create or update an e
 
 ### Letting users report a technical problem
 
-Signpost users to contact the NHS App team if: 
+Signpost users to contact the NHS App team if:
 
-- the error is being tracked by the service management team 
+- the error is being tracked by the service management team
 - it's a technical problem
 
 Use the h2 "If the problem continues" and include an error code.
