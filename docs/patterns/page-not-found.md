@@ -26,6 +26,6 @@ If someone is accessing NHS App services in a web browser, this error can also h
 
 The page should have:
 
-- ‘Page not found – service name – NHS App’ as the page title
+- ‘Page not found – NHS App’ as the page title
 - ‘Page not found’ as the H1
 - details of how to get urgent medical advice, if a broken link could be preventing users from using a service to get urgent medical help
