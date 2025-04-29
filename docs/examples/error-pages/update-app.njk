@@ -2,7 +2,7 @@
 layout: layouts/example-full-page-mobile-not-logged-in.njk
 mobile: true
 mobileHeader: "blue"
-title: Error page - Check internet connection
+title: Error page - Update NHS App
 figmaLink: 
 vueLink: 
 ---
@@ -12,16 +12,16 @@ vueLink:
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
-    <h1 class="nhsuk-u-margin-bottom-5">Check your internet connection</h1>
+    <h1 class="nhsuk-u-margin-bottom-5">Update the NHS App to continue</h1>
 
-    <p>Try using WiFi or move to a place with better internet connection.</p>
+    <p>You will not be able to use it until you do.</p>
 
     {{ button({
-      text: "Try again",
+      text: "Update the NHS App",
       classes: "nhsapp-button--secondary nhsapp-button"
     }) }}
 
-    <p>If you still cannot connect to the internet and need urgent medical advice, <a href="tel: 111">call 111</a>.</p>
+    <p>For urgent medical advice, use <a href="https://111.nhs.uk/">111 online</a> or <a href="tel: 111">call 111</a>.</p>
 
   </div>
 </div>

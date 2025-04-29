@@ -20,7 +20,8 @@ Use an error page when:
 
 Do not use this type of error page if:
 
-- you can adapt the GOV.UK patterns for [page not found](https://design-system.service.gov.uk/patterns/page-not-found-pages/), [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
+- the error is [page not found](/patterns/page-not-found)
+- you can adapt GOV.UK patterns for [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
 - a user makes a mistake completing a form – instead follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary)
 
 ## How to use
@@ -38,7 +39,7 @@ This page should not:
 
 - blame the user
 - include breadcrumbs
-- display vague terms of jargon like "500", "504", "bad request" or "we are experiencing technical difficulties
+- display vague terms of jargon like "500", "504", "bad request" or "we are experiencing technical difficulties"
 - use red text to warn people
 - use exclamation marks or informal language like "oops"
 
@@ -57,7 +58,7 @@ If there’s a direct action the user can take to fix the problem, use the h1 to
 - "Update the NHS App to continue"
 - "Check you’re registered with a GP in England"
 
-{% example "error-pages/no-appointments.njk" %}
+{% example "error-pages/update-app.njk" %}
 
 #### Descriptive headings
 
@@ -76,7 +77,6 @@ Use a:
 
 - [secondary button](/components/buttons/#secondary-button) to give a call to action that may help fix the problem
 - [secondary card link](/components/card-links/#secondary-card-links) under a h2 of "Other options in the NHS App" for links to services in the NHS App
-- normal text link for pages that are external to the NHS App, such as NHS website pages
 
 Avoid giving users too many different links to choose from as a next step. This increases cognitive load, and is problematic for users experiencing high levels of stress or anxiety.
 
@@ -87,8 +87,6 @@ Always tell users how they can access the service through an alternative channel
 Remember that the NHS App is a healthcare application. Errors can delay access to clinical care, and users may be experiencing urgent health needs. Error pages must clearly and promptly signpost users to alternative healthcare services, to reduce the risk of harm from delays.
 
 Talk to your service’s clinical lead for advice when you create or update an error page.
-
-{% example "error-pages/medical-signposting.njk" %}
 
 ### Letting users report a technical problem
 
@@ -101,7 +99,7 @@ Use the h2 "If the problem continues" and include an error code.
 
 Speak to the service management team for advice when you create or update an error page.
 
-{% example "error-pages/could-not-log-in.njk" %}
+{% example "error-pages/manage-services.njk" %}
 
 ### When a user is not logged in
 
