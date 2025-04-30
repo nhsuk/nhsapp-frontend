@@ -1,6 +1,6 @@
 ---
 layout: layouts/component.njk
-title: Badge
+title: Badges
 description: Use badges to alert users to unread information. Badges can include a number count.
 backlogID: 21
 tags:
