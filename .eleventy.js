@@ -62,6 +62,16 @@ export default function (eleventyConfig) {
     }
   })
 
+  // Add GitHub URL filter
+  eleventyConfig.addFilter("toGitHubUrl", function(path) {
+    // Remove leading './' if present
+    if (path.startsWith('./')) {
+      path = path.slice(2);
+    }
+    
+    return `https://github.com/nhsuk/nhsapp-frontend/edit/main/${path}`;
+  });
+
   // We need this HtmlBase plugin for serving our docs on github pages at a subdirectory
   // https://www.11ty.dev/docs/plugins/html-base/
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
