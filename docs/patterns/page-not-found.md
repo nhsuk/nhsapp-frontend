@@ -28,4 +28,4 @@ The page should have:
 
 - ‘Page not found – NHS App’ as the page title
 - ‘Page not found’ as the H1
-- details of how to get urgent medical advice, if a broken link could be preventing users from using a service to get urgent medical help
+- details of how to get urgent medical advice
