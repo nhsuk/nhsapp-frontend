@@ -14,7 +14,6 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
 // NHS App button
 // Makes the button full width on mobile
 .nhsapp-button {
-  margin-top: nhsuk-spacing(2);
   padding: $button-padding-top-bottom-desktop $button-padding-left-right;
 
   @include mq($until: tablet) {
