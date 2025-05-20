@@ -1,7 +1,9 @@
 /** These variables are not defined in a separate scss file in the nhsuk-frontend,
  * so we can't import them without bringing in the actual classes also.
  */
-$card-border-width: 1px;
+$card-border-width: 2px;
+$card-border-inner-width: 1px;
+$card-border-radius: nhsuk-spacing(1);
 $card-border-bottom-width: nhsuk-spacing(1);
 $card-border-color: $color_nhsuk-grey-4;
 $card-border-hover-color: $color_nhsuk-grey-3;
@@ -11,6 +13,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
 
   background-color: $color_nhsuk-white;
   border: $card-border-width solid $card-border-color;
+  border-radius: $card-border-radius;
   position: relative; // Set to relative so the entire card can be clickable
 
   padding: 0;
@@ -30,7 +33,17 @@ $card-border-hover-color: $color_nhsuk-grey-3;
       height: 28px;
       width: 28px;
     }
+
     fill: $nhsuk-link-color;
+
+    &.nhsapp-icon__chevron-right {
+      fill: #5090CE;
+      margin-right: -8≠px;
+
+      @include mq($from: tablet) {
+        margin-right: -10px;
+      }
+    }
   }
 
   &:hover {
@@ -44,12 +57,12 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     align-items: center;
     gap: nhsuk-spacing(3);
 
-    margin: 0 nhsuk-spacing(3);
-    padding: 20px 0;
+    margin: 0;
+    padding: nhsuk-spacing(3);
 
     @include mq($from: tablet) {
-      margin: 0 nhsuk-spacing(4);
-      padding: nhsuk-spacing(4) 0;
+      margin: 0;
+      padding: nhsuk-spacing(4);
     }
   }
 
@@ -62,7 +75,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 
   &__link {
-    @include nhsuk-typography-responsive(22);
+    @include nhsuk-typography-responsive(19);
     font-weight: bold;
     text-decoration: none;
 
@@ -89,9 +102,9 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 
   &__footer {
-    border-top: $card-border-width solid $card-border-color;
+    border-top: $card-border-inner-width solid $card-border-color;
     margin: 0 nhsuk-spacing(3);
-    padding: 20px 0;
+    padding: nhsuk-spacing(3) 0;
 
     @include mq($from: tablet) {
       margin: 0 nhsuk-spacing(4);
@@ -115,19 +128,22 @@ $card-border-hover-color: $color_nhsuk-grey-3;
 
     .nhsapp-card {
       border-bottom: 0;
+      border-radius: 0;
       border-top: 0;
       margin-bottom: 0;
 
       .nhsapp-card__container {
-        border-bottom: $card-border-width solid $card-border-color;
+        border-bottom: $card-border-inner-width solid $card-border-color;
       }
 
       &:first-of-type {
+        border-radius: $card-border-radius $card-border-radius 0 0;
         border-top: $card-border-width solid $card-border-color;
       }
 
       &:last-of-type {
         border-bottom: $card-border-width solid $card-border-color;
+        border-radius: 0 0 $card-border-radius $card-border-radius;
 
         .nhsapp-card__container {
           border-bottom: 0;
