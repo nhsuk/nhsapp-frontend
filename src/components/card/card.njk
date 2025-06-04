@@ -21,16 +21,16 @@
         </div>
       {%- endif -%}
       {%- if params.readOnly -%}
-        <p class="nhsapp-card__title">{{ params.title }}</p>
+        <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.title }}</p>
       {%- else -%}
-        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state" 
+        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}" 
       {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
           {{ params.title }}
         </a>
       {%- endif -%}
       {% if params.description %}
         <div class="nhsapp-card__below">
-          <p class="nhsuk-u-margin-top-1">{{ params.description }}</p>
+          <p class="nhsuk-u-margin-top-1 nhsuk-u-secondary-text-color">{{ params.description }}</p>
         </div>
       {% elif params.html %}
         {{ params.html | safe }}
