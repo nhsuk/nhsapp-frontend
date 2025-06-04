@@ -2,7 +2,7 @@
 layout: layouts/example-full-page-mobile-not-logged-in.njk
 mobile: true
 mobileHeader: "blue"
-title: Problem logging you in
+title: Error page - Update NHS App
 figmaLink: 
 vueLink: 
 ---
@@ -12,14 +12,16 @@ vueLink:
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
-    <h1 class="nhsuk-u-margin-bottom-5">There was a problem logging you in</h1>
+    <h1 class="nhsuk-u-margin-bottom-5">Update the NHS App to continue</h1>
 
-    <p>Go back and try again.</p>
+    <p>You will not be able to use it until you do.</p>
 
     {{ button({
-      text: "Back to login",
+      text: "Update the NHS App",
       classes: "nhsapp-button--secondary nhsapp-button"
     }) }}
+
+    <p>For urgent medical advice, use <a href="https://111.nhs.uk/">111 online</a> or <a href="tel: 111">call 111</a>.</p>
 
   </div>
 </div>

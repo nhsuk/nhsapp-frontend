@@ -1,0 +1,29 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+title: Error page - Confirmed prescriptions
+backlink: true
+hub: Your health
+figmaLink: 
+vueLink: 
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">We could not show your confirmed prescriptions</h1>
+
+    <p>Contact your GP or pharmacy directly if you need help with a prescription now.</p>
+
+    <h2 class="nhsuk-heading-m">Other options in the NHS App</h2>
+
+    {{ nhsappCard({
+      title: 'Request an emergency repeat prescription using 111 online',
+      href: '#',
+      classes: 'nhsapp-card--secondary'
+    }) }}
+
+  </div>
+</div>

@@ -1,0 +1,27 @@
+---
+layout: layouts/example-full-page-mobile-not-logged-in.njk
+mobile: true
+mobileHeader: "blue"
+title: Error page - Check internet connection
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">Check your internet connection</h1>
+
+    <p>Try using wifi or move to a place with better internet connection.</p>
+
+    {{ button({
+      text: "Try again",
+      classes: "nhsapp-button--secondary nhsapp-button"
+    }) }}
+
+    <p>If you still cannot connect to the internet and need urgent medical advice, <a href="tel: 111">call 111</a>.</p>
+
+  </div>
+</div>
