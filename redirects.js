@@ -11,6 +11,10 @@ export default [
   {
     from: '/components/panel/',
     to: 'https://service-manual.nhs.uk/design-system/components/panel'
+  },
+  {
+    from: '/patterns/confirmation-page/',
+    to: 'https://service-manual.nhs.uk/design-system/patterns/confirmation-page'
   }
 
   // Add more redirects here as needed
