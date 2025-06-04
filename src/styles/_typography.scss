@@ -18,7 +18,7 @@
 .nhsapp-button + %nhsuk-heading-s {
   padding-top: nhsuk-spacing(1);
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     padding-top: nhsuk-spacing(2);
   }
 }

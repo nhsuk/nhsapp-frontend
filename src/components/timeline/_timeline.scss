@@ -29,7 +29,7 @@ $timeline-border-width: 2px;
   margin-top: if($size == "default", $mt, $mt-small);
   margin-right: if($size == "default", nhsuk-spacing(4), nhsuk-spacing(4) + 2px);
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     $tablet: dot-size($size) + 4px;
 
     height: $tablet;
@@ -93,13 +93,13 @@ $timeline-border-width: 2px;
   }
 
   &__header {
-    @include nhsuk-typography-responsive(19);
+    @include nhsuk-font-size(19);
     font-weight: normal;
     margin-bottom: 0;
   }
 
   &__description {
-    @include nhsuk-typography-responsive(16);
+    @include nhsuk-font-size(16);
     margin-bottom: 0;
     padding-top: 0;
   }

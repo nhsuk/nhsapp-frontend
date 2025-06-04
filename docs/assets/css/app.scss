@@ -1,18 +1,17 @@
 // Import all of the NHS.UK frontend core styles
-@import "node_modules/nhsuk-frontend/packages/core/all";
+@import "node_modules/nhsuk-frontend/packages/core";
 
 // Import specific components that we need from nhsuk-frontend
-@import "node_modules/nhsuk-frontend/packages/components/breadcrumb/breadcrumb";
-@import "node_modules/nhsuk-frontend/packages/components/skip-link/skip-link";
-@import "node_modules/nhsuk-frontend/packages/components/header/header";
-@import "node_modules/nhsuk-frontend/packages/components/header/header-service";
-@import "node_modules/nhsuk-frontend/packages/components/footer/footer";
-@import "node_modules/nhsuk-frontend/packages/components/hero/hero";
-@import "node_modules/nhsuk-frontend/packages/components/tabs/tabs";
-@import "node_modules/nhsuk-frontend/packages/components/summary-list/summary-list";
+@import "node_modules/nhsuk-frontend/packages/components/breadcrumb";
+@import "node_modules/nhsuk-frontend/packages/components/skip-link";
+@import "node_modules/nhsuk-frontend/packages/components/header";
+@import "node_modules/nhsuk-frontend/packages/components/footer";
+@import "node_modules/nhsuk-frontend/packages/components/hero";
+@import "node_modules/nhsuk-frontend/packages/components/tabs";
+@import "node_modules/nhsuk-frontend/packages/components/summary-list";
 @import "node_modules/nhsuk-frontend/packages/components/button/button";
-@import "node_modules/nhsuk-frontend/packages/components/inset-text/inset-text";
-@import "node_modules/nhsuk-frontend/packages/components/back-link/back-link";
+@import "node_modules/nhsuk-frontend/packages/components/inset-text";
+@import "node_modules/nhsuk-frontend/packages/components/back-link";
 
 @import "node_modules/prismjs/themes/prism";
 @import "docs/assets/css/code-colours";
@@ -51,14 +50,14 @@ pre {
   + h3 {
     padding-top: nhsuk-spacing(5);
 
-    @include mq($from: desktop) {
+    @include nhsuk-media-query($from: desktop) {
       padding-top: nhsuk-spacing(7);
     }
   }
 }
 
 // Stop table breaking container on small screens
-@include mq($until: tablet) {
+@include nhsuk-media-query($until: tablet) {
   .app-table tr td {
     word-break: break-word;
   }
@@ -76,17 +75,6 @@ pre {
 
   &--with-bottom-border {
     border-bottom: 2px solid $color_nhsuk-grey-4;
-  }
-}
-
-// Hot fix for main padding - https://github.com/nhsuk/nhsuk-frontend
-.nhsuk-main-wrapper--l {
-  padding-bottom: nhsuk-spacing(6);
-  padding-top: nhsuk-spacing(6);
-
-  @include mq($from: tablet) {
-    padding-bottom: nhsuk-spacing(8);
-    padding-top: nhsuk-spacing(8);
   }
 }
 

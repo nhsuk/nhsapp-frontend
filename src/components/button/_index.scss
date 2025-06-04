@@ -1,93 +1,16 @@
-$button-shadow-size: 4px;
 $button-border-width: 2px;
 $button-padding-top-bottom-desktop: 12px;
 $button-padding-top-bottom-mobile: 10px;
 $button-padding-left-right: nhsuk-spacing(4) - $button-border-width;
-
-$nhsapp-secondary-button-color: transparent;
-$nhsapp-secondary-button-border-color: $color_nhsuk-blue;
-$nhsapp-secondary-button-text-color: $color_nhsuk-blue;
-$nhsapp-secondary-button-hover-color: tint($nhsapp-secondary-button-border-color, 85%);
-$nhsapp-secondary-button-active-color: tint($nhsapp-secondary-button-border-color, 78%);
-$nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
 
 // NHS App button
 // Makes the button full width on mobile
 .nhsapp-button {
   padding: $button-padding-top-bottom-desktop $button-padding-left-right;
 
-  @include mq($until: tablet) {
+  @include nhsuk-media-query($until: tablet) {
     padding: $button-padding-top-bottom-mobile $button-padding-left-right;
     width: 100%;
-  }
-}
-
-// NHS App secondary button
-// PR has been submitted to the NHS.UK frontend - https://github.com/nhsuk/nhsuk-frontend/pull/1077
-.nhsapp-button--secondary {
-  background-color: $nhsapp-secondary-button-color;
-  border: $button-border-width solid $nhsapp-secondary-button-border-color;
-  box-shadow: 0 calc($button-shadow-size - $button-border-width) 0 $nhsapp-secondary-button-shadow-color;
-  color: $nhsapp-secondary-button-text-color;
-  padding-bottom: $button-padding-top-bottom-desktop + calc($button-border-width / 2);
-  padding-top: $button-padding-top-bottom-desktop + calc($button-border-width / 2);
-
-  @include mq($until: tablet) {
-    padding-bottom: $button-padding-top-bottom-mobile + calc($button-border-width / 2);
-    padding-top: $button-padding-top-bottom-mobile + calc($button-border-width / 2);
-  }
-
-  &::before {
-    bottom: -$button-shadow-size;
-  }
-
-  &:hover {
-    background-color: $nhsapp-secondary-button-hover-color;
-    color: $nhsapp-secondary-button-text-color;
-  }
-
-  &:link,
-  &:visited {
-    color: $nhsapp-secondary-button-text-color;
-  }
-
-  &:focus {
-    @include nhsuk-responsive-margin(5, "bottom", $adjustment: $button-shadow-size * 1.5);
-    background: $nhsuk-focus-color;
-    border-color: $nhsuk-focus-color;
-    border-bottom: 0;
-    box-shadow: 0 $button-shadow-size 0 $nhsuk-focus-text-color;
-    color: $nhsuk-focus-text-color;
-    outline: $nhsuk-focus-width solid transparent;
-
-    &:visited {
-      color: $nhsuk-focus-text-color;
-
-      &:active {
-        color: $nhsapp-secondary-button-text-color;
-      }
-    }
-  }
-
-  &:active {
-    @include nhsuk-responsive-margin(5, "bottom", $adjustment: $button-shadow-size * 1.5);
-    background: $nhsapp-secondary-button-active-color;
-    border-color: $nhsapp-secondary-button-border-color;
-    border-bottom: $button-border-width solid;
-    box-shadow: none;
-    color: $nhsapp-secondary-button-text-color;
-    padding-bottom: $button-padding-top-bottom-desktop;
-    padding-top: $button-padding-top-bottom-desktop;
-    top: $button-shadow-size;
-
-    @include mq($until: tablet) {
-      padding-bottom: $button-padding-top-bottom-mobile;
-      padding-top: $button-padding-top-bottom-mobile;
-    }
-
-    &::before {
-      bottom: -($nhsuk-border-width-form-element + $button-shadow-size);
-    }
   }
 }
 
@@ -128,7 +51,7 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
     margin-bottom: $button-padding-top-bottom-desktop + $button-border-width;
     text-align: center;
 
-    @include mq($until: tablet) {
+    @include nhsuk-media-query($until: tablet) {
       margin-top: $link-spacing;
       margin-bottom: $link-spacing + $vertical-gap;
     }
@@ -142,7 +65,7 @@ $nhsapp-secondary-button-shadow-color: $nhsapp-secondary-button-border-color;
 
   // On tablet and above, we also introduce a 'column gap' between the
   // buttons and links in each row and left align links
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     // Cancel out the column gap for the last item in each row
     margin-right: ($horizontal-gap * -1);
 
