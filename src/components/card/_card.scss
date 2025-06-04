@@ -37,7 +37,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     fill: $nhsuk-link-color;
 
     &.nhsapp-icon__chevron-right {
-      fill: #5090CE;
+      fill: #5090ce;
       margin-right: -8px;
 
       @include mq($from: tablet) {
