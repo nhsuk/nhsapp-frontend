@@ -19,8 +19,8 @@
   }
 
   .nhsuk-header__navigation-list {
-    @include mq($from: desktop) {
-      gap: 32px;
+    @include nhsuk-media-query($from: desktop) {
+      gap: 0;
       justify-content: flex-start;
     }
   }
@@ -36,7 +36,7 @@
 .app-header__secondary-nav {
   display: flex;
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     display: none;
   }
 }
@@ -65,7 +65,7 @@
 }
 
 .app-header__navigation-item--hide-on-desktop {
-  @include mq($from: desktop) {
+  @include nhsuk-media-query($from: desktop) {
     display: none;
   }
 }

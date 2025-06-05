@@ -9,7 +9,7 @@
   padding-top: 37px; //matches height of new window link
   position: relative;
 
-  @include mq($from: desktop) {
+  @include nhsuk-media-query($from: desktop) {
     padding-top: 41px; //matches height of new window link
   }
 }

@@ -1,5 +1,5 @@
-@import "node_modules/nhsuk-frontend/packages/core/tools/all";
-@import "node_modules/nhsuk-frontend/packages/core/settings/all";
+@import "node_modules/nhsuk-frontend/packages/core/tools";
+@import "node_modules/nhsuk-frontend/packages/core/settings";
 
 // styles
 @import "styles/icon/icons";
@@ -9,7 +9,6 @@
 @import "components/badge/badge";
 @import "components/button";
 @import "components/card/card";
-@import "components/panel/panel";
 @import "components/tag/tag";
 @import "components/timeline/timeline";
 @import "components/summary-list";

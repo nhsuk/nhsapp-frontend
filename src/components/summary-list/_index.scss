@@ -1,7 +1,7 @@
 .nhsapp-summary-list {
   // Override the NHS UK Frontend summary list component to display two columns on mobile
   &--two-columns-mobile {
-    @include mq($until: tablet) {
+    @include nhsuk-media-query($until: tablet) {
       display: table;
       table-layout: fixed;
       width: 100%;
@@ -22,7 +22,7 @@
     }
 
     .nhsuk-summary-list__key {
-      @include mq($until: tablet) {
+      @include nhsuk-media-query($until: tablet) {
         width: 50%;
       }
     }

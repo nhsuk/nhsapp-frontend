@@ -1,5 +1,5 @@
 .app-content {
-  @include mq($from: desktop) {
+  @include nhsuk-media-query($from: desktop) {
     padding-bottom: nhsuk-spacing(7);
   }
 
