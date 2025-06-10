@@ -20,8 +20,7 @@ Use an error page when:
 
 Do not use this type of error page if:
 
-- the error is [page not found](/patterns/page-not-found)
-- you can adapt GOV.UK patterns for [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
+- you can adapt GOV.UK patterns for [page not found](https://design-system.service.gov.uk/patterns/page-not-found-pages/), [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
 - a user makes a mistake completing a form – instead follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary)
 
 ## How to use
@@ -31,7 +30,7 @@ The content for each type of error will vary depending on the circumstances.
 The page should:
 
 - be clear and concise
-- summarise the problem, or give an instruction, in the h1 heading
+- summarise the problem, or give an instruction, in the main heading (h1)
 - tell the user how to access the service another way, or use an alternative
 - tell the user if there's something they can do to fix the problem
 
@@ -39,13 +38,13 @@ This page should not:
 
 - blame the user
 - include breadcrumbs
-- display vague terms of jargon like "500", "504", "bad request" or "we are experiencing technical difficulties"
+- display vague terms or jargon like "500", "504", "bad request" or "we are experiencing technical difficulties"
 - use red text to warn people
 - use exclamation marks or informal language like "oops"
 
 ### Writing headings
 
-Use the main h1 heading to clearly explain the problem or a solution.
+Use the main heading to clearly explain the problem or a solution.
 
 Some error headings work better as instructions and some work better as descriptions.
 
@@ -53,7 +52,7 @@ Headings should be grammatically correct. Avoid abbreviated headings like "Presc
 
 #### Instructive headings
 
-If there’s a direct action the user can take to fix the problem, use the h1 to tell them this. Start the h1 with the verb that indicates the action they need to take. For example:
+If there’s a direct action the user can take to fix the problem, use the main heading to tell them this. Start the main heading with the verb that indicates the action they need to take. For example:
 
 - "Update the NHS App to continue"
 - "Check you’re registered with a GP in England"
@@ -62,7 +61,7 @@ If there’s a direct action the user can take to fix the problem, use the h1 to
 
 #### Descriptive headings
 
-Descriptive headings often work better for a problem that lies with the NHS App. Starting the h1 with "we" can help make this clear. For example:
+Descriptive headings often work better for a problem that lies with the NHS App. Starting the main heading with "we" can help make this clear. For example:
 
 - "We could not log you in"
 - "We could not show your confirmed prescriptions"
@@ -82,9 +81,9 @@ Avoid giving users too many different links to choose from as a next step. This 
 
 ### Helping users get care another way
 
-Always tell users how they can access the service through an alternative channel to complete their task.
+Always tell users how they can complete their task through a different channel.
 
-Remember that the NHS App is a healthcare application. Errors can delay access to clinical care, and users may be experiencing urgent health needs. Error pages must clearly and promptly signpost users to alternative healthcare services, to reduce the risk of harm from delays.
+Remember that the NHS App is a healthcare service. Errors can delay access to clinical care, and users may be experiencing urgent health needs. 
 
 Talk to your service’s clinical lead for advice when you create or update an error page.
 
@@ -121,6 +120,7 @@ We should account for these challenges in our designs and continue to research a
 
 We want to learn more about:
 
-- "try again" buttons on errors, and how we can best help users when they fail to solve the problem
+- "try again" buttons on errors, and how we can best help users when these fail to solve the problem
 - how we can avoid users needing to manually input error codes, for example by pre-populating these codes on our contact form
-- how this guidance could evolve into separate pages covering specific errors, when we have enough evidence to do this
+- how this guidance could evolve into separate pages covering specific errors
+- allowing users to give feedback when they reach an error page
