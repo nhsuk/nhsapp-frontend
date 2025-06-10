@@ -20,7 +20,7 @@ Use an error page when:
 
 Do not use this type of error page if:
 
-- you can adapt GOV.UK patterns for [page not found](https://design-system.service.gov.uk/patterns/page-not-found-pages/), [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
+- you can adapt GOV.UK patterns for [page not found](https://design-system.service.gov.uk/patterns/page-not-found-pages/), [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) or [there is a problem with the service](https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/)
 - a user makes a mistake completing a form – instead follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary)
 
 ## How to use
