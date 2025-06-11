@@ -83,7 +83,7 @@ Avoid giving users too many different links to choose from as a next step. This 
 
 Always tell users how they can complete their task through a different channel.
 
-Remember that the NHS App is a healthcare service. Errors can delay access to clinical care, and users may be experiencing urgent health needs. 
+Remember that the NHS App is a healthcare service. Errors can delay access to clinical care, and users may be experiencing urgent health needs.
 
 Talk to your service’s clinical lead for advice when you create or update an error page.
 
