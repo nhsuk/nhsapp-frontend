@@ -16,7 +16,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   padding: 0;
 
   &__title {
-    @include nhsuk-typography-responsive(22);
+    @include nhsuk-font-size(22);
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -26,7 +26,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     width: 24px;
     flex: none; // Prevents icons from shrinking
 
-    @include mq($from: tablet) {
+    @include nhsuk-media-query($from: tablet) {
       height: 28px;
       width: 28px;
     }
@@ -47,7 +47,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     margin: 0 nhsuk-spacing(3);
     padding: 20px 0;
 
-    @include mq($from: tablet) {
+    @include nhsuk-media-query($from: tablet) {
       margin: 0 nhsuk-spacing(4);
       padding: nhsuk-spacing(4) 0;
     }
@@ -62,7 +62,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
   }
 
   &__link {
-    @include nhsuk-typography-responsive(22);
+    @include nhsuk-font-size(22);
     font-weight: bold;
     text-decoration: none;
 
@@ -93,7 +93,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
     margin: 0 nhsuk-spacing(3);
     padding: 20px 0;
 
-    @include mq($from: tablet) {
+    @include nhsuk-media-query($from: tablet) {
       margin: 0 nhsuk-spacing(4);
       padding: nhsuk-spacing(4) 0;
     }
@@ -154,7 +154,7 @@ $card-border-hover-color: $color_nhsuk-grey-3;
 .nhsapp-card + .nhsuk-heading-s {
   padding-top: nhsuk-spacing(1);
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     padding-top: nhsuk-spacing(2);
   }
 }

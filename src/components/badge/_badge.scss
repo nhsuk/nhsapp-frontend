@@ -5,7 +5,7 @@
 @use "sass:math";
 
 .nhsapp-badge {
-  @include nhsuk-typography-responsive(19);
+  @include nhsuk-font-size(19);
 
   display: inline-block;
 
@@ -16,7 +16,7 @@
   padding: 0 nhsuk-spacing(2);
   margin: 0;
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     padding: 0 12px;
   }
 }
@@ -49,7 +49,7 @@ $nhsapp-badge-size-tablet: 12px;
 .nhsapp-badge-small__indicator {
   @include small-badge-position($nhsapp-badge-size-mobile);
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     @include small-badge-position($nhsapp-badge-size-tablet);
   }
 
@@ -61,7 +61,7 @@ $nhsapp-badge-size-tablet: 12px;
     position: absolute;
 
     left: -2 * $nhsapp-badge-size-mobile;
-    @include mq($from: tablet) {
+    @include nhsuk-media-query($from: tablet) {
       left: -2 * $nhsapp-badge-size-tablet;
     }
   }

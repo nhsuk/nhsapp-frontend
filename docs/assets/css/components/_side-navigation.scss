@@ -81,7 +81,7 @@
   padding-bottom: nhsuk-spacing(4);
   padding-right: nhsuk-spacing(1);
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     display: none;
   }
 }
@@ -114,7 +114,7 @@
     @include nhsuk-font(19);
   }
 
-  @include mq($from: desktop) {
+  @include nhsuk-media-query($from: desktop) {
     display: none;
   }
 }
