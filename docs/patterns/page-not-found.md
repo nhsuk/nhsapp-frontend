@@ -3,8 +3,6 @@ layout: layouts/pattern.njk
 title: Page not found pages
 description: Tell users we cannot find the page they were trying to view. They are also known as 404 pages.
 backlogID: 260
-tags:
-  - page
 ---
 
 ## When to use
