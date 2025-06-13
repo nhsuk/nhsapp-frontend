@@ -2,13 +2,13 @@
 layout: layouts/example-full-page-mobile.njk
 mobile: true
 title: Error page - Confirmed prescriptions
-backlink: true
 hub: Your health
 figmaLink: 
 vueLink: 
 ---
 
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'button/macro.njk' import button %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
@@ -24,6 +24,10 @@ vueLink:
       href: '#',
       classes: 'nhsapp-card--secondary'
     }) }}
+
+    <div>  
+      <a href="#" class="nhsuk-link nhsuk-link--no-visited-state nhsuk-u-display-inline-block nhsuk-u-font-size-19 nhsuk-u-margin-top-2">Go back to prescriptions</a>
+    </div>
 
   </div>
 </div>
