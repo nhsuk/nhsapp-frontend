@@ -6,7 +6,7 @@
   border: nhsuk-spacing(1) solid $app-brand-color;
 
   &__content {
-    @include reading-width();
+    @include nhsuk-reading-width();
 
     :last-child {
       margin-bottom: 0;

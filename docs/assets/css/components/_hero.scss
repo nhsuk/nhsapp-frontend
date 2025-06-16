@@ -4,7 +4,7 @@
   background-color: $app-brand-color;
 
   .nhsuk-hero__wrapper {
-    @include mq($until: tablet) {
+    @include nhsuk-media-query($until: tablet) {
       padding-bottom: nhsuk-spacing(5);
       padding-top: nhsuk-spacing(5);
     }

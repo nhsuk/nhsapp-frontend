@@ -53,7 +53,7 @@
   color: $color_nhsuk-white;
   font-size: 12px;
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     font-size: 16px;
   }
 }
