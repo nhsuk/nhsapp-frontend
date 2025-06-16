@@ -1,0 +1,54 @@
+---
+layout: layouts/example-full-page-mobile.njk
+mobile: true
+title: Error page - Template
+hub: Your health
+figmaLink: 
+vueLink: 
+---
+
+{% from 'button/macro.njk' import button %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h1 class="nhsuk-u-margin-bottom-5">Page heading</h1>
+
+    <p>Page description to help users understand the problem.</p>
+
+    <h2 class="nhsuk-heading-m">If the problem continues</h2>
+
+    <p>Make a note of the error code <strong>3ezxja</strong> and then <a href="#">contact the NHS App team</a>.</p>
+
+    <p>For urgent medical advice, use <a href="https://111.nhs.uk/">111 online</a> or <a href="tel: 111">call 111</a>.</p>
+
+    {{ button({
+      text: "CTA button",
+      classes: "nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3"
+    }) }}
+
+    <h2 class="nhsuk-heading-m">Other options in the NHS App</h2>
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      classes: 'nhsapp-cards--secondary',
+      cards: [
+        {
+          title: 'Option one',
+          href: '#'
+        },
+        {
+          title: 'Option two',
+          href: '#'
+        }
+      ]
+    }) }}
+
+    <div class="nhsuk-u-margin-top-1">  
+      <a href="#" class="nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19">Go to [app area]</a>
+    </div>
+
+  </div>
+</div>

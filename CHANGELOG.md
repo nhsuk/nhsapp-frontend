@@ -1,5 +1,16 @@
 # NHS App Frontend Changelog
 
+## `v4.0.0` - UNRELEASED
+
+### Breaking changes
+
+Bumped `nhsuk-frontend` version to `v9.6.2` ([PR 321](https://github.com/nhsuk/nhsapp-frontend/pull/321)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases) 
+
+Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
+
+- `nhsapp-button--secondary` → use `nhsuk-button--secondary`
+- `nhsapp-panel` → use `nhsuk-panel`
+
 ## `v3.1.0`
 
 ### Components
