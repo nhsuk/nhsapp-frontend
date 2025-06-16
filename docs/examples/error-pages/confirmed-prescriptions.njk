@@ -2,20 +2,20 @@
 layout: layouts/example-full-page-mobile.njk
 mobile: true
 title: Error page - Confirmed prescriptions
-backlink: true
 hub: Your health
 figmaLink: 
 vueLink: 
 ---
 
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'button/macro.njk' import button %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
     <h1 class="nhsuk-u-margin-bottom-5">We could not show your confirmed prescriptions</h1>
 
-    <p>Contact your GP or pharmacy directly if you need help with a prescription now.</p>
+    <p>Contact your GP or pharmacy if you need help with a prescription.</p>
 
     <h2 class="nhsuk-heading-m">Other options in the NHS App</h2>
 
@@ -24,6 +24,10 @@ vueLink:
       href: '#',
       classes: 'nhsapp-card--secondary'
     }) }}
+
+    <div>  
+      <a href="#" class="nhsuk-link nhsuk-link--no-visited-state nhsuk-u-display-inline-block nhsuk-u-font-size-19 nhsuk-u-margin-top-2">Go to prescriptions</a>
+    </div>
 
   </div>
 </div>
