@@ -37,7 +37,7 @@ The page should:
 This page should not:
 
 - blame the user
-- include breadcrumbs
+- use breadcrumbs or a standard back link at the top
 - display vague terms or jargon like "500", "504", "bad request" or "we are experiencing technical difficulties"
 - use red text to warn people
 - use exclamation marks or informal language like "oops"
@@ -76,6 +76,7 @@ Use a:
 
 - [secondary button](/components/buttons/#secondary-button) to give a call to action that may help fix the problem
 - [secondary card link](/components/card-links/#secondary-card-links) under a h2 of "Other options in the NHS App" for links to services in the NHS App
+- [text link](https://service-manual.nhs.uk/design-system/styles/typography#links) to navigate users back to a specific area of the app, for example, "Go to appointments"
 
 Avoid giving users too many different links to choose from as a next step. This increases cognitive load, and is problematic for users experiencing high levels of stress or anxiety.
 
