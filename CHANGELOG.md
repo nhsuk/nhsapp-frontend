@@ -1,17 +1,17 @@
 # NHS App Frontend Changelog
 
-## `v4.0.0` - UNRELEASED
+## `v4.0.0` - 17 June 2025
 
 ### Breaking changes
 
-Bumped `nhsuk-frontend` version to `v9.6.2` ([PR 321](https://github.com/nhsuk/nhsapp-frontend/pull/321)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases)
+Bumped `nhsuk-frontend` version to `v9.6.2` ([PR 321](https://github.com/nhsuk/nhsapp-frontend/pull/321)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
 
 Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
 
 - `nhsapp-button--secondary` → use `nhsuk-button--secondary`
 - `nhsapp-panel` → use `nhsuk-panel`
 
-## `v3.1.0`
+## `v3.1.0` - 28 March 2025
 
 ### Components
 
@@ -21,7 +21,7 @@ Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
 
 - Fixed layout shift on secondary button ([PR 277](https://github.com/nhsuk/nhsapp-frontend/pull/277))
 
-## `v3.0.0`
+## `v3.0.0` - 10 March 2025
 
 ### Breaking changes
 
@@ -32,7 +32,7 @@ Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
 
 - Updated [Badge](https://design-system.nhsapp.service.nhs.uk/components/badge/) - removing small blue variant
 
-## `v2.3.0`
+## `v2.3.0` - 19 December 2024
 
 ### Fixes
 
@@ -43,7 +43,7 @@ Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
 - New [Seconday Button](https://design-system.nhsapp.service.nhs.uk/components/buttons/) styling added
 - New [Confirmation Panel](https://design-system.nhsapp.service.nhs.uk/components/panel/) component
 
-## `v2.2.0`
+## `v2.2.0` - 24 October 2024
 
 ### Fixes
 
@@ -55,7 +55,7 @@ Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
 
 New icons added. [See full commit](https://github.com/nhsuk/nhsapp-frontend/commit/201556e91df539d9ec6dce4eda50a0f478ed3b05) for list of icons.
 
-## `v2.1.0`
+## `v2.1.0` - 16 September 2024
 
 Updates to guidance and the microsite
 
@@ -68,7 +68,7 @@ Card link with badge accessibility fix. Added option to provide `aria-hidden` to
 - The card component now supports a footer section. The guidance for this will be coming very soon after this release
 - The card component now supports a "read only" view. The chevron icon is hidden and the title is no longer a link
 
-## `v2.0.1`
+## `v2.0.1` - 2 August 2024
 
 ### Fixes
 
@@ -80,13 +80,13 @@ Prefixed all Nunjucks macros with `nhsapp`.
 
 > ~~`card`~~ > `nhsappCard`
 
-## `v1.2.0`
+## `v1.2.0` - 24 July 2024
 
 ### Components and styles
 
 - Button enhancements. Extending the `nhsuk-frontend` button styling to support default full width buttons on mobile.
 
-## `v1.1.0`
+## `v1.1.0` - 22 July 2024
 
 Minor updates to guidance
 
@@ -94,7 +94,7 @@ Minor updates to guidance
 
 - Summary list now supports a two column display on mobile
 
-## `v1.0.0` release of the NHS App Frontend package.
+## `v1.0.0` release of the NHS App Frontend package - 12 July 2024
 
 A collection of HTML, CSS, Nunjucks templates and guidance for the NHS App. Built on top of the [nhsuk-frontend](https://github.com/nhsuk/nhsuk-frontend) styles.
 
