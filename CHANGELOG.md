@@ -2,7 +2,7 @@
 
 ## `v4.0.0` - 17 June 2025
 
-## Breaking changes
+### Breaking changes
 
 Bumped `nhsuk-frontend` version to `v9.6.2` ([PR 321](https://github.com/nhsuk/nhsapp-frontend/pull/321)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
 
