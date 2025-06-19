@@ -6,10 +6,53 @@
 
 Bumped `nhsuk-frontend` version to `v9.6.2` ([PR 321](https://github.com/nhsuk/nhsapp-frontend/pull/321)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
 
-Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`:
+#### Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`
 
-- `nhsapp-button--secondary` → use `nhsuk-button--secondary`
-- `nhsapp-panel` → use `nhsuk-panel`
+##### Swap `nhsapp-button--secondary` → with `nhsuk-button--secondary`
+
+Before:
+
+```
+<button class="nhsuk-button nhsapp-button--secondary nhsapp-button">
+  Try again
+</button>
+```
+
+After:
+
+```
+<button class="nhsuk-button nhsuk-button--secondary nhsapp-button">
+  Try again
+</button>
+```
+
+##### Swap `nhsapp-panel` → with `nhsuk-panel`
+
+Before:
+
+```
+<div class="nhsapp-panel">
+  <h1 class="nhsapp-panel__title">
+    Application complete
+  </h1>
+  <div class="nhsapp-panel__body">
+    We have sent you a confirmation email
+  </div>
+</div>
+```
+
+After:
+
+```
+<div class="nhsuk-panel">
+  <h1 class="nhsuk-panel__title">
+    Application complete
+  </h1>
+  <div class="nhsuk-panel__body">
+    We have sent you a confirmation email
+  </div>
+</div>
+```
 
 ## `v3.1.0` - 28 March 2025
 
