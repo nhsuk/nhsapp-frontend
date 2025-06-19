@@ -42,6 +42,8 @@ This page should not:
 - use red text to warn people
 - use exclamation marks or informal language like "oops"
 
+You should try to get feedback from users on error pages. It's likely they will have important insights about common issues on your service that need to be fixed.
+
 ### Writing headings
 
 Use the main heading to clearly explain the problem or a solution.
@@ -124,4 +126,3 @@ We want to learn more about:
 - "try again" buttons on errors, and how we can best help users when these fail to solve the problem
 - how we can avoid users needing to manually input error codes, for example by pre-populating these codes on our contact form
 - how this guidance could evolve into separate pages covering specific errors
-- allowing users to give feedback when they reach an error page
