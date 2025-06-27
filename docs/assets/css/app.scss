@@ -65,8 +65,22 @@ pre {
 
 // Home page section
 .app-section {
-  :last-child {
-    margin-bottom: 0;
+  @include nhsuk-media-query($from: tablet) {
+    padding-bottom: 32px;
+  }
+
+  @include nhsuk-media-query($until: tablet) {
+    padding-top: 32px;
+  }
+
+  &__column {
+    @include nhsuk-media-query($from: tablet) {
+      padding-bottom: 24px;
+    }
+
+    @include nhsuk-media-query($until: tablet) {
+      padding-bottom: 24px;
+    }
   }
 
   &--white {

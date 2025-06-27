@@ -45,6 +45,11 @@ export default function (eleventyConfig) {
     'node_modules/nhsuk-frontend/packages': 'nhsuk-frontend'
   })
 
+  // Add NHSUK frontend compiled JS/CSS to docs
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
+  })
+
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)
 
