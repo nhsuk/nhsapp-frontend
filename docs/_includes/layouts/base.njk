@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
     <script src="/assets/js/app.js" defer></script>
 
     <title>{{ title }}</title>
@@ -70,6 +71,10 @@
                 label : 'Components'
               },
               {
+                url : '/patterns/',
+                label : 'Patterns'
+              },
+              {
                 url  : '/community/',
                 label : 'Community'
               }
@@ -106,10 +111,5 @@
       {% endblock %}
 
     {% endblock body %}
-    <script type="module">
-      import initHeader from '/nhsuk-frontend/components/header/header.js'
-
-      initHeader()
-    </script>
   </body>
 </html>
