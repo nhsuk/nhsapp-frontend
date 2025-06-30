@@ -1,21 +1,20 @@
 import path from 'path'
 import nunjucks from 'nunjucks'
 import sass from 'sass'
+import fs from 'fs-extra'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import markdownIt from 'markdown-it'
 import anchor from 'markdown-it-anchor'
 
 import matter from 'gray-matter'
-import fs from 'fs'
 import prettier from 'prettier'
 
 // Import redirects from separate file
 import redirects from './redirects.js'
 
 const nunjucksEnv = nunjucks.configure([
-  // Our own components which we will ship in the release
-  'src/components',
+  // Our own styles and assets
   'src/styles',
   'src/assets',
 
@@ -29,6 +28,30 @@ const nunjucksEnv = nunjucks.configure([
 ])
 
 export default function (eleventyConfig) {
+  // Copy components before build starts
+  eleventyConfig.on('eleventy.before', async () => {
+    try {
+      const sourceDirs = {
+        components: 'src/components',
+        styles: 'src/styles',
+        assets: 'src/assets'
+      }
+
+      const targetBase = 'docs/_includes/nhsapp'
+      await fs.ensureDir(targetBase)
+
+      for (const [name, sourceDir] of Object.entries(sourceDirs)) {
+        const targetDir = `${targetBase}/${name}`
+        if (await fs.pathExists(sourceDir)) {
+          await fs.copy(sourceDir, targetDir)
+          console.log(`✅ ${name} synced to ${targetDir}`)
+        }
+      }
+    } catch (error) {
+      console.error('❌ Error syncing components:', error)
+    }
+  })
+
   // Configure a custom nunjucks environment
   eleventyConfig.setLibrary('njk', nunjucksEnv)
 
