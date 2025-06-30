@@ -1,0 +1,106 @@
+$timeline-badge-size-mobile: 16px;
+$timeline-badge-small-size-mobile: 12px;
+$timeline-border-width: 2px;
+
+@function dot-size($size) {
+  @if $size == "default" {
+    @return $timeline-badge-size-mobile;
+  } @else if $size == "small" {
+    @return $timeline-badge-small-size-mobile;
+  }
+}
+
+@function dot-ml($size) {
+  @return - calc(($size / 2) + ($timeline-border-width / 2));
+}
+
+@function dot-mt-tablet($margin) {
+  @return $margin - 1px;
+}
+
+@mixin nhsapp-timeline-badge($size) {
+  $mt: 4px;
+  $mt-small: 6px;
+
+  height: dot-size($size);
+  width: dot-size($size);
+
+  margin-left: dot-ml(dot-size($size));
+  margin-top: if($size == "default", $mt, $mt-small);
+  margin-right: if($size == "default", nhsuk-spacing(4), nhsuk-spacing(4) + 2px);
+
+  @include nhsuk-media-query($from: tablet) {
+    $tablet: dot-size($size) + 4px;
+
+    height: $tablet;
+    margin-left: dot-ml($tablet);
+    margin-top: if($size == "default", dot-mt-tablet($mt), dot-mt-tablet($mt-small));
+    width: $tablet;
+  }
+}
+
+.nhsapp-timeline {
+  @include nhsuk-responsive-margin(5, "bottom");
+  @include nhsuk-responsive-padding(2, "top");
+
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    @include nhsuk-responsive-padding(5, "bottom");
+
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-top: -6px;
+    position: relative;
+
+    &:last-child {
+      padding: 0;
+
+      &:before {
+        border: none;
+      }
+    }
+
+    &:before {
+      border-left: $timeline-border-width solid $color_nhsuk-grey-3;
+      bottom: 0;
+      content: "";
+      display: block;
+      left: -$timeline-border-width;
+      position: absolute;
+      top: nhsuk-spacing(2);
+      width: $timeline-border-width;
+    }
+
+    &--past {
+      &:before {
+        border-color: $color_nhsuk-blue;
+      }
+    }
+  }
+
+  &__badge {
+    flex-shrink: 0;
+    z-index: 1;
+
+    @include nhsapp-timeline-badge("default");
+
+    &--small {
+      @include nhsapp-timeline-badge("small");
+    }
+  }
+
+  &__header {
+    @include nhsuk-font-size(19);
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    @include nhsuk-font-size(16);
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}

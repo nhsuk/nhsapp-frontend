@@ -11,11 +11,13 @@
     "prepack": "gulp bundle",
     "release": "gulp release",
     "lint": "prettier --check .",
-    "start": "concurrently npm:docs:serve npm:css:watch",
-    "docs:serve": "npm run css:build && npx @11ty/eleventy --serve",
-    "docs:build": "npm run css:build && npx @11ty/eleventy",
+    "start": "concurrently npm:docs:serve npm:css:watch npm:components:watch",
+    "docs:serve": "npm run components:copy && npm run css:build && npx @11ty/eleventy --serve",
+    "docs:build": "npm run components:copy && npm run css:build && npx @11ty/eleventy",
     "css:watch": "gulp",
     "css:build": "gulp compileCSS",
+    "components:copy": "node scripts/copy-components.js",
+    "components:watch": "node scripts/copy-components.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,7 +33,9 @@
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.6",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "chokidar": "^3.6.0",
     "concurrently": "^8.2.2",
+    "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",

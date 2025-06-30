@@ -1,0 +1,24 @@
+.nhsapp-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/// Contextual adjustments
+///
+/// Add top padding to headings that appear directly after buttons.
+///
+/// @link https://github.com/nhsuk/nhsuk-frontend/blob/a6b3142cfddce11391f5603f67ed3e6b27b8958f/packages/core/styles/_typography.scss#L206 Adapted from the NHS.UK frontend
+
+.nhsapp-button + %nhsuk-heading-l {
+  @include nhsuk-responsive-padding(4, "top");
+}
+
+.nhsapp-button + %nhsuk-heading-m,
+.nhsapp-button + %nhsuk-heading-s {
+  padding-top: nhsuk-spacing(1);
+
+  @include nhsuk-media-query($from: tablet) {
+    padding-top: nhsuk-spacing(2);
+  }
+}

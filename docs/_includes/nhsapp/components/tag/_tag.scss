@@ -1,0 +1,90 @@
+/* ==========================================================================
+  #TAG
+  ========================================================================== */
+
+$color_tag-aqua-green-background: #cce7e6;
+$color_tag-aqua-green-text: #004642;
+$color_tag-blue-background: #d2e1ef;
+$color_tag-blue-text: #01407d;
+$color_tag-green-text: #03501d;
+$color_tag-green-background: #c9e6d8;
+$color_tag-grey-background: #e6e2e2;
+$color_tag-grey-text: #303e4f;
+$color_tag-purple-background: #d9d7eb;
+$color_tag-purple-text: #532d8b;
+$color_tag-orange-background: #fae1bc;
+$color_tag-orange-text: #533c00;
+$color_tag-pink-background: #efd3e3;
+$color_tag-pink-text: #57133a;
+$color_tag-red-background: #f8d9d9;
+$color_tag-red-text: #7e0d04;
+$color_tag-yellow-background: #eee8a7;
+$color_tag-yellow-text: #5b4701;
+
+.nhsapp-tag {
+  @include nhsuk-font($size: 16, $weight: normal, $line-height: 1.25);
+  background-color: $color_tag-blue-background;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: $color_tag-blue-text;
+  display: inline-block;
+  padding: 3px 9px; // Minus the border width
+
+  @include nhsuk-media-query($from: tablet) {
+    line-height: 1.4285em;
+  }
+}
+
+/* Colour variants
+    ========================================================================== */
+
+.nhsapp-tag--white {
+  background-color: $color_nhsuk-white;
+  border-color: $color_nhsuk-grey-4;
+  color: $color_nhsuk-black;
+}
+
+.nhsapp-tag--grey {
+  background-color: $color_tag-grey-background;
+  color: $color_tag-grey-text;
+}
+
+.nhsapp-tag--green {
+  background-color: $color_tag-green-background;
+  color: $color_tag-green-text;
+}
+
+.nhsapp-tag--aqua-green {
+  background-color: $color_tag-aqua-green-background;
+  color: $color_tag-aqua-green-text;
+}
+
+.nhsapp-tag--blue {
+  background-color: $color_tag-blue-background;
+  color: $color_tag-blue-text;
+}
+
+.nhsapp-tag--purple {
+  background-color: $color_tag-purple-background;
+  color: $color_tag-purple-text;
+}
+
+.nhsapp-tag--pink {
+  background-color: $color_tag-pink-background;
+  color: $color_tag-pink-text;
+}
+
+.nhsapp-tag--red {
+  background-color: $color_tag-red-background;
+  color: $color_tag-red-text;
+}
+
+.nhsapp-tag--orange {
+  background-color: $color_tag-orange-background;
+  color: $color_tag-orange-text;
+}
+
+.nhsapp-tag--yellow {
+  background-color: $color_tag-yellow-background;
+  color: $color_tag-yellow-text;
+}
