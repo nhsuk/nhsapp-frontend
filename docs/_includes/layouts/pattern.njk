@@ -29,6 +29,12 @@
     sections: [
       {
         heading: {
+          text: 'Help users to'
+        },
+        items: collections.helpUsers | sort(attribute="data.title")
+      },
+      {
+        heading: {
           text: 'Pages'
         },
         items: collections.page | sort(attribute="data.title")
