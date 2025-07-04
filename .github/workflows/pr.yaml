@@ -40,14 +40,14 @@ jobs:
           ELEVENTY_PATH_PREFIX: /pr-${{ github.event.number }}
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3.9.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/docs
           destination_dir: pr-${{ github.event.number }}
 
       - name: Comment PR
-        uses: actions/github-script@v7
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
