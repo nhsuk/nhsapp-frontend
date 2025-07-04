@@ -1,0 +1,1314 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+
+    <title>Card links</title>
+
+    <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
+    <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="/nhsuk-frontend/assets/favicons/mediumtile-144x144.png">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-square70x70logo" content="/nhsuk-frontend/assets/favicons/smalltile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/nhsuk-frontend/assets/favicons/mediumtile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
+
+    <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
+    <meta property="og:site_name" content="nhs.uk"/>
+    <meta property="og:title" content="NHS App design system"/>
+    <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
+
+    
+  </head>
+  <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    
+      
+        
+
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+<header class="nhsuk-header app-header" role="banner">
+
+  <div class="nhsuk-header__container">
+    <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
+        
+  <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+    <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
+    <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+  </svg>
+
+        <span class="nhsuk-header__service-name">
+          App design system
+        </span>
+      </a>
+    </div></div>
+
+
+  <div class="nhsuk-navigation-container">
+    <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/get-started/">
+            Get started
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/components/">
+            Components
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/patterns/">
+            Patterns
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/community/">
+            Community
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--home">
+          <a class="nhsuk-header__navigation-link"  href="/">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-mobile-menu-container">
+          <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
+            <span class="nhsuk-u-visually-hidden">Browse</span>
+            More
+            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      
+
+      
+  <div class="nhsuk-width-container">
+    
+  
+    
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+  
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/components">Components</a></li>
+    
+    
+  
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/components">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Components
+    </a>
+  </p>
+</nav>
+
+  
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-quarter">
+        
+          <div class="app-side-navigation--desktop">
+            
+  
+  <nav class="app-side-navigation" aria-label="Components" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Components</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/badge/">Badge</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/bottom-navigation/">Bottom navigation</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/buttons/">Buttons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item app-side-navigation__item--active">
+  <a href="/components/card-links/" aria-current="location">Card links</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/icons/">Icons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/section-heading/">Section heading</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/tag/">Tag</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/timeline/">Timeline</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/top-navigation/">Top navigation</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+      </div>
+
+      <div class="nhsuk-grid-column-three-quarters">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper nhsuk-main-wrapper--s app-content">
+          
+  
+    <span class="nhsuk-caption-xl">Components</span>
+  
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    Card links
+  </h1>
+  <p>Use card links to help users reach the next stage of their NHS App journey.</p>
+  <div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link"
+    title="Card link"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link" role="tab" id="tab_html-default--examples-cards-card-link" aria-controls="html-default--examples-cards-card-link">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link" role="tab" id="tab_nunjucks-default--examples-cards-card-link" aria-controls="nunjucks-default--examples-cards-card-link">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-link" role="tab" id="tab_figma-default--examples-cards-card-link" aria-controls="figma-default--examples-cards-card-link">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-link" role="tab" id="tab_vue-default--examples-cards-card-link" aria-controls="vue-default--examples-cards-card-link">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        Request repeat prescriptions
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Request repeat prescriptions'</span><span class="token punctuation">,</span>
+  <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-link" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-link">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-link" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-link">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h2 id="when-to-use" tabindex="-1">When to use</h2>
+<p>Use card links to take users:</p>
+<ul>
+<li>to the start of an NHS App service</li>
+<li>deeper into an area of the app</li>
+</ul>
+<h2 id="when-not-to-use" tabindex="-1">When not to use</h2>
+<p>Do not place card links in the middle of paragraph text.</p>
+<h2 id="how-to-use" tabindex="-1">How to use</h2>
+<p>The whole card should always act as a single, selectable link.</p>
+<p>Use the variation below that fits best with the context.</p>
+<h3 id="short-card-link" tabindex="-1">Short card link</h3>
+<p>This is our preferred style. A concise phrase explains where the link goes. It can be read quickly because of the short amount of text.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link-short" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link short)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link-short"
+    title="Card link short"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link-short" role="tab" id="tab_html-default--examples-cards-card-link-short" aria-controls="html-default--examples-cards-card-link-short">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link-short" role="tab" id="tab_nunjucks-default--examples-cards-card-link-short" aria-controls="nunjucks-default--examples-cards-card-link-short">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-link-short" role="tab" id="tab_figma-default--examples-cards-card-link-short" aria-controls="figma-default--examples-cards-card-link-short">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-link-short" role="tab" id="tab_vue-default--examples-cards-card-link-short" aria-controls="vue-default--examples-cards-card-link-short">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link-short" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link-short">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-short-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-short-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        Request repeat prescriptions
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link-short" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link-short">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-short-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-short-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Request repeat prescriptions'</span><span class="token punctuation">,</span>
+  <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-link-short" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-link-short">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-link-short" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-link-short">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="card-link-with-paragraph-text" tabindex="-1">Card link with paragraph text</h3>
+<p>On pages deeper in the structure of the NHS App, users may need more details to understand where links go. In this case, you can use paragraph text below the heading to give more information.</p>
+<p>Only use this variation if you have found a user need for more detailed links on a particular page.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link-with-description" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link with description)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link-with-description"
+    title="Card link with description"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link-with-description" role="tab" id="tab_html-default--examples-cards-card-link-with-description" aria-controls="html-default--examples-cards-card-link-with-description">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link-with-description" role="tab" id="tab_nunjucks-default--examples-cards-card-link-with-description" aria-controls="nunjucks-default--examples-cards-card-link-with-description">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-link-with-description" role="tab" id="tab_figma-default--examples-cards-card-link-with-description" aria-controls="figma-default--examples-cards-card-link-with-description">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-link-with-description" role="tab" id="tab_vue-default--examples-cards-card-link-with-description" aria-controls="vue-default--examples-cards-card-link-with-description">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link-with-description" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link-with-description">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-with-description-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-with-description-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        Your approved prescriptions
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__below<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-top-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          View prescriptions ready for pharmacy to prepare
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link-with-description" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link-with-description">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-with-description-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-with-description-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Your approved prescriptions'</span><span class="token punctuation">,</span>
+  <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span><span class="token punctuation">,</span>
+  <span class="token variable">description</span><span class="token punctuation">:</span> <span class="token string">'View prescriptions ready for pharmacy to prepare'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-link-with-description" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-link-with-description">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-link-with-description" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-link-with-description">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="using-icons" tabindex="-1">Using icons</h3>
+<p><a href="/components/icons/">Icons</a> may help users to understand the meaning of a card link. We currently only use this variation for “Manage health services for others” and “Messages” links on the homepage.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link-icon" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link icon)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link-icon"
+    title="Card link icon"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link-icon" role="tab" id="tab_html-default--examples-cards-card-link-icon" aria-controls="html-default--examples-cards-card-link-icon">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link-icon" role="tab" id="tab_nunjucks-default--examples-cards-card-link-icon" aria-controls="nunjucks-default--examples-cards-card-link-icon">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-link-icon" role="tab" id="tab_figma-default--examples-cards-card-link-icon" aria-controls="figma-default--examples-cards-card-link-icon">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-link-icon" role="tab" id="tab_vue-default--examples-cards-card-link-icon" aria-controls="vue-default--examples-cards-card-link-icon">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link-icon" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link-icon">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-icon-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-icon-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-icon nhsapp-icon__switch-profile<span class="token punctuation">"</span></span>
+      <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
+      <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+      <span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span>
+      <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2rem<span class="token punctuation">"</span></span>
+      <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2rem<span class="token punctuation">"</span></span>
+      <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
+    <span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+        <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M12.03 2.01c-5.49 0-9.96 4.49-9.96 10s4.47 10.01 9.96 10.01 9.96-4.49 9.96-10.01-4.47-10-9.96-10Zm0 1.5c4.66 0 8.46 3.82 8.46 8.51 0 .98-.17 1.91-.47 2.78a3.287 3.287 0 0 0-2.85-1.66h-3.29c-1.83 0-3.31 1.49-3.31 3.32l.04 3.93c-.18-.03-.35-.06-.52-.11l-.03-3.82c0-.67.19-1.29.49-1.83-.33-.14-.7-.23-1.09-.23H6.88c-1.03 0-1.93.58-2.4 1.43a8.437 8.437 0 0 1-.91-3.82c0-4.69 3.8-8.5 8.46-8.5Zm2.6 16.6Zm-1.39.32Zm-1.95.06Zm-1.21-.2Zm-5.6-4.45Zm4.68 4.17Zm-.85-.36c-.27-.13-.52-.28-.77-.43.25.16.51.3.77.43Zm8.73-.79a8.44 8.44 0 0 0 1.74-1.74c-.49.66-1.08 1.24-1.74 1.74Zm-2.26 1.2c.35-.12.68-.26 1.01-.43-.33.16-.66.31-1.01.43Zm1.15-.49Zm2.9-2.49c.51-.69.91-1.45 1.2-2.27a8.37 8.37 0 0 1-1.2 2.27Z<span class="token punctuation">"</span></span>
+      <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+        <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M8.1 14.17c1.39 0 2.52-1.13 2.52-2.52S9.49 9.13 8.1 9.13s-2.52 1.13-2.52 2.52 1.13 2.52 2.52 2.52Zm7.33-1.54c1.77 0 3.21-1.44 3.21-3.21s-1.44-3.21-3.21-3.21-3.21 1.44-3.21 3.21 1.44 3.21 3.21 3.21Z<span class="token punctuation">"</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Switch profiles
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link-icon" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link-icon">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-icon-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-icon-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Switch profiles'</span><span class="token punctuation">,</span>
+  <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span><span class="token punctuation">,</span>
+  <span class="token variable">prefixIcon</span><span class="token punctuation">:</span> <span class="token string">'switchProfile'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-link-icon" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-link-icon">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-link-icon" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-link-icon">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="using-badges" tabindex="-1">Using badges</h3>
+<p>Use <a href="/components/badge/">badges</a> to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link-with-badge" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link with description)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link-with-badge"
+    title="Card link with description"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link-with-badge" role="tab" id="tab_html-default--examples-cards-card-link-with-badge" aria-controls="html-default--examples-cards-card-link-with-badge">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link-with-badge" role="tab" id="tab_nunjucks-default--examples-cards-card-link-with-badge" aria-controls="nunjucks-default--examples-cards-card-link-with-badge">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-link-with-badge" role="tab" id="tab_figma-default--examples-cards-card-link-with-badge" aria-controls="figma-default--examples-cards-card-link-with-badge">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-link-with-badge" role="tab" id="tab_vue-default--examples-cards-card-link-with-badge" aria-controls="vue-default--examples-cards-card-link-with-badge">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link-with-badge" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link-with-badge">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-with-badge-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-with-badge-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-icon nhsapp-icon__messages<span class="token punctuation">"</span></span>
+      <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span>
+      <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+      <span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span>
+      <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2rem<span class="token punctuation">"</span></span>
+      <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2rem<span class="token punctuation">"</span></span>
+      <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span>
+    <span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+        <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M21.75 11.38a.76.76 0 0 0-.7-.08l-.77.31V4.47c0-.41-.34-.75-.75-.75H4.47c-.41 0-.75.34-.75.75v7.15l-.78-.31a.76.76 0 0 0-.7.08c-.21.14-.33.37-.33.62v9.27c0 .41.34.75.75.75h18.67c.41 0 .75-.34.75-.75v-9.27c0-.25-.12-.48-.33-.62ZM5.22 5.22h13.56v6.97L12 14.94l-6.78-2.75V5.22Zm15.36 15.3H3.41v-7.41l8.31 3.34c.18.07.38.07.56 0l8.3-3.34v7.41Z<span class="token punctuation">"</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Messages, you have 4 unread messages<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+Messages
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-badge<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-u-visually-hidden<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>You have<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span></p>
+<p>4</p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-u-visually-hidden<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>unread messages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link-with-badge" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link-with-badge">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-with-badge-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-with-badge-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Messages'</span><span class="token punctuation">,</span>
+  <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span><span class="token punctuation">,</span>
+  <span class="token variable">prefixIcon</span><span class="token punctuation">:</span> <span class="token string">'messages'</span><span class="token punctuation">,</span>
+  <span class="token variable">linkAriaLabel</span><span class="token punctuation">:</span> <span class="token string">'Messages, you have 4 unread messages'</span><span class="token punctuation">,</span>
+  <span class="token variable">badgeLarge</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token variable">count</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token variable">label</span><span class="token punctuation">:</span> <span class="token string">'unread messages'</span><span class="token punctuation">,</span>
+    <span class="token variable">ariaHidden</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-link-with-badge" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-link-with-badge">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-link-with-badge" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-link-with-badge">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="multiple-card-links" tabindex="-1">Multiple card links</h3>
+<p>Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-group-stacked" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-group-stacked"
+    title="Card link"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-group-stacked" role="tab" id="tab_html-default--examples-cards-card-group-stacked" aria-controls="html-default--examples-cards-card-group-stacked">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-group-stacked" role="tab" id="tab_nunjucks-default--examples-cards-card-group-stacked" aria-controls="nunjucks-default--examples-cards-card-group-stacked">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-group-stacked" role="tab" id="tab_figma-default--examples-cards-card-group-stacked" aria-controls="figma-default--examples-cards-card-group-stacked">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-group-stacked" role="tab" id="tab_vue-default--examples-cards-card-group-stacked" aria-controls="vue-default--examples-cards-card-group-stacked">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-group-stacked" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-group-stacked">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-group-stacked-code">Copy code</button>
+    <div id="html-default--examples-cards-card-group-stacked-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-cards nhsapp-cards--stacked<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          GP health record
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+View and manage prescriptions
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Upcoming and past appointments
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-group-stacked" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-group-stacked">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-group-stacked-code">Copy code</button><div id="nunjucks-default--examples-cards-card-group-stacked-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCardGroup</span> <span class="token delimiter punctuation">%}</span></span>
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCardGroup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">stacked</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token variable">cards</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'GP health record'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'View and manage prescriptions'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Upcoming and past appointments'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-group-stacked" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-group-stacked">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-group-stacked" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-group-stacked">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<p>If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-group-headings" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-group-headings"
+    title="Card link"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-group-headings" role="tab" id="tab_html-default--examples-cards-card-group-headings" aria-controls="html-default--examples-cards-card-group-headings">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-group-headings" role="tab" id="tab_nunjucks-default--examples-cards-card-group-headings" aria-controls="nunjucks-default--examples-cards-card-group-headings">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-cards-card-group-headings" role="tab" id="tab_figma-default--examples-cards-card-group-headings" aria-controls="figma-default--examples-cards-card-group-headings">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-cards-card-group-headings" role="tab" id="tab_vue-default--examples-cards-card-group-headings" aria-controls="vue-default--examples-cards-card-group-headings">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-group-headings" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-group-headings">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-group-headings-code">Copy code</button>
+    <div id="html-default--examples-cards-card-group-headings-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-section-heading<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-heading-s<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Your GP services<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-cards nhsapp-cards--stacked<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Request repeat prescriptions
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Contact your GP surgery for a document or update
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Check for available GP appointments
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-section-heading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-heading-s<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Other NHS services<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-cards nhsapp-cards--stacked<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Book
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Request prescriptions
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-group-headings" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-group-headings">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-group-headings-code">Copy code</button><div id="nunjucks-default--examples-cards-card-group-headings-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCardGroup</span> <span class="token delimiter punctuation">%}</span></span>
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/styles/section-heading/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappSectionHeading</span> <span class="token delimiter punctuation">%}</span></span>
+
+
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappSectionHeading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">headingText</span><span class="token punctuation">:</span> <span class="token string">"Your GP services"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCardGroup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">stacked</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token variable">cards</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Request repeat prescriptions'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Contact your GP surgery for a document or update'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Check for available GP appointments'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappSectionHeading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">headingText</span><span class="token punctuation">:</span> <span class="token string">"Other NHS services"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCardGroup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">stacked</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token variable">cards</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Book'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Request prescriptions'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-cards-card-group-headings" role="tabpanel" aria-labelledby="tab_figma-default--examples-cards-card-group-headings">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&amp;node-id=128%3A7303&amp;mode=design&amp;t=DLiyCHcTTAYkEDa0-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-cards-card-group-headings" role="tabpanel" aria-labelledby="tab_vue-default--examples-cards-card-group-headings">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="secondary-card-links" tabindex="-1">Secondary card links</h3>
+<p>Use secondary card links on hub pages to signpost groups of information on less important topics.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link-secondary" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link secondary)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link-secondary"
+    title="Card link secondary"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link-secondary" role="tab" id="tab_html-default--examples-cards-card-link-secondary" aria-controls="html-default--examples-cards-card-link-secondary">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link-secondary" role="tab" id="tab_nunjucks-default--examples-cards-card-link-secondary" aria-controls="nunjucks-default--examples-cards-card-link-secondary">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link-secondary" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link-secondary">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-secondary-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-secondary-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card nhsapp-card--secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        Find NHS services near you
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link-secondary" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link-secondary">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-secondary-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-secondary-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Find NHS services near you'</span><span class="token punctuation">,</span>
+  <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">'nhsapp-card--secondary'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  </div>
+<p>Use them below primary card links which signpost more important information.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/cards/card-link-secondary-stacked" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Card link secondary stacked)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/cards/card-link-secondary-stacked"
+    title="Card link secondary stacked"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-cards-card-link-secondary-stacked" role="tab" id="tab_html-default--examples-cards-card-link-secondary-stacked" aria-controls="html-default--examples-cards-card-link-secondary-stacked">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-cards-card-link-secondary-stacked" role="tab" id="tab_nunjucks-default--examples-cards-card-link-secondary-stacked" aria-controls="nunjucks-default--examples-cards-card-link-secondary-stacked">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-cards-card-link-secondary-stacked" role="tabpanel" aria-labelledby="tab_html-default--examples-cards-card-link-secondary-stacked">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-cards-card-link-secondary-stacked-code">Copy code</button>
+    <div id="html-default--examples-cards-card-link-secondary-stacked-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-section-heading<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-heading-s<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Settings<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-cards nhsapp-cards--stacked<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Login and security
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Face ID
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-section-heading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-heading-s<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>About the NHS App<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-cards nhsapp-cards--stacked nhsapp-cards--secondary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Privacy and legal policies
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Join our user research panel
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-cards-card-link-secondary-stacked" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-cards-card-link-secondary-stacked">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-cards-card-link-secondary-stacked-code">Copy code</button><div id="nunjucks-default--examples-cards-card-link-secondary-stacked-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCardGroup</span> <span class="token delimiter punctuation">%}</span></span>
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/styles/section-heading/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappSectionHeading</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappSectionHeading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">headingText</span><span class="token punctuation">:</span> <span class="token string">"Settings"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCardGroup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">stacked</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token variable">cards</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Login and security'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Face ID'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappSectionHeading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">headingText</span><span class="token punctuation">:</span> <span class="token string">"About the NHS App"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCardGroup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">stacked</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">'nhsapp-cards--secondary'</span><span class="token punctuation">,</span>
+  <span class="token variable">cards</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Privacy and legal policies'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Join our user research panel'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h2 id="content-guidance" tabindex="-1">Content guidance</h2>
+<p>Aim to use active phrasing for card link text. This means starting the link text with a verb. For example: &quot;Request repeat prescriptions&quot; and &quot;Check for available GP appointments&quot;. This follows content guidance on links and helps users to understand the action they can take.</p>
+<p>However, you may find reasons to vary this to fit with the context. On the &quot;Your health&quot; hub, we mainly use noun phrases (such as &quot;GP health record&quot;) for brevity and to avoid multiple links starting with the same verb.</p>
+<p>In usability testing, we did not see evidence of this mixture of phrasing causing problems for users. We also noted that GOV.UK also vary link phrasing in a similar way. However, more research on link phrasing may be helpful to validate the best approach.</p>
+<h2 id="research" tabindex="-1">Research</h2>
+<p>In usability testing, people successfully navigated the NHS App and completed a range of tasks using short card links. They understood the meaning of the links despite the short amount of text.</p>
+<p>In some usability testing involving card links with paragraph text, users have overlooked the paragraph text. However, paragraph text has been found to help users differentiate inboxes on the “Messages” hub.</p>
+<p>The icons used on homepage card links were well understood in our user research. People were able to recognise the images and associate them with the link destination.</p>
+<h3 id="knowledge-gaps" tabindex="-1">Knowledge gaps</h3>
+<p>As noted in the content guidance section above, more research into link phrasing may help us to understand the best way to word NHS App links.</p>
+
+  
+    
+
+  
+    <h2>Help improve this component</h2> 
+  
+
+  <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+
+  <ul>
+    <li>take part in the <a href="https://github.com/nhsuk/nhsapp-frontend/issues/10">'Card links' discussion on GitHub</a> and share your research</li>
+    <li><a href="https://github.com/nhsuk/nhsapp-frontend/edit/main/docs/components/card-links.md" class="nhsuk-link">propose a change on GitHub</a> - read more about <a href="/community/propose-change/">how to propose changes in GitHub</a></li>
+  </ul>
+
+  <p>You can also <a href="/community/help-and-feedback/">share feedback with us on Slack</a>.</p>
+
+
+
+  
+
+
+        </main>
+
+        
+        
+          <div class="app-side-navigation--mobile">
+            
+  
+  <nav class="app-side-navigation" aria-label="Components" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Components</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/badge/">Badge</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/bottom-navigation/">Bottom navigation</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/buttons/">Buttons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item app-side-navigation__item--active">
+  <a href="/components/card-links/" aria-current="location">Card links</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/icons/">Icons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/section-heading/">Section heading</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/tag/">Tag</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/timeline/">Timeline</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/top-navigation/">Top navigation</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+
+        
+          <div class="app-callout">
+  <div class="app-callout__content">
+    <h2 class="nhsuk-heading-m">Get help</h2>
+    <p>The NHS App design system team provides support for users of the NHS App design system. <a href="/community/help-and-feedback/">Contact us</a> to ask for help.</p>
+  </div>
+</div>
+          <div class="nhsuk-u-padding-top-3"></div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      
+
+      <footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+          
+              <ul class="nhsuk-footer__list">
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="/community/help-and-feedback/">Help and feedback</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsapp-frontend">Code on Github</a>
+                  </li>
+              </ul>
+              <div>
+                <p class="nhsuk-footer__copyright">© NHS England</p>
+              </div>
+      </div> 
+          
+    </div> 
+  </div> 
+</footer>
+
+      
+
+    
+  </body>
+</html>

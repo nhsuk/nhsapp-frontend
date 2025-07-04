@@ -1,0 +1,695 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+
+    <title>Buttons</title>
+
+    <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
+    <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="/nhsuk-frontend/assets/favicons/mediumtile-144x144.png">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-square70x70logo" content="/nhsuk-frontend/assets/favicons/smalltile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/nhsuk-frontend/assets/favicons/mediumtile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
+
+    <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
+    <meta property="og:site_name" content="nhs.uk"/>
+    <meta property="og:title" content="NHS App design system"/>
+    <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
+
+    
+  </head>
+  <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    
+      
+        
+
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+<header class="nhsuk-header app-header" role="banner">
+
+  <div class="nhsuk-header__container">
+    <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
+        
+  <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+    <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
+    <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+  </svg>
+
+        <span class="nhsuk-header__service-name">
+          App design system
+        </span>
+      </a>
+    </div></div>
+
+
+  <div class="nhsuk-navigation-container">
+    <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/get-started/">
+            Get started
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/components/">
+            Components
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/patterns/">
+            Patterns
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/community/">
+            Community
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--home">
+          <a class="nhsuk-header__navigation-link"  href="/">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-mobile-menu-container">
+          <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
+            <span class="nhsuk-u-visually-hidden">Browse</span>
+            More
+            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      
+
+      
+  <div class="nhsuk-width-container">
+    
+  
+    
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+  
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/components">Components</a></li>
+    
+    
+  
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/components">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Components
+    </a>
+  </p>
+</nav>
+
+  
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-quarter">
+        
+          <div class="app-side-navigation--desktop">
+            
+  
+  <nav class="app-side-navigation" aria-label="Components" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Components</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/badge/">Badge</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/bottom-navigation/">Bottom navigation</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item app-side-navigation__item--active">
+  <a href="/components/buttons/" aria-current="location">Buttons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/card-links/">Card links</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/icons/">Icons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/section-heading/">Section heading</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/tag/">Tag</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/timeline/">Timeline</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/top-navigation/">Top navigation</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+      </div>
+
+      <div class="nhsuk-grid-column-three-quarters">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper nhsuk-main-wrapper--s app-content">
+          
+  
+    <span class="nhsuk-caption-xl">Components</span>
+  
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    Buttons
+  </h1>
+  <p>Use buttons to help users to carry out an action.</p>
+  <h2 id="how-to-use" tabindex="-1">How to use</h2>
+<p>We use the <a href="https://service-manual.nhs.uk/design-system/components/buttons">NHS design system button</a> with a modifier class of <code>nhsapp-button</code> to make buttons full width on smaller screens.</p>
+<h3 id="primary-button" tabindex="-1">Primary button</h3>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/buttons/button-primary" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Button primary)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/buttons/button-primary"
+    title="Button primary"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-buttons-button-primary" role="tab" id="tab_html-default--examples-buttons-button-primary" aria-controls="html-default--examples-buttons-button-primary">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-buttons-button-primary" role="tab" id="tab_nunjucks-default--examples-buttons-button-primary" aria-controls="nunjucks-default--examples-buttons-button-primary">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-buttons-button-primary" role="tab" id="tab_figma-default--examples-buttons-button-primary" aria-controls="figma-default--examples-buttons-button-primary">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-buttons-button-primary" role="tab" id="tab_vue-default--examples-buttons-button-primary" aria-controls="vue-default--examples-buttons-button-primary">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-buttons-button-primary" role="tabpanel" aria-labelledby="tab_html-default--examples-buttons-button-primary">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-buttons-button-primary-code">Copy code</button>
+    <div id="html-default--examples-buttons-button-primary-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button nhsapp-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span>
+  Continue
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre></div>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-buttons-button-primary" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-buttons-button-primary">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-buttons-button-primary-code">Copy code</button><div id="nunjucks-default--examples-buttons-button-primary-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Continue"</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsapp-button"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-buttons-button-primary" role="tabpanel" aria-labelledby="tab_figma-default--examples-buttons-button-primary">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-4944&amp;t=nezigF25kUAyUU2s-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-buttons-button-primary" role="tabpanel" aria-labelledby="tab_vue-default--examples-buttons-button-primary">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhsbutton--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="secondary-button" tabindex="-1">Secondary button</h3>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/buttons/button-secondary" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Button secondary)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/buttons/button-secondary"
+    title="Button secondary"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-buttons-button-secondary" role="tab" id="tab_html-default--examples-buttons-button-secondary" aria-controls="html-default--examples-buttons-button-secondary">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-buttons-button-secondary" role="tab" id="tab_nunjucks-default--examples-buttons-button-secondary" aria-controls="nunjucks-default--examples-buttons-button-secondary">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-buttons-button-secondary" role="tab" id="tab_figma-default--examples-buttons-button-secondary" aria-controls="figma-default--examples-buttons-button-secondary">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-buttons-button-secondary" role="tab" id="tab_vue-default--examples-buttons-button-secondary" aria-controls="vue-default--examples-buttons-button-secondary">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-buttons-button-secondary" role="tabpanel" aria-labelledby="tab_html-default--examples-buttons-button-secondary">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-buttons-button-secondary-code">Copy code</button>
+    <div id="html-default--examples-buttons-button-secondary-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button nhsuk-button--secondary nhsapp-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span>
+  Try again
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre></div>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-buttons-button-secondary" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-buttons-button-secondary">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-buttons-button-secondary-code">Copy code</button><div id="nunjucks-default--examples-buttons-button-secondary-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Try again"</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--secondary nhsapp-button"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-buttons-button-secondary" role="tabpanel" aria-labelledby="tab_figma-default--examples-buttons-button-secondary">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-4944&amp;t=nezigF25kUAyUU2s-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-buttons-button-secondary" role="tabpanel" aria-labelledby="tab_vue-default--examples-buttons-button-secondary">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhsbutton--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="buttons-on-dark-backgrounds-(reverse-button)" tabindex="-1">Buttons on dark backgrounds (reverse button)</h3>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/buttons/button-reverse" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Button reverse)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/buttons/button-reverse"
+    title="Button reverse"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-buttons-button-reverse" role="tab" id="tab_html-default--examples-buttons-button-reverse" aria-controls="html-default--examples-buttons-button-reverse">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-buttons-button-reverse" role="tab" id="tab_nunjucks-default--examples-buttons-button-reverse" aria-controls="nunjucks-default--examples-buttons-button-reverse">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-buttons-button-reverse" role="tab" id="tab_figma-default--examples-buttons-button-reverse" aria-controls="figma-default--examples-buttons-button-reverse">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-buttons-button-reverse" role="tab" id="tab_vue-default--examples-buttons-button-reverse" aria-controls="vue-default--examples-buttons-button-reverse">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-buttons-button-reverse" role="tabpanel" aria-labelledby="tab_html-default--examples-buttons-button-reverse">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-buttons-button-reverse-code">Copy code</button>
+    <div id="html-default--examples-buttons-button-reverse-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button nhsuk-button--reverse nhsapp-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span>
+  Continue
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre></div>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-buttons-button-reverse" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-buttons-button-reverse">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-buttons-button-reverse-code">Copy code</button><div id="nunjucks-default--examples-buttons-button-reverse-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Continue"</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--reverse nhsapp-button"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-buttons-button-reverse" role="tabpanel" aria-labelledby="tab_figma-default--examples-buttons-button-reverse">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-4944&amp;t=nezigF25kUAyUU2s-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-buttons-button-reverse" role="tabpanel" aria-labelledby="tab_vue-default--examples-buttons-button-reverse">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhsbutton--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h3 id="warning-button" tabindex="-1">Warning button</h3>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/buttons/button-warning" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Button warning)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/buttons/button-warning"
+    title="Button warning"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-buttons-button-warning" role="tab" id="tab_html-default--examples-buttons-button-warning" aria-controls="html-default--examples-buttons-button-warning">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-buttons-button-warning" role="tab" id="tab_nunjucks-default--examples-buttons-button-warning" aria-controls="nunjucks-default--examples-buttons-button-warning">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-buttons-button-warning" role="tabpanel" aria-labelledby="tab_html-default--examples-buttons-button-warning">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-buttons-button-warning-code">Copy code</button>
+    <div id="html-default--examples-buttons-button-warning-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button nhsuk-button--warning nhsapp-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button<span class="token punctuation">"</span></span>
+  <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>
+<span class="token punctuation">></span></span>
+  Cancel appointment
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre></div>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-buttons-button-warning" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-buttons-button-warning">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-buttons-button-warning-code">Copy code</button><div id="nunjucks-default--examples-buttons-button-warning-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Cancel appointment"</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--warning nhsapp-button"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h3 id="grouping-buttons" tabindex="-1">Grouping buttons</h3>
+<p>Use a button group when two or more buttons are placed together.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/buttons/button-group" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Button group)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/buttons/button-group"
+    title="Button group"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-buttons-button-group" role="tab" id="tab_html-default--examples-buttons-button-group" aria-controls="html-default--examples-buttons-button-group">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-buttons-button-group" role="tab" id="tab_nunjucks-default--examples-buttons-button-group" aria-controls="nunjucks-default--examples-buttons-button-group">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-buttons-button-group" role="tab" id="tab_figma-default--examples-buttons-button-group" aria-controls="figma-default--examples-buttons-button-group">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-buttons-button-group" role="tab" id="tab_vue-default--examples-buttons-button-group" aria-controls="vue-default--examples-buttons-button-group">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-buttons-button-group" role="tabpanel" aria-labelledby="tab_html-default--examples-buttons-button-group">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-buttons-button-group-code">Copy code</button>
+    <div id="html-default--examples-buttons-button-group-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-button-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button nhsapp-button<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>
+  <span class="token punctuation">></span></span>
+    Save and continue
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button nhsuk-button--secondary nhsapp-button<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+Save as draft
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-buttons-button-group" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-buttons-button-group">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-buttons-button-group-code">Copy code</button><div id="nunjucks-default--examples-buttons-button-group-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-button-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Save and continue"</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsapp-button"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Save as draft"</span><span class="token punctuation">,</span>
+  <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--secondary nhsapp-button"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-buttons-button-group" role="tabpanel" aria-labelledby="tab_figma-default--examples-buttons-button-group">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-4944&amp;t=nezigF25kUAyUU2s-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-buttons-button-group" role="tabpanel" aria-labelledby="tab_vue-default--examples-buttons-button-group">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhsbutton--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<p>Any links within a button group will automatically align with the buttons.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/buttons/button-group-link" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Button group with link)</span> in a new tab</a>
+  </span><iframe
+    onload="this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';"
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height=""
+    src="/examples/buttons/button-group-link"
+    title="Button group with link"
+  ></iframe></div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-buttons-button-group-link" role="tab" id="tab_html-default--examples-buttons-button-group-link" aria-controls="html-default--examples-buttons-button-group-link">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-buttons-button-group-link" role="tab" id="tab_nunjucks-default--examples-buttons-button-group-link" aria-controls="nunjucks-default--examples-buttons-button-group-link">Nunjucks</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default--examples-buttons-button-group-link" role="tab" id="tab_figma-default--examples-buttons-button-group-link" aria-controls="figma-default--examples-buttons-button-group-link">Figma</a></li><li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default--examples-buttons-button-group-link" role="tab" id="tab_vue-default--examples-buttons-button-group-link" aria-controls="vue-default--examples-buttons-button-group-link">Vue</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-buttons-button-group-link" role="tabpanel" aria-labelledby="tab_html-default--examples-buttons-button-group-link">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-buttons-button-group-link-code">Copy code</button>
+    <div id="html-default--examples-buttons-button-group-link-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-button-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button nhsapp-button<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-button<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span>
+  <span class="token punctuation">></span></span>
+    Continue
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-link<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Cancel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-buttons-button-group-link" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-buttons-button-group-link">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-buttons-button-group-link-code">Copy code</button><div id="nunjucks-default--examples-buttons-button-group-link-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsapp-button-group<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+  <span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Continue"</span><span class="token punctuation">,</span>
+    <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsapp-button"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-link<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Cancel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default--examples-buttons-button-group-link" role="tabpanel" aria-labelledby="tab_figma-default--examples-buttons-button-group-link">
+<p>To use the component in your design, add the NHS App Figma library to your working files, and navigate using the components tab.</p>
+<p><a href="https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-4944&amp;t=nezigF25kUAyUU2s-1" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Figma (opens in a new tab)</a></p>
+</div>
+  <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="vue-default--examples-buttons-button-group-link" role="tabpanel" aria-labelledby="tab_vue-default--examples-buttons-button-group-link">
+<p>To use the component in your Vue application, install the NHS App Vue Component Library and import the component.</p>
+<p><a href="https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhsbutton--docs" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a></p>
+</div>
+  </div>
+<h2 id="research" tabindex="-1">Research</h2>
+<p>Testing on the NHS App has found that full width buttons are not a problem for users with smaller screens. But we will continue to test if:</p>
+<ul>
+<li>full width buttons are problematic for users with low digital skills</li>
+<li>users don’t actually see them as actionable things to click</li>
+</ul>
+
+  
+    
+
+  
+    <h2>Help improve this component</h2> 
+  
+
+  <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+
+  <ul>
+    <li>take part in the <a href="https://github.com/nhsuk/nhsapp-frontend/issues/12">'Buttons' discussion on GitHub</a> and share your research</li>
+    <li><a href="https://github.com/nhsuk/nhsapp-frontend/edit/main/docs/components/buttons.md" class="nhsuk-link">propose a change on GitHub</a> - read more about <a href="/community/propose-change/">how to propose changes in GitHub</a></li>
+  </ul>
+
+  <p>You can also <a href="/community/help-and-feedback/">share feedback with us on Slack</a>.</p>
+
+
+
+  
+
+
+        </main>
+
+        
+        
+          <div class="app-side-navigation--mobile">
+            
+  
+  <nav class="app-side-navigation" aria-label="Components" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Components</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/badge/">Badge</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/bottom-navigation/">Bottom navigation</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item app-side-navigation__item--active">
+  <a href="/components/buttons/" aria-current="location">Buttons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/card-links/">Card links</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/icons/">Icons</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/section-heading/">Section heading</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/tag/">Tag</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/timeline/">Timeline</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/components/top-navigation/">Top navigation</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+
+        
+          <div class="app-callout">
+  <div class="app-callout__content">
+    <h2 class="nhsuk-heading-m">Get help</h2>
+    <p>The NHS App design system team provides support for users of the NHS App design system. <a href="/community/help-and-feedback/">Contact us</a> to ask for help.</p>
+  </div>
+</div>
+          <div class="nhsuk-u-padding-top-3"></div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      
+
+      <footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+          
+              <ul class="nhsuk-footer__list">
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="/community/help-and-feedback/">Help and feedback</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsapp-frontend">Code on Github</a>
+                  </li>
+              </ul>
+              <div>
+                <p class="nhsuk-footer__copyright">© NHS England</p>
+              </div>
+      </div> 
+          
+    </div> 
+  </div> 
+</footer>
+
+      
+
+    
+  </body>
+</html>

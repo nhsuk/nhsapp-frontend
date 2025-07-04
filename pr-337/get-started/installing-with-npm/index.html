@@ -1,0 +1,312 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+
+    <title>Installing NHS App frontend with npm</title>
+
+    <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
+    <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="/nhsuk-frontend/assets/favicons/mediumtile-144x144.png">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-square70x70logo" content="/nhsuk-frontend/assets/favicons/smalltile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/nhsuk-frontend/assets/favicons/mediumtile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
+
+    <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
+    <meta property="og:site_name" content="nhs.uk"/>
+    <meta property="og:title" content="NHS App design system"/>
+    <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
+
+    
+  </head>
+  <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    
+      
+        
+
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+<header class="nhsuk-header app-header" role="banner">
+
+  <div class="nhsuk-header__container">
+    <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
+        
+  <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+    <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
+    <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+  </svg>
+
+        <span class="nhsuk-header__service-name">
+          App design system
+        </span>
+      </a>
+    </div></div>
+
+
+  <div class="nhsuk-navigation-container">
+    <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/get-started/">
+            Get started
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/components/">
+            Components
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/patterns/">
+            Patterns
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/community/">
+            Community
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--home">
+          <a class="nhsuk-header__navigation-link"  href="/">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-mobile-menu-container">
+          <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
+            <span class="nhsuk-u-visually-hidden">Browse</span>
+            More
+            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      
+
+      
+  <div class="nhsuk-width-container">
+    
+  
+    
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+  
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/get-started">Get started</a></li>
+    
+    
+  
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/get-started">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Get started
+    </a>
+  </p>
+</nav>
+
+  
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-quarter">
+        
+          <div class="app-side-navigation--desktop">
+            
+  
+  <nav class="app-side-navigation" aria-label="How we work" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Prototyping</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/get-started/nhsapp-prototype/">NHS App prototype</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/get-started/github-and-heroku/">Storing and sharing prototypes</a>
+</li>
+
+          </ul>
+      
+        <h3 class="app-side-navigation__title">Production</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/get-started/nhsapp-frontend/">NHS App frontend</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+      </div>
+
+      <div class="nhsuk-grid-column-three-quarters">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper nhsuk-main-wrapper--s app-content">
+          
+  
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    Installing NHS App frontend with npm
+  </h1>
+  <h2 id="requirements" tabindex="-1">Requirements</h2>
+<p>To use NHS App frontend with node package manager (npm) you must:</p>
+<ol>
+<li>
+<p>Install the long-term support (LTS) version of <a href="https://nodejs.org/en/">Node.js</a>, which includes npm.</p>
+</li>
+<li>
+<p>Create a <a href="https://docs.npmjs.com/files/package.json">package.json file</a> if you don’t already have one. You can create a default <code>package.json</code> file by running <code>npm init</code> from the root of your application.</p>
+</li>
+</ol>
+<h2 id="installation" tabindex="-1">Installation</h2>
+<p>To install, run:</p>
+<pre class="language-sh"><code class="language-sh"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">--save</span> nhsapp-frontend</code></pre>
+<p>If you want to use the NHS App frontend Nunjucks macros, install Nunjucks - the minimum version required is 3.0.0.</p>
+<pre class="language-sh"><code class="language-sh"><span class="token function">npm</span> <span class="token function">install</span> nunjucks <span class="token parameter variable">--save</span></code></pre>
+<p>After you have installed NHS App frontend the <code>nhsapp-frontend</code> package will appear in your <code>node_modules</code> folder.</p>
+<h2 id="importing-styles" tabindex="-1">Importing styles</h2>
+<p>You need to import the NHS App frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override NHS App frontend with your own styles.</p>
+<ol>
+<li>To import all components, add the below to your Sass file:</li>
+</ol>
+<pre class="language-CSS"><code class="language-CSS">@import "node_modules/nhsapp-frontend/all";</code></pre>
+<ol start="2">
+<li>To import an individual component (for example a button), add the below to your Sass file:</li>
+</ol>
+<pre class="language-CSS"><code class="language-CSS">@import "node_modules/nhsapp-frontend/components/button/button";</code></pre>
+<h2 id="importing-assets" tabindex="-1">Importing assets</h2>
+<p>The NHS App Frontend ships with all SVG icons. They can be found in <code>node_modules/nhsapp-frontend/assets/icons</code>.</p>
+
+
+        </main>
+
+        
+        
+          <div class="app-side-navigation--mobile">
+            
+  
+  <nav class="app-side-navigation" aria-label="How we work" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Prototyping</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/get-started/nhsapp-prototype/">NHS App prototype</a>
+</li>
+
+          
+            
+
+<li class="app-side-navigation__item">
+  <a href="/get-started/github-and-heroku/">Storing and sharing prototypes</a>
+</li>
+
+          </ul>
+      
+        <h3 class="app-side-navigation__title">Production</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item">
+  <a href="/get-started/nhsapp-frontend/">NHS App frontend</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+
+        
+          <div class="app-callout">
+  <div class="app-callout__content">
+    <h2 class="nhsuk-heading-m">Get help</h2>
+    <p>The NHS App design system team provides support for users of the NHS App design system. <a href="/community/help-and-feedback/">Contact us</a> to ask for help.</p>
+  </div>
+</div>
+          <div class="nhsuk-u-padding-top-3"></div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      
+
+      <footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+          
+              <ul class="nhsuk-footer__list">
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="/community/help-and-feedback/">Help and feedback</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsapp-frontend">Code on Github</a>
+                  </li>
+              </ul>
+              <div>
+                <p class="nhsuk-footer__copyright">© NHS England</p>
+              </div>
+      </div> 
+          
+    </div> 
+  </div> 
+</footer>
+
+      
+
+    
+  </body>
+</html>

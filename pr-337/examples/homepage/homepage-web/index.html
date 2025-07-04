@@ -1,0 +1,464 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+
+    <title>Homepage web</title>
+
+    <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
+    <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="/nhsuk-frontend/assets/favicons/mediumtile-144x144.png">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-square70x70logo" content="/nhsuk-frontend/assets/favicons/smalltile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/nhsuk-frontend/assets/favicons/mediumtile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
+
+    <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
+    <meta property="og:site_name" content="nhs.uk"/>
+    <meta property="og:title" content="NHS App design system"/>
+    <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
+
+    
+  </head>
+  <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    
+      
+        
+
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+      
+
+      
+  <!-- This is HTML instead of a macro for now, as the macro doesn't support classes on primary link items -->
+<header class="nhsuk-header nhsuk-header--left" role="banner">
+
+  <div class="nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+      <a class="nhsuk-header__link nhsuk-header__link--service " href="#" aria-label="NHS homepage">
+      <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+        <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v46H0z"></path>
+        <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+      </svg>
+      </a>
+    </div>
+    <nav class="app-header__secondary-nav">
+      <ul class="app-header__secondary-nav-list">
+        <li class="app-header__secondary-nav-item">
+          <a class="app-header__secondary-nav-link" href="#">
+            Help and support
+          </a>
+        </li>
+        <strong aria-hidden="true"> | </strong>
+        <li class="app-header__secondary-nav-item">
+          <a class="app-header__secondary-nav-link" href="#">
+            Account and settings
+          </a>
+        </li>
+        <strong aria-hidden="true"> | </strong>
+        <li class="app-header__secondary-nav-item">
+          <a class="app-header__secondary-nav-link" href="#">
+            Log out
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="nhsuk-navigation-container">
+    <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link " href="#">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link " href="#">
+            Services
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link " href="#">
+            Your health
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link " href="#">
+            Messages
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item app-header__navigation-item--hide-on-desktop">
+          <a class="nhsuk-header__navigation-link" href="#">
+            Help and support
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item app-header__navigation-item--hide-on-desktop">
+          <a class="nhsuk-header__navigation-link" href="#">
+            Account and settings
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item app-header__navigation-item--hide-on-desktop">
+          <a class="nhsuk-header__navigation-link" href="#">
+            Sign out
+          </a>
+        </li>
+        <li class="nhsuk-mobile-menu-container">
+          <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
+            <span class="nhsuk-u-visually-hidden">Browse</span>
+            More
+            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </button>
+        <ul class="nhsuk-header__drop-down nhsuk-header__drop-down--hidden"></ul></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+      
+        <div class="nhsuk-width-container">
+          
+          <main role="main" id="maincontent" class="nhsuk-main-wrapper ">
+            
+              
+
+
+
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-margin-bottom-7">
+      <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">
+        <span class="app-greeting">Good morning</span>, 
+        <!-- Inline CSS added to sentence case the users name but need to check with nav team to see if we need to do this or not -->
+        <span style="display: block; text-transform: capitalize; word-wrap: break-word;">mary swanson</span>
+      </h1>
+      <p class="nhsuk-heading-s nhsuk-u-margin-bottom-0">
+        NHS number:
+        <span class="nhsuk-u-font-weight-normal">123 456 7890</span>
+      </p>
+    </div>
+
+    
+
+
+<div class="nhsapp-section-heading 
+">
+  <h2 class="nhsuk-heading-s ">
+    Services
+  </h2>
+  
+    <a 
+      class="nhsuk-link nhsuk-link--no-visited-state nhsuk-u-nowrap"
+      href="#"
+      aria-label="View all services"
+    >
+      View all
+    </a>
+  
+</div>
+
+
+
+    
+
+
+
+<ol class="nhsapp-cards nhsapp-cards--stacked
+">
+  
+    
+
+
+<li class="nhsapp-card 
+  "><div class="nhsapp-card__container"><div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          Request repeat prescriptions
+        </a>
+    </div>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></li>
+  
+    
+
+
+<li class="nhsapp-card 
+  "><div class="nhsapp-card__container"><div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          Check if you need urgent medical help using 111 online
+        </a>
+    </div>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></li>
+  
+</ol>
+
+    
+
+
+<div class="nhsapp-section-heading 
+">
+  <h2 class="nhsuk-heading-s ">
+    Your health
+  </h2>
+  
+    <a 
+      class="nhsuk-link nhsuk-link--no-visited-state nhsuk-u-nowrap"
+      href="#"
+      aria-label="View all your health"
+    >
+      View all
+    </a>
+  
+</div>
+
+
+
+    
+
+
+
+<ol class="nhsapp-cards nhsapp-cards--stacked
+">
+  
+    
+
+
+<li class="nhsapp-card 
+  "><div class="nhsapp-card__container"><div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          GP health record
+        </a>
+    </div>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></li>
+  
+    
+
+
+<li class="nhsapp-card 
+  "><div class="nhsapp-card__container"><div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          View and manage prescriptions
+        </a>
+    </div>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></li>
+  
+    
+
+
+<li class="nhsapp-card 
+  "><div class="nhsapp-card__container"><div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          Upcoming and past appointments
+        </a>
+    </div>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></li>
+  
+</ol>
+
+    
+
+
+<div class="nhsapp-section-heading 
+">
+  <h2 class="nhsuk-heading-s ">
+    Messages
+  </h2>
+  
+</div>
+
+
+
+    
+      
+
+
+
+<ol class="nhsapp-cards nhsapp-cards--stacked
+">
+  
+    
+
+
+<li class="nhsapp-card 
+  "><div class="nhsapp-card__container">
+  
+  <svg class="nhsapp-icon nhsapp-icon__messages-unread" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M21.75 11.38a.76.76 0 0 0-.7-.08l-.77.31V4.47c0-.41-.34-.75-.75-.75H4.47c-.41 0-.75.34-.75.75v7.15l-.78-.31a.76.76 0 0 0-.7.08c-.21.14-.33.37-.33.62v9.27c0 .41.34.75.75.75h18.67c.41 0 .75-.34.75-.75v-9.27c0-.25-.12-.48-.33-.62ZM5.22 5.22h13.56v6.97L12 14.94l-6.78-2.75V5.22Zm15.36 15.3H3.41v-7.41l8.31 3.34c.18.07.38.07.56 0l8.3-3.34v7.41Z"
+  />
+  <circle class="nhsapp-icon__unread-indicator" cx="18.23" cy="5.77" r="3.77" />
+</svg>
+
+<div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state" aria-label="Messages, you have 2 unread messages" >
+          View your messages
+        </a>
+    </div>
+    
+      <p class="nhsapp-badge
+" aria-hidden="true">
+    <span class="nhsuk-u-visually-hidden">You have</span>
+    
+        2
+    
+    <span class="nhsuk-u-visually-hidden">unread messages</span>
+</p>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></li>
+  
+</ol>
+    
+
+    
+
+
+<div class="nhsapp-section-heading 
+">
+  <h2 class="nhsuk-heading-s ">
+    Account
+  </h2>
+  
+</div>
+
+
+
+    
+
+
+<div class="nhsapp-card 
+  "><div class="nhsapp-card__container">
+  
+  <svg class="nhsapp-icon nhsapp-icon__switch-profile" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M12.03 2.01c-5.49 0-9.96 4.49-9.96 10s4.47 10.01 9.96 10.01 9.96-4.49 9.96-10.01-4.47-10-9.96-10Zm0 1.5c4.66 0 8.46 3.82 8.46 8.51 0 .98-.17 1.91-.47 2.78a3.287 3.287 0 0 0-2.85-1.66h-3.29c-1.83 0-3.31 1.49-3.31 3.32l.04 3.93c-.18-.03-.35-.06-.52-.11l-.03-3.82c0-.67.19-1.29.49-1.83-.33-.14-.7-.23-1.09-.23H6.88c-1.03 0-1.93.58-2.4 1.43a8.437 8.437 0 0 1-.91-3.82c0-4.69 3.8-8.5 8.46-8.5Zm2.6 16.6Zm-1.39.32Zm-1.95.06Zm-1.21-.2Zm-5.6-4.45Zm4.68 4.17Zm-.85-.36c-.27-.13-.52-.28-.77-.43.25.16.51.3.77.43Zm8.73-.79a8.44 8.44 0 0 0 1.74-1.74c-.49.66-1.08 1.24-1.74 1.74Zm-2.26 1.2c.35-.12.68-.26 1.01-.43-.33.16-.66.31-1.01.43Zm1.15-.49Zm2.9-2.49c.51-.69.91-1.45 1.2-2.27a8.37 8.37 0 0 1-1.2 2.27Z"
+  />
+  <path
+    d="M8.1 14.17c1.39 0 2.52-1.13 2.52-2.52S9.49 9.13 8.1 9.13s-2.52 1.13-2.52 2.52 1.13 2.52 2.52 2.52Zm7.33-1.54c1.77 0 3.21-1.44 3.21-3.21s-1.44-3.21-3.21-3.21-3.21 1.44-3.21 3.21 1.44 3.21 3.21 3.21Z"
+  />
+</svg>
+
+<div class="nhsapp-card__content"><a href="#" class="nhsapp-card__link nhsuk-link--no-visited-state">
+          Manage services for another person
+        </a>
+    </div>
+    
+  
+  <svg class="nhsapp-icon nhsapp-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+  <path
+    d="M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z"
+  />
+</svg>
+
+</div></div>
+
+  </div>
+</div>
+
+            
+          </main>
+        </div>
+      
+
+      
+  
+
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+          
+              <ul class="nhsuk-footer__list">
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="#">Terms of use</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="#">Privacy policy</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="#">Help and support</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+                  </li>
+              </ul>
+              <div>
+                <p class="nhsuk-footer__copyright">© NHS England</p>
+              </div>
+      </div> 
+          
+    </div> 
+  </div> 
+</footer>
+
+
+
+    
+  </body>
+</html>

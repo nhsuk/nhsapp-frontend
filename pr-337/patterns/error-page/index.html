@@ -1,0 +1,753 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link href="/assets/css/app.css" rel="stylesheet" />
+    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+
+    <title>Error pages</title>
+
+    <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
+    <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="/nhsuk-frontend/assets/favicons/mediumtile-144x144.png">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-square70x70logo" content="/nhsuk-frontend/assets/favicons/smalltile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/nhsuk-frontend/assets/favicons/mediumtile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
+
+    <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
+    <meta property="og:site_name" content="nhs.uk"/>
+    <meta property="og:title" content="NHS App design system"/>
+    <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
+
+    
+  </head>
+  <body>
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+    
+      
+        
+
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+<header class="nhsuk-header app-header" role="banner">
+
+  <div class="nhsuk-header__container">
+    <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
+        
+  <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+    <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
+    <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+  </svg>
+
+        <span class="nhsuk-header__service-name">
+          App design system
+        </span>
+      </a>
+    </div></div>
+
+
+  <div class="nhsuk-navigation-container">
+    <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/get-started/">
+            Get started
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/components/">
+            Components
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/patterns/">
+            Patterns
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link"  href="/community/">
+            Community
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--home">
+          <a class="nhsuk-header__navigation-link"  href="/">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-mobile-menu-container">
+          <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
+            <span class="nhsuk-u-visually-hidden">Browse</span>
+            More
+            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      
+
+      
+  <div class="nhsuk-width-container">
+    
+  
+    
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+  
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/patterns">Patterns</a></li>
+    
+    
+  
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/patterns">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Patterns
+    </a>
+  </p>
+</nav>
+
+  
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-quarter">
+        
+          <div class="app-side-navigation--desktop">
+            
+  
+  <nav class="app-side-navigation" aria-label="Patterns" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Pages</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item app-side-navigation__item--active">
+  <a href="/patterns/error-page/" aria-current="location">Error pages</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+      </div>
+
+      <div class="nhsuk-grid-column-three-quarters">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper nhsuk-main-wrapper--s app-content">
+          
+  
+    <span class="nhsuk-caption-xl">Pages</span>
+  
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    Error pages
+  </h1>
+  
+  <p>Use error pages to tell users there is a problem. Explain what has happened and what they can do next.</p>
+  <div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/error-pages/show-gp-appointments" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Error page - Show GP appointments)</span> in a new tab</a>
+  </span>
+  <div class="app-iframe__container">
+    <div class="app-iframe__header"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  <iframe
+    onload=""
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height="700px"
+    src="/examples/error-pages/show-gp-appointments"
+    title="Error page - Show GP appointments"
+  ></iframe>
+  </div>
+  </div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-error-pages-show-gp-appointments" role="tab" id="tab_html-default--examples-error-pages-show-gp-appointments" aria-controls="html-default--examples-error-pages-show-gp-appointments">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-error-pages-show-gp-appointments" role="tab" id="tab_nunjucks-default--examples-error-pages-show-gp-appointments" aria-controls="nunjucks-default--examples-error-pages-show-gp-appointments">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-error-pages-show-gp-appointments" role="tabpanel" aria-labelledby="tab_html-default--examples-error-pages-show-gp-appointments">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-error-pages-show-gp-appointments-code">Copy code</button>
+    <div id="html-default--examples-error-pages-show-gp-appointments-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      We could not show your GP appointments
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Try loading GP appointments again.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-heading-m<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>If the problem continues<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+Contact your GP surgery directly if you need to book or change an upcoming
+appointment now.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+For urgent medical advice, use
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://111.nhs.uk/<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>111 online<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> or
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tel: 111<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+Try again
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-u-margin-top-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>Go to appointments<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-error-pages-show-gp-appointments" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-error-pages-show-gp-appointments">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-error-pages-show-gp-appointments-code">Copy code</button><div id="nunjucks-default--examples-error-pages-show-gp-appointments-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>We could not show your GP appointments<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Try loading GP appointments again.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-heading-m<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>If the problem continues<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Contact your GP surgery directly if you need to book or change an upcoming appointment now.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>For urgent medical advice, use <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://111.nhs.uk/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>111 online<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> or <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel: 111<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Try again"</span><span class="token punctuation">,</span>
+      <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-top-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Go to appointments<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h2 id="when-to-use" tabindex="-1">When to use</h2>
+<p>Use an error page when:</p>
+<ul>
+<li>something has gone wrong</li>
+<li>users cannot continue to the next page</li>
+</ul>
+<h2 id="when-not-to-use" tabindex="-1">When not to use</h2>
+<p>Do not use this type of error page if:</p>
+<ul>
+<li>you can adapt GOV.UK patterns for <a href="https://design-system.service.gov.uk/patterns/page-not-found-pages/">page not found</a>, <a href="https://design-system.service.gov.uk/patterns/service-unavailable-pages/">service unavailable</a> or <a href="https://design-system.service.gov.uk/patterns/problem-with-the-service-pages/">there is a problem with the service</a></li>
+<li>a user makes a mistake completing a form – instead follow the NHS service manual guidance for <a href="https://service-manual.nhs.uk/design-system/components/error-message">error messages</a> and <a href="https://service-manual.nhs.uk/design-system/components/error-summary">errors summaries</a></li>
+</ul>
+<h2 id="how-to-use" tabindex="-1">How to use</h2>
+<p>The content for each type of error will vary depending on the circumstances.</p>
+<p>The page should:</p>
+<ul>
+<li>be clear and concise</li>
+<li>summarise the problem, or give an instruction, in the main heading (h1)</li>
+<li>tell the user how to access the service another way, or use an alternative</li>
+<li>tell the user if there's something they can do to fix the problem</li>
+</ul>
+<p>This page should not:</p>
+<ul>
+<li>blame the user</li>
+<li>use breadcrumbs or a standard back link at the top</li>
+<li>display vague terms or jargon like &quot;500&quot;, &quot;504&quot;, &quot;bad request&quot; or &quot;we are experiencing technical difficulties&quot;</li>
+<li>use red text to warn people</li>
+<li>use exclamation marks or informal language like &quot;oops&quot;</li>
+</ul>
+<p>You should try to get feedback from users on error pages. It's likely they will have important insights about common issues on your service that need to be fixed.</p>
+<h3 id="writing-headings" tabindex="-1">Writing headings</h3>
+<p>Use the main heading to clearly explain the problem or a solution.</p>
+<p>Some error headings work better as instructions and some work better as descriptions.</p>
+<p>Headings should be grammatically correct. Avoid abbreviated headings like &quot;Prescriptions not available&quot; as they can make it harder for users to understand what's caused the problem.</p>
+<h4 id="instructive-headings" tabindex="-1">Instructive headings</h4>
+<p>If there’s a direct action the user can take to fix the problem, use the main heading to tell them this. Start the main heading with the verb that indicates the action they need to take. For example:</p>
+<ul>
+<li>&quot;Update the NHS App to continue&quot;</li>
+<li>&quot;Check you’re registered with a GP in England&quot;</li>
+</ul>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/error-pages/update-app" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Error page - Update NHS App)</span> in a new tab</a>
+  </span>
+  <div class="app-iframe__container">
+    <div class="app-iframe__header app-iframe__header--blue"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  <iframe
+    onload=""
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height="700px"
+    src="/examples/error-pages/update-app"
+    title="Error page - Update NHS App"
+  ></iframe>
+  </div>
+  </div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-error-pages-update-app" role="tab" id="tab_html-default--examples-error-pages-update-app" aria-controls="html-default--examples-error-pages-update-app">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-error-pages-update-app" role="tab" id="tab_nunjucks-default--examples-error-pages-update-app" aria-controls="nunjucks-default--examples-error-pages-update-app">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-error-pages-update-app" role="tabpanel" aria-labelledby="tab_html-default--examples-error-pages-update-app">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-error-pages-update-app-code">Copy code</button>
+    <div id="html-default--examples-error-pages-update-app-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Update the NHS App to continue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>You will not be able to use it until you do.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+For urgent medical advice, use
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://111.nhs.uk/<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>111 online<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> or
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tel: 111<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+Update the NHS App
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-error-pages-update-app" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-error-pages-update-app">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-error-pages-update-app-code">Copy code</button><div id="nunjucks-default--examples-error-pages-update-app-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Update the NHS App to continue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>You will not be able to use it until you do.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>For urgent medical advice, use <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://111.nhs.uk/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>111 online<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> or <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel: 111<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Update the NHS App"</span><span class="token punctuation">,</span>
+      <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h4 id="descriptive-headings" tabindex="-1">Descriptive headings</h4>
+<p>Descriptive headings often work better for a problem that lies with the NHS App. Starting the main heading with &quot;we&quot; can help make this clear. For example:</p>
+<ul>
+<li>&quot;We could not log you in&quot;</li>
+<li>&quot;We could not show your confirmed prescriptions&quot;</li>
+</ul>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/error-pages/confirmed-prescriptions" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Error page - Confirmed prescriptions)</span> in a new tab</a>
+  </span>
+  <div class="app-iframe__container">
+    <div class="app-iframe__header"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  <iframe
+    onload=""
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height="700px"
+    src="/examples/error-pages/confirmed-prescriptions"
+    title="Error page - Confirmed prescriptions"
+  ></iframe>
+  </div>
+  </div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-error-pages-confirmed-prescriptions" role="tab" id="tab_html-default--examples-error-pages-confirmed-prescriptions" aria-controls="html-default--examples-error-pages-confirmed-prescriptions">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-error-pages-confirmed-prescriptions" role="tab" id="tab_nunjucks-default--examples-error-pages-confirmed-prescriptions" aria-controls="nunjucks-default--examples-error-pages-confirmed-prescriptions">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-error-pages-confirmed-prescriptions" role="tabpanel" aria-labelledby="tab_html-default--examples-error-pages-confirmed-prescriptions">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-error-pages-confirmed-prescriptions-code">Copy code</button>
+    <div id="html-default--examples-error-pages-confirmed-prescriptions-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      We could not show your confirmed prescriptions
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Contact your GP or pharmacy if you need help with a prescription.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-heading-m<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Other options in the NHS App<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card nhsapp-card--secondary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-card__link nhsuk-link--no-visited-state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+Request an emergency prescription using 111 online
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsapp-icon nhsapp-icon__chevron-right<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.w3.org/2000/svg<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">focusable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2rem<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0 0 24 24<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span>
+<span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>M8.82 19.11a.97.97 0 0 1-.72-.31.996.996 0 0 1 .03-1.41l5.61-5.38-5.6-5.25c-.4-.38-.42-1.01-.05-1.41.38-.4 1.01-.42 1.41-.05l6.37 5.97c.2.19.31.45.32.72s-.11.54-.31.73l-6.37 6.11c-.19.19-.44.28-.69.28Z<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-u-margin-top-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>Go to prescriptions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-error-pages-confirmed-prescriptions" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-error-pages-confirmed-prescriptions">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-error-pages-confirmed-prescriptions-code">Copy code</button><div id="nunjucks-default--examples-error-pages-confirmed-prescriptions-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">"nhsapp/components/card/macro.njk"</span> <span class="token keyword">import</span> <span class="token variable">nhsappCard</span> <span class="token delimiter punctuation">%}</span></span>
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>We could not show your confirmed prescriptions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Contact your GP or pharmacy if you need help with a prescription.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-heading-m<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Other options in the NHS App<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+
+    <span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">nhsappCard</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token variable">title</span><span class="token punctuation">:</span> <span class="token string">'Request an emergency prescription using 111 online'</span><span class="token punctuation">,</span>
+      <span class="token variable">href</span><span class="token punctuation">:</span> <span class="token string">'#'</span><span class="token punctuation">,</span>
+      <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">'nhsapp-card--secondary'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-top-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Go to prescriptions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h3 id="using-calls-to-action-and-links" tabindex="-1">Using calls to action and links</h3>
+<p>The components we use for calls to action and links depend on the context.</p>
+<p>Use a:</p>
+<ul>
+<li><a href="/components/buttons/#secondary-button">secondary button</a> to give a call to action that may help fix the problem</li>
+<li><a href="/components/card-links/#secondary-card-links">secondary card link</a> under a h2 of &quot;Other options in the NHS App&quot; for links to services in the NHS App</li>
+<li><a href="https://service-manual.nhs.uk/design-system/styles/typography#links">text link</a> to navigate users back to a specific area of the app, for example, &quot;Go to appointments&quot;</li>
+</ul>
+<p>Avoid giving users too many different links to choose from as a next step. This increases cognitive load, and is problematic for users experiencing high levels of stress or anxiety.</p>
+<h3 id="helping-users-get-care-another-way" tabindex="-1">Helping users get care another way</h3>
+<p>Always tell users how they can complete their task through a different channel.</p>
+<p>Remember that the NHS App is a healthcare service. Errors can delay access to clinical care, and users may be experiencing urgent health needs.</p>
+<p>Talk to your service’s clinical lead for advice when you create or update an error page.</p>
+<h3 id="letting-users-report-a-technical-problem" tabindex="-1">Letting users report a technical problem</h3>
+<p>Signpost users to contact the NHS App team if:</p>
+<ul>
+<li>the error is being tracked by the service management team</li>
+<li>it's a technical problem</li>
+</ul>
+<p>Use the h2 &quot;If the problem continues&quot; and include an error code.</p>
+<p>Speak to the service management team for advice when you create or update an error page.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/error-pages/manage-services" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Error page - Could not show people you manage services for)</span> in a new tab</a>
+  </span>
+  <div class="app-iframe__container">
+    <div class="app-iframe__header"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  <iframe
+    onload=""
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height="700px"
+    src="/examples/error-pages/manage-services"
+    title="Error page - Could not show people you manage services for"
+  ></iframe>
+  </div>
+  </div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-error-pages-manage-services" role="tab" id="tab_html-default--examples-error-pages-manage-services" aria-controls="html-default--examples-error-pages-manage-services">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-error-pages-manage-services" role="tab" id="tab_nunjucks-default--examples-error-pages-manage-services" aria-controls="nunjucks-default--examples-error-pages-manage-services">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-error-pages-manage-services" role="tabpanel" aria-labelledby="tab_html-default--examples-error-pages-manage-services">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-error-pages-manage-services-code">Copy code</button>
+    <div id="html-default--examples-error-pages-manage-services-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      We could not show details of people you manage services for
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+Try again later, or contact the GP surgery of the person whose services
+you were trying to access.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-heading-m<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>If the problem continues<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+Make a note of the error code <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>3ezxja<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> and then
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>contact the NHS App team<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-u-margin-top-1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span>
+<span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>Go to home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span>
+<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-error-pages-manage-services" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-error-pages-manage-services">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-error-pages-manage-services-code">Copy code</button><div id="nunjucks-default--examples-error-pages-manage-services-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>We could not show details of people you manage services for<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Try again later, or contact the GP surgery of the person whose services you were trying to access.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-heading-m<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>If the problem continues<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Make a note of the error code <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>3ezxja<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span> and then <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>contact the NHS App team<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-top-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-link nhsuk-link--no-visited-state nhsuk-u-font-size-19<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Go to home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h3 id="when-a-user-is-not-logged-in" tabindex="-1">When a user is not logged in</h3>
+<p>The top and bottom navigation are not visible because the user is not logged in.</p>
+<div class="app-example">
+  <span class="app-example__new-window">
+    <a href="/examples/error-pages/check-internet-connection" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">(Error page - Check internet connection)</span> in a new tab</a>
+  </span>
+  <div class="app-iframe__container">
+    <div class="app-iframe__header app-iframe__header--blue"></div>
+    <svg class="ios-notch" viewBox="-40 0 300 31">
+      <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z" fill-rule="evenodd"></path>
+    </svg>
+  <iframe
+    onload=""
+    class="app-example__frame"
+    scrolling="auto"
+    frameborder="0"
+    height="700px"
+    src="/examples/error-pages/check-internet-connection"
+    title="Error page - Check internet connection"
+  ></iframe>
+  </div>
+  </div>
+<div class="app-tabs" data-module="app-tabs">
+  <ul class="app-tabs__list" role="tablist">
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default--examples-error-pages-check-internet-connection" role="tab" id="tab_html-default--examples-error-pages-check-internet-connection" aria-controls="html-default--examples-error-pages-check-internet-connection">HTML</a></li>
+    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default--examples-error-pages-check-internet-connection" role="tab" id="tab_nunjucks-default--examples-error-pages-check-internet-connection" aria-controls="nunjucks-default--examples-error-pages-check-internet-connection">Nunjucks</a></li></ul>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default--examples-error-pages-check-internet-connection" role="tabpanel" aria-labelledby="tab_html-default--examples-error-pages-check-internet-connection">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default--examples-error-pages-check-internet-connection-code">Copy code</button>
+    <div id="html-default--examples-error-pages-check-internet-connection-code"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Check your internet connection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Try using wifi or move to a place with better internet connection.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+If you still cannot connect to the internet and need urgent medical
+advice, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tel: 111<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">data-module</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nhsuk-button<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+Try again
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre></div></p>
+  </div>
+  <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default--examples-error-pages-check-internet-connection" role="tabpanel" aria-labelledby="tab_nunjucks-default--examples-error-pages-check-internet-connection">
+    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default--examples-error-pages-check-internet-connection-code">Copy code</button><div id="nunjucks-default--examples-error-pages-check-internet-connection-code">
+<pre class="language-jinja2"><code class="language-jinja2">
+<span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{%</span> <span class="token tag keyword">from</span> <span class="token string">'button/macro.njk'</span> <span class="token keyword">import</span> <span class="token variable">button</span> <span class="token delimiter punctuation">%}</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-grid-column-two-thirds<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nhsuk-u-margin-bottom-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Check your internet connection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Try using wifi or move to a place with better internet connection.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>If you still cannot connect to the internet and need urgent medical advice, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel: 111<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>call 111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+    <span class="token jinja2 language-jinja2"><span class="token delimiter punctuation">{{</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token variable">text</span><span class="token punctuation">:</span> <span class="token string">"Try again"</span><span class="token punctuation">,</span>
+      <span class="token variable">classes</span><span class="token punctuation">:</span> <span class="token string">"nhsuk-button--secondary nhsapp-button nhsuk-u-margin-top-3"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token delimiter punctuation">}}</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</div>
+  </div>
+  </div>
+<h2 id="research" tabindex="-1">Research</h2>
+<p>Research has shown that users may:</p>
+<ul>
+<li>go straight to buttons and links without fully reading error pages</li>
+<li>not notice error codes</li>
+<li>be unsure about whether the problem was their fault or not</li>
+</ul>
+<p>We should account for these challenges in our designs and continue to research and iterate the pattern.</p>
+<h3 id="next-steps" tabindex="-1">Next steps</h3>
+<p>We want to learn more about:</p>
+<ul>
+<li>&quot;try again&quot; buttons on errors, and how we can best help users when these fail to solve the problem</li>
+<li>how we can avoid users needing to manually input error codes, for example by pre-populating these codes on our contact form</li>
+<li>how this guidance could evolve into separate pages covering specific errors</li>
+</ul>
+
+  
+    
+
+  
+    <h2>Help improve this pattern</h2>
+  
+
+  <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+
+  <ul>
+    <li>take part in the <a href="https://github.com/nhsuk/nhsapp-frontend/issues/119">'Error pages' discussion on GitHub</a> and share your research</li>
+    <li><a href="https://github.com/nhsuk/nhsapp-frontend/edit/main/docs/patterns/error-page.md" class="nhsuk-link">propose a change on GitHub</a> - read more about <a href="/community/propose-change/">how to propose changes in GitHub</a></li>
+  </ul>
+
+  <p>You can also <a href="/community/help-and-feedback/">share feedback with us on Slack</a>.</p>
+
+
+
+  
+
+        </main>
+
+        
+        
+          <div class="app-side-navigation--mobile">
+            
+  
+  <nav class="app-side-navigation" aria-label="Patterns" >
+    <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
+        <h3 class="app-side-navigation__title">Pages</h3>
+        <ul class="app-side-navigation__list">
+            
+
+<li class="app-side-navigation__item app-side-navigation__item--active">
+  <a href="/patterns/error-page/" aria-current="location">Error pages</a>
+</li>
+
+          </ul>
+      </nav>
+
+
+          </div>
+        
+
+        
+          <div class="app-callout">
+  <div class="app-callout__content">
+    <h2 class="nhsuk-heading-m">Get help</h2>
+    <p>The NHS App design system team provides support for users of the NHS App design system. <a href="/community/help-and-feedback/">Contact us</a> to ask for help.</p>
+  </div>
+</div>
+          <div class="nhsuk-u-padding-top-3"></div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      
+
+      <footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+          
+              <ul class="nhsuk-footer__list">
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="/community/help-and-feedback/">Help and feedback</a>
+                  </li>
+                  <li class="nhsuk-footer__list-item nhsuk-footer-default__list-item">
+                    <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsapp-frontend">Code on Github</a>
+                  </li>
+              </ul>
+              <div>
+                <p class="nhsuk-footer__copyright">© NHS England</p>
+              </div>
+      </div> 
+          
+    </div> 
+  </div> 
+</footer>
+
+      
+
+    
+  </body>
+</html>
