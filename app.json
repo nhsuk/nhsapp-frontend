@@ -1,0 +1,21 @@
+{
+  "name": "NHS App Frontend",
+  "description": "NHS App Design System Frontend",
+  "keywords": ["design-system", "nhs", "frontend"],
+  "env": {
+    "NODE_ENV": {
+      "value": "review"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
