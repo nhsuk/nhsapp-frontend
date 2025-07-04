@@ -1,4 +1,3 @@
-# Update your existing .github/workflows/pr.yaml
 name: PR checks
 on:
   pull_request:
@@ -37,6 +36,8 @@ jobs:
 
       - name: Build site
         run: npm run docs:build
+        env:
+          ELEVENTY_PATH_PREFIX: /pr-${{ github.event.number }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
