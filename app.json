@@ -2,9 +2,12 @@
   "name": "NHS App Frontend",
   "description": "NHS App Design System Frontend",
   "keywords": ["design-system", "nhs", "frontend"],
+  "scripts": {
+    "postdeploy": "npm run docs:build"
+  },
   "env": {
     "NODE_ENV": {
-      "value": "review"
+      "value": "production"
     }
   },
   "formation": {

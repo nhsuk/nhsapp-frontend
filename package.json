@@ -11,7 +11,8 @@
     "prepack": "gulp bundle",
     "release": "gulp release",
     "lint": "prettier --check .",
-    "start": "concurrently npm:docs:serve npm:css:watch",
+    "start": "if [ \"$NODE_ENV\" = \"production\" ]; then node server.js; else concurrently npm:docs:serve npm:css:watch; fi",
+    "start:prod": "node server.js",
     "docs:serve": "npm run css:build && npx @11ty/eleventy --serve",
     "docs:build": "npm run css:build && npx @11ty/eleventy",
     "css:watch": "gulp",
@@ -28,6 +29,9 @@
     "url": "https://github.com/nhsuk/nhsapp-frontend/issues"
   },
   "homepage": "https://github.com/nhsuk/nhsapp-frontend#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.6",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
