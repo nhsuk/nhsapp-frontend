@@ -1,9 +1,16 @@
+# Update your existing .github/workflows/pr.yaml
 name: PR checks
+on: 
+  pull_request:
+    types: [opened, synchronize, closed]
 
-on: pull_request
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   linting:
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -12,3 +19,60 @@ jobs:
           node-version: '20'
       - run: npm ci
       - run: npm run lint
+
+  deploy-preview:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build site
+        run: npm run docs:build
+        
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/docs
+          destination_dir: pr-${{ github.event.number }}
+          
+      - name: Comment PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const previewUrl = `https://design-system.nhsapp.service.nhs.uk/pr-${prNumber}/`;
+            
+            github.rest.issues.createComment({
+              issue_number: prNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 Preview deployed to: ${previewUrl}`
+            });
+
+  cleanup:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          
+      - name: Remove preview folder
+        run: |
+          rm -rf pr-${{ github.event.number }}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Remove preview for PR #${{ github.event.number }}" || exit 0
+          git push
