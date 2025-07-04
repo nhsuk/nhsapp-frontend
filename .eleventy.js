@@ -146,6 +146,8 @@ export default function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdownIt({ html: true }).use(anchor))
 
   return {
+    // Add path prefix support for PR previews
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || '',
     dir: {
       input: 'docs',
       output: 'dist/docs'
