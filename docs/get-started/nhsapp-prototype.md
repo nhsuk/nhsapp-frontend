@@ -14,7 +14,7 @@ The NHS App prototype is a copy of the NHS prototype kit with added app-specific
 
 ## Download a copy
 
-The simplest way to get the kit is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
+The simplest way to get a copy is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
 
 You can also clone or download a copy from [GitHub](https://github.com/nhsuk/nhsapp-prototype).
 
