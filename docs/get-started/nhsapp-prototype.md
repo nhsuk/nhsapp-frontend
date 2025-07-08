@@ -22,7 +22,7 @@ You can download a new copy for each project you work on and [store your code on
 
 ## Page templates and components
 
-Your copy of the NHS App prototype includes:
+In your copy of the NHS App prototype you wil find:
 
 - [page templates and layouts](https://nhs-app-redesign-prototype-96ab88b99fdb.herokuapp.com/pages/)
 - [components](https://nhs-app-redesign-prototype-96ab88b99fdb.herokuapp.com/components/)
