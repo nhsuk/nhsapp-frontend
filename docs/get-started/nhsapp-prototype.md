@@ -37,12 +37,6 @@ Follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.
 
 After following the setup guide, you will need to download a copy of the NHS App prototype.
 
-## Adding the NHS App frontend to the NHS prototype kit
-
-If you are already using the NHS prototype kit, you can use NHS App components by [adding the NHS App frontend](/get-started/install-nhsapp-frontend).
-
-Please note that this does not include the NHS App-specific page templates.
-
 ## Feedback
 
 We welcome feedback and suggestions to help improve the NHS App prototype.
