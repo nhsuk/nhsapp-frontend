@@ -7,7 +7,7 @@ tags:
 help: no
 ---
 
-The NHS App lets you create interactive prototype that look like real NHS App pages. It builds on the NHS prototype kit with added custom layouts and components tailored to the NHS App.
+The NHS App lets you create interactive prototypes that look like real NHS App pages. It builds on the NHS prototype kit with added custom layouts and components tailored to the NHS App.
 
 ## 1. Get started as a first-time user
 
