@@ -1,7 +1,7 @@
 ---
 layout: layouts/get-started.njk
 title: Storing and sharing prototypes
-order: 2
+order: 4
 tags:
   - prototyping
 ---
