@@ -6,7 +6,7 @@ tags:
   - prototyping
 ---
 
-The NHS App prototype builds on the NHS prototype kit, adding custom layouts and components tailored to the NHS App. It enables teams to create interactive prototypes that look like real NHS App pagess.
+The NHS App prototype builds on the NHS prototype kit, adding custom layouts and components tailored to the NHS App. It enables teams to create interactive prototypes that look like real NHS App pages.
 
 ## Download a copy
 
