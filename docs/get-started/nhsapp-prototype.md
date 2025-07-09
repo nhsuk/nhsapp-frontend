@@ -18,19 +18,22 @@ You can download a new copy for each project and [store your code on GitHub](/ge
 
 ## Tools and software required
 
-To use the prototype, you need to install some tools and software.
+To use the NHS App prototype, you’ll need:
 
-Follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to get everything necessary to run the prototype.
+- Node.js version 20 or higher
+- a HTML text editor, such as Visual Studio Code (VS Code)
 
-Once setup is complete, return here to download the NHS App prototype.
+If you're unsure whether you have the required tools installed, follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to install everything you need to run the prototype.
+
+Once setup is complete, return here to download and start using the NHS App prototype.
 
 ## Learn to use the prototype
 
-Basic knowledge of HTML is required, such as understanding tags and attributes, and how to copy and paste code.
+To use the NHS App prototype, basic knowledge of HTML is required, such as understanding tags and attributes, and how to copy and paste code.
 
-You can learn basic HTML and CSS at [mdn](https://developer.mozilla.org/), [codecademy](https://www.codecademy.com/), or other online tutorials.
+If you're new to HTML and CSS, you can get started with online tutorials from [mdn](https://developer.mozilla.org/), [codecademy](https://www.codecademy.com/), or other online tutorials.
 
-There are also helpful [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) that will guide you from creating a simple page to building complex user journeys.
+The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) provide step-by-step instructions - from creating a simple page to building complex user journeys.
 
 We recommend following the [build a basic prototype tutorial](https://prototype-kit.service-manual.nhs.uk/how-tos/build-basic-prototype/index) to familiarise yourself with prototyping.
 
