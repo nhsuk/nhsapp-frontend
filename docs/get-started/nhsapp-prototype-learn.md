@@ -7,7 +7,7 @@ tags:
 help: no
 ---
 
-To use the [NHS App prototype](/get-started/nhsapp-prototype), you’ll need some basic knowledge of HTML – like understanding tags and attributes, and how to copy and paste code.
+To use the NHS App prototype, you’ll need some basic knowledge of HTML – like understanding tags and attributes, and how to copy and paste code.
 
 ## Learning HTML and CSS
 
@@ -16,6 +16,8 @@ If you're new to HTML and CSS, you can get started with online tutorials from:
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [Codecademy](https://www.codecademy.com/)
 - or other online tutorials
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
 
 ## NHS prototype kit guides
 
