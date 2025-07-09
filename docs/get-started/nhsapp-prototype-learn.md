@@ -25,9 +25,13 @@ The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-t
 
 We recommend following the [build a basic prototype tutorial](https://prototype-kit.service-manual.nhs.uk/how-tos/build-basic-prototype/index) to familiarise yourself with prototyping.
 
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
+
 ## Next steps
 
-[Download a copy and start using the NHS App prototype](/get-started/nhsapp-prototype/)
+[Download and start using the NHS App prototype](/get-started/nhsapp-prototype/)
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
 
 ## Get support
 
@@ -35,3 +39,5 @@ For troubleshooting or support, you can ask the design Slack community at:
 
 - [#prototype-kit](https://nhsdigitalcorporate.enterprise.slack.com/archives/C042J3MTJG2)
 - [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
