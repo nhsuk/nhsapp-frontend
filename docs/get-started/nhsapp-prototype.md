@@ -16,6 +16,8 @@ If you haven’t used the NHS App prototype before, you can get started by:
 - [setting up the NHS App prototype](/get-started/nhsapp-prototype-setup/)
 - [learning how to use the NHS App prototype](/get-started/nhsapp-prototype-learn/)
 
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
+
 ## 2. Download a copy
 
 The simplest way to get a copy is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
@@ -23,6 +25,8 @@ The simplest way to get a copy is to [download it as a zip](https://github.com/n
 You can also clone or download a copy from [GitHub](https://github.com/nhsuk/nhsapp-prototype).
 
 You can download a new copy for each project and [store your code on GitHub](/get-started/github-and-heroku).
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
 
 ## 3. Build your pages with templates and components
 
@@ -33,11 +37,15 @@ The NHS App prototype includes pre-installed code specific to the app, such as:
 
 These are available within your copy of the prototype and can be edited or extended to meet the needs of your project.
 
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
+
 ## 4. Help improve the NHS App prototype
 
 We welcome feedback and suggestions to help improve the NHS App prototype.
 
 If you have any ideas, feature requests, or issues to report, please submit them by raising an [issue on GitHub](https://github.com/nhsuk/nhsapp-prototype/issues) or contributing directly via a pull request.
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
 
 ## Get support
 
@@ -45,3 +53,5 @@ For troubleshooting or support, you can ask the design Slack community at:
 
 - [#prototype-kit](https://nhsdigitalcorporate.enterprise.slack.com/archives/C042J3MTJG2)
 - [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+
+<hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break--width-4">
