@@ -4,6 +4,7 @@ title: Storing and sharing prototypes
 order: 4
 tags:
   - prototyping
+help: no
 ---
 
 You can store your prototype securely on GitHub and run it on Heroku for user testing.
@@ -24,9 +25,13 @@ We use [Heroku](https://www.heroku.com/) to host and publish NHS App prototypes 
 
 Heroku can [automatically deploy code changes from your GitHub repository](https://devcenter.heroku.com/articles/github-integration#:~:text=specified%20GitHub%20repo.-,Enabling%20GitHub%20Integration,to%20configure%20automatic%20GitHub%20deploys.).
 
-## Support
+<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
+
+## Get support
 
 For troubleshooting or support, you can ask the design Slack community at:
 
 - [#help-with-heroku](https://nhsdigitalcorporate.enterprise.slack.com/archives/C089RQPDZ9V)
 - [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+
+<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
