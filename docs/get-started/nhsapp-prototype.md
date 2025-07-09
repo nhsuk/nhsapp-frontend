@@ -4,11 +4,19 @@ title: NHS App prototype
 order: 1
 tags:
   - prototyping
+help: no
 ---
 
-The NHS App prototype builds on the NHS prototype kit, adding custom layouts and components tailored to the NHS App. It enables teams to create interactive prototypes that look like real NHS App pages.
+The NHS App lets you create interactive prototype that look like real NHS App pages. It builds on the NHS prototype kit with added custom layouts and components tailored to the NHS App.
 
-## Download a copy
+## 1. Get started as a first-time user
+
+If you haven’t used the NHS App prototype before, you can get started by:
+
+- [setting up the NHS App prototype](/get-started/nhsapp-prototype-setup/)
+- [learning how to use the NHS App prototype](/get-started/nhsapp-prototype-learn/)
+
+## 2. Download a copy
 
 The simplest way to get a copy is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
 
@@ -16,28 +24,7 @@ You can also clone or download a copy from [GitHub](https://github.com/nhsuk/nhs
 
 You can download a new copy for each project and [store your code on GitHub](/get-started/github-and-heroku).
 
-## Tools and software required
-
-To use the NHS App prototype, you’ll need:
-
-- Node.js version 20 or higher
-- a HTML text editor, such as Visual Studio Code (VS Code)
-
-If you're unsure whether you have the required tools installed, follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to install everything you need to run the prototype.
-
-Once setup is complete, return here to download and start using the NHS App prototype.
-
-## Learn to use the prototype
-
-To use the NHS App prototype, basic knowledge of HTML is required, such as understanding tags and attributes, and how to copy and paste code.
-
-If you're new to HTML and CSS, you can get started with online tutorials from [mdn](https://developer.mozilla.org/), [codecademy](https://www.codecademy.com/), or other online tutorials.
-
-The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) provide step-by-step instructions - from creating a simple page to building complex user journeys.
-
-We recommend following the [build a basic prototype tutorial](https://prototype-kit.service-manual.nhs.uk/how-tos/build-basic-prototype/index) to familiarise yourself with prototyping.
-
-## Page templates and components
+## 3. Build your pages with templates and components
 
 The NHS App prototype includes pre-installed code specific to the app, such as:
 
@@ -46,13 +33,13 @@ The NHS App prototype includes pre-installed code specific to the app, such as:
 
 These are available within your copy of the prototype and can be edited or extended to meet the needs of your project.
 
-## Feedback
+## 4. Help improve the NHS App prototype
 
 We welcome feedback and suggestions to help improve the NHS App prototype.
 
 If you have any ideas, feature requests, or issues to report, please submit them by raising an [issue on GitHub](https://github.com/nhsuk/nhsapp-prototype/issues) or contributing directly via a pull request.
 
-## Support
+## Get support
 
 For troubleshooting or support, you can ask the design Slack community at:
 
