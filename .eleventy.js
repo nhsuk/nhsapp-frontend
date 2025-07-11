@@ -146,7 +146,6 @@ export default function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdownIt({ html: true }).use(anchor))
 
   return {
-    // No pathPrefix needed for Netlify - each PR gets its own clean URL
     dir: {
       input: 'docs',
       output: 'dist/docs'
