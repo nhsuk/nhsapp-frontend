@@ -4,39 +4,48 @@ title: NHS App prototype
 order: 1
 tags:
   - prototyping
+help: no
 ---
 
-The [NHS App prototype](https://github.com/nhsuk/nhsapp-prototype) is based on the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/). It comes pre-installed with the [NHS App frontend](/get-started/nhsapp-frontend), [components](/components), and page templates.
+The NHS App lets you create interactive prototypes that look like real NHS App pages. It builds on the NHS prototype kit with added custom layouts and components tailored to the NHS App.
 
-This allows anyone to create interactive prototypes that look like real NHS App pages.
+## 1. Get started as a first-time user
 
-For user testing, it's essential to code detailed prototypes using the NHS App prototype or NHS prototype kit. This is important, as noted in the [UCD centre of expertise guidance (on SharePoint)](https://nhs.sharepoint.com/:u:/r/sites/X26_URPG/SitePages/nhs-prototype-kit.aspx?csf=1&web=1&e=aZFAoj).
+If you haven’t used the NHS App prototype before, you can get started by:
 
-## Setup
+- [setting up the NHS App prototype](/get-started/nhsapp-prototype-setup/)
+- [learning how to use the NHS App prototype](/get-started/nhsapp-prototype-learn/)
 
-To start with the prototype, you need to install some tools and software. Follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install) to get everything necessary to run the prototype.
+## 2. Download a copy
 
-## Download the NHS App prototype
+The simplest way to get a copy is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
 
-Once you're set up, you can [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
+You can also clone or download a copy from [GitHub](https://github.com/nhsuk/nhsapp-prototype).
 
-There's guidance on how to download and store prototypes for [Mac](https://prototype-kit.service-manual.nhs.uk/install/mac/download) and [Windows](https://prototype-kit.service-manual.nhs.uk/install/windows/download).
+You can download a new copy for each project and [store your code on GitHub](/get-started/github-and-heroku).
 
-<div class="nhsuk-inset-text nhsuk-u-margin-top-5 nhsuk-u-margin-bottom-7">
-  <p>You can also <a href="/get-started/install-nhsapp-frontend">add the NHS App frontend to the NHS prototype kit</a>, but it's worth noting that the NHS App page templates are not included.</p>
-</div>
+## 3. Build your pages with templates and components
 
-## Using the prototype
+The NHS App prototype includes pre-installed code specific to the app, such as:
 
-To use the prototype, you'll need some basic knowledge of HTML, such as understanding tags and attributes, and how to copy and paste code.
+- [page templates and layouts](https://nhs-app-redesign-prototype-96ab88b99fdb.herokuapp.com/pages/)
+- [components](https://nhs-app-redesign-prototype-96ab88b99fdb.herokuapp.com/components/)
 
-You can learn basic HTML and CSS at [mdn](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started), [codecademy](https://www.codecademy.com/), or other online tutorials.
+These are available within your copy of the prototype and can be edited or extended to meet the needs of your project.
 
-Additionally, there are helpful [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) that will guide you from creating a simple page to building complex user journeys.
+## 4. Help improve the NHS App prototype
 
-## Support
+We welcome feedback and suggestions to help improve the NHS App prototype.
+
+If you have any ideas, feature requests, or issues to report, please submit them by raising an [issue on GitHub](https://github.com/nhsuk/nhsapp-prototype/issues) or contributing directly via a pull request.
+
+<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
+
+## Get support
 
 For troubleshooting or support, you can ask the design Slack community at:
 
 - [#prototype-kit](https://nhsdigitalcorporate.enterprise.slack.com/archives/C042J3MTJG2)
 - [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
+
+<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
