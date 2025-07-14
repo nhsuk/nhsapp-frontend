@@ -1,9 +1,9 @@
 ---
-layout: layouts/get-started.njk
-title: Learning how to use the NHS App prototype
+layout: layouts/nhsapp-prototype.njk
+title: Using the NHS App prototype
 order: 3
 tags:
-  - prototyping
+  - nhsappPrototype
 help: no
 ---
 
@@ -26,11 +26,14 @@ The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-t
 
 We recommend following the [build a basic prototype tutorial](https://prototype-kit.service-manual.nhs.uk/how-tos/build-basic-prototype/index) to familiarise yourself with prototyping.
 
-<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
+## NHS App prototype templates and components
 
-## Next steps
+The NHS App prototype includes pre-installed code specific to the app, such as:
 
-[Download and start using the NHS App prototype](/get-started/nhsapp-prototype/)
+- [page templates and layouts](https://nhs-app-redesign-prototype-96ab88b99fdb.herokuapp.com/pages/)
+- [components](https://nhs-app-redesign-prototype-96ab88b99fdb.herokuapp.com/components/)
+
+These are available within your copy of the prototype and can be edited or extended to meet the needs of your project.
 
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
 

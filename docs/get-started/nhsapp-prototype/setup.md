@@ -1,13 +1,13 @@
 ---
-layout: layouts/get-started.njk
-title: Setting up the NHS App prototype
-order: 2
+layout: layouts/nhsapp-prototype.njk
+title: Setup and download
+order: 1
 tags:
-  - prototyping
+  - nhsappPrototype
 help: no
 ---
 
-To use the NHS App prototype, you'll need a few tools installed. If you already have them, you can skip ahead.
+To use the NHS App prototype, you'll need a few tools installed. If you already have them, you can skip ahead and download a copy.
 
 ## Install required tools
 
@@ -18,12 +18,15 @@ You need:
 
 If you're not sure whether the tools are installed – or how to install them – follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install/simple) to get everything you need.
 
-<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
+## Download the NHS App prototype
 
-## Next steps
+The simplest way to get a copy is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
 
-- [Learn how to use the NHS App prototype](/get-started/nhsapp-prototype-learn/)
-- [Download and start using the NHS App prototype](/get-started/nhsapp-prototype/)
+You can also clone or download a copy from [GitHub](https://github.com/nhsuk/nhsapp-prototype).
+
+<div class="nhsuk-inset-text nhsuk-u-margin-top-0">
+  <p>You can download a new copy for each project and <a href="/get-started/nhsapp-prototype/github">store your code on GitHub</a>.</p>
+</div>
 
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
 
