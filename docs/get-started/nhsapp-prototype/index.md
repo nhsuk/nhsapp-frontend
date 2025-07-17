@@ -20,7 +20,7 @@ The NHS App lets you create interactive prototypes that look like real NHS App p
 
 We welcome feedback and suggestions to help improve the NHS App prototype.
 
-If you have any ideas, feature requests, or issues to report, please submit them by raising an [issue on GitHub](https://github.com/nhsuk/nhsapp-prototype/issues) or contributing directly via a pull request.
+If you have any ideas, feature requests, or issues to report, please [submit an issue on GitHub](https://github.com/nhsuk/nhsapp-prototype/issues).
 
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
 
