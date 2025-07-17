@@ -7,7 +7,7 @@
     background-image: url("/assets/images/hero-image.svg");
     background-repeat: no-repeat;
     background-position: right -20% bottom;
-    background-size: contain;
+    background-size: 370px auto;
   }
 
   .nhsuk-width-container {
@@ -15,7 +15,7 @@
       background-image: url("/assets/images/hero-image.svg");
       background-repeat: no-repeat;
       background-position: right -30px bottom;
-      background-size: contain;
+      background-size: 320px auto;
     }
   }
 
@@ -23,6 +23,14 @@
     @include nhsuk-media-query($until: tablet) {
       padding-bottom: nhsuk-spacing(5);
       padding-top: nhsuk-spacing(5);
+    }
+
+    @include nhsuk-media-query($from: desktop) {
+      min-height: 480px;
+    }
+
+    @include nhsuk-media-query($from: large-desktop) {
+      min-height: 420px;
     }
   }
 }
