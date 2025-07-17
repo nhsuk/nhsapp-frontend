@@ -3,6 +3,22 @@
 .app-hero {
   background-color: $app-brand-color;
 
+  @include nhsuk-media-query($from: desktop, $until: large-desktop) {
+    background-image: url("/assets/images/hero-image.svg");
+    background-repeat: no-repeat;
+    background-position: right -20% bottom;
+    background-size: contain;
+  }
+
+  .nhsuk-width-container {
+    @include nhsuk-media-query($from: large-desktop) {
+      background-image: url("/assets/images/hero-image.svg");
+      background-repeat: no-repeat;
+      background-position: right -30px bottom;
+      background-size: contain;
+    }
+  }
+
   .nhsuk-hero__wrapper {
     @include nhsuk-media-query($until: tablet) {
       padding-bottom: nhsuk-spacing(5);
