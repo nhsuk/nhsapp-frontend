@@ -15,6 +15,10 @@ export default [
   {
     from: '/patterns/confirmation-page/',
     to: 'https://service-manual.nhs.uk/design-system/patterns/confirmation-page'
+  },
+  {
+    from: '/get-started/github-and-heroku/',
+    to: '/get-started/nhsapp-prototype/'
   }
 
   // Add more redirects here as needed
