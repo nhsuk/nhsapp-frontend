@@ -19,22 +19,22 @@ When we find our work could have applications beyond the app, we contribute thos
 
 ## Learning from others
 
-- **[Component and pattern discussions](https://github.com/nhsuk/nhsapp-frontend/discussions)** - A space for discussing design components and patterns in the NHS App design system, and possible future additions.
-- **[NHS App design history](https://nhsdigital.github.io/design-history-nhsapp/)** - A place to record of design and research for the NHS App.
+- **[Component and pattern discussions](https://github.com/nhsuk/nhsapp-frontend/discussions)** – A space for discussing design components and patterns in the NHS App design system, and possible future additions.
+- **[NHS App design history](https://nhsdigital.github.io/design-history-nhsapp/)** – A place to record of design and research for the NHS App.
 
 ## Prototyping
 
-- **[NHS App Figma library](https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=1-2321&t=MVpqU429rpUKsPm3-1)** - Use NHS App design system components in Figma for rapid wireframing and basic prototyping.
-- **[NHS App prototype](/get-started/nhsapp-prototype/)** - Rapidly make interactive, accessible and realistic prototypes of NHS App services.
+- **[NHS App Figma library](https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=1-2321&t=MVpqU429rpUKsPm3-1)** – Use NHS App design system components in Figma for rapid wireframing and basic prototyping.
+- **[NHS App prototype](/get-started/nhsapp-prototype/)** – Rapidly make interactive, accessible and realistic prototypes of NHS App services.
 
 ## Production
 
-- **[NHS App frontend](/get-started/nhsapp-frontend/)** - A CSS library for NHS App design system built on top of the NHS.UK frontend.
-- **[Vue component library](https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/readme--docs)** - A Vue Typescript Library for the NHS App design system.
+- **[NHS App frontend](/get-started/nhsapp-frontend/)** – A CSS library for NHS App design system built on top of the NHS.UK frontend.
+- **[Vue component library](https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/readme--docs)** – A Vue Typescript Library for the NHS App design system.
 
 ## Tracking progress
 
-- **[Design system team sprint board](https://github.com/orgs/nhsuk/projects/18/views/1)** - A GitHub project board to track progress of NHS App design system work.
+- **[Design system team sprint board](https://github.com/orgs/nhsuk/projects/18/views/1)** – A GitHub project board to track progress of NHS App design system work.
 
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
 
