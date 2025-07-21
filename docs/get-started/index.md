@@ -13,6 +13,8 @@ Your general starting point should still be the wider [NHS design system](https:
 
 The NHS App design system has been created to complement that main design system, by covering design principles and components that are specific to the app.
 
+When we find our work could have applications beyond the app, we contribute those findings and ideas back to the wider NHS design system.
+
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
 
 ## Learning from others
