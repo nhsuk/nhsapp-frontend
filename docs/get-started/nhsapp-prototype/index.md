@@ -14,6 +14,8 @@ The NHS App lets you create interactive prototypes that look like real NHS App p
 - [Store prototype code on GitHub](/get-started/nhsapp-prototype/github/)
 - [Host prototypes on Heroku](/get-started/nhsapp-prototype/heroku/)
 
+You can also [read a blog about why prototyping in code is important](https://digital.nhs.uk/blog/design-matters/2025/why-we-are-reinvesting-in-the-nhs-prototype-kit).
+
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
 
 ## Help improve the NHS App prototype
