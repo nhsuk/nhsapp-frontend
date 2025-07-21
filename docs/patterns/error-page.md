@@ -126,3 +126,7 @@ We want to learn more about:
 - "try again" buttons on errors, and how we can best help users when these fail to solve the problem
 - how we can avoid users needing to manually input error codes, for example by pre-populating these codes on our contact form
 - how this guidance could evolve into separate pages covering specific errors
+
+## Design history
+
+Find out more about how we arrived at this pattern in our [design history post on error page guidance](https://nhsdigital.github.io/design-history-nhsapp/design-system/2025/06/error-page-guidance/).
