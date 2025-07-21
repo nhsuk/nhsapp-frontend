@@ -22,7 +22,7 @@ The NHS App design system has been created to complement that main design system
 
 ## Prototyping
 
-- **[NHS App Figma library](#)** - Use NHS App design system components in Figma for rapid wireframing and basic prototyping.
+- **[NHS App Figma library](https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=1-2321&t=MVpqU429rpUKsPm3-1)** - Use NHS App design system components in Figma for rapid wireframing and basic prototyping.
 - **[NHS App prototype](/get-started/nhsapp-prototype/)** - Rapidly make interactive, accessible and realistic prototypes of NHS App services.
 
 ## Production
