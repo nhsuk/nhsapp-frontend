@@ -10,3 +10,12 @@
     }
   }
 }
+
+.app-hero-img {
+  margin: 56px auto 56px auto;
+  max-width: 100%;
+
+  @include nhsuk-media-query($until: desktop) {
+    display: none;
+  }
+}

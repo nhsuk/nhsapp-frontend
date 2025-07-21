@@ -1,0 +1,51 @@
+{% extends "./sidebar.njk" %}
+
+{%- from "./partials/side-navigation.njk" import appSideNavigation %}
+
+{% block beforeContent %}
+  {% if title === "Get started" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        },
+        {
+          href: "/get-started",
+          text: "Get started"
+        }
+      ],
+      href: "/get-started/nhsapp-prototype",
+      text: "NHS App prototrype"
+    }) }}
+  {% endif %}
+{% endblock %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    label: 'NHS App prototype',
+    currentPath: page.url,
+    sections: [
+      {
+        heading: {
+          text: 'NHS App prototype'
+        },
+        items: collections.nhsappPrototype | sort(attribute="data.order")
+      }
+    ]
+  }) }}
+{% endset %}
+
+{% block main %}
+  <span class="nhsuk-caption-xl">NHS App prototype</span>
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {{ title }}
+  </h1>
+  {{ content | safe }}
+  
+{% endblock %}
