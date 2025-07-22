@@ -19,7 +19,7 @@ When we find our work could have applications beyond the app, we contribute thos
 
 ## Learning from others
 
-- **[Component and pattern discussions](https://github.com/nhsuk/nhsapp-frontend/discussions)** – A space for discussing design components and patterns in the NHS App design system, and possible future additions.
+- **[Component and pattern discussions](https://github.com/orgs/nhsuk/projects/8)** – A space on GitHub for discussing design components and patterns in the NHS App design system, and possible future additions.
 - **[NHS App design history](https://nhsdigital.github.io/design-history-nhsapp/)** – A place to record of design and research for the NHS App.
 
 ## Prototyping
