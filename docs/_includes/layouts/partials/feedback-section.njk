@@ -1,18 +1,14 @@
 {% if tags and ("page" in tags or "helpUsers" in tags or "component" in tags) %}
 
-  {% if tags and ("page" in tags or "helpUsers" in tags) %}
-    <h2>Help improve this pattern</h2>
-  {% else %}
-    <h2>Help improve this component</h2> 
-  {% endif %}
+  <h2>Help improve this {% if tags and ("component" in tags) %}component{% else %}pattern{% endif %}</h2> 
 
-  <p>To help make sure that this page is useful, relevant and up to date, you can:</p>
+  <p>The NHS App design system team would like to hear:</p>
 
   <ul>
-    <li>take part in the <a href="https://github.com/nhsuk/nhsapp-frontend/issues/{{ backlogID }}">'{{ title }}' discussion on GitHub</a> and share your research</li>
-    <li><a href="{{ page.inputPath | toGitHubUrl }}" class="nhsuk-link">propose a change on GitHub</a> - read more about <a href="/community/propose-change/">how to propose changes in GitHub</a></li>
+    <li>how you have used this {% if tags and ("component" in tags) %}component{% else %}pattern{% endif %} in your service</li>
+    <li>any feedback you have about its usage, for example accessibility or ideas for improvement</li>
   </ul>
 
-  <p>You can also <a href="/community/help-and-feedback/">share feedback with us on Slack</a>.</p>
+  <p>Add these comments to the <a href="https://github.com/nhsuk/nhsapp-frontend/issues/{{ backlogID }}">'{{ title }}' discussion on GitHub</a>.</p>
 
 {% endif %}

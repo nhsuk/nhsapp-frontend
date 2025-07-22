@@ -24,5 +24,3 @@ For troubleshooting or support, you can ask the design Slack community at:
 
 - [#help-with-heroku](https://nhsdigitalcorporate.enterprise.slack.com/archives/C089RQPDZ9V)
 - [#nhsapp-design-system](https://nhsdigitalcorporate.enterprise.slack.com/archives/C06GY1LRP19)
-
-<hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
