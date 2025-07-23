@@ -19,7 +19,9 @@ If you do not have one already, you can [create a GitHub account for free](https
 
 At the bottom of every page in the design system you will find a section called "Help improve this page".
 
-Follow the link to propose a change to the page. This will take you to the page’s Markdown file.
+![A screenshot of the 'Fork this repo' button on GitHub](/assets/images/propose-change-link.png)
+
+Follow the link to "Propose a change on GitHub". This will take you to the page’s Markdown file.
 
 You might be told you need to fork the design system repository to make changes. This is nothing to worry about. It just means you’re making a copy of the design system that you can edit. Select **Fork this repository** to continue.
 
