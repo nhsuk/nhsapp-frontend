@@ -56,7 +56,7 @@
             </ul>
           </div>
           <div class="nhsuk-grid-column-full">
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break nhsuk-u-margin-top-0">
+            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break nhsuk-u-margin-top-0 app-section-break--width-4">
           </div>
           <div class="nhsuk-grid-column-one-half app-section__column">
             <h2>Components</h2>
@@ -69,16 +69,23 @@
             <p><a href="/patterns/" class="nhsuk-link--no-visited-state">Browse patterns</a></p>
           </div>
           <div class="nhsuk-grid-column-full">
-            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break nhsuk-u-margin-top-0">
+            <hr class="nhsuk-section-break nhsuk-section-break--l nhsuk-section-break--visible app-section-break nhsuk-u-margin-top-0 app-section-break--width-4">
           </div>
           <div class="nhsuk-grid-column-two-thirds">
-              <h2>Contributing</h2>
-              <p>Anyone can contribute to the NHS App design system. You can share findings or suggest a change.</p>
-              <p><a href="/community/" class="nhsuk-link--no-visited-state">Find out how to contribute</a></p>
+            <h2>Contributing</h2>
+            <p>Anyone can contribute to the NHS App design system. You can share findings or suggest a change.</p>
+            <p class="nhsuk-u-static-margin-bottom-3"><a href="/community/" class="nhsuk-link--no-visited-state">Find out how to contribute</a></p>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+          {% include "layouts/partials/propose-change.njk" %}
+        </div>
+      </div>
+    </div>
   </main>
 
 {% endblock container %}
