@@ -94,7 +94,7 @@ Talk to your service’s clinical lead for advice when you create or update an e
 
 Signpost users to contact the NHS App team if:
 
-- the error is being tracked by the service management team
+- the service management team agree it could be helpful in this scenario
 - it's a technical problem
 
 Use the h2 "If the problem continues" and include an error code.
