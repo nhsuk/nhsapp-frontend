@@ -10,7 +10,7 @@ help: no
 Store your prototype as a repository in the GitHub NHS Digital organisation account.
 
 1. Request access to the GitHub NHS Digital organisation. Follow the [GitHub users guidance on SharePoint](https://nhs.sharepoint.com/:u:/r/sites/X26_EngineeringCOE/SitePages/GitHub-User---how-to-request-access.aspx?csf=1&web=1&e=T1oQKj) (use your `nhs.net` email to access this link).
-2. Once you have access, go to the [GitHub NHS Digital organisation](https://github.com/NHSDigital) and use your `hscic.gov.uk` email to log in.
+2. Once you have access, go to the [GitHub NHS Digital organisation](https://github.com/NHSDigital) and use your `nhs.net` email to log in.
 3. Select **New** to create a repository.
 4. Name your prototype to avoid confusion with production services. Use the format `nhsapp-prototype-[project-name]`, such as `nhsapp-prototype-prescriptions`.
 5. Select **Internal** and **Create repository**.
