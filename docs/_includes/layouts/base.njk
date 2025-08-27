@@ -52,33 +52,35 @@
 
       {% block header %}
         {{ header({
-          service: {
-            name: "App design system"
+          logo: {
+            href: "/",
+            ariaLabel: "NHS App design system"
           },
-          showNav: "true",
-          showSearch: "false",
-          homeHref: baseUrl,
-          classes: "app-header",
-          primaryLinks: [
+          service: {
+            text: "App design system",
+            href: "/"
+          },
+          navigation: {
+            items: [
               {
-                url  : "/get-started/",
-                label : "Get started"
+                href: "/get-started/",
+                text: "Get started"
               },
               {
-                url : '/components/',
-                label : 'Components'
+                href: '/components/',
+                text: 'Components'
               },
               {
-                url : '/patterns/',
-                label : 'Patterns'
+                href: '/patterns/',
+                text: 'Patterns'
               },
               {
-                url  : '/community/',
-                label : 'Community'
+                href: '/community/',
+                text: 'Community'
               }
             ]
-          })
-        }}
+          }
+        }) }}
       {% endblock %}
 
       {% block container %}
@@ -96,12 +98,12 @@
         {{ footer({
           links: [
             {
-              URL: "/community/help-and-feedback/",
-              label: "Help and feedback"
+              href: "/community/help-and-feedback/",
+              text: "Help and feedback"
             },
             {
-              URL: "https://github.com/nhsuk/nhsapp-frontend",
-              label: "Code on Github"
+              href: "https://github.com/nhsuk/nhsapp-frontend",
+              text: "Code on Github"
             }
           ]
         })}}
