@@ -19,7 +19,7 @@ function clean() {
 function compileCSS() {
   return gulp
     .src(['src/all.scss'])
-    .pipe(sass())
+    .pipe(sass({ includePaths: ['node_modules'] }))
     .on('error', (err) => {
       console.log(err)
       throw new Error(err)

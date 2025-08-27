@@ -1,5 +1,5 @@
-@import "node_modules/nhsuk-frontend/packages/core/tools";
-@import "node_modules/nhsuk-frontend/packages/core/settings";
+// Import NHS.UK frontend v10 (core + components) using dist index so mixins are globally available
+@import "node_modules/nhsuk-frontend/dist/nhsuk/index";
 
 // styles
 @import "styles/icon/icons";

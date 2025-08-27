@@ -1,6 +1,6 @@
 import path from 'path'
 import nunjucks from 'nunjucks'
-import sass from 'sass'
+import * as sass from 'sass'
 import fs from 'fs-extra'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
@@ -22,9 +22,11 @@ const nunjucksEnv = nunjucks.configure([
   'docs/_includes',
   'docs/assets',
 
-  // NHS.UK frontend components
-  'node_modules/nhsuk-frontend/packages/components',
-  'node_modules/nhsuk-frontend/packages/macros'
+  // NHS.UK frontend components (updated for v10)
+  'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
+  'node_modules/nhsuk-frontend/dist/nhsuk',
+  'node_modules/nhsuk-frontend/dist/nhsuk/components',
+  'node_modules/nhsuk-frontend/dist/nhsuk/macros'
 ])
 
 export default function (eleventyConfig) {
@@ -65,13 +67,10 @@ export default function (eleventyConfig) {
 
   // Add NHSUK frontend JS components to docs
   eleventyConfig.addPassthroughCopy({
-    'node_modules/nhsuk-frontend/packages': 'nhsuk-frontend'
-  })
-
-  // Add NHSUK frontend compiled JS/CSS to docs
-  eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
   })
+
+  // Removed legacy packages passthrough (no longer present in v10)
 
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)

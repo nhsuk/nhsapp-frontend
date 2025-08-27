@@ -9,12 +9,10 @@
 <!DOCTYPE html>
 <html lang="en" {% if htmlClasses %} class="{{ htmlClasses }}"{% endif %}>
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <link href="/assets/css/app.css" rel="stylesheet" />
-    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
     <script src="/assets/js/app.js" defer></script>
 
     <title>{{ title }}</title>
@@ -42,7 +40,7 @@
   </head>
   <body>
     <script>
-      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+      document.body.className += (document.body.className ? ' js-enabled' : 'js-enabled') + ('noModule' in HTMLScriptElement.prototype ? ' nhsuk-frontend-supported' : '')
     </script>
     {% block body %}
       {% block skiplink %}
@@ -110,5 +108,11 @@
       {% endblock %}
 
     {% endblock body %}
+
+    <script type="module" src="/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js"></script>
+    <script type="module">
+      import { initAll } from '/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js'
+      initAll()
+    </script>
   </body>
 </html>
