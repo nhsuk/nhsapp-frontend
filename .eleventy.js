@@ -10,9 +10,6 @@ import anchor from 'markdown-it-anchor'
 import matter from 'gray-matter'
 import prettier from 'prettier'
 
-// Import redirects from separate file
-import redirects from './redirects.js'
-
 const nunjucksEnv = nunjucks.configure([
   // Our own styles and assets
   'src/styles',
@@ -60,7 +57,6 @@ export default function (eleventyConfig) {
   // Watch for changes in these directories and files
   eleventyConfig.addWatchTarget('./src/')
   eleventyConfig.addWatchTarget('./docs/assets/')
-  eleventyConfig.addWatchTarget('./redirects.js') // Watch redirects file for changes
 
   // Add images to docs
   eleventyConfig.addPassthroughCopy('docs/assets/images')
@@ -74,9 +70,6 @@ export default function (eleventyConfig) {
 
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)
-
-  // Make redirects available as global data
-  eleventyConfig.addGlobalData('redirects', redirects)
 
   eleventyConfig.addTemplateFormats('scss')
   eleventyConfig.addExtension('scss', {
