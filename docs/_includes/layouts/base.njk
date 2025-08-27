@@ -96,17 +96,19 @@
 
       {% block footer %}
         {{ footer({
-          links: [
-            {
-              href: "/community/help-and-feedback/",
-              text: "Help and feedback"
-            },
-            {
-              href: "https://github.com/nhsuk/nhsapp-frontend",
-              text: "Code on Github"
-            }
-          ]
-        })}}
+          meta: {
+            items: [
+              {
+                href: "/community/help-and-feedback/",
+                text: "Help and feedback"
+              },
+              {
+                href: "https://github.com/nhsuk/nhsapp-frontend",
+                text: "Code on Github"
+              }
+            ]
+          }
+        }) }}
       {% endblock %}
 
     {% endblock body %}
