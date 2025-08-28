@@ -9,7 +9,7 @@
 }
 
 .app-tabs__list {
-  border: 1px solid $nhsuk-border-color;
+  border: 1px solid $nhsuk-border-colour;
   border-top: 0;
   list-style: none;
   margin: 0;
@@ -19,7 +19,7 @@
 }
 
 .app-tabs__list-item {
-  border-right: 1px solid $nhsuk-border-color;
+  border-right: 1px solid $nhsuk-border-colour;
   margin: 0;
 
   z-index: 2;
@@ -45,10 +45,10 @@
     text-decoration: none;
 
     &:focus {
-      background-color: $nhsuk-focus-color;
+      background-color: $nhsuk-focus-colour;
       box-shadow:
-        0 -2px $nhsuk-focus-color,
-        inset 0 -4px $nhsuk-focus-text-color;
+        0 -2px $nhsuk-focus-colour,
+        inset 0 -4px $nhsuk-focus-text-colour;
     }
   }
 }
@@ -56,7 +56,7 @@
 .app-tabs__panel {
   @include nhsuk-font($size: 16);
   background-color: nhsuk-colour("white");
-  border: 1px solid $nhsuk-border-color;
+  border: 1px solid $nhsuk-border-colour;
   border-top: 0;
   position: relative;
 

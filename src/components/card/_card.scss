@@ -30,12 +30,12 @@ $card-border-hover-color: nhsuk-colour("grey-3");
       height: 28px;
       width: 28px;
     }
-    fill: $nhsuk-link-color;
+    fill: $nhsuk-link-colour;
   }
 
   &:hover {
     .nhsapp-icon {
-      fill: $nhsuk-link-hover-color;
+      fill: $nhsuk-link-hover-colour;
     }
   }
 

@@ -36,22 +36,22 @@
   a:link,
   a:visited {
     border-left: 4px solid transparent;
-    color: $nhsuk-link-color;
+    color: $nhsuk-link-colour;
     display: block;
     padding: nhsuk-spacing(1) nhsuk-spacing(2);
     text-decoration: none;
   }
 
   a:hover {
-    color: $nhsuk-link-hover-color;
-    border-color: $nhsuk-link-hover-color;
+    color: $nhsuk-link-hover-colour;
+    border-color: $nhsuk-link-hover-colour;
   }
 
   a:focus {
-    background-color: $nhsuk-focus-color;
-    border-color: $nhsuk-focus-text-color;
+    background-color: $nhsuk-focus-colour;
+    border-color: $nhsuk-focus-text-colour;
     box-shadow: none;
-    color: $nhsuk-focus-text-color;
+    color: $nhsuk-focus-text-colour;
     position: relative;
   }
 }
@@ -59,21 +59,21 @@
 .app-side-navigation__item--active {
   a:link,
   a:visited {
-    border-color: $nhsuk-link-color;
-    color: $nhsuk-link-color;
+    border-color: $nhsuk-link-colour;
+    color: $nhsuk-link-colour;
     font-weight: bold;
   }
 
   a:hover {
-    border-color: $nhsuk-link-hover-color;
-    color: $nhsuk-link-hover-color;
+    border-color: $nhsuk-link-hover-colour;
+    color: $nhsuk-link-hover-colour;
   }
 
   a:focus {
-    background-color: $nhsuk-focus-color;
-    border-color: $nhsuk-focus-text-color;
+    background-color: $nhsuk-focus-colour;
+    border-color: $nhsuk-focus-text-colour;
     box-shadow: none;
-    color: $nhsuk-focus-text-color;
+    color: $nhsuk-focus-text-colour;
   }
 }
 
@@ -87,7 +87,7 @@
 }
 
 .app-side-navigation--section {
-  border-top: 1px solid $nhsuk-border-color;
+  border-top: 1px solid $nhsuk-border-colour;
   padding-top: nhsuk-spacing(4);
 }
 
