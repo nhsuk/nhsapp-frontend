@@ -15,7 +15,7 @@
 }
 
 .app-example__frame {
-  background-color: $color_nhsuk-white;
+  background-color: nhsuk-colour("white");
   border: 0;
   display: block;
   width: 100%;
@@ -40,7 +40,7 @@
   a,
   a:link,
   a:visited {
-    color: $color_nhsuk-blue;
+    color: nhsuk-colour("blue");
     display: inline-block;
     text-decoration: underline;
   }
@@ -59,7 +59,7 @@
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: $color_nhsuk-white;
+  background: nhsuk-colour("white");
   margin: 0;
 }
 
@@ -68,10 +68,10 @@ pre[class*="language-"] {
 }
 
 .app-copy__button {
-  background-color: $color_nhsuk-white;
-  border: 1px solid $color_nhsuk-green;
-  box-shadow: 0 2px 0 $color_nhsuk-green;
-  color: $color_nhsuk-green;
+  background-color: nhsuk-colour("white");
+  border: 1px solid nhsuk-colour("green");
+  box-shadow: 0 2px 0 nhsuk-colour("green");
+  color: nhsuk-colour("green");
   cursor: pointer;
   font-size: 14px;
   padding: 2px 8px;
@@ -80,8 +80,8 @@ pre[class*="language-"] {
   top: 16px;
 
   &:hover {
-    background-color: $color_nhsuk-green;
-    color: $color_nhsuk-white;
+    background-color: nhsuk-colour("green");
+    color: nhsuk-colour("white");
   }
 
   &:focus {

@@ -39,9 +39,9 @@ $color_tag-yellow-text: #5b4701;
     ========================================================================== */
 
 .nhsapp-tag--white {
-  background-color: $color_nhsuk-white;
-  border-color: $color_nhsuk-grey-4;
-  color: $color_nhsuk-black;
+  background-color: nhsuk-colour("white");
+  border-color: nhsuk-colour("grey-4");
+  color: nhsuk-colour("black");
 }
 
 .nhsapp-tag--grey {

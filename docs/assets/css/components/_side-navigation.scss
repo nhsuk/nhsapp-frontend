@@ -12,7 +12,7 @@
 .app-side-navigation__title {
   @include nhsuk-font($size: 19);
 
-  color: $color_nhsuk-grey-1;
+  color: nhsuk-colour("grey-1");
   font-weight: normal;
   margin: 0;
   padding: nhsuk-spacing(1) nhsuk-spacing(2) nhsuk-spacing(2) 0;

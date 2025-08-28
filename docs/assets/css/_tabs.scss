@@ -5,7 +5,7 @@
 .app-tabs {
   @include nhsuk-responsive-margin(5, "bottom");
 
-  background-color: $color_nhsuk-white;
+  background-color: nhsuk-colour("white");
 }
 
 .app-tabs__list {
@@ -27,7 +27,7 @@
 
 .app-tabs__tab {
   @include nhsuk-font($size: 19);
-  color: $color_nhsuk-blue;
+  color: nhsuk-colour("blue");
   display: block;
   padding: 16px;
   position: relative;
@@ -38,8 +38,8 @@
   }
 
   &[aria-selected="true"] {
-    background-color: $color_nhsuk-white;
-    color: $color_nhsuk-black;
+    background-color: nhsuk-colour("white");
+    color: nhsuk-colour("black");
     margin-bottom: -1px;
     padding-bottom: 21px;
     text-decoration: none;
@@ -55,7 +55,7 @@
 
 .app-tabs__panel {
   @include nhsuk-font($size: 16);
-  background-color: $color_nhsuk-white;
+  background-color: nhsuk-colour("white");
   border: 1px solid $nhsuk-border-color;
   border-top: 0;
   position: relative;
