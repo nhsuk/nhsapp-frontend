@@ -15,7 +15,7 @@ However, Figma is also a helpful tool for quickly creating and collaborating on 
 ## How to add the Figma library to your file
 
 1. In your Figma file, select the Figma "F" logo in the top left corner.
-2. Select **Libraries**.
+2. Select **Libraries**. Another way to reach your libraries is to select the book icon shown in the image.
 
 ![A screenshot of the Figma menu with the term 'file' highlighted](/assets/images/figma-library-step-1.png)
 
@@ -28,7 +28,7 @@ However, Figma is also a helpful tool for quickly creating and collaborating on 
 
 ## How to find and use components and patterns
 
-1. In the **Assets** menu on the left-hand menu, select **NHS App design system**.
+1. In the **Assets** tab on the left-hand menu, select **NHS App design system**.
 2. Find the asset you need and select **Insert instance** to add it into your file.
 
 ![A screenshot of the assets menu in Figma with an example of an NHS App component you can add](/assets/images/figma-library-step-3.png)
