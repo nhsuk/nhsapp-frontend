@@ -76,13 +76,13 @@ pre {
   }
 
   &--with-bottom-border {
-    border-bottom: 4px solid nhsuk-colour("grey-4");
+    border-bottom: 4px solid $nhsuk-border-colour;
   }
 }
 
 .app-section-break {
   border-width: 2px;
-  border-color: nhsuk-colour("grey-4");
+  border-color: $nhsuk-border-colour;
 }
 
 .app-section-break--width-4 {
