@@ -6,6 +6,7 @@ import zip from 'gulp-zip'
 import rename from 'gulp-rename'
 import cleanCSS from 'gulp-clean-css'
 import packageJson from './package.json' with { type: 'json' }
+import PluginError from 'plugin-error'
 
 /* Configure the sass compiler */
 const sass = gulpSass(dartSass)
@@ -15,17 +16,25 @@ function clean() {
   return gulp.src('dist', { allowEmpty: true }).pipe(gulpClean())
 }
 
-/* Build the CSS from source */
+/* Build the CSS from source (with sourcemaps + improved error handling) */
 function compileCSS() {
   return gulp
-    .src(['src/all.scss'])
-    .pipe(sass({ includePaths: ['node_modules'] }))
-    .on('error', (err) => {
-      console.log(err)
-      throw new Error(err)
-    })
+    .src(['src/all.scss'], { sourcemaps: true })
+    .pipe(
+      sass({
+        loadPaths: ['node_modules'],
+        // Enable source maps so line numbers map back to source during development
+        sourceMap: true,
+        sourceMapIncludeSources: true
+      }).on('error', (error) => {
+        // Provide a nicely formatted Sass error
+        throw new PluginError('compileCSS', error.messageFormatted || error.message, {
+          showProperties: false
+        })
+      })
+    )
     .pipe(rename('nhsapp.css'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist', { sourcemaps: '.' }))
 }
 
 /* Minify CSS and add a min.css suffix */
@@ -33,7 +42,8 @@ function minifyCSS() {
   return gulp
     .src([
       'dist/*.css',
-      '!dist/*.min.css' // don't re-minify minified css
+      '!dist/*.min.css', // don't re-minify minified css
+      '!dist/*.css.map' // ignore source map files
     ])
     .pipe(cleanCSS())
     .pipe(
