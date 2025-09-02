@@ -28,9 +28,13 @@ function compileCSS() {
         sourceMapIncludeSources: true
       }).on('error', (error) => {
         // Provide a nicely formatted Sass error
-        throw new PluginError('compileCSS', error.messageFormatted || error.message, {
-          showProperties: false
-        })
+        throw new PluginError(
+          'compileCSS',
+          error.messageFormatted || error.message,
+          {
+            showProperties: false
+          }
+        )
       })
     )
     .pipe(rename('nhsapp.css'))
