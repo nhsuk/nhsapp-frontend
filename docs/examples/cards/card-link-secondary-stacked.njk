@@ -9,12 +9,9 @@ vueLink: ""
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 {% from "nhsapp/styles/section-heading/macro.njk" import nhsappSectionHeading %}
 
-{{ nhsappSectionHeading({
-  headingText: "Settings"
-}) }}
-
 {{ nhsappCardGroup({
   stacked: true,
+  heading: "Settings",
   cards: [
     {
       title: 'Login and security',
@@ -27,12 +24,9 @@ vueLink: ""
   ]
 }) }}
 
-{{ nhsappSectionHeading({
-  headingText: "About the NHS App"
-}) }}
-
 {{ nhsappCardGroup({
   stacked: true,
+  heading: "About the NHS App",
   classes: 'nhsapp-cards--secondary',
   cards: [
     {

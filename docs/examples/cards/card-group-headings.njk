@@ -9,14 +9,9 @@ vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?pat
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 {% from "nhsapp/styles/section-heading/macro.njk" import nhsappSectionHeading %}
 
-
-
-{{ nhsappSectionHeading({
-  headingText: "Your GP services"
-}) }}
-
 {{ nhsappCardGroup({
   stacked: true,
+  heading: "Your GP services",
   cards: [
     {
       title: 'Request repeat prescriptions',
@@ -33,12 +28,9 @@ vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?pat
   ]
 }) }}
 
-{{ nhsappSectionHeading({
-  headingText: "Other NHS services"
-}) }}
-
 {{ nhsappCardGroup({
   stacked: true,
+  heading: "Other NHS services",
   cards: [
     {
       title: 'Book',

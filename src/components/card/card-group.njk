@@ -1,6 +1,19 @@
 {% set stackedClass = 'nhsapp-cards--stacked' if params.stacked else '' %}
+{% set headingLevel = params.headingLevel if params.headingLevel else 2 %}
 
 {% from "./macro.njk" import nhsappCard %}
+
+{% if params.heading %}
+  <h{{ headingLevel }} class="nhsapp-cards__heading {{ headingClass }}">
+    {{ params.heading }}
+  </h{{ headingLevel }}>
+{% endif %}
+
+{% if params.description %}
+  <p class="nhsapp-cards__description {{ descriptionClass }}">
+    {{ params.description }}
+  </p>
+{% endif %}
 
 <ul class="nhsapp-cards {{ stackedClass }}
 {{ params.classes if params.classes }}">

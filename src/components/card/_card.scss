@@ -171,3 +171,28 @@ $card-border-radius: 8px;
 .nhsapp-card--secondary {
   background: transparent;
 }
+
+// Card heading
+.nhsapp-cards__heading {
+  @include nhsuk-font-size(22);
+  @include nhsuk-responsive-margin(3, "bottom");
+
+  padding-top: 0;
+}
+
+.nhsapp-cards__heading + .nhsapp-cards__description {
+  margin-top: - nhsuk-spacing(2);
+
+  @include nhsuk-media-query($from: tablet) {
+    margin-top: - nhsuk-spacing(3);
+  }
+}
+
+.nhsapp-cards__description {
+  color: $nhsuk-secondary-text-colour;
+  margin-bottom: 12px;
+
+  @include nhsuk-media-query($from: tablet) {
+    margin-bottom: nhsuk-spacing(3);
+  }
+}
