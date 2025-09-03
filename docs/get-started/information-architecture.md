@@ -42,10 +42,6 @@ The NHS App has a [homepage](/patterns/homepage/) and four [hub pages](/patterns
 
 Across all parts of the app, the options available to users depend on which services their GP surgery has turned on.
 
-## Using the sitemap
-
-You can view the [sitemap (on Figma)](https://www.figma.com/file/KFydJohITA4qMVpEqCghCo/%E2%9C%8F%EF%B8%8F-Frontier--%3E-NHS-App-Navigation-%26-IA?type=design&node-id=3%3A597&mode=design&t=9n9RqjUFYJ2LBbEP-1) to see the complete structure of the NHS App.
-
 ## Further reading
 
 - [Information architecture study guide (Neilsen Norman)](https://www.nngroup.com/articles/ia-study-guide/)
