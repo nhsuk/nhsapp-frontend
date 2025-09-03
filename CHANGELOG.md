@@ -1,5 +1,59 @@
 # NHS App Frontend Changelog
 
+## `v5.0.0` - UNRELEASED
+
+### Breaking changes
+
+Bumped `nhsuk-frontend` version to `v10.0.0` ([PR 378](https://github.com/nhsuk/nhsapp-frontend/pull/378)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
+
+#### Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`
+
+##### Remove `nhsapp-button` from button components
+
+Before:
+
+```
+<button class="nhsuk-button nhsapp-button">
+  Continue
+</button>
+```
+
+After:
+
+```
+<button class="nhsuk-button">
+  Continue
+</button>
+```
+
+##### Swap `nhsapp-button-group` → with `nhsuk-button-group`
+
+Before:
+
+```
+<div class="nhsapp-button-group">
+  <button class="nhsuk-button nhsapp-button">
+    Continue
+  </button>
+  <button class="nhsuk-button nhsuk-button--secondary nhsapp-button">
+    Try again
+  </button>
+</div>
+```
+
+After:
+
+```
+<div class="nhsuk-button-group">
+  <button class="nhsuk-button">
+    Continue
+  </button>
+  <button class="nhsuk-button nhsuk-button--secondary">
+    Try again
+  </button>
+</div>
+```
+
 ## `v4.0.0` - 17 June 2025
 
 ### Breaking changes

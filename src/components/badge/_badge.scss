@@ -9,9 +9,9 @@
 
   display: inline-block;
 
-  background-color: $nhsuk-error-color;
+  background-color: $nhsuk-error-colour;
   border-radius: nhsuk-spacing(1);
-  color: $color_nhsuk-white;
+  color: nhsuk-colour("white");
   font-weight: bold;
   padding: 0 nhsuk-spacing(2);
   margin: 0;
@@ -53,7 +53,7 @@ $nhsapp-badge-size-tablet: 12px;
     @include small-badge-position($nhsapp-badge-size-tablet);
   }
 
-  background-color: $nhsuk-error-color;
+  background-color: $nhsuk-error-colour;
 }
 
 .nhsapp-badge-small--absolute {
