@@ -1,6 +1,6 @@
 import path from 'path'
 import nunjucks from 'nunjucks'
-import sass from 'sass'
+import * as sass from 'sass'
 import fs from 'fs-extra'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
@@ -9,9 +9,6 @@ import anchor from 'markdown-it-anchor'
 
 import matter from 'gray-matter'
 import prettier from 'prettier'
-
-// Import redirects from separate file
-import redirects from './redirects.js'
 
 const nunjucksEnv = nunjucks.configure([
   // Our own styles and assets
@@ -22,9 +19,11 @@ const nunjucksEnv = nunjucks.configure([
   'docs/_includes',
   'docs/assets',
 
-  // NHS.UK frontend components
-  'node_modules/nhsuk-frontend/packages/components',
-  'node_modules/nhsuk-frontend/packages/macros'
+  // NHS.UK frontend components (updated for v10)
+  'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
+  'node_modules/nhsuk-frontend/dist/nhsuk',
+  'node_modules/nhsuk-frontend/dist/nhsuk/components',
+  'node_modules/nhsuk-frontend/dist/nhsuk/macros'
 ])
 
 export default function (eleventyConfig) {
@@ -58,26 +57,19 @@ export default function (eleventyConfig) {
   // Watch for changes in these directories and files
   eleventyConfig.addWatchTarget('./src/')
   eleventyConfig.addWatchTarget('./docs/assets/')
-  eleventyConfig.addWatchTarget('./redirects.js') // Watch redirects file for changes
 
   // Add images to docs
   eleventyConfig.addPassthroughCopy('docs/assets/images')
 
   // Add NHSUK frontend JS components to docs
   eleventyConfig.addPassthroughCopy({
-    'node_modules/nhsuk-frontend/packages': 'nhsuk-frontend'
-  })
-
-  // Add NHSUK frontend compiled JS/CSS to docs
-  eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
   })
 
+  // Removed legacy packages passthrough (no longer present in v10)
+
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)
-
-  // Make redirects available as global data
-  eleventyConfig.addGlobalData('redirects', redirects)
 
   eleventyConfig.addTemplateFormats('scss')
   eleventyConfig.addExtension('scss', {

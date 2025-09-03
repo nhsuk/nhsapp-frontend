@@ -1,6 +1,6 @@
 {% extends "./base.njk" %}
 
-{% block container %}
+{% block main %}
   <div class="nhsuk-width-container">
     {% block beforeContent %}{% endblock %}
     <div class="nhsuk-grid-row">
@@ -14,9 +14,9 @@
 
       <div class="nhsuk-grid-column-three-quarters">
         <main role="main" id="maincontent" class="nhsuk-main-wrapper nhsuk-main-wrapper--s app-content">
-          {% block main %}
+          {% block content %}
             {{ content | safe }}
-          {% endblock main %}
+          {% endblock content %}
         </main>
 
         {# Sidebar nav is at the bottom for mobile #}

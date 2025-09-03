@@ -64,7 +64,7 @@ $timeline-border-width: 2px;
     }
 
     &:before {
-      border-left: $timeline-border-width solid $color_nhsuk-grey-3;
+      border-left: $timeline-border-width solid nhsuk-colour("grey-3");
       bottom: 0;
       content: "";
       display: block;
@@ -76,7 +76,7 @@ $timeline-border-width: 2px;
 
     &--past {
       &:before {
-        border-color: $color_nhsuk-blue;
+        border-color: nhsuk-colour("blue");
       }
     }
   }

@@ -1,114 +1,78 @@
-{% from 'header/macro.njk' import header %}
-{% from 'footer/macro.njk' import footer %}
+{% extends "nhsuk/template.njk" %}
+
 {% from 'breadcrumb/macro.njk' import breadcrumb %}
 {% from 'back-link/macro.njk' import backLink %}
-{% from 'skip-link/macro.njk' import skipLink %}
 {% from "icon/macro.njk" import nhsappIcon %}
-{% from 'attributes.njk' import nhsukAttributes %}
 
-<!DOCTYPE html>
-<html lang="en" {% if htmlClasses %} class="{{ htmlClasses }}"{% endif %}>
-  <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% block pageTitle -%}
+  {% if title %}{{ title }} - {% endif %}NHS App design system
+{%- endblock %}
 
-    <link href="/assets/css/app.css" rel="stylesheet" />
-    <script src="/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
-    <script src="/assets/js/app.js" defer></script>
+{% block head %}
+  <link href="/assets/css/app.css" rel="stylesheet" />
+  <script src="/assets/js/app.js" type="module"></script>
 
-    <title>{{ title }}</title>
+  <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
+  <meta property="og:site_name" content="nhs.uk"/>
+  <meta property="og:title" content="NHS App design system"/>
+  <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
 
-    <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/nhsuk-frontend/assets/favicons/apple-touch-icon-180x180.png">
-    <link rel="mask-icon" href="/nhsuk-frontend/assets/favicons/favicon.svg" color="#005eb8">
-    <link rel="icon" sizes="192x192" href="/nhsuk-frontend/assets/favicons/favicon-192x192.png">
-    <meta name="msapplication-TileImage" content="/nhsuk-frontend/assets/favicons/mediumtile-144x144.png">
-    <meta name="msapplication-TileColor" content="#005eb8">
-    <meta name="msapplication-square70x70logo" content="/nhsuk-frontend/assets/favicons/smalltile-70x70.png">
-    <meta name="msapplication-square150x150logo" content="/nhsuk-frontend/assets/favicons/mediumtile-150x150.png">
-    <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
-    <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
+  <script type="module" src="/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js"></script>
+  <script type="module">
+    import { initAll } from '/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js'
+    initAll()
+  </script>
+{% endblock %}
 
-    <meta property="og:url" content="https://design-system.nhsapp.service.nhs.uk/"/>
-    <meta property="og:site_name" content="nhs.uk"/>
-    <meta property="og:title" content="NHS App design system"/>
-    <meta property="og:description" content="Design and build accessible services for the NHS App. Use the NHS App design system to learn from the work and experiences of others."/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:locale" content="en_GB"/>
-    <meta property="og:image" content="https://design-system.nhsapp.service.nhs.uk/assets/images/open-graph.png"/>
+{% block header %}
+  {{ header({
+    logo: {
+      href: "/",
+      ariaLabel: "NHS App design system"
+    },
+    service: {
+      text: "App design system",
+      href: "/"
+    },
+    navigation: {
+      items: [
+        {
+          href: "/get-started/",
+          text: "Get started"
+        },
+        {
+          href: '/components/',
+          text: 'Components'
+        },
+        {
+          href: '/patterns/',
+          text: 'Patterns'
+        },
+        {
+          href: '/community/',
+          text: 'Community'
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
 
-    {% block head %}{% endblock %}
-  </head>
-  <body>
-    <script>
-      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-    </script>
-    {% block body %}
-      {% block skiplink %}
-        {{ skipLink({
-          "URL": "#maincontent",
-          "heading": "Skip to main content"
-        }) }}
-      {% endblock skiplink %}
-
-      {% block header %}
-        {{ header({
-          service: {
-            name: "App design system"
-          },
-          showNav: "true",
-          showSearch: "false",
-          homeHref: baseUrl,
-          classes: "app-header",
-          primaryLinks: [
-              {
-                url  : "/get-started/",
-                label : "Get started"
-              },
-              {
-                url : '/components/',
-                label : 'Components'
-              },
-              {
-                url : '/patterns/',
-                label : 'Patterns'
-              },
-              {
-                url  : '/community/',
-                label : 'Community'
-              }
-            ]
-          })
-        }}
-      {% endblock %}
-
-      {% block container %}
-        <div class="nhsuk-width-container{% if containerClasses %} {{ containerClasses }}{% endif %}">
-          {% block beforeContent %}{% endblock %}
-          <main role="main" id="maincontent" class="nhsuk-main-wrapper {% if mainClasses %} {{ mainClasses }}{% endif %}">
-            {% block main %}
-              {{ content | safe }}
-            {% endblock main %}
-          </main>
-        </div>
-      {% endblock container %}
-
-      {% block footer %}
-        {{ footer({
-          links: [
-            {
-              URL: "/community/help-and-feedback/",
-              label: "Help and feedback"
-            },
-            {
-              URL: "https://github.com/nhsuk/nhsapp-frontend",
-              label: "Code on Github"
-            }
-          ]
-        })}}
-      {% endblock %}
-
-    {% endblock body %}
-  </body>
-</html>
+{% block footer %}
+  {{ footer({
+    meta: {
+      items: [
+        {
+          href: "/community/help-and-feedback/",
+          text: "Help and feedback"
+        },
+        {
+          href: "https://github.com/nhsuk/nhsapp-frontend",
+          text: "Code on Github"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

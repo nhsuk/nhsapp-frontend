@@ -4,12 +4,12 @@ $phone-border-width: 12px;
 $phone-border-radius: 54px;
 $notch-height: 31px;
 $header-height: 44px;
-$phone-background-color: $color_nhsuk-grey-5;
+$phone-background-color: nhsuk-colour("grey-5");
 $bottom-nav-height: 80px; // Adjust this value to match your bottom navigation height
 $phone-inner-radius: $phone-border-radius - $phone-border-width;
 
 $page-background: nhsuk-tint(
-  $color_nhsuk-grey-5,
+  nhsuk-colour("grey-5"),
   60%
 ); // a bit lighter than normal to stand out against phone page background.
 
@@ -32,7 +32,7 @@ html:has(.app-iframe__page) {
 }
 
 .app-iframe__header--blue {
-  background-color: $color_nhsuk-blue;
+  background-color: nhsuk-colour("blue");
 }
 
 .app-iframe__container {

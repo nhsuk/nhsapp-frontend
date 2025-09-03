@@ -11,10 +11,10 @@
     width: 80px;
 
     .nhsuk-logo__background {
-      fill: $color_nhsuk-white;
+      fill: nhsuk-colour("white");
     }
     .nhsuk-logo__text {
-      fill: $color_nhsuk-blue;
+      fill: nhsuk-colour("blue");
     }
   }
 }
