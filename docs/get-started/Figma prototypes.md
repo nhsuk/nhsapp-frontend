@@ -50,6 +50,6 @@ However, Figma is also a helpful tool for quickly creating and collaborating on 
 
 ## How to improve the Figma library
 
-Your input helps us keep the Figma library updated. If you want to add or update a component or pattern, [contact the NHS App design system team](http://localhost:8080/community/help-and-feedback/) and we can guide you to update the file directly. 
+Your input helps us keep the Figma library updated. If you want to add or update a component or pattern, [contact the NHS App design system team](http://localhost:8080/community/help-and-feedback/) and we can guide you to update the file directly.
 
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">
