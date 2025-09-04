@@ -20,11 +20,13 @@
   {% for cardItem in params.cards %}
     {{ nhsappCard({
       title: cardItem.title,
+      titleClasses: cardItem.titleClasses,
       href: cardItem.href,
       html: cardItem.html,
       classes: cardItem.classes,
       aboveContent: cardItem.aboveContent,
       description: cardItem.description,
+      descriptionClasses: cardItem.descriptionClasses,
       badgeLarge: cardItem.badgeLarge,
       prefixIcon: cardItem.prefixIcon,
       readOnly: cardItem.readOnly,

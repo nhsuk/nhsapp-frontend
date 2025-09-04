@@ -30,7 +30,7 @@
       {%- endif -%}
       {% if params.description %}
         <div class="nhsapp-card__below">
-          <p class="nhsuk-u-margin-top-1">{{ params.description }}</p>
+          <p class="nhsapp-card__description {{ params.descriptionClasses if params.descriptionClasses }}">{{ params.description }}</p>
         </div>
       {% elif params.html %}
         {{ params.html | safe }}

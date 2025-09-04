@@ -19,6 +19,7 @@ $card-border-radius: 8px;
 
   &__title {
     @include nhsuk-font-size(19);
+
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -75,6 +76,7 @@ $card-border-radius: 8px;
 
   &__link {
     @include nhsuk-font-size(19);
+
     font-weight: bold;
     text-decoration: none;
 
@@ -91,6 +93,18 @@ $card-border-radius: 8px;
       position: absolute;
       right: 0;
       top: 0;
+    }
+  }
+
+  &__description {
+    @include nhsuk-font-size(16);
+
+    color: $nhsuk-secondary-text-colour;
+    margin: 0;
+    margin-top: nhsuk-spacing(1);
+
+    @include nhsuk-media-query($from: tablet) {
+      margin-top: nhsuk-spacing(2);
     }
   }
 
@@ -119,6 +133,7 @@ $card-border-radius: 8px;
 // card group
 .nhsapp-cards {
   @include nhsuk-responsive-margin(6, "bottom");
+
   list-style: none; // Removes default list style
   padding: 0; // Removes default list padding
 
