@@ -260,19 +260,19 @@ $card-border-radius: 8px;
 // Light blue variant
 .nhsapp-cards--light-blue .nhsapp-card,
 .nhsapp-card--light-blue {
-  @include nhsapp-card-link-colour-variation(#d2e1ef, $nhsuk-link-active-colour);
+  @include nhsapp-card-link-colour-variation(nhsapp-colour("blue-light"), nhsapp-colour("blue-dark"));
 }
 
 // Dark blue variant
 .nhsapp-cards--dark-blue .nhsapp-card,
 .nhsapp-card--dark-blue {
-  @include nhsapp-card-link-colour-variation($nhsuk-link-active-color, nhsuk-colour("white"));
+  @include nhsapp-card-link-colour-variation(nhsapp-colour("blue-dark"), nhsuk-colour("white"));
 }
 
 // Purple variant
 .nhsapp-cards--purple .nhsapp-card,
 .nhsapp-card--purple {
-  @include nhsapp-card-link-colour-variation(nhsuk-colour("purple"), nhsuk-colour("white"));
+  @include nhsapp-card-link-colour-variation(nhsapp-colour("purple-dark"), nhsuk-colour("white"));
 }
 
 // Media container
