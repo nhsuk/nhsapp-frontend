@@ -15,12 +15,17 @@
   </p>
 {% endif %}
 
-<ul class="nhsapp-cards {{ stackedClass }}
+{# Control whether it renders as a list of <li> inside a <ul>, or plain blocks inside a <div>. Defaults to list (true). #}
+{% set isList = params.isListItem if params.isListItem is defined else true %}
+{% set wrapperTag = 'ul' if isList else 'div' %}
+
+<{{ wrapperTag }} class="nhsapp-cards {{ stackedClass }}
 {{ params.classes if params.classes }}">
   {% for cardItem in params.cards %}
     {{ nhsappCard({
       title: cardItem.title,
       titleClasses: cardItem.titleClasses,
+      headingLevel: cardItem.headingLevel,
       href: cardItem.href,
       html: cardItem.html,
       classes: cardItem.classes,
@@ -29,10 +34,9 @@
       descriptionClasses: cardItem.descriptionClasses,
       badgeLarge: cardItem.badgeLarge,
       prefixIcon: cardItem.prefixIcon,
-      readOnly: cardItem.readOnly,
       footer: cardItem.footer,
-      isListItem: true,
+      isListItem: isList,
       linkAriaLabel: cardItem.linkAriaLabel
     }) }}
   {% endfor %}
-</ul>
+</{{ wrapperTag }}>

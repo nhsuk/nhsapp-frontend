@@ -1,0 +1,28 @@
+---
+layout: layouts/example.njk
+title: Card account
+figmaLink: ""
+vueLink: ""
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+{{ nhsappCardGroup({
+  stacked: true,
+  classes: 'nhsapp-cards--light-blue',
+  isListItem: false,
+  cards: [
+    {
+      title: 'Neil Dean',
+      titleClasses: 'nhsuk-u-font-size-36',
+      headingLevel: '2',
+      html: '<p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-0"><strong>Date of birth:</strong> 15 March 1984</p>
+            <p><strong>NHS number:</strong> 123 456 7890</p>'
+    },
+    {
+      title: 'Manage health services for others',
+      href: '#'
+    }
+  ]
+}) }}

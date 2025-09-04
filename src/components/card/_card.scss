@@ -130,7 +130,7 @@ $card-border-radius: 8px;
   }
 }
 
-// card group
+// Card group
 .nhsapp-cards {
   @include nhsuk-responsive-margin(6, "bottom");
 
@@ -181,7 +181,7 @@ $card-border-radius: 8px;
   }
 }
 
-// secondary card
+// Secondary card
 .nhsapp-cards--secondary .nhsapp-card,
 .nhsapp-card--secondary {
   background: transparent;
@@ -209,5 +209,111 @@ $card-border-radius: 8px;
 
   @include nhsuk-media-query($from: tablet) {
     margin-bottom: nhsuk-spacing(3);
+  }
+}
+
+// Colour variant mixin
+@mixin nhsapp-card-link-colour-variation($background-colour, $text-colour) {
+  background: $background-colour;
+  border-color: $background-colour;
+  color: $text-colour;
+
+  &:first-of-type,
+  &:last-of-type {
+    border: 0;
+  }
+
+  .nhsapp-card__container {
+    border-color: rgba($text-colour, 0.25);
+  }
+
+  .nhsapp-card__link {
+    color: $text-colour;
+
+    &:hover,
+    &:visited,
+    &:hover:visited {
+      color: $text-colour;
+    }
+
+    &:focus,
+    &:focus:hover {
+      color: $nhsuk-focus-text-colour;
+    }
+  }
+
+  .nhsapp-icon {
+    fill: $text-colour;
+  }
+
+  .nhsapp-icon__chevron-right {
+    fill: rgba($text-colour, 0.7);
+  }
+
+  &:hover {
+    .nhsapp-icon__chevron-right {
+      fill: $text-colour;
+    }
+  }
+}
+
+// Light blue variant
+.nhsapp-cards--light-blue .nhsapp-card,
+.nhsapp-card--light-blue {
+  @include nhsapp-card-link-colour-variation(#d2e1ef, $nhsuk-link-active-colour);
+}
+
+// Dark blue variant
+.nhsapp-cards--dark-blue .nhsapp-card,
+.nhsapp-card--dark-blue {
+  @include nhsapp-card-link-colour-variation($nhsuk-link-active-color, nhsuk-colour("white"));
+}
+
+// Purple variant
+.nhsapp-cards--purple .nhsapp-card,
+.nhsapp-card--purple {
+  @include nhsapp-card-link-colour-variation(nhsuk-colour("purple"), nhsuk-colour("white"));
+}
+
+// Media container
+// Used for new campaign card
+.nhsapp-card--with-media {
+  .nhsapp-card__img {
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .nhsapp-card__container {
+    @include nhsuk-responsive-padding(5);
+  }
+
+  @include nhsuk-media-query($from: desktop) {
+    display: flex;
+
+    .nhsapp-card__media {
+      display: flex;
+      flex: 2 0;
+    }
+
+    .nhsapp-card__img {
+      border-radius: $card-border-radius 0 0 $card-border-radius;
+      flex: none;
+    }
+
+    .nhsapp-card__container {
+      flex: 2 0;
+      gap: nhsuk-spacing(5);
+    }
+  }
+
+  @include nhsuk-media-query($from: large-desktop) {
+    .nhsapp-card__media {
+      flex-grow: 2;
+    }
+
+    .nhsapp-card__container {
+      flex-grow: 3;
+    }
   }
 }

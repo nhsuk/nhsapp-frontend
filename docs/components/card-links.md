@@ -72,6 +72,14 @@ Use them below primary card links which signpost more important information.
 
 {% example "cards/card-link-secondary-stacked.njk" %}
 
+### Account card
+
+{% example "cards/card-account.njk" %}
+
+### Campaign card
+
+{% example "cards/card-campaign.njk" %}
+
 ## Content guidance
 
 Aim to use active phrasing for card link text. This means starting the link text with a verb. For example: "Request repeat prescriptions" and "Check for available GP appointments". This follows content guidance on links and helps users to understand the action they can take.

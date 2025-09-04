@@ -1,33 +1,56 @@
 {% from "../badge/large/macro.njk" import nhsappBadgeLarge %}
 {% from "../../styles/icon/macro.njk" import nhsappIcon %}
 
-{% set hasBadgeLarge = true if params.badgeLarge.count > 0 %}
+{# Safe defaults for nested objects #}
+{% set above = params.aboveContent if params.aboveContent is defined else {} %}
+{% set footer = params.footer if params.footer is defined else {} %}
+{% set badge = params.badgeLarge if params.badgeLarge is defined else {} %}
+{% set badgeCount = badge.count if badge.count is defined else 0 %}
+{% set hasBadgeLarge = badgeCount > 0 %}
 
-{%- if params.isListItem -%}
-  <li class="nhsapp-card 
-  {{ params.classes if params.classes }}">
-{%- else -%}
-  <div class="nhsapp-card 
-  {{ params.classes if params.classes }}">
-{%- endif -%}
+{% set hasMedia = params.img is defined and params.img.src is defined %}
+{% set imgAlt = params.img.alt if params.img.alt is defined else '' %}
+
+{# Wrapper tag #}
+{% set isListItem = params.isListItem if params.isListItem is defined else false %}
+{% set wrapperTag = 'li' if isListItem else 'div' %}
+
+<{{ wrapperTag }} class="nhsapp-card 
+  {{ params.classes if params.classes }}
+  {{ 'nhsapp-card--with-media' if hasMedia }}">
+
+  {% if hasMedia %}
+  <div class="nhsapp-card__media">
+    <img class="nhsapp-card__img" src="{{ params.img.src }}" alt="{{ imgAlt }}">
+  </div>
+  {% endif %}
+  
   <div class="nhsapp-card__container">
     {%- if params.prefixIcon -%}
       {{ nhsappIcon(params.prefixIcon) }}
     {%- endif -%}
     <div class="nhsapp-card__content">
-      {%- if params.aboveContent.html -%}
+      {%- if above.html -%}
         <div class="nhsapp-card__above">
-          {{ params.aboveContent.html | safe }}
+          {{ above.html | safe }}
         </div>
       {%- endif -%}
-      {%- if params.readOnly -%}
-        <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.title }}</p>
-      {%- else -%}
+
+      {%- if params.href -%}
         <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
-      {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
+        {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
           {{ params.title }}
         </a>
+      {%- else -%}
+        {%- if params.headingLevel -%}
+          <h{{ params.headingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">
+            {{ params.title }}
+          </h{{ params.headingLevel }}>
+        {%- else -%}
+          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.title }}</p>
+        {%- endif -%}
       {%- endif -%}
+
       {% if params.description %}
         <div class="nhsapp-card__below">
           <p class="nhsapp-card__description {{ params.descriptionClasses if params.descriptionClasses }}">{{ params.description }}</p>
@@ -36,25 +59,24 @@
         {{ params.html | safe }}
       {% endif %}
     </div>
+
     {% if hasBadgeLarge %}
       {{ nhsappBadgeLarge({
-        count: params.badgeLarge.count,
-        label: params.badgeLarge.label,
-        classes: params.badgeLarge.classes,
-        ariaHidden: params.badgeLarge.ariaHidden
+        count: badgeCount,
+        label: badge.label if badge.label is defined,
+        classes: badge.classes if badge.classes is defined,
+        ariaHidden: badge.ariaHidden if badge.ariaHidden is defined
       }) }}
     {% endif %}
-    {%- if not params.readOnly -%}
+
+    {%- if params.href -%}
       {{ nhsappIcon('chevronRight') }}
     {%- endif -%}
   </div>
-  {%- if params.footer.html -%}
+
+  {%- if footer.html -%}
     <div class="nhsapp-card__footer">
-      {{ params.footer.html | safe }}
+      {{ footer.html | safe }}
     </div>
   {%- endif -%}
-{%- if params.isListItem -%}
-  </li>
-{%- else -%}
-  </div>
-{%- endif -%}
+</{{ wrapperTag }}>
