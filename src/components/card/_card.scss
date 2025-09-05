@@ -257,22 +257,83 @@ $card-border-radius: 8px;
   }
 }
 
-// Light blue variant
-.nhsapp-cards--blue-light .nhsapp-card,
-.nhsapp-card--blue-light {
-  @include nhsapp-card-link-colour-variation(nhsapp-colour("blue-light"), nhsapp-colour("blue-dark"));
-}
+// Colour variants
+$nhsapp-card-variants: (
+  "aqua-green-light": (
+    nhsapp-colour("aqua-green-light"),
+    nhsapp-colour("aqua-green-dark")
+  ),
+  "aqua-green-dark": (
+    nhsapp-colour("aqua-green-dark"),
+    nhsuk-colour("white")
+  ),
+  "blue-light": (
+    nhsapp-colour("blue-light"),
+    nhsapp-colour("blue-dark")
+  ),
+  "blue-dark": (
+    nhsapp-colour("blue-dark"),
+    nhsuk-colour("white")
+  ),
+  "green-light": (
+    nhsapp-colour("green-light"),
+    nhsapp-colour("green-dark")
+  ),
+  "green-dark": (
+    nhsapp-colour("green-dark"),
+    nhsuk-colour("white")
+  ),
+  "orange-light": (
+    nhsapp-colour("orange-light"),
+    nhsapp-colour("orange-dark")
+  ),
+  "orange-dark": (
+    nhsapp-colour("orange-dark"),
+    nhsuk-colour("white")
+  ),
+  "pink-light": (
+    nhsapp-colour("pink-light"),
+    nhsapp-colour("pink-dark")
+  ),
+  "pink-dark": (
+    nhsapp-colour("pink-dark"),
+    nhsuk-colour("white")
+  ),
+  "purple-light": (
+    nhsapp-colour("purple-light"),
+    nhsapp-colour("purple-dark")
+  ),
+  "purple-dark": (
+    nhsapp-colour("purple-dark"),
+    nhsuk-colour("white")
+  ),
+  "red-light": (
+    nhsapp-colour("red-light"),
+    nhsapp-colour("red-dark")
+  ),
+  "red-dark": (
+    nhsapp-colour("red-dark"),
+    nhsuk-colour("white")
+  ),
+  "yellow-light": (
+    nhsapp-colour("yellow-light"),
+    nhsapp-colour("yellow-dark")
+  ),
+  "yellow-dark": (
+    nhsapp-colour("yellow-dark"),
+    nhsuk-colour("white")
+  )
+);
 
-// Dark blue variant
-.nhsapp-cards--blue-dark .nhsapp-card,
-.nhsapp-card--blue-dark {
-  @include nhsapp-card-link-colour-variation(nhsapp-colour("blue-dark"), nhsuk-colour("white"));
-}
+// Generate classes for each colour variant
+@each $variant, $colors in $nhsapp-card-variants {
+  $background-colour: nth($colors, 1);
+  $text-colour: nth($colors, 2);
 
-// Purple variant
-.nhsapp-cards--purple-dark .nhsapp-card,
-.nhsapp-card--purple-dark {
-  @include nhsapp-card-link-colour-variation(nhsapp-colour("purple-dark"), nhsuk-colour("white"));
+  .nhsapp-cards--#{$variant} .nhsapp-card,
+  .nhsapp-card--#{$variant} {
+    @include nhsapp-card-link-colour-variation($background-colour, $text-colour);
+  }
 }
 
 // Media container
