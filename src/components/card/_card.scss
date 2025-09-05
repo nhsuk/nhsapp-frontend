@@ -97,7 +97,7 @@ $card-border-radius: 8px;
   }
 
   &__description {
-    @include nhsuk-font-size(16);
+    @include nhsuk-font-size(19);
 
     color: $nhsuk-secondary-text-colour;
     margin: 0;
