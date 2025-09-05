@@ -1,18 +1,11 @@
-// NHS.UK frontend v10 (core + all components) via dist index
-@import "node_modules/nhsuk-frontend/dist/nhsuk/index";
+// Import all styles from the NHS App frontend library
+@import "src/all";
 
+// Code example syntax highlighting
 @import "node_modules/prismjs/themes/prism";
 @import "docs/assets/css/code-colours";
 
-// Import all styles from the NHS App frontend library (includes its own NHS.UK import)
-@import "src/all";
-
-// Colours
-$app-brand-color: nhsuk-colour("blue");
-$app-img-border-color: #d7e5ef;
-
 // Docs specific styles
-@import "docs/assets/css/components/header";
 @import "docs/assets/css/components/hero";
 @import "docs/assets/css/components/side-navigation";
 @import "docs/assets/css/components/callout";
@@ -87,9 +80,4 @@ pre {
 
 .app-section-break--width-4 {
   border-width: 4px;
-}
-
-// Footer border colour
-.nhsuk-footer-container {
-  border-color: $app-brand-color;
 }

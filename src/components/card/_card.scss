@@ -1,22 +1,25 @@
 /** These variables are not defined in a separate scss file in the nhsuk-frontend,
  * so we can't import them without bringing in the actual classes also.
  */
-$card-border-width: 1px;
+$card-border-width: 2px;
+$card-divider-width: 1px;
 $card-border-bottom-width: nhsuk-spacing(1);
-$card-border-color: nhsuk-colour("grey-4");
-$card-border-hover-color: nhsuk-colour("grey-3");
+$card-border-color: $nhsuk-border-colour;
+$card-border-radius: 8px;
 
 .nhsapp-card {
-  @include nhsuk-responsive-margin(5, "bottom");
+  @include nhsuk-responsive-margin(6, "bottom");
 
   background-color: nhsuk-colour("white");
   border: $card-border-width solid $card-border-color;
+  border-radius: $card-border-radius;
   position: relative; // Set to relative so the entire card can be clickable
 
   padding: 0;
 
   &__title {
-    @include nhsuk-font-size(22);
+    @include nhsuk-font-size(19);
+
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -33,6 +36,15 @@ $card-border-hover-color: nhsuk-colour("grey-3");
     fill: $nhsuk-link-colour;
   }
 
+  .nhsapp-icon__chevron-right {
+    fill: rgba($nhsuk-link-color, 0.7);
+    margin-right: -8px;
+
+    @include nhsuk-media-query($from: tablet) {
+      margin-right: -10px;
+    }
+  }
+
   &:hover {
     .nhsapp-icon {
       fill: $nhsuk-link-hover-colour;
@@ -42,14 +54,15 @@ $card-border-hover-color: nhsuk-colour("grey-3");
   &__container {
     display: flex;
     align-items: center;
-    gap: nhsuk-spacing(3);
+    gap: 12px;
 
-    margin: 0 nhsuk-spacing(3);
-    padding: 20px 0;
+    margin: 0;
+    padding: nhsuk-spacing(3);
 
     @include nhsuk-media-query($from: tablet) {
-      margin: 0 nhsuk-spacing(4);
-      padding: nhsuk-spacing(4) 0;
+      gap: nhsuk-spacing(3);
+      margin: 0;
+      padding: nhsuk-spacing(4);
     }
   }
 
@@ -62,7 +75,8 @@ $card-border-hover-color: nhsuk-colour("grey-3");
   }
 
   &__link {
-    @include nhsuk-font-size(22);
+    @include nhsuk-font-size(19);
+
     font-weight: bold;
     text-decoration: none;
 
@@ -82,6 +96,18 @@ $card-border-hover-color: nhsuk-colour("grey-3");
     }
   }
 
+  &__description {
+    @include nhsuk-font-size(19);
+
+    color: $nhsuk-secondary-text-colour;
+    margin: 0;
+    margin-top: nhsuk-spacing(1);
+
+    @include nhsuk-media-query($from: tablet) {
+      margin-top: nhsuk-spacing(2);
+    }
+  }
+
   &__below {
     :last-child {
       margin-bottom: 0;
@@ -89,9 +115,9 @@ $card-border-hover-color: nhsuk-colour("grey-3");
   }
 
   &__footer {
-    border-top: $card-border-width solid $card-border-color;
+    border-top: $card-divider-width solid $card-border-color;
     margin: 0 nhsuk-spacing(3);
-    padding: 20px 0;
+    padding: nhsuk-spacing(3) 0;
 
     @include nhsuk-media-query($from: tablet) {
       margin: 0 nhsuk-spacing(4);
@@ -104,57 +130,251 @@ $card-border-hover-color: nhsuk-colour("grey-3");
   }
 }
 
-// card group
+// Card group
 .nhsapp-cards {
-  @include nhsuk-responsive-margin(5, "bottom");
+  @include nhsuk-responsive-margin(6, "bottom");
+
   list-style: none; // Removes default list style
   padding: 0; // Removes default list padding
 
+  .nhsapp-card {
+    @include nhsuk-responsive-margin(4, "bottom");
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   &--stacked {
-    @include nhsuk-responsive-margin(5, "bottom");
+    @include nhsuk-responsive-margin(6, "bottom");
 
     .nhsapp-card {
       border-bottom: 0;
+      border-radius: 0;
       border-top: 0;
       margin-bottom: 0;
 
       .nhsapp-card__container {
-        border-bottom: $card-border-width solid $card-border-color;
+        border-bottom: $card-divider-width solid $card-border-color;
       }
 
       &:first-of-type {
+        border-radius: $card-border-radius $card-border-radius 0 0;
         border-top: $card-border-width solid $card-border-color;
       }
 
       &:last-of-type {
         border-bottom: $card-border-width solid $card-border-color;
+        border-radius: 0 0 $card-border-radius $card-border-radius;
 
         .nhsapp-card__container {
           border-bottom: 0;
         }
       }
+
+      &:only-of-type {
+        border-radius: $card-border-radius; // Full border radius on all corners
+        border-top: $card-border-width solid $card-border-color;
+        border-bottom: $card-border-width solid $card-border-color;
+      }
     }
   }
 }
 
-// secondary card
+// Secondary card
 .nhsapp-cards--secondary .nhsapp-card,
 .nhsapp-card--secondary {
   background: transparent;
 }
 
-// combination styles for cards and headings together
-.nhsapp-cards + .nhsapp-section-heading,
-.nhsapp-card + .nhsapp-section-heading,
-.nhsapp-card + .nhsuk-heading-l {
-  @include nhsuk-responsive-padding(4, "top");
+// Card heading
+.nhsapp-cards__heading {
+  @include nhsuk-font-size(22);
+  @include nhsuk-responsive-margin(3, "bottom");
+
+  padding-top: 0;
 }
 
-.nhsapp-card + .nhsuk-heading-m,
-.nhsapp-card + .nhsuk-heading-s {
-  padding-top: nhsuk-spacing(1);
+.nhsapp-cards__heading + .nhsapp-cards__description {
+  margin-top: - nhsuk-spacing(2);
 
   @include nhsuk-media-query($from: tablet) {
-    padding-top: nhsuk-spacing(2);
+    margin-top: - nhsuk-spacing(3);
+  }
+}
+
+.nhsapp-cards__description {
+  color: $nhsuk-secondary-text-colour;
+  margin-bottom: 12px;
+
+  @include nhsuk-media-query($from: tablet) {
+    margin-bottom: nhsuk-spacing(3);
+  }
+}
+
+// Colour variant mixin
+@mixin nhsapp-card-link-colour-variation($background-colour, $text-colour) {
+  background: $background-colour;
+  border-color: $background-colour;
+  color: $text-colour;
+
+  &:first-of-type,
+  &:last-of-type {
+    border: 0;
+  }
+
+  .nhsapp-card__container {
+    border-color: rgba($text-colour, 0.2);
+  }
+
+  .nhsapp-card__link {
+    color: $text-colour;
+
+    &:hover,
+    &:visited,
+    &:hover:visited {
+      color: $text-colour;
+    }
+
+    &:focus,
+    &:focus:hover {
+      color: $nhsuk-focus-text-colour;
+    }
+  }
+
+  .nhsapp-icon {
+    fill: $text-colour;
+  }
+
+  .nhsapp-icon__chevron-right {
+    fill: rgba($text-colour, 0.7);
+  }
+
+  &:hover {
+    .nhsapp-icon__chevron-right {
+      fill: $text-colour;
+    }
+  }
+}
+
+// Colour variants
+$nhsapp-card-variants: (
+  "aqua-green-light": (
+    nhsapp-colour("aqua-green-light"),
+    nhsapp-colour("aqua-green-dark")
+  ),
+  "aqua-green-dark": (
+    nhsapp-colour("aqua-green-dark"),
+    nhsuk-colour("white")
+  ),
+  "blue-light": (
+    nhsapp-colour("blue-light"),
+    nhsapp-colour("blue-dark")
+  ),
+  "blue-dark": (
+    nhsapp-colour("blue-dark"),
+    nhsuk-colour("white")
+  ),
+  "green-light": (
+    nhsapp-colour("green-light"),
+    nhsapp-colour("green-dark")
+  ),
+  "green-dark": (
+    nhsapp-colour("green-dark"),
+    nhsuk-colour("white")
+  ),
+  "orange-light": (
+    nhsapp-colour("orange-light"),
+    nhsapp-colour("orange-dark")
+  ),
+  "orange-dark": (
+    nhsapp-colour("orange-dark"),
+    nhsuk-colour("white")
+  ),
+  "pink-light": (
+    nhsapp-colour("pink-light"),
+    nhsapp-colour("pink-dark")
+  ),
+  "pink-dark": (
+    nhsapp-colour("pink-dark"),
+    nhsuk-colour("white")
+  ),
+  "purple-light": (
+    nhsapp-colour("purple-light"),
+    nhsapp-colour("purple-dark")
+  ),
+  "purple-dark": (
+    nhsapp-colour("purple-dark"),
+    nhsuk-colour("white")
+  ),
+  "red-light": (
+    nhsapp-colour("red-light"),
+    nhsapp-colour("red-dark")
+  ),
+  "red-dark": (
+    nhsapp-colour("red-dark"),
+    nhsuk-colour("white")
+  ),
+  "yellow-light": (
+    nhsapp-colour("yellow-light"),
+    nhsapp-colour("yellow-dark")
+  ),
+  "yellow-dark": (
+    nhsapp-colour("yellow-dark"),
+    nhsuk-colour("white")
+  )
+);
+
+// Generate classes for each colour variant
+@each $variant, $colors in $nhsapp-card-variants {
+  $background-colour: nth($colors, 1);
+  $text-colour: nth($colors, 2);
+
+  .nhsapp-cards--#{$variant} .nhsapp-card,
+  .nhsapp-card--#{$variant} {
+    @include nhsapp-card-link-colour-variation($background-colour, $text-colour);
+  }
+}
+
+// Media container
+// Used for new campaign card
+.nhsapp-card--with-media {
+  .nhsapp-card__img {
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .nhsapp-card__container {
+    @include nhsuk-responsive-padding(5);
+  }
+
+  @include nhsuk-media-query($from: desktop) {
+    display: flex;
+
+    .nhsapp-card__media {
+      display: flex;
+      flex: 2 0;
+    }
+
+    .nhsapp-card__img {
+      border-radius: $card-border-radius 0 0 $card-border-radius;
+      flex: none;
+    }
+
+    .nhsapp-card__container {
+      flex: 2 0;
+      gap: nhsuk-spacing(5);
+    }
+  }
+
+  @include nhsuk-media-query($from: large-desktop) {
+    .nhsapp-card__media {
+      flex-grow: 2;
+    }
+
+    .nhsapp-card__container {
+      flex-grow: 3;
+    }
   }
 }

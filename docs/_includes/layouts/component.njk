@@ -32,19 +32,13 @@
           text: 'Components'
         },
         items: collections.component | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Archived'
-        },
-        items: collections.archivedComponent | sort(attribute="data.title")
       }
     ]
   }) }}
 {% endset %}
 
 {% block content %}
-  {% if tags and ("component" in tags or "archivedComponent" in tags) %}
+  {% if tags and "component" in tags %}
     <span class="nhsuk-caption-xl">Components</span>
   {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">

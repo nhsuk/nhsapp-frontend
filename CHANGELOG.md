@@ -8,24 +8,6 @@ Bumped `nhsuk-frontend` version to `v10.0.0` ([PR 378](https://github.com/nhsuk/
 
 #### Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`
 
-##### Remove `nhsapp-button` from button components
-
-Before:
-
-```
-<button class="nhsuk-button nhsapp-button">
-  Continue
-</button>
-```
-
-After:
-
-```
-<button class="nhsuk-button">
-  Continue
-</button>
-```
-
 ##### Swap `nhsapp-button-group` → with `nhsuk-button-group`
 
 Before:
@@ -45,10 +27,10 @@ After:
 
 ```
 <div class="nhsuk-button-group">
-  <button class="nhsuk-button">
+  <button class="nhsuk-button nhsapp-button">
     Continue
   </button>
-  <button class="nhsuk-button nhsuk-button--secondary">
+  <button class="nhsuk-button nhsuk-button--secondary nhsapp-button">
     Try again
   </button>
 </div>

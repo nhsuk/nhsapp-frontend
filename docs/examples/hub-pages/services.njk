@@ -17,12 +17,9 @@ vueLink:
     <h1 class="nhsuk-u-margin-bottom-3">Services</h1>
     <p class="nhsuk-u-margin-bottom-5">Get care and support to help you stay well</p>
 
-    {{ nhsappSectionHeading({
-      headingText: "Your GP services"
-    }) }}
-
     {{ nhsappCardGroup({
       stacked: true,
+      heading: "Your GP services",
       cards: [
         {
           title: 'Request medicines',
@@ -39,12 +36,9 @@ vueLink:
       ]
     }) }}
 
-    {{ nhsappSectionHeading({
-      headingText: "Other NHS services"
-    }) }}
-
     {{ nhsappCardGroup({
       stacked: true,
+      heading: "Other NHS services",
       cards: [
         {
           title: 'Check if you need urgent medical help using 111 online',
@@ -57,12 +51,9 @@ vueLink:
       ]
     }) }}
 
-    {{ nhsappSectionHeading({
-      headingText: "Find health information"
-    }) }}
-
     {{ nhsappCardGroup({
         stacked: true,
+        heading: "Find health information",
         cards: [
           {
             title: "Browse NHS health information",

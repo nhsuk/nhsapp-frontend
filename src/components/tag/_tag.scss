@@ -2,24 +2,24 @@
   #TAG
   ========================================================================== */
 
-$color_tag-aqua-green-background: #cce7e6;
-$color_tag-aqua-green-text: #004642;
-$color_tag-blue-background: #d2e1ef;
-$color_tag-blue-text: #01407d;
-$color_tag-green-text: #03501d;
-$color_tag-green-background: #c9e6d8;
-$color_tag-grey-background: #e6e2e2;
-$color_tag-grey-text: #303e4f;
-$color_tag-purple-background: #d9d7eb;
-$color_tag-purple-text: #532d8b;
-$color_tag-orange-background: #fae1bc;
-$color_tag-orange-text: #533c00;
-$color_tag-pink-background: #efd3e3;
-$color_tag-pink-text: #57133a;
-$color_tag-red-background: #f8d9d9;
-$color_tag-red-text: #7e0d04;
-$color_tag-yellow-background: #eee8a7;
-$color_tag-yellow-text: #5b4701;
+$color_tag-aqua-green-background: nhsapp-colour("aqua-green-light");
+$color_tag-aqua-green-text: nhsapp-colour("aqua-green-dark");
+$color_tag-blue-background: nhsapp-colour("blue-light");
+$color_tag-blue-text: nhsapp-colour("blue-dark");
+$color_tag-green-background: nhsapp-colour("green-light");
+$color_tag-green-text: nhsapp-colour("green-dark");
+$color_tag-grey-background: nhsapp-colour("grey-light");
+$color_tag-grey-text: nhsapp-colour("grey-dark");
+$color_tag-purple-background: nhsapp-colour("purple-light");
+$color_tag-purple-text: nhsapp-colour("purple-dark");
+$color_tag-orange-background: nhsapp-colour("orange-light");
+$color_tag-orange-text: nhsapp-colour("orange-dark");
+$color_tag-pink-background: nhsapp-colour("pink-light");
+$color_tag-pink-text: nhsapp-colour("pink-dark");
+$color_tag-red-background: nhsapp-colour("red-light");
+$color_tag-red-text: nhsapp-colour("red-dark");
+$color_tag-yellow-background: nhsapp-colour("yellow-light");
+$color_tag-yellow-text: nhsapp-colour("yellow-dark");
 
 .nhsapp-tag {
   @include nhsuk-font($size: 16, $weight: normal, $line-height: 1.25);
