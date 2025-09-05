@@ -258,20 +258,20 @@ $card-border-radius: 8px;
 }
 
 // Light blue variant
-.nhsapp-cards--light-blue .nhsapp-card,
-.nhsapp-card--light-blue {
+.nhsapp-cards--blue-light .nhsapp-card,
+.nhsapp-card--blue-light {
   @include nhsapp-card-link-colour-variation(nhsapp-colour("blue-light"), nhsapp-colour("blue-dark"));
 }
 
 // Dark blue variant
-.nhsapp-cards--dark-blue .nhsapp-card,
-.nhsapp-card--dark-blue {
+.nhsapp-cards--blue-dark .nhsapp-card,
+.nhsapp-card--blue-dark {
   @include nhsapp-card-link-colour-variation(nhsapp-colour("blue-dark"), nhsuk-colour("white"));
 }
 
 // Purple variant
-.nhsapp-cards--purple .nhsapp-card,
-.nhsapp-card--purple {
+.nhsapp-cards--purple-dark .nhsapp-card,
+.nhsapp-card--purple-dark {
   @include nhsapp-card-link-colour-variation(nhsapp-colour("purple-dark"), nhsuk-colour("white"));
 }
 
