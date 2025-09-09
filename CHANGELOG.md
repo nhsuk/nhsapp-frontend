@@ -43,10 +43,10 @@ Updated icon names, following nhsuk frontend naming conventions.
 Before:
 
 `nhsapp-icon nhsapp-icon__account`
- 
- After:
- 
-`nhsapp-icon nhsapp-icon--account`.
+
+After:
+
+`nhsapp-icon nhsapp-icon--account`
 
 ## `v4.0.0` - 17 June 2025
 
