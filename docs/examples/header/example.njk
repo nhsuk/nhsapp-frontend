@@ -1,0 +1,58 @@
+---
+layout: layouts/example.njk
+title: Header (web)
+figmaLink: ""
+vueLink: ""
+---
+
+{% from 'header/macro.njk' import header %}
+
+{{ header({
+  logo: {
+    href: "#",
+    ariaLabel: "NHS App"
+  },
+  service: {
+    text: "App",
+    href: "#"
+  },
+  account: {
+    classes: "nhsapp-u-hide-until-tablet",
+    items: [
+      {
+        text: "App help",
+        href: "#"
+      },
+      {
+        text: "Log out",
+        href: "#"
+      }
+    ]
+  },
+  navigation: {
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Messages",
+        href: "#"
+      },
+      {
+        text: "Profile",
+        href: "#"
+      },
+      {
+        text: "App help",
+        href: "#",
+        classes: "nhsapp-u-hide-from-tablet"
+      },
+      {
+        text: "Log out",
+        href: "#",
+        classes: "nhsapp-u-hide-from-tablet"
+      }
+    ]
+  }
+}) }}

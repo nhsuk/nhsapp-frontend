@@ -1,0 +1,23 @@
+.nhsapp-u-hide-from-tablet {
+  @include nhsuk-media-query($from: tablet) {
+    display: none !important;
+  }
+}
+
+.nhsapp-u-hide-until-tablet {
+  @include nhsuk-media-query($until: tablet) {
+    display: none !important;
+  }
+}
+
+.nhsapp-u-hide-from-desktop {
+  @include nhsuk-media-query($from: desktop) {
+    display: none !important;
+  }
+}
+
+.nhsapp-u-hide-until-desktop {
+  @include nhsuk-media-query($until: desktop) {
+    display: none !important;
+  }
+}
