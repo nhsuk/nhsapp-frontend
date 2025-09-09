@@ -36,7 +36,7 @@ $card-border-radius: 8px;
     fill: $nhsuk-link-colour;
   }
 
-  .nhsapp-icon__chevron-right {
+  .nhsapp-icon--chevron-right {
     fill: rgba($nhsuk-link-color, 0.7);
     margin-right: -8px;
 
@@ -246,12 +246,12 @@ $card-border-radius: 8px;
     fill: $text-colour;
   }
 
-  .nhsapp-icon__chevron-right {
+  .nhsapp-icon--chevron-right {
     fill: rgba($text-colour, 0.7);
   }
 
   &:hover {
-    .nhsapp-icon__chevron-right {
+    .nhsapp-icon--chevron-right {
       fill: $text-colour;
     }
   }

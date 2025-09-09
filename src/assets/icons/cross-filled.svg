@@ -1,4 +1,4 @@
-<svg class="nhsapp-icon nhsapp-icon__cross-filled" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+<svg class="nhsapp-icon nhsapp-icon--cross-filled" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
   <path
     d="M22 10c0-.97-.79-1.76-1.76-1.76h-4.48V3.77c0-.97-.79-1.76-1.76-1.76h-4c-.97 0-1.76.79-1.76 1.76v4.48H3.76c-.97 0-1.76.79-1.76 1.76v4c0 .97.79 1.76 1.76 1.76h4.48v4.48c0 .97.79 1.76 1.76 1.76h4c.97 0 1.76-.79 1.76-1.76v-4.48h4.48c.97 0 1.76-.79 1.76-1.76v-4Z"
   />
