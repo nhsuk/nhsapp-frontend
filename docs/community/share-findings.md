@@ -2,7 +2,7 @@
 layout: layouts/community.njk
 title: Share your findings
 order: 2
-description: We want to hear how users experience components and patterns in your service. It helps us improve the design system. 
+description: We want to hear how users experience components and patterns in your service. It helps us improve the design system.
 tags:
   - contribution
 ---
@@ -53,7 +53,7 @@ Remember that all the information on GitHub is open to the public. Do not share 
 After you have submitted your comment, the NHS App design system team will:
 
 - get a notification from GitHub
-- review the issue
+- review the discussion
 - let you know if the team will take any action
 
 The NHS App design system team does not usually act immediately on feedback. We sometimes need to see evidence across several teams before we can be sure that something is a problem.
