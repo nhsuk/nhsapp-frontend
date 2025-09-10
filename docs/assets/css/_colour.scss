@@ -34,7 +34,6 @@
     width: nhsuk-spacing(4);
     top: nhsuk-spacing(1);
   }
-
 }
 
 .app-colour-list__column {
@@ -48,7 +47,7 @@
     position: relative;
   }
 
-  code:not([class*=language-]) {
+  code:not([class*="language-"]) {
     background: transparent;
     color: $nhsuk-text-colour;
   }
