@@ -11,22 +11,20 @@
 /// @prop $colour - Representation for the given $colour, where $colour is the
 ///   friendly name for the colour (e.g. "red": #ff0000);
 $nhsapp-colours: (
-  "aqua-green-light": #cce7e6,
-  "aqua-green-dark": #00403d,
-  "blue-light": #d2e1ef,
-  "blue-dark": #013568,
-  "green-light": #c9e6d8,
-  "green-dark": #024218,
-  "grey-light": #e6e2e2,
-  "grey-dark": #2d3a4a,
-  "purple-light": #d9d7eb,
-  "purple-dark": #41236d,
-  "orange-light": #fae1bc,
-  "orange-dark": #4b3600,
+  "aqua-green-light": #c9e3e0,
+  "aqua-green-dark": #1e403d,
+  "blue-light": #ccdff1,
+  "blue-dark": #00386e,
+  "green-light": #cce5d8,
+  "green-dark": #004c23,
+  "purple-light": #ded6e8,
+  "purple-dark": #371f55,
+  "orange-light": #fbe8cc,
+  "orange-dark": #5f3800,
   "pink-light": #efd3e3,
-  "pink-dark": #57133a,
-  "red-light": #f8d9d9,
-  "red-dark": #740c04,
-  "yellow-light": #eee8a7,
-  "yellow-dark": #4a3a01
+  "pink-dark": #681645,
+  "red-light": #f7d4d1,
+  "red-dark": #801810,
+  "yellow-light": #fff7b1,
+  "yellow-dark": #4c4612
 ) !default;
