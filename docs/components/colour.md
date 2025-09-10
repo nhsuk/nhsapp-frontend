@@ -145,11 +145,11 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#371f55"></span>
+        <span class="app-colour-list__swatch" style="background-color:#402463"></span>
         <code>nhsapp-colour("dark-purple")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
-      #371f55
+      #402463
       </td>
     </tr>
     <tr class="app-colour-list__row">
