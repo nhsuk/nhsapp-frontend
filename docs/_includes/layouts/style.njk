@@ -1,0 +1,53 @@
+{% extends "./sidebar.njk" %}
+
+{%- from "./partials/side-navigation.njk" import appSideNavigation %}
+
+{% block beforeContent %}
+  {% if title === "Styles" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        }
+      ],
+      href: "/styles",
+      text: "Styles"
+    }) }}
+  {% endif %}
+{% endblock %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    label: 'Styles',
+    currentPath: page.url,
+    sections: [
+      {
+        heading: {
+          text: 'Styles'
+        },
+        items: collections.style | sort(attribute="data.title")
+      }
+    ]
+  }) }}
+{% endset %}
+
+{% block content %}
+  {% if tags and "style" in tags %}
+    <span class="nhsuk-caption-xl">Styles</span>
+  {% endif %}
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {{ title }}
+  </h1>
+  <p>{{ description }}</p>
+  {{ content | safe }}
+  {% if tags and "style" in tags %}
+    {% include "layouts/partials/feedback-section.njk" %}
+  {% endif %}
+
+{% endblock %}
