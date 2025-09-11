@@ -1,11 +1,11 @@
-{% if tags and ("page" in tags or "helpUsers" in tags or "component" in tags) %}
+{% if tags and ("page" in tags or "helpUsers" in tags or "component" in tags  or "style" in tags) %}
 
-  <h2>Help improve this {% if tags and ("component" in tags) %}component{% else %}pattern{% endif %}</h2> 
+  <h2>Help improve {% if tags and ("component" in tags) %}this component{% elif tags and ("style" in tags) %}these styles{% else %}this pattern{% endif %}</h2> 
 
   <p>The NHS App design system team would like to hear:</p>
 
   <ul>
-    <li>how you have used this {% if tags and ("component" in tags) %}component{% else %}pattern{% endif %} in your service</li>
+    <li>how you have used {% if tags and ("component" in tags) %}this component{% elif tags and ("style" in tags) %}these styles{% else %}this pattern{% endif %} in your service</li>
     <li>any feedback you have about its usage, for example accessibility or ideas for improvement</li>
   </ul>
 
