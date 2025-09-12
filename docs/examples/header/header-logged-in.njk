@@ -9,48 +9,48 @@ vueLink: ""
 
 {{ header({
   logo: {
-    ariaLabel: "NHS"
+    ariaLabel: 'NHS'
   },
   service: {
-    text: "App",
-    href: "#"
+    text: 'App <span class="nhsuk-u-visually-hidden">homepage</span>' | safe,
+    href: '#'
   },
   account: {
-    classes: "nhsapp-u-hide-until-tablet",
+    classes: 'nhsapp-u-hide-until-tablet',
     items: [
       {
-        text: "App help",
-        href: "#"
+        text: 'App help',
+        href: '#'
       },
       {
-        text: "Log out",
-        href: "#"
+        text: 'Log out',
+        href: '#'
       }
     ]
   },
   navigation: {
     items: [
       {
-        text: "Home",
-        href: "#"
+        text: 'Home',
+        href: '#'
       },
       {
-        text: "Messages",
-        href: "#"
+        text: 'Messages',
+        href: '#'
       },
       {
-        text: "Profile",
-        href: "#"
+        text: 'Profile',
+        href: '#'
       },
       {
-        text: "App help",
-        href: "#",
-        classes: "nhsapp-u-hide-from-tablet"
+        text: 'App help',
+        href: '#',
+        classes: 'nhsapp-u-hide-from-tablet'
       },
       {
-        text: "Log out",
-        href: "#",
-        classes: "nhsapp-u-hide-from-tablet"
+        text: 'Log out',
+        href: '#',
+        classes: 'nhsapp-u-hide-from-tablet'
       }
     ]
   }

@@ -30,18 +30,18 @@
 {% block header %}
   {{ header({
     logo: {
-      ariaLabel: "NHS"
+      ariaLabel: 'NHS'
       
     },
     service: {
-      text: "App design system",
-      href: "/"
+      text: 'App design system <span class="nhsuk-u-visually-hidden">homepage</span>' | safe,
+      href: '/'
     },
     navigation: {
       items: [
         {
-          href: "/get-started/",
-          text: "Get started"
+          href: '/get-started/',
+          text: 'Get started'
         },
         {
           href: '/components/',
@@ -65,12 +65,12 @@
     meta: {
       items: [
         {
-          href: "/community/help-and-feedback/",
-          text: "Help and feedback"
+          href: '/community/help-and-feedback/',
+          text: 'Help and feedback'
         },
         {
-          href: "https://github.com/nhsuk/nhsapp-frontend",
-          text: "Code on Github"
+          href: 'https://github.com/nhsuk/nhsapp-frontend',
+          text: 'Code on Github'
         }
       ]
     }
