@@ -2,7 +2,7 @@
 @use "colours-palette" as palette;
 
 /// Returns a colour from the NHS App palette by name.
-/// Example: color: nhsapp-colour("blue-dark");
+/// Example: color: nhsapp-colour("dark-blue");
 @function nhsapp-colour($name, $fallback: null) {
   $value: map.get(palette.$nhsapp-colours, $name);
   @if $value == null {

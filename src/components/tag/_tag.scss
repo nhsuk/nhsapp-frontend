@@ -2,24 +2,24 @@
   #TAG
   ========================================================================== */
 
-$color_tag-aqua-green-background: nhsapp-colour("aqua-green-light");
-$color_tag-aqua-green-text: nhsapp-colour("aqua-green-dark");
-$color_tag-blue-background: nhsapp-colour("blue-light");
-$color_tag-blue-text: nhsapp-colour("blue-dark");
-$color_tag-green-background: nhsapp-colour("green-light");
-$color_tag-green-text: nhsapp-colour("green-dark");
-$color_tag-grey-background: nhsapp-colour("grey-light");
-$color_tag-grey-text: nhsapp-colour("grey-dark");
-$color_tag-purple-background: nhsapp-colour("purple-light");
-$color_tag-purple-text: nhsapp-colour("purple-dark");
-$color_tag-orange-background: nhsapp-colour("orange-light");
-$color_tag-orange-text: nhsapp-colour("orange-dark");
-$color_tag-pink-background: nhsapp-colour("pink-light");
-$color_tag-pink-text: nhsapp-colour("pink-dark");
-$color_tag-red-background: nhsapp-colour("red-light");
-$color_tag-red-text: nhsapp-colour("red-dark");
-$color_tag-yellow-background: nhsapp-colour("yellow-light");
-$color_tag-yellow-text: nhsapp-colour("yellow-dark");
+$color_tag-aqua-green-background: nhsapp-colour("pale-aqua-green");
+$color_tag-aqua-green-text: nhsapp-colour("dark-aqua-green");
+$color_tag-blue-background: nhsapp-colour("pale-blue");
+$color_tag-blue-text: nhsapp-colour("dark-blue");
+$color_tag-green-background: nhsapp-colour("pale-green");
+$color_tag-green-text: nhsapp-colour("dark-green");
+$color_tag-grey-background: nhsuk-colour("grey-4");
+$color_tag-grey-text: nhsuk-colour("black");
+$color_tag-purple-background: nhsapp-colour("pale-purple");
+$color_tag-purple-text: nhsapp-colour("dark-purple");
+$color_tag-orange-background: nhsapp-colour("pale-orange");
+$color_tag-orange-text: nhsapp-colour("dark-orange");
+$color_tag-pink-background: nhsapp-colour("pale-pink");
+$color_tag-pink-text: nhsapp-colour("dark-pink");
+$color_tag-red-background: nhsapp-colour("pale-red");
+$color_tag-red-text: nhsapp-colour("dark-red");
+$color_tag-yellow-background: nhsapp-colour("pale-yellow");
+$color_tag-yellow-text: nhsapp-colour("dark-yellow");
 
 .nhsapp-tag {
   @include nhsuk-font($size: 16, $weight: normal, $line-height: 1.25);
