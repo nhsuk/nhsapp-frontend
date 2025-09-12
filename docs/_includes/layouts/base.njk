@@ -41,19 +41,23 @@
       items: [
         {
           href: '/get-started/',
-          text: 'Get started'
+          text: 'Get started',
+          active: page and page.url and '/get-started/' in page.url
         },
         {
           href: '/components/',
-          text: 'Components'
+          text: 'Components',
+          active: page and page.url and '/components/' in page.url
         },
         {
           href: '/patterns/',
-          text: 'Patterns'
+          text: 'Patterns',
+          active: page and page.url and '/patterns/' in page.url
         },
         {
           href: '/community/',
-          text: 'Community'
+          text: 'Community',
+          active: page and page.url and '/community/' in page.url
         }
       ]
     }
