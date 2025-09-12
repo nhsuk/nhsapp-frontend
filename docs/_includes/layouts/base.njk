@@ -30,18 +30,19 @@
 {% block header %}
   {{ header({
     logo: {
-      href: "/",
-      ariaLabel: "NHS App design system"
+      ariaLabel: 'NHS'
+      
     },
     service: {
-      text: "App design system",
-      href: "/"
+      text: 'App design system <span class="nhsuk-u-visually-hidden">homepage</span>' | safe,
+      href: '/'
     },
     navigation: {
       items: [
         {
-          href: "/get-started/",
-          text: "Get started"
+          href: '/get-started/',
+          text: 'Get started',
+          active: page and page.url and '/get-started/' in page.url
         },
         {
           href: '/styles/',
@@ -49,19 +50,26 @@
         },
         {
           href: '/components/',
-          text: 'Components'
+          text: 'Components',
+          active: page and page.url and '/components/' in page.url
         },
         {
           href: '/patterns/',
-          text: 'Patterns'
+          text: 'Patterns',
+          active: page and page.url and '/patterns/' in page.url
         },
         {
           href: '/community/',
-          text: 'Community'
+          text: 'Community',
+          active: page and page.url and '/community/' in page.url
         }
       ]
     }
   }) }}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
 {% endblock %}
 
 {% block footer %}
@@ -69,12 +77,12 @@
     meta: {
       items: [
         {
-          href: "/community/help-and-feedback/",
-          text: "Help and feedback"
+          href: '/community/help-and-feedback/',
+          text: 'Help and feedback'
         },
         {
-          href: "https://github.com/nhsuk/nhsapp-frontend",
-          text: "Code on Github"
+          href: 'https://github.com/nhsuk/nhsapp-frontend',
+          text: 'Code on Github'
         }
       ]
     }
