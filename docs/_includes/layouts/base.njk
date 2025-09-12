@@ -64,6 +64,10 @@
   }) }}
 {% endblock %}
 
+{% block content %}
+  {{ content | safe }}
+{% endblock %}
+
 {% block footer %}
   {{ footer({
     meta: {
