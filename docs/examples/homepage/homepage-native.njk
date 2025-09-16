@@ -9,7 +9,6 @@ vueLink:
 
 {% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
-{% from "nhsapp/styles/section-heading/macro.njk" import nhsappSectionHeading %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
@@ -37,15 +36,9 @@ vueLink:
       </p>
     </div>
 
-    {{ nhsappSectionHeading({
-      headingText: "Services",
-      linkText: "View all",
-      linkUrl: "#",
-      linkAriaLabel: "View all services"
-    }) }}
-
     {{ nhsappCardGroup({
       stacked: true,
+      heading: "Services",
       cards: [
         {
           title: "Request repeat prescriptions",
@@ -58,15 +51,9 @@ vueLink:
       ]
     }) }}
 
-    {{ nhsappSectionHeading({
-      headingText: "Your health",
-      linkText: "View all",
-      linkUrl: "#",
-      linkAriaLabel: "View all your health"
-    }) }}
-
     {{ nhsappCardGroup({
       stacked: true,
+      heading: "Your health",
       cards: [
         {
           title: "GP health record",
@@ -83,13 +70,10 @@ vueLink:
       ]
     }) }}
 
-    {{ nhsappSectionHeading({
-      headingText: "Messages"
-    }) }}
-
     {% if data['messages'] > 0 %}
       {{ nhsappCardGroup({
         stacked: true,
+        heading: "Messages",
         cards: [
           {
             title: 'View your messages',
@@ -117,14 +101,16 @@ vueLink:
       }) }}
     {% endif %}
 
-    {{ nhsappSectionHeading({
-      headingText: "Account"
-    }) }}
-
-    {{ nhsappCard({
-      title: 'Manage services for another person',
-      href: '#',
-      prefixIcon: 'switchProfile'
+    {{ nhsappCardGroup({
+      stacked: true,
+      heading: "Account",
+      cards: [
+        {
+          title: 'Manage services for another person',
+          href: '#',
+          prefixIcon: 'switchProfile'
+        }
+      ]
     }) }}
 
   </div>
