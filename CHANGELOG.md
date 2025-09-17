@@ -2,13 +2,15 @@
 
 ## `v5.0.0` - UNRELEASED
 
-### Breaking changes
+### 💥 Breaking changes
 
 Bumped `nhsuk-frontend` version to `v10.0.0` ([PR 378](https://github.com/nhsuk/nhsapp-frontend/pull/378)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
 
-#### Deprecated `nhsapp-frontend` components now available in `nhsuk-frontend`
+#### Button group
 
-##### Swap `nhsapp-button-group` → with `nhsuk-button-group`
+Deprecated `nhsapp-frontend` component as now available in `nhsuk-frontend`.
+
+Swap `nhsapp-button-group` → with `nhsuk-button-group`.
 
 Before:
 
@@ -38,7 +40,7 @@ After:
 
 #### Icons
 
-Updated icon names, following nhsuk frontend naming conventions.
+Updated icon names, following nhsuk frontend naming conventions in [pull request #381](https://github.com/nhsuk/nhsapp-frontend/pull/389).
 
 Before:
 
@@ -47,6 +49,24 @@ Before:
 After:
 
 `nhsapp-icon nhsapp-icon--account`
+
+## 🆕 New features
+
+### New (web) header component
+
+Added (web) header component by extending the NHS design system header and adding modifier classes, `nhsapp-u-hide-from-tablet` and `nhsapp-u-hide-until-tablet`, to show and hide nav items on different screen sizes in [pull request #390](https://github.com/nhsuk/nhsapp-frontend/pull/390).
+
+### New NHS App colours
+
+Added NHS App colours in [pull request #389](https://github.com/nhsuk/nhsapp-frontend/pull/392).
+
+These are tints and shades extended from the NHS design system used on the NHS App tag and card links components.
+
+### Card links
+
+#### Updated card links styling
+
+Updated card links component styling in [pull request #382](https://github.com/nhsuk/nhsapp-frontend/pull/382)
 
 ## `v4.0.0` - 17 June 2025
 
