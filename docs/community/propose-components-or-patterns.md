@@ -18,6 +18,6 @@ You can contribute to the GitHub thread and:
 
 ## If your idea is not on the backlog
 
-Propose a new component or pattern using the [GitHub issue template](www.test.com).
+Propose a new component or pattern using the [GitHub issue template](https://github.com/nhsuk/nhsapp-frontend/issues/new?assignees=&labels=type%3A+feature+request%2C+awaiting+triage&projects=&template=new_feature.yaml&title=%5BFeature+request%5D%3A+).
 
 Describe your idea and give evidence of user needs. The design system team will respond and discuss the idea with you.
