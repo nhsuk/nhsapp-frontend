@@ -1,13 +1,15 @@
 ---
 layout: layouts/community.njk
-title: Suggest a change
-order: 1
-description: You may have questions about our current components and patterns guidance, or changes you want to suggest. There might be something you feel we haven’t covered, or a different approach you’ve noticed another organisation taking, for example. 
+title: Suggest improvements to the design system
+order: 4
+description: Let us know if you find an opportunity to fix or improve the NHS App design system.
 tags:
   - contribution
 ---
 
-You can post your feedback on the relevant GitHub issue template. Use a:
+This could include problems with the design or code of a component, or missing documentation and features.
+
+Post your feedback on the relevant GitHub issue. Use a:
 
 - [bug report](https://github.com/nhsuk/nhsapp-frontend/issues/new?assignees=&labels=type%3A+bug%2C+awaiting+triage&projects=&template=bug_report.yaml&title=%5BBug%5D%3A+) if something isn’t working as expected
 - [design defect](https://github.com/nhsuk/nhsapp-frontend/issues/new?assignees=&labels=type%3A+bug%2C+awaiting+triage&projects=&template=design_defect.yaml&title=%5BBug%5D%3A+) if there is a visual design issue
