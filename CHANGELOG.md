@@ -62,6 +62,18 @@ Added NHS App colours in [pull request #389](https://github.com/nhsuk/nhsapp-fro
 
 These are tints and shades extended from the NHS design system used on the NHS App tag and card links components.
 
+Example:
+
+`nhsapp-colour("green-light")`
+
+Before:
+
+`$color_tag-green-background: #c9e6d8;`
+
+After:
+
+`$color_tag-green-background: nhsapp-colour("green-light");`
+
 ### Card links
 
 Updated card links component styling in [pull request #382](https://github.com/nhsuk/nhsapp-frontend/pull/382).
@@ -72,6 +84,38 @@ Added new variants for the:
 - **Campaign card** - using the classes `nhsapp-card--blue-dark` and `nhsapp-card--with-media`.
 
 Added a heading and description option for groups of card links (this supersedes the section heading).
+
+Before:
+
+```
+<div class="nhsapp-section-heading">
+  <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Heading</h2>
+</div>
+<p class="nhsuk-u-margin-bottom-5">Description goes here</p>
+<ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    ...
+  </li>
+  <li class="nhsapp-card">
+    ...
+  </li>
+</ul>
+```
+
+After:
+
+```
+<h2 class="nhsapp-cards__heading">Heading</h2>
+<p class="nhsapp-cards__description">Description goes here</p>
+<ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    ...
+  </li>
+  <li class="nhsapp-card">
+    ...
+  </li>
+</ul>
+```
 
 ## `v4.0.0` - 17 June 2025
 
