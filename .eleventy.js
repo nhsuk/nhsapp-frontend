@@ -130,7 +130,8 @@ export default function (eleventyConfig) {
       hub: data.hub,
       backlink: data.backlink || data.backLink || false,
       backLinkHref: data.backLinkHref,
-      backLinkText: data.backLinkText
+      backLinkText: data.backLinkText,
+      arguments: data.arguments // NEW: expose macro arguments key to example template
     }
     return nunjucksEnv.render('example.njk', templateData)
   })
