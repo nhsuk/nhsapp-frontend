@@ -4,11 +4,11 @@
 
 ### 💥 Breaking changes
 
-Bumped `nhsuk-frontend` version to `v10.0.0` ([PR 378](https://github.com/nhsuk/nhsapp-frontend/pull/378)) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
+Bumped `nhsuk-frontend` version to `v10.0.0` in [pull request #378](https://github.com/nhsuk/nhsapp-frontend/pull/378) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
 
 #### Button group
 
-Deprecated `nhsapp-frontend` component as now available in `nhsuk-frontend`.
+Deprecated `nhsapp-button-group` component in [pull request #378](https://github.com/nhsuk/nhsapp-frontend/pull/378), as now available in `nhsuk-frontend`.
 
 Swap `nhsapp-button-group` → with `nhsuk-button-group`.
 
@@ -54,7 +54,7 @@ After:
 
 ### New (web) header component
 
-Added (web) header component by extending the NHS design system header and adding modifier classes, `nhsapp-u-hide-from-tablet` and `nhsapp-u-hide-until-tablet`, to show and hide nav items on different screen sizes in [pull request #390](https://github.com/nhsuk/nhsapp-frontend/pull/390).
+Added (web) header component in [pull request #390](https://github.com/nhsuk/nhsapp-frontend/pull/390), extending the NHS design system header and adding modifier classes, `nhsapp-u-hide-from-tablet` and `nhsapp-u-hide-until-tablet`, to show and hide nav items on different screen sizes.
 
 ### New NHS App colours
 
@@ -64,9 +64,14 @@ These are tints and shades extended from the NHS design system used on the NHS A
 
 ### Card links
 
-#### Updated card links styling
+Updated card links component styling in [pull request #382](https://github.com/nhsuk/nhsapp-frontend/pull/382).
 
-Updated card links component styling in [pull request #382](https://github.com/nhsuk/nhsapp-frontend/pull/382)
+Added new variants for the:
+
+- **Account card** - using the class `nhsapp-card--blue-light`.
+- **Campaign card** - using the classes `nhsapp-card--blue-dark` and `nhsapp-card--with-media`.
+
+Added a heading and description option for groups of card links (this supersedes the section heading).
 
 ## `v4.0.0` - 17 June 2025
 
