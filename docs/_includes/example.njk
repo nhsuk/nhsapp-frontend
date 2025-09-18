@@ -24,16 +24,21 @@
 </div>
 
 <div class="app-tabs" data-module="app-tabs">
+  {% set showNunjucksTab = showNunjucks is not defined or showNunjucks != false %}
   <ul class="app-tabs__list" role="tablist">
-    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
-    <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
+    {%- if showNunjucksTab -%}
+      <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+      <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
+    {%- else -%}
+      <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+    {%- endif -%}
     {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
     {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
     {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
   </ul>
 
   <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">
-    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#html-default-{{ id }}-code">Copy code</button>
+    <button class="app-copy__button" data-module="app-copy" data-clipboard-target="#html-default-{{ id }}-code">Copy code</button>
     <div id="html-default-{{ id }}-code">
       {%- highlight "html" -%}
         {{ htmlCode | safe }}
@@ -42,7 +47,6 @@
   </div>
 
   <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default-{{ id }}" role="tabpanel" aria-labelledby="tab_nunjucks-default-{{ id }}">
-    <button class="app-copy__button app-u-hidden" data-module="app-copy" data-clipboard-target="#nunjucks-default-{{ id }}-code">Copy code</button>
 
     {%- if arguments -%}
       <details class="nhsuk-details nhsuk-u-padding-top-4 nhsuk-u-padding-left-4 nhsuk-u-padding-right-4" data-module="nhsuk-details">
@@ -60,10 +64,14 @@
       </details>
     {%- endif -%}
 
+    <button class="app-copy__button" data-module="app-copy" data-clipboard-target="#nunjucks-default-{{ id }}-code">Copy code</button>
+
 <div id="nunjucks-default-{{ id }}-code">
+
 ```jinja2
 {{ nunjucksCode | safe }}
 ```
+
 </div>
 
   </div>
