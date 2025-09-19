@@ -1,9 +1,12 @@
+{% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
 {% set stackedClass = 'nhsapp-cards--stacked' if params.stacked else '' %}
 {% set headingLevel = params.headingLevel if params.headingLevel else 2 %}
 
 {% from "./macro.njk" import nhsappCard %}
 
-{% if params.heading %}
+{%- if params.html -%}
+    {{ params.html | safe }}
+{% elif params.heading %}
   <h{{ headingLevel }} class="nhsapp-cards__heading {{ headingClass }}">
     {{ params.heading }}
   </h{{ headingLevel }}>
@@ -13,14 +16,15 @@
   <p class="nhsapp-cards__description {{ descriptionClass }}">
     {{ params.description }}
   </p>
+{% elif params.descriptionHtml  %}
+  {{ params.descriptionHtml | safe }}
 {% endif %}
 
 {# Control whether it renders as a list of <li> inside a <ul>, or plain blocks inside a <div>. Defaults to list (true). #}
 {% set isList = params.isListItem if params.isListItem is defined else true %}
 {% set wrapperTag = 'ul' if isList else 'div' %}
 
-<{{ wrapperTag }} class="nhsapp-cards {{ stackedClass }}
-{{ params.classes if params.classes }}">
+<{{ wrapperTag }} {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-cards {{ stackedClass }} {{ params.classes if params.classes }}" {{- nhsukAttributes(params.attributes) }}>
   {% for cardItem in params.cards %}
     {{ nhsappCard({
       title: cardItem.title,
@@ -29,14 +33,17 @@
       href: cardItem.href,
       html: cardItem.html,
       classes: cardItem.classes,
+      containerClasses: cardItem.containerClasses,
       aboveContent: cardItem.aboveContent,
       description: cardItem.description,
+      descriptionHtml: cardItem.descriptionHtml,
       descriptionClasses: cardItem.descriptionClasses,
       badgeLarge: cardItem.badgeLarge,
       prefixIcon: cardItem.prefixIcon,
+      img: cardItem.img,
       footer: cardItem.footer,
       isListItem: isList,
-      linkAriaLabel: cardItem.linkAriaLabel
+      hrefAriaLabel: cardItem.hrefAriaLabel
     }) }}
   {% endfor %}
 </{{ wrapperTag }}>

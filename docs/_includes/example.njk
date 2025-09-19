@@ -59,7 +59,17 @@
           <p>Use options to customise the appearance, content and behaviour of a component when using a macro, for example, changing the text.</p>
           <p>Some options are required for the macro to work; these are marked as "Required" in the option description.</p>
           <p>If you're using Nunjucks macros in production with "html" options, or ones ending with "html", you must sanitise the HTML to protect against <a href="https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting">cross-site scripting exploits</a>.</p>
-          {% include "nhsapp/components/" + arguments + "/macro-options.md" ignore missing %}
+          {% if arguments %}
+            {% set macroOptionsPath = "nhsapp/components/" + arguments + "/macro-options.md" %}
+            {% if arguments == "card" %}
+              {% set macroOptionsPath = "nhsapp/components/card/macro-options-card.md" %}
+            {% elif arguments == "card-group" %}
+              {% set macroOptionsPath = "nhsapp/components/card/macro-options-card-group.md" %}
+            {% endif %}
+            <div class="app-table--scroll">
+              {% include macroOptionsPath ignore missing %}
+            </div>
+          {% endif %}
         </div>
       </details>
     {%- endif -%}
