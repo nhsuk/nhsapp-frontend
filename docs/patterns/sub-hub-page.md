@@ -16,25 +16,21 @@ Whereas hub pages represent broader groupings of information, sub-hubs contain m
 
 Always include a back link at the top of sub-hubs. This allows users to return to the hub page they came from.
 
-### Main heading
+### Page heading
 
 This is the name of the sub-hub.
 
-### Descriptive text (optional)
-
 You can use a brief description to give users more context about a sub-hub. We don’t include full stops at the end of this description, following a similar principle to the [NHS service manual guidance on cards](https://service-manual.nhs.uk/content/formatting-and-punctuation#full-stops).
-
-### Section heading
-
-Use [section headings](/components/section-heading/) to break up card links into themes. It helps users to scan the information on the page more easily and reduces cognitive load. Research shows that people can be overwhelmed by long lists on NHS App pages.
-
-Do not list more than 6 card links in a row without using a section heading.
 
 ### Card links
 
 [Card links](/components/card-links/) on a sub-hub should lead directly into a specific service or feature.
 
 Do not create further menu pages that sit one level below a sub-hub. Research shows it can be frustrating for users if they need to navigate through multiple pages to find what they are looking for.
+
+Use headings to break up card links into themes. It helps users to scan the information on the page more easily and reduces cognitive load. Research shows that people can be overwhelmed by long lists on NHS App pages.
+
+Do not list more than 6 card links in a row without using a section heading.
 
 ## How to use sub-hubs
 

@@ -9,25 +9,21 @@ backlogID: 69
 
 ## The structure of a hub page
 
-### Main heading
+### Page heading
 
 This is the name of the hub page.
 
-### Description text (optional)
-
 You can use a brief description to give users more context about a hub page. We don’t include full stops at the end of this description, following a similar principle to the [NHS service manual guidance on cards](https://service-manual.nhs.uk/content/formatting-and-punctuation#full-stops).
-
-### Section heading
-
-Use [section headings](/components/section-heading) to break up card links into themes.
-
-This can help users to scan the information on the page more easily and reduces the cognitive load. Research shows that people can be overwhelmed by long lists on NHS App pages.
-
-Do not list more than 6 card links in a row without using a section heading.
 
 ### Card links
 
 [Card links](/components/card-links) on the hub pages can lead either directly into a service or feature, or to a sub-hub where more options are available.
+
+Use headings to break up card links into themes.
+
+This can help users to scan the information on the page more easily and reduces the cognitive load. Research shows that people can be overwhelmed by long lists on NHS App pages.
+
+Do not list more than 6 card links in a row without using a section heading.
 
 ## How to use hub pages
 

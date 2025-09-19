@@ -16,10 +16,6 @@ This main heading includes the name of the user and a greeting that changes depe
 
 Below the name, we display the NHS number of the user. In research, participants regularly tell us they find having their NHS number here to be useful.
 
-### Section heading
-
-We use [section headings](/components/section-heading/) to separate links by which hub page of the app they come from. Alongside these section headings, ‘View all’ links lead to the relevant hub page.
-
 ### Card links
 
 [Card links](/components/card-links/) on the page lead either directly to the start of a journey, or to a hub page.
