@@ -1,0 +1,20 @@
+---
+layout: layouts/component.njk
+title: Header (web)
+description: Use the header at the top of every web browser page, to show users they are using NHS App services.
+backlogID: 18
+tags:
+  - component
+---
+
+## How to use
+
+We extend the [NHS design system header](https://service-manual.nhs.uk/design-system/components/header) with added `nhsapp-u-hide-from-tablet` and `nhsapp-u-hide-until-tablet` modifier classes to show and hide nav items.
+
+### Header (logged in)
+
+{% example "header/header-logged-in.njk" %}
+
+### Header (logged out)
+
+{% example "header/header-not-logged-in.njk" %}

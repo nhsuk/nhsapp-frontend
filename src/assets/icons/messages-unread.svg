@@ -1,6 +1,6 @@
-<svg class="nhsapp-icon nhsapp-icon__messages-unread" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+<svg class="nhsapp-icon nhsapp-icon--messages-unread" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
   <path
     d="M21.75 11.38a.76.76 0 0 0-.7-.08l-.77.31V4.47c0-.41-.34-.75-.75-.75H4.47c-.41 0-.75.34-.75.75v7.15l-.78-.31a.76.76 0 0 0-.7.08c-.21.14-.33.37-.33.62v9.27c0 .41.34.75.75.75h18.67c.41 0 .75-.34.75-.75v-9.27c0-.25-.12-.48-.33-.62ZM5.22 5.22h13.56v6.97L12 14.94l-6.78-2.75V5.22Zm15.36 15.3H3.41v-7.41l8.31 3.34c.18.07.38.07.56 0l8.3-3.34v7.41Z"
   />
-  <circle class="nhsapp-icon__unread-indicator" cx="18.23" cy="5.77" r="3.77" />
+  <circle class="nhsapp-icon--unread-indicator" cx="18.23" cy="5.77" r="3.77" />
 </svg>

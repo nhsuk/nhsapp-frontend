@@ -1,5 +1,122 @@
 # NHS App Frontend Changelog
 
+## `v5.0.0` - UNRELEASED
+
+### 💥 Breaking changes
+
+Bumped `nhsuk-frontend` version to `v10.0.0` in [pull request #378](https://github.com/nhsuk/nhsapp-frontend/pull/378) - details are in the [nhsuk frontend release notes](https://github.com/nhsuk/nhsuk-frontend/releases).
+
+#### Button group
+
+Deprecated `nhsapp-button-group` component in [pull request #378](https://github.com/nhsuk/nhsapp-frontend/pull/378), as now available in `nhsuk-frontend`.
+
+Swap `nhsapp-button-group` → with `nhsuk-button-group`.
+
+Before:
+
+```
+<div class="nhsapp-button-group">
+  <button class="nhsuk-button nhsapp-button">
+    Continue
+  </button>
+  <button class="nhsuk-button nhsuk-button--secondary nhsapp-button">
+    Try again
+  </button>
+</div>
+```
+
+After:
+
+```
+<div class="nhsuk-button-group">
+  <button class="nhsuk-button nhsapp-button">
+    Continue
+  </button>
+  <button class="nhsuk-button nhsuk-button--secondary nhsapp-button">
+    Try again
+  </button>
+</div>
+```
+
+#### Icons
+
+Updated icon names, following nhsuk frontend naming conventions in [pull request #381](https://github.com/nhsuk/nhsapp-frontend/pull/389).
+
+Before:
+
+`nhsapp-icon nhsapp-icon__account`
+
+After:
+
+`nhsapp-icon nhsapp-icon--account`
+
+## 🆕 New features
+
+### New (web) header component
+
+Added (web) header component in [pull request #390](https://github.com/nhsuk/nhsapp-frontend/pull/390), extending the NHS design system header and adding modifier classes, `nhsapp-u-hide-from-tablet` and `nhsapp-u-hide-until-tablet`, to show and hide nav items on different screen sizes.
+
+### New NHS App colours
+
+Added NHS App colours in [pull request #389](https://github.com/nhsuk/nhsapp-frontend/pull/392).
+
+These are tints and shades extended from the NHS design system used on the NHS App tag and card links components.
+
+Example:
+
+`nhsapp-colour("green-light")`
+
+Before:
+
+`$color_tag-green-background: #c9e6d8;`
+
+After:
+
+`$color_tag-green-background: nhsapp-colour("green-light");`
+
+### Card links
+
+Updated card links component styling in [pull request #382](https://github.com/nhsuk/nhsapp-frontend/pull/382).
+
+Added new variants for the:
+
+- **Account card** - using the class `nhsapp-card--blue-light`.
+- **Campaign card** - using the classes `nhsapp-card--blue-dark` and `nhsapp-card--with-media`.
+
+Added a heading and description option for groups of card links (this supersedes the section heading).
+
+Before:
+
+```
+<div class="nhsapp-section-heading">
+  <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Heading</h2>
+</div>
+<p class="nhsuk-u-margin-bottom-5">Description goes here</p>
+<ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    ...
+  </li>
+  <li class="nhsapp-card">
+    ...
+  </li>
+</ul>
+```
+
+After:
+
+```
+<h2 class="nhsapp-cards__heading">Heading</h2>
+<p class="nhsapp-cards__description">Description goes here</p>
+<ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    ...
+  </li>
+  <li class="nhsapp-card">
+    ...
+  </li>
+</ul>
+```
+
 ## `v4.0.0` - 17 June 2025
 
 ### Breaking changes

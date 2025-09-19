@@ -5,7 +5,7 @@
 .app-example {
   @include nhsuk-responsive-margin(5, "top");
 
-  border: 1px solid $nhsuk-border-color;
+  border: 1px solid $nhsuk-border-colour;
   padding-top: 37px; //matches height of new window link
   position: relative;
 
@@ -15,7 +15,7 @@
 }
 
 .app-example__frame {
-  background-color: $color_nhsuk-white;
+  background-color: nhsuk-colour("white");
   border: 0;
   display: block;
   width: 100%;
@@ -30,7 +30,7 @@
 
 .app-example__new-window {
   @include nhsuk-font($size: 14);
-  border-bottom: 1px solid $nhsuk-border-color;
+  border-bottom: 1px solid $nhsuk-border-colour;
   left: 0;
   position: absolute;
   padding: 8px 16px;
@@ -40,26 +40,26 @@
   a,
   a:link,
   a:visited {
-    color: $color_nhsuk-blue;
+    color: nhsuk-colour("blue");
     display: inline-block;
     text-decoration: underline;
   }
 
   a:hover {
-    color: $nhsuk-link-hover-color;
+    color: $nhsuk-link-hover-colour;
     text-decoration: none;
   }
 
   a:focus {
-    color: $nhsuk-focus-text-color;
-    background-color: $nhsuk-focus-color;
+    color: $nhsuk-focus-text-colour;
+    background-color: $nhsuk-focus-colour;
     text-decoration: none;
   }
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: $color_nhsuk-white;
+  background: nhsuk-colour("white");
   margin: 0;
 }
 
@@ -68,10 +68,10 @@ pre[class*="language-"] {
 }
 
 .app-copy__button {
-  background-color: $color_nhsuk-white;
-  border: 1px solid $color_nhsuk-green;
-  box-shadow: 0 2px 0 $color_nhsuk-green;
-  color: $color_nhsuk-green;
+  background-color: nhsuk-colour("white");
+  border: 1px solid nhsuk-colour("green");
+  box-shadow: 0 2px 0 nhsuk-colour("green");
+  color: nhsuk-colour("green");
   cursor: pointer;
   font-size: 14px;
   padding: 2px 8px;
@@ -80,17 +80,17 @@ pre[class*="language-"] {
   top: 16px;
 
   &:hover {
-    background-color: $color_nhsuk-green;
-    color: $color_nhsuk-white;
+    background-color: nhsuk-colour("green");
+    color: nhsuk-colour("white");
   }
 
   &:focus {
-    background-color: $nhsuk-focus-color;
-    border-color: $nhsuk-focus-color;
+    background-color: $nhsuk-focus-colour;
+    border-color: $nhsuk-focus-colour;
     box-shadow:
-      0 -2px $nhsuk-focus-color,
-      0 4px $nhsuk-focus-text-color;
-    color: $nhsuk-focus-text-color;
+      0 -2px $nhsuk-focus-colour,
+      0 4px $nhsuk-focus-text-colour;
+    color: $nhsuk-focus-text-colour;
   }
 }
 

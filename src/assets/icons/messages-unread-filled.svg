@@ -1,9 +1,9 @@
-<svg class="nhsapp-icon nhsapp-icon__messages-unread-filled" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+<svg class="nhsapp-icon nhsapp-icon--messages-unread-filled" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
   <path
     d="M18.23 10.55c-2.63 0-4.77-2.14-4.77-4.77 0-.74.18-1.43.48-2.05H4.47c-.41 0-.75.34-.75.75v7.11l8.38 3.36 8.18-3.42v-1.45c-.62.3-1.32.48-2.05.48Z"
   />
   <path
     d="M21.44 12.66c-.75.34-1.64.67-1.8.73l-7.46 3.05c-.06.02-.12.03-.18.04-.06 0-.12-.01-.18-.04l-7.46-3.05c-.16-.06-1.05-.4-1.8-.73a.397.397 0 0 0-.56.37v8.16c0 .46.37.83.82.83h18.35c.45 0 .82-.37.82-.83v-8.16c0-.29-.3-.48-.56-.37Z"
   />
-  <circle class="nhsapp-icon__unread-indicator" cx="18.23" cy="5.77" r="3.77" />
+  <circle class="nhsapp-icon--unread-indicator" cx="18.23" cy="5.77" r="3.77" />
 </svg>
