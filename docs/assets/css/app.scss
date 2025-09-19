@@ -82,3 +82,16 @@ pre {
 .app-section-break--width-4 {
   border-width: 4px;
 }
+
+// Make tables scrollable on small screens
+// Used on Nunjucks Macro options
+.app-table--scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-table--scroll table {
+  width: 100%;
+  margin-bottom: 0;
+}

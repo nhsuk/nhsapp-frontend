@@ -1,3 +1,5 @@
+{% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
+
 {% macro _timelineItem(params, item) %}
   {% set headingLevel = params.headingLevel if params.headingLevel else 3 %}
   {% set headingBold = 'nhsuk-u-font-weight-bold' if item.active else '' %}
@@ -24,8 +26,7 @@
   </li>
 {% endmacro %}
 
-<ol class="nhsapp-timeline 
-{{ params.classes if params.classes }}">
+<ol {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-timeline {{ params.classes if params.classes }} {{- nhsukAttributes(params.attributes) }}">
   {% for item in params.items %}
     {% if item %}{{ _timelineItem(params, item) }}{% endif %}
   {% endfor %}

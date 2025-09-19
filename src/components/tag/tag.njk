@@ -1,1 +1,5 @@
-<span class="nhsapp-tag {{ params.classes }}">{{ params.text }}</span>
+{% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
+
+<span {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-tag {{ params.classes }}" {{- nhsukAttributes(params.attributes) }}>
+  {{ params.html | safe if params.html else params.text }}
+</span>

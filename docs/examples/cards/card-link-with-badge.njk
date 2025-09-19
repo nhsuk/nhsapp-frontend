@@ -3,6 +3,7 @@ layout: layouts/example.njk
 title: Card link with description
 figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1"
 vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs"
+arguments: card
 ---
 
 {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
@@ -11,10 +12,10 @@ vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?pat
   title: 'Messages',
   href: '#',
   prefixIcon: 'messagesUnread',
-  linkAriaLabel: 'Messages, you have 4 unread messages',
+  hrefAriaLabel: 'Messages, you have 4 unread messages',
   badgeLarge: {
     count: 4,
     label: 'unread messages',
-    ariaHidden: true
+    attributes: { 'aria-hidden': 'true' }
   }
 }) }}

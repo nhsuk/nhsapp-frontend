@@ -73,6 +73,10 @@
     max-width: 100% !important;
     padding: nhsuk-spacing(2);
   }
+
+  .nhsuk-details__text p {
+    padding: 0;
+  }
 }
 
 .app-tabs + h2,
