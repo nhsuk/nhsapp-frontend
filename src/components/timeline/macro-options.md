@@ -11,4 +11,4 @@
 | items[].isPastItem  | boolean     | no          | Marks the item as past: large blue dot and adds modifier class `nhsapp-timeline__item--past`.                                    |
 | id                  | string      | no          | The ID of the timeline.                                                                                                          |
 | classes             | string      | no          | Classes to add to the timeline.                                                                                                  |
-| attributes          | object      | no          | HTML attributes (for example data attributes) to add to the timeline.                                                            |
+| attributes          | object      | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the timeline.                                                       |

@@ -11,10 +11,10 @@
 | isListItem                    | boolean     | no          | If true (default), wrapper is `<ul>` and each card a `<li>`. If false, wrapper is `<div>` and cards render as `<div>`.                        |
 | id                            | string      | no          | ID of the card group.                                                                                                                         |
 | classes                       | string      | no          | Classes to add to the group wrapper (`<ul>` or `<div>`).                                                                                      |
-| attributes                    | object      | no          | HTML attributes (for example data attributes) to add to the group wrapper.                                                                    |
+| attributes                    | object      | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the card group.                                                                  |
 | cards                         | array<Card> | yes         | Array of card objects (see card macro options). Group `isListItem` overrides any per‑card `isListItem` value.                                 |
-| cards[].title                 | string      | conditional | If `cards[].html` not provided, this is required. Title text (renders as link, heading or paragraph).                                         |
-| cards[].html                  | string      | conditional | If `cards[].title` not provided, this is required. Replaces the entire title block.                                                           |
+| cards[].title                 | string      | conditional | If `cards[].html` is set, this is not required. Title text (renders as link, heading or paragraph).                                           |
+| cards[].html                  | string      | conditional | If `cards[].title` is set, this is not required. Replaces the entire title block.                                                             |
 | cards[].href                  | string      | conditional | URL for a clickable card (ignored if `cards[].html` provided).                                                                                |
 | cards[].hrefAriaLabel         | string      | no          | Aria label for the link when `cards[].href` is provided (ignored if `cards[].html` provided).                                                 |
 | cards[].headingLevel          | number      | conditional | Heading level (2–6) when no `cards[].href` and no `cards[].html`.                                                                             |
@@ -26,7 +26,7 @@
 | cards[].aboveContent.html     | string      | no          | HTML inserted above the card title area.                                                                                                      |
 | cards[].footer.html           | string      | no          | HTML inserted in the card footer area.                                                                                                        |
 | cards[].img.src               | string      | conditional | Image source URL; renders media block if present.                                                                                             |
-| cards[].img.alt               | string      | no          | Image alt text (empty string if decorative).                                                                                                  |
+| cards[].img.alt               | string      | no          | Image alt text. Defaults to alt text null `alt=""`.                                                                                           |
 | cards[].prefixIcon            | string      | no          | Icon name rendered before the card content.                                                                                                   |
 | cards[].badgeLarge.count      | number      | conditional | Number shown in the large badge (renders only when > 0).                                                                                      |
 | cards[].badgeLarge.label      | string      | yes         | Visually hidden text announced after the count.                                                                                               |
@@ -35,4 +35,4 @@
 | cards[].badgeLarge.attributes | object      | no          | HTML attributes (for example `data-*` or `aria-*`) added to the badge.                                                                        |
 | cards[].id                    | string      | no          | ID of the card.                                                                                                                               |
 | cards[].classes               | string      | no          | Classes added to the card wrapper.                                                                                                            |
-| cards[].attributes            | object      | no          | HTML attributes (for example data attributes) added to the card wrapper.                                                                      |
+| cards[].attributes            | object      | no          | HTML attributes (for example `data-*` or `aria-*`) added to the card.                                                                         |
