@@ -15,7 +15,7 @@
 | cards                         | array<Card> | yes         | Array of card objects (see card macro options). Group `isListItem` overrides any per‑card `isListItem` value.                                 |
 | cards[].title                 | string      | conditional | If `cards[].html` is set, this is not required. Title text (renders as link, heading or paragraph).                                           |
 | cards[].html                  | string      | conditional | If `cards[].title` is set, this is not required. Replaces the entire title block.                                                             |
-| cards[].href                  | string      | conditional | URL for a clickable card (ignored if `cards[].html` provided).                                                                                |
+| cards[].href                  | string      | conditional | The value of the card link href attribute.                                                                                                    |
 | cards[].hrefAriaLabel         | string      | no          | Aria label for the link when `cards[].href` is provided (ignored if `cards[].html` provided).                                                 |
 | cards[].headingLevel          | number      | conditional | Heading level (2–6) when no `cards[].href` and no `cards[].html`.                                                                             |
 | cards[].titleClasses          | string      | no          | Classes added to the title element (ignored when `cards[].html` used).                                                                        |

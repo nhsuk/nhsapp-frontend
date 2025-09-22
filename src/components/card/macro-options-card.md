@@ -4,7 +4,7 @@
 | --------------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | title                 | string | conditional | If `html` is set, this is not required. Title text for the card (renders as link, heading or paragraph depending on other args).  |
 | html                  | string | conditional | If `title` is set, this is not required. Replaces the whole title block; ignores `title`, `href`, `headingLevel`, `titleClasses`. |
-| href                  | string | conditional | URL for a clickable card. Used only when `html` not provided.                                                                     |
+| href                  | string | conditional | The value of the card link href attribute.                                                                                        |
 | hrefAriaLabel         | string | no          | Aria label for the link when `href` is provided (ignored if `html` replaces the block).                                           |
 | headingLevel          | number | conditional | Heading level (2–6) when no `href` and no `html`. If omitted (and no link), a paragraph is used.                                  |
 | titleClasses          | string | no          | Classes to add to the title element (ignored when `html` is used).                                                                |
