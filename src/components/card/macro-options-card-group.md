@@ -14,7 +14,7 @@
 | cards                          | array   | yes         | Array of card objects.                                                                                          |
 | cards[]title                   | string  | yes         | The card title text. Renders as: link (if `href`), heading (if `headingLevel` and no `href`), else a paragraph. |
 | cards[]href                    | string  | conditional | Makes the `title` a link when provided.                                                                         |
-| cards[]hrefAriaLabel           | string  | no          | `aria-label` for the title link. Use only if the visible text is not clear.                                     |
+| cards[]linkAriaLabel           | string  | no          | `aria-label` for the title link. Use only if the visible text is not clear.                                     |
 | cards[]headingLevel            | number  | conditional | Heading level (2–6) used only when there is no `href`. If not set (and no `href`) the title is a paragraph.     |
 | cards[]titleClasses            | string  | no          | Classes for the title element.                                                                                  |
 | cards[]containerClasses        | string  | no          | Classes for the inner container.                                                                                |

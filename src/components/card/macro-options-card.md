@@ -4,7 +4,7 @@
 | ----------------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------------------- |
 | title                   | string | yes         | The card title text. Renders as: link (if `href`), heading (if `headingLevel` and no `href`), else a paragraph. |
 | href                    | string | conditional | Makes the `title` a link when provided.                                                                         |
-| hrefAriaLabel           | string | no          | `aria-label` for the title link. Use only if the visible text is not clear.                                     |
+| linkAriaLabel           | string | no          | `aria-label` for the title link. Use only if the visible text is not clear.                                     |
 | headingLevel            | number | conditional | Heading level (2–6) used only when there is no `href`. If not set (and no `href`) the title is a paragraph.     |
 | titleClasses            | string | no          | Classes for the title element.                                                                                  |
 | containerClasses        | string | no          | Classes for the inner container.                                                                                |

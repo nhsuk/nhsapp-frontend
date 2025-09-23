@@ -41,7 +41,7 @@ vueLink:
       headingText: "Services",
       linkText: "View all",
       linkUrl: "#",
-      hrefAriaLabel: "View all services"
+      linkAriaLabel: "View all services"
     }) }}
 
     {{ nhsappCardGroup({
@@ -62,7 +62,7 @@ vueLink:
       headingText: "Your health",
       linkText: "View all",
       linkUrl: "#",
-      hrefAriaLabel: "View all your health"
+      linkAriaLabel: "View all your health"
     }) }}
 
     {{ nhsappCardGroup({
@@ -95,7 +95,7 @@ vueLink:
             title: 'View your messages',
             href: '#',
             prefixIcon: 'messagesUnread',
-            hrefAriaLabel: 'Messages, you have ' + data['messages'] + ' unread messages',
+            linkAriaLabel: 'Messages, you have ' + data['messages'] + ' unread messages',
             badgeLarge: {
               count: data['messages'],
               label: 'unread messages',
