@@ -1,38 +1,36 @@
 <!-- prettier-ignore-file -->
 
-| Name                           | Type    | Required    | Description                                                                                                                                   |
-| ------------------------------ | ------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| heading                        | string  | conditional | Text heading for the card group. Ignored if `html` is provided.                                                                               |
-| html                           | string  | conditional | HTML that replaces the group heading block. If set, `heading` and `headingLevel` are ignored (include your own heading markup for semantics). |
-| headingLevel                   | number  | conditional | Heading level (2–6) for `heading` when `html` not used. Defaults to 2.                                                                        |
-| description                    | string  | conditional | Plain text description shown below the heading. Ignored if `descriptionHtml` is provided.                                                     |
-| descriptionHtml                | string  | conditional | HTML description. If set, `description` is ignored.                                                                                           |
-| stacked                        | boolean | no          | If true, adds `nhsapp-cards--stacked` to stack cards vertically.                                                                              |
-| isListItem                     | boolean | no          | If true (default), wrapper is `<ul>` and each card a `<li>`. If false, wrapper is `<div>` and cards render as `<div>`.                        |
-| id                             | string  | no          | ID of the card group.                                                                                                                         |
-| classes                        | string  | no          | Classes to add to the group wrapper (`<ul>` or `<div>`).                                                                                      |
-| attributes                     | object  | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the card group.                                                                  |
-| cards                          | array   | yes         | Array of card objects (see card macro options). Group `isListItem` overrides any per‑card `isListItem` value.                                 |
-| cards[]title                   | string  | conditional | If `html` is set, this is not required. Title text for the card (renders as link, heading or paragraph depending on other args).              |
-| cards[]html                    | string  | conditional | If `title` is set, this is not required. Replaces the whole title block; ignores `title`, `href`, `headingLevel`, `titleClasses`.             |
-| cards[]href                    | string  | conditional | The value of the card link `href` attribute.                                                                                                  |
-| cards[]hrefAriaLabel           | string  | no          | `aria-label` for the `title` when a `href` is provided. Ignored if `html` is provided.                                                        |
-| cards[]headingLevel            | number  | conditional | Heading level (2–6) when no `href` and no `html`. If omitted (and no link), a paragraph is provided.                                          |
-| cards[]titleClasses            | string  | no          | Classes to add to the title element. Ignored if `html` is set.                                                                                |
-| cards[]containerClasses        | string  | no          | Classes to add to the `nhsapp-card__container` element.                                                                                       |
-| cards[]description             | string  | conditional | Plain text description paragraph. Ignored if `descriptionHtml` is provided.                                                                   |
-| cards[]descriptionHtml         | string  | conditional | HTML description. Ignored if `description` is provided.                                                                                       |
-| cards[]descriptionClasses      | string  | no          | Classes to add to the description paragraph (when using `description`).                                                                       |
-| cards[]aboveContent.html       | string  | no          | HTML inserted above the title area.                                                                                                           |
-| cards[]footer.html             | string  | no          | HTML inserted in the footer area.                                                                                                             |
-| cards[]img{}.src               | string  | conditional | Image source URL. If present, media block is rendered.                                                                                        |
-| cards[]img{}.alt               | string  | no          | Image alt text. Defaults to alt text null `alt=""`.                                                                                           |
-| cards[]prefixIcon              | string  | no          | Icon name to render before the content.                                                                                                       |
-| cards[]badgeLarge{}.count      | number  | conditional | Number shown in the large badge. Renders only when `count > 0`.                                                                               |
-| cards[]badgeLarge{}.label      | string  | yes         | Visually hidden text announced after the count.                                                                                               |
-| cards[]badgeLarge{}.id         | string  | no          | ID attribute for the badge element.                                                                                                           |
-| cards[]badgeLarge{}.classes    | string  | no          | Classes to add to the badge.                                                                                                                  |
-| cards[]badgeLarge{}.attributes | object  | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the badge.                                                                       |
-| cards[]id                      | string  | no          | The ID of the card.                                                                                                                           |
-| cards[]classes                 | string  | no          | Classes to add to the card.                                                                                                                   |
-| cards[]attributes              | object  | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the card.                                                                        |
+| Name                           | Type    | Required    | Description                                                                                                     |
+| ------------------------------ | ------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
+| heading                        | string  | conditional | Text heading for the card group.                                                                                |
+| headingLevel                   | number  | conditional | Heading level (2–6) for the group heading. Defaults to 2 when not set.                                          |
+| description                    | string  | conditional | Plain text shown under the group heading. Ignored if `descriptionHtml` is set.                                  |
+| descriptionHtml                | string  | conditional | HTML version of the description. Overrides `description`.                                                       |
+| stacked                        | boolean | no          | Adds `nhsapp-cards--stacked` class to card group.                                                               |
+| isListItem                     | boolean | no          | If true (default) wrapper is `<ul>` with each card as `<li>`. If false uses `<div>` wrappers.                   |
+| id                             | string  | no          | ID for the card group.                                                                                          |
+| classes                        | string  | no          | Classes for the card group.                                                                                     |
+| attributes                     | object  | no          | HTML attributes for the card group (data-_ or aria-_).                                                          |
+| cards                          | array   | yes         | Array of card objects.                                                                                          |
+| cards[]title                   | string  | yes         | The card title text. Renders as: link (if `href`), heading (if `headingLevel` and no `href`), else a paragraph. |
+| cards[]href                    | string  | conditional | Makes the `title` a link when provided.                                                                         |
+| cards[]hrefAriaLabel           | string  | no          | `aria-label` for the title link. Use only if the visible text is not clear.                                     |
+| cards[]headingLevel            | number  | conditional | Heading level (2–6) used only when there is no `href`. If not set (and no `href`) the title is a paragraph.     |
+| cards[]titleClasses            | string  | no          | Classes for the title element.                                                                                  |
+| cards[]containerClasses        | string  | no          | Classes for the inner container.                                                                                |
+| cards[]description             | string  | conditional | Plain text description below the title. Ignored if `descriptionHtml` is given.                                  |
+| cards[]descriptionHtml         | string  | conditional | HTML description (allows markup). Overrides `description`.                                                      |
+| cards[]descriptionClasses      | string  | no          | Classes for the `description`.                                                                                  |
+| cards[]aboveContent.html       | string  | no          | HTML shown above the title (for example a tag).                                                                 |
+| cards[]footer.html             | string  | no          | HTML shown in the footer.                                                                                       |
+| cards[]img{}.src               | string  | conditional | Image URL. Adds an image section when present.                                                                  |
+| cards[]img{}.alt               | string  | no          | Image alt text. Leave empty only if purely decorative.                                                          |
+| cards[]prefixIcon              | string  | no          | Icon shown before the content (for example messages icon).                                                      |
+| cards[]badgeLarge{}.count      | number  | conditional | Number for the large badge. Badge appears only when `count > 0`.                                                |
+| cards[]badgeLarge{}.label      | string  | yes         | Visually hidden text read after the number.                                                                     |
+| cards[]badgeLarge{}.id         | string  | no          | ID attribute for the badge.                                                                                     |
+| cards[]badgeLarge{}.classes    | string  | no          | Classes for the badge.                                                                                          |
+| cards[]badgeLarge{}.attributes | object  | no          | HTML attributes for the badge (e.g. `data-*`, `aria-*`).                                                        |
+| cards[]id                      | string  | no          | ID for the card.                                                                                                |
+| cards[]classes                 | string  | no          | Classes for the card.                                                                                           |
+| cards[]attributes              | object  | no          | HTML attributes for the card (e.g. `data-*`, `aria-*`).                                                         |

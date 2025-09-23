@@ -1,27 +1,26 @@
 <!-- prettier-ignore-file -->
 
-| Name                    | Type   | Required    | Description                                                                                                                       |
-| ----------------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| title                   | string | conditional | If `html` is set, this is not required. Title text for the card (renders as link, heading or paragraph depending on other args).  |
-| html                    | string | conditional | If `title` is set, this is not required. Replaces the whole title block; ignores `title`, `href`, `headingLevel`, `titleClasses`. |
-| href                    | string | conditional | The value of the card link `href` attribute.                                                                                      |
-| hrefAriaLabel           | string | no          | `aria-label` for the `title` when a `href` is provided. Ignored if `html` is provided.                                            |
-| headingLevel            | number | conditional | Heading level (2–6) when no `href` and no `html`. If omitted (and no link), a paragraph is provided.                              |
-| titleClasses            | string | no          | Classes to add to the title element. Ignored if `html` is set.                                                                    |
-| containerClasses        | string | no          | Classes to add to the `nhsapp-card__container` element.                                                                           |
-| description             | string | conditional | Plain text description paragraph. Ignored if `descriptionHtml` is provided.                                                       |
-| descriptionHtml         | string | conditional | HTML description. Ignored if `description` is provided.                                                                           |
-| descriptionClasses      | string | no          | Classes to add to the description paragraph (when using `description`).                                                           |
-| aboveContent.html       | string | no          | HTML inserted above the title area.                                                                                               |
-| footer.html             | string | no          | HTML inserted in the footer area.                                                                                                 |
-| img{}.src               | string | conditional | Image source URL. If present, media block is rendered.                                                                            |
-| img{}.alt               | string | no          | Image alt text. Defaults to alt text null `alt=""`.                                                                               |
-| prefixIcon              | string | no          | Icon name to render before the content.                                                                                           |
-| badgeLarge{}.count      | number | conditional | Number shown in the large badge. Renders only when `count > 0`.                                                                   |
-| badgeLarge{}.label      | string | yes         | Visually hidden text announced after the count.                                                                                   |
-| badgeLarge{}.id         | string | no          | ID attribute for the badge element.                                                                                               |
-| badgeLarge{}.classes    | string | no          | Classes to add to the badge.                                                                                                      |
-| badgeLarge{}.attributes | object | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the badge.                                                           |
-| id                      | string | no          | The ID of the card.                                                                                                               |
-| classes                 | string | no          | Classes to add to the card.                                                                                                       |
-| attributes              | object | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the card.                                                            |
+| Name                    | Type   | Required    | Description                                                                                                     |
+| ----------------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------------------- |
+| title                   | string | yes         | The card title text. Renders as: link (if `href`), heading (if `headingLevel` and no `href`), else a paragraph. |
+| href                    | string | conditional | Makes the `title` a link when provided.                                                                         |
+| hrefAriaLabel           | string | no          | `aria-label` for the title link. Use only if the visible text is not clear.                                     |
+| headingLevel            | number | conditional | Heading level (2–6) used only when there is no `href`. If not set (and no `href`) the title is a paragraph.     |
+| titleClasses            | string | no          | Classes for the title element.                                                                                  |
+| containerClasses        | string | no          | Classes for the inner container.                                                                                |
+| description             | string | conditional | Plain text description below the title. Ignored if `descriptionHtml` is given.                                  |
+| descriptionHtml         | string | conditional | HTML description (allows markup). Overrides `description`.                                                      |
+| descriptionClasses      | string | no          | Classes for the `description`.                                                                                  |
+| aboveContent.html       | string | no          | HTML shown above the title (for example a tag).                                                                 |
+| footer.html             | string | no          | HTML shown in the footer.                                                                                       |
+| img{}.src               | string | conditional | Image URL. Adds an image section when present.                                                                  |
+| img{}.alt               | string | no          | Image alt text. Leave empty only if purely decorative.                                                          |
+| prefixIcon              | string | no          | Icon shown before the content (for example messages icon).                                                      |
+| badgeLarge{}.count      | number | conditional | Number for the large badge. Badge appears only when `count > 0`.                                                |
+| badgeLarge{}.label      | string | yes         | Visually hidden text read after the number.                                                                     |
+| badgeLarge{}.id         | string | no          | ID attribute for the badge.                                                                                     |
+| badgeLarge{}.classes    | string | no          | Classes for the badge.                                                                                          |
+| badgeLarge{}.attributes | object | no          | HTML attributes for the badge (e.g. `data-*`, `aria-*`).                                                        |
+| id                      | string | no          | ID for the card.                                                                                                |
+| classes                 | string | no          | Classes for the card.                                                                                           |
+| attributes              | object | no          | HTML attributes for the card (e.g. `data-*`, `aria-*`).                                                         |

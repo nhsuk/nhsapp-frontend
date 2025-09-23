@@ -35,9 +35,7 @@
         </div>
       {%- endif -%}
 
-      {%- if params.html -%}
-        {{ params.html | safe }}
-      {%- elif params.href -%}
+      {%- if params.href -%}
         <a href="{{ params.href }}"
            class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
            {%- if params.hrefAriaLabel %} aria-label="{{ params.hrefAriaLabel }}"{% endif %}>
