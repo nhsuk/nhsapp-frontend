@@ -4,8 +4,8 @@
 
 {% from "./macro.njk" import nhsappCard %}
 
-{%- if params.html -%}
-    {{ params.html | safe }}
+{%- if params.headingHtml -%}
+    {{ params.headingHtml | safe }}
 {% elif params.heading %}
   <h{{ headingLevel }} class="nhsapp-cards__heading {{ headingClass }}">
     {{ params.heading }}
