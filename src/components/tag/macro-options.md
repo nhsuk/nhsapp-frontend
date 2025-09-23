@@ -6,4 +6,4 @@
 | html       | string | conditional | If `text` is set, this is not required. HTML to use within the tag component. If `html` is provided, the `text` argument will be ignored. |
 | id         | string | no          | The ID of the tag.                                                                                                                        |
 | classes    | string | no          | Classes to add to the tag.                                                                                                                |
-| attributes | object | no          | HTML attributes (for example `data-*` or `aria-*`) to add to the tag.                                                                     |
+| attributes | object | no          | HTML attributes for the tag (e.g. `data-*`, `aria-*`).                                                                                    |
