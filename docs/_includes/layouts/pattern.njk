@@ -32,6 +32,12 @@
           text: 'Pages'
         },
         items: collections.page | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Help users to'
+        },
+        items: collections.helpUsers | sort(attribute="data.title")
       }
     ]
   }) }}
