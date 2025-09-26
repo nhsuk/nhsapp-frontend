@@ -1,7 +1,7 @@
+{% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
+
 {%- if params.count -%}
-<p class="nhsapp-badge
-{{ params.classes if params.classes }}" 
-{%- if params.ariaHidden %} aria-hidden="{{ params.ariaHidden }}"{% endif %}>
+<p {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-badge {{ params.classes if params.classes }}" {{- nhsukAttributes(params.attributes) }}>
     <span class="nhsuk-u-visually-hidden">You have</span>
     {% if params.count > 9 %}
         9+

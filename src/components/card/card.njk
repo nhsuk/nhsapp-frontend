@@ -1,3 +1,4 @@
+{% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
 {% from "../badge/large/macro.njk" import nhsappBadgeLarge %}
 {% from "../../styles/icon/macro.njk" import nhsappIcon %}
 
@@ -15,13 +16,11 @@
 {% set isListItem = params.isListItem if params.isListItem is defined else false %}
 {% set wrapperTag = 'li' if isListItem else 'div' %}
 
-<{{ wrapperTag }} class="nhsapp-card 
-  {{ params.classes if params.classes }}
-  {{ 'nhsapp-card--with-media' if hasMedia }}">
+<{{ wrapperTag }} {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-card {{ 'nhsapp-card--with-media' if hasMedia }} {{ params.classes if params.classes }}" {{- nhsukAttributes(params.attributes) }}>
 
   {% if hasMedia %}
   <div class="nhsapp-card__media">
-    <img class="nhsapp-card__img" src="{{ params.img.src }}" alt="{{ imgAlt }}">
+    <img class="nhsapp-card__img" src="{{ params.img.src }}" alt="{{ params.img.alt }}">
   </div>
   {% endif %}
   
@@ -37,8 +36,9 @@
       {%- endif -%}
 
       {%- if params.href -%}
-        <a href="{{ params.href }}" class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
-        {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}" {% endif %}>
+        <a href="{{ params.href }}"
+           class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
+           {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
           {{ params.title }}
         </a>
       {%- else -%}
@@ -55,8 +55,8 @@
         <div class="nhsapp-card__below">
           <p class="nhsapp-card__description {{ params.descriptionClasses if params.descriptionClasses }}">{{ params.description }}</p>
         </div>
-      {% elif params.html %}
-        {{ params.html | safe }}
+      {% elif params.descriptionHtml  %}
+        {{ params.descriptionHtml | safe }}
       {% endif %}
     </div>
 
@@ -64,8 +64,9 @@
       {{ nhsappBadgeLarge({
         count: badgeCount,
         label: badge.label if badge.label is defined,
+        id: badge.id if badge.id is defined,
         classes: badge.classes if badge.classes is defined,
-        ariaHidden: badge.ariaHidden if badge.ariaHidden is defined
+        attributes: badge.attributes if badge.attributes is defined
       }) }}
     {% endif %}
 
