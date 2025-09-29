@@ -6,23 +6,23 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
 arguments: timeline
 ---
 
-{% from "nhsapp/components/timeline/macro.njk" import nhsappTimeline %}
+{% from 'nhsapp/components/timeline/macro.njk' import nhsappTimeline %}
 
 {{ nhsappTimeline({
   items: [
     {
-      headingText: "Date referred",
+      headingText: 'Date referred',
       isPastItem: true,
-      text: "8 June 2024"
+      text: '8 June 2024'
     },
     {
-      headingText: "Current status",
+      headingText: 'Current status',
       active: true,
-      text: "Waiting for treatment"
+      text: 'Waiting for treatment'
     },
     {
-      headingText: "Estimated treatment start date",
-      text: "September 2024"
+      headingText: 'Estimated treatment start date',
+      text: 'September 2024'
     }
   ]
 }) }}

@@ -7,8 +7,8 @@ figmaLink:
 vueLink: 
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
@@ -18,7 +18,7 @@ vueLink:
 
     {{ nhsappCardGroup({
       stacked: true,
-      heading: "Your GP services",
+      heading: 'Your GP services',
       cards: [
         {
           title: 'Request medicines',
@@ -37,7 +37,7 @@ vueLink:
 
     {{ nhsappCardGroup({
       stacked: true,
-      heading: "Other NHS services",
+      heading: 'Other NHS services',
       cards: [
         {
           title: 'Check if you need urgent medical help using 111 online',
@@ -52,19 +52,19 @@ vueLink:
 
     {{ nhsappCardGroup({
         stacked: true,
-        heading: "Find health information",
+        heading: 'Find health information',
         cards: [
           {
-            title: "Browse NHS health information",
-            href: "#"
+            title: 'Browse NHS health information',
+            href: '#'
           },
           {
-            title: "Browse NHS medicines information",
-            href: "#"
+            title: 'Browse NHS medicines information',
+            href: '#'
           },
           {
-            title: "Find COVID-19 guidance",
-            href: "#"
+            title: 'Find COVID-19 guidance',
+            href: '#'
           }
         ]
       })}}

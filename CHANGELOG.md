@@ -50,6 +50,28 @@ After:
 
 `nhsapp-icon nhsapp-icon--account`
 
+#### Card links
+
+Replaced `params.html` with `params.descriptionHtml` [in pull request 403](https://github.com/nhsuk/nhsapp-frontend/pull/403).
+
+Before:
+
+```
+{{ nhsappCard({
+  title: '...',
+  html: '...'
+}) }}
+```
+
+After:
+
+```
+{{ nhsappCard({
+  title: '...',
+  descriptionHtml: '...'
+}) }}
+```
+
 ## 🆕 New features
 
 ### New (web) header component
@@ -84,6 +106,10 @@ Added new variants for the:
 - **Campaign card** - using the classes `nhsapp-card--blue-dark` and `nhsapp-card--with-media`.
 
 Added a heading and description option for groups of card links (this supersedes the section heading).
+
+Updated `cardGroup` Nunjucks macro by:
+
+-
 
 Before:
 

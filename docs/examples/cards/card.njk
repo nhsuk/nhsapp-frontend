@@ -1,25 +1,25 @@
 ---
 layout: layouts/example.njk
 title: Card link icon
-figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1"
-vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardbase--docs"
+figmaLink: https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardbase--docs"
 arguments: card
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
-{% from "nhsapp/components/tag/macro.njk" import nhsappTag %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
 
 {% set tag %}
-  {{ nhsappTag({ text: "Rejected", classes: "nhsapp-tag--red nhsuk-u-margin-bottom-3" }) }}
+  {{ nhsappTag({ text: 'Rejected', classes: 'nhsapp-tag--red nhsuk-u-margin-bottom-3' }) }}
 {% endset %}
 
 {{ nhsappCard({
   title: 'Select a clinic',
   href: '#',
-  descriptionHtml: "
-    <p class='nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2'>Your healthcare provider has requested for you to be referred to Gastroenterology. This request is being reviewed. You do not need to do anything.</p>
-    <p class='nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-2'>Due to be reviewed by:</p>
+  descriptionHtml: '
+    <p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2">Your healthcare provider has requested for you to be referred to Gastroenterology. This request is being reviewed. You do not need to do anything.</p>
+    <p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-2">Due to be reviewed by:</p>
     <p>8 February 2024</p>
-  ",
+  ',
   aboveContent: { html: tag }
 }) }} 

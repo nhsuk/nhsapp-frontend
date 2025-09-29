@@ -1,17 +1,17 @@
 ---
 layout: layouts/example.njk
 title: Card link
-figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1"
-vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs"
+figmaLink: https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs
 arguments: card-group
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: "Your GP services",
+  heading: 'Your GP services',
   cards: [
     {
       title: 'Request repeat prescriptions',
@@ -30,7 +30,7 @@ arguments: card-group
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: "Other NHS services",
+  heading: 'Other NHS services',
   cards: [
     {
       title: 'Book',

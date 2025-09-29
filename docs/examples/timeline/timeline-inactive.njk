@@ -6,18 +6,18 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
 arguments: timeline
 ---
 
-{% from "nhsapp/components/timeline/macro.njk" import nhsappTimeline %}
+{% from 'nhsapp/components/timeline/macro.njk' import nhsappTimeline %}
 
 {{ nhsappTimeline({
   items: [
     {
-      headingText: "Await approval",
-      text: "The request will either be approved or rejected. If rejected please contact your Healthcare Professional.",
+      headingText: 'Await approval',
+      text: 'The request will either be approved or rejected. If rejected please contact your Healthcare Professional.',
       active: true
     },
     {
-      headingText: "GP Approval Process",
-      text: "Once approved, it can take 3 to 5 working days for a nominated pharmacy to prepare your prescription."
+      headingText: 'GP Approval Process',
+      text: 'Once approved, it can take 3 to 5 working days for a nominated pharmacy to prepare your prescription.'
     }
   ]
 }) }}

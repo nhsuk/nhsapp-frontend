@@ -1,13 +1,13 @@
 ---
 layout: layouts/example.njk
 title: Card account
-figmaLink: ""
-vueLink: ""
+figmaLink:
+vueLink:
 arguments: card-group
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 {{ nhsappCardGroup({
   stacked: true,
