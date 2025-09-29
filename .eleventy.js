@@ -61,12 +61,15 @@ export default function (eleventyConfig) {
   // Add images to docs
   eleventyConfig.addPassthroughCopy('docs/assets/images')
 
-  // Add NHSUK frontend JS components to docs
+  // Add NHSUK frontend JS/components
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
   })
 
-  // Removed legacy packages passthrough (no longer present in v10)
+  // Copy the NHS assets folder to /assets so default assetPath (/assets) works
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/nhsuk-frontend/dist/nhsuk/assets': 'assets'
+  })
 
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)
