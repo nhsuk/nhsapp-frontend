@@ -66,7 +66,7 @@ You can add an image to a card link. We use this on the home screen of the NHS A
 
 ### Custom content on card links
 
-You can add extra details to a card link, such as an appointment time and location.
+You can add custom content to a card link, such as a tag, appointment time and location.
 
 Keep the content short and easy to scan. Test with users to check the card gives them the right amount of information.
 
@@ -84,7 +84,7 @@ Use grouped card links to separate distinct groups of content or actions. Each c
 
 #### Stacked card links
 
-Use stacked card links to show multiple items within a single group, such as different sections of the same service or related account tasks.
+Use stacked card links to show multiple items within a single group, such as different sections of the same service or related tasks.
 
 {% example "cards/card-group-stacked.njk" %}
 
