@@ -67,17 +67,22 @@ pre[class*="language-"] {
   padding-top: 2.5em;
 }
 
+.app-tabs__panel pre[class*="language-jinja2"] {
+  padding-top: 0; // No need for padding top because of macro options
+}
+
 .app-copy__button {
   background-color: nhsuk-colour("white");
   border: 1px solid nhsuk-colour("green");
+  border-radius: 4px;
   box-shadow: 0 2px 0 nhsuk-colour("green");
   color: nhsuk-colour("green");
   cursor: pointer;
   font-size: 14px;
-  padding: 2px 8px;
+  padding: 4px 8px;
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 24px;
+  top: 24px;
 
   &:hover {
     background-color: nhsuk-colour("green");

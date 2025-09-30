@@ -1,6 +1,6 @@
 ---
 layout: layouts/example.njk
-title: Card link
+title: Card link group with custom heading
 figmaLink: https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1
 vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs
 arguments: card-group
@@ -11,33 +11,17 @@ arguments: card-group
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: 'Your GP services',
+  headingHtml: '<div class="nhsapp-cards__heading" style="justify-content: space-between; align-items: center; display: flex;">
+                  <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-0">Services</h2>
+                  <a class="nhsuk-u-font-size-19 nhsuk-link nhsuk-link--no-visited-state nhsuk-u-nowrap" href="#">View all <span class="nhsuk-u-visually-hidden">services</span></a> 
+                </div>',
   cards: [
     {
       title: 'Request repeat prescriptions',
       href: '#'
     },
     {
-      title: 'Contact your GP surgery for a document or update',
-      href: '#'
-    },
-    {
-      title: 'Check for available GP appointments',
-      href: '#'
-    }
-  ]
-}) }}
-
-{{ nhsappCardGroup({
-  stacked: true,
-  heading: 'Other NHS services',
-  cards: [
-    {
-      title: 'Book',
-      href: '#'
-    },
-    {
-      title: 'Request prescriptions',
+      title: 'Check if you need urgent medical help using 111 online',
       href: '#'
     }
   ]

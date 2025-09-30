@@ -1,15 +1,17 @@
 ---
 layout: layouts/example.njk
-title: Card group stacked secondary
-figmaLink: ""
-vueLink: ""
+title: Card link secondary stacked
+figmaLink: https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-7303&t=Bvw33PoP6TmBpN41-1
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs
+arguments: card-group
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 {{ nhsappCardGroup({
   stacked: true,
+  heading: 'Settings',
   cards: [
     {
       title: 'Login and security',
@@ -24,6 +26,7 @@ vueLink: ""
 
 {{ nhsappCardGroup({
   stacked: true,
+  heading: 'About the NHS App',
   classes: 'nhsapp-cards--secondary',
   cards: [
     {

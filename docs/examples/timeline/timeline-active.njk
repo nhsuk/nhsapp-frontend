@@ -3,25 +3,26 @@ layout: layouts/example.njk
 title: Timeline active
 figmaLink: https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=4453-2405&t=sIan6GZfBz3Z5bOy-1
 vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhstimeline--docs
+arguments: timeline
 ---
 
-{% from "nhsapp/components/timeline/macro.njk" import nhsappTimeline %}
+{% from 'nhsapp/components/timeline/macro.njk' import nhsappTimeline %}
 
 {{ nhsappTimeline({
   items: [
     {
-      headingText: "Date referred",
+      headingText: 'Date referred',
       isPastItem: true,
-      text: "8 June 2024"
+      text: '8 June 2024'
     },
     {
-      headingText: "Current status",
+      headingText: 'Current status',
       active: true,
-      text: "Waiting for treatment"
+      text: 'Waiting for treatment'
     },
     {
-      headingText: "Estimated treatment start date",
-      text: "September 2024"
+      headingText: 'Estimated treatment start date',
+      text: 'September 2024'
     }
   ]
 }) }}

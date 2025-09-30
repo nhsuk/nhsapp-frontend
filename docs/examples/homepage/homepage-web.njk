@@ -6,8 +6,8 @@ figmaLink:
 vueLink: 
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
@@ -26,34 +26,34 @@ vueLink:
 
     {{ nhsappCardGroup({
       stacked: true,
-      heading: "Services",
+      heading: 'Services',
       cards: [
         {
-          title: "Request repeat prescriptions",
-          href: "#"
+          title: 'Request repeat prescriptions',
+          href: '#'
         },
         {
-          title: "Check if you need urgent medical help using 111 online",
-          href: "#"
+          title: 'Check if you need urgent medical help using 111 online',
+          href: '#'
         }
       ]
     }) }}
 
     {{ nhsappCardGroup({
       stacked: true,
-      heading: "Your health",
+      heading: 'Your health',
       cards: [
         {
-          title: "GP health record",
-          href: "#"
+          title: 'GP health record',
+          href: '#'
         },
         {
-          title: "View and manage prescriptions",
-          href: "#"
+          title: 'View and manage prescriptions',
+          href: '#'
         },
         {
-          title: "Upcoming and past appointments",
-          href: "#"
+          title: 'Upcoming and past appointments',
+          href: '#'
         }
       ]
     }) }}
@@ -61,7 +61,7 @@ vueLink:
     {% if data['messages'] > 0 %}
       {{ nhsappCardGroup({
         stacked: true,
-        heading: "Messages",
+        heading: 'Messages',
         cards: [
           {
             title: 'View your messages',
@@ -71,7 +71,7 @@ vueLink:
             badgeLarge: {
               count: data['messages'],
               label: 'unread messages',
-              ariaHidden: true
+              attributes: { 'aria-hidden': 'true' }
             }
           }
         ]
@@ -91,7 +91,7 @@ vueLink:
 
     {{ nhsappCardGroup({
       stacked: true,
-      heading: "Account",
+      heading: 'Account',
       cards: [
         {
           title: 'Manage services for another person',

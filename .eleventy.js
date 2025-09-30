@@ -61,12 +61,15 @@ export default function (eleventyConfig) {
   // Add images to docs
   eleventyConfig.addPassthroughCopy('docs/assets/images')
 
-  // Add NHSUK frontend JS components to docs
+  // Add NHSUK frontend JS/components
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
   })
 
-  // Removed legacy packages passthrough (no longer present in v10)
+  // Copy the NHS assets folder to /assets so default assetPath (/assets) works
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/nhsuk-frontend/dist/nhsuk/assets': 'assets'
+  })
 
   // Add syntax highlighting to code blocks
   eleventyConfig.addPlugin(syntaxHighlight)
@@ -109,6 +112,12 @@ export default function (eleventyConfig) {
       .trim()
     let { data, content: nunjucksCode } = matter(exampleFile)
 
+    // Always show Nunjucks tab unless explicitly disabled
+    let showNunjucksAuto = true
+    if (typeof data.showNunjucks === 'boolean') {
+      showNunjucksAuto = data.showNunjucks
+    }
+
     const rawHtmlCode = nunjucksEnv.renderString(nunjucksCode)
     const prettyHtmlCode = await prettier.format(rawHtmlCode, {
       parser: 'html'
@@ -130,7 +139,9 @@ export default function (eleventyConfig) {
       hub: data.hub,
       backlink: data.backlink || data.backLink || false,
       backLinkHref: data.backLinkHref,
-      backLinkText: data.backLinkText
+      backLinkText: data.backLinkText,
+      arguments: data.arguments, // existing
+      showNunjucks: showNunjucksAuto // computed visibility
     }
     return nunjucksEnv.render('example.njk', templateData)
   })

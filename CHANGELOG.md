@@ -38,6 +38,56 @@ After:
 </div>
 ```
 
+#### Section heading
+
+Deprecated `nhsapp-section heading` component in [pull request #378](https://github.com/nhsuk/nhsapp-frontend/pull/378).
+
+A heading and description option has been added to the `cardGroup`.
+
+Before:
+
+```
+<div class="nhsapp-section-heading">
+  <h2 class="nhsuk-heading-s">Upcoming appointments</h2>
+</div>
+<p class="nhsuk-u-margin-bottom-5">1 upcoming appointment</p>
+<ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    ...
+  </li>
+</ul>
+```
+
+After:
+
+```
+<h2 class="nhsapp-cards__heading">Upcoming appointments</h2>
+<p class="nhsapp-cards__description">1 upcoming appointment</p>
+<ul class="nhsapp-cards nhsapp-cards--stacked">
+  <li class="nhsapp-card">
+    ...
+  </li>
+</ul>
+```
+
+Custom html can be added using `params.headingHtml`, that will support the depreaction of the `view all` link, for example:
+
+```
+{{ nhsappCardGroup({
+  stacked: true,
+  headingHtml:
+    '<div class="nhsapp-cards__heading" style="justify-content: space-between; align-items: center; display: flex;">
+      <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-0">Services</h2>
+      <a class="nhsuk-u-font-size-19 nhsuk-link nhsuk-link--no-visited-state nhsuk-u-nowrap" href="#">View all <span class="nhsuk-u-visually-hidden">services</span></a>
+    </div>',
+  cards: [
+    {
+      ...
+    }
+  ]
+}) }}
+```
+
 #### Icons
 
 Updated icon names, following nhsuk frontend naming conventions in [pull request #381](https://github.com/nhsuk/nhsapp-frontend/pull/389).
@@ -49,6 +99,28 @@ Before:
 After:
 
 `nhsapp-icon nhsapp-icon--account`
+
+#### Card links
+
+Replaced `params.html` with `params.descriptionHtml` in [pull request 403](https://github.com/nhsuk/nhsapp-frontend/pull/403).
+
+Before:
+
+```
+{{ nhsappCard({
+  title: '...',
+  html: '...'
+}) }}
+```
+
+After:
+
+```
+{{ nhsappCard({
+  title: '...',
+  descriptionHtml: '...'
+}) }}
+```
 
 ## 🆕 New features
 
@@ -83,39 +155,7 @@ Added new variants for the:
 - **Account card** - using the class `nhsapp-card--blue-light`.
 - **Campaign card** - using the classes `nhsapp-card--blue-dark` and `nhsapp-card--with-media`.
 
-Added a heading and description option for groups of card links (this supersedes the section heading).
-
-Before:
-
-```
-<div class="nhsapp-section-heading">
-  <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">Heading</h2>
-</div>
-<p class="nhsuk-u-margin-bottom-5">Description goes here</p>
-<ul class="nhsapp-cards nhsapp-cards--stacked">
-  <li class="nhsapp-card">
-    ...
-  </li>
-  <li class="nhsapp-card">
-    ...
-  </li>
-</ul>
-```
-
-After:
-
-```
-<h2 class="nhsapp-cards__heading">Heading</h2>
-<p class="nhsapp-cards__description">Description goes here</p>
-<ul class="nhsapp-cards nhsapp-cards--stacked">
-  <li class="nhsapp-card">
-    ...
-  </li>
-  <li class="nhsapp-card">
-    ...
-  </li>
-</ul>
-```
+Added `isListItem` argument to `cardGroup` macro. If true (default) wrapper is `<ul>` with each card as `<li>`. If false uses `<div>`.
 
 ## `v4.0.0` - 17 June 2025
 

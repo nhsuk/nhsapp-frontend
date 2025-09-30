@@ -7,14 +7,14 @@ figmaLink:
 vueLink: 
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 {% from 'button/macro.njk' import button %}
 
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">
+<div class='nhsuk-grid-row'>
+  <div class='nhsuk-grid-column-full'>
 
-    <h1 class="nhsuk-u-margin-bottom-5">Account</h1>
+    <h1 class='nhsuk-u-margin-bottom-5'>Account</h1>
 
     {{ nhsappCardGroup({
       stacked: true,
@@ -35,8 +35,8 @@ vueLink:
     }) }}
 
     {{ button({
-      text: "Log out",
-      classes: "nhsuk-button--secondary nhsapp-button"
+      text: 'Log out',
+      classes: 'nhsuk-button--secondary nhsapp-button'
     }) }}
 
   </div>
