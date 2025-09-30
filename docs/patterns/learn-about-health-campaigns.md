@@ -7,7 +7,7 @@ tags:
   - helpUsers
 ---
 
-{% example "cards/card-campaign.njk" %}
+{% example "cards/card-link-with-image.njk" %}
 
 ## When to use
 
