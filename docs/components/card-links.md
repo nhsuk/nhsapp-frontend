@@ -44,15 +44,9 @@ Use secondary card links to signpost information that is less important in the c
 
 {% example "cards/card-link-secondary.njk" %}
 
-### Footers on card links
-
-You can use a footer to separate related content inside a card link.
-
-{% example "cards/card-link-with-footer.njk" %}
-
 ### Colour variations
 
-You can use colour to highlight a card link. This can help draw attention to important content.
+You can use [colour](/styles/colour) to highlight a card link. This can help draw attention to important content.
 
 Use colour sparingly and make sure there is enough contrast between text and background.
 
@@ -71,6 +65,12 @@ You can add custom content to a card link, such as a tag, appointment time and l
 Keep the content short and easy to scan. Test with users to check the card gives them the right amount of information.
 
 {% example "cards/card-link-custom.njk" %}
+
+### Footers on card links
+
+You can use a footer to separate related content inside a card link.
+
+{% example "cards/card-link-with-footer.njk" %}
 
 ### Multiple card links
 

@@ -3,23 +3,30 @@ layout: layouts/example.njk
 title: Card link icon
 figmaLink: https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1
 vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardbase--docs
+arguments: card
 ---
 
 {% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
 
 {% set tag %}
-  {{ nhsappTag({ text: 'Action needed', classes: 'nhsapp-tag--red nhsuk-u-margin-bottom-3' }) }}
+  {{ nhsappTag({ 
+    text: 'Action needed', 
+    classes: 'nhsapp-tag--red nhsuk-u-margin-bottom-3',
+    attributes: { 
+      'aria-hidden': 'true' 
+    }
+  }) }}
 {% endset %}
 
 {{ nhsappCard({
   title: 'Orthopaedic appointment',
   href: '#',
   titleClasses: 'nhsuk-u-font-size-22',
-  linkAriaLabel: 'Orthopaedic appointment on Monday 3 June 2024 at 9:40am',
+  linkAriaLabel: 'Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital',
   descriptionHtml: '
     <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
-    <p class="nhsuk-u-margin-bottom-3">The Willows, Croydon University Hospital</p>
+    <p aria-hidden="true" class="nhsuk-u-margin-bottom-3">The Willows, Croydon University Hospital</p>
     <p class="nhsapp-badge-small nhsapp-badge-small--red nhsuk-body-s nhsuk-u-secondary-text-colour">
       <span class="nhsapp-badge-small__indicator" aria-hidden="true"></span>
       <span class="nhsuk-u-visually-hidden">New</span>
