@@ -122,6 +122,25 @@ After:
 }) }}
 ```
 
+Updated logic for a card with no link and removed `params.readOnly`.
+
+Before:
+
+```
+{{ nhsappCard({
+  title: 'Card title',
+  readOnly: 'true'
+}) }}
+```
+
+After:
+
+```
+{{ nhsappCard({
+  title: 'Card title'
+}) }}
+```
+
 ## 🆕 New features
 
 ### New (web) header component
