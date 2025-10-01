@@ -84,6 +84,11 @@ pre[class*="language-"] {
   right: 24px;
   top: 24px;
 
+  @include nhsuk-media-query($until: desktop) {
+    right: 16px;
+    top: 16px;
+  }
+
   &:hover {
     background-color: nhsuk-colour("green");
     color: nhsuk-colour("white");
