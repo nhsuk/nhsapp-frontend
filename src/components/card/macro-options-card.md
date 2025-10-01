@@ -15,7 +15,6 @@
 | footer.html             | string | no          | HTML shown in the footer.                                                                                       |
 | img{}.src               | string | conditional | Image URL. Adds an image section when present.                                                                  |
 | img{}.alt               | string | no          | Image alt text. Leave empty only if purely decorative.                                                          |
-| prefixIcon              | string | no          | Icon shown before the content (for example messages icon).                                                      |
 | badgeLarge{}.count      | number | conditional | Number for the large badge. Badge appears only when `count > 0`.                                                |
 | badgeLarge{}.label      | string | yes         | Visually hidden text read after the number.                                                                     |
 | badgeLarge{}.id         | string | no          | ID attribute for the badge.                                                                                     |

@@ -66,7 +66,6 @@ vueLink:
           {
             title: 'View your messages',
             href: '#',
-            prefixIcon: 'messagesUnread',
             linkAriaLabel: 'Messages, you have ' + data['messages'] + ' unread messages',
             badgeLarge: {
               count: data['messages'],
@@ -79,11 +78,11 @@ vueLink:
     {% else %}
       {{ nhsappCardGroup({
         stacked: true,
+        heading: 'Messages',
         cards: [
           {
             title: 'View your messages',
-            href: '#',
-            prefixIcon: 'messages'
+            href: '#'
           }
         ]
       }) }}
@@ -95,8 +94,7 @@ vueLink:
       cards: [
         {
           title: 'Manage services for another person',
-          href: '#',
-          prefixIcon: 'switchProfile'
+          href: '#'
         }
       ]
     }) }}

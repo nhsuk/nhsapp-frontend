@@ -2,7 +2,7 @@
 layout: layouts/example.njk
 title: Card link secondary stacked
 figmaLink: https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=128-7303&t=Bvw33PoP6TmBpN41-1
-vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardlink--docs
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/story/components-nhscardgroup--stacked
 arguments: card-group
 ---
 
@@ -11,7 +11,6 @@ arguments: card-group
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: 'Settings',
   cards: [
     {
       title: 'Login and security',
@@ -26,7 +25,6 @@ arguments: card-group
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: 'About the NHS App',
   classes: 'nhsapp-cards--secondary',
   cards: [
     {

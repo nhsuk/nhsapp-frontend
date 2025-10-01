@@ -1,0 +1,35 @@
+---
+layout: layouts/example.njk
+title: Card with footer
+figmaLink: https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/story/components-nhscardbase--footer
+arguments: card
+---
+
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+
+
+{{ nhsappCard({
+  title: 'Orthopaedic appointment',
+  href: '#',
+  titleClasses: 'nhsuk-u-font-size-22',
+  linkAriaLabel: 'Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital',
+  descriptionHtml: '
+    <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
+    <p aria-hidden="true">The Willows, Croydon University Hospital</p>
+  ',
+  footer: { 
+    html: '
+      <div style="display: flex; align-items: center; justify-content: flex-start; gap: 1rem;">
+        <svg class="nhsapp-icon nhsapp-icon__clock nhsapp-icon--black nhsapp-icon--32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="2rem" width="2rem" viewBox="0 0 24 24">
+          <path d="M22.4301 10.7H21.2301C20.5901 5.79001 16.4001 1.99001 11.3201 1.99001C5.79006 1.99001 1.31006 6.47001 1.31006 12C1.31006 17.53 5.79006 22.01 11.3201 22.01C14.7301 22.01 17.7401 20.3 19.5501 17.69H19.5401C19.6401 17.55 19.7101 17.4 19.7101 17.22C19.7101 16.79 19.3601 16.45 18.9401 16.45C18.6901 16.45 18.4701 16.58 18.3301 16.77H18.3201C16.7801 18.97 14.2301 20.42 11.3301 20.42C6.63006 20.42 2.82006 16.61 2.82006 11.91C2.82006 7.21001 6.61006 3.40001 11.3201 3.40001C15.6101 3.40001 19.1401 6.57001 19.7301 10.7H18.7001C18.4901 10.7 18.3701 10.94 18.4901 11.11L20.3701 13.74C20.4701 13.89 20.6901 13.88 20.7901 13.74L22.6401 11.11C22.7601 10.94 22.6401 10.7 22.4301 10.7Z" />
+          <path d="M13.8401 15.25C13.8401 15.25 13.8401 15.25 13.8501 15.26L13.8901 15.3C14.0001 15.39 14.1401 15.44 14.2901 15.44C14.6401 15.44 14.9301 15.15 14.9301 14.8C14.9301 14.64 14.8701 14.49 14.7701 14.37L14.7501 14.35C14.7501 14.35 14.7501 14.35 14.7401 14.34L11.6901 11.45V6.46001C11.6601 6.14001 11.3901 5.88001 11.0501 5.88001C10.7101 5.88001 10.4401 6.14001 10.4101 6.46001V6.51001C10.4101 6.51001 10.4101 6.52001 10.4101 6.53001V12.01L13.8301 15.26L13.8401 15.25Z" />
+        </svg>
+        <div>
+          <p class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Long Stay</p>
+          <p class="nhsuk-body-s nhsuk-u-secondary-text-colour nhsuk-u-margin-bottom-0">Plan to stay between 2 to 8 hours</p>
+        </div>
+      </div>
+    ' 
+  }
+}) }} 

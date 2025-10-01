@@ -4,14 +4,14 @@
 $card-border-width: 2px;
 $card-divider-width: 1px;
 $card-border-bottom-width: nhsuk-spacing(1);
-$card-border-color: $nhsuk-border-colour;
+$card-border-colour: $nhsuk-border-colour;
 $card-border-radius: 8px;
 
 .nhsapp-card {
   @include nhsuk-responsive-margin(6, "bottom");
 
   background-color: nhsuk-colour("white");
-  border: $card-border-width solid $card-border-color;
+  border: $card-border-width solid $card-border-colour;
   border-radius: $card-border-radius;
   position: relative; // Set to relative so the entire card can be clickable
 
@@ -24,29 +24,22 @@ $card-border-radius: 8px;
     margin-bottom: 0;
   }
 
-  .nhsapp-icon {
-    height: 24px;
-    width: 24px;
+  .nhsapp-icon--chevron-right {
+    fill: rgba($nhsuk-link-color, 0.7);
     flex: none; // Prevents icons from shrinking
+    height: 24px;
+    margin-right: -8px;
+    width: 24px;
 
     @include nhsuk-media-query($from: tablet) {
       height: 28px;
-      width: 28px;
-    }
-    fill: $nhsuk-link-colour;
-  }
-
-  .nhsapp-icon--chevron-right {
-    fill: rgba($nhsuk-link-color, 0.7);
-    margin-right: -8px;
-
-    @include nhsuk-media-query($from: tablet) {
       margin-right: -10px;
+      width: 28px;
     }
   }
 
   &:hover {
-    .nhsapp-icon {
+    .nhsapp-icon--chevron-right {
       fill: $nhsuk-link-hover-colour;
     }
   }
@@ -115,7 +108,7 @@ $card-border-radius: 8px;
   }
 
   &__footer {
-    border-top: $card-divider-width solid $card-border-color;
+    border-top: $card-divider-width solid $card-border-colour;
     margin: 0 nhsuk-spacing(3);
     padding: nhsuk-spacing(3) 0;
 
@@ -155,16 +148,16 @@ $card-border-radius: 8px;
       margin-bottom: 0;
 
       .nhsapp-card__container {
-        border-bottom: $card-divider-width solid $card-border-color;
+        border-bottom: $card-divider-width solid $card-border-colour;
       }
 
       &:first-of-type {
         border-radius: $card-border-radius $card-border-radius 0 0;
-        border-top: $card-border-width solid $card-border-color;
+        border-top: $card-border-width solid $card-border-colour;
       }
 
       &:last-of-type {
-        border-bottom: $card-border-width solid $card-border-color;
+        border-bottom: $card-border-width solid $card-border-colour;
         border-radius: 0 0 $card-border-radius $card-border-radius;
 
         .nhsapp-card__container {
@@ -174,8 +167,8 @@ $card-border-radius: 8px;
 
       &:only-of-type {
         border-radius: $card-border-radius; // Full border radius on all corners
-        border-top: $card-border-width solid $card-border-color;
-        border-bottom: $card-border-width solid $card-border-color;
+        border-top: $card-border-width solid $card-border-colour;
+        border-bottom: $card-border-width solid $card-border-colour;
       }
     }
   }
@@ -240,10 +233,6 @@ $card-border-radius: 8px;
     &:focus:hover {
       color: $nhsuk-focus-text-colour;
     }
-  }
-
-  .nhsapp-icon {
-    fill: $text-colour;
   }
 
   .nhsapp-icon--chevron-right {

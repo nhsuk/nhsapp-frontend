@@ -6,9 +6,23 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
 arguments: card
 ---
 
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
 {% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
-{{ nhsappCard({
-  title: 'Request repeat prescriptions',
-  href: '#'
+{{ nhsappCardGroup({
+  stacked: true,
+  cards: [
+    {
+      title: 'GP health record',
+      href: '#'
+    },
+    {
+      title: 'View and manage prescriptions',
+      href: '#'
+    },
+    {
+      title: 'Upcoming and past appointments',
+      href: '#'
+    }
+  ]
 }) }}

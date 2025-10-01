@@ -122,6 +122,27 @@ After:
 }) }}
 ```
 
+Updated logic for a card with no link and removed `params.readOnly`.
+
+Before:
+
+```
+{{ nhsappCard({
+  title: 'Card title',
+  readOnly: 'true'
+}) }}
+```
+
+After:
+
+```
+{{ nhsappCard({
+  title: 'Card title'
+}) }}
+```
+
+Removed the card link with an icon in [pull request 405](https://github.com/nhsuk/nhsapp-frontend/pull/405).
+
 ## 🆕 New features
 
 ### New (web) header component
