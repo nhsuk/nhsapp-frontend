@@ -1,15 +1,13 @@
 ---
 layout: layouts/community.njk
-title: Propose a content change using GitHub 
+title: Propose a content change to this website
 order: 3
-description: We use a service called GitHub to manage the guidance pages for the NHS App design system.
+description: Help improve the NHS App design system website and our guidance by suggesting content edits or amends.
 tags:
   - contribution
 ---
 
-You can propose changes directly through GitHub. You’ll need a GitHub account to do this.
-
-If you do not have one already, you can [create a GitHub account for free](https://github.com/).
+You can propose changes directly through GitHub.
 
 <div class="nhsuk-inset-text nhsuk-u-margin-top-0">
   <p>Rest assured that you cannot break the design system by proposing changes. The NHS App design system team reviews all changes before publishing.</p>
