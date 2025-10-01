@@ -33,7 +33,6 @@ $card-border-radius: 8px;
       height: 28px;
       width: 28px;
     }
-    fill: $nhsuk-link-colour;
   }
 
   .nhsapp-icon--chevron-right {
@@ -46,7 +45,7 @@ $card-border-radius: 8px;
   }
 
   &:hover {
-    .nhsapp-icon {
+    .nhsapp-icon--chevron-right {
       fill: $nhsuk-link-hover-colour;
     }
   }
