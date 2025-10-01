@@ -80,6 +80,8 @@ You can use a footer to separate related content inside a card link.
 
 ### Card with no link
 
+Use when the card content is informational only and requires no user interaction.
+
 {% example "cards/card-with-no-link.njk" %}
 
 ### Multiple card links
