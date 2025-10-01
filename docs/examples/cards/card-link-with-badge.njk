@@ -9,13 +9,13 @@ arguments: card
 {% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 {{ nhsappCard({
-  title: 'Messages',
+  title: 'Hospital appointments',
   href: '#',
-  prefixIcon: 'messagesUnread',
-  linkAriaLabel: 'Messages, you have 4 unread messages',
+  linkAriaLabel: 'Hospital appointments, you have 1 new notification',
   badgeLarge: {
-    count: 4,
-    label: 'unread messages',
-    attributes: { 'aria-hidden': 'true' }
+    count: 1,
+    attributes: { 
+      'aria-hidden': 'true' 
+    }
   }
 }) }}
