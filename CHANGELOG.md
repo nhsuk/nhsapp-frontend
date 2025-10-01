@@ -141,6 +141,8 @@ After:
 }) }}
 ```
 
+Removed the card link with an icon in [pull request 405](https://github.com/nhsuk/nhsapp-frontend/pull/405).
+
 ## 🆕 New features
 
 ### New (web) header component

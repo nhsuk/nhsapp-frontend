@@ -2,7 +2,7 @@
 layout: layouts/pattern.njk
 title: Learn about health campaigns
 description: Help NHS App users learn about public health campaigns using the campaign card.  
-backlogID: 119
+backlogID: 13
 tags:
   - helpUsers
 ---

@@ -32,12 +32,6 @@ Only use this variation if you have found a user need for more detailed links.
 
 {% example "cards/card-link-with-description.njk" %}
 
-### Using icons
-
-[Icons](/styles/icons) may help users to understand the meaning of a card link. We currently only use this variation for “Manage health services for others” and “Messages” links on the homepage.
-
-{% example "cards/card-link-icon.njk" %}
-
 ### Badges on card links
 
 Use [badges](/components/badge/) on card links to alert users to new, important information.

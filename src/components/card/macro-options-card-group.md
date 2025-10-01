@@ -26,7 +26,6 @@
 | cards[]footer.html             | string  | no          | HTML shown in the footer.                                                                                                                     |
 | cards[]img{}.src               | string  | conditional | Image URL. Adds an image section when present.                                                                                                |
 | cards[]img{}.alt               | string  | no          | Image alt text. Leave empty only if purely decorative.                                                                                        |
-| cards[]prefixIcon              | string  | no          | Icon shown before the content (for example messages icon).                                                                                    |
 | cards[]badgeLarge{}.count      | number  | conditional | Number for the large badge. Badge appears only when `count > 0`.                                                                              |
 | cards[]badgeLarge{}.label      | string  | yes         | Visually hidden text read after the number.                                                                                                   |
 | cards[]badgeLarge{}.id         | string  | no          | ID attribute for the badge.                                                                                                                   |

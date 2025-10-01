@@ -24,23 +24,17 @@ $card-border-radius: 8px;
     margin-bottom: 0;
   }
 
-  .nhsapp-icon {
-    height: 24px;
-    width: 24px;
+  .nhsapp-icon--chevron-right {
+    fill: rgba($nhsuk-link-color, 0.7);
     flex: none; // Prevents icons from shrinking
+    height: 24px;
+    margin-right: -8px;
+    width: 24px;
 
     @include nhsuk-media-query($from: tablet) {
       height: 28px;
-      width: 28px;
-    }
-  }
-
-  .nhsapp-icon--chevron-right {
-    fill: rgba($nhsuk-link-color, 0.7);
-    margin-right: -8px;
-
-    @include nhsuk-media-query($from: tablet) {
       margin-right: -10px;
+      width: 28px;
     }
   }
 
@@ -239,10 +233,6 @@ $card-border-radius: 8px;
     &:focus:hover {
       color: $nhsuk-focus-text-colour;
     }
-  }
-
-  .nhsapp-icon {
-    fill: $text-colour;
   }
 
   .nhsapp-icon--chevron-right {

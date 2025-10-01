@@ -25,10 +25,8 @@
   {% endif %}
   
   <div class="nhsapp-card__container {{ params.containerClasses if params.containerClasses }}">
-    {%- if params.prefixIcon -%}
-      {{ nhsappIcon(params.prefixIcon) }}
-    {%- endif -%}
     <div class="nhsapp-card__content">
+      
       {%- if above.html -%}
         <div class="nhsapp-card__above">
           {{ above.html | safe }}
