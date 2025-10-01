@@ -78,6 +78,10 @@ You can use a footer to separate related content inside a card link.
 
 {% example "cards/card-link-with-footer.njk" %}
 
+### Card with no link
+
+{% example "cards/card-with-no-link.njk" %}
+
 ### Multiple card links
 
 Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
@@ -103,6 +107,24 @@ Use secondary card links below primary card links which signpost more important 
 Break up long lists of card links by using headings. It makes pages easier to scan and helps screen reader users to navigate.
 
 {% example "cards/card-group-headings.njk" %}
+
+You can add custom HTML to the heading using `headingHtml`.
+
+{% example "cards/card-group-custom-heading.njk" %}
+
+## Accesibility
+
+Screen reader users often navigate by pulling up a list of all the links on a page. When they do this, they only hear the link text, not the content around it.
+
+This means your `linkAriaLabel` must include all the important information from the card. It needs to make sense on its own, out of context.
+
+In this example, a sighted user sees the date, location and 'Action needed' tag laid out visually. A screen reader user hears all of this in the `linkAriaLabel`: "Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital".
+
+{% example "cards/card-link-accessibility.njk" %}
+
+You can mark the visual content as `aria-hidden="true"` because it's already in the link label. This stops screen reader users hearing the same information twice.
+
+Before you hide content with `aria-hidden="true"`, check it appears in the `linkAriaLabel`. If it does not, do not hide it. Screen reader users will miss it when they navigate through links.
 
 ## Research
 
