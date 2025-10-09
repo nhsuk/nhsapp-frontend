@@ -22,7 +22,11 @@ function compileCSS() {
     .src(['src/all.scss'], { sourcemaps: true })
     .pipe(
       sass({
-        loadPaths: ['node_modules'],
+        includePaths: [
+          'node_modules',
+          'node_modules/nhsuk-frontend/dist',
+          'node_modules/nhsuk-frontend/src'
+        ],
         // Enable source maps so line numbers map back to source during development
         sourceMap: true,
         sourceMapIncludeSources: true

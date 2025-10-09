@@ -83,8 +83,13 @@ export default function (eleventyConfig) {
         return
       }
       let result = sass.compileString(inputContent, {
-        // Allow us to import scss files relative to the project root
-        loadPaths: ['.']
+        // Expanded load paths so @import "nhsuk/index" and other bare imports resolve
+        loadPaths: [
+          '.',
+          'node_modules',
+          'node_modules/nhsuk-frontend/dist',
+          'node_modules/nhsuk-frontend/src'
+        ]
       })
       return async (data) => {
         return result.css
