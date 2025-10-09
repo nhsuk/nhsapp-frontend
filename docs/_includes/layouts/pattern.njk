@@ -32,12 +32,18 @@
           text: 'Pages'
         },
         items: collections.page | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Help users to'
+        },
+        items: collections.helpUsers | sort(attribute="data.title")
       }
     ]
   }) }}
 {% endset %}
 
-{% block main %}
+{% block content %}
   {% if tags and "page" in tags %}
     <span class="nhsuk-caption-xl">Pages</span>
   {% elif tags and "helpUsers" in tags %}

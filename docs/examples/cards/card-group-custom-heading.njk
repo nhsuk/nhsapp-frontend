@@ -1,0 +1,28 @@
+---
+layout: layouts/example.njk
+title: Card link group with custom heading
+figmaLink: 
+vueLink: 
+arguments: card-group
+---
+
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+
+{{ nhsappCardGroup({
+  stacked: true,
+  headingHtml: '<div class="nhsapp-cards__heading" style="justify-content: space-between; align-items: center; display: flex;">
+                  <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-0">Services</h2>
+                  <a class="nhsuk-u-font-size-19 nhsuk-link nhsuk-link--no-visited-state nhsuk-u-nowrap" href="#">View all <span class="nhsuk-u-visually-hidden">services</span></a> 
+                </div>',
+  cards: [
+    {
+      title: 'Request repeat prescriptions',
+      href: '#'
+    },
+    {
+      title: 'Check if you need urgent medical help using 111 online',
+      href: '#'
+    }
+  ]
+}) }}

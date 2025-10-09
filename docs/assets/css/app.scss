@@ -1,30 +1,11 @@
-// Import all of the NHS.UK frontend core styles
-@import "node_modules/nhsuk-frontend/packages/core";
-
-// Import specific components that we need from nhsuk-frontend
-@import "node_modules/nhsuk-frontend/packages/components/breadcrumb";
-@import "node_modules/nhsuk-frontend/packages/components/skip-link";
-@import "node_modules/nhsuk-frontend/packages/components/header";
-@import "node_modules/nhsuk-frontend/packages/components/footer";
-@import "node_modules/nhsuk-frontend/packages/components/hero";
-@import "node_modules/nhsuk-frontend/packages/components/tabs";
-@import "node_modules/nhsuk-frontend/packages/components/summary-list";
-@import "node_modules/nhsuk-frontend/packages/components/button";
-@import "node_modules/nhsuk-frontend/packages/components/inset-text";
-@import "node_modules/nhsuk-frontend/packages/components/back-link";
-
-@import "node_modules/prismjs/themes/prism";
-@import "docs/assets/css/code-colours";
-
 // Import all styles from the NHS App frontend library
 @import "src/all";
 
-// Colours
-$app-brand-color: $color_nhsuk-blue;
-$app-img-border-color: #d7e5ef;
+// Code example syntax highlighting
+@import "node_modules/prismjs/themes/prism";
+@import "docs/assets/css/code-colours";
 
-// Import all styles specific for the design system docs
-@import "docs/assets/css/components/header";
+// Docs specific styles
 @import "docs/assets/css/components/hero";
 @import "docs/assets/css/components/side-navigation";
 @import "docs/assets/css/components/callout";
@@ -32,6 +13,7 @@ $app-img-border-color: #d7e5ef;
 @import "docs/assets/css/components/top-nav-native";
 @import "docs/assets/css/components/header-native";
 @import "docs/assets/css/container";
+@import "docs/assets/css/colour";
 @import "docs/assets/css/tabs";
 @import "docs/assets/css/content";
 @import "docs/assets/css/mobile-iframe";
@@ -88,20 +70,28 @@ pre {
   }
 
   &--with-bottom-border {
-    border-bottom: 2px solid $color_nhsuk-grey-4;
+    border-bottom: 4px solid $nhsuk-border-colour;
   }
 }
 
 .app-section-break {
   border-width: 2px;
-  border-color: $color_nhsuk-grey-4;
+  border-color: $nhsuk-border-colour;
 }
 
 .app-section-break--width-4 {
   border-width: 4px;
 }
 
-// Footer border colour
-.nhsuk-footer-container {
-  border-color: $app-brand-color;
+// Make tables scrollable on small screens
+// Used on Nunjucks Macro options
+.app-table--scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-table--scroll table {
+  width: 100%;
+  margin-bottom: 0;
 }

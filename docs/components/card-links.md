@@ -16,78 +16,114 @@ Use card links to take users:
 - to the start of an NHS App service
 - deeper into an area of the app
 
-## When not to use
-
-Do not place card links in the middle of paragraph text.
-
 ## How to use
-
-The whole card should always act as a single, selectable link.
 
 Use the variation below that fits best with the context.
 
 ### Short card link
 
-This is our preferred style. A concise phrase explains where the link goes. It can be read quickly because of the short amount of text.
+Use a concise phrase to explain where the link goes.
 
 {% example "cards/card-link-short.njk" %}
 
-### Card link with paragraph text
+### Card link with description
 
-On pages deeper in the structure of the NHS App, users may need more details to understand where links go. In this case, you can use paragraph text below the heading to give more information.
-
-Only use this variation if you have found a user need for more detailed links on a particular page.
+Only use this variation if you have found a user need for more detailed links.
 
 {% example "cards/card-link-with-description.njk" %}
 
-### Using icons
+### Badges on card links
 
-[Icons](/components/icons/) may help users to understand the meaning of a card link. We currently only use this variation for “Manage health services for others” and “Messages” links on the homepage.
-
-{% example "cards/card-link-icon.njk" %}
-
-### Using badges
-
-Use [badges](/components/badge/) to alert users to new, important information that sits beyond a card link. This could include unread messages or new appointment details.
+Use [badges](/components/badge/) on card links to alert users to new, important information.
 
 {% example "cards/card-link-with-badge.njk" %}
+
+### Secondary card links
+
+Use secondary card links to signpost information that is less important in the context of the page.
+
+{% example "cards/card-link-secondary.njk" %}
+
+### Colour variations
+
+You can use [colour](/styles/colour) to highlight a card link. This can help draw attention to important content.
+
+Use colour sparingly and make sure there is enough contrast between text and background.
+
+{% example "cards/card-link-light-blue.njk" %}
+
+### Images on card links
+
+You can add an image to a card link. We use this on the home screen of the NHS App to [help users learn about public health campaigns](/patterns/learn-about-health-campaigns/).
+
+{% example "cards/card-link-with-image.njk" %}
+
+### Custom content on card links
+
+You can add custom content to a card link, such as a tag, appointment time and location.
+
+Keep the content short and easy to scan. Test with users to check the card gives them the right amount of information.
+
+{% example "cards/card-link-custom.njk" %}
+
+### Footers on card links
+
+You can use a footer to separate related content inside a card link.
+
+{% example "cards/card-link-with-footer.njk" %}
+
+### Card with no link
+
+Use when the card content is informational only and requires no user interaction.
+
+{% example "cards/card-with-no-link.njk" %}
 
 ### Multiple card links
 
 Multiple card links placed together must be marked up as lists in the HTML code. This helps screen reader users to navigate the content, for example by letting them know how many items there are in the list.
 
+#### Grouped card links
+
+Use grouped card links to separate distinct groups of content or actions. Each card is visually independent.
+
+{% example "cards/card-group.njk" %}
+
+#### Stacked card links
+
+Use stacked card links to show multiple items within a single group, such as different sections of the same service or related tasks.
+
 {% example "cards/card-group-stacked.njk" %}
 
-If a page has a long list of card links, consider breaking them up using headings. This makes the information easier to digest and can help screen reader users who may navigate pages by headings.
+Use secondary card links below primary card links which signpost more important information.
+
+{% example "cards/card-group-stacked-secondary.njk" %}
+
+#### Using headings
+
+Break up long lists of card links by using headings. It makes pages easier to scan and helps screen reader users to navigate.
 
 {% example "cards/card-group-headings.njk" %}
 
-### Secondary card links
+You can add custom HTML to the heading using `headingHtml`.
 
-Use secondary card links on hub pages to signpost groups of information on less important topics.
+{% example "cards/card-group-custom-heading.njk" %}
 
-{% example "cards/card-link-secondary.njk" %}
+## Accesibility
 
-Use them below primary card links which signpost more important information.
+Screen reader users often navigate by pulling up a list of all the links on a page. When they do this, they only hear the link text, not the content around it.
 
-{% example "cards/card-link-secondary-stacked.njk" %}
+This means your `linkAriaLabel` must include all the important information from the card. It needs to make sense on its own, out of context.
 
-## Content guidance
+In this example, a sighted user sees the date, location and 'Action needed' tag laid out visually. A screen reader user hears all of this in the `linkAriaLabel`: "Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital".
 
-Aim to use active phrasing for card link text. This means starting the link text with a verb. For example: "Request repeat prescriptions" and "Check for available GP appointments". This follows content guidance on links and helps users to understand the action they can take.
+{% example "cards/card-link-accessibility.njk" %}
 
-However, you may find reasons to vary this to fit with the context. On the "Your health" hub, we mainly use noun phrases (such as "GP health record") for brevity and to avoid multiple links starting with the same verb.
+You can mark the visual content as `aria-hidden="true"` because it's already in the link label. This stops screen reader users hearing the same information twice.
 
-In usability testing, we did not see evidence of this mixture of phrasing causing problems for users. We also noted that GOV.UK also vary link phrasing in a similar way. However, more research on link phrasing may be helpful to validate the best approach.
+Before you hide content with `aria-hidden="true"`, check it appears in the `linkAriaLabel`. If it does not, do not hide it. Screen reader users will miss it when they navigate through links.
 
 ## Research
 
-In usability testing, people successfully navigated the NHS App and completed a range of tasks using short card links. They understood the meaning of the links despite the short amount of text.
+In our research, people successfully navigated the NHS App and completed a range of tasks using short card links. They understood the meaning of the links despite the short amount of text.
 
-In some usability testing involving card links with paragraph text, users have overlooked the paragraph text. However, paragraph text has been found to help users differentiate inboxes on the “Messages” hub.
-
-The icons used on homepage card links were well understood in our user research. People were able to recognise the images and associate them with the link destination.
-
-### Knowledge gaps
-
-As noted in the content guidance section above, more research into link phrasing may help us to understand the best way to word NHS App links.
+Some people overlooked description text when it was included in card links.

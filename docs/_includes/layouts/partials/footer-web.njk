@@ -1,22 +1,22 @@
-{% from 'footer/macro.njk' import footer %}
-
 {{ footer({
-  "links": [
-    {
-      "URL": "#",
-      "label": "Terms of use"
-    },
-    {
-      "URL": "#",
-      "label": "Privacy policy"
-    },
-    {
-      "URL": "#",
-      "label": "Help and support"
-    },
-    {
-      "URL": "#",
-      "label": "Accessibility statement"
-    }
-  ]
-})}}
+  meta: {
+    items: [
+      {
+    "href": "#",
+    "text": "Terms of use"
+  },
+  {
+    "href": "#",
+    "text": "Privacy policy"
+  },
+  {
+    "href": "#",
+    "text": "Help and support"
+  },
+  {
+    "href": "#",
+    "text": "Accessibility statement"
+  }
+    ]
+  }
+}) }}

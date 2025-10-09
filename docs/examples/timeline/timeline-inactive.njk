@@ -3,20 +3,21 @@ layout: layouts/example.njk
 title: Timeline active
 figmaLink: https://www.figma.com/design/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?node-id=4453-2405&t=sIan6GZfBz3Z5bOy-1
 vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhstimeline--docs
+arguments: timeline
 ---
 
-{% from "nhsapp/components/timeline/macro.njk" import nhsappTimeline %}
+{% from 'nhsapp/components/timeline/macro.njk' import nhsappTimeline %}
 
 {{ nhsappTimeline({
   items: [
     {
-      headingText: "Await approval",
-      text: "The request will either be approved or rejected. If rejected please contact your Healthcare Professional.",
+      headingText: 'Await approval',
+      text: 'The request will either be approved or rejected. If rejected please contact your Healthcare Professional.',
       active: true
     },
     {
-      headingText: "GP Approval Process",
-      text: "Once approved, it can take 3 to 5 working days for a nominated pharmacy to prepare your prescription."
+      headingText: 'GP Approval Process',
+      text: 'Once approved, it can take 3 to 5 working days for a nominated pharmacy to prepare your prescription.'
     }
   ]
 }) }}

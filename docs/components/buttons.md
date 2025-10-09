@@ -9,7 +9,7 @@ tags:
 
 ## How to use
 
-We use the [NHS design system button](https://service-manual.nhs.uk/design-system/components/buttons) with a modifier class of `nhsapp-button` to make buttons full width on smaller screens.
+We extend the [NHS design system button](https://service-manual.nhs.uk/design-system/components/buttons) with the `nhsapp-button` modifier class so that its border radius matches the [card links](/components/card-links).
 
 ### Primary button
 
@@ -26,20 +26,3 @@ We use the [NHS design system button](https://service-manual.nhs.uk/design-syste
 ### Warning button
 
 {% example "buttons/button-warning.njk" %}
-
-### Grouping buttons
-
-Use a button group when two or more buttons are placed together.
-
-{% example "buttons/button-group.njk" %}
-
-Any links within a button group will automatically align with the buttons.
-
-{% example "buttons/button-group-link.njk" %}
-
-## Research
-
-Testing on the NHS App has found that full width buttons are not a problem for users with smaller screens. But we will continue to test if:
-
-- full width buttons are problematic for users with low digital skills
-- users don’t actually see them as actionable things to click

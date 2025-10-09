@@ -1,9 +1,11 @@
-@import "node_modules/nhsuk-frontend/packages/core/tools";
-@import "node_modules/nhsuk-frontend/packages/core/settings";
+// Import NHS.UK frontend v10 (core + components) using dist index so mixins are globally available
+@import "node_modules/nhsuk-frontend/dist/nhsuk/index";
+
+// Settings
+@import "settings/colours";
 
 // styles
 @import "styles/icon/icons";
-@import "styles/typography";
 
 // components
 @import "components/badge/badge";
@@ -14,4 +16,5 @@
 @import "components/summary-list";
 
 // utilities
+@import "utilities/display";
 @import "utilities/truncate";

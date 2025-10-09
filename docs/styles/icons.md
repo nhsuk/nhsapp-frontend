@@ -1,10 +1,10 @@
 ---
-layout: layouts/component.njk
+layout: layouts/style.njk
 title: Icons
 description: Use icons as visual cues, to help users understand and navigate content.
 backlogID: 61
 tags:
-  - component
+  - style
 ---
 
 ![5 icons. Switch profiles, messages, home, cross and help icons.](/assets/images/icons.png)

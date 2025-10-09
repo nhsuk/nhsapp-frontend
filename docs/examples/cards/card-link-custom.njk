@@ -1,0 +1,37 @@
+---
+layout: layouts/example.njk
+title: Card link icon
+figmaLink: 
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardbase--docs
+arguments: card
+---
+
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
+
+{% set tag %}
+  {{ nhsappTag({ 
+    text: 'Action needed', 
+    classes: 'nhsapp-tag--red nhsuk-u-margin-bottom-3',
+    attributes: { 
+      'aria-hidden': 'true' 
+    }
+  }) }}
+{% endset %}
+
+{{ nhsappCard({
+  title: 'Orthopaedic appointment',
+  href: '#',
+  titleClasses: 'nhsuk-u-font-size-22',
+  linkAriaLabel: 'Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital',
+  descriptionHtml: '
+    <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
+    <p aria-hidden="true" class="nhsuk-u-margin-bottom-3">The Willows, Croydon University Hospital</p>
+    <p class="nhsapp-badge-small nhsapp-badge-small--red nhsuk-body-s nhsuk-u-secondary-text-colour">
+      <span class="nhsapp-badge-small__indicator" aria-hidden="true"></span>
+      <span class="nhsuk-u-visually-hidden">New</span>
+      <span>Questionnaire attached</span>
+    </p>
+  ',
+  aboveContent: { html: tag }
+}) }} 

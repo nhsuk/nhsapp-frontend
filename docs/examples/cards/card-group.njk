@@ -1,22 +1,35 @@
 ---
 layout: layouts/example.njk
 title: Card link
-figmaLink: "https://www.figma.com/file/6f2CbcZ7cnpNrtKEcfQp8X/NHS-App-Design-System?type=design&node-id=128%3A7303&mode=design&t=DLiyCHcTTAYkEDa0-1"
-vueLink: "https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs"
+figmaLink: 
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/docs/components-nhscardgroup--docs
+arguments: card-group
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
 
 {{ nhsappCardGroup({
   cards: [
     {
-      title: 'Book an appointment',
-      href: '#'
+      title: 'Orthopaedic appointment',
+      href: '#',
+      titleClasses: 'nhsuk-u-font-size-22',
+      linkAriaLabel: 'Orthopaedic appointment on Friday 7 June 2024 at 8:30am, at The Willows, Croydon University Hospital',
+      descriptionHtml: '
+        <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Friday 7 June 2024 <br> 8:30am</p>
+        <p aria-hidden="true">The Willows, Croydon University Hospital</p>
+      '
     },
     {
-      title: 'Request repeat prescriptions',
-      href: '#'
+      title: 'Orthopaedic appointment',
+      href: '#',
+      titleClasses: 'nhsuk-u-font-size-22',
+      linkAriaLabel: 'Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital',
+      descriptionHtml: '
+        <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
+        <p aria-hidden="true">The Willows, Croydon University Hospital</p>
+      '
     }
   ]
 }) }}

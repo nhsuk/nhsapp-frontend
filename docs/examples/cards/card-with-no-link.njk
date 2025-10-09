@@ -1,0 +1,18 @@
+---
+layout: layouts/example.njk
+title: Card link
+figmaLink: 
+vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path=/story/components-nhscardbase--read-only
+arguments: card
+---
+
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+
+{{ nhsappCard({
+  title: 'Orthopaedic appointment',
+  titleClasses: 'nhsuk-u-font-size-22',
+  descriptionHtml: '
+    <p class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
+    <p>The Willows, Croydon University Hospital</p>
+  '
+}) }} 

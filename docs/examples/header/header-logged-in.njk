@@ -1,0 +1,67 @@
+---
+layout: layouts/example.njk
+title: Header (web) logged in
+figmaLink:
+vueLink:
+---
+
+{% from 'header/macro.njk' import header %}
+
+{{ header({
+  service: {
+    text: 'App<span class="nhsuk-u-visually-hidden"> homepage</span>' | safe,
+    href: '#'
+  },
+  account: {
+    classes: 'nhsapp-u-hide-until-tablet',
+    items: [
+      {
+        text: 'Help and support',
+        href: '#'
+      },
+      {
+        text: 'Account',
+        href: '#'
+      },
+      {
+        text: 'Log out',
+        href: '#'
+      }
+    ]
+  },
+  navigation: {
+    items: [
+      {
+        text: 'Home',
+        href: '#'
+      },
+      {
+        text: 'Services',
+        href: '#'
+      },
+      {
+        text: 'Your health',
+        href: '#'
+      },
+      {
+        text: 'Messages',
+        href: '#'
+      },
+      {
+        text: 'Help and support',
+        href: '#',
+        classes: 'nhsapp-u-hide-from-tablet'
+      },
+      {
+        text: 'Account',
+        href: '#',
+        classes: 'nhsapp-u-hide-from-tablet'
+      },
+      {
+        text: 'Log out',
+        href: '#',
+        classes: 'nhsapp-u-hide-from-tablet'
+      }
+    ]
+  }
+}) }}

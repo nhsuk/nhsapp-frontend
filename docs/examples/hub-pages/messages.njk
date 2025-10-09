@@ -7,23 +7,22 @@ figmaLink:
 vueLink: 
 ---
 
-{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
-{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
-{% from "nhsapp/styles/section-heading/macro.njk" import nhsappSectionHeading %}
-{% from "nhsapp/components/badge/large/macro.njk" import nhsappBadgeLarge %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from 'nhsapp/components/badge/large/macro.njk' import nhsappBadgeLarge %}
 
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-full">
+<div class='nhsuk-grid-row'>
+  <div class='nhsuk-grid-column-full'>
 
-    <h1 class="nhsuk-u-margin-bottom-3">Messages</h1>
-    <p class="nhsuk-u-margin-bottom-5">You have 4 inboxes</p>
+    <h1 class='nhsuk-u-margin-bottom-3'>Messages</h1>
+    <p class='nhsuk-u-margin-bottom-5'>You have 4 inboxes</p>
 
     {% if data['messages'] > 0 %}
       {% set badge %}
         {{ nhsappBadgeLarge({
           count: data['messages'],
           label: 'notifications',
-          classes: "nhsuk-u-margin-bottom-3"
+          classes: 'nhsuk-u-margin-bottom-3'
         }) }}
       {% endset %}
     {% else %}
@@ -35,27 +34,27 @@ vueLink:
           aboveContent: { 
             html: badge
           },
-          title: "Your NHS healthcare services",
-          href: "#",
-          html: "<p class='nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2'>You may receive messages:</p>
-          <ul><li>from your GP surgery</li><li>about hospital and specialist care appointments</li><li>about invitations and reminders</li></ul>"
+          title: 'Your NHS healthcare services',
+          href: '#',
+          descriptionHtml: '<p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2">You may receive messages:</p>
+          <ul><li>from your GP surgery</li><li>about hospital and specialist care appointments</li><li>about invitations and reminders</li></ul>'
         },
         {
-          title: "Your hospital and specialist doctors",
-          href: "#",
-          html: "<p class='nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2'>You may send or receive messages about:</p>
-          <ul><li>your health record</li><li>documents and letters</li><li>pre-appointment questionnaires</li></ul>"
+          title: 'Your hospital and specialist doctors',
+          href: '#',
+          descriptionHtml: '<p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2">You may send or receive messages about:</p>
+          <ul><li>your health record</li><li>documents and letters</li><li>pre-appointment questionnaires</li></ul>'
         },
         {
-          title: "Replies to your GP requests",
-          href: "#",
-          html: "<p class='nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2'>You may receive responses to queries you submitted about:</p>
-          <ul><li>health problems</li><li>fit (sick) notes</li><li>doctor's letters</li></ul>"
+          title: 'Replies to your GP requests',
+          href: '#',
+          descriptionHtml: '<p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2">You may receive responses to queries you submitted about:</p>
+          <ul><li>health problems</li><li>fit (sick) notes</li><li>doctor\'s letters</li></ul>'
         },
         {
-          title: "GP surgery messaging",
-          href: "#",
-          description: "Send and view messages from staff at your GP surgery"
+          title: 'GP surgery messaging',
+          href: '#',
+          description: 'Send and view messages from staff at your GP surgery'
         }
       ]
     })}}
