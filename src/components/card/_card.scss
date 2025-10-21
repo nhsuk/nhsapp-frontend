@@ -1,3 +1,9 @@
+@use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/helpers/colour" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
+
 /** These variables are not defined in a separate scss file in the nhsuk-frontend,
  * so we can't import them without bringing in the actual classes also.
  */
@@ -25,7 +31,7 @@ $card-border-radius: 8px;
   }
 
   .nhsapp-icon--chevron-right {
-    fill: rgba($nhsuk-link-color, 0.7);
+    fill: rgba($nhsuk-link-colour, 0.7);
     flex: none; // Prevents icons from shrinking
     height: 24px;
     margin-right: -8px;

@@ -1,3 +1,7 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
+
 $timeline-badge-size-mobile: 16px;
 $timeline-badge-small-size-mobile: 12px;
 $timeline-border-width: 2px;

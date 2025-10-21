@@ -1,3 +1,7 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
+
 .nhsapp-summary-list {
   // Override the NHS UK Frontend summary list component to display two columns on mobile
   &--two-columns-mobile {
