@@ -1,7 +1,8 @@
 $button-border-radius: nhsuk-spacing(2);
 
 .nhsapp-button,
-.nhsapp-button.nhsuk-button--secondary::before {
+.nhsapp-button.nhsuk-button--secondary::before,
+.nhsapp-button.nhsuk-button--secondary:active {
   border-radius: $button-border-radius;
 }
 
