@@ -1,3 +1,5 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
+
 $button-border-radius: nhsuk-spacing(2);
 
 .nhsapp-button,

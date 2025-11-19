@@ -2,6 +2,9 @@
   #TAG
   ========================================================================== */
 
+@use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+
 $color_tag-aqua-green-background: nhsapp-colour("pale-aqua-green");
 $color_tag-aqua-green-text: nhsapp-colour("dark-aqua-green");
 $color_tag-blue-background: nhsapp-colour("pale-blue");
