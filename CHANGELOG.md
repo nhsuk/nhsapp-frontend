@@ -5,7 +5,7 @@
 ### Fixes
 
 - Removed unintended inclusion of the full `nhsuk-frontend` stylesheet in builds by switching to targeted `@use` imports for only the mixins/tools required by each component - [pull request #412](https://github.com/nhsuk/nhsapp-frontend/pull/412)
-- Correctly set the new border radius on secondary buttons in the active state -  - [pull request #413](https://github.com/nhsuk/nhsapp-frontend/pull/413)
+- Correctly set the new border radius on secondary buttons in the active state - - [pull request #413](https://github.com/nhsuk/nhsapp-frontend/pull/413)
 
 ## `v5.0.0` - 9 Ocotber 2025
 
