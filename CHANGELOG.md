@@ -1,5 +1,11 @@
 # NHS App Frontend Changelog
 
+## `v5.0.3` - 26 November 2025
+
+### Fixes
+
+- Adding missing `@use` imports for spacing and colour helpers from `nhsuk-frontend` in several components - [pull request #417](https://github.com/nhsuk/nhsapp-frontend/pull/417)
+
 ## `v5.0.2` - 19 November 2025
 
 ### Fixes
