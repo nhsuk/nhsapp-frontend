@@ -56,7 +56,7 @@ Use the space beneath the button to:
 - let users know about a different way to access the service
 - give links to another relevant service
 
-Always tell users how to complete their task through a different channel. The NHS App is a healthcare service. Errors can delay access to clinic care, and users may be experiencing urgent health needs.
+Always tell users how to complete their task through a different channel. The NHS App is a healthcare service. Errors can delay access to clinical care, and users may be experiencing urgent health needs.
 
 For links to other NHS App services, use a secondary card link.
 
