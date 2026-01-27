@@ -111,4 +111,4 @@ We are in the process of updating the NHS App contact form. This update will rem
 
 ## Design history
 
-Find out more about how we arrived at this pattern in our [design history post on error page guidance](https://nhsdigital.github.io/design-history-nhsapp/design-system/2025/06/error-page-guidance/).
+Find out more about how we arrived at this pattern in our [design history post on error page guidance](https://design-history.nhsapp.service.nhs.uk/design-system/2026/01/error-guidance-update/).
