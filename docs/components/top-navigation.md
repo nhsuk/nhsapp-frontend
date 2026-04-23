@@ -1,7 +1,7 @@
 ---
 layout: layouts/component.njk
 title: Top navigation
-description: Use the top navigation to show the NHS logo, and to help users access help from anywhere in the app.   
+description: Use the top navigation to show the NHS logo and let users access help from anywhere in the app.   
 backlogID: 17
 tags:
   - component
