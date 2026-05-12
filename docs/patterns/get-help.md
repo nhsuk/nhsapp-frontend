@@ -7,13 +7,13 @@ tags:
   - helpUsers
 ---
 
-This helps users overcome problems they experience in the app without having to contact their GP or the app support team. 
+This helps users overcome problems they experience in the app without having to contact their GP or the app support team.
 
 ![The top navigation menu. The NHS logo is on the left and a button with the text app help is on the right.](/assets/images/top-navigation-2026.png)
 
 ## When to use
 
-The button is part of the [top navigation]([../components/top-navigation) menu. It can be accessed from almost every screen of the app.  
+The button is part of the [top navigation]([../components/top-navigation) menu. It can be accessed from almost every screen of the app.
 
 When a user is accessing NHS App services through a web browser, the help button is part of the persistent [header (web)](../components/header-web) menu.
 
@@ -45,7 +45,7 @@ If there is not a relevant topic menu page, take users to the main [Help with us
 
 ## How not to use
 
-Do not route the app help button to a particular article page. Users may need help with something other than the screen they are on in the app. 
+Do not route the app help button to a particular article page. Users may need help with something other than the screen they are on in the app.
 
 Showing users a menu page gives them various options that may be relevant to their problem.
 
@@ -53,14 +53,14 @@ Showing users a menu page gives them various options that may be relevant to the
 
 “App help” was well understood as a label. People were consistently able to find and use the button.
 
-There were some issues with user experience when users were using the browser overlay. Some people: 
+There were some issues with user experience when users were using the browser overlay. Some people:
 
-- navigated to other parts of the NHS website from within the browser overlay and lost their bearings 
+- navigated to other parts of the NHS website from within the browser overlay and lost their bearings
 - thought they were still inside the app while using the browser overlay
 
-We have made content changes to make it clearer when users are viewing help information and not acting inside the NHS App. This includes adding an "NHS App help" sub-heading on help article pages. 
+We have made content changes to make it clearer when users are viewing help information and not acting inside the NHS App. This includes adding an "NHS App help" sub-heading on help article pages.
 
-We are [exploring how NHS website and third-party websites open from the app](https://github.com/nhsuk/nhsapp-frontend/issues/450). 
+We are [exploring how NHS website and third-party websites open from the app](https://github.com/nhsuk/nhsapp-frontend/issues/450).
 
 ## Accessibility
 
