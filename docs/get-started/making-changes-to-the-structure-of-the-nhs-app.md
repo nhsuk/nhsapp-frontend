@@ -86,6 +86,8 @@ What counts as a "good" result from a navigational perspective will vary dependi
 - service factors separate to the NHS App
 - the type and sensitivity of the information involved
 
+These factors should be taken into account when setting research objectives such as task success rates. A complex or niche service with a small user base can be more difficult for users to understand and locate in the NHS App than more common, larger services such as prescriptions or appointments due to the context, user need and comprehsion of the service. This is often acceptable and sometimes unavoidable.
+
 ## Other things to consider
 
 ### Users at different GP surgeries

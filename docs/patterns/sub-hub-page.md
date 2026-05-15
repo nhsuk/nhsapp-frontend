@@ -52,7 +52,7 @@ There are currently 8 sub-hubs in the NHS App:
 - Manage health services for others (proxy access)
 - Health choices
 
-Some sub-hubs, such as test-results and health conditions, will present differently to users depending on their GP surgery's IT supplier.
+Some sub-hubs, such as test-results and health conditions, will present differently to users depending on their GP surgery's IT supplier. For example some users will see Allergoes and adverse reactions as a sub-hub they can access from the home screen in place of the Health conditions sub-hub.
 
 ## Research
 
