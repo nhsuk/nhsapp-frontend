@@ -23,7 +23,8 @@ To get started, you can view the sitemap to see the current structure of the NHS
 **When proposing changes, you should consider:**
 
 - the need for the change
-- how the journey fits alongside others in the same location
+- whether your service could be integrated into an existing service
+- how the journey may fit alongside others in the same location
 - how its positioning may impact the other journeys on the page
 - relevant existing research
 - the content and design of the link or entry point
