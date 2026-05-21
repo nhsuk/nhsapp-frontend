@@ -3,6 +3,7 @@ layout: layouts/pattern.njk
 title: Error pages
 description: Use error pages to tell users there is an unexpected problem. Explain what has happened and what they can do next.
 backlogID: 119
+order: 4
 tags:
   - page
 ---

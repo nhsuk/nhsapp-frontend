@@ -31,13 +31,13 @@
         heading: {
           text: 'Pages'
         },
-        items: collections.page | sort(attribute="data.title")
+        items: collections.page | sort(attribute="data.order")
       },
       {
         heading: {
           text: 'Help users to'
         },
-        items: collections.helpUsers | sort(attribute="data.title")
+        items: collections.helpUsers | sort(attribute="data.order")
       }
     ]
   }) }}
