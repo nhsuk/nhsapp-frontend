@@ -8,7 +8,6 @@ tags:
   - helpUsers
 ---
 
-
 ## When to use
 
 Use web overlays when users go into:
@@ -27,9 +26,9 @@ Do not use web overlays for any of the main menu screens in the NHS App, includi
 - hub screens (Profile and Messages)
 - sub-hub screens (such as Appointments and Prescriptions)
 
-These are built using native code to give users the best experience while they navigate the core screens of the app. 
+These are built using native code to give users the best experience while they navigate the core screens of the app.
 
-## How to use 
+## How to use
 
 The way we use overlays depends on the service.
 
@@ -55,7 +54,7 @@ Include an X icon in the toolbar on:
 
 - the first page
 - pages within flows where users are only given information and not able to input data (for example, their medicines record)
-- pages within an externally hosted NHS service (for example, 111 online) 
+- pages within an externally hosted NHS service (for example, 111 online)
 - pages within a third party service (for example, an online consultation form)
 
 Use an X icon with an alert on pages within flows with data input (eg: select GP appointment)
