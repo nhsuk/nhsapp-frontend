@@ -56,7 +56,10 @@ On the first page of the journey, hide the back button. Include the back button 
 
 Work with designers to check for any other website elements that may be better removed or hidden from the custom tab. For example, links to external website that may lead users stranded outside of the main journey.
 
-[add image of web v app comparison of confirmation screen]
+<figure class="nhsuk-image">
+  <img class="app-image--no-border" src="/assets/images/web-overlay/hide-elements-confirmation.png" alt="">
+  <figcaption class="nhsuk-image__caption">In this example, the 'Upcoming and past appointments' link has been hidden so users don't navigate deeper into the overlay and get lost. When a user selects 'Done', they return to the native Appointments screen, which links to 'Manage GP appointments'.</figcaption>
+</figure>
 
 ### Help users exit the overlay
 

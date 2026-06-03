@@ -102,6 +102,10 @@ pre {
 .app-content {
   .nhsuk-image {
     width: 100%;
+
+    img {
+      margin-bottom: 0;
+    }
   }
 
   img.app-image--no-border {
