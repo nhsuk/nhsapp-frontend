@@ -24,7 +24,7 @@ On the web browser version of the NHS App, we use an [NHS.UK header](https://ser
 The top navigation includes:
 
 - the NHS logo, which users can select to return to the home screen of the NHS App
-- the App help button, which users can select to open help pages hosted on the NHS website
+- the App help button, which users can select to [get help while using the NHS App](../patterns/get-help)
 
 ![Details of the top navigation menu. Selecting the NHS logo leads to the home screen of the NHS App. The app help button goes to the help and support pages.](/assets/images/using-top-nav.png)
 
