@@ -52,7 +52,7 @@ Give the web view a title that matches the name of the service. Check with a con
 
 On the first page of the journey, hide the back button. Include the back button on every other page.
 
-[add image of web v app comparison first page]
+<img class="app-image--no-border" src="/assets/images/web-overlay/hide-elements.png" alt="">
 
 Work with designers to check for any other website elements that may be better removed or hidden from the custom tab. For example, links to external website that may lead users stranded outside of the main journey.
 
