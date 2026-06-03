@@ -44,7 +44,7 @@ Use a standard web browser overlay (Safari View or Chrome Custom Tabs) for:
 
 ## How to adapt your journey to a custom web view
 
-### Add a title to the toolbar 
+### Add a title to the toolbar
 
 Give the web view a title that matches the name of the service. Check with a content designer, but this will usually match with the card link that leads into the service. For example, “Request a repeat prescription”.
 
@@ -60,7 +60,7 @@ Work with designers to check for any other website elements that may be better r
 
 ### Help users exit the overlay
 
-Include an X icon in the toolbar so that users can exit easily. 
+Include an X icon in the toolbar so that users can exit easily.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
