@@ -85,7 +85,7 @@ This applies on every page apart from the final screen of transactional services
   <figcaption class="nhsuk-image__caption">[caption]</figcaption>
 </figure>
 
-Show an alert when users select the X button in the middle of a transactional flow, where they have been entering data or making choices. Do not include an alert on journeys with no data input. Do not include an alert on the first page of journeys before users will have entered any information. Alerts should consistently use the content shown in the example below, which adheres to iOS and Android platform design guidance.
+Show an alert when users select the X button in the middle of a transactional flow, where they have been entering data or making choices.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -95,3 +95,9 @@ Show an alert when users select the X button in the middle of a transactional fl
     <img class="app-image__fallback" src="/assets/images/web-overlay/close-alert.png" alt="">
   <figcaption class="nhsuk-image__caption">[caption]</figcaption>
 </figure>
+
+Do not include an alert on journeys with no data input. Do not include an alert on the first page of journeys before users will have entered any information.
+
+<img class="app-image--no-border" src="/assets/images/web-overlay/close-alert-message.png" alt="">
+
+Alerts should consistently use the content shown in the example below, which adheres to iOS and Android platform design guidance.
