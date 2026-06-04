@@ -43,6 +43,7 @@ Take users to a help topic menu page that's relevant to where they are in the ap
 
 If there is not a relevant topic menu page, take users to the main [Help with using the NHS App](https://www.nhs.uk/nhs-app/help/) menu page. You should also take users here if they're using an integrated service, including one provided through a third-party.
 
+
 ## How not to use
 
 Do not route the app help button to a particular article page. Users may need help with something other than the screen they are on in the app.
@@ -58,7 +59,7 @@ There were some issues with user experience when users were using the browser ov
 - navigated to other parts of the NHS website and lost their bearings
 - thought they were still inside the app, and that they could take actions (such as requesting a prescription)
 
-We've since made content changes to the help pages, to make it clearer when users are viewing help information rather than acting inside the NHS App. This includes adding an "NHS App help" sub-heading on help article pages. We've also introduced the continuous tense in page headings. For example, using "Requesting repeat prescriptions" instead of "Request repeating prescriptions".
+We've since made content changes to help pages, to make it clearer when users are viewing help rather than acting inside the NHS App. This includes adding an "NHS App help" sub-heading on help article pages. We've also introduced the continuous tense in page headings. For example, using "Requesting repeat prescriptions" instead of "Request repeating prescriptions".
 
 We are [exploring how NHS website and third-party websites open from the app](https://github.com/nhsuk/nhsapp-frontend/issues/450).
 
