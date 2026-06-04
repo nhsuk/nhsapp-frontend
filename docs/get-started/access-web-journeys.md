@@ -63,7 +63,7 @@ Work with designers to check for any other website elements that may be better r
 
 ### Help users exit the overlay
 
-Include an X icon in the toolbar so that users can exit easily.
+Include an X button in the toolbar so that users can exit easily.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -100,4 +100,4 @@ Do not include an alert on journeys with no data input. Do not include an alert 
 
 <img class="app-image--no-border" src="/assets/images/web-overlay/close-alert-message.png" alt="">
 
-Alerts should consistently use the content shown in the example below, which adheres to iOS and Android platform design guidance.
+Alerts should consistently use the content shown in the examples above, which adheres to iOS and Android platform design guidance.
