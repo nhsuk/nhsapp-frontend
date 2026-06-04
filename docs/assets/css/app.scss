@@ -101,6 +101,7 @@ pre {
 
 .app-content {
   .nhsuk-image {
+    border: 0;
     width: 100%;
 
     img {
@@ -118,7 +119,8 @@ pre {
     display: block;
     margin: 0 auto;
     max-width: 320px;
-    padding-top: nhsuk-spacing(1);
+    padding-bottom: nhsuk-spacing(4);
+    padding-top: nhsuk-spacing(4);
   }
 
   // Respect reduced motion preferences

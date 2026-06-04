@@ -71,7 +71,6 @@ Include an X button in the toolbar so that users can exit easily.
   </video>
   <!-- Fallback for browsers that don't support video -->
     <img class="app-image__fallback" src="/assets/images/web-overlay/close.png" alt="">
-  <figcaption class="nhsuk-image__caption">[caption]</figcaption>
 </figure>
 
 This applies on every page apart from the final screen of transactional services where you should include a “Done” button instead.
@@ -82,7 +81,6 @@ This applies on every page apart from the final screen of transactional services
   </video>
   <!-- Fallback for browsers that don't support video -->
     <img class="app-image__fallback" src="/assets/images/web-overlay/done.png" alt="">
-  <figcaption class="nhsuk-image__caption">[caption]</figcaption>
 </figure>
 
 Show an alert when users select the X button in the middle of a transactional flow, where they have been entering data or making choices.
@@ -93,7 +91,6 @@ Show an alert when users select the X button in the middle of a transactional fl
   </video>
   <!-- Fallback for browsers that don't support video -->
     <img class="app-image__fallback" src="/assets/images/web-overlay/close-alert.png" alt="">
-  <figcaption class="nhsuk-image__caption">[caption]</figcaption>
 </figure>
 
 Do not include an alert on journeys with no data input. Do not include an alert on the first page of journeys before users will have entered any information.
