@@ -20,9 +20,9 @@ If you're not sure whether the tools are installed â€“ or how to install them â€
 
 ## Download the NHS App prototype
 
-The simplest way to get a copy is to [download it as a zip](https://github.com/nhsuk/nhsapp-prototype/archive/refs/heads/main.zip).
+The simplest way to get a copy is to [download it as a zip](https://github.com/NHSDigital/nhsapp-prototype/archive/refs/heads/main.zip).
 
-You can also clone or download a copy from [GitHub](https://github.com/nhsuk/nhsapp-prototype).
+You can also clone or download a copy from [GitHub](https://github.com/NHSDigital/nhsapp-prototype).
 
 <div class="nhsuk-inset-text nhsuk-u-margin-top-0">
   <p>You can download a new copy for each project and <a href="/get-started/nhsapp-prototype/github">store your code on GitHub</a>.</p>
