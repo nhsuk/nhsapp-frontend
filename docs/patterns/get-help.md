@@ -9,7 +9,7 @@ tags:
 
 This helps users overcome problems they experience in the app without having to contact their GP or the app support team.
 
-![The top navigation menu. The NHS logo is on the left and a button with the text app help is on the right.](/assets/images/app-help-header.png)
+![The top navigation menu. The NHS logo is on the left and a button with the text app help is on the right.](/assets/images/top-navigation-2026.png)
 
 ## When to use
 
