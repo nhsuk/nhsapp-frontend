@@ -16,7 +16,7 @@ You need:
 - [Node.js](https://nodejs.org/en/download) version 20 or higher
 - an HTML text editor, such as [Visual Studio Code (VS Code)](https://code.visualstudio.com/download)
 
-If you're not sure whether the tools are installed – or how to install them – follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install/simple) to get everything you need.
+If you're not sure whether the tools are installed – or how to install them – follow the [NHS prototype kit setup guide](https://prototype-kit.service-manual.nhs.uk/install/) to get everything you need.
 
 ## Download the NHS App prototype
 

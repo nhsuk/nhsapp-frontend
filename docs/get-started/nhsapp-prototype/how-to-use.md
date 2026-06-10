@@ -20,11 +20,11 @@ If you're new to HTML and CSS, you can get started with online tutorials from:
 
 ## NHS prototype kit guides
 
-The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/how-tos) provide step-by-step instructions – from creating a simple page to building complex user journeys.
+The [NHS prototype kit guides](https://prototype-kit.service-manual.nhs.uk/guides) provide step-by-step instructions – from creating a simple page to building complex user journeys.
 
 ### Build a basic prototype tutorial
 
-We recommend following the [build a basic prototype tutorial](https://prototype-kit.service-manual.nhs.uk/how-tos/build-basic-prototype/index) to familiarise yourself with prototyping.
+We recommend following the [build a basic prototype tutorial](https://prototype-kit.service-manual.nhs.uk/guides/build-basic-prototype/) to familiarise yourself with prototyping.
 
 ## NHS App prototype templates and components
 
