@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 title: Android
-description: TODO
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
