@@ -32,6 +32,7 @@ The native app will support these Android features and accessibility settings:
 - Reduce transparency mode
 - Differentiate without color mode
 - Reduce motion mode
+
 We may also support:
 
 - Tablet layouts
