@@ -28,6 +28,7 @@ In the longer term, our ambition is to make the app more fully native. This may 
 Use a custom web view for:
 
 - website-based app journeys (such as requesting a repeat prescription, viewing test results or booking a GP appointment)
+- unauthenticated NHS website journeys (such as Health A to Z, Find NHS services and App help)
 - authenticated NHS website journeys (such as 111 online)
 - authenticated third-party journeys (such as online consultations, Wayfinder integrations and Be Part of Research)
 
@@ -37,7 +38,6 @@ Use a custom web view for:
 
 Use a standard web browser overlay (Safari View or Chrome Custom Tabs) for:
 
-- unauthenticated NHS website journeys (such as Health A to Z, Find NHS services and App help)
 - unauthenticated third-party information websites (for example, Lab Tests Online)
 
 <img class="app-image--no-border" src="/assets/images/web-overlay/web-browser-overlay.png" alt="">
