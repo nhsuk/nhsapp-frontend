@@ -108,7 +108,7 @@ Alerts should consistently use the content shown in the examples above, which ad
 
 The main journey opens as a full-screen overlay, because it's the task the user came to do. For example, viewing their medicines record.
 
-When a user opens a link from within that journey, such as an nhs.uk page with more information, show it as a sheet: a partial overlay that slides up over the journey. It still uses a custom web view, but presenting it as a sheet keeps the main journey visible underneath. This shows users it's a temporary step and lets them dismiss it to get back to where they were.
+When a user opens a link from within that journey, such as an nhs.uk page with more information, show it as a sheet, a partial overlay that slides up over the journey. It still uses a custom web view, but presenting it as a sheet keeps the main journey visible underneath. This shows users it's a temporary step and lets them dismiss it to get back to where they were.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -118,3 +118,13 @@ When a user opens a link from within that journey, such as an nhs.uk page with m
     <img class="app-image__fallback" src="/assets/images/web-overlay/webview-sheet.png" alt="">
 </figure>
 
+External links work the same way, but use the web browser overlay instead of a custom web view. When a user opens a link to a third-party website from within a full-screen overlay. For example, a charity such as the British Heart Foundation, open it in the web browser overlay (Safari View or Chrome Custom Tabs) as a sheet. The principle is the same, the sheet keeps the page they were reading underneath, so they can read the external site and dismiss it to return.
+
+<figure class="nhsuk-image">
+  <video autoplay loop muted playsinline class="app-image__video">
+    <source src="/assets/images/web-overlay/webview-external-link.mp4" type="video/mp4">
+  </video>
+  <!-- Fallback for browsers that don't support video -->
+    <img class="app-image__fallback" src="/assets/images/web-overlay/webview-external-link.png" alt="">
+    <figcaption class="nhsuk-image__caption">In this example, the user is in the "Get health information and advice" overlay and selects the British Heart Foundation website link. Because it's an external site, it opens at bhf.org.uk in the web browser overlay, shown as a sheet over the page they were reading.</figcaption>
+</figure>
