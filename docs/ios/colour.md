@@ -4,6 +4,12 @@ title: Colour
 tags:
   - ios
 colourGroups:
+  - heading: Accent colour
+    description: This is set as the tint colour, and will be used by some native components by default.
+    colours:
+      - token: nhsAccentColor
+        light: "#005eb8"
+        dark: "#52a0ff"
   - heading: Core palette
     colours:
       - token: nhsBlue
