@@ -137,3 +137,9 @@ The principle is the same. The sheet keeps the page they were reading underneath
     <img class="app-image__fallback" src="/assets/images/web-overlay/webview-external-link.png" alt="Another video showing a sheet in action, but this time the user is following a third-party link which opens as a sheet in a web browser overlay.">
     <figcaption class="nhsuk-image__caption">In this example, the user is in the "Get health information and advice" overlay and selects the British Heart Foundation website link. Because it's an external site, it opens at bhf.org.uk in the web browser overlay, shown as a sheet over the page they were reading.</figcaption>
 </figure>
+
+### Giving users access to help
+
+When users are completing a website-based app journey, use the bottom of the overlay to let them access the app help button.
+
+The button should be present on every screen of the journey. It should open a relevant NHS App help page in a sheet.
