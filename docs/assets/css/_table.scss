@@ -1,0 +1,6 @@
+
+// Remove the horizontal border between each row
+.app-table--no-border th,
+.app-table--no-border td {
+  border-bottom-width: 0;
+}
