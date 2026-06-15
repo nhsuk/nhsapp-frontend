@@ -32,6 +32,12 @@
   }
 }
 
+// Bordered swatch. Used when the swatch is the
+// same as the background colour.
+.app-colour-list__swatch--bordered {
+  border-color: nhsuk-colour("grey-4");
+}
+
 .app-colour-list__column {
   padding-left: 0;
   padding-top: nhsuk-spacing(2);

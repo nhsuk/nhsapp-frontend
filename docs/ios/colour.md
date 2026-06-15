@@ -193,7 +193,7 @@ All colours will adapt to dark mode, except for those with the 'Only' suffix, wh
         <code class="app-code--transparent nhsuk-u-font-weight-normal">.{{ colour.token }}</code>
       </th>
       <td class="nhsuk-u-padding-0">
-        <span class="app-colour-list__swatch" style="background-color:{{ colour.light }}"></span>
+        <span class="app-colour-list__swatch {{ "app-colour-list__swatch--bordered" if colour.token == "nhsGrey5" }}" style="background-color:{{ colour.light }}"></span>
       </td>
       <td class="nhsuk-u-padding-0">
         <span class="app-colour-list__swatch" style="background-color:{{ colour.dark if colour.dark else colour.light }}"></span>
