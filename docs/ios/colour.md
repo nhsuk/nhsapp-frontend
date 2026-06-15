@@ -113,13 +113,6 @@ colourGroups:
       - token: nhsPaleYellow
         light: "#fff7b1"
         dark: "#423d10"
-  - heading: Prescription
-    colours:
-      - token: nhsPrescriptionGreen
-        light: "#c7eacc"
-      - token: nhsPrescriptionWhite
-        light: "#ffffff"
-        dark: "#ffffff"
   - heading: Fixed colours
     description: These use the same colour value in both light and dark mode. Use them when you need a colour that does not change.
     colours:
