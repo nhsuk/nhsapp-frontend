@@ -182,16 +182,20 @@ All colours will adapt to dark mode, except for those with the `Only` suffix.
   <thead>
     <tr>
       <th class="app-colour-list__column app-colour-list__column--name nhsuk-u-padding-left-0" scope="col">Token</th>
-      <td class="app-colour-list__column app-colour-list__column--colour">{{ "Light" if group.heading !== "Non-adaptive colours" else "Colour" }}</td>
-      {% if group.heading !== "Non-adaptive colours" %}<td class="app-colour-list__column app-colour-list__column--colour">Dark</td>{% endif %}
+      <td class="app-colour-list__column app-colour-list__column--colour">Light</td>
+      <td class="app-colour-list__column app-colour-list__column--colour">Dark</td>
     </tr>
   </thead>
   <tbody>
     {%- for colour in group.colours %}
     <tr class="app-colour-list__row">
-      <th class="app-colour-list__column app-colour-list__column--name nhsuk-u-padding-left-0" scope="row"><code>Color.{{ colour.token }}</code></th>
-      <td class="app-colour-list__column app-colour-list__column--colour" style="position: relative;"><span class="app-colour-list__swatch" style="background-color:{{ colour.light }}"></span></td>
-      {% if group.heading !== "Non-adaptive colours" %}<td class="app-colour-list__column app-colour-list__column--colour" style="position: relative;">{% if colour.dark %}<span class="app-colour-list__swatch" style="background-color:{{ colour.dark }}"></span>{% endif %}</td>{% endif %}
+      <th class="app-colour-list__column app-colour-list__column--name nhsuk-u-padding-left-0 nhsuk-u-width-full" scope="row"><code>Color.{{ colour.token }}</code></th>
+      <td class="nhsuk-u-padding-0"><span class="app-colour-list__swatch" style="background-color:{{ colour.light }}"></span></td>
+
+      <td class="nhsuk-u-padding-0">
+        <span class="app-colour-list__swatch" style="background-color:{{ colour.dark if colour.dark else colour.light }}"></span>
+      </td>
+
     </tr>
     {%- endfor %}
   </tbody>
