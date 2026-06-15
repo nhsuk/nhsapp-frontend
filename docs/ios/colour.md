@@ -168,9 +168,9 @@ colourGroups:
         light: "#fff7b1"
 ---
 
-Colours are defined in the NHS iOS App Design as extensions on SwiftUI's `Color` type.
+Colours are defined in the NHS iOS App Design as extensions on SwiftUI's `Color`.
 
-All colours will adapt to dark mode, except for those with the `Only` suffix.
+All colours will adapt to dark mode, except for those with the 'Only' suffix, which are fixed.
 
 {% for group in colourGroups %}
 
@@ -178,24 +178,26 @@ All colours will adapt to dark mode, except for those with the `Only` suffix.
 
 {% if group.description %}<p>{{ group.description }}</p>{% endif %}
 
-<table class="app-colour-list" summary="{{ group.heading }} colour tokens">
+<table class="app-table--no-border">
   <thead>
     <tr>
-      <th class="app-colour-list__column app-colour-list__column--name nhsuk-u-padding-left-0" scope="col">Token</th>
-      <td class="app-colour-list__column app-colour-list__column--colour">Light</td>
-      <td class="app-colour-list__column app-colour-list__column--colour">Dark</td>
+      <th>Code</th>
+      <th>Light</th>
+      <th>Dark</th>
     </tr>
   </thead>
   <tbody>
     {%- for colour in group.colours %}
-    <tr class="app-colour-list__row">
-      <th class="app-colour-list__column app-colour-list__column--name nhsuk-u-padding-left-0 nhsuk-u-width-full" scope="row"><code>Color.{{ colour.token }}</code></th>
-      <td class="nhsuk-u-padding-0"><span class="app-colour-list__swatch" style="background-color:{{ colour.light }}"></span></td>
-
+    <tr>
+      <th class="nhsuk-u-width-full">
+        <code class="app-code--transparent nhsuk-u-font-weight-normal">.{{ colour.token }}</code>
+      </th>
+      <td class="nhsuk-u-padding-0">
+        <span class="app-colour-list__swatch" style="background-color:{{ colour.light }}"></span>
+      </td>
       <td class="nhsuk-u-padding-0">
         <span class="app-colour-list__swatch" style="background-color:{{ colour.dark if colour.dark else colour.light }}"></span>
       </td>
-
     </tr>
     {%- endfor %}
   </tbody>
