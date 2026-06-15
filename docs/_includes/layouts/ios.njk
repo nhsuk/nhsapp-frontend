@@ -1,0 +1,54 @@
+{% extends "./sidebar.njk" %}
+{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
+
+{%- from "./partials/side-navigation.njk" import appSideNavigation %}
+
+{% block beforeContent %}
+  {% if title === "iOS" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        }
+      ],
+      href: "/ios",
+      text: "iOS"
+    }) }}
+  {% endif %}
+{% endblock %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    currentPath: page.url,
+    sections: [
+      {
+        items: collections.ios | sort(attribute="data.title")
+      }
+    ]
+  }) }}
+{% endset %}
+
+{% block content %}
+    {{ nhsappTag({
+    text: 'Work in progress',
+    classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
+    })}}
+
+  {% if tags and "ios" in tags %}
+    <span class="nhsuk-caption-xl">iOS</span>
+  {% endif %}
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {{ title }}
+  </h1>
+  <p>{{ description }}</p>
+  {{ content | safe }}
+  {% if tags and "ios" in tags %}
+    {% include "layouts/partials/feedback-section.njk" %}
+  {% endif %}
+{% endblock %}

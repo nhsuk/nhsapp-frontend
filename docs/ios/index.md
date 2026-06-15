@@ -1,5 +1,6 @@
 ---
-layout: layouts/base.njk
+layout: layouts/ios.njk
+isIndex: true
 title: iOS
 description: TODO
 ---
@@ -10,8 +11,6 @@ description: TODO
   text: 'Work in progress',
   classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
 })}}
-
-# iOS
 
 We are transforming the NHS App to be more platform-native.
 

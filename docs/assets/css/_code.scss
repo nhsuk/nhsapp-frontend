@@ -1,0 +1,6 @@
+// A quick hack to undo some of the default
+// styles for inline code blocks.
+code.app-code--transparent {
+  background: transparent !important;
+  color: $nhsuk-text-colour !important;
+}
