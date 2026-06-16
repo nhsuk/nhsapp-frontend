@@ -2,7 +2,7 @@
 layout: layouts/ios.njk
 title: Colour
 tags:
-  - ios
+  - iosStyles
 colourGroups:
   - heading: Accent colour
     description: This is set as the tint colour, and will be used by some native components by default.

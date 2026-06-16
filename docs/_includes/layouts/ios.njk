@@ -28,7 +28,16 @@
     currentPath: page.url,
     sections: [
       {
+        heading: {
+          text: 'Get started'
+        },
         items: collections.ios | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Styles'
+        },
+        items: collections.iosStyles | sort(attribute="data.title")
       }
     ]
   }) }}
