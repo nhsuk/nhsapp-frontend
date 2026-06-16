@@ -25,14 +25,14 @@ In the longer term, our ambition is to make the app more fully native. This may 
 
 ### Custom web view
 
-We use custom web views for journeys that need to display in a customised way in the app.
+Use custom web views if you need to customise or control how a journey is presented in the NHS App. 
 
-Use a custom web view for:
+This includes:
 
-- website-based app journeys (such as requesting a repeat prescription, viewing test results or booking a GP appointment)
-- unauthenticated NHS website journeys (such as Health A to Z, Find NHS services and App help)
-- authenticated NHS website journeys (such as 111 online)
-- authenticated third-party journeys (such as online consultations, Wayfinder integrations and Be Part of Research)
+- **website-based app journeys** – such as requesting a repeat prescription, viewing test results or booking a GP appointment
+- **NHS website journeys** – both authenticated (such as 111 online) and unauthenticated (such as Health A to Z, Find NHS services and App help)
+- **authenticated third-party journeys** – such as online consultations, Wayfinder integrations and Be Part of Research
+- **the "Give feedback on the NHS App" survey** – which contains links to the NHS website that we need to display in a custom web view 
 
 <img class="app-image--no-border" src="/assets/images/web-overlay/custom-web-view.png" alt="Examples of a custom web view being used for repeat prescriptions, online constulations and NHS website journeys.">
 
@@ -40,7 +40,7 @@ Use a custom web view for:
 
 We use a standard web browser overlay (Safari View or Chrome Custom Tabs) for journeys that do not need any customisation for how they show in the NHS App.
 
-Use a standard web browser oeverlay for unauthenticated third-party information websites. For example, online pharmacy websites.
+Use a standard web browser overlay for unauthenticated third-party information websites. For example, online pharmacy websites.
 
 <img class="app-image--no-border" src="/assets/images/web-overlay/web-browser-overlay.png" alt="Examples of Safari View being used for the external websites Bamboo Pharmacy, British Heart Foundation and a Department of Health PDF.">
 
@@ -136,6 +136,17 @@ The principle is the same. The sheet keeps the page they were reading underneath
   <!-- Fallback for browsers that don't support video -->
     <img class="app-image__fallback" src="/assets/images/web-overlay/webview-external-link.png" alt="Another video showing a sheet in action, but this time the user is following a third-party link which opens as a sheet in a web browser overlay.">
     <figcaption class="nhsuk-image__caption">In this example, the user is in the "Get health information and advice" overlay and selects the British Heart Foundation website link. Because it's an external site, it opens at bhf.org.uk in the web browser overlay, shown as a sheet over the page they were reading.</figcaption>
+</figure>
+
+The example below shows the "Give feedback" journey. The Qualtrics survey link opens in full-screen custom web view. The NHS website links in that journey then open as a custom web view sheet.  
+
+<figure class="nhsuk-image">
+  <video autoplay loop muted playsinline class="app-image__video">
+    <source src="/assets/images/web-overlay/overlay-qualtrics-custom-web-view-full-screen.mp4" type="video/mp4">
+  </video>
+  <!-- Fallback for browsers that don't support video -->
+    <img class="app-image__fallback" src="/assets/images/web-overlay/overlay-qualtrics-custom-web-view-full-screen.png" alt="A video showing the Qualtrics survey opening in a full-screen custom web view, and an NHS website link on that journey opening as a sheet in a custom web view overlay.">
+    <figcaption class="nhsuk-image__caption">This example shows the "Give feedback" survey journey. Although it's an unauthenticated, third-party journey, we use a full-screen custom web view rather than the web browser overlay. That lets us control how the NHS website links within the journey open. We open those links as custom web view sheets.</figcaption>
 </figure>
 
 ### Giving users access to help
