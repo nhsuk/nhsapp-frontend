@@ -2,15 +2,7 @@
 layout: layouts/ios.njk
 isIndex: true
 title: iOS
-description: TODO
 ---
-
-{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
-
-{{ nhsappTag({
-  text: 'Work in progress',
-  classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
-})}}
 
 We are transforming the NHS App to be more platform-native.
 
