@@ -4,12 +4,6 @@ title: Colour
 tags:
   - ios
 colourGroups:
-  - heading: Accent colour
-    description: This is set as the tint colour, and will be used by some native components by default.
-    colours:
-      - token: nhsAccentColor
-        light: "#005eb8"
-        dark: "#52a0ff"
   - heading: Core palette
     colours:
       - token: nhsBlue
@@ -171,6 +165,29 @@ colourGroups:
 Colours are defined in the NHS iOS App Design as extensions on SwiftUI's `Color`.
 
 All colours will adapt to dark mode, except for those with the 'Only' suffix, which are fixed.
+
+## Accent colour
+
+The NHS brand colour should be set up as the global accent or 'tint' colour across your app. This is then used by some native SwiftUI components.
+
+To set it up, open the file which defines the top-level entry point for your app and add `.tint(.nhsAccent)` like this:
+
+```swift
+import SwiftUI
+import NHSAppDesign
+
+@main
+struct NHSAppDesignExampleApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .tint(.nhsAccent)
+        }
+    }
+}
+```
+
+This tint colour will then be inherited by all of your views.
 
 {% for group in colourGroups %}
 
