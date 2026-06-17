@@ -32,7 +32,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "concurrently": "^8.2.2",
+    "concurrently": "^10.0.3",
     "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
