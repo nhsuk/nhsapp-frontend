@@ -142,10 +142,10 @@ The example below shows the "Give feedback" journey. The Qualtrics survey link o
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
-    <source src="/assets/images/web-overlay/overlay-qualtrics-custom-web-view-full-screen.mp4" type="video/mp4">
+    <source src="/assets/images/web-overlay/give-feedback.mp4" type="video/mp4">
   </video>
   <!-- Fallback for browsers that don't support video -->
-    <img class="app-image__fallback" src="/assets/images/web-overlay/overlay-qualtrics-custom-web-view-full-screen.png" alt="A video showing the Qualtrics survey opening in a full-screen custom web view, and an NHS website link on that journey opening as a sheet in a custom web view overlay.">
+    <img class="app-image__fallback" src="/assets/images/web-overlay/give-feedback.png" alt="A video showing the Qualtrics survey opening in a full-screen custom web view, and an NHS website link on that journey opening as a sheet in a custom web view overlay.">
     <figcaption class="nhsuk-image__caption">This example shows the "Give feedback" survey journey. Although it's an unauthenticated, third-party journey, we use a full-screen custom web view rather than the web browser overlay. That lets us control how the NHS website links within the journey open. We open those links as custom web view sheets.</figcaption>
 </figure>
 
