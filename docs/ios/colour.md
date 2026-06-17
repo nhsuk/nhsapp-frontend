@@ -170,7 +170,9 @@ All colours will adapt to dark mode, except for those with the 'Only' suffix, wh
 
 The NHS brand colour should be set up as the global accent or 'tint' colour across your app. This is then used by some native SwiftUI components.
 
-To set it up, open the file which defines the top-level entry point for your app and add `.tint(.nhsAccent)` like this:
+Make sure you remove the `AccentColor` from your 'Assets' catalog, if it there already (it is added by default for new projects), as this will conflict with the colour defined in the Swift package.
+
+Then to set it up the accent colour, open the file which defines the top-level entry point for your app and add `.tint(.nhsAccent)` like this:
 
 ```swift
 import SwiftUI
@@ -187,7 +189,7 @@ struct NHSAppDesignExampleApp: App {
 }
 ```
 
-This tint colour will then be inherited by all of your views.
+This tint colour will then be inherited by all of your views, but can be overriden where needed.
 
 {% for group in colourGroups %}
 
