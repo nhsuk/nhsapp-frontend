@@ -18,9 +18,10 @@ To do this:
 1. Go to [personal access tokens](https://github.com/settings/personal-access-tokens) on GitHub
 2. Click 'Generate new token'
 3. Give the token a name and set 'resource owned' to NHSDigital
-4. Select 'Only select repositories, then search for `nhsapp-design-system-ios` and select that
-5. Click 'Add permissions' and search for 'Contents' and select that
-6. Generate the token, and then copy it somewhere safe. You will need it in the next step.
+4. Set the expiration to 366 days.
+5. Select 'Only select repositories, then search for `nhsapp-design-system-ios` and select that
+6. Click 'Add permissions' and search for 'Contents' and select that
+7. Generate the token, and then copy it somewhere safe. You will need it in the next step.
 
 (In future this will no longer be required once the repository is public)
 
