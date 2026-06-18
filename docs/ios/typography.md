@@ -2,7 +2,7 @@
 layout: layouts/ios.njk
 title: Typography
 tags:
-  - ios
+  - iosStyles
 ---
 
 We are still deciding whether or how the native app should use a custom typeface (Frutiger).
