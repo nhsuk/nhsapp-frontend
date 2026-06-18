@@ -15,7 +15,7 @@ At the moment, because the package is a private repository, you will need to cre
 
 1. Go to [personal access tokens](https://github.com/settings/personal-access-tokens) on GitHub.
 2. Click 'Generate new token'.
-3. Give the token a name - this can be the name of your prototype or anything brief and descriptive.
+3. Give the token a name – this can be the name of your prototype or anything brief and descriptive.
 4. Set 'resource owner' to NHSDigital.
 5. Set the expiration to 366 days.
 6. Select 'Only select repositories', then search for `nhsapp-design-system-ios` and select that.
