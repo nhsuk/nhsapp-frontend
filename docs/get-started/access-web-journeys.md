@@ -1,12 +1,18 @@
 ---
 layout: layouts/pattern.njk
 title: Access web journeys in the native NHS App
-description: How to adapt your web journey so users can access it in the native NHS App, using a web overlay.
+description: 
 backlogID: 457
 order: 5
 tags:
   - helpUsers
 ---
+
+<strong class="nhsapp-tag nhsapp-tag--blue nhsuk-u-margin-bottom-4">
+  Work in progress
+</strong>
+
+How to adapt your web journey so users can access it in the native NHS App, using a web overlay.
 
 ## Overview
 
