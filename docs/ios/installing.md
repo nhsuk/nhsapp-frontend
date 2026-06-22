@@ -38,4 +38,4 @@ In the dialog box, under 'Add to Target' change 'None' to your app name. Then se
 
 Whenever there are changes made to the swift package, you will need to update the package within your project.
 
-Do do this, go to File → Packages → Update to Latest Package Versions
+To do this, go to File → Packages → Update to Latest Package Versions
