@@ -133,7 +133,7 @@ For links to any NHS journeys, use a custom web view to open the sheet.
     <img class="app-image__fallback" src="/assets/images/web-overlay/webview-sheet.png" alt="Video of a user who is already in a full-screen custom web view selecting an NHS website. It opens in a sheet the slides over the top of the full-screen overlay.">
 </figure>
 
-Links to third-party websites or services work the same way, but you should use the web browser overlay (Safari View or Chrome Custome Tabs) instead of a custom web view. 
+Links to third-party websites or services work the same way, but you should use the web browser overlay (Safari View or Chrome Custome Tabs) instead of a custom web view.
 
 The principle is the same. The sheet keeps the page they were reading underneath, so they can read the external site and dismiss it to return.
 
@@ -146,7 +146,7 @@ The principle is the same. The sheet keeps the page they were reading underneath
     <figcaption class="nhsuk-image__caption">In this example, the user is in the "Get health information and advice" overlay and selects the British Heart Foundation website link. Because it's an external site, it opens at bhf.org.uk in the web browser overlay, shown as a sheet over the page they were reading.</figcaption>
 </figure>
 
-The example below shows the "Give feedback" journey. It contains NHS website links that we open using custom web view sheets. 
+The example below shows the "Give feedback" journey. It contains NHS website links that we open using custom web view sheets.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -159,7 +159,7 @@ The example below shows the "Give feedback" journey. It contains NHS website lin
 
 ### Include an app help button at the bottom of the custom web view
 
-Users may get stuck or have questions while they complete website-based app journeys, such as requesting a repeat prescription or booking a GP appointment. 
+Users may get stuck or have questions while they complete website-based app journeys, such as requesting a repeat prescription or booking a GP appointment.
 
 Use the bottom of the custom web view to continually display an app help button during these journeys. For information about routing the button to a relevant help page, see our guidance on [giving users access to help while they use the NHS App](https://design-system.nhsapp.service.nhs.uk/patterns/get-help/).
 
