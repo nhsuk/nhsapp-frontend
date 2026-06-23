@@ -163,4 +163,4 @@ Users may get stuck or have questions while they complete website-based app jour
 
 Use the bottom of the custom web view to continually display an app help button during these journeys. For information about routing the button to a relevant help page, see our guidance on [giving users access to help while they use the NHS App](https://design-system.nhsapp.service.nhs.uk/patterns/get-help/).
 
-<img class="app-image--no-border" src="/assets/images/web-overlay/app-help-footer.png" alt="The bottom of the custom web view. It has a button reading app help with a question mark icon.">
+<img class="app-image--no-border" src="/assets/images/web-overlay/help.png" alt="The bottom of the custom web view. It has a button reading app help with a question mark icon.">
