@@ -18,7 +18,7 @@ While the structure of the NHS App can evolve, it is a complex and carefully bal
 
 Research shows that users view and experience the NHS App as a singular thing, when in fact it is a combination of many different services and data. It is essential for NHS App teams to ensure consistency in the experience, from the overall structure down to labels and data read outs to meet user's mental models.
 
-To get started, you can view the sitemap to see the current structure of the NHS App. For more context, see the page on the structure of the NHS App.
+For more context, see the page on [the structure of the NHS App](https://design-system.nhsapp.service.nhs.uk/patterns/the-structure-of-the-nhsapp/).
 
 **When proposing changes, you should consider:**
 
