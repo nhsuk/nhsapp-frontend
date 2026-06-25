@@ -9,7 +9,6 @@ The home menu lists the main sections of the app.
 
 <img src="/assets/images/ios/HomeMenu.png" width="320">
 
-
 ## When to use
 
 Use it once, on the home screen.
@@ -24,10 +23,10 @@ Each item in the home menu has an icon and a short label.
 
 The layout varies by screen size and text size:
 
-* on mobile at standard text size, the menu appears as a grid with 2 columns
-* on tablets or in landscape on larger phones, the grid contains 3 columns
-* at larger text sizes, the menu switches to a single column grid
-* at very large text sizes, the icon is no longer shown.
+- on mobile at standard text size, the menu appears as a grid with 2 columns
+- on tablets or in landscape on larger phones, the grid contains 3 columns
+- at larger text sizes, the menu switches to a single column grid
+- at very large text sizes, the icon is no longer shown.
 
 ## How to use
 
@@ -42,11 +41,11 @@ HomeMenu(accessibilityLabel: "Health services") {
 
 You will need to specify these:
 
-| Option | Description |
-| ------ | ------------|
+| Option               | Description                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------- |
 | `accessibilityLabel` | A label to describe the overall menu. This isn’t visible but is read out by VoiceOver |
-| `title` | The visible label for each menu item |
-| `systemImage` | The name of the icon from SF Symbols to use for each menu item |
+| `title`              | The visible label for each menu item                                                  |
+| `systemImage`        | The name of the icon from SF Symbols to use for each menu item                        |
 
 ### Actions
 
@@ -144,4 +143,3 @@ The `title` for each menu item is read out by VoiceOver. The icon images are not
 ## Research
 
 This component is not yet being used by the live NHS App, but several rounds of research have been done on it.
-
