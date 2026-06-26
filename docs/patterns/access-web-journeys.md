@@ -123,7 +123,7 @@ While users are completing their main task in a full-screen overlay, they may se
 
 A sheet is a partial overlay that slides up over the main journey, keeping it visible underneath. This shows users they have taken a temporary step, which they can dismiss to get back to where they were.
 
-For links to any NHS journeys, use a custom web view to open the sheet.
+The sheet we use to open NHS website pages is also a custom web view.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -133,7 +133,7 @@ For links to any NHS journeys, use a custom web view to open the sheet.
     <img class="app-image__fallback" src="/assets/images/web-overlay/webview-sheet.png" alt="Video of a user who is already in a full-screen custom web view selecting an NHS website. It opens in a sheet the slides over the top of the full-screen overlay.">
 </figure>
 
-Links to third-party websites or services work the same way, but you should use the web browser overlay (Safari View or Chrome Custome Tabs) instead of a custom web view.
+For links to third-party websites or services, the sheet should be a web browser overlay (Safari View or Chrome Custom Tabs) instead of a custom web view.
 
 The principle is the same. The sheet keeps the page they were reading underneath, so they can read the external site and dismiss it to return.
 
