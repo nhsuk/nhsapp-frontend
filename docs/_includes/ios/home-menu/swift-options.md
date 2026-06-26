@@ -1,6 +1,6 @@
 <!-- prettier-ignore-file -->
 
-| Option | Description |
+| Option               | Description                                                                           |
 | -------------------- | ------------------------------------------------------------------------------------- |
 | `accessibilityLabel` | A label to describe the overall menu. This isn't visible but is read out by VoiceOver |
 | `title`              | The visible label for each menu item                                                  |
