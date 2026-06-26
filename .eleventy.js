@@ -123,10 +123,16 @@ export default function (eleventyConfig) {
       showNunjucksAuto = data.showNunjucks
     }
 
+    // Always show HTML preview/tab unless explicitly disabled
+    let showHtmlAuto = true
+    if (typeof data.showHtml === 'boolean') {
+      showHtmlAuto = data.showHtml
+    }
+
     const rawHtmlCode = nunjucksEnv.renderString(nunjucksCode)
-    const prettyHtmlCode = await prettier.format(rawHtmlCode, {
-      parser: 'html'
-    })
+    const prettyHtmlCode = rawHtmlCode.trim()
+      ? await prettier.format(rawHtmlCode, { parser: 'html' })
+      : ''
 
     const href = `/examples/${examplePath.replace('.njk', '')}`
 
@@ -145,8 +151,13 @@ export default function (eleventyConfig) {
       backlink: data.backlink || data.backLink || false,
       backLinkHref: data.backLinkHref,
       backLinkText: data.backLinkText,
-      arguments: data.arguments, // existing
-      showNunjucks: showNunjucksAuto // computed visibility
+      arguments: data.arguments,
+      showNunjucks: showNunjucksAuto,
+      showHtml: showHtmlAuto,
+      swiftCode: data.swiftCode || null,
+      swiftArguments: data.swiftArguments || null,
+      androidCode: data.androidCode || null,
+      openFirst: data.openFirst === true
     }
     return nunjucksEnv.render('example.njk', templateData)
   })

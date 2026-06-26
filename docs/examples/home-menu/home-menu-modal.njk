@@ -1,0 +1,48 @@
+---
+title: Home menu modal sheet
+showHtml: false
+openFirst: true
+swiftCode: |
+  enum HomeDestination: Hashable {
+      case prescriptions
+      case vaccinations
+  }
+
+  struct ContentView: View {
+    @State private var path = NavigationPath()
+    @State private var showGetAccess = false
+    let hasAccess: Bool
+
+    var body: some View {
+      NavigationStack(path: $path) {
+        HomeMenu(accessibilityLabel: "Health services") {
+          HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") {
+            if hasAccess {
+              path.append(HomeDestination.prescriptions)
+            } else {
+              showGetAccess = true
+            }
+          }
+          HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") {
+            if hasAccess {
+              path.append(HomeDestination.vaccinations)
+            } else {
+              showGetAccess = true
+            }
+          }
+        }
+        .navigationDestination(for: HomeDestination.self) { destination in
+          switch destination {
+          case .prescriptions:
+            PrescriptionsView()
+          case .vaccinations:
+            VaccinationsView()
+          }
+        }
+      }
+      .sheet(isPresented: $showGetAccess) {
+        GetAccessView()
+      }
+    }
+  }
+---
