@@ -1,3 +1,5 @@
+{% set showHtmlTab = showHtml is not defined or showHtml != false %}
+{%- if showHtmlTab %}
 <div class="app-example">
   <span class="app-example__new-window">
     <a href="{{ href }}" target="_blank">Open this example <span class="nhsuk-u-visually-hidden">({{ title }})</span> in a new tab</a>
@@ -22,21 +24,27 @@
   </div>
   {% endif -%}
 </div>
+{% endif -%}
 
-<div class="app-tabs" data-module="app-tabs">
+<div class="app-tabs{% if not showHtmlTab %} app-tabs--no-preview{% endif %}" data-module="app-tabs"{% if openFirst %} data-open-first="true"{% endif %}>
   {% set showNunjucksTab = showNunjucks is not defined or showNunjucks != false %}
   <ul class="app-tabs__list" role="tablist">
-    {%- if showNunjucksTab -%}
-      <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
-      <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
-    {%- else -%}
-      <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+    {%- if showHtmlTab -%}
+      {%- if showNunjucksTab -%}
+        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#nunjucks-default-{{ id }}" role="tab" id="tab_nunjucks-default-{{ id }}" aria-controls="nunjucks-default-{{ id }}">Nunjucks</a></li>
+      {%- else -%}
+        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#html-default-{{ id }}" role="tab" id="tab_html-default-{{ id }}" aria-controls="html-default-{{ id }}">HTML</a></li>
+      {%- endif -%}
     {%- endif -%}
     {%- if jsCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#js-default-{{ id }}" role="tab" id="tab_js-default-{{ id }}" aria-controls="js-default-{{ id }}">JavaScript</a></li>{% endif -%}
     {%- if figmaLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#figma-default-{{ id }}" role="tab" id="tab_figma-default-{{ id }}" aria-controls="figma-default-{{ id }}">Figma</a></li>{% endif -%}
     {%- if vueLink %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#vue-default-{{ id }}" role="tab" id="tab_vue-default-{{ id }}" aria-controls="vue-default-{{ id }}">Vue</a></li>{% endif -%}
+    {%- if swiftCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#swift-default-{{ id }}" role="tab" id="tab_swift-default-{{ id }}" aria-controls="swift-default-{{ id }}">Swift</a></li>{% endif -%}
+    {%- if androidCode %}<li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab nhsuk-link--no-visited-state" href="#android-default-{{ id }}" role="tab" id="tab_android-default-{{ id }}" aria-controls="android-default-{{ id }}">Android</a></li>{% endif -%}
   </ul>
 
+  {%- if showHtmlTab %}
   <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">
     <button class="app-copy__button" data-module="app-copy" data-clipboard-target="#html-default-{{ id }}-code">Copy code</button>
     <div id="html-default-{{ id }}-code">
@@ -85,6 +93,7 @@
 </div>
 
   </div>
+  {% endif -%}
 
   {% if figmaLink -%}
 <div class="app-tabs__panel nhsuk-u-padding-2 app-tabs__panel--hidden" id="figma-default-{{ id }}" role="tabpanel" aria-labelledby="tab_figma-default-{{ id }}">
@@ -101,6 +110,51 @@
   To use the component in your Vue application, install the NHS App Vue Component Library and import the component.
 
   <a href="{{ vueLink }}" class="nhsuk-link--no-visited-state" target="_blank" rel="noopener noreferrer">View component in Vue (opens in a new tab)</a>
+</div>
+  {% endif -%}
+
+  {% if swiftCode -%}
+<div class="app-tabs__panel app-tabs__panel--hidden" id="swift-default-{{ id }}" role="tabpanel" aria-labelledby="tab_swift-default-{{ id }}">
+
+    {%- if swiftArguments -%}
+      <details class="nhsuk-details nhsuk-u-padding-top-4 nhsuk-u-padding-left-4 nhsuk-u-padding-right-4" data-module="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Swift options
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <div class="app-table--scroll">
+            {% set swiftOptionsPath = "ios/" + swiftArguments + "/swift-options.md" %}
+            {% include swiftOptionsPath ignore missing %}
+          </div>
+        </div>
+      </details>
+    {%- endif -%}
+
+  <button class="app-copy__button" data-module="app-copy" data-clipboard-target="#swift-default-{{ id }}-code">Copy code</button>
+
+<div id="swift-default-{{ id }}-code">
+
+```swift
+{{ swiftCode | safe }}
+```
+
+</div>
+</div>
+  {% endif -%}
+
+  {% if androidCode -%}
+<div class="app-tabs__panel app-tabs__panel--hidden" id="android-default-{{ id }}" role="tabpanel" aria-labelledby="tab_android-default-{{ id }}">
+  <button class="app-copy__button" data-module="app-copy" data-clipboard-target="#android-default-{{ id }}-code">Copy code</button>
+
+<div id="android-default-{{ id }}-code">
+
+```kotlin
+{{ androidCode | safe }}
+```
+
+</div>
 </div>
   {% endif -%}
 </div>
