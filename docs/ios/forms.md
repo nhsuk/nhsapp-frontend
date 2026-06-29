@@ -2,7 +2,7 @@
 layout: layouts/ios.njk
 title: Forms
 tags:
-  - iosPatterns
+  - iosLayouts
 ---
 
 Form views let users answer questions.

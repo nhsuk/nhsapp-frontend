@@ -2,7 +2,7 @@
 layout: layouts/ios.njk
 title: Lists
 tags:
-  - iosPatterns
+  - iosLayouts
 ---
 
 List views present rows of data in a single column.
