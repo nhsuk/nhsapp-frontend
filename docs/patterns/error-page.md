@@ -43,7 +43,7 @@ Use the main body text to tell users how to resolve the problem, or to give more
 
 Use a secondary button for an action that may help to resolve the problem. For example, this could include:
 
-- "Try again" 
+- "Try again"
 - "Log out"
 - "Open device settings"
 
