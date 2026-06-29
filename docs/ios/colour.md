@@ -2,7 +2,7 @@
 layout: layouts/ios.njk
 title: Colour
 tags:
-  - ios
+  - iosStyles
 colourGroups:
   - heading: Core palette
     colours:
