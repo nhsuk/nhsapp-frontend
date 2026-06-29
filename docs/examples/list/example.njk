@@ -1,0 +1,17 @@
+---
+title: List
+showHtml: false
+openFirst: true
+swiftCode: |
+  var body: some View {
+      NavigationStack {
+          List(prescriptions) { prescription in
+              NavigationLink(prescription.title, value: prescription)
+          }
+          .navigationDestination(for: Prescription.self) { prescription in
+              PrescriptionDetailView(prescription: prescription)
+          }
+          .navigationTitle("Prescriptions")
+      }
+  }
+---

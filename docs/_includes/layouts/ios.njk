@@ -44,6 +44,12 @@
           text: 'Components'
         },
         items: collections.iosComponents | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Patterns'
+        },
+        items: collections.iosPatterns | sort(attribute="data.title")
       }
     ]
   }) }}
