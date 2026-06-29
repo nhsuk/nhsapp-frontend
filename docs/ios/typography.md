@@ -7,7 +7,11 @@ tags:
 
 We are still deciding whether or how the native app should use a custom typeface (Frutiger).
 
-For experimental purposes, the iOS design system currently supports these styles, which match the [named font properties](https://developer.apple.com/documentation/swiftui/font) in SwiftUI but add an `nhs` prefix, and use Frutiger instead of San Francisco.
+We’ll update this page when we’ve decided how to approach custom typography within the app.
+
+## Standard styles
+
+The design system supports these styles which match the [named font properties](https://developer.apple.com/documentation/swiftui/font) in SwiftUI but add an `nhs` prefix, and use Frutiger instead of San Francisco.
 
 The styles are defined relative to the native SwiftUI Font styles - this means that they scale with Dynamic Type.
 
@@ -25,4 +29,16 @@ The styles are defined relative to the native SwiftUI Font styles - this means t
 | `.nhsCaption`     | `.caption`         |
 | `.nhsCaption2`    | `.caption2`        |
 
-We’ll update this page when we’ve decided how to approach custom typography within the app.
+## Custom sizes
+
+You can also use a custom font size with the Frutiger font.
+
+These will still scale with Dynamic Type.
+
+To do this, use either `.nhsRegular` or `.nhsBold` and specify a size:
+
+```swift
+Text("Vaccinations").font(.nhsRegular(size: 20))
+
+Text("Screening").font(.nhsBold(size: 150))
+```
