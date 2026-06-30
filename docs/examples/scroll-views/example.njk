@@ -1,0 +1,24 @@
+---
+title: List
+showHtml: false
+openFirst: true
+swiftCode: |
+  var body: some View {
+    ScrollView {
+        VStack(alignment: .leading, spacing: 16) {
+            Text(message.sender)
+                .font(.nhsSubheadline)
+            Text(message.dateSent, style: .date)
+                .font(.nhsSubheadline)
+                .foregroundStyle(.secondary)
+
+            Divider()
+
+            Text(message.content)
+                .font(.nhsBody)
+        }
+        .padding()
+    }
+    .navigationTitle(message.subject)
+  }
+---

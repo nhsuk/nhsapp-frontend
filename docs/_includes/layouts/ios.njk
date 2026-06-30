@@ -44,6 +44,12 @@
           text: 'Components'
         },
         items: collections.iosComponents | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Layouts'
+        },
+        items: collections.iosLayouts | sort(attribute="data.title")
       }
     ]
   }) }}
