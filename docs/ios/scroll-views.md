@@ -13,6 +13,8 @@ Use a scroll view for a screen containing primarily text content, for example a 
 
 You should also use a scroll view if your screen contains a mixture of different kinds of items, for example headings, links and buttons.
 
+If you find yourself removing list styling — for example, using clear backgrounds or hiding row separators — that is a sign the screen belongs in a scroll view.
+
 ## When not to use
 
 Do not use a scroll view if a [list view](/ios/lists) or [form view](/ios/forms) would be more appropriate.
