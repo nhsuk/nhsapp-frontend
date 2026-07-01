@@ -1,3 +1,7 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+
 // App main container
 .app-width-container {
   padding-top: 60px; // to give correct spacing for sticky header
