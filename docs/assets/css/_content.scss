@@ -1,3 +1,8 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+@use "src/settings/colours" as *;
+
 .app-content {
   @include nhsuk-media-query($from: desktop) {
     padding-bottom: nhsuk-spacing(7);
