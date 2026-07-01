@@ -9,7 +9,7 @@ List views present rows of data in a single column.
 
 ## When to use
 
-Use a list view for a screen containing a collection of similar rows backed by data that isn’t fixed, such as messages, appointments or medications.
+Use a list view for a screen containing a collection of similar rows backed by data that isn't fixed, such as messages, appointments or medications.
 
 If the data can be re-ordered by the user, or you want to enable swipe actions on each row.
 
@@ -21,9 +21,11 @@ Users using the VoiceOver screen reader will hear the content announced as a lis
 
 ## When not to use
 
-Do not use a list view if the screen is prose-heavy, or is list-like but contains a fixed set of options. Instead, use a [scroll view](/ios/scroll-views) or [form view](/ios/forms) instead.
+Do not use a list view if the screen is prose-heavy. Use a [scroll view](/ios/scroll-views) instead.
 
-If you're using spacing hacks to make a button or paragraph sit right inside a list, you've picked the wrong container.
+If you find yourself overriding the default styling on most rows, for example giving them a clear background or hiding their separators, the screen belongs in a [scroll view](/ios/scroll-views) instead.
+
+If the screen collects input through a fixed set of controls, for example a group of toggle rows, use a [form view](/ios/forms) instead.
 
 ## How to use
 
