@@ -38,8 +38,8 @@ After you've added the package, there's one more thing to check, otherwise your 
 
 1. Click on your app's target (not the package) in Xcode.
 2. Go to the General tab.
-3. Scroll down to Frameworks, Libraries, and Embedded Content.
-4. Find NHSDesignSystem in the list.
+3. Scroll down to 'Frameworks, Libraries, and Embedded Content'.
+4. Find `NHSDesignSystem` in the list.
 5. Make sure it says 'Embed & Sign' next to it. If it says 'Do Not Embed', change it.
 
 If you skip this step, your app will still build without any errors – but it will crash as soon as you try to open it on a phone.
