@@ -4,17 +4,11 @@ title: Colour
 tags:
   - iosStyles
 colourGroups:
-  - heading: Accent colour
-    description: This is set as the tint colour, and will be used by some native components by default.
-    colours:
-      - token: nhsAccentColor
-        light: "#005eb8"
-        dark: "#52a0ff"
   - heading: Core palette
     colours:
       - token: nhsBlue
-        light: "#0060bf"
-        dark: "#2ca2ff"
+        light: "#005EB8"
+        dark: "#529FFF"
       - token: nhsAquaGreen
         light: "#4aa199"
         dark: "#58bbb2"
@@ -171,6 +165,18 @@ colourGroups:
 Colours are defined in the NHS iOS App Design as extensions on SwiftUI's `Color`.
 
 All colours will adapt to dark mode, except for those with the 'Only' suffix, which are fixed.
+
+## Accent colour
+
+The NHS brand colour should be set up as the global accent colour across your app. This is then used by a small number of SwiftUI components, such as links, toggles and some buttons.
+
+The accent colour needs to be set manually, as this cannot be set from the design system Swift package.
+
+To set the accent colour, make sure you have an assets catalog with a colour named `AccentColor`. This is added by default when you create a new project.
+
+The `AccentColor` should be manually set as `#005EB8` for 'Any Appearance' and `#529FFF` for Dark mode.
+
+Do not set a global `.tint()` colour across your app, as this will affect more components than setting the accent colour does.
 
 {% for group in colourGroups %}
 
