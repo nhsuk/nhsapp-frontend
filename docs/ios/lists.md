@@ -9,7 +9,7 @@ List views present rows of data in a single column.
 
 ## When to use
 
-Use a list view for a screen containing a collection of similar rows backed by data that isn't fixed, such as messages, appointments or medications.
+Use a list view for a screen containing a collection of similar rows backed by data that isn’t fixed, such as messages, appointments or medications.
 
 If the data can be re-ordered by the user, or you want to enable swipe actions on each row.
 
