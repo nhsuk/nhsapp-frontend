@@ -13,7 +13,7 @@ Use a form view when the screen collects user input or configuration, for exampl
 
 A form may contain several items, but the items do not change or get reordered, instead the user changes the values within them.
 
-This includes screens that look like a list, for example a set of toggle rows for a multiple-choice question. If the rows are fixed and not backed by data, use a form view.
+Forms can include screens that look like a list, for example a set of toggle rows for a multiple-choice question. If the rows are fixed and not backed by data, use a form view.
 
 ## When not to use
 
