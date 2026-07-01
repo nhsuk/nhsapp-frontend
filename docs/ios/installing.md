@@ -34,6 +34,16 @@ For 'Dependency Rule', set it to 'Branch' and 'main'. (In future we will switch 
 
 In the dialog box, under 'Add to Target' change 'None' to your app name. Then select 'Add Package' again.
 
+After you've added the package, there's one more thing to check, otherwise your app might crash when you try to run it.
+
+1. Click on your app's target (not the package) in Xcode.
+2. Go to the General tab.
+3. Scroll down to 'Frameworks, Libraries, and Embedded Content'.
+4. Find `NHSDesignSystem` in the list.
+5. Make sure it says 'Embed & Sign' next to it. If it says 'Do Not Embed', change it.
+
+If you skip this step, your app will still build without any errors – but it will crash as soon as you try to open it on a phone.
+
 ## Updating the package
 
 Whenever there are changes made to the swift package, you will need to update the package within your project.
