@@ -4,10 +4,22 @@ title: Colour
 tags:
   - iosStyles
 colourGroups:
-  - heading: Accent colour
-    description: This is set as the tint colour, and will be used by some native components by default.
+  - heading: Semantic
+    description: Use these colours in the context they’re designed for. In all ohter cases, use a named colour from the colour palette instead.
     colours:
-      - token: nhsAccentColor
+      - token: nhsBackground
+        light: "#f0f4f5"
+        dark: "#1b2429"
+      - token: nhsText
+        light: "#212b33"
+        dark: "#ffffff"
+      - token: nhsSecondaryText
+        light: "#4c6273"
+        dark: "#c8d3d9"
+  - heading: Accent
+    description: This can be used as an accent colour, and represents the NHS brand blue.
+    colours:
+      - token: nhsAccent
         light: "#005eb8"
         dark: "#52a0ff"
   - heading: Core palette
@@ -193,7 +205,7 @@ All colours will adapt to dark mode, except for those with the 'Only' suffix, wh
         <code class="app-code--transparent nhsuk-u-font-weight-normal">.{{ colour.token }}</code>
       </th>
       <td class="nhsuk-u-padding-0">
-        <span class="app-colour-list__swatch {{ "app-colour-list__swatch--bordered" if colour.token == "nhsGrey5" }}" style="background-color:{{ colour.light }}"></span>
+        <span class="app-colour-list__swatch {{ "app-colour-list__swatch--bordered" if colour.token == "nhsGrey5" or colour.token == "nhsBackground" }}" style="background-color:{{ colour.light }}"></span>
       </td>
       <td class="nhsuk-u-padding-0">
         <span class="app-colour-list__swatch" style="background-color:{{ colour.dark if colour.dark else colour.light }}"></span>
