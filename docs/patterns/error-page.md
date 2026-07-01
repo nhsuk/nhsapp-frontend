@@ -41,23 +41,36 @@ Use the main body text to tell users how to resolve the problem, or to give more
 
 ### 3. Button
 
-Use a secondary button for an action that may help to resolve the problem. This could include:
+Use a secondary button for an action that may help to resolve the problem. For example, this could include:
 
-- "Try again" (refreshing the page)
+- "Try again"
 - "Log out"
+- "Open device settings"
 
 The button should come straight after the related body text.
 
-{% example "error-pages/referrals.njk" %}
+#### Letting users try again
 
-### 4. Secondary body text
+Include a secondary button with the text "Try again" on error pages when:
 
-Use the space beneath the button to:
+- a user attempts an action (such as starting a service)
+- there is a temporary problem
+- that problem may be resolved if they retry the failed action
 
-- let users know about a different way to access the service
-- give links to another relevant service
+Users should only be able to select the button once. It should either:
+
+- successfully take the action the user originally intended
+- show a follow-on error page if the action still fails, explaining that there is still a problem
+
+On the follow-on page, use the heading: “There is still a problem [describe what was supposed to happen]”. The page should tell users about other ways they can access the service, either in the app or outside of it.
+
+{% example "error-pages/test-results-follow-up.njk" %}
+
+### 4. Giving other options
 
 Always tell users how to complete their task through a different channel. The NHS App is a healthcare service. Errors can delay access to clinical care, and users may be experiencing urgent health needs.
+
+Sometimes the alternative option may be for users to contact their GP surgery directly.
 
 For links to other NHS App services, use a secondary card link.
 
@@ -105,7 +118,7 @@ We should account for these challenges in our designs and continue to research a
 
 We want to learn more about:
 
-- "try again" buttons on errors, and how we can best help users when these fail to solve the problem
+- "Try again" buttons on errors, and how we can best help users when these fail to solve the problem
 - how this guidance could evolve into separate pages covering specific errors
 
 We are in the process of updating the NHS App contact form. This update will remove the need for users to note down error codes on error pages, as these codes will be pre-populated into the form.
