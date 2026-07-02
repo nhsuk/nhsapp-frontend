@@ -35,10 +35,16 @@ You can also use a custom font size with the Frutiger font.
 
 These will still scale with Dynamic Type.
 
-To do this, use either `.nhsRegular` or `.nhsBold` and specify a size:
+To do this, use either `.nhsCustom` and specify a size:
 
 ```swift
-Text("Vaccinations").font(.nhsRegular(size: 20))
-
-Text("Screening").font(.nhsBold(size: 150))
+Text("Vaccinations").font(.nhsCustom(size: 20))
 ```
+
+You can use the bold weight by adding the `.bold()` modifier:
+
+```swift
+Text("Vaccinations").font(.nhsCustom(size: 20)).bold()
+```
+
+Do not use italics.
