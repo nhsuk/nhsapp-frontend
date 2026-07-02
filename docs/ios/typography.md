@@ -38,13 +38,15 @@ These will still scale with Dynamic Type.
 To do this, use either `.nhsCustom` and specify a size:
 
 ```swift
-Text("Vaccinations").font(.nhsCustom(size: 20))
+Text("Vaccinations")
+    .font(.nhsCustom(size: 20))
 ```
 
 You can use the bold weight by adding the `.bold()` modifier:
 
 ```swift
-Text("Vaccinations").font(.nhsCustom(size: 20)).bold()
+Text("Vaccinations")
+    .font(.nhsCustom(size: 20)).bold()
 ```
 
 Do not use italics.
