@@ -100,3 +100,44 @@ pre {
   width: 100%;
   margin-bottom: 0;
 }
+
+.app-content {
+  .nhsuk-image {
+    border: 0;
+    width: 100%;
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  img.app-image--no-border {
+    border: none;
+  }
+
+  // Style for video
+
+  .app-image__video {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    padding-bottom: nhsuk-spacing(4);
+    padding-top: nhsuk-spacing(4);
+  }
+
+  // Respect reduced motion preferences
+  // Hide video and show fallback image
+  img.app-image__fallback {
+    display: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img.app-image__video {
+      display: none;
+    }
+
+    img.app-image__fallback {
+      display: block;
+    }
+  }
+}
