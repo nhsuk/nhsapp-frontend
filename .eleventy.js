@@ -87,8 +87,7 @@ export default function (eleventyConfig) {
         loadPaths: [
           '.',
           'node_modules',
-          'node_modules/nhsuk-frontend/dist',
-          'node_modules/nhsuk-frontend/src'
+          'node_modules/nhsuk-frontend/dist'
         ],
         // Required to resolve pkg: URL imports (e.g. @use "pkg:nhsuk-frontend/...")
         importers: [new sass.NodePackageImporter()]
