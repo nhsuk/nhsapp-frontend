@@ -2,28 +2,28 @@
 @use "pkg:nhsuk-frontend/dist/nhsuk" as *;
 
 // Import all styles from the NHS App frontend library
-@forward "src/all";
+@forward "../../../src/all";
 
 // Code example syntax highlighting
-@use "node_modules/prismjs/themes/prism.css";
-@forward "docs/assets/css/code-colours";
+@use "prismjs/themes/prism.css";
+@forward "code-colours";
 
 // Docs specific styles
-@forward "docs/assets/css/components/hero";
-@forward "docs/assets/css/components/side-navigation";
-@forward "docs/assets/css/components/callout";
-@forward "docs/assets/css/components/bottom-nav-native";
-@forward "docs/assets/css/components/top-nav-native";
-@forward "docs/assets/css/components/header-native";
-@forward "docs/assets/css/container";
-@forward "docs/assets/css/code";
-@forward "docs/assets/css/colour";
-@forward "docs/assets/css/tabs";
-@forward "docs/assets/css/content";
-@forward "docs/assets/css/mobile-iframe";
-@forward "docs/assets/css/example";
-@forward "docs/assets/css/utilities";
-@forward "docs/assets/css/table";
+@forward "components/hero";
+@forward "components/side-navigation";
+@forward "components/callout";
+@forward "components/bottom-nav-native";
+@forward "components/top-nav-native";
+@forward "components/header-native";
+@forward "container";
+@forward "code";
+@forward "colour";
+@forward "tabs";
+@forward "content";
+@forward "mobile-iframe";
+@forward "example";
+@forward "utilities";
+@forward "table";
 
 // Add correct spacing around code highlighter and content
 pre {

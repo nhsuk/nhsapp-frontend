@@ -82,10 +82,8 @@ export default function (eleventyConfig) {
       if (parsed.name.startsWith('_')) {
         return
       }
-      let result = sass.compileString(inputContent, {
-        // Expanded load paths so bare imports resolve
+      let result = sass.compile(inputPath, {
         loadPaths: [
-          '.',
           'node_modules',
           'node_modules/nhsuk-frontend/dist'
         ],
