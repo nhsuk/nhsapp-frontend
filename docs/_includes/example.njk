@@ -48,7 +48,7 @@
   {%- if showHtmlTab %}
   <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">
     <div class="nhsuk-u-padding-4">
-      {{ code({ background: "body", html: htmlCode | highlight("xml"), button: {} }) }}
+      {{ code({ background: "body", border: false, html: htmlCode | highlight("xml"), button: {} }) }}
     </div>    
   </div>
 
@@ -79,8 +79,7 @@
         </div>
       </details>
     {%- endif -%}
-
-    {{ code({ background: "body", html: nunjucksCode | highlight("nunjucks"), button: {} }) }}
+    {{ code({ background: "body", border: false, html: nunjucksCode | highlight("nunjucks"), button: {} }) }}
     </div>
   </div>
   {% endif -%}
@@ -121,14 +120,13 @@
         </div>
       </details>
     {%- endif -%}
-
-  {{ code({ background: "body", html: swiftCode | highlight("plaintext"), button: {} }) }}
+  {{ code({ background: "body", border: false, html: swiftCode | highlight("plaintext"), button: {} }) }}
 </div>
   {% endif -%}
 
   {% if androidCode -%}
 <div class="app-tabs__panel app-tabs__panel--hidden" id="android-default-{{ id }}" role="tabpanel" aria-labelledby="tab_android-default-{{ id }}">
-  {{ code({ background: "body", html: androidCode | highlight("plaintext"), button: {} }) }}
+  {{ code({ background: "body", border: false, html: androidCode | highlight("plaintext"), button: {} }) }}
 </div>
   {% endif -%}
 </div>
