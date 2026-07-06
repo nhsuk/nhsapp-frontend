@@ -82,7 +82,7 @@ export default function (eleventyConfig) {
       if (parsed.name.startsWith('_')) {
         return
       }
-      let result = sass.compile(inputPath, {
+      const result = await sass.compileAsync(inputPath, {
         loadPaths: ['node_modules', 'node_modules/nhsuk-frontend/dist'],
         // Required to resolve pkg: URL imports (e.g. @use "pkg:nhsuk-frontend/...")
         importers: [new sass.NodePackageImporter()]
