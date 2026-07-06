@@ -83,10 +83,7 @@ export default function (eleventyConfig) {
         return
       }
       let result = sass.compile(inputPath, {
-        loadPaths: [
-          'node_modules',
-          'node_modules/nhsuk-frontend/dist'
-        ],
+        loadPaths: ['node_modules', 'node_modules/nhsuk-frontend/dist'],
         // Required to resolve pkg: URL imports (e.g. @use "pkg:nhsuk-frontend/...")
         importers: [new sass.NodePackageImporter()]
       })
