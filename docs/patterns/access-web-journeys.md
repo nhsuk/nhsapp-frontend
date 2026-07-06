@@ -71,9 +71,11 @@ Work with designers to check for any other website elements that may be better r
   <figcaption class="nhsuk-image__caption">In this example, the "Upcoming and past appointments" link has been hidden so users do not navigate deeper into the overlay and get lost. When a user selects "Done", they return to the native Appointments screen which links to "Manage GP appointments".</figcaption>
 </figure>
 
+Hiding website headers can help reduce users' confusion about where they are. On NHS website pages, we hide the NHS website header (including the search bar) and the breadcrumb links at the top of the page. This prevents users from navigating to other parts of the NHS website and getting lost, which we've seen happen often in past user research.
+
 <figure class="nhsuk-image">
   <img class="app-image--no-border" src="/assets/images/web-overlay/hide-elements-nhsuk.png" alt="Example of the Find services near you page on a website, and then the same page with elements hidden in a custom web view.">
-  <figcaption class="nhsuk-image__caption">Here, the NHS website header (including the search bar) and the breadcrumb links at the top of the page have been hidden. This prevents users from navigating to other parts of the NHS website and getting lost, which we've seen happen often in past user research. </figcaption>
+  <figcaption class="nhsuk-image__caption">An NHS website example where the header and bredcrumb link have been hidden. </figcaption>
 </figure>
 
 ### Help users exit the overlay
@@ -133,7 +135,7 @@ The sheet we use to open NHS website pages is also a custom web view.
     <img class="app-image__fallback" src="/assets/images/web-overlay/webview-sheet.png" alt="Video of a user who is already in a full-screen custom web view selecting an NHS website. It opens in a sheet the slides over the top of the full-screen overlay.">
 </figure>
 
-For links to third-party websites or services, the sheet should be a web browser overlay (Safari View or Chrome Custom Tabs) instead of a custom web view.
+For links to third-party websites or services, the sheet should usually be a web browser overlay (Safari View or Chrome Custom Tabs) instead of a custom web view.
 
 The principle is the same. The sheet keeps the page they were reading underneath, so they can read the external site and dismiss it to return.
 
@@ -146,7 +148,7 @@ The principle is the same. The sheet keeps the page they were reading underneath
     <figcaption class="nhsuk-image__caption">In this example, the user is in the "Get health information and advice" overlay and selects the British Heart Foundation website link. Because it's an external site, it opens at bhf.org.uk in the web browser overlay, shown as a sheet over the page they were reading.</figcaption>
 </figure>
 
-The example below shows the "Give feedback" journey. It contains NHS website links that we open using custom web view sheets.
+An exception is the "Give feedback" journey. Although it's an unauthenticated, third-party journey, we use a full-screen custom web view rather than the web browser overlay. That lets us control how the NHS website links within the journey open. We open those links as custom web view sheets.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -154,7 +156,7 @@ The example below shows the "Give feedback" journey. It contains NHS website lin
   </video>
   <!-- Fallback for browsers that don't support video -->
     <img class="app-image__fallback" src="/assets/images/web-overlay/give-feedback.png" alt="A video showing the Qualtrics survey opening in a full-screen custom web view, and an NHS website link on that journey opening as a sheet in a custom web view overlay.">
-    <figcaption class="nhsuk-image__caption">This example shows the "Give feedback" survey journey. Although it's an unauthenticated, third-party journey, we use a full-screen custom web view rather than the web browser overlay. That lets us control how the NHS website links within the journey open. We open those links as custom web view sheets.</figcaption>
+    <figcaption class="nhsuk-image__caption">This example shows the "Give feedback" survey journey. </figcaption>
 </figure>
 
 ### Include an app help button at the bottom of the custom web view
