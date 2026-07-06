@@ -3,28 +3,41 @@ import nunjucks from 'nunjucks'
 import * as sass from 'sass'
 import fs from 'fs-extra'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
-import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import markdownIt from 'markdown-it'
 import anchor from 'markdown-it-anchor'
+import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
+import { highlighter } from 'nhsuk-frontend/lib/highlighter/index.mjs'
 
 import matter from 'gray-matter'
 import prettier from 'prettier'
 
-const nunjucksEnv = nunjucks.configure([
-  // Our own styles and assets
-  'src/styles',
-  'src/assets',
+const nunjucksEnv = nunjucks.configure(
+  [
+    // Our own styles and assets
+    'src/styles',
+    'src/assets',
 
-  // Includes specific to our documentation
-  'docs/_includes',
-  'docs/assets',
+    // Includes specific to our documentation
+    'docs/_includes',
+    'docs/assets',
 
-  // NHS.UK frontend components (updated for v10)
-  'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
-  'node_modules/nhsuk-frontend/dist/nhsuk',
-  'node_modules/nhsuk-frontend/dist/nhsuk/components',
-  'node_modules/nhsuk-frontend/dist/nhsuk/macros'
-])
+    // NHS.UK frontend components (updated for v10)
+    'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
+    'node_modules/nhsuk-frontend/dist/nhsuk',
+    'node_modules/nhsuk-frontend/dist/nhsuk/components',
+    'node_modules/nhsuk-frontend/dist/nhsuk/macros'
+  ],
+  {
+    // Match nhsuk-frontend's own nunjucks environment settings.
+    // Without these, block tags emit extra newlines which markdown-it
+    // misinterprets as paragraph breaks inside HTML blocks.
+    lstripBlocks: true,
+    trimBlocks: true
+  }
+)
+
+// Register the NHS frontend highlight filter for syntax highlighting in code examples
+nunjucksEnv.addFilter('highlight', highlight.bind({ env: nunjucksEnv }))
 
 export default function (eleventyConfig) {
   // Copy components before build starts
@@ -70,9 +83,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist/nhsuk/assets': 'assets'
   })
-
-  // Add syntax highlighting to code blocks
-  eleventyConfig.addPlugin(syntaxHighlight)
 
   eleventyConfig.addTemplateFormats('scss')
   eleventyConfig.addExtension('scss', {
@@ -158,7 +168,24 @@ export default function (eleventyConfig) {
     return nunjucksEnv.render('example.njk', templateData)
   })
 
-  eleventyConfig.setLibrary('md', markdownIt({ html: true }).use(anchor))
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt({
+      html: true,
+      highlight: (str, lang) => {
+        try {
+          const language =
+            lang && highlighter.getLanguage(lang) ? lang : undefined
+          const { value } = language
+            ? highlighter.highlight(str, { language })
+            : highlighter.highlightAuto(str)
+          return `<pre class="nhsuk-code__container"><code class="nhsuk-code__content">${value}</code></pre>`
+        } catch (e) {
+          return ''
+        }
+      }
+    }).use(anchor)
+  )
 
   return {
     dir: {

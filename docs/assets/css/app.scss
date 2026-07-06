@@ -5,8 +5,7 @@
 @forward "../../../src/all";
 
 // Code example syntax highlighting
-@use "prismjs/themes/prism.css";
-@forward "code-colours";
+@forward "pkg:nhsuk-frontend/lib/highlighter/styles";
 
 // Docs specific styles
 @forward "components/hero";
