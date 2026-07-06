@@ -7,6 +7,9 @@ import markdownIt from 'markdown-it'
 import anchor from 'markdown-it-anchor'
 import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
 import { highlighter } from 'nhsuk-frontend/lib/highlighter/index.mjs'
+import swift from 'highlight.js/lib/languages/swift'
+
+highlighter.registerLanguage('swift', swift)
 
 import matter from 'gray-matter'
 import prettier from 'prettier'
