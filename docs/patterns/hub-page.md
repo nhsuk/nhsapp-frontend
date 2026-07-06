@@ -78,9 +78,9 @@ At the top of Profile, users see a summary card showing key user details:
 - their name
 - their date of birth
 - their NHS number
-- the option to manage health services for others (proxy access)
+- navigation to family and carer access (also known as proxy access)
 
-This card provides quick access to key identifying information and proxy access functionality. Given its distinct visual appearance, it also helps users have a sense of place in the app when on the Profile hub.
+This card provides quick access to key identifying information and the ability to switch profiles using family and carer access. Given its distinct visual appearance, it also helps users have a sense of place in the app when on the Profile hub.
 
 ### Personal details and app settings
 
