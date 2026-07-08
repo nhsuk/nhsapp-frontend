@@ -53,11 +53,13 @@ The button should come straight after the related body text.
 
 Include a secondary button with the text "Try again" on error pages when:
 
-- a user attempts an action (such as starting a service)
+- a user has attempted an action (such as starting a service)
 - there is a temporary problem
-- that problem may be resolved if they retry the failed action
+- it's likely the problem will be resolved immediately if they retry the failed action
 
-Users should only be able to select the button once. It should either:
+Do not include a try again button if your data shows it's unlikely to fix the problem immediately. Instead, you can include the words "Try again later" in the body text of the page, if the problem may be fixed at a later time.
+
+Users should only be able to select a "Try again" button once. It should either:
 
 - successfully take the action the user originally intended
 - show a follow-on error page if the action still fails, explaining that there is still a problem
