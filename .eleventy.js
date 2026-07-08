@@ -183,35 +183,45 @@ export default function (eleventyConfig) {
     return nunjucksEnv.render('example.njk', templateData)
   })
 
+  // Languages that should use the reverse (dark background) style
+  const reverseStyleLanguages = ['bash', 'shell', 'sh', 'zsh']
+
   // Custom markdown-it plugin: renders fenced code blocks as the nhsuk-frontend
   // code component, including a hidden copy button that the nhsuk-code JavaScript
   // module reveals when the Clipboard API is available.
   function nhsukCodePlugin(md) {
     md.renderer.rules.fence = (tokens, idx) => {
       const token = tokens[idx]
-      const lang = token.info.trim().split(/\s+/)[0]
-      const hasCopyButton =
-        token.attrs?.some(
-          ([name, value]) =>
-            name === 'class' && value?.includes('nhsuk-code--button')
-        ) ?? token.info.includes('nhsuk-code--button')
+      const language = token.info.trim()
+      const languages = language ? [language] : undefined
+      const code = highlighter.highlightAuto(token.content, languages).value
 
-      let code
-      try {
-        const language =
-          lang && highlighter.getLanguage(lang) ? lang : undefined
-        const { value } = language
-          ? highlighter.highlight(token.content, { language })
-          : highlighter.highlightAuto(token.content)
-        code = value
-      } catch (e) {
-        code = md.utils.escapeHtml(token.content)
-      }
+      // Check if the code block has the { .nhsuk-code--button }
+      // class added, to indicate that the copy button should be added.
+      const hasCopyButton = token.attrs?.some(
+        ([name, value]) =>
+          name === 'class' && value?.includes('nhsuk-code--button')
+      )
 
-      let html = `<div class="nhsuk-code" data-module="nhsuk-code">\n`
+      // Languages used on the command line use a reverse style
+      const isReverse = reverseStyleLanguages.includes(language)
+
+      // Set classes for the code block and the button
+      let codeClasses = 'nhsuk-code'
+      if (hasCopyButton) codeClasses += ' nhsuk-code--button'
+      if (isReverse) codeClasses += ' nhsuk-code--reverse'
+      const buttonClasses = isReverse
+        ? 'nhsuk-button nhsuk-button--reverse nhsuk-button--small nhsuk-code__button nhsuk-js-code-button'
+        : 'nhsuk-button nhsuk-button--secondary nhsuk-button--small nhsuk-code__button nhsuk-js-code-button'
+
+      // Output HTML compatible with nhsuk-frontend code component
+      let html = `<div class="${codeClasses}" data-module="nhsuk-code">\n`
+
+      // Button is hidden by default and shown by JavaScript when clipboard API is available
       if (hasCopyButton) {
-        html += `  <button class="nhsuk-button nhsuk-button--secondary nhsuk-button--small nhsuk-code__button nhsuk-js-code-button" data-module="nhsuk-button" type="button" hidden>Copy code</button>\n`
+        html += `  <button class="${buttonClasses}" data-module="nhsuk-button" type="button" hidden>Copy code</button>\n`
       }
+
       html += `  <pre class="nhsuk-code__container"><code class="nhsuk-code__content">${code}</code></pre>\n`
       html += `</div>\n`
       return html
