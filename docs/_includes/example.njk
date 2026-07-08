@@ -119,13 +119,13 @@
         </div>
       </details>
     {%- endif -%}
-    {{ code({ background: "body", border: false, html: swiftCode | highlight("swift"), button: {} }) }}
+    {{ code({ background: "body", border: false, html: swiftCode | highlight("swift"), button: true }) }}
   </div>
   {% endif -%}
 
   {% if androidCode -%}
   <div class="app-tabs__panel app-tabs__panel--hidden" id="android-default-{{ id }}" role="tabpanel" aria-labelledby="tab_android-default-{{ id }}">
-    {{ code({ background: "body", border: false, html: androidCode | highlight("plaintext"), button: {} }) }}
+    {{ code({ background: "body", border: false, html: androidCode | highlight("plaintext"), button: true }) }}
   </div>
   {% endif -%}
 </div>
