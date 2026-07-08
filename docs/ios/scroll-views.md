@@ -25,6 +25,25 @@ If your screen is very long and contains a mixture of content, lists and forms, 
 
 This example shows a scroll view containing a message.
 
-{% example "scroll-views/example.njk" %}
+```swift { .nhsuk-code--button }
+var body: some View {
+  ScrollView {
+      VStack(alignment: .leading, spacing: 16) {
+          Text(message.sender)
+              .font(.nhsSubheadline)
+          Text(message.dateSent, style: .date)
+              .font(.nhsSubheadline)
+              .foregroundStyle(.secondary)
+
+          Divider()
+
+          Text(message.content)
+              .font(.nhsBody)
+      }
+      .padding()
+  }
+  .navigationTitle(message.subject)
+}
+```  
 
 For full documentation, see [SwiftUI: ScrollView](https://developer.apple.com/documentation/SwiftUI/ScrollView) on the Apple developer documentation website.

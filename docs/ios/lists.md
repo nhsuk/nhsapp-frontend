@@ -31,6 +31,18 @@ If the screen collects input through a fixed set of controls, for example a grou
 
 This example shows a list of prescriptions, with each row linking to a detail view:
 
-{% example "list/example.njk" %}
+```swift { .nhsuk-code--button }
+var body: some View {
+    NavigationStack {
+        List(prescriptions) { prescription in
+            NavigationLink(prescription.title, value: prescription)
+        }
+        .navigationDestination(for: Prescription.self) { prescription in
+            PrescriptionDetailView(prescription: prescription)
+        }
+        .navigationTitle("Prescriptions")
+    }
+}
+```  
 
 For full documentation, see [SwiftUI: List](https://developer.apple.com/documentation/SwiftUI/List) on the Apple developer documentation website.
