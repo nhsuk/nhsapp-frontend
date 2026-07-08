@@ -196,10 +196,9 @@ export default function (eleventyConfig) {
       const language = token.info.trim()
       const languages = language ? [language] : undefined
 
-      const safe = nunjucksEnv.getFilter('safe')
-
-      const code = safe(
-        highlighter.highlightAuto(token.content, languages).value
+      const { value: callBlock } = highlighter.highlightAuto(
+        token.content,
+        languages
       )
 
       // Check if the code block has the { .nhsuk-code--button }
@@ -218,7 +217,7 @@ export default function (eleventyConfig) {
           button: hasCopyButton,
           variant: isReverse ? 'reverse' : undefined
         },
-        callBlock: code
+        callBlock
       })
     }
   }
