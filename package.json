@@ -45,6 +45,7 @@
     "gulp-zip": "^6.0.0",
     "highlight.js": "^11.11.1",
     "markdown-it-anchor": "^9.0.1",
+    "markdown-it-attrs": "^5.0.0",
     "nhsuk-frontend": "^10.5.2",
     "nunjucks": "^3.2.4",
     "plugin-error": "^1.0.1",

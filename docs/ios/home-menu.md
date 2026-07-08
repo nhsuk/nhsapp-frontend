@@ -32,7 +32,12 @@ The layout varies by screen size and text size:
 
 Use the home menu within a SwiftUI view:
 
-{% example "home-menu/home-menu.njk" %}
+```swift { .nhsuk-code--button }
+HomeMenu(accessibilityLabel: "Health services") {
+    HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { }
+    HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") { }
+}
+```  
 
 ### Actions
 
@@ -40,13 +45,86 @@ Each item will trigger an action when tapped. Specify this using the `action` cl
 
 Usually this will navigate to a new screen. A common pattern is to push a value onto a `NavigationPath` and use the `.navigationDestination(for:)` modifier to map that value to a destination view:
 
-{% example "home-menu/home-menu-navigate.njk" %}
+```swift { .nhsuk-code--button }
+enum HomeDestination: Hashable {
+    case prescriptions
+    case vaccinations
+}
+
+struct ContentView: View {
+  @State private var path = NavigationPath()
+
+  var body: some View {
+    NavigationStack(path: $path) {
+      HomeMenu(accessibilityLabel: "Health services") {
+        HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") {
+          path.append(HomeDestination.prescriptions)
+        }
+        HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") {
+          path.append(HomeDestination.vaccinations)
+        }
+      }
+      .navigationDestination(for: HomeDestination.self) { destination in
+        switch destination {
+        case .prescriptions:
+          PrescriptionsView()
+        case .vaccinations:
+          VaccinationsView()
+        }
+      }
+    }
+  }
+}
+```  
 
 The action could also present a view as a modal sheet instead of navigating to it.
 
 For example, if the user does not yet have access to their records, a separate view can be presented to them as a modal sheet:
 
-{% example "home-menu/home-menu-modal.njk" %}
+```swift { .nhsuk-code--button } 
+enum HomeDestination: Hashable {
+      case prescriptions
+      case vaccinations
+  }
+
+  struct ContentView: View {
+    @State private var path = NavigationPath()
+    @State private var showGetAccess = false
+    let hasAccess: Bool
+
+    var body: some View {
+      NavigationStack(path: $path) {
+        HomeMenu(accessibilityLabel: "Health services") {
+          HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") {
+            if hasAccess {
+              path.append(HomeDestination.prescriptions)
+            } else {
+              showGetAccess = true
+            }
+          }
+          HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") {
+            if hasAccess {
+              path.append(HomeDestination.vaccinations)
+            } else {
+              showGetAccess = true
+            }
+          }
+        }
+        .navigationDestination(for: HomeDestination.self) { destination in
+          switch destination {
+          case .prescriptions:
+            PrescriptionsView()
+          case .vaccinations:
+            VaccinationsView()
+          }
+        }
+      }
+      .sheet(isPresented: $showGetAccess) {
+        GetAccessView()
+      }
+    }
+  }
+```  
 
 ## Accessibility
 
