@@ -6,10 +6,9 @@ import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import markdownIt from 'markdown-it'
 import anchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
-import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
-import { highlighter } from 'nhsuk-frontend/lib/highlighter/index.mjs'
 import swift from 'highlight.js/lib/languages/swift'
-import { components } from 'nhsuk-frontend/lib'
+import { components, highlighter } from 'nhsuk-frontend/lib'
+import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
 
 highlighter.registerLanguage('swift', swift)
 
@@ -193,13 +192,9 @@ export default function (eleventyConfig) {
   function nhsukCodePlugin(md) {
     md.renderer.rules.fence = (tokens, idx) => {
       const token = tokens[idx]
-      const language = token.info.trim()
-      const languages = language ? [language] : undefined
 
-      const { value: callBlock } = highlighter.highlightAuto(
-        token.content,
-        languages
-      )
+      const language = token.info.trim()
+      const callBlock = highlightFilter(token.content, language)
 
       // Check if the code block has the { .nhsuk-code--button }
       // class added, to indicate that the copy button should be added.
