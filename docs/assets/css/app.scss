@@ -98,3 +98,12 @@ pre {
   width: 100%;
   margin-bottom: 0;
 }
+
+// Extend code styles to use in <th>
+//
+// This can be removed when https://github.com/nhsuk/nhsuk-frontend/pull/1984
+// has been released.
+th code {
+  color: $nhsuk-code-colour;
+  background-color: nhsuk-colour("white");  
+}
