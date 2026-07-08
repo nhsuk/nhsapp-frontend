@@ -32,6 +32,11 @@ The layout varies by screen size and text size:
 
 Use the home menu within a SwiftUI view:
 
+{% from "details/macro.njk" import details %}
+{% call details({ summaryText: "Swift options" }) %}
+{% include "ios/home-menu/swift-options.md" %}
+{% endcall %}
+
 ```swift { .nhsuk-code--button }
 HomeMenu(accessibilityLabel: "Health services") {
     HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { }
