@@ -52,6 +52,6 @@ var body: some View {
         Button("Continue")
     }
 }
-```  
+```
 
 For full documentation, see [SwiftUI: Form](https://developer.apple.com/documentation/SwiftUI/Form) on the Apple developer documentation website.

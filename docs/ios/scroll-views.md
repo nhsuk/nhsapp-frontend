@@ -44,6 +44,6 @@ var body: some View {
   }
   .navigationTitle(message.subject)
 }
-```  
+```
 
 For full documentation, see [SwiftUI: ScrollView](https://developer.apple.com/documentation/SwiftUI/ScrollView) on the Apple developer documentation website.

@@ -43,6 +43,6 @@ var body: some View {
         .navigationTitle("Prescriptions")
     }
 }
-```  
+```
 
 For full documentation, see [SwiftUI: List](https://developer.apple.com/documentation/SwiftUI/List) on the Apple developer documentation website.
