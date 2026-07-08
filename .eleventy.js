@@ -217,7 +217,7 @@ export default function (eleventyConfig) {
           html: code,
           background: 'body',
           button: hasCopyButton,
-          variant: isReverse ? 'reverse' : ''
+          variant: isReverse ? 'reverse' : undefined
         }
       })
     }
