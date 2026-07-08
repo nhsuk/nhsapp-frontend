@@ -9,6 +9,7 @@ import markdownItAttrs from 'markdown-it-attrs'
 import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
 import { highlighter } from 'nhsuk-frontend/lib/highlighter/index.mjs'
 import swift from 'highlight.js/lib/languages/swift'
+import { components } from 'nhsuk-frontend/lib'
 
 highlighter.registerLanguage('swift', swift)
 
@@ -194,7 +195,12 @@ export default function (eleventyConfig) {
       const token = tokens[idx]
       const language = token.info.trim()
       const languages = language ? [language] : undefined
-      const code = highlighter.highlightAuto(token.content, languages).value
+
+      const safe = nunjucksEnv.getFilter('safe')
+
+      const code = safe(
+        highlighter.highlightAuto(token.content, languages).value
+      )
 
       // Check if the code block has the { .nhsuk-code--button }
       // class added, to indicate that the copy button should be added.
@@ -206,25 +212,14 @@ export default function (eleventyConfig) {
       // Languages used on the command line use a reverse style
       const isReverse = reverseStyleLanguages.includes(language)
 
-      // Set classes for the code block and the button
-      let codeClasses = 'nhsuk-code'
-      if (hasCopyButton) codeClasses += ' nhsuk-code--button'
-      if (isReverse) codeClasses += ' nhsuk-code--reverse'
-      const buttonClasses = isReverse
-        ? 'nhsuk-button nhsuk-button--reverse nhsuk-button--small nhsuk-code__button nhsuk-js-code-button'
-        : 'nhsuk-button nhsuk-button--secondary nhsuk-button--small nhsuk-code__button nhsuk-js-code-button'
-
-      // Output HTML compatible with nhsuk-frontend code component
-      let html = `<div class="${codeClasses}" data-module="nhsuk-code">\n`
-
-      // Button is hidden by default and shown by JavaScript when clipboard API is available
-      if (hasCopyButton) {
-        html += `  <button class="${buttonClasses}" data-module="nhsuk-button" type="button" hidden>Copy code</button>\n`
-      }
-
-      html += `  <pre class="nhsuk-code__container"><code class="nhsuk-code__content">${code}</code></pre>\n`
-      html += `</div>\n`
-      return html
+      return components.render('code', {
+        context: {
+          html: code,
+          background: 'body',
+          button: hasCopyButton,
+          variant: isReverse ? 'reverse' : ''
+        }
+      })
     }
   }
 
