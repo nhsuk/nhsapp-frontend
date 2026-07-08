@@ -39,8 +39,17 @@ const nunjucksEnv = nunjucks.configure(
   }
 )
 
-// Register the NHS frontend highlight filter for syntax highlighting in code examples
-nunjucksEnv.addFilter('highlight', highlight.bind({ env: nunjucksEnv }))
+// Register the NHS frontend highlight filter for syntax highlighting in code examples.
+// Blank lines are encoded as \n&#10; so that markdown-it does not terminate
+// the surrounding HTML block early (type-6 blocks end at the first blank line).
+// The pattern \n[ \t]*\n covers both bare \n\n and lines that contain only
+// spaces/tabs (e.g. trailing-whitespace blank lines). Inside <pre>, &#10;
+// decodes to a newline, so the visual output is unchanged.
+const highlightFilter = highlight.bind({ env: nunjucksEnv })
+nunjucksEnv.addFilter('highlight', (code, language) => {
+  const safe = nunjucksEnv.getFilter('safe')
+  return safe(String(highlightFilter(code, language)).replace(/\n[ \t]*\n/g, '\n&#10;'))
+})
 
 export default function (eleventyConfig) {
   // Copy components before build starts
