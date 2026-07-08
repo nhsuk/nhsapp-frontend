@@ -214,11 +214,11 @@ export default function (eleventyConfig) {
 
       return components.render('code', {
         context: {
-          html: code,
           background: 'body',
           button: hasCopyButton,
           variant: isReverse ? 'reverse' : undefined
-        }
+        },
+        callBlock: code
       })
     }
   }
