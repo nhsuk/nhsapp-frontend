@@ -49,7 +49,9 @@ const nunjucksEnv = nunjucks.configure(
 const highlightFilter = highlight.bind({ env: nunjucksEnv })
 nunjucksEnv.addFilter('highlight', (code, language) => {
   const safe = nunjucksEnv.getFilter('safe')
-  return safe(String(highlightFilter(code, language)).replace(/\n[ \t]*\n/g, '\n&#10;'))
+  return safe(
+    String(highlightFilter(code, language)).replace(/\n[ \t]*\n/g, '\n&#10;')
+  )
 })
 
 export default function (eleventyConfig) {
@@ -190,12 +192,14 @@ export default function (eleventyConfig) {
       const lang = token.info.trim().split(/\s+/)[0]
       const hasCopyButton =
         token.attrs?.some(
-          ([name, value]) => name === 'class' && value?.includes('nhsuk-code--button')
+          ([name, value]) =>
+            name === 'class' && value?.includes('nhsuk-code--button')
         ) ?? token.info.includes('nhsuk-code--button')
 
       let code
       try {
-        const language = lang && highlighter.getLanguage(lang) ? lang : undefined
+        const language =
+          lang && highlighter.getLanguage(lang) ? lang : undefined
         const { value } = language
           ? highlighter.highlight(token.content, { language })
           : highlighter.highlightAuto(token.content)
@@ -216,7 +220,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.setLibrary(
     'md',
-    markdownIt({ html: true }).use(markdownItAttrs).use(anchor).use(nhsukCodePlugin)
+    markdownIt({ html: true })
+      .use(markdownItAttrs)
+      .use(anchor)
+      .use(nhsukCodePlugin)
   )
 
   return {

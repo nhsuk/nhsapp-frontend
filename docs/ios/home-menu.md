@@ -42,7 +42,7 @@ HomeMenu(accessibilityLabel: "Health services") {
     HomeMenuItem(title: "Prescriptions", systemImage: "pills.fill") { }
     HomeMenuItem(title: "Vaccinations", systemImage: "syringe.fill") { }
 }
-```  
+```
 
 ### Actions
 
@@ -80,13 +80,13 @@ struct ContentView: View {
     }
   }
 }
-```  
+```
 
 The action could also present a view as a modal sheet instead of navigating to it.
 
 For example, if the user does not yet have access to their records, a separate view can be presented to them as a modal sheet:
 
-```swift { .nhsuk-code--button } 
+```swift { .nhsuk-code--button }
 enum HomeDestination: Hashable {
       case prescriptions
       case vaccinations
@@ -129,7 +129,7 @@ enum HomeDestination: Hashable {
       }
     }
   }
-```  
+```
 
 ## Accessibility
 
