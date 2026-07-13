@@ -7,7 +7,7 @@ tags:
 
 The banner is a highly visible, tappable card that draws attention to an important action, such as proving your identity or giving feedback.
 
-<img src="/assets/images/ios/banner-solid.png" width="320">
+<img src="/assets/images/ios/banner-solid.png" max-width="670px">
 
 ## When to use
 
@@ -50,20 +50,14 @@ The layout adapts to the user's settings:
 
 Use the banner within a SwiftUI view.
 
-<img src="/assets/images/ios/banner-solid.png" width="320">
+<img src="/assets/images/ios/banner-solid.png" max-width="670px">
 
-**Swift options**
+{% from "details/macro.njk" import details %}
+{% call details({ summaryText: "Swift options" }) %}
+{% include "ios/banner/swift-options.md" %}
+{% endcall %}
 
-| Option              | Description                                                                                                          |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `title`             | The text explaining why the user should act                                                                          |
-| `buttonText`        | The label for the action, shown in bold in the accent colour                                                         |
-| `style`             | The banner style: `.solid(background:accent:)` or `.outlined(_:)`                                                    |
-| `systemImage`       | Optional. The name of an SF Symbols icon to show alongside the text                                                  |
-| `accessibilityHint` | A short description of what happens on tap. This is not visible but is read out by VoiceOver after the banner's text |
-| `action`            | The closure to run when the banner is tapped                                                                         |
-
-```swift
+```swift { .nhsuk-code--button }
 Banner(
     title: "Tell us what you think about the NHS App",
     buttonText: "Give feedback",
@@ -78,11 +72,11 @@ Banner(
 
 The banner triggers an action when tapped. Specify this using the `action` closure.
 
-<img src="/assets/images/ios/banner-outlined.png" width="320">
+<img src="/assets/images/ios/banner-outlined.png" max-width="670px">
 
 The action can present a view as a modal sheet:
 
-```swift
+```swift { .nhsuk-code--button }
 struct ContentView: View {
     @State private var isPresentingSheet = false
 
@@ -108,7 +102,7 @@ It can also open a link, navigate to another screen, or trigger any other action
 
 To place a banner inside a `List`, apply the `nhsCardRowStyle()` modifier so it renders edge to edge rather than as a standard inset row:
 
-```swift
+```swift { .nhsuk-code--button }
 List {
     Banner(
         title: "Tell us what you think about the NHS App",
