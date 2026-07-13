@@ -7,7 +7,7 @@ tags:
 
 The banner is a highly visible, tappable card that draws attention to an important action, such as proving your identity or giving feedback.
 
-<img src="/assets/images/ios/banner-solid.png" width="670">
+<img src="/assets/images/ios/banner-solid.png">
 
 ## When to use
 
@@ -50,7 +50,7 @@ The layout adapts to the user's settings:
 
 Use the banner within a SwiftUI view.
 
-<img src="/assets/images/ios/banner-solid.png" width="670">
+<img src="/assets/images/ios/banner-solid.png">
 
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
@@ -72,7 +72,7 @@ Banner(
 
 The banner triggers an action when tapped. Specify this using the `action` closure.
 
-<img src="/assets/images/ios/banner-outlined.png" width="670">
+<img src="/assets/images/ios/banner-outlined.png">
 
 The action can present a view as a modal sheet:
 
