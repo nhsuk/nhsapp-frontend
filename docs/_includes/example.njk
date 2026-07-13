@@ -48,14 +48,14 @@
   {%- if showHtmlTab %}
   <div class="app-tabs__panel app-tabs__panel--hidden" id="html-default-{{ id }}" role="tabpanel" aria-labelledby="tab_html-default-{{ id }}">
     <div class="nhsuk-u-padding-4">
-      {{ code({ background: "body", border: false, html: htmlCode | highlight("xml"), button: {} }) }}
+      {{ code({ background: "body", border: false, html: htmlCode | highlight("xml"), button: {} }) -}}
     </div>
   </div>
 
   <div class="app-tabs__panel app-tabs__panel--hidden" id="nunjucks-default-{{ id }}" role="tabpanel" aria-labelledby="tab_nunjucks-default-{{ id }}">
     <div class="nhsuk-u-padding-4">
       {%- if arguments -%}
-        <details class="nhsuk-details" data-module="nhsuk-details">
+        <details class="nhsuk-details nhsuk-u-margin-bottom-4" data-module="nhsuk-details">
           <summary class="nhsuk-details__summary">
             <span class="nhsuk-details__summary-text">
               Nunjucks macro options
@@ -65,21 +65,21 @@
             <p>Use options to customise the appearance, content and behaviour of a component when using a macro, for example, changing the text.</p>
             <p>Some options are required for the macro to work; these are marked as "Required" in the option description.</p>
             <p>If you're using Nunjucks macros in production with "html" options, or ones ending with "html", you must sanitise the HTML to protect against <a href="https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting">cross-site scripting exploits</a>.</p>
-            {% if arguments %}
-              {% set macroOptionsPath = "nhsapp/components/" + arguments + "/macro-options.md" %}
-              {% if arguments == "card" %}
-                {% set macroOptionsPath = "nhsapp/components/card/macro-options-card.md" %}
-              {% elif arguments == "card-group" %}
-                {% set macroOptionsPath = "nhsapp/components/card/macro-options-card-group.md" %}
-              {% endif %}
+            {%- if arguments -%}
+              {%- set macroOptionsPath = "nhsapp/components/" + arguments + "/macro-options.md" -%}
+              {%- if arguments == "card" -%}
+                {%- set macroOptionsPath = "nhsapp/components/card/macro-options-card.md" -%}
+              {%- elif arguments == "card-group" -%}
+                {%- set macroOptionsPath = "nhsapp/components/card/macro-options-card-group.md" -%}
+              {%- endif %}
               <div class="app-table--scroll">
-                {% include macroOptionsPath ignore missing %}
+                {%- include macroOptionsPath ignore missing -%}
               </div>
-            {% endif %}
+            {%- endif %}
           </div>
         </details>
       {%- endif -%}
-      {{ code({ background: "body", border: false, html: nunjucksCode | highlight("nunjucks"), button: {} }) }}
+      {{ code({ background: "body", border: false, html: nunjucksCode | highlight("nunjucks"), button: {} }) -}}
     </div>
   </div>
   {% endif -%}
@@ -119,13 +119,13 @@
         </div>
       </details>
     {%- endif -%}
-    {{ code({ background: "body", border: false, html: swiftCode | highlight("swift"), button: true }) }}
+    {{ code({ background: "body", border: false, html: swiftCode | highlight("swift"), button: true }) -}}
   </div>
   {% endif -%}
 
   {% if androidCode -%}
   <div class="app-tabs__panel app-tabs__panel--hidden" id="android-default-{{ id }}" role="tabpanel" aria-labelledby="tab_android-default-{{ id }}">
-    {{ code({ background: "body", border: false, html: androidCode | highlight("plaintext"), button: true }) }}
+    {{ code({ background: "body", border: false, html: androidCode | highlight("plaintext"), button: true }) -}}
   </div>
   {% endif -%}
 </div>
