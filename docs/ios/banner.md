@@ -72,7 +72,7 @@ Banner(
 
 The banner triggers an action when tapped. Specify this using the `action` closure.
 
-<img src="/assets/images/ios/banner-outlined.png" max-width="670px">
+<img src="/assets/images/ios/banner-outlined.png" width="670">
 
 The action can present a view as a modal sheet:
 
