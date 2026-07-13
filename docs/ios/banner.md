@@ -7,7 +7,7 @@ tags:
 
 The banner is a highly visible, tappable card that draws attention to an important action, such as proving your identity or giving feedback.
 
-<img src="/assets/images/ios/banner-solid.png" max-width="670px">
+<img src="/assets/images/ios/banner-solid.png" width="670">
 
 ## When to use
 
