@@ -50,7 +50,7 @@ The layout adapts to the user's settings:
 
 Use the banner within a SwiftUI view.
 
-<img src="/assets/images/ios/banner-solid.png" max-width="670px">
+<img src="/assets/images/ios/banner-solid.png" width="670">
 
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
