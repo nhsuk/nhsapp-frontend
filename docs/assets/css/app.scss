@@ -5,8 +5,7 @@
 @forward "../../../src/all";
 
 // Code example syntax highlighting
-@use "prismjs/themes/prism.css";
-@forward "code-colours";
+@forward "pkg:nhsuk-frontend/lib/highlighter/styles";
 
 // Docs specific styles
 @forward "components/hero";
@@ -16,7 +15,6 @@
 @forward "components/top-nav-native";
 @forward "components/header-native";
 @forward "container";
-@forward "code";
 @forward "colour";
 @forward "tabs";
 @forward "content";
@@ -99,4 +97,13 @@ pre {
 .app-table--scroll table {
   width: 100%;
   margin-bottom: 0;
+}
+
+// Extend code styles to use in <th>
+//
+// This can be removed when https://github.com/nhsuk/nhsuk-frontend/pull/1984
+// has been released.
+th code {
+  color: $nhsuk-code-colour;
+  background-color: nhsuk-colour("white");
 }

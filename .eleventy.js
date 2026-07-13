@@ -3,28 +3,56 @@ import nunjucks from 'nunjucks'
 import * as sass from 'sass'
 import fs from 'fs-extra'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
-import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 import markdownIt from 'markdown-it'
 import anchor from 'markdown-it-anchor'
+import markdownItAttrs from 'markdown-it-attrs'
+import swift from 'highlight.js/lib/languages/swift'
+import { components, highlighter } from 'nhsuk-frontend/lib'
+import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
+
+highlighter.registerLanguage('swift', swift)
 
 import matter from 'gray-matter'
 import prettier from 'prettier'
 
-const nunjucksEnv = nunjucks.configure([
-  // Our own styles and assets
-  'src/styles',
-  'src/assets',
+const nunjucksEnv = nunjucks.configure(
+  [
+    // Our own styles and assets
+    'src/styles',
+    'src/assets',
 
-  // Includes specific to our documentation
-  'docs/_includes',
-  'docs/assets',
+    // Includes specific to our documentation
+    'docs/_includes',
+    'docs/assets',
 
-  // NHS.UK frontend components (updated for v10)
-  'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
-  'node_modules/nhsuk-frontend/dist/nhsuk',
-  'node_modules/nhsuk-frontend/dist/nhsuk/components',
-  'node_modules/nhsuk-frontend/dist/nhsuk/macros'
-])
+    // NHS.UK frontend components (updated for v10)
+    'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
+    'node_modules/nhsuk-frontend/dist/nhsuk',
+    'node_modules/nhsuk-frontend/dist/nhsuk/components',
+    'node_modules/nhsuk-frontend/dist/nhsuk/macros'
+  ],
+  {
+    // Match nhsuk-frontend's own nunjucks environment settings.
+    // Without these, block tags emit extra newlines which markdown-it
+    // misinterprets as paragraph breaks inside HTML blocks.
+    lstripBlocks: true,
+    trimBlocks: true
+  }
+)
+
+// Register the NHS frontend highlight filter for syntax highlighting in code examples.
+// Blank lines are encoded as \n&#10; so that markdown-it does not terminate
+// the surrounding HTML block early (type-6 blocks end at the first blank line).
+// The pattern \n[ \t]*\n covers both bare \n\n and lines that contain only
+// spaces/tabs (e.g. trailing-whitespace blank lines). Inside <pre>, &#10;
+// decodes to a newline, so the visual output is unchanged.
+const highlightFilter = highlight.bind({ env: nunjucksEnv })
+nunjucksEnv.addFilter('highlight', (code, language) => {
+  const safe = nunjucksEnv.getFilter('safe')
+  return safe(
+    String(highlightFilter(code, language)).replace(/\n[ \t]*\n/g, '\n&#10;')
+  )
+})
 
 export default function (eleventyConfig) {
   // Copy components before build starts
@@ -70,9 +98,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist/nhsuk/assets': 'assets'
   })
-
-  // Add syntax highlighting to code blocks
-  eleventyConfig.addPlugin(syntaxHighlight)
 
   eleventyConfig.addTemplateFormats('scss')
   eleventyConfig.addExtension('scss', {
@@ -158,7 +183,47 @@ export default function (eleventyConfig) {
     return nunjucksEnv.render('example.njk', templateData)
   })
 
-  eleventyConfig.setLibrary('md', markdownIt({ html: true }).use(anchor))
+  // Languages that should use the reverse (dark background) style
+  const reverseStyleLanguages = ['bash', 'shell', 'sh', 'zsh']
+
+  // Custom markdown-it plugin: renders fenced code blocks as the nhsuk-frontend
+  // code component, including a hidden copy button that the nhsuk-code JavaScript
+  // module reveals when the Clipboard API is available.
+  function nhsukCodePlugin(md) {
+    md.renderer.rules.fence = (tokens, idx) => {
+      const token = tokens[idx]
+
+      const language = token.info.trim()
+      const callBlock = highlightFilter(token.content, language)
+
+      // Check if the code block has the { .nhsuk-code--button }
+      // class added, to indicate that the copy button should be added.
+      const hasCopyButton = token.attrs?.some(
+        ([name, value]) =>
+          name === 'class' && value?.includes('nhsuk-code--button')
+      )
+
+      // Languages used on the command line use a reverse style
+      const isReverse = reverseStyleLanguages.includes(language)
+
+      return components.render('code', {
+        context: {
+          background: 'body',
+          button: hasCopyButton,
+          variant: isReverse ? 'reverse' : undefined
+        },
+        callBlock
+      })
+    }
+  }
+
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt({ html: true })
+      .use(markdownItAttrs)
+      .use(anchor)
+      .use(nhsukCodePlugin)
+  )
 
   return {
     dir: {

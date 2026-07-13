@@ -61,64 +61,6 @@
   }
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: nhsuk-colour("white");
-  margin: 0;
-}
-
-.app-tabs__panel pre[class*="language-"] {
-  padding-top: 2.5em;
-}
-
-.app-tabs__panel pre[class*="language-jinja2"] {
+.app-tabs__panel .nhsuk-code--nunjucks .nhsuk-code__container {
   padding-top: 0; // No need for padding top because of macro options
-}
-
-.app-copy__button {
-  background-color: nhsuk-colour("white");
-  border: 1px solid nhsuk-colour("green");
-  border-radius: 4px;
-  box-shadow: 0 2px 0 nhsuk-colour("green");
-  color: nhsuk-colour("green");
-  cursor: pointer;
-  font-size: 14px;
-  padding: 4px 8px;
-  position: absolute;
-  right: 24px;
-  top: 24px;
-
-  @include nhsuk-media-query($until: desktop) {
-    right: 16px;
-    top: 16px;
-  }
-
-  &:hover {
-    background-color: nhsuk-colour("green");
-    color: nhsuk-colour("white");
-  }
-
-  &:focus {
-    background-color: $nhsuk-focus-colour;
-    border-color: $nhsuk-focus-colour;
-    box-shadow:
-      0 -2px $nhsuk-focus-colour,
-      0 4px $nhsuk-focus-text-colour;
-    color: $nhsuk-focus-text-colour;
-  }
-}
-
-code:not([class*="language-"]) {
-  padding: 0 4px;
-  color: #c62950;
-  background-color: white;
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-.language-html p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
 }
