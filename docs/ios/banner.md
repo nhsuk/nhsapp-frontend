@@ -122,7 +122,7 @@ Keep the title to a single short sentence explaining the benefit of acting. Say 
 
 Make the action label describe what happens next, starting with a verb. For example, "Give feedback" or "Prove who you are".
 
-Do not use "learn more" or other vague labels. User should know what will happen before they tap.
+Do not use "learn more" or other vague labels. Users should know what will happen before they tap.
 
 Write the accessibility hint to describe where the action takes the user. If it opens a web overlay, use "Opens in a web browser". Do not repeat the title or action label – VoiceOver reads those already.
 
