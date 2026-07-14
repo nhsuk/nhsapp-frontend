@@ -63,7 +63,7 @@ Banner(
     buttonText: "Give feedback",
     style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
     systemImage: "ellipsis.bubble.fill",
-    accessibilityHint: "Opens in web browser",
+    accessibilityHint: "Opens in a web browser",
     action: { }
 )
 ```
