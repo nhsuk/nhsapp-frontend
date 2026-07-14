@@ -86,7 +86,7 @@ struct ContentView: View {
             buttonText: "Prove who you are",
             style: .outlined(.nhsPurple),
             systemImage: "person.badge.shield.checkmark",
-            accessibilityHint: "Opens a sheet to verify your identity",
+            accessibilityHint: "Opens a sheet",
             action: { isPresentingSheet = true }
         )
         .sheet(isPresented: $isPresentingSheet) {
@@ -124,7 +124,9 @@ Make the action label describe what happens next, starting with a verb. For exam
 
 Do not use "learn more" or other vague labels. Users should know what will happen before they tap.
 
-Write the accessibility hint to describe where the action takes the user. If it opens a web overlay, use "Opens in a web browser". Do not repeat the title or action label – VoiceOver reads those already.
+The accessibility hint is optional. Only add one if the title and action label do not already make the result of tapping clear. For example, "Give feedback" does not say it opens a web page, so a hint like "Opens in a web browser" helps.
+
+Do not use the hint to repeat the title or action label – VoiceOver reads those already. If you have nothing new to add, leave the hint out.
 
 Follow the [NHS content guide](https://service-manual.nhs.uk/content) for style, voice and tone.
 
@@ -132,7 +134,9 @@ Follow the [NHS content guide](https://service-manual.nhs.uk/content) for style,
 
 This component supports Dynamic Type, Dark Mode and VoiceOver.
 
-VoiceOver reads the banner as a single button: the title and action label together, followed by the accessibility hint. The icon is decorative and is not read out.
+VoiceOver reads the banner as a single button: the title and action label together, followed by the accessibility hint if one is set.
+
+The icon is decorative and is not read out.
 
 The icon scales with the user's text size and is hidden at very large text sizes.
 
