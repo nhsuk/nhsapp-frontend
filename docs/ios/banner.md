@@ -98,7 +98,7 @@ struct ContentView: View {
 
 It can also open a link, navigate to another screen, or trigger any other action.
 
-### Using a banner in a list
+### Using a banner in a list view
 
 To place a banner inside a `List`, apply the `nhsCardRowStyle()` modifier so it renders edge to edge rather than as a standard inset row:
 
@@ -122,9 +122,9 @@ Keep the title to a single short sentence explaining the benefit of acting. Say 
 
 Make the action label describe what happens next, starting with a verb. For example, "Give feedback" or "Prove who you are".
 
-Do not use "click here" or "learn more". Users should know what will happen before they tap.
+Do not use "learn more" or other vague labels. User should know what will happen before they tap.
 
-Write the accessibility hint to describe where the action takes the user, for example "Opens in web browser". Do not repeat the title or action label — VoiceOver reads those already.
+Write the accessibility hint to describe where the action takes the user. If it opens a web overlay, use "Opens in a web browser". Do not repeat the title or action label – VoiceOver reads those already.
 
 Follow the [NHS content guide](https://service-manual.nhs.uk/content) for style, voice and tone.
 
@@ -136,7 +136,7 @@ VoiceOver reads the banner as a single button: the title and action label togeth
 
 The icon scales with the user's text size and is hidden at very large text sizes.
 
-When choosing colours, check that the accent colour has enough contrast against the background colour to meet [WCAG AA](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
+When choosing colours, check that the accent colour has enough contrast against the background colour to meet at least [WCAG AA](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
 ## Research
 
