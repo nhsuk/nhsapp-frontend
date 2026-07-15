@@ -113,4 +113,4 @@ The white text on the dark blue panel meets [WCAG AA](https://www.w3.org/WAI/WCA
 
 ## Research
 
-In usability testing of that pattern, participants noticed and engaged with the campaign card. They responded positively to the tone of the text, the use of photography, and the idea of campaigns being shown on the home screen.
+In usability testing of this pattern, participants noticed and engaged with the campaign card. They responded positively to the tone of the text, the use of photography, and the idea of campaigns being shown on the home screen.
