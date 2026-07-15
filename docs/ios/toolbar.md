@@ -305,7 +305,6 @@ struct RemovedMessageView: View {
 }
 ```
 
-
 ## Accessibility
 
 This component supports Dynamic Type, Dark Mode and VoiceOver.
