@@ -66,7 +66,7 @@ Use the solid style for less important prompts, such as inviting users to give f
 ```swift { .nhsuk-code--button }
 Banner(
     title: "Tell us what you think about the NHS App",
-    buttonText: "Give feedback",
+    actionLabel: "Give feedback",
     style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
     systemImage: "ellipsis.bubble.fill",
     accessibilityHint: "Opens in a web browser",
@@ -91,7 +91,7 @@ struct ContentView: View {
     var body: some View {
         Banner(
             title: "Prove your identity to access all NHS App features",
-            buttonText: "Prove who you are",
+            actionLabel: "Prove who you are",
             style: .outlined(.nhsPurple),
             systemImage: "person.badge.shield.checkmark",
             accessibilityHint: "Opens a sheet",
@@ -112,7 +112,7 @@ To place a banner inside a `List`, apply the `nhsCardRowStyle()` modifier so it 
 List {
     Banner(
         title: "Tell us what you think about the NHS App",
-        buttonText: "Give feedback",
+        actionLabel: "Give feedback",
         style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
         systemImage: "ellipsis.bubble.fill",
         accessibilityHint: "Opens in a web browser",
