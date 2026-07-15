@@ -50,6 +50,12 @@ The layout adapts to the user's settings:
 
 Use the banner within a SwiftUI view.
 
+The banner triggers an action when tapped. Specify this using the `action` closure. The action can present a sheet, open a link, navigate to another screen, or trigger any other action.
+
+### Solid banners
+
+Use the solid style for less important prompts, such as inviting users to give feedback.
+
 <img src="/assets/images/ios/banner-solid.png">
 
 {% from "details/macro.njk" import details %}
@@ -64,17 +70,19 @@ Banner(
     style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
     systemImage: "ellipsis.bubble.fill",
     accessibilityHint: "Opens in a web browser",
-    action: { }
+    action: { openFeedbackForm() }
 )
 ```
 
-### Actions
+### Outlined banners
 
-The banner triggers an action when tapped. Specify this using the `action` closure.
+Use the outlined style to give a prompt more emphasis. For example, proving your identity, which unlocks more features.
+
+If you are not sure which style to use, start with solid. Save outlined for the most important prompt on a screen.
 
 <img src="/assets/images/ios/banner-outlined.png">
 
-The action can present a view as a modal sheet:
+This example presents a view as a modal sheet when tapped:
 
 ```swift { .nhsuk-code--button }
 struct ContentView: View {
@@ -96,8 +104,6 @@ struct ContentView: View {
 }
 ```
 
-It can also open a link, navigate to another screen, or trigger any other action.
-
 ### Using a banner in a list view
 
 To place a banner inside a `List`, apply the `nhsCardRowStyle()` modifier so it renders edge to edge rather than as a standard inset row:
@@ -110,7 +116,7 @@ List {
         style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
         systemImage: "ellipsis.bubble.fill",
         accessibilityHint: "Opens in a web browser",
-        action: { }
+        action: { openFeedbackForm() }
     )
     .nhsCardRowStyle()
 }
