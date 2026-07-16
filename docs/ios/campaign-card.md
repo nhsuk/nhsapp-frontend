@@ -91,9 +91,9 @@ List {
 
 ## Writing for this component
 
-The heading should have a persuasive tone. The wording of existing headings or slogans for the campaign can be a helpful reference point. Aim for a maximum of 23 characters including spaces, so the heading fits on one line at standard text sizes.
+The title should have a persuasive tone. The wording of existing headings or slogans for the campaign can be a helpful reference point. Aim for a maximum of 23 characters including spaces, so the heading fits on one line at standard text sizes. Do not add a full stop.
 
-The body text should have an informative tone. It should help users understand what they can do if they follow the link. Aim for a maximum of 75 characters including spaces, so it fits on two lines at standard text sizes.
+The subtitle should have an informative tone. It should help users understand what they can do if they follow the link. Aim for a maximum of 75 characters including spaces, so it fits on two lines at standard text sizes. Keep as a single sentence and do not add a full stop.
 
 These character counts are targets, not hard limits. Text is never cut off: at larger text sizes, or with longer text, the card grows. Always check the card at the largest text sizes.
 
