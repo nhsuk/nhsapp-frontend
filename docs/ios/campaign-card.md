@@ -65,7 +65,7 @@ CampaignCard(
     image: Image("campaign-organ-donation"),
     title: "Organ donors save lives",
     subtitle: "Take 2 minutes to confirm your organ donation decision",
-    action: { 
+    action: {
         // open the campaign journey
      }
 )
@@ -81,7 +81,7 @@ List {
         image: Image("campaign-organ-donation"),
         title: "Organ donors save lives",
         subtitle: "Take 2 minutes to confirm your organ donation decision",
-        action: { 
+        action: {
             // open the campaign journey
          }
     )

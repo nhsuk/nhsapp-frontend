@@ -70,7 +70,7 @@ Banner(
     style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
     systemImage: "ellipsis.bubble.fill",
     accessibilityHint: "Opens in a web browser",
-    action: { 
+    action: {
         // open the feedback form
      }
 )
@@ -118,7 +118,7 @@ List {
         style: .solid(background: .nhsPaleGreen, accent: .nhsDarkGreen),
         systemImage: "ellipsis.bubble.fill",
         accessibilityHint: "Opens in a web browser",
-        action: { 
+        action: {
             // open the feedback form
          }
     )
