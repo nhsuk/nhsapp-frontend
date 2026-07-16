@@ -77,6 +77,6 @@ List {
 
 ## Accessibility
 
-The modifier only affects how a view looks. Your content is responsible for its own accessibility, such as labels, traits and tap target sizes.
+The modifier only affects how a view looks. You are responsible for the accessibility of the content used, such as labels, traits and tap target sizes.
 
 When choosing a background colour, check that your text and any accent colours have enough contrast against it to meet at least [WCAG AA](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html). The default white background with `nhsText` meets this.
