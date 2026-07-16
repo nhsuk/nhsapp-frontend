@@ -6,8 +6,8 @@
  *   docs\assets\css\app.scss 148:2  root stylesheet */
 
 body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
+  font-family: 'Source Code Pro', 'SF Mono', Monaco, Inconsolata, 'Fira Mono',
+    'Droid Sans Mono', monospace, monospace;
   white-space: pre;
   display: block;
   padding: 1em;
