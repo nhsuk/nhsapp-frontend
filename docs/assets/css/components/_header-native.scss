@@ -1,3 +1,7 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+
 .app-header--native {
   .nhsuk-header__container {
     display: flex;

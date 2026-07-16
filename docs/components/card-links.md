@@ -108,7 +108,7 @@ You can add custom HTML to the heading using `headingHtml`.
 
 {% example "cards/card-group-custom-heading.njk" %}
 
-## Accesibility
+## Accessibility
 
 Screen reader users often navigate by pulling up a list of all the links on a page. When they do this, they only hear the link text, not the content around it.
 
