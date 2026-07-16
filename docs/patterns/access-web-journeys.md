@@ -8,16 +8,16 @@ tags:
   - helpUsers
 ---
 
-<strong class="nhsapp-tag nhsapp-tag--blue nhsuk-u-margin-bottom-4">
+<strong class="nhsapp-tag nhsapp-tag--blue nhsuk-u-margin-bottom-1">
   Work in progress
 </strong>
-
-How to adapt your web journey so users can access it in the native NHS App, using a web overlay.
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
   <p>This guidance is part of our work to prepare for <a href="https://design-history.nhsapp.service.nhs.uk/native/2026/01/exploring-a-spectrum-of-possibilities/">building a more native version of the NHS App</a>.</p>
 </div>
+
+How to adapt your web journey so users can access it in the native NHS App, using a web overlay.
 
 ## Overview
 
