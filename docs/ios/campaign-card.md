@@ -33,8 +33,8 @@ Do not use a campaign card:
 A campaign card has:
 
 - a full-width photograph
-- a heading in bold
-- body text
+- a title in bold
+- a subtitle, not in bold
 - a chevron showing that the card leads somewhere
 
 The whole card is one tap target. The text sits on a dark blue panel. Text never overlaps the photograph.
