@@ -8,9 +8,14 @@ tags:
   - helpUsers
 ---
 
-<strong class="nhsapp-tag nhsapp-tag--blue nhsuk-u-margin-bottom-4">
+<strong class="nhsapp-tag nhsapp-tag--blue nhsuk-u-margin-bottom-1">
   Work in progress
 </strong>
+
+<div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <p>This guidance is part of our work to prepare for <a href="https://design-history.nhsapp.service.nhs.uk/native/2026/01/exploring-a-spectrum-of-possibilities/">building a more native version of the NHS App</a>.</p>
+</div>
 
 How to adapt your web journey so users can access it in the native NHS App, using a web overlay.
 
@@ -117,7 +122,7 @@ Do not include an alert:
 
 <img class="app-image--no-border" src="/assets/images/web-overlay/close-alert-message.png" alt="Video showing the alert content. The text is 'Exit this service? Your progress will not be saved' and there are buttons to cancel or exit.">
 
-Alerts should consistently use the content shown in the example above, which adheres to iOS and Android platform design guidance.
+We are currently researching and agreeing on a [content pattern for the alert content](https://github.com/NHSDigital/native-nhsapp-ucd-team/issues/69).
 
 ### Open in-journey links in a sheet
 
