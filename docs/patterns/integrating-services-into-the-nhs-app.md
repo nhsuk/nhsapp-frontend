@@ -10,15 +10,15 @@ tags:
 
 ## Before you integrate
 
-The NHS App has over 60 integrated services. Each integrating service has to be carefully onboarded so the rest of the app keeps performing. 
+The NHS App has over 60 integrated services. Each integrating service has to be carefully onboarded so the rest of the app keeps performing.
 
 [Learn more about how to integrate with the NHS App](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app)
 
 ## How integrations work in the NHS App
 
-When a user goes from an NHS App screen into an integrated service, that service is loaded in a web view. A web view is a browser-like container, embedded within the header and footer of the app. 
+When a user goes from an NHS App screen into an integrated service, that service is loaded in a web view. A web view is a browser-like container, embedded within the header and footer of the app.
 
-Using a web view allows users to move from the NHS App into a third-party or NHS service without: 
+Using a web view allows users to move from the NHS App into a third-party or NHS service without:
 
 - feeling like they are leaving the NHS App
 - losing access to the app header and footer menus
