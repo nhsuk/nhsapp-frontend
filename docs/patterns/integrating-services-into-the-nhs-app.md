@@ -1,46 +1,40 @@
 ---
 layout: layouts/pattern.njk
 title: Integrating services into the NHS App
-description: The integration pattern describes how services are loaded in the NHS App and what teams need to do to prepare their pages and meet their accessibility responsibilities
+description: Use this pattern to prepare your website-based service for integration into the NHS App. 
 backlogID: 450
 order: 5
 tags:
   - page
 ---
 
-Services and websites that appear within the NHS App are loaded in a way that keeps users inside the app experience. This pattern explains how integrations work, how to adapt your pages so they work well in the app context, and what your accessibility responsibilities are.
+## Before you integrate
+
+The NHS App has over 60 integrated services. Each integrating service has to be carefully onboarded so the rest of the app keeps performing. 
+
+[Learn more about how to integrate with the NHS App](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app)
 
 ## How integrations work in the NHS App
 
-Services accessed through the NHS App are loaded in a web view — a browser-like container embedded within the app. This allows users to move from the NHS App into a third-party or NHS service without leaving the app.
+When a user goes from an NHS App screen into an integrated service, that service is loaded in a web view. A web view is a browser-like container, embedded within the header and footer of the app. 
 
-In the past, some services were loaded in overlays rather than web views. This inconsistency caused problems for users, including:
+Using a web view allows users to move from the NHS App into a third-party or NHS service without: 
+
+- feeling like they are leaving the NHS App
+- losing access to the app header and footer menus
+
+In the past, some services were loaded in web brower overlays that came over the top of the NHS App screens, rather than in web views. This inconsistency, and websites not being adapted for how they showed in the NHS App, caused problems for users, including:
 
 - journeys that changed integration pattern partway through, creating a jarring and confusing experience
-- standard website navigation leading to circular journeys — for example, clicking "My account" in a service header could prompt users to go through the NHS login journey only to return to the NHS App
-- misleading terminology — links labelled "NHS App" could take users to content _about_ the app rather than back to it; links to "profile editor" could be misread as relating to the user's app profile rather than profiles within the external service
+- standard website navigation leading to circular journeys – for example, clicking "My account" in a service header could prompt users to go through the NHS login journey only to return to the NHS App
+- misleading terminology – links labelled "NHS App" could take users to content about the app rather than back to it; links to "profile editor" could be misread as relating to the user's app profile rather than profiles within the external service
 - a search bar that searched the external website rather than the NHS App, returning results that were confusing in an app context
 - breadcrumbs that navigated up the website's own hierarchy rather than back to the user's previous page, trapping users within the service
 - distracting header and footer links that could take users away from the task they came to the app to complete
 
-For these reasons, all services should be loaded as a web view when accessed from the NHS App, not as an overlay.
+For these reasons, intergrated services should be loaded as a web view when accessed from the NHS App, with certain adaptations in place.
 
-## How to prepare your service for integrating into the NHS App
-
-The NHS App has over 60 integrating services. Each integrating service has to be carefully onboarded so the rest of the App keeps performing.
-If you are integrating your service with the NHS App, you will need to get onboarded to the NHS App.
-
-This will include:
-
-- reviewing your service blueprint detail to understand how you want your service to interact with the NHS App services, and other services we integrated with
-- sharing your roll-out plans so we know what transaction volumes you're expecting and when
-- tracking what you want to measure through analytics in the App
-- trialling your integration in our sandbox environment to check it works
-- going through final approvals
-
-[Learn more about how to integrate with the NHS App](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app)
-
-## How to prepare your pages for integrating into the NHS App
+## How to adapt your pages
 
 When a user accesses your service through the NHS App, you must adapt your pages to work within the app context. There are 3 key adaptations.
 
@@ -82,8 +76,8 @@ The Back link must be keyboard accessible and placed consistently at the top of 
 Your integrated pages should not:
 
 - include site header elements such as a service logo, search bar or account navigation
-- use language or links that assume the user is on a website. For example, links labelled "NHS App" that lead to content _about_ the app rather than back to it
-- rely on a site search bar to help users find content — it searches your website, not the NHS App, which can be confusing for users
+- use language or links that assume the user is on a website. For example, links labelled "NHS App" that lead to content about the app rather than back to it
+- rely on a site search bar to help users find content – it searches your website, not the NHS App, which can be confusing for users
 
 ## Your accessibility responsibilities
 
@@ -93,7 +87,7 @@ The NHS App has its own [accessibility statement](https://www.nhs.uk/nhs-app/abo
 
 ### Get an accessibility audit
 
-You need an external accessibility audit to confirm your service meets WCAG 2.2 AA — the minimum standard required by law for public sector digital services. An audit helps you identify and fix barriers before your service goes live. NHS England normally uses [Dig Inclusion](https://diginclusion.com/) for audits.
+You need an external accessibility audit to confirm your service meets WCAG 2.2 AA – the minimum standard required by law for public sector digital services. An audit helps you identify and fix barriers before your service goes live. NHS England normally uses [Dig Inclusion](https://diginclusion.com/) for audits.
 
 ### Publish an accessibility statement
 
