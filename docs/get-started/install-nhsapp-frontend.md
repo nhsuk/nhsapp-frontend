@@ -50,6 +50,12 @@ Paste
 
 ```sh
 // Import all styles from the NHS App frontend library
+@use 'node_modules/nhsapp-frontend/dist/nhsapp/all';
+```
+
+If your build tool does not support the Sass module system, use the legacy syntax instead:
+
+```sh
 @import 'node_modules/nhsapp-frontend/dist/nhsapp/all';
 ```
 
