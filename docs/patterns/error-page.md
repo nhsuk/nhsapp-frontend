@@ -57,7 +57,7 @@ Include a secondary button with the text "Try again" on error pages when:
 - there is a temporary problem
 - it's likely the problem will be resolved immediately if they retry the failed action
 
-Do not include a try again button if your data shows it's unlikely to fix the problem immediately. Instead, you can include the words "Try again later" in the body text of the page, if the problem may be fixed at a later time.
+Do not include a "Try again" button if your data shows it's unlikely to fix the problem immediately. Instead, you can include the words "Try again later" in the body text of the page, if the problem may be fixed at a later time.
 
 Users should only be able to select a "Try again" button once. It should either:
 
@@ -86,7 +86,7 @@ Use the heading "For urgent medical advice" followed by the text "Use [111 onlin
 
 ### 6. Signposting to technical support
 
-If the Service Management Team can help users in the scenario, use the heading "For technical help" followed by the text "Make a note of the error code **xxxxx** and then [contact the NHS App team](https://www.nhs.uk/contact-us/nhs-app-contact-us/)". Insert a relevant error code where the bold text is.
+If the Service Management Team can help users in the scenario, use the heading "For technical support" followed by the text "Make a note of the error code **xxxxx** and then [contact the NHS App team](https://www.nhs.uk/contact-us/nhs-app-contact-us/)". Insert a relevant error code where the bold text is.
 
 ## If a user is logged out
 
