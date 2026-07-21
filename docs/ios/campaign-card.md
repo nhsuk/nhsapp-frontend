@@ -14,7 +14,7 @@ The campaign card is a tappable card that helps users learn about a public healt
 Use a campaign card to promote prioritised public health campaigns that:
 
 - are relevant to most NHS App users
-- have an onward digital journey that meets the [standards for NHS App integration](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app/standards-for-nhs-app-integration)
+- meet the [standards for NHS App integration](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app/standards-for-nhs-app-integration) if they take users to an external campaign website
 
 Campaigns that are not run by the NHS should ideally have a journey that has been integrated with the NHS App.
 
