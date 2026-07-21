@@ -16,16 +16,7 @@ Use a campaign card to promote prioritised public health campaigns that:
 - are relevant to most NHS App users
 - meet the [standards for NHS App integration](https://digital.nhs.uk/services/nhs-app/how-to-integrate-with-the-nhs-app/standards-for-nhs-app-integration) if they take users to an external campaign website
 
-
 Use one campaign card per screen at most.
-
-## When not to use
-
-Do not use a campaign card:
-
-- to prompt the user to complete a task, such as giving feedback — use the [banner](/ios/banner)
-- for navigation to services or the user's own records
-- for information that does not have an onward journey
 
 ## How it works
 
