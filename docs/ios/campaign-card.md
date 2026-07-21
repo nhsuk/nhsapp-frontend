@@ -18,6 +18,13 @@ Use a campaign card to promote prioritised public health campaigns that:
 
 Use one campaign card per screen at most.
 
+## When not to use
+
+Do not use a campaign card:
+
+- to prompt the user to complete a task, such as giving feedback — use the [banner](/ios/banner)
+- for information that does not have an onward journey
+
 ## How it works
 
 A campaign card has:
