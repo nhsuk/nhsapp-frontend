@@ -18,6 +18,8 @@ The NHS App has over 60 integrated services. Each integrating service has to be 
 
 When a user goes from an NHS App screen into an integrated service, that service is loaded in a web view. A web view is a browser-like container, embedded within the header and footer of the app.
 
+![Two screens showing the NHS website opening in the NHS App. The first shows the A to Z opening in a web brower overlay: it has a red cross against it. The second shows the same content opening within a web view within the NHS App: it has a green tick against it.](/assets/images/integration-pattern/use-web-view.png)
+
 Using a web view allows users to move from the NHS App into a third-party or NHS service without:
 
 - feeling like they are leaving the NHS App
@@ -47,6 +49,8 @@ Remove your full site header when your pages are viewed from within the NHS App.
 - the search bar
 - site navigation links
 
+![Two screens showing the NHS website in a web view within the NHS App. The first shows NHS website header visible in the web view: it has a red cross against it. The second shows header suppressed: it has a green tick against it.](/assets/images/integration-pattern/suppress-header.png)
+
 This prevents users from accidentally navigating away into unrelated parts of an external website, and avoids the circular journey problem caused by account links that re-trigger the NHS login flow.
 
 Make sure removing the header does not affect the page title or the logical heading structure of your page. Screen reader users rely on page titles and headings to understand where they are. These must remain in place even when the visual header is hidden.
@@ -61,6 +65,8 @@ Reduce the number of links shown in the footer to only those that are essential.
 
 The footer should follow standard NHS design patterns in its visual appearance. Do not include promotional links, section navigation or other links that could take users out of their current journey.
 
+![Two screens showing the NHS website opening in a web view within the NHS App. The first shows the full NHS website footer visible in the web view: it has a red cross against it. The second shows a simplified version of the footer: it has a green tick against it.](/assets/images/integration-pattern/simplify-footer.png)
+
 ### 3. Replace breadcrumbs with a Back link
 
 Replace your site's standard breadcrumb navigation with a single Back link. The Back link should take users back one step in their browser history.
@@ -70,6 +76,8 @@ Breadcrumb navigation reflects your site's information architecture, which is no
 Do not use breadcrumbs on pages viewed within the NHS App.
 
 The Back link must be keyboard accessible and placed consistently at the top of the page, before the main content. This helps keyboard-only users and screen reader users navigate reliably without needing to scan the whole page.
+
+![Two screens showing the NHS website opening in a web view within the NHS App. The first shows the breadcrumb link 'Home' at the top: it has a red cross against it. The second shows a 'Back' button used instead: it has a green tick against it.](/assets/images/integration-pattern/include-back-button.png)
 
 ## How not to prepare your pages
 
