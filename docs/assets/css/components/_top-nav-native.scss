@@ -1,3 +1,7 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+
 .app-top-nav-native {
   background-color: nhsuk-colour("grey-5");
   position: fixed;

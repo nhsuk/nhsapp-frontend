@@ -1,11 +1,16 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+@use "../../../src/settings/colours" as *;
+
 .app-content {
   @include nhsuk-media-query($from: desktop) {
     padding-bottom: nhsuk-spacing(7);
   }
 
   img {
-    @include nhsuk-responsive-margin(5, "bottom");
-    @include nhsuk-responsive-margin(5, "top");
+    @include nhsuk-responsive-margin(6, "bottom");
+    @include nhsuk-responsive-margin(6, "top");
 
     background-color: nhsapp-colour("pale-blue");
     border: nhsuk-spacing(1) solid nhsapp-colour("pale-blue");

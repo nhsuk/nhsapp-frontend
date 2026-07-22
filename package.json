@@ -31,7 +31,7 @@
   "homepage": "https://github.com/nhsuk/nhsapp-frontend#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@prettier/sync": "^0.6.1",
     "concurrently": "^8.2.2",
     "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
@@ -44,7 +44,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^6.0.0",
+    "highlight.js": "^11.11.1",
     "markdown-it-anchor": "^9.0.1",
+    "markdown-it-attrs": "^5.0.0",
     "nhsuk-frontend": "^10.5.2",
     "nunjucks": "^3.2.4",
     "plugin-error": "^2.0.1",
@@ -53,5 +55,9 @@
   },
   "peerDependencies": {
     "nhsuk-frontend": "^10.0.0"
+  },
+  "engines": {
+    "node": "^24.11.0",
+    "npm": "^11.6.1 <11.6.3 || ^11.6.4"
   }
 }

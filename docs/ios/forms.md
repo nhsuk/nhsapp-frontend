@@ -25,6 +25,33 @@ If the screen only contains content and buttons or links, use a [scroll view](/i
 
 This example shows an example of a form:
 
-{% example "forms/example.njk" %}
+```swift { .nhsuk-code--button }
+let ratings = [
+    "Very good",
+    "Good",
+    "Neither good nor poor",
+    "Poor",
+    "Very poor"
+  ]
+
+var body: some View {
+    VStack {
+        Form {
+            Section {
+                Picker("Rating", selection: $rating) {
+                    ForEach(ratings, id: \.self) { option in
+                        Text(option)
+                    }
+                }
+                .pickerStyle(.inline)
+            } header: {
+                Text("Overall, how would you rate your experience of the service?")
+            }
+        }
+
+        Button("Continue")
+    }
+}
+```
 
 For full documentation, see [SwiftUI: Form](https://developer.apple.com/documentation/SwiftUI/Form) on the Apple developer documentation website.

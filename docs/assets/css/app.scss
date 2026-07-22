@@ -1,29 +1,27 @@
 // Import NHS UK frontend styles
-@import "nhsuk-frontend/dist/nhsuk/index";
+@use "pkg:nhsuk-frontend/dist/nhsuk" as *;
 
 // Import all styles from the NHS App frontend library
-@import "src/all";
+@forward "../../../src/all";
 
 // Code example syntax highlighting
-@import "node_modules/prismjs/themes/prism";
-@import "docs/assets/css/code-colours";
+@forward "pkg:nhsuk-frontend/lib/highlighter/styles";
 
 // Docs specific styles
-@import "docs/assets/css/components/hero";
-@import "docs/assets/css/components/side-navigation";
-@import "docs/assets/css/components/callout";
-@import "docs/assets/css/components/bottom-nav-native";
-@import "docs/assets/css/components/top-nav-native";
-@import "docs/assets/css/components/header-native";
-@import "docs/assets/css/container";
-@import "docs/assets/css/code";
-@import "docs/assets/css/colour";
-@import "docs/assets/css/tabs";
-@import "docs/assets/css/content";
-@import "docs/assets/css/mobile-iframe";
-@import "docs/assets/css/example";
-@import "docs/assets/css/utilities";
-@import "docs/assets/css/table";
+@forward "components/hero";
+@forward "components/side-navigation";
+@forward "components/callout";
+@forward "components/bottom-nav-native";
+@forward "components/top-nav-native";
+@forward "components/header-native";
+@forward "container";
+@forward "colour";
+@forward "tabs";
+@forward "content";
+@forward "mobile-iframe";
+@forward "example";
+@forward "utilities";
+@forward "table";
 
 // Add correct spacing around code highlighter and content
 pre {
@@ -99,4 +97,53 @@ pre {
 .app-table--scroll table {
   width: 100%;
   margin-bottom: 0;
+}
+
+.app-content {
+  .nhsuk-image {
+    border: 0;
+    width: 100%;
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  img.app-image--no-border {
+    border: none;
+  }
+
+  // Style for video
+
+  .app-image__video {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    padding-bottom: nhsuk-spacing(4);
+    padding-top: nhsuk-spacing(4);
+  }
+
+  // Respect reduced motion preferences
+  // Hide video and show fallback image
+  img.app-image__fallback {
+    display: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img.app-image__video {
+      display: none;
+    }
+
+    img.app-image__fallback {
+      display: block;
+    }
+  }
+}
+// Extend code styles to use in <th>
+//
+// This can be removed when https://github.com/nhsuk/nhsuk-frontend/pull/1984
+// has been released.
+th code {
+  color: $nhsuk-code-colour;
+  background-color: nhsuk-colour("white");
 }
