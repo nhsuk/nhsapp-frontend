@@ -35,6 +35,13 @@
       },
       {
         heading: {
+          text: 'Integrating services',
+          classes: 'nhsuk-u-visually-hidden'
+        },
+        items: collections.integratingServices | sort(attribute="data.title")
+      },
+      {
+        heading: {
           text: 'Help users to'
         },
         items: collections.helpUsers | sort(attribute="data.title")

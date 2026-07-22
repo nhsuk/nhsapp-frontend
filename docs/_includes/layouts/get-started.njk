@@ -38,6 +38,12 @@
           text: 'Production'
         },
         items: collections.production | sort(attribute="data.order")
+      },
+      {
+        heading: {
+          text: 'Integrating with the NHS App'
+        },
+        items: collections.integration | sort(attribute="data.order")
       }
     ]
   }) }}
