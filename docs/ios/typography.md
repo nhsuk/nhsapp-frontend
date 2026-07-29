@@ -29,7 +29,7 @@ The styles are defined relative to the native SwiftUI Font styles - this means t
 | `.nhsCaption`     | `.caption`         | 12pt         |
 | `.nhsCaption2`    | `.caption2`        | 11pt         |
 
-All styles are Regular weight except `.nhsHeadline`, which is Semibold.
+All styles are Regular weight except `.nhsHeadline`, which is Bold.
 
 ## Custom sizes
 
