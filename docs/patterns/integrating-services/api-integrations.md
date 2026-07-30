@@ -3,6 +3,7 @@ layout: layouts/pattern.njk
 title: API integration
 description: How to integrate a service with the NHS App by exposing data through an API, allowing the NHS App to present it within native screens
 backlogID: 450
+order: 3
 childPage: true
 tags:
   - integratingServices

@@ -3,6 +3,7 @@ layout: layouts/pattern.njk
 title: Default browser integration
 description: How to integrate a service with the NHS App using the default device browser, without adapting your service
 backlogID: 450
+order: 1
 childPage: true
 tags:
   - integratingServices
