@@ -17,8 +17,8 @@ There are 4 presets:
 
 - [primary](#primary-button)
 - [secondary](#secondary-button)
-- [primary reverse](#primary-reverse-button)
 - [warning](#warning-button)
+- [primary reverse](#primary-reverse-button)
 
 By default, buttons stretch to fill the width of their container. Use the [fitted modifier](#fitted-width) to size a button to its label instead.
 
