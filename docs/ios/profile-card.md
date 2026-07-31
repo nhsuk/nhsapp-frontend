@@ -29,8 +29,8 @@ Do not use more than one profile card on a screen.
 
 There are 2 versions of the card:
 
-- **your own profile**  —  a pale blue card showing the user's name and NHS number
-- **acting for someone else**  — a warm yellow card showing whose profile the user has switched to and how to manage the switch
+- **your own profile** — a pale blue card showing the user's name and NHS number
+- **acting for someone else** — a warm yellow card showing whose profile the user has switched to and how to manage the switch
 
 The colour change is the main signal that the user has switched profile, so the 2 versions always look different from each other.
 
