@@ -52,10 +52,6 @@ If not already existing, create an associated CSS class for each colour:
 .nhsapp-badge-small__indicator--aqua-green {
   background-color: nhsuk-colour("aqua-green");
 }
-
-.nhsapp-badge-small__indicator--red {
-  background-color: nhsuk-colour("red");
-}
 ```
 
 {% example "badges/badge-small.njk" %}
