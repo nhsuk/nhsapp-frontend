@@ -40,6 +40,24 @@ Small badges are simple circles. They can be placed:
 - on the edge of icons, such as on the bottom navigation
 - on cards, alongside text, such as “Document attached” on appointment cards
 
+Use the `color` option to set the indicator colour. Small badges default to `red`.
+
+If not already existing, create an associated CSS class for each colour:
+
+```scss
+.nhsapp-badge-small__indicator--warm-yellow {
+  background-color: nhsuk-colour("warm-yellow");
+}
+
+.nhsapp-badge-small__indicator--aqua-green {
+  background-color: nhsuk-colour("aqua-green");
+}
+
+.nhsapp-badge-small__indicator--red {
+  background-color: nhsuk-colour("red");
+}
+```
+
 {% example "badges/badge-small.njk" %}
 
 We show a red badge on the bottom navigation to indicate unread messages.
