@@ -73,6 +73,16 @@ $nhsapp-badge-size-tablet: 12px;
   }
 }
 
+.nhsapp-badge-small--as-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nhsapp-badge-small__indicator {
+    margin-right: 0;
+  }
+}
+
 .nhsapp-badge-small__indicator--warm-yellow {
   background-color: nhsuk-colour("warm-yellow");
 }
