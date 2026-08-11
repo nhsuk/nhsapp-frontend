@@ -177,6 +177,33 @@ $card-border-radius: 8px;
         border-bottom: $card-border-width solid $card-border-colour;
       }
     }
+
+    // When the last card is a colour variant, keep the rounded border at the bottom
+    // of the second-last card, and place the coloured card slightly behind it.
+    &:has(.nhsapp-card:last-of-type[class*="nhsapp-card--pale-"], .nhsapp-card:last-of-type[class*="nhsapp-card--dark-"]) {
+      .nhsapp-card:nth-last-of-type(2) {
+        border-bottom: $card-border-width solid $card-border-colour;
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+        position: relative;
+        z-index: 1;
+
+        .nhsapp-card__container {
+          border-bottom: 0;
+        }
+      }
+
+      .nhsapp-card:last-of-type {
+        border-bottom: 0;
+        border-radius: 0 0 $card-border-radius $card-border-radius;
+        margin-top: -$card-border-radius;
+        padding-top: calc($card-border-radius - $card-border-width);
+
+        .nhsapp-card__content {
+          margin: 0 $card-border-width;
+        }
+      }
+    }
   }
 }
 

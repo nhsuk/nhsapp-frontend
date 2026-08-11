@@ -15,7 +15,12 @@
   fill: nhsuk-colour("black");
 }
 
+.nhsapp-icon--text-colour {
+  fill: currentColor;
+}
+
 .nhsapp-icon--32 {
+  flex: none;
   height: 32px;
   width: 32px;
 
