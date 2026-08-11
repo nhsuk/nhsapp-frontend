@@ -180,7 +180,10 @@ $card-border-radius: 8px;
 
     // When the last card is a colour variant, keep the rounded border at the bottom
     // of the second-last card, and place the coloured card slightly behind it.
-    &:has(.nhsapp-card:last-of-type[class*="nhsapp-card--pale-"], .nhsapp-card:last-of-type[class*="nhsapp-card--dark-"]) {
+    &:has(
+      .nhsapp-card:last-of-type[class*="nhsapp-card--pale-"],
+      .nhsapp-card:last-of-type[class*="nhsapp-card--dark-"]
+    ) {
       .nhsapp-card:nth-last-of-type(2) {
         border-bottom: $card-border-width solid $card-border-colour;
         border-bottom-left-radius: $card-border-radius;
