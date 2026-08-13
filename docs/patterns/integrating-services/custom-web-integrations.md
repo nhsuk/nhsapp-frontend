@@ -26,10 +26,8 @@ In the current web-based NHS App, the web view is embedded within the app's own 
 
 ![Three screens showing the future version of the NHS App. The screens show an NHS App journey, a third-party journey and an NHS website journeyl, all showing in a full-screen custom browser overlay.](/assets/images/web-overlay/custom-web-view.png)
 
-
   </div>
 </details>
-
 
 ## When to use
 
@@ -78,15 +76,15 @@ Make sure hiding these elements does not affect the page title or the logical he
 
 ![Two screens showing the NHS website in a web view within the NHS App. The first shows the NHS website header visible in the web view: it has a red cross against it. The second shows the header suppressed: it has a green tick against it.](/assets/images/web-overlay/suppress-header.png)
 
-Work with NHS App interaction designers to identify other elements that should be removed. For example, contextual navigation links that could lead users deeper into your service without a clear way back. 
+Work with NHS App interaction designers to identify other elements that should be removed. For example, contextual navigation links that could lead users deeper into your service without a clear way back.
 
 You can do this by attending the weekly NHS App interaction design huddles, or by using the [NHS App interaction design Slack channel](https://nhsdigitalcorporate.enterprise.slack.com/archives/C04GHLAPMPV) to ask for support.
 
 ### 2. Manage back navigation
 
-Users need a clear and reliable way to go back one step. This custom web integration ensures that users feel like they are still within the NHS App so it's important that we do not confuse them by providing "Back" actions that take them to places they don't expect. 
+Users need a clear and reliable way to go back one step. This custom web integration ensures that users feel like they are still within the NHS App so it's important that we do not confuse them by providing "Back" actions that take them to places they don't expect.
 
-If you need to to allow users to move around in your service, it may be more appropriate to use a default web broswer integration where it is more clear to users that they are not within the NHS App. 
+If you need to to allow users to move around in your service, it may be more appropriate to use a default web broswer integration where it is more clear to users that they are not within the NHS App.
 
 Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcrumbs reflect your own site's information architecture, which is not meaningful to users arriving from the NHS App.
 
@@ -102,7 +100,6 @@ In the current web-based NHS App, replace your site's breadcrumb navigation with
     <p>Hide the back button on the first page of the journey. Include the back button on every other page. This helps users understand they are at the start of a new journey, while still giving them a way to navigate back once they have moved forward.</p>
 
 ![Two screens showing the NHS website 'Find services near you' journey. The first shows a web browser view, with breadcrumb links at the top of the screen. The second shows the same journey in the NHS App, with no back button or breadcrumbs present on the starting screen.](/assets/images/web-overlay/hide-elements-nhsuk.png)
-
 
   </div>
 </details>
@@ -135,7 +132,7 @@ The footer should follow standard NHS design patterns in its visual appearance. 
 
 Give the web view a title matching the name of the service. This will usually match the card link that led the user into the service. For example, "Request a repeat prescription". Check with a content designer before finalising the title.
 
-### 5. Help users exit the overlay 
+### 5. Help users exit the overlay
 
 Include an X button in the toolbar on every page so users can exit at any point. On the final screen of transactional journeys, replace the X button with a Done button instead.
 
@@ -148,7 +145,7 @@ Do not show the alert:
 
 ![Screen showing what happens when a user selects the X on an overlay screen. An alert appears with text warning the user that their progress will not be saved, and giving them the option to cancel the close action or exit.](/assets/images/web-overlay/close-alert-message.png)
 
-### 6. Open in-journey links in a sheet 
+### 6. Open in-journey links in a sheet
 
 While users are in a full-screen overlay, links to other content should open in a sheet – a partial overlay that slides up over the main journey, keeping it visible underneath. This shows users they have taken a temporary step that they can dismiss to return to their main task.
 
@@ -162,7 +159,7 @@ Links to third-party websites should open as a web browser overlay sheet (Safari
 
 **Exception:** The third-party "Give feedback" journey uses a full-screen custom web view rather than a web browser overlay. This is so that NHS website links within it open as controlled custom web view sheets.
 
-### 7. Include an app help button 
+### 7. Include an app help button
 
 For website-based app journeys such as repeat prescriptions or GP appointment booking, display a persistent app help button at the bottom of the custom web view throughout the journey. This ensures users can always access support without leaving the journey.
 

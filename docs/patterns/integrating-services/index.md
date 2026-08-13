@@ -16,10 +16,10 @@ Before you start, read [Integrating with the NHS App](/get-started/integrating-w
 
 ## Integration types
 
-| Integration type | When to use |
-|---|---|
-| [Default browser integration](/patterns/integrating-services/default-web-integrations/) | Unauthenticated, third-party information websites where you do not need to control the presentation or journey. |
-| [Custom web view integration](/patterns/integrating-services/custom-web-integrations/) | Website-based NHS App journeys, NHS website journeys, and authenticated third-party journeys. |
-| [API integration](/patterns/integrating-services/api-integrations/) | Services that can expose structured data via a compliant API, allowing the NHS App to display it in native screens. |
+| Integration type                                                                        | When to use                                                                                                         |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| [Default browser integration](/patterns/integrating-services/default-web-integrations/) | Unauthenticated, third-party information websites where you do not need to control the presentation or journey.     |
+| [Custom web view integration](/patterns/integrating-services/custom-web-integrations/)  | Website-based NHS App journeys, NHS website journeys, and authenticated third-party journeys.                       |
+| [API integration](/patterns/integrating-services/api-integrations/)                     | Services that can expose structured data via a compliant API, allowing the NHS App to display it in native screens. |
 
 Work with the NHS App team to confirm the right integration type for your service before you begin adapting your content or build.

@@ -9,7 +9,7 @@ tags:
   - integratingServices
 ---
 
-This is normally Safari View (iOS) or Chrome Custom Tabs (Android). You do not need to adapt your web service to use this type of integration. 
+This is normally Safari View (iOS) or Chrome Custom Tabs (Android). You do not need to adapt your web service to use this type of integration.
 
 ## When to use
 
@@ -31,7 +31,7 @@ Do not use this integration type if:
 
 ## How the default browser works
 
-In the current web-based NHS App, some unauthenticated services open directly in the device's default browser. This takes users out of the NHS App context entirely. 
+In the current web-based NHS App, some unauthenticated services open directly in the device's default browser. This takes users out of the NHS App context entirely.
 
 Users must return to the NHS App manually when they are done. You can currently control if your service opens inside the NHS App, or outside in their normal broswer.
 
@@ -55,4 +55,4 @@ This also applies when users follow external links from within a custom web view
 
 You do not need to make any chances to your web service for the default browser integration. Your service will appear as it does on the open web.
 
-Make sure the entry point from the NHS App has a clear, accurate label so users know they are leaving the main app flow. 
+Make sure the entry point from the NHS App has a clear, accurate label so users know they are leaving the main app flow.
