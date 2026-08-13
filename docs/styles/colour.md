@@ -19,7 +19,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
   <tbody>
       <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#f7d4d1"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#f7d4d1"></span>
         <code>nhsapp-colour("pale-red")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -28,7 +28,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#fff7b1"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#fff7b1"></span>
         <code>nhsapp-colour("pale-yellow")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -37,16 +37,16 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
         <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#cce5d8"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#cce5d8"></span>
         <code>nhsapp-colour("pale-green")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
       #cce5d8
       </td>
-    </tr>    
+    </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#c9e3e0"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#c9e3e0"></span>
         <code>nhsapp-colour("pale-aqua-green")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -55,7 +55,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#ccdff1"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#ccdff1"></span>
         <code>nhsapp-colour("pale-blue")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -64,7 +64,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#ded6e8"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#ded6e8"></span>
         <code>nhsapp-colour("pale-purple")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -73,7 +73,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#efd3e3"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#efd3e3"></span>
         <code>nhsapp-colour("pale-pink")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -82,7 +82,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#fbe8cc"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#fbe8cc"></span>
         <code>nhsapp-colour("pale-orange")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -103,7 +103,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
   <tbody>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#801810"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#801810"></span>
         <code>nhsapp-colour("dark-red")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -112,7 +112,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
      <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#4c4612"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#4c4612"></span>
         <code>nhsapp-colour("dark-yellow")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -121,7 +121,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#004c23"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#004c23"></span>
         <code>nhsapp-colour("dark-green")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -130,7 +130,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#1e403d"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#1e403d"></span>
         <code>nhsapp-colour("dark-aqua-green")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -139,7 +139,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#00386e"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#00386e"></span>
         <code>nhsapp-colour("dark-blue")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -148,7 +148,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#402463"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#402463"></span>
         <code>nhsapp-colour("dark-purple")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -157,7 +157,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#681645"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#681645"></span>
         <code>nhsapp-colour("dark-pink")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">
@@ -166,7 +166,7 @@ We have extended the [NHS design system colour palette](https://service-manual.n
     </tr>
     <tr class="app-colour-list__row">
       <th class="app-colour-list__column app-colour-list__column--name" scope="row">
-        <span class="app-colour-list__swatch" style="background-color:#5f3800"></span>
+        <span class="app-colour-list__swatch nhsuk-u-margin-right-2" style="background-color:#5f3800"></span>
         <code>nhsapp-colour("dark-orange")</code>
       </th>
       <td class="app-colour-list__column app-colour-list__column--colour">

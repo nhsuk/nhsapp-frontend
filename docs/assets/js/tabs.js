@@ -71,6 +71,10 @@ Tabs.prototype.setupHtml = function () {
     panel.setAttribute('aria-labelledby', this.tabs[i].id)
     panel.classList.add(this.cssHide)
   })
+
+  if (this.container.dataset.openFirst === 'true' && this.tabs[0]) {
+    this.showTab(this.tabs[0])
+  }
 }
 
 Tabs.prototype.onTabClick = function (e) {
