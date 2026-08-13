@@ -1,7 +1,7 @@
 ---
 layout: layouts/pattern.njk
 title: API integration
-description: How to integrate a service with the NHS App by exposing data through an API, allowing the NHS App to present it within native screens
+description: An API-driven integration allows the NHS App to consume data or functionality from your service and present it directly within App-owned screens without loading an external web page.
 backlogID: 450
 order: 3
 childPage: true
@@ -9,15 +9,13 @@ tags:
   - integratingServices
 ---
 
-An API-driven integration allows the NHS App to consume data or functionality from your service and present it directly within App-owned screens without loading an external web page.
-
 This offers the most seamless experience for users. There is no web container, no site header to suppress, and no browser navigation to manage.
 
 ## When to use
 
 Use API-driven integration when:
 
-- your service can expose structured data via a standards-compliant API. For example, FHIR R4.
+- your service can expose structured data via a standards-compliant API – for example, FHIR R4
 - the NHS App team has screens designed and built to consume and display that data
 - you do not need to control the visual presentation or user journeys because these are handled by the NHS App
 - your service's data can be combined with other services to better meet user needs
