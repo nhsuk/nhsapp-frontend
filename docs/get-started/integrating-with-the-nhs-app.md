@@ -12,15 +12,15 @@ Explore the full guidance about [how to integrate with the NHS App](https://digi
 
 ## How NHS App integrations work
 
-When a user navigates to an integrated service within the NHS App, users stay inside the app experience. This connection that allows a service to exist inside the NHS App is called an integration. 
+When a user navigates to an integrated service within the NHS App, users stay inside the app experience. This connection that allows a service to exist inside the NHS App is called an integration.
 
 There are 3 different ways to integrate services into the NHS App:
 
-| Integration type | How it works |
-|---|---|
-| Default browser | Opens in Safari View (iOS) or Chrome Custom Tabs (Android). You do not need to change your web service to use this integration. |
-| Custom web view | Opens your web service making it feel like part of the NHS App. You will need to change how your web service behaves when it is viewed through the NHS. This integration type is used for most services that are in Public Beta or Live. |
-| API-driven | Your service exposes data via an API, and the screens are designed, built and maintained by the NHS App team. This integration type is used for high traffic services such as prescription ordering or viewing appointments. |
+| Integration type | How it works                                                                                                                                                                                                                             |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Default browser  | Opens in Safari View (iOS) or Chrome Custom Tabs (Android). You do not need to change your web service to use this integration.                                                                                                          |
+| Custom web view  | Opens your web service making it feel like part of the NHS App. You will need to change how your web service behaves when it is viewed through the NHS. This integration type is used for most services that are in Public Beta or Live. |
+| API-driven       | Your service exposes data via an API, and the screens are designed, built and maintained by the NHS App team. This integration type is used for high traffic services such as prescription ordering or viewing appointments.             |
 
 Learn more about the ways to [integrate services into the NHS App](/patterns/integrating-services/) for detailed guidance on each type.
 
