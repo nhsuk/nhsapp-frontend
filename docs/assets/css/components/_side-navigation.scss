@@ -1,3 +1,7 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+
 /* ==========================================================================
    #SIDE NAVIGATION
    ========================================================================== */
@@ -53,14 +57,6 @@
     box-shadow: none;
     color: $nhsuk-focus-text-colour;
     position: relative;
-  }
-}
-
-.app-side-navigation__item--child {
-  a,
-  a:link,
-  a:visited {
-    padding-left: nhsuk-spacing(5);
   }
 }
 
