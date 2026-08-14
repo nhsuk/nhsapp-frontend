@@ -200,7 +200,7 @@ $card-border-radius: 8px;
         border-bottom: 0;
         border-radius: 0 0 $card-border-radius $card-border-radius;
         margin-top: -$card-border-radius;
-        padding-top: calc($card-border-radius - $card-border-width);
+        padding-top: $card-border-radius - $card-border-width;
 
         .nhsapp-card__content {
           margin: 0 $card-border-width;

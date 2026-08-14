@@ -21,7 +21,6 @@
 }
 
 .nhsapp-icon--32 {
-  flex: none;
   height: 32px;
   width: 32px;
 
@@ -35,4 +34,8 @@
   display: flex;
   align-items: center;
   gap: nhsuk-spacing(3);
+
+  .nhsapp-icon {
+    flex: none;
+  }
 }
