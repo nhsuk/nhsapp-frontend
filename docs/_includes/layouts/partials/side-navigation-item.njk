@@ -1,6 +1,6 @@
 {% set active = item.url === params.currentPath %}
 
-<li class="app-side-navigation__item{% if active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+<li class="app-side-navigation__item{% if item.data.childPage %} app-side-navigation__item--child{% endif %}{% if active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
   <a href="{{ item.url }}"{% if active %} aria-current="location"{% endif %}>
     {{- item.data.title -}}
   </a>

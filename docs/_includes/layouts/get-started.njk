@@ -38,6 +38,12 @@
           text: 'Production'
         },
         items: collections.production | sort(attribute="data.order")
+      },
+      {
+        heading: {
+          text: 'Integrating with the NHS App'
+        },
+        items: collections.integration | sort(attribute="data.order")
       }
     ]
   }) }}
@@ -52,6 +58,5 @@
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
     {{ title }}
   </h1>
-  <p>{{ description }}</p>
   {{ content | safe }}
 {% endblock %}

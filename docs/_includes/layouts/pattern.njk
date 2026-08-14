@@ -31,13 +31,20 @@
         heading: {
           text: 'Pages'
         },
-        items: collections.page | sort(attribute="data.order")
+        items: collections.page | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Integrating services',
+          classes: 'nhsuk-u-visually-hidden'
+        },
+        items: collections.integratingServices | sort(attribute="data.order")
       },
       {
         heading: {
           text: 'Help users to'
         },
-        items: collections.helpUsers | sort(attribute="data.order")
+        items: collections.helpUsers | sort(attribute="data.title")
       }
     ]
   }) }}
