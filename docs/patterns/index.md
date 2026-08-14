@@ -17,11 +17,8 @@ Before iterating a pattern make sure there is a clear user need to do so.
 
 [Share any changes you make or research findings](/community/share-findings/) in the NHS App design system backlog.
 
-
 ---
 
 ## NHS App patterns review
 
 The NHS App team are currently undertaking an exercise to review the patterns in the NHS App. This review aims to ensure that all patterns are up to date, effective, and meet the needs of users. Updates and outcomes from this review will be shared in due course.
-
-

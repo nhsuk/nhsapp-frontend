@@ -13,8 +13,7 @@ The [NHS App accessibility statement](https://www.nhs.uk/nhs-app/about/privacy-l
 
 ## Get an accessibility audit
 
- You need an external accessibility audit to confirm your service meets WCAG 2.2 AA. This the minimum standard required by law for public sector digital services. An audit helps you identify and fix barriers before your service goes live.
-
+You need an external accessibility audit to confirm your service meets WCAG 2.2 AA. This the minimum standard required by law for public sector digital services. An audit helps you identify and fix barriers before your service goes live.
 
 You can ask questions about accessibility audits including how to arrange one on the [NHS England Accessibility slack channel](https://nhsdigitalcorporate.enterprise.slack.com/archives/C6S0QTW9X)
 
