@@ -1,3 +1,5 @@
+@use "sass:list";
+@use "../../settings/colours" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/helpers/colour" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
@@ -322,8 +324,8 @@ $nhsapp-card-variants: (
 
 // Generate classes for each colour variant
 @each $variant, $colors in $nhsapp-card-variants {
-  $background-colour: nth($colors, 1);
-  $text-colour: nth($colors, 2);
+  $background-colour: list.nth($colors, 1);
+  $text-colour: list.nth($colors, 2);
 
   .nhsapp-cards--#{$variant} .nhsapp-card,
   .nhsapp-card--#{$variant} {
