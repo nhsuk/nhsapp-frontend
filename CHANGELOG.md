@@ -1,5 +1,11 @@
 # NHS App Frontend Changelog
 
+## Unreleased
+
+### 🆕 New features
+
+- Added filled variant of the profile icon - [pull request #554](https://github.com/nhsuk/nhsapp-frontend/pull/554)
+
 ## `v5.0.3` - 26 November 2025
 
 ### Fixes
