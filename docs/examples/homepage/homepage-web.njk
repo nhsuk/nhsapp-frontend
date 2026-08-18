@@ -1,0 +1,103 @@
+---
+layout: layouts/example-full-page-web.njk
+hub: home
+title: Homepage web
+figmaLink: 
+vueLink: 
+---
+
+{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
+{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-margin-bottom-7">
+      <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">
+        <span class="app-greeting">Good morning</span>, 
+        <!-- Inline CSS added to sentence case the users name but need to check with nav team to see if we need to do this or not -->
+        <span style="display: block; text-transform: capitalize; word-wrap: break-word;">mary swanson</span>
+      </h1>
+      <p class="nhsuk-heading-s nhsuk-u-margin-bottom-0">
+        NHS number:
+        <span class="nhsuk-u-font-weight-normal">123 456 7890</span>
+      </p>
+    </div>
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      heading: 'Services',
+      cards: [
+        {
+          title: 'Request repeat prescriptions',
+          href: '#'
+        },
+        {
+          title: 'Check if you need urgent medical help using 111 online',
+          href: '#'
+        }
+      ]
+    }) }}
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      heading: 'Your health',
+      cards: [
+        {
+          title: 'GP health record',
+          href: '#'
+        },
+        {
+          title: 'View and manage prescriptions',
+          href: '#'
+        },
+        {
+          title: 'Upcoming and past appointments',
+          href: '#'
+        }
+      ]
+    }) }}
+
+    {% if data['messages'] > 0 %}
+      {{ nhsappCardGroup({
+        stacked: true,
+        heading: 'Messages',
+        cards: [
+          {
+            title: 'View your messages',
+            href: '#',
+            linkAriaLabel: 'Messages, you have ' + data['messages'] + ' unread messages',
+            badgeLarge: {
+              count: data['messages'],
+              label: 'unread messages',
+              attributes: { 'aria-hidden': 'true' }
+            }
+          }
+        ]
+      }) }}
+    {% else %}
+      {{ nhsappCardGroup({
+        stacked: true,
+        heading: 'Messages',
+        cards: [
+          {
+            title: 'View your messages',
+            href: '#'
+          }
+        ]
+      }) }}
+    {% endif %}
+
+    {{ nhsappCardGroup({
+      stacked: true,
+      heading: 'Account',
+      cards: [
+        {
+          title: 'Manage services for another person',
+          href: '#'
+        }
+      ]
+    }) }}
+
+  </div>
+</div>

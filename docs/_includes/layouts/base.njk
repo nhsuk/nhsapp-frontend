@@ -1,5 +1,7 @@
-{% extends "nhsuk/template-with-imports.njk" %}
+{% extends "nhsuk/template.njk" %}
 
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+{% from 'back-link/macro.njk' import backLink %}
 {% from "icon/macro.njk" import nhsappIcon %}
 
 {% block pageTitle -%}
@@ -34,8 +36,7 @@
         },
         {
           href: '/styles/',
-          text: 'Styles',
-          active: page and page.url and '/styles/' in page.url
+          text: 'Styles'
         },
         {
           href: '/components/',

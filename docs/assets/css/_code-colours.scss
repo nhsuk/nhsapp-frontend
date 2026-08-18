@@ -1,0 +1,46 @@
+// Prism JS colour overrides to make accessible
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #595959;
+}
+
+.token.punctuation {
+  color: #595959;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #558000;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #9a6e3a;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #005d85;
+}
+
+.token.function,
+.token.class-name {
+  color: #d93656;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #a36a00;
+}

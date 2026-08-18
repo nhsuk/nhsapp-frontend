@@ -38,6 +38,12 @@
           text: 'Production'
         },
         items: collections.production | sort(attribute="data.order")
+      },
+      {
+        heading: {
+          text: 'Integrations'
+        },
+        items: collections.integration | sort(attribute="data.order")
       }
     ]
   }) }}
