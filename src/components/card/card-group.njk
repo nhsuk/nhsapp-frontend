@@ -28,6 +28,7 @@
   {% for cardItem in params.cards %}
     {{ nhsappCard({
       title: cardItem.title,
+      titleHtml: cardItem.titleHtml,
       titleClasses: cardItem.titleClasses,
       headingLevel: cardItem.headingLevel,
       href: cardItem.href,
