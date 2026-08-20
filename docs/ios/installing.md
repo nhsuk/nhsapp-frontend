@@ -26,7 +26,7 @@ In the future, these steps will no longer be required once the repository is pub
 
 ## Adding the package
 
-In Xcode: 
+In Xcode:
 
 1. Go to: File → Add Package Dependencies.
 2. Enter the repository URL: https://github.com/NHSDigital/nhsapp-design-system-ios. You'll need to add your personal access token to view it.
