@@ -5,6 +5,7 @@
 ### 🆕 New features
 
 - Added filled variant of the profile icon - [pull request #554](https://github.com/nhsuk/nhsapp-frontend/pull/554)
+- Added `titleHtml` option to the card component, as an alternative to `title` for when HTML content is needed - [issue #560](https://github.com/nhsuk/nhsapp-frontend/issues/560)
 
 ## `v5.0.3` - 26 November 2025
 
