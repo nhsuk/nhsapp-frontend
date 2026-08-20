@@ -11,33 +11,32 @@ To use it, you’ll need to add the package as dependency to your prototype or p
 
 ## Creating a GitHub personal access token
 
-At the moment, because the package is a private repository, you will need to create a GitHub personal access token to be able to access the code.
+At the moment, because the package is a private repository, you'll need to create a GitHub personal access token to be able to access the code.
 
 1. Go to [personal access tokens](https://github.com/settings/personal-access-tokens) on GitHub.
-2. Click 'Generate new token'.
+2. Select **Generate new token**.
 3. Give the token a name – this can be the name of your prototype or anything brief and descriptive.
 4. Set 'resource owner' to NHSDigital.
 5. Set the expiration to 366 days.
-6. Select 'Only select repositories', then search for `nhsapp-design-system-ios` and select that.
-7. Click 'Add permissions' and search for 'Contents' and select that.
+6. Select **Only select repositories**, then search for `nhsapp-design-system-ios` and select that.
+7. Select **Add permissions** and search for 'Contents' and select that.
 8. Generate the token, and then copy it somewhere safe. You will need it in the next step.
 
-In future this will no longer be required once the repository is public
+In the future, these steps will no longer be required once the repository is public.
 
 ## Adding the package
 
-In Xcode, go to: File → Add Package Dependencies
+In Xcode: 
 
-Enter the repository URL (`https://github.com/NHSDigital/nhsapp-design-system-ios`). You will need to add your personal access token to view it.
-
-For 'Dependency Rule', set it to 'Branch' and 'main'. (In future we will switch to versioned releases.) Select 'Add Package'.
-
-In the dialog box, under 'Add to Target' change 'None' to your app name. Then select 'Add Package' again.
+1. Go to: File → Add Package Dependencies.
+2. Enter the repository URL: https://github.com/NHSDigital/nhsapp-design-system-ios. You'll need to add your personal access token to view it.
+3. Set the 'Dependency Rule' to 'Branch' and 'main'. (In future we will switch to versioned releases.) Select **Add Package**.
+4. In the dialog box, under 'Add to Target' change 'None' to your app name. Then select **Add Package** again.
 
 After you've added the package, there's one more thing to check, otherwise your app might crash when you try to run it.
 
-1. Click on your app's target (not the package) in Xcode.
-2. Go to the General tab.
+1. Select your app's target (not the package) in Xcode.
+2. Go to the 'General' tab.
 3. Scroll down to 'Frameworks, Libraries, and Embedded Content'.
 4. Find `NHSDesignSystem` in the list.
 5. Make sure it says 'Embed & Sign' next to it. If it says 'Do Not Embed', change it.
@@ -46,6 +45,6 @@ If you skip this step, your app will still build without any errors – but it w
 
 ## Updating the package
 
-Whenever there are changes made to the swift package, you will need to update the package within your project.
+Whenever there are changes made to the swift package, you'll need to update the package within your project.
 
-To do this, go to File → Packages → Update to Latest Package Versions
+To do this, go to File → Packages → Update to Latest Package Versions.
