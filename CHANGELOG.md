@@ -9,6 +9,8 @@
 
 ## `v5.0.4` - 11 August 2026
 
+### 🆕 New feature
+
 - Badge colour variants — adds a `color` option to the small badge component, supporting `warm-yellow` and `aqua-green` indicator colours. Defaults to `red` - [pull request #549](https://github.com/nhsuk/nhsapp-frontend/pull/549)
 
 ## `v5.0.3` - 26 November 2025
