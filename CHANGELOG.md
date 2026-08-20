@@ -7,6 +7,10 @@
 - Added filled variant of the profile icon - [pull request #554](https://github.com/nhsuk/nhsapp-frontend/pull/554)
 - Added `titleHtml` option to the card component, as an alternative to `title` for when HTML content is needed - [pull request #561](https://github.com/nhsuk/nhsapp-frontend/pull/561)
 
+## `v5.0.4` - 11 August 2026
+
+- Badge colour variants — adds a `color` option to the small badge component, supporting `warm-yellow` and `aqua-green` indicator colours. Defaults to `red` - [pull request #549](https://github.com/nhsuk/nhsapp-frontend/pull/549)
+
 ## `v5.0.3` - 26 November 2025
 
 ### Fixes
