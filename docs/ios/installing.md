@@ -30,7 +30,7 @@ In Xcode, go to: File → Add Package Dependencies
 
 Enter the repository URL (`https://github.com/NHSDigital/nhsapp-design-system-ios`). You will need to add your personal access token to view it.
 
-For 'Dependency Rule', set it to 'Branch' and 'main'. (In future we will switch to versioned releases.) Select 'Add Package'.
+For 'Dependency Rule', set it to 'Up to Next Major Version' with a lower bound of `1.0.0`. This picks up patch and minor updates (1.0.1, 1.1.0, …) automatically while holding back any breaking 2.0.0 release until you're ready. Select 'Add Package'.
 
 In the dialog box, under 'Add to Target' change 'None' to your app name. Then select 'Add Package' again.
 
