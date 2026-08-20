@@ -26,21 +26,21 @@ In future this will no longer be required once the repository is public
 
 ## Adding the package
 
-In Xcode, go to: File → Add Package Dependencies
+In Xcode, go to: **File → Add Package Dependencies**
 
 Enter the repository URL (`https://github.com/NHSDigital/nhsapp-design-system-ios`). You will need to add your personal access token to view it.
 
-For 'Dependency Rule', set it to 'Branch' and 'main'. (In future we will switch to versioned releases.) Select 'Add Package'.
+For 'Dependency Rule', set it to **'Up to Next Major Version'** with a lower bound of **`1.0.0`**. This picks up patch and minor updates (1.0.1, 1.1.0, …) automatically while holding back any breaking 2.0.0 release until you're ready. Select 'Add Package'.
 
 In the dialog box, under 'Add to Target' change 'None' to your app name. Then select 'Add Package' again.
 
 After you've added the package, there's one more thing to check, otherwise your app might crash when you try to run it.
 
 1. Click on your app's target (not the package) in Xcode.
-2. Go to the General tab.
+2. Go to the **General** tab.
 3. Scroll down to 'Frameworks, Libraries, and Embedded Content'.
 4. Find `NHSDesignSystem` in the list.
-5. Make sure it says 'Embed & Sign' next to it. If it says 'Do Not Embed', change it.
+5. Make sure it says **'Embed & Sign'** next to it. If it says 'Do Not Embed', change it.
 
 If you skip this step, your app will still build without any errors – but it will crash as soon as you try to open it on a phone.
 
