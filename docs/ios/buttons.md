@@ -5,20 +5,20 @@ tags:
   - iosComponents
 ---
 
-The button style applies a consistent NHS appearance to a SwiftUI `Button`.
-
-Follow the [NHS design system button guidance](https://service-manual.nhs.uk/design-system/components/buttons) for when to use primary, secondary and warning buttons. The sections below cover how to apply those styles in SwiftUI.
+Buttons are used to help users carry out an action.
 
 <img src="/assets/images/ios/button.png" width="375">
 
 ## How it works
 
-There are 4 presets:
+There are 4 styles:
 
 - [primary](#primary-button)
 - [secondary](#secondary-button)
 - [warning](#warning-button)
 - [primary reverse](#primary-reverse-button)
+
+Follow the [NHS design system button guidance](https://service-manual.nhs.uk/design-system/components/buttons) for when to use primary, secondary and warning buttons.
 
 By default, buttons stretch to fill the width of their container. Use the [fitted modifier](#fitted-width) to size a button to its label instead.
 
@@ -26,7 +26,7 @@ The button scales with Dynamic Type and adapts to Dark Mode. Text wraps onto mul
 
 ## How to use
 
-Apply a preset as a button style:
+Use a standard [SwiftUI Button](https://developer.apple.com/documentation/swiftui/button) and apply NHS styles using the `.buttonStyle()` modifier.
 
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
