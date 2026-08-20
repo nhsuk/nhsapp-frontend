@@ -139,7 +139,7 @@ $card-border-radius: 8px;
   .nhsapp-card {
     @include nhsuk-responsive-margin(4, "bottom");
 
-    &:last-of-type {
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -157,12 +157,12 @@ $card-border-radius: 8px;
         border-bottom: $card-divider-width solid $card-border-colour;
       }
 
-      &:first-of-type {
+      &:first-child {
         border-radius: $card-border-radius $card-border-radius 0 0;
         border-top: $card-border-width solid $card-border-colour;
       }
 
-      &:last-of-type {
+      &:last-child {
         border-bottom: $card-border-width solid $card-border-colour;
         border-radius: 0 0 $card-border-radius $card-border-radius;
 
@@ -171,10 +171,37 @@ $card-border-radius: 8px;
         }
       }
 
-      &:only-of-type {
+      &:only-child {
         border-radius: $card-border-radius; // Full border radius on all corners
         border-top: $card-border-width solid $card-border-colour;
         border-bottom: $card-border-width solid $card-border-colour;
+      }
+    }
+
+    // When the last card is a colour variant, keep the rounded border at the bottom
+    // of the second-last card, and place the coloured card slightly behind it.
+    &:has(.nhsapp-card:last-child[class*="nhsapp-card--pale-"], .nhsapp-card:last-child[class*="nhsapp-card--dark-"]) {
+      .nhsapp-card:nth-last-child(2) {
+        border-bottom: $card-border-width solid $card-border-colour;
+        border-bottom-left-radius: $card-border-radius;
+        border-bottom-right-radius: $card-border-radius;
+        position: relative;
+        z-index: 1;
+
+        .nhsapp-card__container {
+          border-bottom: 0;
+        }
+      }
+
+      .nhsapp-card:last-child {
+        border-bottom: 0;
+        border-radius: 0 0 $card-border-radius $card-border-radius;
+        margin-top: -$card-border-radius;
+        padding-top: $card-border-radius - $card-border-width;
+
+        .nhsapp-card__content {
+          margin: 0 $card-border-width;
+        }
       }
     }
   }
@@ -214,11 +241,12 @@ $card-border-radius: 8px;
 // Colour variant mixin
 @mixin nhsapp-card-link-colour-variation($background-colour, $text-colour) {
   background: $background-colour;
-  border-color: $background-colour;
+  border: 0;
   color: $text-colour;
 
-  &:first-of-type,
-  &:last-of-type {
+  // Keep border: 0; in a stacked card group
+  &:first-child,
+  &:last-child {
     border: 0;
   }
 
