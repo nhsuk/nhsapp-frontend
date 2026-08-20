@@ -37,15 +37,15 @@
         <a href="{{ params.href }}"
            class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
            {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
-          {{ params.title }}
+          {{ params.titleHtml | safe if params.titleHtml else params.title }}
         </a>
       {%- else -%}
         {%- if params.headingLevel -%}
           <h{{ params.headingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">
-            {{ params.title }}
+            {{ params.titleHtml | safe if params.titleHtml else params.title }}
           </h{{ params.headingLevel }}>
         {%- else -%}
-          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.title }}</p>
+          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.titleHtml | safe if params.titleHtml else params.title }}</p>
         {%- endif -%}
       {%- endif -%}
 
