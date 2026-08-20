@@ -1,6 +1,6 @@
 ---
 layout: layouts/ios.njk
-title: Button
+title: Buttons
 tags:
   - iosComponents
 ---
