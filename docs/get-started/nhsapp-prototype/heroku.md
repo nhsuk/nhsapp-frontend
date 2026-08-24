@@ -18,7 +18,7 @@ You can host your NHS App prototype using Heroku and connect it directly to your
 7. Choose a branch (usually `main`).
 8. Enable **Automatic deploys** to publish changes every time you push to GitHub.
 9. Select **Deploy Branch**.
-10. In **Settings > Config Vars > Reveal Config Vars** you need to set a password - [see NHS prototype kit guidance for setting a password](https://prototype-kit.service-manual.nhs.uk/how-tos/publish-your-prototype-online).
+10. In **Settings > Config Vars > Reveal Config Vars** you need to set a password - [see NHS prototype kit guidance for setting a password](https://prototype-kit.service-manual.nhs.uk/guides/publish-your-prototype-online/).
 11. Select **Open app** to view your prototype.
 
 <hr class="nhsuk-section-break nhsuk-section-break--xl nhsuk-section-break--visible app-section-break--width-4">

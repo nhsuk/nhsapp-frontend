@@ -1,49 +1,59 @@
 ---
 layout: layouts/pattern.njk
 title: Sub-hub pages
+description: Sub-hubs are the second layer of menu pages in the NHS App. They are positioned one level down from hub pages.
 backlogID: 249
+order: 3
+tags:
+  - page
 ---
 
-Sub-hubs are lower-level menu pages. Users can access them through [hub pages](/patterns/hub-page/).
+Sub-hubs group closely related series of links. They reveal information to users in a way that lets them decide where to go next, without being overwhelmed by too many options or distracted by irrelevant options on hub pages.
 
-Whereas hub pages represent broader groupings of information, sub-hubs contain more closely connected groups of links. They are positioned lower down in the [information architecture](/get-started/information-architecture/).
+## Sub-hub page structure
 
-{% example "sub-hub-pages/care-plans.njk" %}
+Sub-hubs have a relatively consistent structure to establish rhythm and familiarity as users navigate the NHS App.
 
-## Structure of sub-hubs
+<img src="/assets/images/sub-hub-pages-image1.png" alt="The structure of a sub-hub page in the NHS App" style="border: none; background-color: transparent;">
 
-### Back link
+### Back button
 
-Always include a back link at the top of sub-hubs. This allows users to return to the hub page they came from.
+The back button on a sub-hub takes the user back to the relevant hub.
 
-### Page heading
+### Main heading
 
-This is the name of the sub-hub.
+The main heading should describe the type of information grouped within the sub-hub. It should match the label on the preceding card link. Some sub-hub main headings may be supported by a short description to provide more information to the user.
 
-You can use a brief description to give users more context about a sub-hub. We don’t include full stops at the end of this description, following a similar principle to the [NHS service manual guidance on cards](https://service-manual.nhs.uk/content/formatting-and-punctuation#full-stops).
+### Sub-headings
+
+Sub-headings provide additional structure to sub-hubs by creating meaningful groups of card links which help with navigation. In the prescriptions, appointments, test results and documents sub-hubs, two sub-headings are consistently used:
+
+- **GP surgery** – options relating to primary care
+- **Hospital** – options relating to secondary care
+
+Research showed that users' mental models of their health information and tasks relating to healthcare are often organised by care setting or type. Structuring the sub-hubs to reflect this helps users find what they are looking for. Sometime, due to the way data is shared between GP surgeries and hospitals, certain health information can blend between the two. This is an aspect of the experience we are monitoring to ensure users can always find what they need.
+
+Sub-headings should also be used if a sub-hub has more than 5 card links. Research shows that users can be overwhelmed by long lists of card links on pages, which clear sub-sections can alleviate.
 
 ### Card links
 
-[Card links](/components/card-links/) on a sub-hub should lead directly into a specific service or feature.
+[Card links](/docs/components/card-links.md) on sub-hub pages can take users to deeper layers of menu pages or the start of services and other journeys. Some card link labels in sub-hubs or deeper menu pages may be supported by a short description, if a user need for one has been uncovered.
 
-Do not create further menu pages that sit one level below a sub-hub. Research shows it can be frustrating for users if they need to navigate through multiple pages to find what they are looking for.
+## Sub-hubs in the app
 
-Use headings to break up card links into themes. It helps users to scan the information on the page more easily and reduces cognitive load. Research shows that people can be overwhelmed by long lists on NHS App pages.
+There are currently 8 sub-hubs in the NHS App:
 
-Do not list more than 6 card links in a row without using a section heading.
+- Prescriptions
+- Appointments
+- Test results
+- Vaccinations
+- Health conditions
+- Documents
+- Manage health services for others (proxy access)
+- Health choices
 
-## How to use sub-hubs
+Some sub-hubs, such as test-results and health conditions, will present differently to users depending on their GP surgery's IT supplier. For example some users will see Allergoes and adverse reactions as a sub-hub they can access from the home screen in place of the Health conditions sub-hub.
 
-Use a sub-hub when you have evidence that grouping several links as a distinct category, one level below a hub page, would be helpful for users.
+## Research
 
-Before adding a new sub-hub, explore whether you could position the links on the hub page under a section heading instead.
-
-## Examples on the NHS App
-
-### Appointments
-
-{% example "sub-hub-pages/appointments.njk" %}
-
-### Prescriptions
-
-{% example "sub-hub-pages/prescriptions.njk" %}
+In our research, people were able to use sub-hubs to complete tasks and they understood where they were in the app. Some users were not aware that they could scroll to view the bottom of the sub-hub pages. However, this may have been influenced by our testing with a prototype rather than users' own devices.
