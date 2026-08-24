@@ -68,7 +68,7 @@ Keep the content short and easy to scan. Test with users to check the card gives
 
 ### Footers on card links
 
-You can use a footer to separate related content inside a card link.
+You can stack a coloured card link below a complex card to separate related content whilst keeping the overall card easy to scan.
 
 {% example "cards/card-link-with-footer.njk" %}
 

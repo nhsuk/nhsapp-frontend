@@ -1,6 +1,7 @@
 @use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/helpers/colour" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
 
 .nhsapp-icon {
   fill: $nhsuk-link-colour; // Set default icon colour to NHS blue
@@ -15,6 +16,10 @@
   fill: nhsuk-colour("black");
 }
 
+.nhsapp-icon--text-colour {
+  fill: currentColor;
+}
+
 .nhsapp-icon--32 {
   height: 32px;
   width: 32px;
@@ -22,5 +27,15 @@
   @include nhsuk-media-query($until: tablet) {
     height: 24px;
     width: 24px;
+  }
+}
+
+.nhsapp-icon-text {
+  display: flex;
+  align-items: center;
+  gap: nhsuk-spacing(3);
+
+  .nhsapp-icon {
+    flex: none;
   }
 }
