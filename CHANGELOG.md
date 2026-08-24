@@ -1,6 +1,6 @@
 # NHS App Frontend Changelog
 
-## Unreleased
+## `v5.1.0` - 24 August 2026
 
 ### 🆕 New features
 
@@ -8,6 +8,8 @@
 - Added `titleHtml` option to the card component, as an alternative to `title` for when HTML content is needed - [pull request #561](https://github.com/nhsuk/nhsapp-frontend/pull/561)
 
 ## `v5.0.4` - 11 August 2026
+
+### 🆕 New feature
 
 - Badge colour variants — adds a `color` option to the small badge component, supporting `warm-yellow` and `aqua-green` indicator colours. Defaults to `red` - [pull request #549](https://github.com/nhsuk/nhsapp-frontend/pull/549)
 
