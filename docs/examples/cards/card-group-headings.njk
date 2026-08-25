@@ -6,39 +6,39 @@ vueLink:
 arguments: card-group
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
-{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: 'Your GP services',
+  heading: "Your GP services",
   cards: [
     {
-      title: 'Request repeat prescriptions',
-      href: '#'
+      title: "Request repeat prescriptions",
+      href: "#"
     },
     {
-      title: 'Contact your GP surgery for a document or update',
-      href: '#'
+      title: "Contact your GP surgery for a document or update",
+      href: "#"
     },
     {
-      title: 'Check for available GP appointments',
-      href: '#'
+      title: "Check for available GP appointments",
+      href: "#"
     }
   ]
 }) }}
 
 {{ nhsappCardGroup({
   stacked: true,
-  heading: 'Other NHS services',
+  heading: "Other NHS services",
   cards: [
     {
-      title: 'Book',
-      href: '#'
+      title: "Book",
+      href: "#"
     },
     {
-      title: 'Request prescriptions',
-      href: '#'
+      title: "Request prescriptions",
+      href: "#"
     }
   ]
 }) }}

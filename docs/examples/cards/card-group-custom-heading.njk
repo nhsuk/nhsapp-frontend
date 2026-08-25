@@ -6,8 +6,8 @@ vueLink:
 arguments: card-group
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
-{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
 {{ nhsappCardGroup({
   stacked: true,
@@ -17,12 +17,12 @@ arguments: card-group
                 </div>',
   cards: [
     {
-      title: 'Request repeat prescriptions',
-      href: '#'
+      title: "Request repeat prescriptions",
+      href: "#"
     },
     {
-      title: 'Check if you need urgent medical help using 111 online',
-      href: '#'
+      title: "Check if you need urgent medical help using 111 online",
+      href: "#"
     }
   ]
 }) }}

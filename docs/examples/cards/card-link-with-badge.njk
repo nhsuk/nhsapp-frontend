@@ -6,16 +6,16 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
 arguments: card
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
 {{ nhsappCard({
-  title: 'Hospital appointments',
-  href: '#',
-  linkAriaLabel: 'Hospital appointments, you have 1 new notification',
+  title: "Hospital appointments",
+  href: "#",
+  linkAriaLabel: "Hospital appointments, you have 1 new notification",
   badgeLarge: {
     count: 1,
     attributes: { 
-      'aria-hidden': 'true' 
+      "aria-hidden": "true" 
     }
   }
 }) }}
