@@ -23,3 +23,9 @@ Before you start, read [Integrating with the NHS App](/get-started/integrating-w
 | [API integration](/patterns/integrating-services/api-integrations/)                     | Services that can expose structured data via a compliant API, allowing the NHS App to display it in native screens |
 
 Work with the NHS App team to confirm the right integration type for your service before you begin adapting your content or build.
+
+<div style="overflow: hidden; margin-top: 48px; margin-bottom: 40px; border-radius: 8px; max-width: 800px;">
+  <video autoplay loop muted playsinline style="width: 100%; display: block; margin-top: -16px;">
+    <source src="/assets/videos/integration-types-overview.mp4" type="video/mp4">
+  </video>
+</div>

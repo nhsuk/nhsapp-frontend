@@ -89,6 +89,9 @@ export default function (eleventyConfig) {
   // Add images to docs
   eleventyConfig.addPassthroughCopy('docs/assets/images')
 
+  // Add videos to docs
+  eleventyConfig.addPassthroughCopy('docs/assets/videos')
+
   // Add NHSUK frontend JS/components
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
