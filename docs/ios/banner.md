@@ -154,4 +154,4 @@ When choosing colours, check that the accent colour has enough contrast against 
 
 ## Research
 
-This component is not yet being used by the live NHS App.
+These toolbar items are not yet being used by the live NHS App, but several rounds of research have been done on them.
