@@ -8,8 +8,8 @@ figmaLink:
 vueLink: 
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
-{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
@@ -21,26 +21,26 @@ vueLink:
       stacked: true,
       cards: [
         {
-          title: 'GP surgery appointments',
-          href: '#'
+          title: "GP surgery appointments",
+          href: "#"
         },
         {
-          title: 'Referrals',
-          href: '#'
+          title: "Referrals",
+          href: "#"
         },
         {
-          title: 'Hospital appointments',
-          href: '#',
-          linkAriaLabel: 'Hospital appointments, you have 1 new notification',
+          title: "Hospital appointments",
+          href: "#",
+          linkAriaLabel: "Hospital appointments, you have 1 new notification",
           badgeLarge: {
             count: 1,
-            label: 'notification',
-            attributes: { 'aria-hidden': 'true' }
+            label: "notification",
+            attributes: { "aria-hidden": "true" }
           }
         },
         {
-          title: 'Waiting list',
-          href: '#'
+          title: "Waiting list",
+          href: "#"
         }
       ]
     }) }}

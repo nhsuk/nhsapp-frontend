@@ -7,7 +7,7 @@ figmaLink:
 vueLink: 
 ---
 
-{% from 'button/macro.njk' import button %}
+{% from "button/macro.njk" import button %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
@@ -16,13 +16,13 @@ vueLink:
 
     <p>Contact your GP surgery directly if you need to book or change an appointment now.</p>
 
-    {% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+    {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
     {{ nhsappCard({
-      title: 'Ask about a health problem',
-      href: '#',
-      description: 'Provided using eConsult',
-      classes: 'nhsapp-card--secondary'
+      title: "Ask about a health problem",
+      href: "#",
+      description: "Provided using eConsult",
+      classes: "nhsapp-card--secondary"
     }) }}
 
     <h2 class="nhsuk-heading-m">For urgent medical advice</h2>
