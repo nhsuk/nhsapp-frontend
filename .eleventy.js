@@ -6,11 +6,8 @@ import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import markdownIt from 'markdown-it'
 import anchor from 'markdown-it-anchor'
 import markdownItAttrs from 'markdown-it-attrs'
-import swift from 'highlight.js/lib/languages/swift'
-import { components, highlighter } from 'nhsuk-frontend/lib'
+import { components } from 'nhsuk-frontend/lib'
 import { highlight } from 'nhsuk-frontend/lib/nunjucks/filters/highlight.mjs'
-
-highlighter.registerLanguage('swift', swift)
 
 import matter from 'gray-matter'
 import prettier from 'prettier'
