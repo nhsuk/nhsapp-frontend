@@ -1,6 +1,6 @@
 import path from 'path'
 import nunjucks from 'nunjucks'
-import * as sass from 'sass'
+import * as sass from 'sass-embedded'
 import fs from 'fs-extra'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 import markdownIt from 'markdown-it'

@@ -1,5 +1,5 @@
 import gulp from 'gulp'
-import * as dartSass from 'sass'
+import * as dartSass from 'sass-embedded'
 import gulpSass from 'gulp-sass'
 import gulpClean from 'gulp-clean'
 import zip from 'gulp-zip'
@@ -22,7 +22,7 @@ function compileCSS() {
     .src(['src/all.scss'], { sourcemaps: true })
     .pipe(
       sass({
-        includePaths: ['node_modules', 'node_modules/nhsuk-frontend/dist'],
+        loadPaths: ['node_modules', 'node_modules/nhsuk-frontend/dist'],
         // Enable source maps so line numbers map back to source during development
         sourceMap: true,
         sourceMapIncludeSources: true
