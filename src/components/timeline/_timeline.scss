@@ -1,7 +1,6 @@
-@use "nhsuk-frontend/dist/nhsuk/core/helpers/colour" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/settings" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/helpers" as *;
 
 $timeline-badge-size-mobile: 16px;
 $timeline-badge-small-size-mobile: 12px;
