@@ -31,14 +31,7 @@
         heading: {
           text: 'Pages'
         },
-        items: collections.page | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Integrating services',
-          classes: 'nhsuk-u-visually-hidden'
-        },
-        items: collections.integratingServices | sort(attribute="data.order")
+        items: collections.page | sort(attribute="data.title") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/")
       },
       {
         heading: {
@@ -51,7 +44,9 @@
 {% endset %}
 
 {% block content %}
-  {% if tags and "page" in tags %}
+  {% if childPage %}
+    <span class="nhsuk-caption-xl">Integrating services into the NHS App</span>
+  {% elif tags and "page" in tags %}
     <span class="nhsuk-caption-xl">Pages</span>
   {% elif tags and "helpUsers" in tags %}
     <span class="nhsuk-caption-xl">Help users to</span>
