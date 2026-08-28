@@ -58,7 +58,7 @@ The back button will appear in the toolbar at the top left automatically when us
 The close button should be added to most screens presented as a modal, allowing the user to return to the screen beneath it. Do not use it when the user has reached the end of a journey - use the 'done' button instead.
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option              | Description                                                                             |
 | ------------------- | --------------------------------------------------------------------------------------- |
@@ -90,7 +90,7 @@ struct BookAppointmentView: View {
 
 The 'done' button is added to any screens presented as modal, when the user has reached the end of a journey and has completed a task. For example, after booking an appointment.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option   | Description                                    |
 | -------- | ---------------------------------------------- |
@@ -123,7 +123,7 @@ The filter button can be added to list views, enabling a user to bring up option
 
 It is presented with both a filter icon and the word 'Filter', as research shows that not all users understand the icon. When filters are active, the button changes to using blue, bold text, and the number of active filters is shown in brackets.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option              | Description                                    |
 | ------------------- | ---------------------------------------------- |
@@ -153,7 +153,7 @@ struct MessagesView: View {
 
 The flag button can be used on detail views for items which the user can flag, to mark the item.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option        | Description                                          |
 | ------------- | ---------------------------------------------------- |
@@ -187,7 +187,7 @@ struct MessageView: View {
 
 The messages button is used on the home screen only, and serves as both an indicator of any unread messages, and a way to navigate to the messages section.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option        | Description                                    |
 | ------------- | ---------------------------------------------- |
@@ -240,7 +240,7 @@ struct HomeView: View {
 
 Use an icon toolbar button when you are confident through research that most users can understand the icon.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option              | Description                                                                            |
 | ------------------- | -------------------------------------------------------------------------------------- |
@@ -276,7 +276,7 @@ struct MessageView: View {
 
 If you need to add a toolbar button which cannot be reliably identified using an icon, use a text toolbar button instead. This will use the NHS font.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option               | Description                                                                            |
 | -------------------- | -------------------------------------------------------------------------------------- |
