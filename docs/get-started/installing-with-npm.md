@@ -36,13 +36,13 @@ Configure Sass to resolve dependencies from `node_modules`, rather than adding t
 1. To import all components, add the below to your Sass file:
 
 ```scss
-@import "nhsapp-frontend/dist/nhsapp";
+@use "nhsapp-frontend/dist/nhsapp";
 ```
 
 2. To import an individual component (for example a button), add the below to your Sass file:
 
 ```scss
-@import "nhsapp-frontend/dist/nhsapp/components/button";
+@use "nhsapp-frontend/dist/nhsapp/components/button";
 ```
 
 ## Importing assets
