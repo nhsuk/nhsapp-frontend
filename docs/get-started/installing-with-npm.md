@@ -31,16 +31,18 @@ After you have installed NHS App frontend the `nhsapp-frontend` package will app
 
 You need to import the NHS App frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override NHS App frontend with your own styles.
 
+Configure Sass to resolve dependencies from `node_modules`, rather than adding the project working directory to `loadPaths`. For example, use `--load-path=node_modules` with the Sass CLI.
+
 1. To import all components, add the below to your Sass file:
 
-```CSS
-@import "node_modules/nhsapp-frontend/dist/nhsapp/all";
+```scss
+@import "nhsapp-frontend/dist/nhsapp";
 ```
 
 2. To import an individual component (for example a button), add the below to your Sass file:
 
-```CSS
-@import "node_modules/nhsapp-frontend/dist/nhsapp/components/button/button";
+```scss
+@import "nhsapp-frontend/dist/nhsapp/components/button";
 ```
 
 ## Importing assets

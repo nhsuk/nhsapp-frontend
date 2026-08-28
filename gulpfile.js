@@ -73,7 +73,16 @@ function copyAssets() {
  * Copy nunjucks and source scss files into a namespaced directory
  */
 function copySource() {
-  return gulp.src('src/**/*').pipe(gulp.dest('dist/nhsapp'))
+  return gulp
+    .src(['src/**/*', '!src/_nhsapp.scss'])
+    .pipe(gulp.dest('dist/nhsapp'))
+}
+
+/**
+ * Copy the Sass resolver shim alongside the compiled CSS
+ */
+function copySassEntrypoint() {
+  return gulp.src('src/_nhsapp.scss').pipe(gulp.dest('dist'))
 }
 
 /* Recompile CSS when there are any changes */
@@ -101,7 +110,8 @@ const bundle = gulp.series([
   compileCSS,
   minifyCSS,
   copyAssets,
-  copySource
+  copySource,
+  copySassEntrypoint
 ])
 
 const release = gulp.series([
@@ -109,6 +119,7 @@ const release = gulp.series([
   compileCSS,
   minifyCSS,
   copySource,
+  copySassEntrypoint,
   createZip
 ])
 
