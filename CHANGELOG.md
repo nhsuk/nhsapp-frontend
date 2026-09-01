@@ -1,5 +1,11 @@
 # NHS App Frontend Changelog
 
+## Unreleased
+
+### 🆕 New features
+
+- Added package-level Sass entrypoints for importing all NHS App frontend styles or individual components using Sass `@use` syntax - [pull request #576](https://github.com/nhsuk/nhsapp-frontend/pull/576)
+
 ## `v5.2.0` - 25 August 2026
 
 ### 🆕 New features

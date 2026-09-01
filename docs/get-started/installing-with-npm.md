@@ -11,6 +11,8 @@ To use NHS App frontend with node package manager (npm) you must:
 
 2. Create a [package.json file](https://docs.npmjs.com/files/package.json) if you don’t already have one. You can create a default `package.json` file by running `npm init` from the root of your application.
 
+3. Use Dart Sass 1.74.1 or later to compile styles. The documented `@use` entrypoints are not supported by Node Sass or LibSass.
+
 ## Installation
 
 To install, run:
@@ -43,6 +45,13 @@ Configure Sass to resolve dependencies from `node_modules`, rather than adding t
 
 ```scss
 @use "nhsapp-frontend/dist/nhsapp/components/button";
+```
+
+Existing projects can keep the legacy Dart Sass import while migrating. New projects should use `@use`.
+
+```scss
+// Legacy Dart Sass import, retained for compatibility
+@import "nhsapp-frontend/dist/nhsapp/all";
 ```
 
 ## Importing assets

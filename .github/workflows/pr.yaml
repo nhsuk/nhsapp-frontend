@@ -12,3 +12,21 @@ jobs:
           node-version-file: .nvmrc
       - run: npm ci
       - run: npm run lint
+
+  sass-entrypoints:
+    name: Sass entrypoints (${{ matrix.sass-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        sass-version: [locked, '1.74.1']
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+      - run: npm ci
+      - name: Install minimum supported Dart Sass
+        if: matrix.sass-version != 'locked'
+        run: npm install --no-save --package-lock=false --ignore-scripts "sass@${{ matrix.sass-version }}"
+      - run: npm run test:sass-entrypoints

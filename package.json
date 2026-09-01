@@ -17,6 +17,7 @@
     "docs:build": "npm run css:build && npx @11ty/eleventy",
     "css:watch": "gulp",
     "css:build": "gulp compileCSS",
+    "test:sass-entrypoints": "node scripts/test-sass-entrypoints.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
