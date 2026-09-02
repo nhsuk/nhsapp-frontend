@@ -1,7 +1,22 @@
+{% set hasChildren = item.children and item.children.length %}
 {% set active = item.url === params.currentPath %}
+{% set sectionActive = active or (hasChildren and params.currentPath.startsWith(item.url)) %}
+{% set liActive = sectionActive if hasChildren else active %}
 
-<li class="app-side-navigation__item{% if active %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+<li class="app-side-navigation__item{% if item.data.childPage %} app-side-navigation__item--child{% endif %}{% if hasChildren %} app-side-navigation__item--parent{% endif %}{% if liActive %} app-side-navigation__item--active{% endif %}"{% for attribute, value in item.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
   <a href="{{ item.url }}"{% if active %} aria-current="location"{% endif %}>
     {{- item.data.title -}}
   </a>
+  {%- if hasChildren and sectionActive %}
+    <ul class="app-side-navigation__list app-side-navigation__list--nested">
+      {%- for child in item.children %}
+        {% set childActive = child.url === params.currentPath %}
+        <li class="app-side-navigation__item app-side-navigation__item--child{% if childActive %} app-side-navigation__item--active{% endif %}">
+          <a href="{{ child.url }}"{% if childActive %} aria-current="location"{% endif %}>
+            {{- child.data.title -}}
+          </a>
+        </li>
+      {% endfor -%}
+    </ul>
+  {% endif -%}
 </li>

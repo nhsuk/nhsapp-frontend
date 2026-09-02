@@ -1,5 +1,20 @@
 # NHS App Frontend Changelog
 
+## `v5.2.0` - 25 August 2026
+
+### 🆕 New features
+
+- Redesigned card link footer - footers now use a stacked card group with a coloured variant card instead of an inline footer section - [pull request #551](https://github.com/nhsuk/nhsapp-frontend/pull/551)
+  - The current footer layout will be removed in the next major release.
+- Added `classes` parameter to the `nhsappIcon` macro, allowing custom classes to be passed to icon SVGs - [pull request #551](https://github.com/nhsuk/nhsapp-frontend/pull/551)
+- Added `.nhsapp-icon-text` layout utility for aligning icons alongside text content - [pull request #551](https://github.com/nhsuk/nhsapp-frontend/pull/551)
+- Added `.nhsapp-icon--text-colour` modifier to set icon fill to `currentColor` - [pull request #551](https://github.com/nhsuk/nhsapp-frontend/pull/551)
+- Added `.nhsapp-badge-small--as-icon` modifier to display a small badge indicator as an inline icon - [pull request #551](https://github.com/nhsuk/nhsapp-frontend/pull/551)
+
+### 🔧 Fixes
+
+- Changed card group child selectors from `:first-of-type` / `:last-of-type` / `:only-of-type` to `:first-child` / `:last-child` / `:only-child` to fix incorrect border rendering when cards are mixed with non-card siblings - [pull request #551](https://github.com/nhsuk/nhsapp-frontend/pull/551)
+
 ## `v5.1.0` - 24 August 2026
 
 ### 🆕 New features

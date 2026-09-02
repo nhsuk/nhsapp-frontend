@@ -6,23 +6,23 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
 arguments: card-group
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
-{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
 
 {{ nhsappCardGroup({
   stacked: true,
   cards: [
     {
-      title: 'GP health record',
-      href: '#'
+      title: "GP health record",
+      href: "#"
     },
     {
-      title: 'View and manage prescriptions',
-      href: '#'
+      title: "View and manage prescriptions",
+      href: "#"
     },
     {
-      title: 'Upcoming and past appointments',
-      href: '#'
+      title: "Upcoming and past appointments",
+      href: "#"
     }
   ]
 }) }}

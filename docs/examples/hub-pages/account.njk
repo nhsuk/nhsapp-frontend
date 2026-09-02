@@ -7,9 +7,9 @@ figmaLink:
 vueLink: 
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
-{% from 'nhsapp/components/card/macro.njk' import nhsappCard %}
-{% from 'button/macro.njk' import button %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+{% from "button/macro.njk" import button %}
 
 <div class='nhsuk-grid-row'>
   <div class='nhsuk-grid-column-full'>
@@ -20,23 +20,23 @@ vueLink:
       stacked: true,
       cards: [
         {
-          title: 'Manage services for another person',
-          href: '#'
+          title: "Manage services for another person",
+          href: "#"
         },
         {
-          title: 'Settings',
-          href: '#'
+          title: "Settings",
+          href: "#"
         },
         {
-          title: 'Help and support',
-          href: '#'
+          title: "Help and support",
+          href: "#"
         }
       ]
     }) }}
 
     {{ button({
-      text: 'Log out',
-      classes: 'nhsuk-button--secondary nhsapp-button'
+      text: "Log out",
+      classes: "nhsuk-button--secondary nhsapp-button"
     }) }}
 
   </div>

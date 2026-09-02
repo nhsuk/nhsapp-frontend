@@ -118,6 +118,21 @@ export default function (eleventyConfig) {
     }
   })
 
+  // Attach a nested "children" list onto the collection item whose url matches
+  // parentUrl, so the side navigation can render it as a true nested sub-list
+  // (e.g. the 3 integration types nested under the "Integrating services" page).
+  eleventyConfig.addFilter(
+    'withNestedItems',
+    function (items, children, parentUrl) {
+      return items.map((item) => {
+        if (item.url === parentUrl) {
+          return { ...item, children }
+        }
+        return item
+      })
+    }
+  )
+
   // Add GitHub URL filter
   eleventyConfig.addFilter('toGitHubUrl', function (path) {
     // Remove leading './' if present

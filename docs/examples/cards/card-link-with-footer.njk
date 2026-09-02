@@ -6,12 +6,12 @@ vueLink: https://nhsappvuecomponentlibraryv1.nonlive.nhsapp.service.nhs.uk/?path
 arguments: card
 ---
 
-{% from 'nhsapp/components/card/macro.njk' import nhsappCardGroup %}
-{% from 'icon/macro.njk' import nhsappIcon %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "icon/macro.njk" import nhsappIcon %}
 
 {% set footerDescriptionHtml %}
   <div class="nhsapp-icon-text">
-    {{ nhsappIcon('clock', 'nhsapp-icon--text-colour nhsapp-icon--32') }}
+    {{ nhsappIcon("clock", "nhsapp-icon--text-colour nhsapp-icon--32") }}
     <div>
       <p class="nhsuk-u-font-weight-bold nhsuk-body-m nhsuk-u-margin-bottom-0">Long stay</p>
       <p class="nhsuk-body-s">Plan to stay between 2 to 8 hours</p>
@@ -21,14 +21,14 @@ arguments: card
 
 {{ nhsappCardGroup({
   stacked: true,
-  classes: '',
+  classes: "",
   isListItem: false,
   cards: [
     {
-      title: 'Orthopaedic appointment',
-      href: '#',
-      titleClasses: 'nhsuk-u-font-size-22',
-      linkAriaLabel: 'Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital',
+      title: "Orthopaedic appointment",
+      href: "#",
+      titleClasses: "nhsuk-u-font-size-22",
+      linkAriaLabel: "Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital",
       descriptionHtml: '
         <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 at 9:40am</p>
         <p aria-hidden="true" class="nhsuk-u-margin-bottom-3">The Willows, Croydon University Hospital</p>
@@ -42,7 +42,7 @@ arguments: card
       '
     },
     {
-      classes: 'nhsapp-card--pale-blue',
+      classes: "nhsapp-card--pale-blue",
       descriptionHtml: footerDescriptionHtml
     }
   ]
