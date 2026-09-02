@@ -39,9 +39,9 @@ Affirmative buttons, which confirm the user wants to go ahead with their origina
 
 Alerts and variations of their content have been included in several research rounds.
 
-For alerts shown on leaving an overlay, some users were worried the whole app would close when we tested the title "Exit this service?" with the button text "Exit". Understanding about what would happen next was improved when we tested:
+For alerts shown on leaving an overlay, some users expected the whole app would close when we tested the title "Exit this service?" with the button text "Exit". Understanding about what would happen next was improved when we tested:
 
 - a generic alternative that could be used for any journey ("Leave this area?" with the button text "Leave")
-- alternatives that were specific to particular journeys (including "Close this request" with the button "Close" for the request a repeat prescription journey)
+- alternatives that were specific to particular journeys ("Close this request?" with the button "Close" for the request a repeat prescription journey, and "Close this booking?" for GP appointments)
 
-The difference in user understanding between these generic and specific options was marginal, but there was a slight improvement when the content was specific.
+The difference in user understanding and expected behaviour between these generic and specific options was marginal, but there was a slight improvement when the content was specific. The vast majority of users no longer expected the app to close whether the content was generic or specific.
