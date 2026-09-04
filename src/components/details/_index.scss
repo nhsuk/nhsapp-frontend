@@ -1,0 +1,31 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
+
+$details-border-radius: nhsuk-spacing(2);
+
+.nhsapp-expander {
+  overflow: hidden;
+  border-radius: $details-border-radius;
+
+  .nhsuk-details__summary {
+    border-radius: $details-border-radius $details-border-radius 0 0;
+  }
+
+  .nhsuk-details__text {
+    border-radius: 0 0 $details-border-radius $details-border-radius;
+  }
+
+  &[open] {
+    .nhsuk-details__summary {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .nhsuk-details__text {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+
+
