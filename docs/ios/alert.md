@@ -7,15 +7,17 @@ tags:
 
 Use alerts to interrupt users with important information, to check how they want to proceed.
 
+<img src="/assets/images/ios/alert-log-out.png" alt="Screenshot a popup with the text 'For security reasons, we'll log you out fo the NHS App in 1 minute' and a single button labelled 'Stay logged in'">
+
 ## When to use
 
 Use alerts when there is critical information users need to know before continuing. This includes when users:
 
-- exit an overlay, to make sure they know that details they’ve entered will not be saved
-- remove a message, to check they really want to go ahead
 - approach the inactivity time-out limit for the app, to check if they want to stay logged in
 
 ## When not to use
+
+Do not use alerts to confirm actions that users have made from a [toolbar](/ios/toolbar) button. Instead, use the `confirmationTitle` option to present an action sheet.
 
 Do not use alerts for common actions. Use them sparingly. The more often users encounter alerts, the less likely they are to pay attention to them. Alerts are intentionally disruptive, so using them too frequently will also make journeys harder and longer to complete.
 
@@ -33,7 +35,17 @@ Use one or two lines of informative text if you need to expand on the title with
 
 Button text should be one or two words long, and should use a verb, or a verb phrase. Always use “Cancel” for a button that cancels an alert’s action, in keeping with [Apple’s alert design guidance](https://developer.apple.com/design/human-interface-guidelines/alerts).
 
-Affirmative buttons, which confirm the user wants to go ahead with their original choice, should always be placed on the right-hand side. Cancelling buttons, which dismiss the alert and stay on the current screen, should be placed on the left-hand side.
+Affirmative buttons, which confirm the user wants to go ahead, should always be placed on the right-hand side. Cancelling buttons, which dismiss the alert and stay on the current screen, should be placed on the left-hand side.
+
+Use the standard SwiftUI `.alert` function to present alerts:
+
+```swift { .nhsuk-code--button }
+
+.alert("For security reasons, we'll log you out of the NHS App in 1 minute.", isPresented: $showLogoutAlert) {
+    Button("Log out", role: .destructive) { }
+    Button("Stay logged in", role: .cancel) { }
+}
+```
 
 ## Research
 
