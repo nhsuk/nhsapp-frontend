@@ -57,13 +57,16 @@ The back button will appear in the toolbar at the top left automatically when us
 
 The close button should be added to most screens presented as a modal, allowing the user to return to the screen beneath it. Do not use it when the user has reached the end of a journey - use the 'done' button instead.
 
+If the closing the screen will cause the user to lose some data, for example if they are part way through booking an appointment, you can set a `confirmationTitle`, which will present a confirmation dialog shown before the screen is closed. Users can then tap elsewhere to cancel the closing.
+
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
 
 | Option              | Description                                                                             |
 | ------------------- | --------------------------------------------------------------------------------------- |
 | `accessibilityHint` | Optional. A hint for VoiceOver users about what will happen when the button is pressed. |
-| `action`            | The closure called when the button is pressed.                                          |
+| `action`            | The closure called when the button is pressed. |
+| `confirmationTitle`   | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of dismissing immediately. |
 
 {% endcall %}
 
@@ -75,7 +78,10 @@ struct BookAppointmentView: View {
                 // content
             }
             .toolbar {
-                CloseToolbarItem(accessibilityHint: "Returns to the prescriptions screen") {
+                CloseToolbarItem(
+                  accessibilityHint: "Returns to the prescriptions screen",
+                  confirmationTitle: "Are you sure you want to close?"
+                ) {
                     // close the view
                 }
             }
@@ -240,6 +246,9 @@ struct HomeView: View {
 
 Use an icon toolbar button when you are confident through research that most users can understand the icon.
 
+If needed, you can present a confirmation dialog which will be shown to the user before the action takes place, giving them a chance to cancel. To do this, use the `confirmationTitle` option.
+
+
 {% call details({ summaryText: "Swift options" }) %}
 
 | Option              | Description                                                                            |
@@ -248,6 +257,7 @@ Use an icon toolbar button when you are confident through research that most use
 | `label`             | The accessible name for the button. Should be short and usually a verb.                |
 | `accessibilityHint` | Optional. A hint for VoiceOver users about what will happen after pressing the button. |
 | `action`            | The closure called when the button is pressed.                                         |
+| `confirmationTitle`  | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of performing the action immediately. |
 
 {% endcall %}
 
@@ -261,7 +271,8 @@ struct MessageView: View {
             IconToolbarItem(
                 systemImage: "trash",
                 label: "Remove",
-                accessibilityHint: "Removes this message from your inbox"
+                accessibilityHint: "Removes this message from your inbox",
+                confirmationTitle: "You can restore this message at any time from your removed messages."
             ) {
                 // remove action
             }
@@ -276,6 +287,8 @@ struct MessageView: View {
 
 If you need to add a toolbar button which cannot be reliably identified using an icon, use a text toolbar button instead. This will use the NHS font.
 
+If needed, you can present a confirmation dialog which will be shown to the user before the action takes place, giving them a chance to cancel. To do this, use the `confirmationTitle` option.
+
 {% call details({ summaryText: "Swift options" }) %}
 
 | Option               | Description                                                                            |
@@ -284,6 +297,7 @@ If you need to add a toolbar button which cannot be reliably identified using an
 | `accessibilityLabel` | Optional. A slightly longer alternative label for VoiceOver users.                     |
 | `accessibilityHint`  | Optional. A hint for VoiceOver users about what will happen after pressing the button. |
 | `action`             | The closure called when the button is pressed.                                         |
+| `confirmationTitle`  | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of performing the action immediately. |
 
 {% endcall %}
 
