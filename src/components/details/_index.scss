@@ -7,7 +7,9 @@ $details-border-radius: nhsuk-spacing(2);
   border-radius: $details-border-radius;
 
   .nhsuk-details__summary {
-    border-radius: $details-border-radius $details-border-radius 0 0;
+    border-radius: $details-border-radius $details-border-radius;
+    border-bottom-width: 1px;
+    padding: nhsuk-spacing(4);
   }
 
   .nhsuk-details__text {
