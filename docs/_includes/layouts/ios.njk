@@ -1,55 +1,33 @@
+---
+section: ios
+---
+
 {% extends "./sidebar.njk" %}
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
-{% block beforeContent %}
-  {% if title === "iOS" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/ios",
-      text: "iOS"
-    }) }}
-  {% endif %}
-{% endblock %}
+{% if page.url == '/ios/' or (tags and 'ios' in tags) %}
+  {% set sidebarHeading = 'Get started' %}
+  {% set sidebarItems = collections.ios %}
+{% elif page.url == '/ios/styles/' or (tags and 'iosStyles' in tags) %}
+  {% set sidebarHeading = 'Styles' %}
+  {% set sidebarItems = collections.iosStyles %}
+{% elif page.url == '/ios/components/' or (tags and 'iosComponents' in tags) %}
+  {% set sidebarHeading = 'Components' %}
+  {% set sidebarItems = collections.iosComponents %}
+{% elif page.url == '/ios/layouts/' or (tags and 'iosLayouts' in tags) %}
+  {% set sidebarHeading = 'Layouts' %}
+  {% set sidebarItems = collections.iosLayouts %}
+{% endif %}
 
 {% set sidebar %}
   {{ appSideNavigation({
+    label: sidebarHeading,
     currentPath: page.url,
     sections: [
-      {
-        heading: {
-          text: 'Get started'
-        },
-        items: collections.ios | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Styles'
-        },
-        items: collections.iosStyles | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Components'
-        },
-        items: collections.iosComponents | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Layouts'
-        },
-        items: collections.iosLayouts | sort(attribute="data.title")
+      {        
+        items: sidebarItems | sort(attribute="data.title")
       }
     ]
   }) }}
@@ -61,7 +39,7 @@
     classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
     })}}
 
-  {% if tags and "ios" in tags %}
+  {% if section == "ios" %}
     <span class="nhsuk-caption-xl">iOS</span>
   {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
@@ -69,7 +47,7 @@
   </h1>
   <p>{{ description }}</p>
   {{ content | safe }}
-  {% if tags and "ios" in tags %}
+  {% if section == "ios" %}
     {% include "layouts/partials/feedback-section.njk" %}
   {% endif %}
 {% endblock %}

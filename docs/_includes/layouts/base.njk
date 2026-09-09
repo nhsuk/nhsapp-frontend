@@ -57,7 +57,7 @@
     }
   }) }}
 
-  {% if page and page.url and '/ios/' in page.url %}
+  {% if section == "ios" %}
     {% set sectionNavItems = [
       {
         href: '/ios/',
@@ -80,7 +80,7 @@
         current: page.url == '/ios/layouts/' or (tags and 'iosLayouts' in tags)
       }
     ] %}
-  {% else %}
+  {% elif section == "web" %}
     {% set sectionNavItems = [
       {
         href: '/get-started/',
@@ -103,9 +103,11 @@
         current: page and page.url and '/patterns/' in page.url
       }
     ] %}
+  {% else %}
+    {% set sectionNavItems = [] %}
   {% endif %}
 
-  {% if page and page.url != '/' %}
+  {% if sectionNavItems and sectionNavItems.length %}
     <div class="nhsuk-width-container">
       {{ sectionNavigation({
         ariaLabel: 'Section navigation',
