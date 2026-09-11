@@ -11,13 +11,14 @@
 @use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
 
 .nhsapp-badge {
-  @include nhsuk-font($size: 19, $weight: bold);
+  @include nhsuk-font-size(19);
 
   display: inline-block;
 
   background-color: $nhsuk-error-colour;
   border-radius: nhsuk-spacing(1);
   color: nhsuk-colour("white");
+  font-weight: bold;
   padding: 0 nhsuk-spacing(2);
   margin: 0;
 
