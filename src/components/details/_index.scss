@@ -1,0 +1,53 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
+
+$details-border-radius: nhsuk-spacing(2);
+$details-border-width: 2px;
+$details-border-colour: $nhsuk-border-colour;
+
+.nhsapp-expander {
+  overflow: hidden;
+  border-radius: $details-border-radius;
+
+  .nhsuk-details__summary {
+    border-radius: $details-border-radius;
+    border-width: $details-border-width;
+    padding: nhsuk-spacing(3);
+
+    @include nhsuk-media-query($from: tablet) {
+      padding: nhsuk-spacing(4);
+    }
+  }
+
+  .nhsuk-details__text {
+    border-radius: 0 0 $details-border-radius $details-border-radius;
+  }
+
+  .nhsuk-details__summary-text {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &[open] {
+    .nhsuk-details__summary {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .nhsuk-details__summary-text {
+      text-decoration: none;
+    }
+
+    .nhsuk-details__text {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border: solid $details-border-colour;
+      border-width: 0 $details-border-width $details-border-width $details-border-width;
+    }
+  }
+}

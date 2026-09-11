@@ -1,0 +1,22 @@
+---
+layout: layouts/example.njk
+title: Expander
+---
+
+{% from "details/macro.njk" import details %}
+
+{% call details({
+  summaryText: "Learn more about this test",
+  classes: "nhsuk-expander nhsapp-expander"
+}) %}
+  <p>This test is used to diagnose and monitor diabetes. It measures the level of sugar (glucose) in your blood.</p>
+  <p>If your result is high, your doctor may talk to you about:</p>
+
+  <ul>
+    <li>having another test in a few weeks or months to see if your result changes </li>
+    <li>making lifestyle changes to lower your blood sugar level, such as getting more exercise and eating healthily </li>
+    <li>starting treatment for diabetes (or changing your treatment if you're already being treated) </li>
+  </ul>
+{% endcall %}
+
+
