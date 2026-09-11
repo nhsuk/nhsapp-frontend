@@ -5,15 +5,13 @@ tags:
   - iosComponents
 ---
 
-Use alerts to interrupt users with important information, to check how they want to proceed.
+Use alerts to interrupt users with important, unexpected information, to check how they want to proceed.
 
 <img src="/assets/images/ios/alert-log-out.png" alt="Screenshot a popup with the text 'For security reasons, we'll log you out fo the NHS App in 1 minute' and a single button labelled 'Stay logged in'">
 
 ## When to use
 
-Use alerts when there is critical information users need to know before continuing. This includes when users:
-
-- approach the inactivity time-out limit for the app, to check if they want to stay logged in
+Use alerts when there is critical information users need to know before continuing. This includes when users approach the inactivity time-out limit for the app, to check if they want to stay logged in.
 
 ## When not to use
 
@@ -57,3 +55,5 @@ For alerts shown on leaving an overlay, some users expected the whole app would 
 - alternatives that were specific to particular journeys ("Close this request?" with the button "Close" for the request a repeat prescription journey, and "Close this booking?" for GP appointments)
 
 The difference in user understanding and expected behaviour between these generic and specific options was marginal, but there was a slight improvement when the content was specific. The vast majority of users no longer expected the app to close whether the content was generic or specific.
+
+Since this research, we've iterated our designs towards using action sheets instead of alerts when users leave an overlay.
