@@ -32,7 +32,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@prettier/sync": "^0.6.1",
-    "concurrently": "^8.2.2",
+    "concurrently": "^10.0.5",
     "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
