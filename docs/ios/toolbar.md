@@ -62,11 +62,11 @@ If the closing the screen will cause the user to lose some data, for example if 
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
 
-| Option              | Description                                                                             |
-| ------------------- | --------------------------------------------------------------------------------------- |
-| `accessibilityHint` | Optional. A hint for VoiceOver users about what will happen when the button is pressed. |
-| `action`            | The closure called when the button is pressed. |
-| `confirmationTitle`   | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of dismissing immediately. |
+| Option              | Description                                                                                                                                                                       |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `accessibilityHint` | Optional. A hint for VoiceOver users about what will happen when the button is pressed.                                                                                           |
+| `action`            | The closure called when the button is pressed.                                                                                                                                    |
+| `confirmationTitle` | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of dismissing immediately. |
 
 {% endcall %}
 
@@ -248,16 +248,15 @@ Use an icon toolbar button when you are confident through research that most use
 
 If needed, you can present a confirmation dialog which will be shown to the user before the action takes place, giving them a chance to cancel. To do this, use the `confirmationTitle` option.
 
-
 {% call details({ summaryText: "Swift options" }) %}
 
-| Option              | Description                                                                            |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| `systemImage`       | The name of the icon from SF Symbols.                                                  |
-| `label`             | The accessible name for the button. Should be short and usually a verb.                |
-| `accessibilityHint` | Optional. A hint for VoiceOver users about what will happen after pressing the button. |
-| `action`            | The closure called when the button is pressed.                                         |
-| `confirmationTitle`  | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of performing the action immediately. |
+| Option              | Description                                                                                                                                                                                  |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `systemImage`       | The name of the icon from SF Symbols.                                                                                                                                                        |
+| `label`             | The accessible name for the button. Should be short and usually a verb.                                                                                                                      |
+| `accessibilityHint` | Optional. A hint for VoiceOver users about what will happen after pressing the button.                                                                                                       |
+| `action`            | The closure called when the button is pressed.                                                                                                                                               |
+| `confirmationTitle` | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of performing the action immediately. |
 
 {% endcall %}
 
@@ -291,12 +290,12 @@ If needed, you can present a confirmation dialog which will be shown to the user
 
 {% call details({ summaryText: "Swift options" }) %}
 
-| Option               | Description                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------- |
-| `label`              | The text that appears in the button. Should be short and usually a verb.               |
-| `accessibilityLabel` | Optional. A slightly longer alternative label for VoiceOver users.                     |
-| `accessibilityHint`  | Optional. A hint for VoiceOver users about what will happen after pressing the button. |
-| `action`             | The closure called when the button is pressed.                                         |
+| Option               | Description                                                                                                                                                                                  |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `label`              | The text that appears in the button. Should be short and usually a verb.                                                                                                                     |
+| `accessibilityLabel` | Optional. A slightly longer alternative label for VoiceOver users.                                                                                                                           |
+| `accessibilityHint`  | Optional. A hint for VoiceOver users about what will happen after pressing the button.                                                                                                       |
+| `action`             | The closure called when the button is pressed.                                                                                                                                               |
 | `confirmationTitle`  | Optional. An title for a confirmation dialog shown before the action is performed. When set, tapping the button presents a confirmation dialog instead of performing the action immediately. |
 
 {% endcall %}
