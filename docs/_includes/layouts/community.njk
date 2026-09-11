@@ -1,26 +1,10 @@
+---
+section: community
+---
+
 {% extends "./sidebar.njk" %}
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% block beforeContent %}
-  {% if title === "Community" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/community",
-      text: "Community"
-    }) }}
-  {% endif %}
-{% endblock %}
 
 {% set sidebar %}
   {{ appSideNavigation({
