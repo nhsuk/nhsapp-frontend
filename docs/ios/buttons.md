@@ -29,7 +29,7 @@ The button scales with Dynamic Type and adapts to Dark Mode. Text wraps onto mul
 Use a standard [SwiftUI Button](https://developer.apple.com/documentation/swiftui/button) and apply NHS styles using the `.buttonStyle()` modifier.
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 {% include "ios/buttons/swift-options.md" %}
 {% endcall %}
 

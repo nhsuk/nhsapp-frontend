@@ -24,7 +24,7 @@ Apply the modifier to the outermost view of your card content:
 <img src="/assets/images/ios/card-style.png" width="375">
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 {% include "ios/card-style/swift-options.md" %}
 {% endcall %}
 

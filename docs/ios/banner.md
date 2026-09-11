@@ -59,7 +59,7 @@ Use the solid style for less important prompts, such as inviting users to give f
 <img src="/assets/images/ios/banner-solid.png">
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 {% include "ios/banner/swift-options.md" %}
 {% endcall %}
 

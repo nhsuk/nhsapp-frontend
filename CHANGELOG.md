@@ -1,5 +1,16 @@
 # NHS App Frontend Changelog
 
+## Unreleased
+
+### 🆕 New features
+
+- Updated to [NHS.UK frontend v10.6.1](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.6.1) - [pull request #573](https://github.com/nhsuk/nhsapp-frontend/pull/573)
+
+### 🔧 Fixes
+
+- Fix Sass 1.80.0 `import` and `global-builtin` deprecations
+- Fix Sass 1.95.0 `if-function` deprecation
+
 ## `v5.2.0` - 25 August 2026
 
 ### 🆕 New features

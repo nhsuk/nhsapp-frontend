@@ -41,18 +41,18 @@
     "gulp-connect": "^5.7.0",
     "gulp-nunjucks": "^6.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^6.0.0",
     "highlight.js": "^11.11.1",
     "markdown-it-anchor": "^9.0.1",
     "markdown-it-attrs": "^5.0.0",
-    "nhsuk-frontend": "^10.5.2",
+    "nhsuk-frontend": "^10.6.1",
     "nunjucks": "^3.2.4",
     "outdent": "^0.8.0",
     "plugin-error": "^1.0.1",
     "prettier": "^3.2.5",
-    "sass": "^1.74.1"
+    "sass-embedded": "^1.103.1"
   },
   "peerDependencies": {
     "nhsuk-frontend": "^10.0.0"

@@ -31,7 +31,7 @@ Each card has an icon, the name, a line of supporting text, and a chevron showin
 ## How to use
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 {% include "ios/profile-card/swift-options.md" %}
 {% endcall %}
 
