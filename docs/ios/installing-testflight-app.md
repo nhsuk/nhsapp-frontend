@@ -5,7 +5,7 @@ tags:
   - iosTesting
 ---
 
-We use TestFlight to share test versions of the app before they're released. To test the app on your iPhone or iPad, install TestFlight first, then open the invite we've emailed you.
+We use TestFlight to share test versions of the app before they're released.
 
 ## Before you start
 
