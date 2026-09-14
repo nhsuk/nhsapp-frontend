@@ -26,7 +26,7 @@ Use the device that's signed in with that email address. Your invite is linked t
 2. Search for TestFlight.
 3. Install TestFlight. It's free and made by Apple.
 
-## Open your invite email
+## Step 2: Open your invite email
 
 1. On the same iPhone or iPad, open the invite email from us.
 2. Select 'View in TestFlight' (this may say 'Start testing').
