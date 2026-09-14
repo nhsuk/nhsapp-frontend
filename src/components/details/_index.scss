@@ -10,10 +10,21 @@ $details-border-colour: $nhsuk-border-colour;
   overflow: hidden;
   border-radius: $details-border-radius;
 
+  &:hover,
+  &:focus-within {
+    border-color: $details-border-colour !important;
+  }
+
   .nhsuk-details__summary {
     border-radius: $details-border-radius;
-    border-width: $details-border-width;
+    border: $details-border-width solid $details-border-colour;
     padding: nhsuk-spacing(3);
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $details-border-colour !important;
+    }
 
     @include nhsuk-media-query($from: tablet) {
       padding: nhsuk-spacing(4);
@@ -24,23 +35,10 @@ $details-border-colour: $nhsuk-border-colour;
     border-radius: 0 0 $details-border-radius $details-border-radius;
   }
 
-  .nhsuk-details__summary-text {
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-
   &[open] {
     .nhsuk-details__summary {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-    }
-
-    .nhsuk-details__summary-text {
-      text-decoration: none;
     }
 
     .nhsuk-details__text {
@@ -49,5 +47,14 @@ $details-border-colour: $nhsuk-border-colour;
       border: solid $details-border-colour;
       border-width: 0 $details-border-width $details-border-width $details-border-width;
     }
+  }
+
+  &[open] .nhsuk-details__text {
+    border-color: $details-border-colour;
+  }
+
+  &[open]:hover .nhsuk-details__text,
+  &[open]:focus-within .nhsuk-details__text {
+    border-color: $details-border-colour !important;
   }
 }
