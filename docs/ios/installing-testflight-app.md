@@ -19,10 +19,10 @@ Use the device that's signed in to an Apple ID with that email address. Your inv
 ## Step 1: Install TestFlight
 
 <div class="nhsuk-inset-text">
-  <p><strong>Important:</strong> Install TestFlight before you open the invite email. If you open the invite first without TestFlight, the link will not work.</p>
+  <p>Install TestFlight before you open the invite email. If you open the invite first without TestFlight, the link will not work.</p>
 </div>
 
-1. On your iPhone or iPad, open the App Store.
+1. On your iPhone or iPad, open the [App Store](https://apps.apple.com/).
 2. Search for TestFlight.
 3. Install TestFlight. It's free and made by Apple.
 
