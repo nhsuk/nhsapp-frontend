@@ -13,7 +13,7 @@ Use a title on every screen, so users know where they are.
 
 ## When not to use
 
-Do not use a title for headings within a screen, use a section header instead.
+Do not use a title for headings within a screen. Use a section header instead.
 
 Do not use more than one title on a screen.
 
