@@ -14,7 +14,7 @@ You'll need:
 - an iPhone or iPad
 - the email address we used to invite you
 
-Use the device that's signed in with that email address. Your invite is linked to it, so the app will not install on a device signed in with a different account.
+Use the device that's signed in to an Apple ID with that email address. Your invite is linked to it, so the app will not install on a device signed in to an Apple ID with a different account.
 
 ## Step 1: Install TestFlight
 
