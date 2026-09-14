@@ -2,7 +2,7 @@
 layout: layouts/ios.njk
 title: Installing an app from TestFlight
 tags:
-  - iosTesting
+  - ios
 ---
 
 We use [TestFlight](https://testflight.apple.com/) to share test versions of the app before they're released.
