@@ -15,7 +15,7 @@ Most NHS App screens lead with a large heading at the top of the content, which 
 
 ## When not to use
 
-Do not use a title for headings within a screen — use a [section header](/ios/section-headers-and-footers).
+Do not use a title for headings within a screen — use a [section header]() [need section header guidance].
 
 Do not use more than one title on a screen.
 
@@ -28,18 +28,12 @@ A title is made of 2 parts that work together:
 
 There are 2 display modes:
 
-- **large** — the heading is shown at the top of the content, and fades into the navigation bar once the user scrolls past it. This is the default, and how most NHS App screens work.
-- **inline** — the heading is shown in the navigation bar only. Use it on screens that do not lead with a large heading, such as a pushed detail screen.
-
-A title can also have a subtitle and a decorative icon.
-
-The layout adapts to the user's settings:
-
-- text scales with Dynamic Type
-- at large text sizes, the icon is no longer shown so the heading has the full width
-- headings are never truncated: they wrap onto more lines
+- [large title](#large-title)
+- [inline title](#inline-title)
 
 ## How to use
+
+### Large title
 
 Apply `nhsTitle()` to the screen's scrolling container, and lead the content with a `Title`:
 
@@ -59,7 +53,7 @@ ScrollView {
 
 `Title()` takes its heading from `nhsTitle()`, so the text is written once.
 
-### Titles in the navigation bar only
+### Inline title
 
 On a screen that does not lead with a large heading, use `.inline`. A `Title()` is not needed in the content:
 
@@ -70,7 +64,7 @@ List {
 .nhsTitle("Removed messages", displayMode: .inline)
 ```
 
-### Subtitles and icons
+### With a subtitle
 
 Add a subtitle for supporting information about the whole screen.
 
@@ -85,7 +79,7 @@ ScrollView {
 .nhsTitle("Family and carer access")
 ```
 
-### Icons
+### With an icon
 
 An icon where it helps users recognise the section [something about only using it for hub screens.]
 
@@ -100,7 +94,7 @@ ScrollView {
 .nhsTitle("Prescriptions")
 ```
 
-### Titles in a list view
+### In a list view
 
 To place a `Title` inside a `List`, apply modifiers so it renders edge to edge rather than as a standard inset row:
 
@@ -115,12 +109,6 @@ List {
 }
 .nhsTitle("Prescriptions")
 ```
-
-### Screens opened from another screen
-
-Give every screen its own `nhsTitle()`, including screens opened as a sheet or pushed from another screen.
-
-A `Title()` written without its own text takes the nearest heading above it. Content written inside another screen's body sits below that screen's `nhsTitle()`, so without its own it will show the wrong heading.
 
 ## Writing for this component
 
