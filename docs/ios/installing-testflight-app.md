@@ -16,7 +16,7 @@ You'll need:
 
 Use the device that's signed in with that email address. Your invite is linked to it, so the app will not install on a device signed in with a different account.
 
-## Install TestFlight
+## Step 1: Install TestFlight
 
 <div class="nhsuk-inset-text">
   <p><strong>Important:</strong> Install TestFlight before you open the invite email. If you open the invite first without TestFlight, the link will not work.</p>
