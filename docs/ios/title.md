@@ -69,7 +69,7 @@ ScrollView {
 
 #### With an icon
 
-An icon may help users recognise a section. Only use these on hub screens.
+An icon may help users recognise a section. Only use it on the first screen the user opens from the home menu, not on later screens.
 
 <img src="/assets/images/ios/title-with-icon.png" width="375">
 
