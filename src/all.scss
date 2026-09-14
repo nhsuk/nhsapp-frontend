@@ -1,17 +1,17 @@
 // Settings
-@import "settings/colours";
+@forward "settings/colours";
 
 // styles
-@import "styles/icon/icons";
+@forward "styles/icon/icons";
 
 // components
-@import "components/badge/badge";
-@import "components/button";
-@import "components/card/card";
-@import "components/tag/tag";
-@import "components/timeline/timeline";
-@import "components/summary-list";
+@forward "components/badge/badge";
+@forward "components/button";
+@forward "components/card/card";
+@forward "components/tag/tag";
+@forward "components/timeline/timeline";
+@forward "components/summary-list";
 
 // utilities
-@import "utilities/display";
-@import "utilities/truncate";
+@forward "utilities/display";
+@forward "utilities/truncate";

@@ -60,7 +60,7 @@ The close button should be added to most screens presented as a modal, allowing 
 If the closing the screen will cause the user to lose some data, for example if they are part way through booking an appointment, you can set a `confirmationTitle`, which will present a confirmation dialog shown before the screen is closed. Users can then tap elsewhere to cancel the closing.
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option              | Description                                                                                                                                                                       |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +96,7 @@ struct BookAppointmentView: View {
 
 The 'done' button is added to any screens presented as modal, when the user has reached the end of a journey and has completed a task. For example, after booking an appointment.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option   | Description                                    |
 | -------- | ---------------------------------------------- |
@@ -129,7 +129,7 @@ The filter button can be added to list views, enabling a user to bring up option
 
 It is presented with both a filter icon and the word 'Filter', as research shows that not all users understand the icon. When filters are active, the button changes to using blue, bold text, and the number of active filters is shown in brackets.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option              | Description                                    |
 | ------------------- | ---------------------------------------------- |
@@ -159,7 +159,7 @@ struct MessagesView: View {
 
 The flag button can be used on detail views for items which the user can flag, to mark the item.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option        | Description                                          |
 | ------------- | ---------------------------------------------------- |
@@ -193,7 +193,7 @@ struct MessageView: View {
 
 The messages button is used on the home screen only, and serves as both an indicator of any unread messages, and a way to navigate to the messages section.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option        | Description                                    |
 | ------------- | ---------------------------------------------- |
@@ -248,7 +248,7 @@ Use an icon toolbar button when you are confident through research that most use
 
 If needed, you can present a confirmation dialog which will be shown to the user before the action takes place, giving them a chance to cancel. To do this, use the `confirmationTitle` option.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option              | Description                                                                                                                                                                                  |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -288,7 +288,7 @@ If you need to add a toolbar button which cannot be reliably identified using an
 
 If needed, you can present a confirmation dialog which will be shown to the user before the action takes place, giving them a chance to cancel. To do this, use the `confirmationTitle` option.
 
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 
 | Option               | Description                                                                                                                                                                                  |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
