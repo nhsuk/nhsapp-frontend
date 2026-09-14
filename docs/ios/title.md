@@ -11,20 +11,13 @@ The title is the main heading of a screen. It can also appear in the navigation 
 
 Use a title on every screen, so users know where they are.
 
-Most NHS App screens lead with a large heading at the top of the content, which moves into the navigation bar as the user scrolls down.
-
 ## When not to use
 
-Do not use a title for headings within a screen — use a [section header]() [need section header guidance].
+Do not use a title for headings within a screen, use a section header instead.
 
 Do not use more than one title on a screen.
 
 ## How it works
-
-A title is made of 2 parts that work together:
-
-- the `Title` component, which draws the large heading in the screen's content
-- the `nhsTitle()` modifier, which sets the heading text and puts it in the navigation bar
 
 There are 2 display modes:
 
@@ -35,7 +28,9 @@ There are 2 display modes:
 
 ### Large title
 
-Apply `nhsTitle()` to the screen's scrolling container, and lead the content with a `Title`:
+Large titles display at the top of the content, which moves into the navigation bar as the user scrolls down.
+
+<img src="/assets/images/ios/title-large.png">
 
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
@@ -51,11 +46,15 @@ ScrollView {
 .nhsTitle("Health choices")
 ```
 
+Apply `nhsTitle()` to the screen's scrolling container, and lead the content with a `Title()`.
+
 `Title()` takes its heading from `nhsTitle()`, so the text is written once.
 
 ### Inline title
 
-On a screen that does not lead with a large heading, use `.inline`. A `Title()` is not needed in the content:
+On a screen that does not lead with a large title, use an inline title.
+
+<img src="/assets/images/ios/title-inline.png">
 
 ```swift { .nhsuk-code--button }
 List {
@@ -64,9 +63,17 @@ List {
 .nhsTitle("Removed messages", displayMode: .inline)
 ```
 
+Add `displayMode: .inline` to the `.nhsTitle`. 
+
+A `Title()` is not needed in the content.
+
+The inline title must not truncate, because it is the only place the heading appears. Truncation is only acceptable when the inline title is the collapsed form of a large title, where the heading has already been shown in full.
+
 ### With a subtitle
 
 Add a subtitle for supporting information about the whole screen.
+
+<img src="/assets/images/ios/title-with-subtitle.png" width="375">
 
 ```swift { .nhsuk-code--button }
 ScrollView {
@@ -81,7 +88,9 @@ ScrollView {
 
 ### With an icon
 
-An icon where it helps users recognise the section [something about only using it for hub screens.]
+An icon where it helps users recognise a section. Only use these on hub screens.
+
+<img src="/assets/images/ios/title-with-icon.png" width="375">
 
 ```swift { .nhsuk-code--button }
 ScrollView {
@@ -96,7 +105,7 @@ ScrollView {
 
 ### In a list view
 
-To place a `Title` inside a `List`, apply modifiers so it renders edge to edge rather than as a standard inset row:
+To place a `Title()` inside a `List`, apply modifiers so it renders edge to edge rather than as a standard inset row.
 
 ```swift { .nhsuk-code--button }
 List {
@@ -107,7 +116,7 @@ List {
 
     // the rest of the screen
 }
-.nhsTitle("Prescriptions")
+.nhsTitle("Face ID")
 ```
 
 ## Writing for this component
