@@ -5,7 +5,7 @@ tags:
   - iosComponents
 ---
 
-The title is the main heading of a screen. It can also appear in the navigation bar.
+The title is the main heading of a screen. It can also appear in the toolbar.
 
 ## When to use
 
@@ -28,7 +28,7 @@ There are 2 display modes:
 
 ### Large title
 
-Large titles display at the top of the content, then move into the navigation bar as the user scrolls down.
+Large titles display at the top of the content, then move into the toolbar as the user scrolls down.
 
 <img src="/assets/images/ios/title-large.png">
 
@@ -135,7 +135,7 @@ This component supports Dynamic Type, Dark Mode and VoiceOver.
 
 VoiceOver announces the title as a heading, so users can jump straight to it using the headings rotor.
 
-The heading is announced once. While the large heading is on screen, the navigation bar copy is hidden from VoiceOver, and it is only announced once the user has scrolled past the heading.
+The heading is announced once. While the large heading is on screen, the toolbar copy is hidden from VoiceOver, and it is only announced once the user has scrolled past the heading.
 
 The icon is decorative and is not read out.
 
