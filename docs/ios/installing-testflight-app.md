@@ -54,5 +54,5 @@ We'll release updated versions of the app while you're testing.
 - To update, open TestFlight and select 'Update' next to the app.
 
 <div class="nhsuk-inset-text">
-  <p>Test versions expire 90 days after we create them. If you see 'Expired', open TestFlight to get the latest version. If there isn't one, contact us.</p>
+  <p>Test versions expire 90 days after we upload them to TestFlight. If you see 'Expired', open TestFlight to get the latest version. If there isn't one, contact us.</p>
 </div>
