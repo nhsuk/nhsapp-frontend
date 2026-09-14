@@ -32,19 +32,25 @@ Use the device that's signed in to an Apple ID with that email address. Your inv
 2. Select **View in TestFlight** (this may say **Start testing**).
 3. TestFlight opens automatically.
 
+<details class="nhsuk-details" data-module="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">If the invite button does not work</span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Your invite email also contains a redeem code.</p>
+    <ol class="nhsuk-list nhsuk-list--number">
+      <li>Open TestFlight.</li>
+      <li>Select <strong>Redeem</strong>.</li>
+      <li>Enter the code from your email.</li>
+    </ol>
+  </div>
+</details>
+
 ## Step 3: Accept and install the app
 
 1. In TestFlight, select **Accept**.
 2. Select **Install**.
 3. The app appears on your home screen. Open it from there or from within TestFlight.
-
-## If the invite button does not work
-
-Your invite email also contains a redeem code.
-
-1. Open TestFlight.
-2. Select **Redeem**.
-3. Enter the code from your email.
 
 ## Get new versions
 
