@@ -63,7 +63,7 @@ List {
 .nhsTitle("Removed messages", displayMode: .inline)
 ```
 
-Add `displayMode: .inline` to the `.nhsTitle`. 
+Add `displayMode: .inline` to the `.nhsTitle`.
 
 A `Title()` is not needed in the content.
 
