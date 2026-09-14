@@ -5,7 +5,7 @@ tags:
   - ios
 ---
 
-We use [TestFlight](https://testflight.apple.com/) to share test versions of the app before they're released.
+You can use [TestFlight](https://testflight.apple.com/) to test versions of the NHS App before they're released.
 
 ## Before you start
 
