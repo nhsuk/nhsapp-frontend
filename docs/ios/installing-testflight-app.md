@@ -29,7 +29,7 @@ Use the device that's signed in with that email address. Your invite is linked t
 ## Step 2: Open your invite email
 
 1. On the same iPhone or iPad, open the invite email from us.
-2. Select 'View in TestFlight' (this may say 'Start testing').
+2. Select **View in TestFlight** (this may say **Start testing**).
 3. TestFlight opens automatically.
 
 ## Step 3: Accept and install the app
