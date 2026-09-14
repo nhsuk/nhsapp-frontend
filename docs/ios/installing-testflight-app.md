@@ -32,7 +32,7 @@ Use the device that's signed in with that email address. Your invite is linked t
 2. Select 'View in TestFlight' (this may say 'Start testing').
 3. TestFlight opens automatically.
 
-## Accept and install the app
+## Step 3: Accept and install the app
 
 1. In TestFlight, select 'Accept'.
 2. Select 'Install'.
