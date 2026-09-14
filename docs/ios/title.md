@@ -50,6 +50,56 @@ Apply `nhsTitle()` to the screen's scrolling container, and lead the content wit
 
 `Title()` takes its heading from `nhsTitle()`, so the text is written once.
 
+#### With a subtitle
+
+Add a subtitle for supporting information about the whole screen.
+
+<img src="/assets/images/ios/title-with-subtitle.png" width="375">
+
+```swift { .nhsuk-code--button }
+ScrollView {
+  Title(
+    subtitle: "Manage another person's healthcare or give access to your profile to someone you trust."
+  )
+
+  // the rest of the screen
+}
+.nhsTitle("Family and carer access")
+```
+
+#### With an icon
+
+An icon may help users recognise a section. Only use these on hub screens.
+
+<img src="/assets/images/ios/title-with-icon.png" width="375">
+
+```swift { .nhsuk-code--button }
+ScrollView {
+  Title(
+      systemImage: "pills.fill"
+  )
+
+  // the rest of the screen
+}
+.nhsTitle("Prescriptions")
+```
+
+#### In a list view
+
+To place a `Title()` inside a `List`, apply modifiers so it renders edge to edge rather than as a standard inset row.
+
+```swift { .nhsuk-code--button }
+List {
+    Title()
+        .listRowInsets(EdgeInsets())
+        .listRowBackground(Color.clear)
+        .listRowSeparator(.hidden)
+
+    // the rest of the screen
+}
+.nhsTitle("Face ID")
+```
+
 ### Inline title
 
 On a screen that does not lead with a large title, use an inline title.
@@ -69,55 +119,6 @@ A `Title()` is not needed in the content.
 
 The inline title must not truncate, because it is the only place the heading appears. Truncation is only acceptable when the inline title is the collapsed form of a large title, where the heading has already been shown in full.
 
-### With a subtitle
-
-Add a subtitle for supporting information about the whole screen.
-
-<img src="/assets/images/ios/title-with-subtitle.png" width="375">
-
-```swift { .nhsuk-code--button }
-ScrollView {
-  Title(
-    subtitle: "Manage another person's healthcare or give access to your profile to someone you trust."
-  )
-
-  // the rest of the screen
-}
-.nhsTitle("Family and carer access")
-```
-
-### With an icon
-
-An icon may help users recognise a section. Only use these on hub screens.
-
-<img src="/assets/images/ios/title-with-icon.png" width="375">
-
-```swift { .nhsuk-code--button }
-ScrollView {
-  Title(
-      systemImage: "pills.fill"
-  )
-
-  // the rest of the screen
-}
-.nhsTitle("Prescriptions")
-```
-
-### In a list view
-
-To place a `Title()` inside a `List`, apply modifiers so it renders edge to edge rather than as a standard inset row.
-
-```swift { .nhsuk-code--button }
-List {
-    Title()
-        .listRowInsets(EdgeInsets())
-        .listRowBackground(Color.clear)
-        .listRowSeparator(.hidden)
-
-    // the rest of the screen
-}
-.nhsTitle("Face ID")
-```
 
 ## Writing for this component
 
