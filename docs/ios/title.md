@@ -119,7 +119,6 @@ A `Title()` is not needed in the content.
 
 The inline title must not truncate, because it is the only place the heading appears. Truncation is only acceptable when the inline title is the collapsed form of a large title, where the heading has already been shown in full.
 
-
 ## Writing for this component
 
 Keep the heading short and in sentence case, naming what the screen is for.
