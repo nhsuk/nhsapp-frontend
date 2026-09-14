@@ -43,7 +43,7 @@ Use the device that's signed in with that email address. Your invite is linked t
 Your invite email also contains a redeem code.
 
 1. Open TestFlight.
-2. Select 'Redeem'.
+2. Select **Redeem**.
 3. Enter the code from your email.
 
 ## Get new versions
