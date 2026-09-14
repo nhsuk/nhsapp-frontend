@@ -28,7 +28,7 @@ There are 2 display modes:
 
 ### Large title
 
-Large titles display at the top of the content, which moves into the navigation bar as the user scrolls down.
+Large titles display at the top of the content, then move into the navigation bar as the user scrolls down.
 
 <img src="/assets/images/ios/title-large.png">
 
