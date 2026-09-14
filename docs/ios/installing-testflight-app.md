@@ -34,7 +34,7 @@ Use the device that's signed in with that email address. Your invite is linked t
 
 ## Step 3: Accept and install the app
 
-1. In TestFlight, select 'Accept'.
+1. In TestFlight, select **Accept**.
 2. Select 'Install'.
 3. The app appears on your home screen. Open it from there or from within TestFlight.
 
