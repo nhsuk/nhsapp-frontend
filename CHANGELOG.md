@@ -10,6 +10,7 @@
 
 - Fix Sass 1.80.0 `import` and `global-builtin` deprecations
 - Fix Sass 1.95.0 `if-function` deprecation
+- Renamed the `badge`, `card`, `tag` and `timeline` component Sass partials to `_index.scss`, for consistency with the `button` and `summary-list` components. The old file names (for example `components/badge/badge`) are kept as deprecated stub files that forward to the new ones, so existing imports keep working, but will be removed in a future major release.
 
 ## `v5.2.0` - 25 August 2026
 
