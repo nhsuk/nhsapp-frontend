@@ -34,6 +34,9 @@ jobs:
             --clobber
 
       - name: Publish NPM package
-        run: npm publish --access public --provenance
-        env:
-          IS_PRERELEASE: ${{ github.event.release.prerelease }}
+        run: |
+          if [[ "${{ github.event.release.prerelease }}" == "true" ]]; then
+            npm publish --tag next --provenance --access public
+          else
+            npm publish --tag latest --provenance --access public
+          fi
