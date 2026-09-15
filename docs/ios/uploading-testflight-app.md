@@ -5,7 +5,7 @@ tags:
   - ios
 ---
 
-You can use [TestFlight](https://testflight.apple.com/) to test versions of the NHS App before they're released. This page covers how to get a build onto TestFlight and invite people to test it.
+You can use [TestFlight](https://testflight.apple.com/) to test versions of the NHS App before they're released. This guidance covers how to get an app onto TestFlight and invite people to test it.
 
 If you've been invited to test an app, see [Installing an app from TestFlight](./installing-testflight-app.md) instead.
 
@@ -33,7 +33,7 @@ A bundle ID (also called an App ID) uniquely identifies the app across Apple's s
 7. Next to **Bundle ID**, select **Explicit** and enter an ID in reverse-domain format, for example `uk.nhs.exampleapp`.
 8. Select **Register**.
 
-Choose the bundle ID carefully. It must be unique, it must match the one used in Xcode, and Apple does not let you delete it later. You need an **Admin** or **Account Holder** role to register one.
+Choose the bundle ID carefully. It must be unique, it must match the one used in Xcode, and Apple does not let you delete it later. [add guidance on what to set the bundle id as]
 
 ## Step 3: Create the app in App Store Connect
 
