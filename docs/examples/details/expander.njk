@@ -20,3 +20,16 @@ title: Expander
 {% endcall %}
 
 
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+{{ nhsappCardGroup({
+  stacked: true,
+  cards: [
+    {
+      title: "GP health record",
+      href: "#"
+    }
+  ]
+}) }}
