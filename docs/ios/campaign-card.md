@@ -53,7 +53,7 @@ Use the campaign card within a SwiftUI view.
 The card triggers an action when tapped. Specify this using the `action` closure. The action can navigate to another screen, present a sheet, open a link, or trigger any other action.
 
 {% from "details/macro.njk" import details %}
-{% call details({ summaryText: "Swift options" }) %}
+{% call details({ summary: "Swift options" }) %}
 {% include "ios/campaign-card/swift-options.md" %}
 {% endcall %}
 

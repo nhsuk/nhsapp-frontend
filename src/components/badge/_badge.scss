@@ -1,14 +1,11 @@
+@use "sass:math";
+@use "nhsuk-frontend/dist/nhsuk/core/settings" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/helpers" as *;
+
 // ==========================================================================
 // COMPONENTS / #BADGE
 // ==========================================================================
-
-@use "sass:math";
-
-@use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/helpers/colour" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/spacing" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
 
 .nhsapp-badge {
   @include nhsuk-font-size(19);

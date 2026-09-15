@@ -1,10 +1,10 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/helpers" as *;
+@use "../../settings/colours-applied" as *;
+
 /* ==========================================================================
   #TAG
   ========================================================================== */
-
-@use "nhsuk-frontend/dist/nhsuk/core/helpers/colour" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/typography" as *;
-@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
 
 $color_tag-aqua-green-background: nhsapp-colour("pale-aqua-green");
 $color_tag-aqua-green-text: nhsapp-colour("dark-aqua-green");

@@ -1,4 +1,4 @@
-@use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
 
 .nhsapp-u-hide-from-tablet {
   @include nhsuk-media-query($from: tablet) {
