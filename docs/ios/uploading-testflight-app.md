@@ -5,7 +5,7 @@ tags:
   - ios
 ---
 
-We use [TestFlight](https://testflight.apple.com/) to share test versions of the app before they're released. This page covers how to get a build onto TestFlight and invite people to test it.
+You can use [TestFlight](https://testflight.apple.com/) to test versions of the NHS App before they're released. This page covers how to get a build onto TestFlight and invite people to test it.
 
 If you've been invited to test an app, see [Installing an app from TestFlight](./installing-testflight-app.md) instead.
 
@@ -15,18 +15,10 @@ You'll need:
 
 - a Mac with [Xcode](https://developer.apple.com/xcode/) installed
 - the app's source code, opened in Xcode
-- access to your team's [Apple Developer account](https://developer.apple.com/account) and [App Store Connect](https://appstoreconnect.apple.com/)
-- a role of **Account Holder**, **Admin** or **App Manager**, depending on the step
-
-Some steps need a developer. Registering identifiers, configuring signing and uploading builds are development tasks. If you don't have a Mac, Xcode or the right account role, ask a developer on your team to do those parts. This page explains the whole process so you know what's involved and what to ask for.
 
 ## Step 1: Get an Apple Developer account
 
-To use TestFlight, your organisation needs to be enrolled in the [Apple Developer Program](https://developer.apple.com/programs/). Enrolment costs a yearly fee and can take a little time to approve.
-
-Most organisations already have one. Before setting up a new account, check whether your team has an existing Apple Developer account you can be added to.
-
-To be added to an existing account, ask whoever holds the **Account Holder** role to invite you under **Users and Access** in App Store Connect, with the role you need.
+[need clarification on how designers will get access to developer accounts]
 
 ## Step 2: Register a bundle ID
 
