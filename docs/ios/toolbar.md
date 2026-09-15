@@ -5,11 +5,11 @@ tags:
   - iosComponents
 ---
 
-Toolbars are a standard iOS component - see [Toolbars in the Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/toolbars).
+Toolbars are a standard iOS component. See [Toolbars in the Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/toolbars).
 
 <img src="/assets/images/ios/toolbar.png" width="320" alt="Screenshot showing several toolbar items: a back button, a bin button, and a flag button">
 
-The NHS design system for iOS adds some custom toolbar items which make it easier to use the NHS font, and to support some common actions within the NHS App.
+The NHS design system for iOS adds some custom toolbar items that make it easier to use the NHS font, and to support some common actions within the NHS App.
 
 ## When to use
 
@@ -33,6 +33,7 @@ Do not use toolbar items for actions that are infrequent and significant, such a
 The design system contains some specific toolbar items. Use these if the context applies:
 
 - [Back button](#back-button)
+- [Title](#title)
 - [Close button](#close-button)
 - [Done button](#done-button)
 - [Filter button](#filter-button)
@@ -51,11 +52,19 @@ If you need to add a different type of toolbar action, use one of these generic 
 
 The back button will appear in the toolbar at the top left automatically when using the `NavigationStack`. You do not need to add this.
 
+### Title
+
+Titles in the toolbar can help users understand where they are in the app.
+
+If there is a large title on the screen, it should move into the toolbar as the user scrolls down. On a screen that does not lead with a title, use an inline title that stays in the toolbar.
+
+See our [title guidance](/ios/title/) for more details.
+
 ### Close button
 
 <img src="/assets/images/ios/close-button.png" width="320" alt="Screenshot showing a circular button on the right of a mobile screen with an X icon within it">
 
-The close button should be added to most screens presented as a modal, allowing the user to return to the screen beneath it. Do not use it when the user has reached the end of a journey - use the 'done' button instead.
+The close button should be added to most screens presented as a [web overlay](/patterns/access-web-journeys/), allowing the user to return to the screen beneath it. Do not use it when the user has reached the end of a journey – use the 'done' button instead.
 
 If the closing the screen will cause the user to lose some data, for example if they are part way through booking an appointment, you can set a `confirmationTitle`, which will present a confirmation dialog shown before the screen is closed. Users can then tap elsewhere to cancel the closing.
 
@@ -80,7 +89,7 @@ struct BookAppointmentView: View {
             .toolbar {
                 CloseToolbarItem(
                   accessibilityHint: "Returns to the prescriptions screen",
-                  confirmationTitle: "Are you sure you want to close?"
+                  confirmationTitle: "This request will not be saved."
                 ) {
                     // close the view
                 }
@@ -94,7 +103,7 @@ struct BookAppointmentView: View {
 
 <img src="/assets/images/ios/done-button.png" width="320" alt="Screenshot showing a green button on the right of a mobile screen with the word 'Done' inside it in white text">
 
-The 'done' button is added to any screens presented as modal, when the user has reached the end of a journey and has completed a task. For example, after booking an appointment.
+The 'done' button is added to any screens presented as [web overlay](/patterns/access-web-journeys/), when the user has reached the end of a journey and has completed a task. For example, after booking an appointment.
 
 {% call details({ summary: "Swift options" }) %}
 
@@ -317,6 +326,14 @@ struct RemovedMessageView: View {
     }
 }
 ```
+
+## Writing confirmation dialogs
+
+You can use confirmation dialogs to make sure users understand the consequences of an action, and to give them a chance to cancel before they continue.
+
+The text should be a single sentence. It should give any important extra context in a brief and direct way.
+
+Use verbs for button text. If you have more than one button, make sure that the difference between the options is clear.
 
 ## Accessibility
 
