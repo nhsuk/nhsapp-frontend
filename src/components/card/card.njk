@@ -8,6 +8,7 @@
 {% set badge = params.badgeLarge if params.badgeLarge is defined else {} %}
 {% set badgeCount = badge.count if badge.count is defined else 0 %}
 {% set hasBadgeLarge = badgeCount > 0 %}
+{% set showChevron = params.showChevron if params.showChevron is defined else true %}
 
 {% set hasMedia = params.img is defined and params.img.src is defined %}
 {% set imgAlt = params.img.alt if params.img.alt is defined else '' %}
@@ -68,7 +69,7 @@
       }) }}
     {% endif %}
 
-    {%- if params.href -%}
+    {%- if params.href and showChevron -%}
       {{ nhsappIcon('chevronRight') }}
     {%- endif -%}
   </div>
