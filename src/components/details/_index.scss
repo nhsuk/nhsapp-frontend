@@ -11,15 +11,7 @@ $expander-border-width: 2px; // Default is otherwise 1px
   .nhsuk-details__summary {
     border-radius: $expander-border-radius;
     border-width: $expander-border-width;
-    border-radius: $details-border-radius;
-    border: $details-border-width solid $details-border-colour;
     padding: 12px 16px;
-
-    &:hover,
-    &:focus,
-    &:active {
-      border-color: $details-border-colour !important;
-    }
 
     @include nhsuk-media-query($from: tablet) {
       padding: 20px 24px;
@@ -28,19 +20,6 @@ $expander-border-width: 2px; // Default is otherwise 1px
 
   .nhsuk-details__text {
     border-radius: 0 0 $expander-border-radius $expander-border-radius;
-  }
-
-  &[open] {
-    .nhsuk-details__summary {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    .nhsuk-details__text {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      border-width: 0 $expander-border-width $expander-border-width $expander-border-width;
-    }
   }
 
   // Keep the border colour constant on hover, to match the
