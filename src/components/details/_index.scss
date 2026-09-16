@@ -2,20 +2,15 @@
 @use "nhsuk-frontend/dist/nhsuk/core/tools/sass-mq" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
 
-$details-border-radius: nhsuk-spacing(2);
-$details-border-width: 2px;
-$details-border-colour: $nhsuk-border-colour;
+$expander-border-radius: nhsuk-spacing(2);
+$expander-border-width: 2px; // Default is otherwise 1px
 
 .nhsapp-expander {
-  overflow: hidden;
-  border-radius: $details-border-radius;
-
-  &:hover,
-  &:focus-within {
-    border-color: $details-border-colour !important;
-  }
+  border-radius: $expander-border-radius;
 
   .nhsuk-details__summary {
+    border-radius: $expander-border-radius;
+    border-width: $expander-border-width;
     border-radius: $details-border-radius;
     border: $details-border-width solid $details-border-colour;
     padding: 12px 16px;
@@ -32,7 +27,7 @@ $details-border-colour: $nhsuk-border-colour;
   }
 
   .nhsuk-details__text {
-    border-radius: 0 0 $details-border-radius $details-border-radius;
+    border-radius: 0 0 $expander-border-radius $expander-border-radius;
   }
 
   &[open] {
@@ -44,17 +39,16 @@ $details-border-colour: $nhsuk-border-colour;
     .nhsuk-details__text {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      border: solid $details-border-colour;
-      border-width: 0 $details-border-width $details-border-width $details-border-width;
+      border-width: 0 $expander-border-width $expander-border-width $expander-border-width;
     }
   }
 
-  &[open] .nhsuk-details__text {
-    border-color: $details-border-colour;
-  }
-
-  &[open]:hover .nhsuk-details__text,
-  &[open]:focus-within .nhsuk-details__text {
-    border-color: $details-border-colour !important;
+  // Keep the border colour constant on hover, to match the
+  // style of card links.
+  .nhsuk-details__summary:hover,
+  .nhsuk-details__summary:hover + .nhsuk-details__text,
+  &:has(.nhsuk-details__summary:hover) .nhsuk-details__summary,
+  &:has(.nhsuk-details__summary:hover) .nhsuk-details__text {
+    border-color: $nhsuk-border-colour;
   }
 }
