@@ -18,7 +18,7 @@ $details-border-colour: $nhsuk-border-colour;
   .nhsuk-details__summary {
     border-radius: $details-border-radius;
     border: $details-border-width solid $details-border-colour;
-    padding: nhsuk-spacing(3);
+    padding: 12px 16px;
 
     &:hover,
     &:focus,
@@ -27,7 +27,7 @@ $details-border-colour: $nhsuk-border-colour;
     }
 
     @include nhsuk-media-query($from: tablet) {
-      padding: nhsuk-spacing(4);
+      padding: 20px 24px;
     }
   }
 
