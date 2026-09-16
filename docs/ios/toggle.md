@@ -51,7 +51,7 @@ Where a toggle has a subtitle, keep the title short and put the detail in the su
 
 This component supports Dynamic Type, Dark Mode and VoiceOver.
 
-Because the style keeps the native toggle rather than drawing a custom control, it inherits the system switch's accessibility, haptics and disabled appearance. 
+Because the style keeps the native toggle rather than drawing a custom control, it inherits the system switch's accessibility, haptics and disabled appearance.
 
 VoiceOver announces the toggle's label and its on or off state, and disabled toggles fade visually but remain in the accessibility tree, so users know the option exists even when it is not available.
 
