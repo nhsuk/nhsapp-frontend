@@ -22,6 +22,19 @@ $expander-border-width: 2px; // Default is otherwise 1px
     border-radius: 0 0 $expander-border-radius $expander-border-radius;
   }
 
+  &[open] {
+    .nhsuk-details__summary {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .nhsuk-details__text {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-width: 0 $expander-border-width $expander-border-width $expander-border-width;
+    }
+  }  
+
   // Keep the border colour constant on hover, to match the
   // style of card links.
   .nhsuk-details__summary:hover,
