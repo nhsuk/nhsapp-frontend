@@ -7,42 +7,66 @@ tags:
 
 Toggles let users switch a single option on or off.
 
+<img src="/assets/images/ios/toggle.png" width="375">
+
 ## How it works
 
-There is one style, applied with the `.nhsToggle` preset. It uses the native iOS toggle, tinted NHS blue when on, with its label in the NHS body font.
+There is one style, applied with the `.nhsToggle` preset. It uses the native iOS toggle, tinted NHS blue when on.
 
 ## How to use
 
 Use a standard [SwiftUI Toggle](https://developer.apple.com/documentation/swiftui/toggle) and apply the NHS style with the `.toggleStyle(.nhsToggle)` modifier.
 
 ```swift { .nhsuk-code--button }
-Toggle("Face ID", isOn: $isOn)
-    .toggleStyle(.nhsToggle)
+@State private var isOn = true
+@State private var isOff = false
+
+var body: some View {
+  Toggle("On", isOn: $isOn)
+      .toggleStyle(.nhsToggle)
+
+  Toggle("Off", isOn: $isOff)
+      .toggleStyle(.nhsToggle)
+}
 ```
 
 ### In a form
 
-Apply the style to the `Form` to set it for every toggle inside:
+<img src="/assets/images/ios/toggle-on.png" width="375">
+
+Apply the style to the `Form` to set it for every toggle inside.
 
 ```swift { .nhsuk-code--button }
-Form {
-    Toggle("Face ID", isOn: $isOn)
+@State private var faceID = true
+
+var body: some View {
+    Form {
+        Toggle("Face ID", isOn: $faceID)
+    }
+    .toggleStyle(.nhsToggle)
 }
-.toggleStyle(.nhsToggle)
 ```
 
 ### Toggle with a subtitle
 
+<img src="/assets/images/ios/toggle-subtitle.png" width="375">
+
 When a toggle needs supporting text, give it a two-part label.
 
 ```swift { .nhsuk-code--button }
-Toggle(isOn: $acceptsCookies) {
-    Text("Allow optional analytic cookies")
-        .bold()
-    Text("I accept the use of optional analytic cookies used to improve the performance of the NHS App")
-        .foregroundStyle(.nhsSecondaryText)
+@State private var acceptsCookies = true
+
+var body: some View {
+    Form {
+        Toggle(isOn: $acceptsCookies) {
+            Text("Allow optional analytic cookies")
+                .bold()
+            Text("I accept the use of optional analytic cookies used to improve the performance of the NHS App")
+                .foregroundStyle(.nhsSecondaryText)
+        }
+    }
+    .toggleStyle(.nhsToggle)
 }
-.toggleStyle(.nhsToggle)
 ```
 
 Where a toggle has a subtitle, keep the title short and put the detail in the subtitle, so the on or off state is clear at a glance.
