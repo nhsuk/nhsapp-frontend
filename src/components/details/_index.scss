@@ -4,9 +4,11 @@
 $expander-border-radius: nhsuk-spacing(2);
 $expander-border-width: 2px; // Default is otherwise 1px
 $expander-responsive-padding-scale: 4; // Reduced from 5
+$expander-responsive-margin-scale: 6; // Increased from 4
 
 .nhsapp-expander {
   border-radius: $expander-border-radius;
+   @include nhsuk-responsive-margin($expander-responsive-margin-scale, "bottom");
 
   .nhsuk-details__summary {
     border-radius: $expander-border-radius;
