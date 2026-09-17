@@ -8,7 +8,7 @@ $expander-responsive-margin-scale: 6; // Increased from 4
 
 .nhsapp-expander {
   border-radius: $expander-border-radius;
-   @include nhsuk-responsive-margin($expander-responsive-margin-scale, "bottom");
+  @include nhsuk-responsive-margin($expander-responsive-margin-scale, "bottom");
 
   .nhsuk-details__summary {
     border-radius: $expander-border-radius;
