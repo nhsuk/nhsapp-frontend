@@ -64,7 +64,7 @@ See our [title guidance](/ios/title/) for more details.
 
 <img src="/assets/images/ios/close-button.png" width="320" alt="Screenshot showing a circular button on the right of a mobile screen with an X icon within it">
 
-The close button should be added to most screens presented as a [web overlay](/patterns/access-web-journeys/), allowing the user to return to the screen beneath it. Do not use it when the user has reached the end of a journey – use the 'done' button instead.
+The close button should be added to most screens presented as a [web overlay](/patterns/access-web-journeys/), allowing the user to return to the screen beneath it. It should also be used on any native views presented as a sheet. Do not use it when the user has reached the end of a journey – use the 'done' button instead.
 
 If the closing the screen will cause the user to lose some data, for example if they are part way through booking an appointment, you can set a `confirmationTitle`, which will present a confirmation dialog shown before the screen is closed. Users can then tap elsewhere to cancel the closing.
 
@@ -103,7 +103,7 @@ struct BookAppointmentView: View {
 
 <img src="/assets/images/ios/done-button.png" width="320" alt="Screenshot showing a green button on the right of a mobile screen with the word 'Done' inside it in white text">
 
-The 'done' button is added to any screens presented as [web overlay](/patterns/access-web-journeys/), when the user has reached the end of a journey and has completed a task. For example, after booking an appointment.
+The 'done' button is added to any screens presented as [web overlay](/patterns/access-web-journeys/), when the user has reached the end of a journey and has completed a task. For example, after booking an appointment. The 'done' button should also be used at the end of any native journeys presented in a sheet.
 
 {% call details({ summary: "Swift options" }) %}
 
