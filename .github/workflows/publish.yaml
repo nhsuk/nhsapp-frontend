@@ -29,8 +29,8 @@ jobs:
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAG: github.event.release.tag_name
-          VERSION: steps.get_version.outputs.VERSION
+          TAG: ${{ github.event.release.tag_name }}
+          VERSION: ${{ steps.get_version.outputs.VERSION }}
         run: gh release upload "$TAG" "./dist/nhsapp-frontend-$VERSION.zip"
 
       - name: Publish npm package
