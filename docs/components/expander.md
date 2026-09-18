@@ -2,8 +2,6 @@
 layout: layouts/component.njk
 title: Expander
 description: Use expanders to make content easier to digest by letting users reveal more detailed information only if they need it.
-
-
 backlogID: 581
 tags:
   - component
