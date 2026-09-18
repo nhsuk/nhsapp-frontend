@@ -333,8 +333,6 @@ You can use confirmation dialogs to make sure users understand the consequences 
 
 The text should be a single sentence. It should give any important extra context in a brief and direct way.
 
-Use verbs for button text. If you have more than one button, make sure that the difference between the options is clear.
-
 ## Accessibility
 
 This component supports Dynamic Type, Dark Mode and VoiceOver.
