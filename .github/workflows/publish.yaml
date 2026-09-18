@@ -33,10 +33,10 @@ jobs:
             "./dist/nhsapp-frontend-${{ steps.get_version.outputs.VERSION }}.zip" \
             --clobber
 
-      - name: Publish NPM package
-        run: |
-          if [[ "${{ github.event.release.prerelease }}" == "true" ]]; then
-            npm publish --tag next --access public
-          else
-            npm publish --tag latest --access public
-          fi
+      - name: Publish npm package
+          if: ${{ !github.event.release.prerelease }}
+          run: npm publish --tag latest
+
+      - name: Publish npm package (pre-release)
+        if: ${{ github.event.release.prerelease }}
+        run: npm publish --tag next
