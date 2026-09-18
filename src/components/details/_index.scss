@@ -1,0 +1,52 @@
+@use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
+@use "nhsuk-frontend/dist/nhsuk/core/settings/colours-applied" as *;
+
+$expander-border-radius: nhsuk-spacing(2);
+$expander-border-width: 2px; // Default is otherwise 1px
+$expander-responsive-padding-scale: 4; // Reduced from 5
+$expander-responsive-margin-scale: 6; // Increased from 4
+
+.nhsapp-expander {
+  border-radius: $expander-border-radius;
+  @include nhsuk-responsive-margin($expander-responsive-margin-scale, "bottom");
+
+  .nhsuk-details__summary {
+    border-radius: $expander-border-radius;
+    border-width: $expander-border-width;
+
+    @include nhsuk-responsive-padding($expander-responsive-padding-scale);
+  }
+
+  .nhsuk-details__summary-text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nhsuk-details__text {
+    border-radius: 0 0 $expander-border-radius $expander-border-radius;
+
+    @include nhsuk-responsive-padding($expander-responsive-padding-scale, $direction: ("left", "right", "bottom"));
+  }
+
+  &[open] {
+    .nhsuk-details__summary {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .nhsuk-details__text {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-width: 0 $expander-border-width $expander-border-width $expander-border-width;
+    }
+  }
+
+  // Keep the border colour constant on hover, to match the
+  // style of card links.
+  .nhsuk-details__summary:hover,
+  .nhsuk-details__summary:hover + .nhsuk-details__text,
+  &:has(.nhsuk-details__summary:hover) .nhsuk-details__summary,
+  &:has(.nhsuk-details__summary:hover) .nhsuk-details__text {
+    border-color: $nhsuk-border-colour;
+  }
+}
