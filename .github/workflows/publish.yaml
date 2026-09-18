@@ -33,8 +33,8 @@ jobs:
         run: gh release upload "$TAG" "./dist/nhsapp-frontend-$VERSION.zip"
 
       - name: Publish npm package
-          if: ${{ !github.event.release.prerelease }}
-          run: npm publish --tag latest
+        if: ${{ !github.event.release.prerelease }}
+        run: npm publish --tag latest
 
       - name: Publish npm package (pre-release)
         if: ${{ github.event.release.prerelease }}
