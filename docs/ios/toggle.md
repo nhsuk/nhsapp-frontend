@@ -79,6 +79,12 @@ The style keeps the native toggle rather than drawing a custom control, so it in
 
 VoiceOver announces the toggle's label and its on or off state. Disabled toggles fade visually but remain in the accessibility tree, so users know the option exists even when it is not available.
 
+### On/Off Labels
+
+<img src="/assets/images/ios/toggle-accessibility.png" width="375">
+
+The style also supports the On/Off Labels setting (**Settings > Accessibility > Display & Text Size > On/Off Labels**). When it is turned on, the toggle shows an "I" when on and an "O" when off, so the state does not rely on colour alone.
+
 ## Research
 
 This toggle style is not yet being used by the live NHS App, but several rounds of research have been done on them.
