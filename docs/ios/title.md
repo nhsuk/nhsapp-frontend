@@ -5,7 +5,7 @@ tags:
   - iosComponents
 ---
 
-The title is the main heading of a screen. It can also appear in the toolbar.
+The title is the main heading of a screen. It can also appear in the [toolbar](/ios/toolbar/).
 
 ## When to use
 
