@@ -77,7 +77,7 @@ This component supports Dynamic Type, Dark Mode and VoiceOver.
 
 The style keeps the native toggle rather than drawing a custom control, so it inherits the system switch's accessibility, haptics and disabled appearance.
 
-VoiceOver announces the toggle's label and its on or off state, and disabled toggles fade visually but remain in the accessibility tree, so users know the option exists even when it is not available.
+VoiceOver announces the toggle's label and its on or off state. Disabled toggles fade visually but remain in the accessibility tree, so users know the option exists even when it is not available.
 
 ## Research
 
