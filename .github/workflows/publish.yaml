@@ -36,7 +36,7 @@ jobs:
       - name: Publish NPM package
         run: |
           if [[ "${{ github.event.release.prerelease }}" == "true" ]]; then
-            npm publish --tag next --provenance --access public
+            npm publish --tag next --access public
           else
-            npm publish --tag latest --provenance --access public
+            npm publish --tag latest --access public
           fi
