@@ -2,7 +2,7 @@
 @forward ".";
 
 @include nhsuk-warning(
-  "import-using-timeline",
+  "component-scss-files",
   "Importing using 'components/timeline/timeline' is deprecated. Update your import statement to import 'components/timeline' instead.",
   $silence-further-warnings: false
 );

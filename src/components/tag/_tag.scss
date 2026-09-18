@@ -2,7 +2,7 @@
 @forward ".";
 
 @include nhsuk-warning(
-  "import-using-tag",
+  "component-scss-files",
   "Importing using 'components/tag/tag' is deprecated. Update your import statement to import 'components/tag' instead.",
   $silence-further-warnings: false
 );

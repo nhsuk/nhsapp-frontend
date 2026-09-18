@@ -2,7 +2,7 @@
 @forward ".";
 
 @include nhsuk-warning(
-  "import-using-badge",
+  "component-scss-files",
   "Importing using 'components/badge/badge' is deprecated. Update your import statement to import 'components/badge' instead.",
   $silence-further-warnings: false
 );

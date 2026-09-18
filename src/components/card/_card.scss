@@ -2,7 +2,7 @@
 @forward ".";
 
 @include nhsuk-warning(
-  "import-using-card",
+  "component-scss-files",
   "Importing using 'components/card/card' is deprecated. Update your import statement to import 'components/card' instead.",
   $silence-further-warnings: false
 );
