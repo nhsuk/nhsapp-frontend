@@ -4,6 +4,7 @@
 
 ### 🆕 New features
 
+- Added expander component variant - [pull request #582](https://github.com/nhsuk/nhsapp-frontend/pull/582)
 - Updated to [NHS.UK frontend v10.6.1](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.6.1) - [pull request #573](https://github.com/nhsuk/nhsapp-frontend/pull/573)
 
 ### 🔧 Fixes
