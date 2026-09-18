@@ -1,6 +1,6 @@
 # NHS App Frontend Changelog
 
-## `v5.3.0` - 18 August 2026
+## `v5.3.0` - 18 September 2026
 
 ### 🆕 New features
 
