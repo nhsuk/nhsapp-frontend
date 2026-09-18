@@ -5,7 +5,7 @@ tags:
   - iosComponents
 ---
 
-Toggles let users switch a single option on or off.
+Toggles let users switch a single option on or off. They are a standard iOS component (see [Apple's toggle guidance](https://developer.apple.com/design/human-interface-guidelines/toggles)). 
 
 <img src="/assets/images/ios/toggle.png" width="375">
 
