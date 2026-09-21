@@ -1,26 +1,10 @@
+---
+section: web
+---
+
 {% extends "./sidebar.njk" %}
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% block beforeContent %}
-  {% if title === "Styles" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/styles",
-      text: "Styles"
-    }) }}
-  {% endif %}
-{% endblock %}
 
 {% set sidebar %}
   {{ appSideNavigation({
@@ -28,9 +12,6 @@
     currentPath: page.url,
     sections: [
       {
-        heading: {
-          text: 'Styles'
-        },
         items: collections.style | sort(attribute="data.title")
       }
     ]

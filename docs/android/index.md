@@ -1,16 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: layouts/android.njk
 title: Android
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
-
-{{ nhsappTag({
-  text: 'Work in progress',
-  classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
-})}}
-
-# Android
 
 We are transforming the NHS App to be more platform-native.
 

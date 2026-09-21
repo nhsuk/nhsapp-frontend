@@ -1,6 +1,7 @@
 {% extends "nhsuk/template-with-imports.njk" %}
 
 {% from "icon/macro.njk" import nhsappIcon %}
+{% from "nhsuk/components/section-navigation/macro.njk" import sectionNavigation %}
 
 {% block pageTitle -%}
   {% if title %}{{ title }} - {% endif %}NHS App design system
@@ -28,24 +29,24 @@
     navigation: {
       items: [
         {
-          href: '/get-started/',
-          text: 'Get started',
-          active: page and page.url and '/get-started/' in page.url
+          href: '/',
+          text: 'Home',
+          active: page and page.url == '/'
         },
         {
-          href: '/styles/',
-          text: 'Styles',
-          active: page and page.url and '/styles/' in page.url
+          href: '/web/',
+          text: 'Web',
+          active: page and page.url and page.url != '/' and not ('/ios/' in page.url) and not ('/android/' in page.url) and not ('/community/' in page.url)
         },
         {
-          href: '/components/',
-          text: 'Components',
-          active: page and page.url and '/components/' in page.url
+          href: '/ios/',
+          text: 'iOS',
+          active: page and page.url and '/ios/' in page.url
         },
         {
-          href: '/patterns/',
-          text: 'Patterns',
-          active: page and page.url and '/patterns/' in page.url
+          href: '/android/',
+          text: 'Android',
+          active: page and page.url and '/android/' in page.url
         },
         {
           href: '/community/',
@@ -55,6 +56,66 @@
       ]
     }
   }) }}
+
+  {% if section == "ios" %}
+    {% set sectionNavItems = [
+      {
+        href: '/ios/',
+        text: 'Get started',
+        current: (page.url == '/ios/') or (tags and 'ios' in tags)
+      },
+      {
+        href: '/ios/styles/',
+        text: 'Styles',
+        current: page.url == '/ios/styles/' or (tags and 'iosStyles' in tags)
+      },
+      {
+        href: '/ios/components/',
+        text: 'Components',
+        current: page.url == '/ios/components/' or (tags and 'iosComponents' in tags)
+      },
+      {
+        href: '/ios/layouts/',
+        text: 'Layouts',
+        current: page.url == '/ios/layouts/' or (tags and 'iosLayouts' in tags)
+      }
+    ] %}
+  {% elif section == "web" %}
+    {% set sectionNavItems = [
+      {
+        href: '/get-started/',
+        text: 'Get started',
+        current: page and page.url and (page.url == '/web/' or '/get-started/' in page.url)
+      },
+      {
+        href: '/styles/',
+        text: 'Styles',
+        current: page and page.url and '/styles/' in page.url
+      },
+      {
+        href: '/components/',
+        text: 'Components',
+        current: page and page.url and '/components/' in page.url
+      },
+      {
+        href: '/patterns/',
+        text: 'Patterns',
+        current: page and page.url and '/patterns/' in page.url
+      }
+    ] %}
+  {% else %}
+    {% set sectionNavItems = [] %}
+  {% endif %}
+
+  {% if sectionNavItems and sectionNavItems.length %}
+    <div class="nhsuk-width-container">
+      {{ sectionNavigation({
+        ariaLabel: 'Section navigation',
+        direction: 'horizontal',
+        items: sectionNavItems
+      }) }}
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
