@@ -29,15 +29,21 @@
     sections: [
       {
         heading: {
-          text: 'Pages'
+          text: 'Screens'
         },
-        items: collections.page | sort(attribute="data.title") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/")
+        items: collections.screen | sort(attribute="data.order") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/")
+      },
+            {
+        heading: {
+          text: 'Structure'
+        },
+        items: collections.structure | sort(attribute="data.order") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/")
       },
       {
         heading: {
           text: 'Help users to'
         },
-        items: collections.helpUsers | sort(attribute="data.title")
+        items: collections.helpUsers | sort(attribute="data.order")
       }
     ]
   }) }}
@@ -46,8 +52,10 @@
 {% block content %}
   {% if childPage %}
     <span class="nhsuk-caption-xl">Integrating services into the NHS App</span>
-  {% elif tags and "page" in tags %}
-    <span class="nhsuk-caption-xl">Pages</span>
+  {% elif tags and "screen" in tags %}
+    <span class="nhsuk-caption-xl">Screens</span>
+  {% elif tags and "structure" in tags %}
+    <span class="nhsuk-caption-xl">Structure</span>  
   {% elif tags and "helpUsers" in tags %}
     <span class="nhsuk-caption-xl">Help users to</span>
   {% endif %}
@@ -59,7 +67,7 @@
   {% endif %}
   <p>{{ description }}</p>
   {{ content | safe }}
-  {% if tags and ("page" in tags or "helpUsers" in tags) %}
+  {% if tags and ("screen" in tags or "helpUsers" in tags or "structure" in tags) %}
     {% include "layouts/partials/feedback-section.njk" %}
   {% endif %}
 {% endblock %}

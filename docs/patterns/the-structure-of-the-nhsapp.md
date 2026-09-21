@@ -3,9 +3,9 @@ layout: layouts/pattern.njk
 title: The structure of the NHS App
 description:
 backlogID: 66
-order: 1
+order: 2
 tags:
-  - page
+  - structure
 ---
 
 The NHS App brings together many different features and services that help people manage their healthcare digitally. In total, there are over 60 services within the app.
@@ -18,7 +18,7 @@ This section explains the overall structure of the NHS App.
 
 <img src="/assets/images/nhsapp-structure-image1.png" alt="The three main hub pages of the NHS App: Home, Messages and Profile" style="border: none; background-color: transparent;">
 
-The NHS App has three main areas, called hub pages: Home, Messages and Profile. From these hub pages, users can access the services and features they need through categories such as prescriptions, appointments and test results—these are called sub-hub pages.
+The NHS App has three main areas, called hubs: Home, Messages and Profile. From these hubs, users can access the services and features they need through categories such as prescriptions, appointments and test results—these are called sub-hubs.
 
 Across all parts of the app, the options available to users depend on which information and services their GP surgery or secondary care provider has enabled.
 
