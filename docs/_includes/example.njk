@@ -13,8 +13,7 @@
     </svg>
   {% endif -%}
   <iframe
-    onload="{%- if mobile == true %}{% else %}this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';{% endif %}"
-    class="app-example__frame"
+onload="{%- if mobile == true %}{% else %} this.style.height = this.contentWindow.document.documentElement.offsetHeight + 'px'; this.contentWindow.document.addEventListener('toggle', () => { this.style.height = this.contentWindow.document.documentElement.offsetHeight + 'px'; }, true); {% endif %}"    class="app-example__frame"
     scrolling="auto"
     frameborder="0"
     height="{%- if mobile == true %}700px{% else %}{{ height }}{% endif %}"

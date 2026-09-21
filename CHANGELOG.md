@@ -1,5 +1,18 @@
 # NHS App Frontend Changelog
 
+## `v5.3.0` - 18 September 2026
+
+### 🆕 New features
+
+- Added expander component variant - [pull request #582](https://github.com/nhsuk/nhsapp-frontend/pull/582)
+- Updated to [NHS.UK frontend v10.6.1](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.6.1) - [pull request #573](https://github.com/nhsuk/nhsapp-frontend/pull/573)
+
+### 🔧 Fixes
+
+- Fix Sass 1.80.0 `import` and `global-builtin` deprecations
+- Fix Sass 1.95.0 `if-function` deprecation
+- Renamed the `badge`, `card`, `tag` and `timeline` component Sass partials to `_index.scss`, for consistency with the `button` and `summary-list` components. The old file names (for example `components/badge/badge`) are kept as deprecated stub files that forward to the new ones, so existing imports keep working, but will be removed in a future major release.
+
 ## `v5.2.0` - 25 August 2026
 
 ### 🆕 New features
