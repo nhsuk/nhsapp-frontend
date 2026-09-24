@@ -38,3 +38,7 @@ We may also support:
 - Offline access
 
 Many of these features we will get by default when using Jetpack Compose, however we may need to do extra work to support them for any custom features.
+
+## Testing the app
+
+If you've been invited, you can [install a test app from Google Play](/android/install-test-app/).
