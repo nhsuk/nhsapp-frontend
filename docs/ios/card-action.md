@@ -15,7 +15,7 @@ There are 3 versions of an card action:
 - [plain](#plain)
 - [reverse](#reverse)
 
-Card actions are usually grouped inside a card action group, which draws the card and the divider between each pair of rows.
+`CardAction`'s are usually grouped inside a `CardActionGroup`, which draws the card and the divider between each pair of rows.
 
 There are 2 card action group styles:
 
@@ -23,8 +23,6 @@ There are 2 card action group styles:
 - [secondary group](#reverse-card-action)
 
 ## How to use
-
-Create rows with `CardAction` and group them with `CardActionGroup`.
 
 {% from "details/macro.njk" import details %}
 {% call details({ summary: "Swift options" }) %}
