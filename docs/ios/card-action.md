@@ -9,18 +9,18 @@ Card actions are tappable rows used to link onwards from a list of options.
 
 ## How it works
 
-There are 3 versions of an card action:
+There are 3 versions of a card action:
 
 - [primary](#primary)
 - [plain](#plain)
 - [reverse](#reverse)
 
-`CardAction`'s are usually grouped inside a `CardActionGroup`, which draws the card and the divider between each pair of rows.
+`CardAction`'s are usually grouped inside a `CardActionGroup`, which adds the card and the divider between each pair of card actions.
 
 There are 2 card action group styles:
 
 - [primary group](#card-action-group)
-- [secondary group](#reverse-card-action)
+- [secondary group](#secondary-card-action-group)
 
 ## How to use
 
@@ -44,7 +44,7 @@ CardAction(title: "Check the progress of prescriptions") { }
     .nhsCardStyle()
 ```
 
-For a single card action outside a group, apply `nhsCardStyle()` to draw the card around it.
+For a single card action outside a group, apply `nhsCardStyle()` to add a card around it.
 
 ### Plain
 
@@ -55,7 +55,7 @@ CardAction(title: "Check the progress of prescriptions", style: .plain) { }
 
 ### Reverse
 
-For a row on its own that needs to stand out, use the reverse style — white text with a bold title on a blue card. It draws its own card, so don't add `nhsCardStyle()`:
+For a card action on its own that needs to stand out, use the reverse style — white text with a bold title on a blue card. It has its own card, so don't add `nhsCardStyle()`:
 
 ```swift { .nhsuk-code--button }
 CardAction(title: "Family and carer access", style: .reverse) {
@@ -78,7 +78,7 @@ CardAction(
 
 ### Card action group
 
-Pass the rows as an array. The group draws the card and the dividers, so none of that is repeated at each row:
+Pass the card actions as an array. The group adds the card and the dividers, so none of that is repeated at each card action:
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(header: "GP surgery", actions: [
@@ -90,7 +90,7 @@ CardActionGroup(header: "GP surgery", actions: [
 
 ### Secondary card action group
 
-For links that need less emphasis, use a secondary group. It draws a bordered card and puts its rows in the plain style — blue text with no chevron — automatically:
+For links that need less emphasis, use a secondary group. It adds a bordered card and puts its card actions in the plain style — blue text with no chevron — automatically:
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
@@ -123,7 +123,7 @@ Use a more prominent header, such as a top-level section on a long screen, by pa
 
 ### A "See all" action
 
-Mix a plain action into a primary group for an action like "See all", set apart from the rows above it:
+Mix a plain action into a primary group for an action like "See all", set apart from the card actions above it:
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(header: "Test results", actions: [
@@ -134,9 +134,9 @@ CardActionGroup(header: "Test results", actions: [
 ])
 ```
 
-### Building rows from data
+### Building card actions from data
 
-Build the rows with `map`:
+Build the card actions with `map`:
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(style: .secondary, actions: links.map { link in
@@ -144,7 +144,7 @@ CardActionGroup(style: .secondary, actions: links.map { link in
 })
 ```
 
-For a row that is only sometimes shown, build the array in a computed property and append the row when it applies:
+For a card action that is only sometimes shown, build the array in a computed property and append the card action when it applies:
 
 ```swift { .nhsuk-code--button }
 private var prescriptionActions: [CardAction] {
@@ -164,7 +164,7 @@ private var prescriptionActions: [CardAction] {
 
 A card action runs a closure when tapped rather than holding a destination, so your app keeps control of how it navigates — a navigation path, a sheet, a full-screen cover, or something else. This matches the home menu item, profile card and campaign card, none of which navigate on your behalf.
 
-Keeping the destination out of the row means a row whose behaviour depends on state stays a single call site, instead of branching between two different kinds of row:
+Keeping the destination out of the card action means a card action whose behaviour depends on state stays a single call site, instead of branching between two different kinds of card action:
 
 ```swift { .nhsuk-code--button }
 enum Route: Hashable {
@@ -199,9 +199,9 @@ Type the path as an array of your own route type rather than `NavigationPath`, s
 
 This component supports Dynamic Type, Dark Mode and VoiceOver.
 
-A row is announced as a single button, reading out the title and then the subtitle rather than as two separate items.
+A card action is announced as a single button, reading out the title and then the subtitle rather than as two separate items.
 
-Where a row leads somewhere less obvious than a screen in the app, describe what happens in `accessibilityHint` — for example "Opens in a browser". A row that opens a web page inside the app stays a button, because that is how it behaves: it presents something the person closes to come back.
+Where a card action leads somewhere less obvious than a screen in the app, describe what happens in `accessibilityHint` — for example "Opens in a browser". A card action that opens a web page inside the app stays a button, because that is how it behaves: it presents something the person closes to come back.
 
 ```swift { .nhsuk-code--button }
 CardAction(
@@ -213,7 +213,7 @@ CardAction(
 }
 ```
 
-Add the link trait only where the row really hands the URL to the system, so the person leaves for Safari or another app. VoiceOver then announces it as a link, and it appears in the links rotor:
+Add the link trait only where the card action really hands the URL to the system, so the person leaves for Safari or another app. VoiceOver then announces it as a link, and it appears in the links rotor:
 
 ```swift { .nhsuk-code--button }
 CardAction(
