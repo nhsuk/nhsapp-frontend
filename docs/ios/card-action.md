@@ -7,6 +7,8 @@ tags:
 
 Card actions are tappable rows used to link onwards from a list of options.
 
+<img src="/assets/images/ios/card-action.png" width="375">
+
 ## How it works
 
 There are 3 versions of a card action:
@@ -29,15 +31,11 @@ There are 2 card action group styles:
 {% include "ios/card-action/swift-options.md" %}
 {% endcall %}
 
-```swift { .nhsuk-code--button }
-CardActionGroup(actions: [
-    CardAction(title: "Request a repeat prescription") { },
-    CardAction(title: "Check the progress of prescriptions") { },
-    CardAction(title: "Medicines record") { },
-])
-```
-
 ### Primary
+
+Use the primary style for a card action that leads to another screen or a sheet in the app.
+
+<img src="/assets/images/ios/card-action.png" width="375">
 
 ```swift { .nhsuk-code--button }
 CardAction(title: "Check the progress of prescriptions") { }
@@ -48,24 +46,34 @@ For a single card action outside a group, apply `nhsCardStyle()` to add a card a
 
 ### Plain
 
+Use the plain style for a card action that needs less emphasis, such as a link out to a web page.
+
+<img src="/assets/images/ios/card-action-plain.png" width="375">
+
 ```swift { .nhsuk-code--button }
-CardAction(title: "Check the progress of prescriptions", style: .plain) { }
+CardAction(title: "Find services near you", style: .plain) { }
     .nhsCardStyle()
 ```
 
 ### Reverse
 
-For a card action on its own that needs to stand out, use the reverse style — white text with a bold title on a blue card. It has its own card, so don't add `nhsCardStyle()`:
+Use the reverse style for a card action on its own that needs to stand out. It has a bold title and white text on a blue card.
+
+<img src="/assets/images/ios/card-action-reverse.png" width="375">
 
 ```swift { .nhsuk-code--button }
 CardAction(title: "Family and carer access", style: .reverse) {
-    showFamilyAccess = true
+    // Action
 }
 ```
 
+It includes its own card, so don't add `nhsCardStyle()`. Don't use a reverse card action inside a card action group.
+
 ### With a subtitle
 
-Add a `subtitle` for supporting text below the title:
+Add a `subtitle` for supporting text below the title.
+
+<img src="/assets/images/ios/card-action-subtitle.png" width="375">
 
 ```swift { .nhsuk-code--button }
 CardAction(
@@ -78,7 +86,9 @@ CardAction(
 
 ### Card action group
 
-Pass the card actions as an array. The group adds the card and the dividers, so none of that is repeated at each card action:
+Pass the card actions as an array. The group adds the card and the dividers, so none of that is repeated at each card action.
+
+<img src="/assets/images/ios/card-action-group.png" width="375">
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(header: "GP surgery", actions: [
@@ -90,7 +100,9 @@ CardActionGroup(header: "GP surgery", actions: [
 
 ### Secondary card action group
 
-For links that need less emphasis, use a secondary group. It adds a bordered card and puts its card actions in the plain style — blue text with no chevron — automatically:
+For links that need less emphasis, use a secondary group. It adds a bordered card and puts its card actions in the plain style automatically.
+
+<img src="/assets/images/ios/card-action-group-secondary.png" width="375">
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
@@ -104,9 +116,26 @@ CardActionGroup(
 )
 ```
 
+Use a more prominent header, such as a top-level section on a long screen, by passing `headerFont: .nhsTitle3`.
+
+### A less prominent action
+
+Mix a plain action into a primary group for one that needs less emphasis than the card actions above it, such as "See all" or "Show more".
+
+<img src="/assets/images/ios/card-action-mixed.png" width="375">
+
+```swift { .nhsuk-code--button }
+CardActionGroup(header: "Test results", actions: [
+    CardAction(title: "HPV test") { },
+    CardAction(title: "Kidney function blood tests") { },
+    CardAction(title: "Blood pressure") { },
+    CardAction(title: "See all", style: .plain) { },
+])
+```
+
 ### Header and footer
 
-Add a `header` above the card and a `footer` below it. Keep the header in sentence case:
+Add a `header` above the card and a `footer` below it. Keep the header in sentence case.
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
@@ -119,89 +148,13 @@ CardActionGroup(
 )
 ```
 
-Use a more prominent header, such as a top-level section on a long screen, by passing `headerFont: .nhsTitle3`.
-
-### A "See all" action
-
-Mix a plain action into a primary group for an action like "See all", set apart from the card actions above it:
-
-```swift { .nhsuk-code--button }
-CardActionGroup(header: "Test results", actions: [
-    CardAction(title: "HPV test") { },
-    CardAction(title: "Kidney function blood tests") { },
-    CardAction(title: "Blood pressure") { },
-    CardAction(title: "See all", style: .plain) { },
-])
-```
-
-### Building card actions from data
-
-Build the card actions with `map`:
-
-```swift { .nhsuk-code--button }
-CardActionGroup(style: .secondary, actions: links.map { link in
-    CardAction(title: link.title) { showWebView(link.url) }
-})
-```
-
-For a card action that is only sometimes shown, build the array in a computed property and append the card action when it applies:
-
-```swift { .nhsuk-code--button }
-private var prescriptionActions: [CardAction] {
-    var actions = [
-        CardAction(title: "Request a repeat prescription") { },
-    ]
-    if let pharmacy {
-        actions.append(
-            CardAction(title: "Your chosen pharmacy", subtitle: pharmacy.name) { }
-        )
-    }
-    return actions
-}
-```
-
-## Navigation
-
-A card action runs a closure when tapped rather than holding a destination, so your app keeps control of how it navigates — a navigation path, a sheet, a full-screen cover, or something else. This matches the home menu item, profile card and campaign card, none of which navigate on your behalf.
-
-Keeping the destination out of the card action means a card action whose behaviour depends on state stays a single call site, instead of branching between two different kinds of card action:
-
-```swift { .nhsuk-code--button }
-enum Route: Hashable {
-    case gpSurgery, healthChoices
-}
-
-@State private var path: [Route] = []
-
-NavigationStack(path: $path) {
-    content
-        .navigationDestination(for: Route.self) { route in
-            switch route {
-            case .gpSurgery:     GPSurgeryView()
-            case .healthChoices: HealthChoicesView()
-            }
-        }
-}
-
-// At the call site
-CardAction(title: "Your GP surgery") {
-    if hasAccess {
-        path.append(.gpSurgery)
-    } else {
-        showUpgradeSheet = true
-    }
-}
-```
-
-Type the path as an array of your own route type rather than `NavigationPath`, so you can write `path.append(.gpSurgery)`. `NavigationPath` accepts any `Hashable`, so it gives the leading dot no type to resolve against.
-
 ## Accessibility
 
 This component supports Dynamic Type, Dark Mode and VoiceOver.
 
 A card action is announced as a single button, reading out the title and then the subtitle rather than as two separate items.
 
-Where a card action leads somewhere less obvious than a screen in the app, describe what happens in `accessibilityHint` — for example "Opens in a browser". A card action that opens a web page inside the app stays a button, because that is how it behaves: it presents something the person closes to come back.
+Where a card action leads somewhere less obvious than a screen in the app, describe what happens in `accessibilityHint`, for example "Opens in a web browser". A card action that opens a web page inside the app stays a button, because that is how it behaves: it presents something the person closes to come back.
 
 ```swift { .nhsuk-code--button }
 CardAction(
@@ -209,7 +162,7 @@ CardAction(
     style: .plain,
     accessibilityHint: "Opens a web page in the app"
 ) {
-    webPage = healthAToZURL
+    // Action
 }
 ```
 
@@ -218,9 +171,9 @@ Add the link trait only where the card action really hands the URL to the system
 ```swift { .nhsuk-code--button }
 CardAction(
     title: "Privacy and legal policies",
-    accessibilityHint: "Opens in a browser"
+    accessibilityHint: "Opens in a web browser"
 ) {
-    openURL(policiesURL)
+    // Action
 }
 .accessibilityAddTraits(.isLink)
 ```
@@ -229,4 +182,4 @@ A group's header is marked up as a heading, so VoiceOver users can find it in th
 
 ## Research
 
-This component is not yet being used by the live NHS App. Add a note here when research has been done on it.
+This component is not yet being used by the live NHS App, but several rounds of research have been done on them.
