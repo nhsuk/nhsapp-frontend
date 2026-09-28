@@ -11,7 +11,7 @@ Card actions are tappable rows used to link onwards from a list of options.
 
 ## How it works
 
-There are 3 versions of a card action:
+There are 3 styles of a card action:
 
 - [primary](#primary)
 - [plain](#plain)
@@ -46,7 +46,7 @@ For a single card action outside a group, apply `nhsCardStyle()` to add a card a
 
 ### Plain
 
-Use the plain style for a card action that needs less emphasis, such as a link out to a web page.
+Use the plain style for a card action that needs less emphasis, such as a link out to a web page. It has no chevron.
 
 <img src="/assets/images/ios/card-action-plain.png" width="375">
 
@@ -116,8 +116,6 @@ CardActionGroup(
 )
 ```
 
-Use a more prominent header, such as a top-level section on a long screen, by passing `headerFont: .nhsTitle3`.
-
 ### A less prominent action
 
 Mix a plain action into a primary group for one that needs less emphasis than the card actions above it, such as "See all" or "Show more".
@@ -147,6 +145,8 @@ CardActionGroup(
     ]
 )
 ```
+
+Use a more prominent header, such as a top-level section on a long screen, by passing `headerFont: .nhsTitle3`.
 
 ## Accessibility
 
@@ -182,4 +182,4 @@ A group's header is marked up as a heading, so VoiceOver users can find it in th
 
 ## Research
 
-This component is not yet being used by the live NHS App, but several rounds of research have been done on them.
+This component is not yet being used by the live NHS App, but several rounds of research have been done on it.
