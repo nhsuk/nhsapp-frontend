@@ -57,7 +57,7 @@ This is the first release of the NHS App Design System for iOS.
 - [Banner](/ios/banner) — a high-visibility, tappable card for important actions such as identity verification or feedback, with solid and outlined styles
 - [Campaign card](/ios/campaign-card) — a tappable card for public health campaigns, showing a photograph with a heading and body text, responsive across size classes
 - [Home menu](/ios/home-menu) — a responsive grid of primary navigation destinations that collapses to a single column at large type sizes
-- Divider — a horizontal rule with configurable colour and thickness for separating content within cards
+- [Divider](/ios/divider) — a horizontal rule with configurable colour and thickness for separating content within cards
 - [Profile card](/ios/profile-card) — a tappable card showing whose profile is being viewed, with "your profile" and "acting for someone else" variants
 - [Toolbar items](/ios/toolbar) - a collection of items for the toolbar
 
