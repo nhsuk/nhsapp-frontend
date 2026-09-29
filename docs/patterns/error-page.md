@@ -1,25 +1,25 @@
 ---
 layout: layouts/pattern.njk
-title: Error pages
-description: Use error pages to tell users there is an unexpected problem. Explain what has happened and what they can do next.
+title: Error screens
+description: Use error screens to tell users there is an unexpected problem. Explain what has happened and what they can do next.
 backlogID: 119
 order: 4
 tags:
-  - page
+  - screen
 ---
 
 {% example "error-pages/test-results.njk" %}
 
 ## When to use
 
-Use an error page when:
+Use an error screen when:
 
 - there is an unexpected problem
 - users cannot access the service
 
 Log all errors and fix them as quickly as possible.
 
-Consider closing the service an using a [service unavailable page](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) if the problem happens persistently and for a long time.
+Consider closing the service an using a [service unavailable screen](https://design-system.service.gov.uk/patterns/service-unavailable-pages/) if the problem happens persistently and for a long time.
 
 ## When not to use
 
@@ -27,9 +27,9 @@ Do not use this pattern if:
 
 - you can adapt GOV.UK patterns for [page not found](https://design-system.service.gov.uk/patterns/page-not-found-pages/) or [service unavailable](https://design-system.service.gov.uk/patterns/service-unavailable-pages/)
 - a user makes a mistake completing a form – instead, follow the NHS service manual guidance for [error messages](https://service-manual.nhs.uk/design-system/components/error-message) and [errors summaries](https://service-manual.nhs.uk/design-system/components/error-summary)
-- a user cannot continue for an expected reason, for example because they are not eligible – instead, check our GitHub discussion on <a href="https://github.com/nhsuk/nhsapp-frontend/issues/411">unhappy path pages</a>
+- a user cannot continue for an expected reason, for example because they are not eligible – instead, check our GitHub discussion on <a href="https://github.com/nhsuk/nhsapp-frontend/issues/411">unhappy path screens</a>
 
-## How to structure an error page
+## How to structure an error screen
 
 ### 1. Main heading
 
@@ -51,20 +51,20 @@ The button should come straight after the related body text.
 
 #### Letting users try again
 
-Include a secondary button with the text "Try again" on error pages when:
+Include a secondary button with the text "Try again" on error screens when:
 
 - a user has attempted an action (such as starting a service)
 - there is a temporary problem
 - it's likely the problem will be resolved immediately if they retry the failed action
 
-Do not include a "Try again" button if your data shows it's unlikely to fix the problem immediately. Instead, you can include the words "Try again later" in the body text of the page, if the problem may be fixed at a later time.
+Do not include a "Try again" button if your data shows it's unlikely to fix the problem immediately. Instead, you can include the words "Try again later" in the body text of the screen, if the problem may be fixed at a later time.
 
 Users should only be able to select a "Try again" button once. It should either:
 
 - successfully take the action the user originally intended
-- show a follow-on error page if the action still fails, explaining that there is still a problem
+- show a follow-on error screen if the action still fails, explaining that there is still a problem
 
-On the follow-on page, use the heading: “There is still a problem [describe what was supposed to happen]”. The page should tell users about other ways they can access the service, either in the app or outside of it.
+On the follow-on screen, use the heading: “There is still a problem [describe what was supposed to happen]”. The screen should tell users about other ways they can access the service, either in the app or outside of it.
 
 {% example "error-pages/test-results-follow-up.njk" %}
 
@@ -80,7 +80,7 @@ For links to other NHS App services, use a secondary card link.
 
 ### 5. Signposting to urgent medical help
 
-Always include signposting to urgent medical help on error pages.
+Always include signposting to urgent medical help on error screens.
 
 Use the heading "For urgent medical advice" followed by the text "Use [111 online](https://111.nhs.uk/) or [call 111](https://111.nhs.uk/)."
 
@@ -96,7 +96,7 @@ Do not include the app header or footer if the user is logged out.
 
 ## How not to use
 
-The page should not:
+The screen should not:
 
 - blame the user
 - include breadcrumbs or a back link at the top
@@ -110,7 +110,7 @@ Avoid giving users too many different links to choose from as a next step. This 
 
 Research has shown that users may:
 
-- go straight to buttons and links without fully reading error pages
+- go straight to buttons and links without fully reading error screens
 - not notice error codes
 - be unsure about whether the problem was their fault or not
 
@@ -121,10 +121,10 @@ We should account for these challenges in our designs and continue to research a
 We want to learn more about:
 
 - "Try again" buttons on errors, and how we can best help users when these fail to solve the problem
-- how this guidance could evolve into separate pages covering specific errors
+- how this guidance could evolve into separate screens covering specific errors
 
-We are in the process of updating the NHS App contact form. This update will remove the need for users to note down error codes on error pages, as these codes will be pre-populated into the form.
+We are in the process of updating the NHS App contact form. This update will remove the need for users to note down error codes on error screens, as these codes will be pre-populated into the form.
 
 ## Design history
 
-Find out more about how we arrived at this pattern in our [design history post on error page guidance](https://design-history.nhsapp.service.nhs.uk/design-system/2026/01/error-guidance-update/).
+Find out more about how we arrived at this pattern in our [design history post on error screen guidance](https://design-history.nhsapp.service.nhs.uk/design-system/2026/01/error-guidance-update/).
