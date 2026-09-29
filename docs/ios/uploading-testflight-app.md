@@ -5,9 +5,9 @@ tags:
   - ios
 ---
 
-You can use [TestFlight](https://testflight.apple.com/) to test versions of the NHS App before they're released. This guidance covers how to get an app onto TestFlight and invite people to test it.
+Before releasing a new version of the NHS App, you can upload it to TestFlight and invite people to try it.
 
-If you've been invited to test an app, see [Installing an app from TestFlight](./installing-testflight-app.md) instead.
+If you've been invited to test an app, see [Testing an app using TestFlight](./installing-testflight-app.md) instead.
 
 ## Before you start
 
@@ -33,7 +33,12 @@ A bundle ID (also called an App ID) uniquely identifies the app across Apple's s
 7. Next to **Bundle ID**, select **Explicit** and enter an ID in reverse-domain format, for example `uk.nhs.exampleapp`.
 8. Select **Register**.
 
-Choose the bundle ID carefully. It must be unique, it must match the one used in Xcode, and Apple does not let you delete it later. [add guidance on what to set the bundle id as]
+Choose the bundle ID carefully. It must:
+
+- be unique
+- match the one used in Xcode
+
+Apple does not let you delete the bundle ID later. [add guidance on what to set the bundle id as]
 
 ## Step 3: Create the app in App Store Connect
 
@@ -114,7 +119,7 @@ Once the build is approved, invite people by email:
 2. Next to **Testers**, select the add button (**+**).
 3. Add testers by email address, or import a list from a CSV file.
 
-Tell testers to install the TestFlight app **before** opening the invite email, and to use the device signed in to the Apple ID for that email address. The [Installing an app from TestFlight](./installing-testflight-app.md) page explains this for them.
+Tell testers to install the TestFlight app **before** opening the invite email, and to use the device signed in to the Apple ID for that email address. The [Testing an app using TestFlight](./installing-testflight-app.md) page explains this for them.
 
 ## Step 8: Create a public link
 
@@ -139,10 +144,10 @@ Anyone with the link can join, so you have less control over who tests than with
 - Test versions expire 90 days after you upload them. After that the build is gone and can't be reactivated, so upload a fresh build to keep testers going.
 - To free up a tester slot, remove someone from the group. The spot becomes available straight away.
 
-## If invite emails don't arrive
+## If invite emails do not arrive
 
-TestFlight invite emails sometimes don't arrive. This is a long-standing Apple issue.
+TestFlight invite emails sometimes do not arrive. This is a long-standing issue known to Apple.
 
 - Ask the tester to check their spam and promotions folders.
 - Check the build has passed Beta App Review and has no missing compliance.
-- If it still doesn't arrive, use a public link instead, which avoids email delivery altogether.
+- If it still does not arrive, use a public link instead, which avoids email delivery altogether.

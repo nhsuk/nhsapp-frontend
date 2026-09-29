@@ -1,6 +1,6 @@
 ---
 layout: layouts/ios.njk
-title: Installing
+title: Adding the Swift package
 tags:
   - ios
 ---
@@ -28,9 +28,9 @@ In the future, these steps will no longer be required once the repository is pub
 
 In Xcode:
 
-1. Go to: File → Add Package Dependencies.
+1. Go to 'File' and then 'Add Package Dependencies'.
 2. Enter the repository URL: https://github.com/NHSDigital/nhsapp-design-system-ios. You'll need to add your personal access token to view it.
-3. Set the 'Dependency Rule' to Up to Next Major Version' with a lower bound of `1.0.0`. This picks up patch and minor updates (1.0.1, 1.1.0, …) automatically while holding back any breaking 2.0.0 release until you're ready. Select 'Add Package'.
+3. Set the 'Dependency Rule' to Up to Next Major Version' with a lower bound of `1.0.0`. This picks up patch and minor updates (1.0.1, 1.1.0, …) automatically while holding back any breaking 2.0.0 release until you're ready. Select **Add Package**.
 4. In the dialog box, under 'Add to Target' change 'None' to your app name. Then select **Add Package** again.
 
 After you've added the package, there's one more thing to check, otherwise your app might crash when you try to run it.
@@ -47,4 +47,4 @@ If you skip this step, your app will still build without any errors – but it w
 
 Whenever there are changes made to the swift package, you'll need to update the package within your project.
 
-To do this, go to File → Packages → Update to Latest Package Versions.
+To do this, go to 'File' and then 'Packages' and 'Update to Latest Package Versions'.

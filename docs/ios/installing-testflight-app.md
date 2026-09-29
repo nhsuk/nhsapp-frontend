@@ -1,30 +1,28 @@
 ---
 layout: layouts/ios.njk
-title: Installing an app from TestFlight
+title: Testing an app using TestFlight
 tags:
   - ios
 ---
 
-You can use [TestFlight](https://testflight.apple.com/) to test versions of the NHS App before they're released.
+If you've been invited, you can test new iOS versions of the NHS App using TestFlight. It's a free app made by Apple.
 
 ## Before you start
 
 You'll need:
 
 - an iPhone or iPad
-- the email address we used to invite you
-
-Use the device that's signed in to an Apple ID with that email address. Your invite is linked to it, so the app will not install on a device signed in to an Apple ID with a different account.
+- the Apple ID to match the email address we sent an invite to
 
 ## Step 1: Install TestFlight
 
 <div class="nhsuk-inset-text">
-  <p>Install TestFlight before you open the invite email. If you open the invite first without TestFlight, the link will not work.</p>
+  <p>Install TestFlight before following the link in the email invite.</p>
 </div>
 
 1. On your iPhone or iPad, open the [App Store](https://apps.apple.com/).
 2. Search for TestFlight.
-3. Install TestFlight. It's free and made by Apple.
+3. Install TestFlight.
 
 ## Step 2: Open your invite email
 
@@ -57,8 +55,8 @@ Use the device that's signed in to an Apple ID with that email address. Your inv
 We'll release updated versions of the app while you're testing.
 
 - You may get a notification when a new version is ready.
-- To update, open TestFlight and select 'Update' next to the app.
+- To update, open TestFlight and select **Update** next to the app.
 
 <div class="nhsuk-inset-text">
-  <p>Test versions expire 90 days after we upload them to TestFlight. If you see 'Expired', open TestFlight to get the latest version. If there isn't one, contact us.</p>
+  <p>Test versions expire 90 days after we upload them to TestFlight. If you see 'Expired', open TestFlight to get the latest version. If a new version is not showing, contact us.</p>
 </div>
