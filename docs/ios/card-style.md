@@ -21,7 +21,7 @@ Check for an existing component first. Do not use `nhsCardStyle()` to rebuild so
 
 Apply the modifier to the outermost view of your card content:
 
-<img src="/assets/images/ios/card-style.png" width="375">
+![Screenshot of a white card with the bold heading 'Card title' and the text 'Some supporting body text inside a card.'](/assets/images/ios/card-style.png)
 
 {% from "details/macro.njk" import details %}
 {% call details({ summary: "Swift options" }) %}
@@ -41,7 +41,7 @@ VStack(alignment: .leading, spacing: 8) {
 
 For an outlined card, use a clear background with a border:
 
-<img src="/assets/images/ios/card-style-outline.png" width="375">
+![Screenshot of a card with a clear background and a grey border containing the text 'Card with a border'](/assets/images/ios/card-style-outline.png)
 
 ```swift { .nhsuk-code--button }
 Text("Card with a border")
