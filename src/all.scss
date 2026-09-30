@@ -5,11 +5,12 @@
 @forward "styles/icon/icons";
 
 // components
-@forward "components/badge/badge";
+@forward "components/badge";
 @forward "components/button";
-@forward "components/card/card";
-@forward "components/tag/tag";
-@forward "components/timeline/timeline";
+@forward "components/details";
+@forward "components/card";
+@forward "components/tag";
+@forward "components/timeline";
 @forward "components/summary-list";
 
 // utilities

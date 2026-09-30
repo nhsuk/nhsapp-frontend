@@ -34,23 +34,32 @@ let ratings = [
     "Very poor"
   ]
 
+@State private var rating: String?
+
 var body: some View {
     VStack {
         Form {
-            Section {
-                Picker("Rating", selection: $rating) {
-                    ForEach(ratings, id: \.self) { option in
-                        Text(option)
-                    }
+            Picker(selection: $rating) {
+                ForEach(ratings, id: \.self) { option in
+                    Text(option)
+                        .tag(option as String?)
+                        .font(.nhsBody)
                 }
-                .pickerStyle(.inline)
-            } header: {
+            } label: {
                 Text("Overall, how would you rate your experience of the service?")
+                    .font(.nhsTitle)
+                    .bold()
+                    .foregroundStyle(.nhsText)
             }
+            .pickerStyle(.inline)
         }
 
-        Button("Continue")
+        Button("Continue") {
+        }
+        .padding()
+        .buttonStyle(.nhsPrimary)
     }
+    .background(.nhsBackground)
 }
 ```
 
