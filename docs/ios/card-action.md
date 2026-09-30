@@ -7,7 +7,7 @@ tags:
 
 Card actions are tappable rows used to link onwards from a list of options.
 
-<img src="/assets/images/ios/card-action.png" width="375">
+![Screenshot of a white card with the text 'Check the progress of prescriptions' and a chevron](/assets/images/ios/card-action.png)
 
 ## How it works
 
@@ -35,7 +35,7 @@ There are 2 card action group styles:
 
 Use the primary style for a card action that leads to another screen or a sheet in the app.
 
-<img src="/assets/images/ios/card-action.png" width="375">
+![Screenshot of a white card with the text 'Check the progress of prescriptions' and a chevron](/assets/images/ios/card-action.png)
 
 ```swift { .nhsuk-code--button }
 CardAction(title: "Check the progress of prescriptions") { }
@@ -48,7 +48,7 @@ For a single card action outside a group, apply `nhsCardStyle()` to add a card a
 
 Use the plain style for a card action that needs less emphasis, such as a link out to a web page. It has no chevron.
 
-<img src="/assets/images/ios/card-action-plain.png" width="375">
+![Screenshot of a white card with the blue text 'Find services near you' and no chevron](/assets/images/ios/card-action-plain.png)
 
 ```swift { .nhsuk-code--button }
 CardAction(title: "Find services near you", style: .plain) { }
@@ -59,7 +59,7 @@ CardAction(title: "Find services near you", style: .plain) { }
 
 Use the reverse style for a card action on its own that needs to stand out. It has a bold title and white text on a blue card.
 
-<img src="/assets/images/ios/card-action-reverse.png" width="375">
+![Screenshot of a blue card with the bold white text 'Family and carer access' and a white chevron](/assets/images/ios/card-action-reverse.png)
 
 ```swift { .nhsuk-code--button }
 CardAction(title: "Family and carer access", style: .reverse) {
@@ -73,7 +73,7 @@ It includes its own card, so don't add `nhsCardStyle()`. Don't use a reverse car
 
 Add a `subtitle` for supporting text below the title.
 
-<img src="/assets/images/ios/card-action-subtitle.png" width="375">
+![Screenshot of a white card with the text 'Your chosen pharmacy', the grey subtitle 'Boots' and a chevron](/assets/images/ios/card-action-subtitle.png)
 
 ```swift { .nhsuk-code--button }
 CardAction(
@@ -88,7 +88,7 @@ CardAction(
 
 Pass the card actions as an array. The group adds the card and the dividers, so none of that is repeated at each card action.
 
-<img src="/assets/images/ios/card-action-group.png" width="375">
+![Screenshot of the heading 'GP surgery' above a white card with 3 rows separated by pale blue lines: 'Request a repeat prescription', 'Check the progress of prescriptions' and 'Medicines record', each with a chevron](/assets/images/ios/card-action-group.png)
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(header: "GP surgery", actions: [
@@ -102,7 +102,7 @@ CardActionGroup(header: "GP surgery", actions: [
 
 For links that need less emphasis, use a secondary group. It adds a bordered card and puts its card actions in the plain style automatically.
 
-<img src="/assets/images/ios/card-action-group-secondary.png" width="375">
+![Screenshot of the heading 'NHS information and support' above a card with a pale blue border and 3 rows of blue text separated by pale blue lines: 'Check your symptoms using 111 online', 'Health A to Z' and 'Find services near you'](/assets/images/ios/card-action-group-secondary.png)
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
@@ -120,7 +120,7 @@ CardActionGroup(
 
 Mix a plain action into a primary group for one that needs less emphasis than the card actions above it, such as "See all" or "Show more". This has not been tested in [research](#research) yet.
 
-<img src="/assets/images/ios/card-action-mixed.png" width="375">
+![Screenshot of the heading 'Test results' above a white card with 3 rows with chevrons, 'HPV test', 'Kidney function blood tests' and 'Blood pressure', followed by a row with the blue text 'See all'](/assets/images/ios/card-action-mixed.png)
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(header: "Test results", actions: [
@@ -135,7 +135,7 @@ CardActionGroup(header: "Test results", actions: [
 
 You can add a `header` above a group of cards to separate them from other groups on the screen. Keep the header in sentence case.
 
-<img src="/assets/images/ios/card-action-header.png" width="375">
+![Screenshot of the heading 'GP surgery' above a white card with 2 rows separated by a pale blue line: 'Request a repeat prescription' and 'Check the progress of prescriptions', each with a chevron](/assets/images/ios/card-action-header.png)
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
@@ -153,7 +153,7 @@ Use a more prominent header, such as a top-level section on a long screen, by pa
 
 You can add a footer below a group of cards to give extra context to them. This has not been tested in research yet.
 
-<img src="/assets/images/ios/card-action-footer.png" width="375">
+![Screenshot of a white card with 2 rows separated by a pale blue line, 'Request a repeat prescription' and 'Check the progress of prescriptions', above the grey text 'Services available from your GP surgery.'](/assets/images/ios/card-action-footer.png)
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
