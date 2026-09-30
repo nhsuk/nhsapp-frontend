@@ -118,7 +118,7 @@ CardActionGroup(
 
 ### A less prominent action
 
-Mix a plain action into a primary group for one that needs less emphasis than the card actions above it, such as "See all" or "Show more".
+Mix a plain action into a primary group for one that needs less emphasis than the card actions above it, such as "See all" or "Show more". This has not been tested in [research](#research) yet.
 
 <img src="/assets/images/ios/card-action-mixed.png" width="375">
 
@@ -183,3 +183,5 @@ A group's header is marked up as a heading, so VoiceOver users can find it in th
 ## Research
 
 This component is not yet being used by the live NHS App, but several rounds of research have been done on it.
+
+Using a plain card action for a less prominent action, such as "See all" or "Show more", has been used in a prototype but not yet tested in research. The prototype showed the most recent few items on a hub page, with "See all" going to a list of every item.
