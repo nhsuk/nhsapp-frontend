@@ -1,8 +1,9 @@
 ---
 layout: layouts/ios.njk
-title: Uploading an app to TestFlight
+title: Uploading to TestFlight
 tags:
   - ios
+order: 2    
 ---
 
 Before releasing a new version of the NHS App, you can upload it to TestFlight and invite people to try it.
