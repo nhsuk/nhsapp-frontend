@@ -131,14 +131,15 @@ CardActionGroup(header: "Test results", actions: [
 ])
 ```
 
-### Header and footer
+### Header
 
-Add a `header` above the card and a `footer` below it. Keep the header in sentence case.
+You can add a `header` above a group of cards to separate them from other groups on the screen. Keep the header in sentence case.
+
+<img src="/assets/images/ios/card-action-header.png" width="375">
 
 ```swift { .nhsuk-code--button }
 CardActionGroup(
     header: "GP surgery",
-    footer: "Services available from your GP surgery.",
     actions: [
         CardAction(title: "Request a repeat prescription") { },
         CardAction(title: "Check the progress of prescriptions") { },
@@ -147,6 +148,22 @@ CardActionGroup(
 ```
 
 Use a more prominent header, such as a top-level section on a long screen, by passing `headerFont: .nhsTitle3`.
+
+### Footer
+
+You can add a footer below a group of cards to give extra context to them. This has not been tested in research yet.
+
+<img src="/assets/images/ios/card-action-footer.png" width="375">
+
+```swift { .nhsuk-code--button }
+CardActionGroup(
+    footer: "Services available from your GP surgery.",
+    actions: [
+        CardAction(title: "Request a repeat prescription") { },
+        CardAction(title: "Check the progress of prescriptions") { },
+    ]
+)
+```
 
 ## Accessibility
 
