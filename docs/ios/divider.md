@@ -27,9 +27,9 @@ VStack(alignment: .leading, spacing: 16) {
 
 ### Custom colours and thickness
 
-![Screenshot of a pale blue card component with 'First item' and 'Second item' separated by a thicker, darker blue horizontal line](/assets/images/ios/divider-custom.png)
-
 You can also change the colour of the divider and its thickness:
+
+![Screenshot of a pale blue card component with 'First item' and 'Second item' separated by a thicker, darker blue horizontal line](/assets/images/ios/divider-custom.png)
 
 ```swift { .nhsuk-code--button }
 VStack(alignment: .leading, spacing: 16) {
