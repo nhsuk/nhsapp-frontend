@@ -3,9 +3,11 @@
     <h2 class="nhsuk-u-visually-hidden">Pages in this section</h2>
     {%- if params.sections %}
       {%- for section in params.sections %}
-        <h{{ section.heading.headingLevel | default(3) }} class="app-side-navigation__title {{- ' ' + section.heading.classes if section.heading.classes }}"{% for attribute, value in section.heading.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
+        {% if section.heading %}
+          <h{{ section.heading.headingLevel | default(3) }} class="app-side-navigation__title {{- ' ' + section.heading.classes if section.heading.classes }}"{% for attribute, value in section.heading.attributes %} {{ attribute }}="{{ value }}"{% endfor %}>
           {{- section.heading.html | safe if section.heading.html else section.heading.text -}}
         </h{{ section.heading.headingLevel | default(3) }}>
+        {% endif %}
         <ul class="app-side-navigation__list">
           {%- for item in section.items %}
             {% include "./side-navigation-item.njk" %}

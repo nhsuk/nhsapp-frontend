@@ -1,26 +1,10 @@
+---
+section: web
+---
+
 {% extends "./sidebar.njk" %}
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% block beforeContent %}
-  {% if title === "Components" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/components",
-      text: "Components"
-    }) }}
-  {% endif %}
-{% endblock %}
 
 {% set sidebar %}
   {{ appSideNavigation({
@@ -28,9 +12,6 @@
     currentPath: page.url,
     sections: [
       {
-        heading: {
-          text: 'Components'
-        },
         items: collections.component | sort(attribute="data.title")
       },
       {
