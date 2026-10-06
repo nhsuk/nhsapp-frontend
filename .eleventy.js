@@ -132,30 +132,33 @@ export default function (eleventyConfig) {
 
   // Convert collection items into sectionNavigation items, expanding any
   // nested children when the current page is within that item
-  eleventyConfig.addFilter('toSectionNavigationItems', function (items, currentUrl) {
-    return items.flatMap((item) => {
-      const navItems = [
-        {
-          href: item.url,
-          text: item.data.title,
-          current: item.url === currentUrl
-        }
-      ]
+  eleventyConfig.addFilter(
+    'toSectionNavigationItems',
+    function (items, currentUrl) {
+      return items.flatMap((item) => {
+        const navItems = [
+          {
+            href: item.url,
+            text: item.data.title,
+            current: item.url === currentUrl
+          }
+        ]
 
-      if (item.children?.length && currentUrl.startsWith(item.url)) {
-        for (const child of item.children) {
-          navItems.push({
-            href: child.url,
-            text: child.data.title,
-            current: child.url === currentUrl,
-            classes: 'app-section-navigation__item--child'
-          })
+        if (item.children?.length && currentUrl.startsWith(item.url)) {
+          for (const child of item.children) {
+            navItems.push({
+              href: child.url,
+              text: child.data.title,
+              current: child.url === currentUrl,
+              classes: 'app-section-navigation__item--child'
+            })
+          }
         }
-      }
 
-      return navItems
-    })
-  })
+        return navItems
+      })
+    }
+  )
 
   // Add GitHub URL filter
   eleventyConfig.addFilter('toGitHubUrl', function (path) {
