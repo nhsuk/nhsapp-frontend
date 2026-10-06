@@ -1,0 +1,11 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+
+/* ==========================================================================
+   #SECTION NAVIGATION
+   ========================================================================== */
+
+.app-section-navigation__item--child {
+  padding-left: $nhsuk-gutter-half + nhsuk-spacing(3);
+}

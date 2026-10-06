@@ -4,19 +4,14 @@ section: web
 
 {% extends "./sidebar.njk" %}
 
-{%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% set sidebar %}
-  {{ appSideNavigation({
-    label: 'Styles',
-    currentPath: page.url,
-    sections: [
-      {
-        items: collections.style | sort(attribute="data.title")
-      }
-    ]
+{% block sidebar %}
+  {{ sectionNavigation({
+    ariaLabel: "Styles",
+    direction: "vertical",
+    small: true,
+    items: collections.style | sort(attribute="data.title") | toSectionNavigationItems(page.url)
   }) }}
-{% endset %}
+{% endblock %}
 
 {% block content %}
   {% if tags and "style" in tags %}

@@ -4,25 +4,22 @@ section: web
 
 {% extends "./sidebar.njk" %}
 
-{%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% set sidebar %}
-  {{ appSideNavigation({
-    label: 'Components',
-    currentPath: page.url,
-    sections: [
-      {
-        items: collections.component | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Archived'
-        },
-        items: collections.archivedComponent | sort(attribute="data.title")
-      }
-    ]
+{% block sidebar %}
+  {{ sectionNavigation({
+    ariaLabel: "Components",
+    direction: "vertical",
+    small: true,
+    items: collections.component | sort(attribute="data.title") | toSectionNavigationItems(page.url)
   }) }}
-{% endset %}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Archived</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Archived",
+    direction: "vertical",
+    small: true,
+    items: collections.archivedComponent | sort(attribute="data.title") | toSectionNavigationItems(page.url)
+  }) }}
+{% endblock %}
 
 {% block content %}
    {% if tags and ("component" in tags or "archivedComponent" in tags) %}
