@@ -34,7 +34,7 @@
           active: page and page.url == '/'
         },
         {
-          href: '/web/',
+          href: '/get-started/',
           text: 'Web',
           active: page and page.url and page.url != '/' and not ('/ios/' in page.url) and not ('/android/' in page.url) and not ('/community/' in page.url)
         },
@@ -85,7 +85,7 @@
       {
         href: '/get-started/',
         text: 'Get started',
-        current: page and page.url and (page.url == '/web/' or '/get-started/' in page.url)
+        current: page and page.url and '/get-started/' in page.url
       },
       {
         href: '/styles/',
