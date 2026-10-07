@@ -31,7 +31,7 @@ A bundle ID (also called an App ID) uniquely identifies the app across Apple's s
 4. Select **App IDs**, then **Continue**.
 5. Select **App** as the type, then **Continue**.
 6. Enter a **Description** (an internal name, not shown to users).
-7. Next to **Bundle ID**, select **Explicit** and enter an ID in reverse-domain format, for example `uk.nhs.exampleapp`.
+7. Next to **Bundle ID**, select **Explicit** and enter an ID in reverse-domain format, for example `uk.nhs.service.nhsapp.prototype.prescriptions`.
 8. Select **Register**.
 
 Choose the bundle ID carefully. It must:
@@ -48,10 +48,11 @@ Next, create the app record that TestFlight builds attach to.
 1. Sign in to [App Store Connect](https://appstoreconnect.apple.com/) and select **Apps**.
 2. Select the add button (**+**), then **New App**.
 3. Select the platform (**iOS**).
-4. Enter the app **Name** and **Primary Language**.
-5. Select the **Bundle ID** you registered in step 2.
-6. Enter an **SKU** (an internal reference of your choice) and set **User Access**.
-7. Select **Create**.
+4. Enter the app **Name** - this will be used in TestFlight and the App Store, but is not what appears on the home screen. For prototypes, add the prototype name, for example `NHS App Prototype Prescriptions`.
+5. Choose a **Primary Language**.
+6. Select the **Bundle ID** you registered in step 2.
+7. Enter an **SKU** - this is a unique internal reference, use something which describes your app or prototype, like `NHSAppPrototypePrescriptions`
+8. Select **Create**.
 
 The app now appears in App Store Connect, ready to receive builds.
 
