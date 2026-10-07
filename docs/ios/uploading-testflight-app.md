@@ -19,7 +19,14 @@ You'll need:
 
 ## Step 1: Get an Apple Developer account
 
-[need clarification on how designers will get access to developer accounts]
+You need access to the team's Apple Developer account to register a bundle ID and upload builds.
+
+To get access, ask in the `#team-native-transformation-ucd` channel on Slack. Include:
+
+- the email address you use for your Apple Account
+- what you're working on, for example the prototype you want to upload
+
+You'll get an email invite from Apple. Accept it before moving on to step 2.
 
 ## Step 2: Register a bundle ID
 
