@@ -7,7 +7,7 @@ tags:
 
 Use alerts to interrupt users with important, unexpected information, to check how they want to proceed.
 
-<img src="/assets/images/ios/alert-log-out.png" alt="Screenshot a popup with the text 'For security reasons, we'll log you out fo the NHS App in 1 minute' and a single button labelled 'Stay logged in'">
+![Screenshot of a popup with the text 'For security reasons, we'll log you out of the NHS App in 1 minute' and a single button labelled 'Stay logged in'](/assets/images/ios/alert-log-out.png)
 
 ## When to use
 

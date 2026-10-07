@@ -7,7 +7,7 @@ tags:
 
 The campaign card is a tappable card that helps users learn about a public health campaign.
 
-<img src="/assets/images/ios/campaign-card.png" width="375">
+![Screenshot of a campaign card with a photo of a girl hugging an older woman holding flowers, above a dark blue panel with the heading 'Organ donors save lives', the text 'Take 2 minutes to confirm your organ donation decision' and a chevron](/assets/images/ios/campaign-card.png)
 
 ## When to use
 
@@ -44,7 +44,7 @@ The layout adapts to the user's device and settings:
 - at large text sizes, the photograph always sits above the text, so the text has the full width of the card
 - text is never truncated: the panel grows to fit
 
-<img src="/assets/images/ios/campaign-card-ipad.png">
+![Screenshot of a wide campaign card on iPad, with a photo of a girl hugging an older woman holding flowers on the left, and a dark blue panel on the right with the heading 'Organ donors save lives', the text 'Take 2 minutes to confirm your organ donation decision' and a chevron](/assets/images/ios/campaign-card-ipad.png)
 
 ## How to use
 

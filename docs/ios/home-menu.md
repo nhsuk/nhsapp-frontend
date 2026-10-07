@@ -7,7 +7,7 @@ tags:
 
 The home menu lists the main sections of the app.
 
-<img src="/assets/images/ios/HomeMenu.png" width="320">
+![Screenshot of a grid of 6 white cards, each with a blue icon in a pale blue circle and a label: 'Prescriptions', 'Appointments', 'Test results', 'Vaccinations', 'Health conditions' and 'Documents'](/assets/images/ios/HomeMenu.png)
 
 ## When to use
 
