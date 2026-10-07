@@ -4,12 +4,8 @@
   <div class="nhsuk-width-container">
     {% block beforeContent %}{% endblock %}
     <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-quarter">
-        {% block sidebar_desktop %}
-          <div class="app-side-navigation--desktop">
-            {{ sidebar | safe }}
-          </div>
-        {% endblock %}
+      <div class="nhsuk-grid-column-one-quarter nhsuk-u-padding-top-5">
+        {% block sidebar %}{% endblock %}
       </div>
 
       <div class="nhsuk-grid-column-three-quarters">
@@ -18,13 +14,6 @@
             {{ content | safe }}
           {% endblock content %}
         </main>
-
-        {# Sidebar nav is at the bottom for mobile #}
-        {% block sidebar_mobile %}
-          <div class="app-side-navigation--mobile">
-            {{ sidebar | safe }}
-          </div>
-        {% endblock %}
 
         {% if help === "no" %}
         {% else %}

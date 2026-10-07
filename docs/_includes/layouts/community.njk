@@ -1,47 +1,26 @@
+---
+section: community
+---
+
 {% extends "./sidebar.njk" %}
 
-{%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% block beforeContent %}
-  {% if title === "Community" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/community",
-      text: "Community"
-    }) }}
-  {% endif %}
-{% endblock %}
-
-{% set sidebar %}
-  {{ appSideNavigation({
-    label: 'Contributing and support',
-    currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: 'Contributing'
-        },
-        items: collections.contribution | sort(attribute="data.order")
-      },
-      {
-        heading: {
-          text: 'Support'
-        },
-        items: collections.community | sort(attribute="data.order")
-      }
-    ]
+{% block sidebar %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Contributing</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Contributing",
+    direction: "vertical",
+    small: true,
+    items: collections.contribution | sort(attribute="data.order") | toSectionNavigationItems(page.url)
   }) }}
-{% endset %}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Support</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Support",
+    direction: "vertical",
+    small: true,
+    items: collections.community | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+  }) }}
+{% endblock %}
 
 {% block content %}
   {% if tags and "contribution" in tags %}

@@ -1,53 +1,34 @@
+---
+section: web
+---
+
 {% extends "./sidebar.njk" %}
 
-{%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% block beforeContent %}
-  {% if title === "Patterns" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/patterns",
-      text: "Patterns"
-    }) }}
-  {% endif %}
-{% endblock %}
-
-{% set sidebar %}
-  {{ appSideNavigation({
-    label: 'Patterns',
-    currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: 'Screens'
-        },
-        items: collections.screen | sort(attribute="data.order") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/")
-      },
-            {
-        heading: {
-          text: 'Structure'
-        },
-        items: collections.structure | sort(attribute="data.order") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/")
-      },
-      {
-        heading: {
-          text: 'Help users to'
-        },
-        items: collections.helpUsers | sort(attribute="data.order")
-      }
-    ]
+{% block sidebar %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Screens</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Screens",
+    direction: "vertical",
+    small: true,
+    items: collections.screen | sort(attribute="data.order") | toSectionNavigationItems(page.url)
   }) }}
-{% endset %}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Structure</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Structure",
+    direction: "vertical",
+    small: true,
+    items: collections.structure | sort(attribute="data.order") | withNestedItems(collections.integratingServices | sort(attribute="data.order"), "/patterns/integrating-services/") | toSectionNavigationItems(page.url)
+  }) }}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Help users to</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Help users to",
+    direction: "vertical",
+    small: true,
+    items: collections.helpUsers | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+  }) }}
+{% endblock %}
 
 {% block content %}
   {% if childPage %}

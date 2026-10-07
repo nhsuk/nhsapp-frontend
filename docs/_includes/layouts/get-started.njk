@@ -1,53 +1,34 @@
+---
+section: web
+---
+
 {% extends "./sidebar.njk" %}
 
-{%- from "./partials/side-navigation.njk" import appSideNavigation %}
-
-{% block beforeContent %}
-  {% if title === "Get started" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/get-started",
-      text: "Get started"
-    }) }}
-  {% endif %}
-{% endblock %}
-
-{% set sidebar %}
-  {{ appSideNavigation({
-    label: 'How we work',
-    currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: 'Prototyping'
-        },
-        items: collections.prototyping | sort(attribute="data.order")
-      },
-      {
-        heading: {
-          text: 'Production'
-        },
-        items: collections.production | sort(attribute="data.order")
-      },
-      {
-        heading: {
-          text: 'Integrating with the NHS App'
-        },
-        items: collections.integration | sort(attribute="data.order")
-      }
-    ]
+{% block sidebar %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Prototyping</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Prototyping",
+    direction: "vertical",
+    small: true,
+    items: collections.prototyping | sort(attribute="data.order") | toSectionNavigationItems(page.url)
   }) }}
-{% endset %}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Production</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Production",
+    direction: "vertical",
+    small: true,
+    items: collections.production | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+  }) }}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Integrating with the NHS App</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Integrating with the NHS App",
+    direction: "vertical",
+    small: true,
+    items: collections.integration | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+  }) }}
+{% endblock %}
 
 {% block content %}
   {% if tags and "prototyping" in tags %}

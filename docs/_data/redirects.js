@@ -15,6 +15,10 @@ export default [
   {
     from: '/get-started/github-and-heroku/',
     to: '/get-started/nhsapp-prototype/'
+  },
+  {
+    from: '/web/',
+    to: '/get-started/'
   }
   // Add more redirects here as needed
 ]
