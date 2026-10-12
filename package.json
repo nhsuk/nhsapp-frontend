@@ -54,6 +54,11 @@
     "prettier": "^3.2.5",
     "sass-embedded": "^1.103.1"
   },
+  "overrides": {
+    "gulp-connect": {
+      "send": "^0.19.0"
+    }
+  },
   "peerDependencies": {
     "nhsuk-frontend": "^10.0.0"
   },
