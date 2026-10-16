@@ -3,7 +3,7 @@ layout: layouts/ios.njk
 title: Testing using TestFlight
 tags:
   - ios
-order: 3  
+order: 4
 ---
 
 If you've been invited, you can test new iOS versions of the NHS App using TestFlight. It's a free app made by Apple.
