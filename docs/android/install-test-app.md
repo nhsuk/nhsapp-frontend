@@ -1,6 +1,9 @@
 ---
-layout: layouts/base.njk
-title: Android
+layout: layouts/android.njk
+title: Installing a test app from Google Play
+tags:
+  - android
+order: 1
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
@@ -9,8 +12,6 @@ title: Android
   text: 'Work in progress',
   classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
 })}}
-
-# Installing a test app from Google Play
 
 If you’ve been invited, you can install a test version of the NHS App from Google Play.
 
