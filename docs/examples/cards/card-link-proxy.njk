@@ -7,6 +7,14 @@ arguments: card-group
 ---
 
 {% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+{% from "icon/macro.njk" import nhsappIcon %}
+
+{% set switchProfileHtml %}
+  <span class="nhsapp-icon-text">
+    {{ nhsappIcon("switchProfile", "nhsapp-icon--text-colour nhsapp-icon--32") }}
+    <span>Family and carer access<br><span class="nhsuk-u-font-weight-normal">Switch profile</span></span>
+  </span>
+{% endset %}
 
 {{ nhsappCardGroup({
   stacked: true,
@@ -14,14 +22,14 @@ arguments: card-group
   isListItem: false,
   cards: [
     {
-      title: "Jane Smith",
+      aboveContent: { html: '<p class="nhsuk-u-font-weight-bold nhsuk-u-margin-bottom-1">Acting for</p>' },
+      title: "Laura Patel",
       titleClasses: "nhsuk-u-font-size-36",
       headingLevel: "2",
-      descriptionHtml: '<p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-0"><strong>Date of birth:</strong> 2 October 2015</p>
-            <p><strong>NHS number:</strong> 987 654 3210</p>'
+      descriptionHtml: '<p class="nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-0"><strong>Date of birth:</strong> 22 July 1952</p>'
     },
     {
-      title: "Switch to my profile",
+      titleHtml: switchProfileHtml,
       href: "#"
     }
   ]
