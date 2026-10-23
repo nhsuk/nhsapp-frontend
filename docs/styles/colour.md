@@ -6,7 +6,7 @@ tags:
   - style
 ---
 
-We have extended the [NHS design system colour palette](https://service-manual.nhs.uk/design-system/styles/colour#colour-palette) with tints and shades for usage on the [tag](/components/tag/) and [card links](componnets/card-links/) components.
+We have extended the [NHS design system colour palette](https://service-manual.nhs.uk/design-system/styles/colour#colour-palette) with tints and shades for usage on the [tag](/components/tag/) and [card links](/components/card-links/) components.
 
 <table class="app-colour-list" summary="Table of the full colour palette">
   <tr>
