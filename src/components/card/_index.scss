@@ -183,7 +183,7 @@ $card-border-radius: 8px;
     &:has(
       .nhsapp-card:last-child[class*="nhsapp-card--pale-"],
       .nhsapp-card:last-child[class*="nhsapp-card--dark-"],
-      .nhsapp-card:last-child.nhsapp-card--warm-yellow
+      .nhsapp-card:last-child.nhsapp-card--proxy
     ) {
       .nhsapp-card:nth-last-child(2) {
         border-bottom: $card-border-width solid $card-border-colour;
@@ -350,7 +350,8 @@ $nhsapp-card-variants: (
     nhsapp-colour("dark-yellow"),
     nhsuk-colour("white")
   ),
-  "warm-yellow": (
+  // Only for proxy access, replacing the proxy banner
+  "proxy": (
     nhsuk-colour("warm-yellow"),
     $nhsuk-text-colour
   )
