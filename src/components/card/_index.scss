@@ -350,8 +350,8 @@ $nhsapp-card-variants: (
     nhsapp-colour("dark-yellow"),
     nhsuk-colour("white")
   ),
-  // Only for proxy access, replacing the proxy banner
   "proxy": (
+    // Only for proxy access, replacing the proxy banner
     nhsuk-colour("warm-yellow"),
     $nhsuk-text-colour
   )

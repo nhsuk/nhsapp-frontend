@@ -52,6 +52,14 @@ Use colour sparingly and make sure there is enough contrast between text and bac
 
 {% example "cards/card-link-light-blue.njk" %}
 
+#### Proxy card links
+
+Use the proxy colour variation to show users they are [managing health services for someone else](/get-started/making-changes-to-the-structure-of-the-nhs-app/#proxy-access) (proxy access). This replaces the proxy banner.
+
+Only use this colour variation for proxy access. Do not use it to highlight other content.
+
+{% example "cards/card-link-proxy.njk" %}
+
 ### Images on card links
 
 You can add an image to a card link. We use this on the home screen of the NHS App to [help users learn about public health campaigns](/patterns/learn-about-health-campaigns/).

@@ -1,0 +1,16 @@
+---
+layout: layouts/example.njk
+title: Proxy card
+figmaLink:
+vueLink:
+arguments: card
+---
+
+{% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+{{ nhsappCard({
+  title: "Acting on behalf of Jane Smith",
+  href: "#",
+  description: "Switch to your own profile",
+  classes: "nhsapp-card--proxy"
+}) }}
