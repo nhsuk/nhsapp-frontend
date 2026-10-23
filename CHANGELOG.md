@@ -1,5 +1,11 @@
 # NHS App Frontend Changelog
 
+## Unreleased
+
+### 🆕 New features
+
+- Added `warm-yellow` colour variant to the card component, using the class `nhsapp-card--warm-yellow`
+
 ## `v5.3.0` - 18 September 2026
 
 ### 🆕 New features
