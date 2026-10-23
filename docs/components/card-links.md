@@ -54,9 +54,9 @@ Use colour sparingly and make sure there is enough contrast between text and bac
 
 #### Proxy card links
 
-Use the proxy colour variation to show users they are [managing health services for someone else](/get-started/making-changes-to-the-structure-of-the-nhs-app/#proxy-access) (proxy access). This replaces the proxy banner.
+Use the proxy colour variation for the profile card when users are [managing health services for someone else](/get-started/making-changes-to-the-structure-of-the-nhs-app/#proxy-access) (proxy mode). This replaces the proxy banner.
 
-Only use this colour variation for proxy access. Do not use it to highlight other content.
+Only use this colour variation for the profile card in proxy mode. Do not use it for other cards or to highlight other content.
 
 {% example "cards/card-link-proxy.njk" %}
 
