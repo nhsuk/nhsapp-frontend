@@ -65,8 +65,6 @@ Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcr
 
 **In the future native custom web view:** Hide the back button on the first page of the journey. Include the back button on every other page. This helps users understand they are at the start of a new journey, while still giving them a way to navigate back once they have moved forward.
 
-Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcrumbs reflect your own site's information architecture, which is not meaningful to users arriving from the NHS App.
-
 ![Two screens showing the NHS website opening in a web view within the NHS App. The first shows the breadcrumb link 'Home' at the top: it has a red cross against it. The second shows a 'Back' button used instead: it has a green tick against it.](/assets/images/integration-pattern/include-back-button.png)
 
 ### 3. Simplify the site footer
