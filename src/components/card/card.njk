@@ -22,6 +22,7 @@
   text: params.description if params.description is string or params.description is number else undefined,
   html: params.description if params.description is escaped else (undefined if params.description else params.descriptionHtml)
 } %}
+{% set descriptionClasses = description.classes if description.classes is defined else params.descriptionClasses %}
 
 {% set hasMedia = params.img is defined and params.img.src is defined %}
 {% set imgAlt = params.img.alt if params.img.alt is defined else '' %}
@@ -67,7 +68,7 @@
         {{ nhsukContent({ html: description.html }) | trim }}
       {% elif description.text %}
         <div class="nhsapp-card__below">
-          <p class="nhsapp-card__description {{ params.descriptionClasses if params.descriptionClasses }}">{{ nhsukContent({ text: description.text }) | trim }}</p>
+          <p class="nhsapp-card__description {{ descriptionClasses if descriptionClasses }}">{{ nhsukContent({ text: description.text }) | trim }}</p>
         </div>
       {% endif %}
     </div>
