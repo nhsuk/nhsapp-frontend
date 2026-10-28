@@ -17,6 +17,8 @@
 - The card and card group components' `descriptionHtml` option is deprecated and will be removed in v6.0.0. Use `description.html` instead.
 - The card and card group components' `descriptionClasses` option is deprecated and will be removed in v6.0.0. Use `description.classes` instead.
 - The card and card group components' `titleClasses` option is deprecated and will be removed in v6.0.0. Use `title.classes` instead.
+- The card `titleHtml` option and card group `cards[].titleHtml` option are deprecated and will be removed in v6.0.0. Use `title.html` or `cards[].title.html` instead.
+- The card group `headingHtml` option is deprecated and will be removed in v6.0.0. Use `heading.html` instead.
 - The NHS App colour palette (`$nhsapp-colours` and the `nhsapp-colour()` function) is deprecated in favour of the pale and dark colours added in NHS.UK frontend v10.7.0, and will be removed in v6.0.0. Replace `nhsapp-colour("...")` with `nhsuk-colour("...")`. The NHS App colours now use these NHS.UK frontend colours, and some of them have changed slightly:
   - `pale-aqua-green`: `#c9e3e0` to `#bae6e3`
   - `dark-aqua-green`: `#1e403d` to `#004a45`
