@@ -8,14 +8,18 @@
   text: params.description if params.description is string or params.description is number else undefined,
   html: params.description if params.description is escaped else (undefined if params.description else params.descriptionHtml)
 } %}
+{%- set heading = params.heading if params.heading is mapping and params.heading is not escaped else {
+  text: params.heading if params.heading is string or params.heading is number else undefined,
+  html: params.headingHtml
+} %}
 
 {% from "./macro.njk" import nhsappCard %}
 
-{%- if params.headingHtml -%}
-    {{ params.headingHtml | safe }}
-{% elif params.heading %}
+{%- if heading.html -%}
+    {{ nhsukContent({ html: heading.html }) | trim }}
+{% elif heading.text %}
   <h{{ headingLevel }} class="nhsapp-cards__heading {{ headingClass }}">
-    {{ params.heading }}
+    {{ nhsukContent({ text: heading.text }) | trim }}
   </h{{ headingLevel }}>
 {% endif %}
 
