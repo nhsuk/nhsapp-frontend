@@ -6,6 +6,7 @@
 
 - Added `proxy` colour variant to the card component, using the class `nhsapp-card--proxy`. This uses the warm yellow colour and should only be used for proxy access, replacing the proxy banner
 - Updated to [NHS.UK frontend v10.7.0](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.7.0)
+- Added `text` option to the card component's `aboveContent` and `footer` options, as an alternative to `html` for plain text content
 
 ### ⚠️ Deprecations
 

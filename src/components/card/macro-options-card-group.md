@@ -23,8 +23,10 @@
 | cards[]description             | string  | conditional | Plain text description below the title. Ignored if `descriptionHtml` is given.                                                                   |
 | cards[]descriptionHtml         | string  | conditional | HTML description (allows markup). Overrides `description`.                                                                                       |
 | cards[]descriptionClasses      | string  | no          | Classes for the `description`.                                                                                                                   |
-| cards[]aboveContent.html       | string  | no          | HTML shown above the title (for example a tag).                                                                                                  |
-| cards[]footer.html             | string  | no          | HTML shown in the footer.                                                                                                                        |
+| cards[]aboveContent.text       | string  | no          | Text shown above the title. Ignored if `aboveContent.html` is given.                                                                             |
+| cards[]aboveContent.html       | string  | no          | HTML shown above the title (for example a tag). Overrides `aboveContent.text`.                                                                   |
+| cards[]footer.text             | string  | no          | Text shown in the footer. Ignored if `footer.html` is given.                                                                                     |
+| cards[]footer.html             | string  | no          | HTML shown in the footer. Overrides `footer.text`.                                                                                               |
 | cards[]img{}.src               | string  | conditional | Image URL. Adds an image section when present.                                                                                                   |
 | cards[]img{}.alt               | string  | no          | Image alt text. Leave empty only if purely decorative.                                                                                           |
 | cards[]badgeLarge{}.count      | number  | conditional | Number for the large badge. Badge appears only when `count > 0`.                                                                                 |
