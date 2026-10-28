@@ -3,6 +3,6 @@
 
 <span {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-badge-small {{ 'nhsapp-badge-small--absolute' if params.positionAbsolute }} {{ params.classes if params.classes }}" {{- nhsukAttributes(params.attributes) }}>
     <span class="nhsapp-badge-small__indicator{% if params.color %} nhsapp-badge-small__indicator--{{ params.color }}{% endif %}" aria-hidden="true"></span>
-    <span class="nhsuk-u-visually-hidden">{{ params.label }}</span>
+    {{ nhsukVisuallyHidden(params.label) }}
     <span>{{ nhsukContent(params) }}</span>
 </span>
