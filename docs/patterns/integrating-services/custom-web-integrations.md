@@ -57,7 +57,7 @@ You can do this by attending the weekly NHS App Interaction Design Huddles, or b
 
 Users need a clear and reliable way to go back one step. This custom web integration ensures that users feel like they are still in the NHS App, so it's important we do not confuse them by providing "Back" actions that take them to places they do not expect.
 
-If you need to to allow users to move around in your service, it may be more appropriate to use a [default broswer integration](/docs/patterns/integrating-services/default-web-integrations.md) where it is more clear to users that they are not within the NHS App.
+If you need to to allow users to move around in your service, it may be more appropriate to use a [default browser integration](/patterns/integrating-services/default-web-integrations) where it is clearer to users that they are not within the NHS App.
 
 Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcrumbs reflect your own site's information architecture, which is not meaningful to users arriving from the NHS App.
 
@@ -83,7 +83,7 @@ The footer should follow standard NHS design patterns in its visual appearance. 
 
 ### Other steps for the future native NHS App
 
-If you're preparing a custom web integration for the future native NHS App, there are some other steps you'll need to take. Read our guidance on [helping users access a web journey in the native NHS App](/docs/patterns/access-web-journeys.md).
+If you're preparing a custom web integration for the future native NHS App, there are some other steps you'll need to take. Read our guidance on [helping users access a web journey in the native NHS App](/patterns/access-web-journeys).
 
 ## How not to use custom web view integration
 

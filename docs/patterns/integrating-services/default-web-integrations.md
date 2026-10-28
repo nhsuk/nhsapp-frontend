@@ -31,7 +31,7 @@ Do not use this integration type if:
 
 ## How to use default browser integration
 
-You do not need to make any chances to your web service for the default browser integration. Your service will appear as it does on the open web.
+You do not need to make any changes to your web service for the default browser integration. Your service will appear as it does on the open web.
 
 Make sure the entry point from the NHS App has a clear, accurate label so users know they are leaving the main app flow.
 
@@ -40,4 +40,4 @@ You can currently control whether this type of integration opens:
 - in a web browser overlay that sits on top of the NHS App
 - in an external browser that takes users outside of the app
 
-You can find out more about how default web intergrations will open in the future in our guidance on [helping users access web journeys in the native NHS App](/docs/patterns/access-web-journeys.md).
+You can find out more about how default web integrations will open in the future in our guidance on [helping users access web journeys in the native NHS App](/patterns/access-web-journeys).
