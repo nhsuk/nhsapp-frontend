@@ -10,6 +10,13 @@
 {% set badgeCount = badge.count if badge.count is defined else 0 %}
 {% set hasBadgeLarge = badgeCount > 0 %}
 
+{#- Support title as a string (with deprecated `titleClasses` option) #}
+{%- set title = params.title if params.title is mapping and params.title is not escaped else {
+  text: params.title if params.title is string or params.title is number else undefined,
+  html: params.title if params.title is escaped else params.titleHtml
+} %}
+{% set titleClasses = title.classes if title.classes is defined else params.titleClasses %}
+
 {#- Support description as string (with deprecated `descriptionHtml` option) #}
 {%- set description = params.description if params.description is mapping and params.description is not escaped else {
   text: params.description if params.description is string or params.description is number else undefined,
@@ -42,17 +49,17 @@
 
       {%- if params.href -%}
         <a href="{{ params.href }}"
-           class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
+           class="nhsapp-card__link nhsuk-link--no-visited-state {{ titleClasses if titleClasses }}"
            {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
-          {{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}
+          {{ nhsukContent({ text: title.text, html: title.html }) | trim }}
         </a>
       {%- else -%}
         {%- if params.headingLevel -%}
-          <h{{ params.headingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">
-            {{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}
+          <h{{ params.headingLevel }} class="nhsapp-card__title {{ titleClasses if titleClasses }}">
+            {{ nhsukContent({ text: title.text, html: title.html }) | trim }}
           </h{{ params.headingLevel }}>
         {%- else -%}
-          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}</p>
+          <p class="nhsapp-card__title {{ titleClasses if titleClasses }}">{{ nhsukContent({ text: title.text, html: title.html }) | trim }}</p>
         {%- endif -%}
       {%- endif -%}
 
