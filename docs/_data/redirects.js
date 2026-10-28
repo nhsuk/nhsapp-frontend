@@ -15,6 +15,10 @@ export default [
   {
     from: '/get-started/github-and-heroku/',
     to: '/get-started/nhsapp-prototype/'
+  },
+  {
+    from: '/styles/colour/',
+    to: 'https://service-manual.nhs.uk/design-system/styles/colour'
   }
   // Add more redirects here as needed
 ]

@@ -1,5 +1,11 @@
 # NHS App Frontend Changelog
 
+## Unreleased - version 6.0.0
+
+### 💥 Breaking changes
+
+- Removed the deprecated NHS App colour palette (`$nhsapp-colours` and the `nhsapp-colour()` function). Use `nhsuk-colour("...")` from NHS.UK frontend instead, which includes the same pale and dark colours.
+
 ## Unreleased
 
 ### 🆕 New features
