@@ -29,21 +29,25 @@ arguments: card
       href: "#",
       titleClasses: "nhsuk-u-font-size-22",
       linkAriaLabel: "Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital",
-      descriptionHtml: '
-        <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 at 9:40am</p>
-        <p aria-hidden="true" class="nhsuk-u-margin-bottom-3">The Willows, Croydon University Hospital</p>
-        <div class="nhsapp-icon-text nhsuk-body-s nhsuk-u-secondary-text-colour">
-          <div class="nhsapp-icon nhsapp-icon--32 nhsapp-badge-small nhsapp-badge-small--as-icon">
-            <div class="nhsapp-badge-small__indicator" aria-hidden="true"></div>
+      description: {
+        html: '
+          <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 at 9:40am</p>
+          <p aria-hidden="true" class="nhsuk-u-margin-bottom-3">The Willows, Croydon University Hospital</p>
+          <div class="nhsapp-icon-text nhsuk-body-s nhsuk-u-secondary-text-colour">
+            <div class="nhsapp-icon nhsapp-icon--32 nhsapp-badge-small nhsapp-badge-small--as-icon">
+              <div class="nhsapp-badge-small__indicator" aria-hidden="true"></div>
+            </div>
+            <span class="nhsuk-u-visually-hidden">New</span>
+            <p class="nhsuk-body-s">Questionnaire and document attached</p>
           </div>
-          <span class="nhsuk-u-visually-hidden">New</span>
-          <p class="nhsuk-body-s">Questionnaire and document attached</p>
-        </div>
-      '
+        '
+      }
     },
     {
       classes: "nhsapp-card--pale-blue",
-      descriptionHtml: footerDescriptionHtml
+      description: {
+        html: footerDescriptionHtml
+      }
     }
   ]
 }) }}
