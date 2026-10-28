@@ -28,9 +28,9 @@
   <div class="nhsapp-card__container {{ params.containerClasses if params.containerClasses }}">
     <div class="nhsapp-card__content">
       
-      {%- if above.html -%}
+      {%- if above.html or above.text -%}
         <div class="nhsapp-card__above">
-          {{ above.html | safe }}
+          {{ nhsukContent({ text: above.text, html: above.html }) | trim }}
         </div>
       {%- endif -%}
 
@@ -74,9 +74,9 @@
     {%- endif -%}
   </div>
 
-  {%- if footer.html -%}
+  {%- if footer.html or footer.text -%}
     <div class="nhsapp-card__footer">
-      {{ footer.html | safe }}
+      {{ nhsukContent({ text: footer.text, html: footer.html }) | trim }}
     </div>
   {%- endif -%}
 </{{ wrapperTag }}>
