@@ -10,6 +10,12 @@
 {% set badgeCount = badge.count if badge.count is defined else 0 %}
 {% set hasBadgeLarge = badgeCount > 0 %}
 
+{#- Support description as string (with deprecated `descriptionHtml` option) #}
+{%- set description = params.description if params.description is mapping and params.description is not escaped else {
+  text: params.description if params.description is string or params.description is number else undefined,
+  html: params.description if params.description is escaped else (undefined if params.description else params.descriptionHtml)
+} %}
+
 {% set hasMedia = params.img is defined and params.img.src is defined %}
 {% set imgAlt = params.img.alt if params.img.alt is defined else '' %}
 
@@ -50,12 +56,12 @@
         {%- endif -%}
       {%- endif -%}
 
-      {% if params.description %}
+      {% if description.html %}
+        {{ nhsukContent({ html: description.html }) | trim }}
+      {% elif description.text %}
         <div class="nhsapp-card__below">
-          <p class="nhsapp-card__description {{ params.descriptionClasses if params.descriptionClasses }}">{{ params.description }}</p>
+          <p class="nhsapp-card__description {{ params.descriptionClasses if params.descriptionClasses }}">{{ nhsukContent({ text: description.text }) | trim }}</p>
         </div>
-      {% elif params.descriptionHtml  %}
-        {{ params.descriptionHtml | safe }}
       {% endif %}
     </div>
 
