@@ -1,5 +1,6 @@
 {% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
 {% from "nhsuk/macros/content.njk" import nhsukContent %}
+{% from "nhsuk/components/visually-hidden/macro.njk" import visuallyHidden as nhsukVisuallyHidden %}
 
 <span {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-badge-small {{ 'nhsapp-badge-small--absolute' if params.positionAbsolute }} {{ params.classes if params.classes }}" {{- nhsukAttributes(params.attributes) }}>
     <span class="nhsapp-badge-small__indicator{% if params.color %} nhsapp-badge-small__indicator--{{ params.color }}{% endif %}" aria-hidden="true"></span>
