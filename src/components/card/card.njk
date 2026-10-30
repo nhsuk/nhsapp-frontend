@@ -44,7 +44,7 @@
       
       {%- if above.html or above.text -%}
         <div class="nhsapp-card__above">
-          {{ nhsukContent({ text: above.text, html: above.html }) | trim }}
+          {{ nhsukContent(above) | trim }}
         </div>
       {%- endif -%}
 
@@ -52,23 +52,23 @@
         <a href="{{ params.href }}"
            class="nhsapp-card__link nhsuk-link--no-visited-state {{ titleClasses if titleClasses }}"
            {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
-          {{ nhsukContent({ text: title.text, html: title.html }) | trim }}
+          {{ nhsukContent(title) | trim }}
         </a>
       {%- else -%}
         {%- if params.headingLevel -%}
           <h{{ params.headingLevel }} class="nhsapp-card__title {{ titleClasses if titleClasses }}">
-            {{ nhsukContent({ text: title.text, html: title.html }) | trim }}
+            {{ nhsukContent(title) | trim }}
           </h{{ params.headingLevel }}>
         {%- else -%}
-          <p class="nhsapp-card__title {{ titleClasses if titleClasses }}">{{ nhsukContent({ text: title.text, html: title.html }) | trim }}</p>
+          <p class="nhsapp-card__title {{ titleClasses if titleClasses }}">{{ nhsukContent(title) | trim }}</p>
         {%- endif -%}
       {%- endif -%}
 
       {% if description.html %}
-        {{ nhsukContent({ html: description.html }) | trim }}
+        {{ nhsukContent(description) | trim }}
       {% elif description.text %}
         <div class="nhsapp-card__below">
-          <p class="nhsapp-card__description {{ descriptionClasses if descriptionClasses }}">{{ nhsukContent({ text: description.text }) | trim }}</p>
+          <p class="nhsapp-card__description {{ descriptionClasses if descriptionClasses }}">{{ nhsukContent(description) | trim }}</p>
         </div>
       {% endif %}
     </div>
@@ -90,7 +90,7 @@
 
   {%- if footer.html or footer.text -%}
     <div class="nhsapp-card__footer">
-      {{ nhsukContent({ text: footer.text, html: footer.html }) | trim }}
+      {{ nhsukContent(footer) | trim }}
     </div>
   {%- endif -%}
 </{{ wrapperTag }}>
