@@ -16,18 +16,18 @@
 {% from "./macro.njk" import nhsappCard %}
 
 {%- if heading.html -%}
-    {{ nhsukContent({ html: heading.html }) | trim }}
+    {{ nhsukContent(heading) | trim }}
 {% elif heading.text %}
   <h{{ headingLevel }} class="nhsapp-cards__heading {{ headingClass }}">
-    {{ nhsukContent({ text: heading.text }) | trim }}
+    {{ nhsukContent(heading) | trim }}
   </h{{ headingLevel }}>
 {% endif %}
 
 {% if description.html %}
-  {{ nhsukContent({ html: description.html }) | trim }}
+  {{ nhsukContent(description) | trim }}
 {% elif description.text %}
   <p class="nhsapp-cards__description {{ descriptionClass }}">
-    {{ nhsukContent({ text: description.text }) | trim }}
+    {{ nhsukContent(description) | trim }}
   </p>
 {% endif %}
 
