@@ -1,3 +1,5 @@
+{% from "nhsuk/components/heading/macro.njk" import heading as nhsukHeading %}
+{% from "nhsuk/components/link/macro.njk" import link as nhsukLink %}
 {% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
 {% from "nhsuk/macros/content.njk" import nhsukContent %}
 {% from "../badge/large/macro.njk" import nhsappBadgeLarge %}
@@ -10,12 +12,26 @@
 {% set badgeCount = badge.count if badge.count is defined else 0 %}
 {% set hasBadgeLarge = badgeCount > 0 %}
 
-{#- Support title as a string (with deprecated `titleClasses` option) #}
-{%- set title = params.title if params.title is mapping and params.title is not escaped else {
+{#- Support heading as a string or object, with deprecated `title`, `titleHtml`, `titleClasses`, `headingLevel` and `headingHtml` options #}
+{%- set legacyTitle = params.title if params.title is mapping and params.title is not escaped else {
   text: params.title if params.title is string or params.title is number else undefined,
   html: params.title if params.title is escaped else params.titleHtml
 } %}
-{% set titleClasses = title.classes if title.classes is defined else params.titleClasses %}
+{%- set headingParam = params.heading if params.heading is mapping and params.heading is not escaped else {
+  text: params.heading if params.heading is string or params.heading is number else undefined,
+  html: params.heading if params.heading is escaped else params.headingHtml
+} %}
+{%- set hasHeadingParam = headingParam.text or headingParam.html %}
+{%- set heading = {
+  text: headingParam.text if hasHeadingParam else legacyTitle.text,
+  html: headingParam.html if hasHeadingParam else legacyTitle.html,
+  level: headingParam.level or params.headingLevel,
+  classes: headingParam.classes or legacyTitle.classes or params.titleClasses,
+  size: headingParam.size,
+  id: headingParam.id
+} %}
+{%- set headingSizes = ["xxs", "xs", "s", "m", "l", "xl"] %}
+{%- set headingClasses = ((("nhsuk-heading-" ~ heading.size) if heading.size in headingSizes else "") ~ " " ~ (heading.classes or "")) | trim %}
 
 {#- Support description as string (with deprecated `descriptionHtml` option) #}
 {%- set description = params.description if params.description is mapping and params.description is not escaped else {
@@ -49,19 +65,27 @@
       {%- endif -%}
 
       {%- if params.href -%}
-        <a href="{{ params.href }}"
-           class="nhsapp-card__link nhsuk-link--no-visited-state {{ titleClasses if titleClasses }}"
-           {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
-          {{ nhsukContent(title) | trim }}
-        </a>
+        {{ nhsukLink({
+          href: params.href,
+          text: heading.text,
+          html: heading.html,
+          id: heading.id,
+          ariaLabel: params.linkAriaLabel,
+          className: "nhsapp-card__link",
+          classes: ("nhsuk-link--no-visited-state " ~ headingClasses) | trim
+        }) | trim }}
       {%- else -%}
-        {%- if params.headingLevel -%}
-          <h{{ params.headingLevel }} class="nhsapp-card__title {{ titleClasses if titleClasses }}">
-            {{ nhsukContent(title) | trim }}
-          </h{{ params.headingLevel }}>
-        {%- else -%}
-          <p class="nhsapp-card__title {{ titleClasses if titleClasses }}">{{ nhsukContent(title) | trim }}</p>
-        {%- endif -%}
+        {{ nhsukHeading({
+          text: heading.text,
+          html: heading.html,
+          id: heading.id,
+          size: heading.size,
+          level: heading.level,
+          element: undefined if heading.level else "p",
+          classes: heading.classes,
+          className: "nhsapp-card__title",
+          classPrefix: "nhsuk-heading-"
+        }) | trim }}
       {%- endif -%}
 
       {% if description.html %}
