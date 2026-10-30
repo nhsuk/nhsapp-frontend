@@ -29,6 +29,14 @@
   }
 }
 
+// Icon size adjustments, relative to the default 2rem
+@each $size in (25, 50, 75, 100) {
+  .nhsapp-icon--size-#{$size} {
+    height: 2rem * (100 + $size) * 0.01;
+    width: 2rem * (100 + $size) * 0.01;
+  }
+}
+
 .nhsapp-icon-text {
   display: flex;
   align-items: center;
