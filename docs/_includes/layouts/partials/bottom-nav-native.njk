@@ -5,7 +5,7 @@
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
             {% if hub === "Home" %}
-              {{ nhsappIcon('homeFilled') }}
+              {{ nhsappIcon('home-filled') }}
             {% else %}
               {{ nhsappIcon('home') }}
             {% endif %}
@@ -15,7 +15,7 @@
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
             {% if hub === "Services" %}
-              {{ nhsappIcon('crossFilled') }}
+              {{ nhsappIcon('cross-filled') }}
             {% else %}
               {{ nhsappIcon('cross') }}
             {% endif %}        
@@ -25,7 +25,7 @@
         <li class="app-bottom-nav-native__item">
           <a class="app-bottom-nav-native__link" href="#">
             {% if hub === "Your health" %}
-              {{ nhsappIcon('heartFilled') }}
+              {{ nhsappIcon('heart-filled') }}
             {% else %}
               {{ nhsappIcon('heart') }}
             {% endif %} 
@@ -36,13 +36,13 @@
           <a class="app-bottom-nav-native__link" href="#">
             {% if hub === "Messages" %}
               {% if data['messages'] > 0 %}
-                {{ nhsappIcon('messagesUnreadFilled') }}
+                {{ nhsappIcon('messages-unread-filled') }}
               {% else %}
-                {{ nhsappIcon('messagesFilled') }}
+                {{ nhsappIcon('messages-filled') }}
               {% endif %}
             {% else %}
               {% if data['messages'] > 0 %}
-                {{ nhsappIcon('messagesUnread') }}
+                {{ nhsappIcon('messages-unread') }}
               {% else %}
                 {{ nhsappIcon('messages') }}
               {% endif %}

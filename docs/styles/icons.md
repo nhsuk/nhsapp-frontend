@@ -27,7 +27,9 @@ Be mindful about how much an icon can make one piece of content on a page stand 
 
 ## How to use
 
-We use scalable vector graphics (SVG) files for icons. They can be used with or without supporting text.
+We use scalable vector graphics (SVG) for icons. They can be used with or without supporting text.
+
+If you're using Nunjucks, add an icon with the `nhsappIcon` macro, for example `nhsappIcon('chevron-right')`. You can pass a second argument with `classes`, `title` (to give the icon an accessible name) or `attributes`. The macro's [source code on GitHub](https://github.com/nhsuk/nhsapp-frontend/blob/main/src/styles/icon/macro.njk) contains all the icons.
 
 {% include "layouts/icons-example.njk" %}
 
