@@ -4,7 +4,7 @@ title: The structure of the NHS App
 description:
 backlogID: 66
 order: 2
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Structure
 themeOrder: 2

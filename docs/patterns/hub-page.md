@@ -4,7 +4,7 @@ title: Hubs
 description:
 backlogID: 69
 order: 1
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Screens
 themeOrder: 1

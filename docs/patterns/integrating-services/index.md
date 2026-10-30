@@ -4,7 +4,7 @@ title: Integrating services into the NHS App
 description: The NHS App is made up of over 60 different services. We integrate services into the app in ways that make them feel like a coherent part of the app experience.
 backlogID: 450
 order: 2
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Structure
 themeOrder: 2

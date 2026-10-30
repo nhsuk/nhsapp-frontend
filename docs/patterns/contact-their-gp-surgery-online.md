@@ -4,7 +4,7 @@ title: Contact their GP surgery online
 description:
 backlogID: 64
 order: 2
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Help users to
 themeOrder: 3

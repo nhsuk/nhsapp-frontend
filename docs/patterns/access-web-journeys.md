@@ -4,7 +4,7 @@ title: Access web journeys in the native NHS App
 description: 
 backlogID: 457
 order: 5
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Help users to
 themeOrder: 3

@@ -4,7 +4,7 @@ title: Learn about health campaigns
 description: Help NHS App users learn about public health campaigns using the campaign card.  
 backlogID: 13
 order: 3
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Help users to
 themeOrder: 3

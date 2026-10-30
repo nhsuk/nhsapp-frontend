@@ -5,7 +5,7 @@ description: This type of integration opens a service in the user's default brow
 backlogID: 450
 order: 1
 childPage: true
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Structure
 themeOrder: 2

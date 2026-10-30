@@ -3,7 +3,7 @@ layout: layouts/docs.njk
 isIndex: true
 title: Patterns
 description: Patterns are tested and agreed solutions to common needs.
-section: Web
+section: Patterns
 subsection: Patterns
 subsectionIndex: true
 subsectionOrder: 4

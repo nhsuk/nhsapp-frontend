@@ -5,7 +5,7 @@ description: A custom web view is a browser-like container. Your team controls a
 backlogID: 450
 order: 2
 childPage: true
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Structure
 themeOrder: 2

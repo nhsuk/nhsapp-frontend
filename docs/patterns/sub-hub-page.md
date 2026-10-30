@@ -4,7 +4,7 @@ title: Sub-hubs
 description: Sub-hubs are the second layer of menu screens in the NHS App. They are positioned one level down from hubs.
 backlogID: 249
 order: 3
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Screens
 themeOrder: 1

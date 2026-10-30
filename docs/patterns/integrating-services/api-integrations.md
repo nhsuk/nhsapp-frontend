@@ -5,7 +5,7 @@ description: An API integration presents data or functionality from your service
 backlogID: 450
 order: 3
 childPage: true
-section: Web
+section: Patterns
 subsection: Patterns
 theme: Structure
 themeOrder: 2
