@@ -1,12 +1,16 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Custom web view integration
 description: A custom web view is a browser-like container. Your team controls and adapts it to fit the NHS App context. This is the most common integration type in the NHS App.
 backlogID: 450
 order: 2
 childPage: true
-tags:
-  - integratingServices
+section: Patterns
+subsection: Patterns
+theme: Structure
+themeOrder: 2
+navParent: /patterns/integrating-services/
+sectionCaption: Integrating services into the NHS App
 ---
 
 Users are not always aware that these services are separate from the NHS App. That means it's important to consider their end-to-end experiences, what help content they might need, and what support tickets they might raise.

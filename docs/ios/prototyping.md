@@ -1,9 +1,10 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Prototyping
-tags:
-  - ios
 order: 2
+section: iOS
+subsection: Get started
+theme: Get started
 ---
 
 To design and test features or changes for the native iOS NHS App, we recommend that you prototype in code rather than in Figma or other visual tools.

@@ -1,11 +1,14 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Contact their GP surgery online
 description:
 backlogID: 64
 order: 2
-tags:
-  - helpUsers
+section: Patterns
+subsection: Patterns
+theme: Help users to
+themeOrder: 3
+sectionCaption: Help users to
 ---
 
 Many people can contact their GP, get advice and arrange care using a form or questionnaire in the NHS App.

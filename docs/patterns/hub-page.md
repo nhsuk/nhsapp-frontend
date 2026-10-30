@@ -1,11 +1,14 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Hubs
 description:
 backlogID: 69
 order: 1
-tags:
-  - screen
+section: Patterns
+subsection: Patterns
+theme: Screens
+themeOrder: 1
+sectionCaption: Screens
 ---
 
 Hubs act as the primary navigation structure of the NHS App, helping users access the services and information they need.

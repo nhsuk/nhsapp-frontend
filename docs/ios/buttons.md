@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Buttons
-tags:
-  - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 Buttons are used to help users carry out an action.

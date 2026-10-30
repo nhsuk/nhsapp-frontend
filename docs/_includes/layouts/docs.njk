@@ -1,0 +1,38 @@
+{% extends "./sidebar.njk" %}
+{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
+
+{% block sidebar %}
+  {% set sidebarGroups = collections.all | getSidebarGroups(section, subsection, theme, sidebarMode) %}
+  {% for sidebarGroup in sidebarGroups %}
+    <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1 nhsuk-u-secondary-text-colour">{{ sidebarGroup.theme }}</h3>
+    {{ sectionNavigation({
+      ariaLabel: sidebarGroup.theme,
+      direction: 'vertical',
+      small: true,
+      items: sidebarGroup.items | toSectionNavigationItems(page.url)
+    }) }}
+  {% endfor %}
+{% endblock %}
+
+{% block content %}
+  {% if section == 'Android' or section == 'iOS' %}
+    {{ nhsappTag({
+      text: 'Work in progress',
+      classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
+    }) }}
+    <span class="nhsuk-caption-xl">{{ section }}</span>
+  {% elif sectionCaption %}
+    <span class="nhsuk-caption-xl">{{ sectionCaption }}</span>
+  {% endif %}
+  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
+    {{ title }}
+  </h1>
+  {% if description %}
+    <p>{{ description }}</p>
+  {% endif %}
+  {% if pageNotice %}
+    {% include "layouts/partials/" + pageNotice + ".njk" %}
+  {% endif %}
+  {{ content | safe }}
+  {% include "layouts/partials/feedback-section.njk" %}
+{% endblock %}

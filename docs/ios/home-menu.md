@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Home menu
-tags:
-  - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 The home menu lists the main sections of the app.

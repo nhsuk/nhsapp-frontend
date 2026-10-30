@@ -1,8 +1,6 @@
 ---
-layout: layouts/android.njk
+layout: layouts/docs.njk
 title: Colour
-tags:
-  - androidStyles
 colourGroups:
   - heading: Semantic
     description: Use semantic theme properties for their intended role.
@@ -209,6 +207,9 @@ colourGroups:
         dark: "#242B30"
         highContrastLight: "#FFFFFF"
         highContrastDark: "#000000"
+section: Android
+subsection: Styles
+theme: Styles
 ---
 
 Colours are defined as tokens in the Android design system and exposed to Jetpack Compose through `MaterialTheme`.

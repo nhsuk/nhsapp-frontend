@@ -1,6 +1,7 @@
 {% extends "nhsuk/template-with-imports.njk" %}
 
 {% from "icon/macro.njk" import nhsappIcon %}
+{% from "nhsuk/components/section-navigation/macro.njk" import sectionNavigation %}
 
 {% block pageTitle -%}
   {% if title %}{{ title }} - {% endif %}NHS App design system
@@ -28,33 +29,56 @@
     navigation: {
       items: [
         {
-          href: '/get-started/',
-          text: 'Get started',
-          active: page and page.url and '/get-started/' in page.url
-        },
-        {
-          href: '/styles/',
-          text: 'Styles',
-          active: page and page.url and '/styles/' in page.url
-        },
-        {
-          href: '/components/',
-          text: 'Components',
-          active: page and page.url and '/components/' in page.url
+          href: '/',
+          text: 'Home',
+          active: page and page.url == '/'
         },
         {
           href: '/patterns/',
           text: 'Patterns',
-          active: page and page.url and '/patterns/' in page.url
+          active: section == 'Patterns'
+        },
+        {
+          href: '/web/',
+          text: 'Web',
+          active: section == 'Web'
+        },
+        {
+          href: '/ios/',
+          text: 'iOS',
+          active: section == 'iOS'
+        },
+        {
+          href: '/android/',
+          text: 'Android',
+          active: section == 'Android'
+        },
+        {
+          href: '/accessibility/',
+          text: 'Accessibility',
+          active: section == 'Accessibility'
         },
         {
           href: '/community/',
           text: 'Community',
-          active: page and page.url and '/community/' in page.url
+          active: section == 'Community'
         }
       ]
     }
   }) }}
+
+  {% set sectionNavItems = collections.all | getSubsectionNavigationItems(section, subsection) %}
+
+  {% if sectionNavItems and sectionNavItems.length > 1 %}
+    <div class="nhsuk-width-container">
+      {{ sectionNavigation({
+        ariaLabel: 'Section navigation',
+        direction: 'horizontal',
+        small: true,
+        items: sectionNavItems
+      }) }}
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block content %}

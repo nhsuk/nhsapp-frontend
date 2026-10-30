@@ -1,10 +1,13 @@
 ---
-layout: layouts/community.njk
+layout: layouts/docs.njk
 title: Suggest improvements to the design system
 order: 4
 description: Let us know if you find an opportunity to fix or improve the NHS App design system.
-tags:
-  - contribution
+section: Community
+subsection: Community
+theme: Contributing
+themeOrder: 1
+sectionCaption: Contributing
 ---
 
 This could include problems with the design or code of a component, or missing documentation and features.
