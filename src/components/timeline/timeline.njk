@@ -1,9 +1,15 @@
 {% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
+{% from "nhsuk/macros/content.njk" import nhsukContent %}
 
 {% macro _timelineItem(params, item) %}
   {% set headingLevel = params.headingLevel if params.headingLevel else 3 %}
   {% set headingBold = 'nhsuk-u-font-weight-bold' if item.active else '' %}
   {% set isPastItem = 'nhsapp-timeline__item--past' if item.isPastItem else '' %}
+  {#- Support item heading as string (with deprecated `headingText` option) #}
+  {%- set heading = item.heading if item.heading is mapping and item.heading is not escaped else {
+    text: item.heading if item.heading is string else item.headingText,
+    html: item.heading if item.heading is escaped else undefined
+  } %}
   
   <li class="nhsapp-timeline__item {{ isPastItem | trim }}">
     {% if item.active or item.isPastItem %}
@@ -16,7 +22,7 @@
       </svg>
     {% endif %}
     <div class="nhsapp-timeline__content">
-      <h{{ headingLevel }} class="nhsapp-timeline__header {{ headingBold }}">{{ item.headingText }}</h{{ headingLevel }}>
+      <h{{ headingLevel }} class="nhsapp-timeline__header {{ headingBold }}">{{ nhsukContent(heading) | trim }}</h{{ headingLevel }}>
       {% if item.html %}
         {{ item.html | safe | trim }}
       {% elif item.text %}

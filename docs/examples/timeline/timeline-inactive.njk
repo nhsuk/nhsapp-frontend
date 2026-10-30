@@ -11,12 +11,16 @@ arguments: timeline
 {{ nhsappTimeline({
   items: [
     {
-      headingText: "Await approval",
+      heading: {
+        text: "Await approval"
+      },
       text: "The request will either be approved or rejected. If rejected please contact your Healthcare Professional.",
       active: true
     },
     {
-      headingText: "GP Approval Process",
+      heading: {
+        text: "GP Approval Process"
+      },
       text: "Once approved, it can take 3 to 5 working days for a nominated pharmacy to prepare your prescription."
     }
   ]
