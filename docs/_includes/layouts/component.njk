@@ -44,12 +44,13 @@
 {% endset %}
 
 {% block content %}
-   {% if tags and ("component" in tags or "archivedComponent" in tags) %}
-    <span class="nhsuk-caption-xl">Components</span>
-  {% endif %}
-  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
-    {{ title }}
-  </h1>
+  {{ heading({
+    text: title,
+    level: 1,
+    size: "xl",
+    caption: { text: "Components" } if tags and ("component" in tags or "archivedComponent" in tags) else none,
+    classes: "nhsuk-u-margin-bottom-5"
+  }) }}
   <p>{{ description }}</p>
   {{ content | safe }}
   {% if tags and "component" in tags %}

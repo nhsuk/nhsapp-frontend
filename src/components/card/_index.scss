@@ -2,7 +2,6 @@
 @use "nhsuk-frontend/dist/nhsuk/core/settings" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/helpers" as *;
-@use "../../settings/colours-applied" as *;
 
 /** These variables are not defined in a separate scss file in the nhsuk-frontend,
  * so we can't import them without bringing in the actual classes also.
@@ -287,67 +286,67 @@ $card-border-radius: 8px;
 // Colour variants
 $nhsapp-card-variants: (
   "pale-aqua-green": (
-    nhsapp-colour("pale-aqua-green"),
-    nhsapp-colour("dark-aqua-green")
+    nhsuk-colour("pale-aqua-green"),
+    nhsuk-colour("dark-aqua-green")
   ),
   "dark-aqua-green": (
-    nhsapp-colour("dark-aqua-green"),
+    nhsuk-colour("dark-aqua-green"),
     nhsuk-colour("white")
   ),
   "pale-blue": (
-    nhsapp-colour("pale-blue"),
-    nhsapp-colour("dark-blue")
+    nhsuk-colour("pale-blue"),
+    nhsuk-colour("dark-blue")
   ),
   "dark-blue": (
-    nhsapp-colour("dark-blue"),
+    nhsuk-colour("dark-blue"),
     nhsuk-colour("white")
   ),
   "pale-green": (
-    nhsapp-colour("pale-green"),
-    nhsapp-colour("dark-green")
+    nhsuk-colour("pale-green"),
+    nhsuk-colour("dark-green")
   ),
   "dark-green": (
-    nhsapp-colour("dark-green"),
+    nhsuk-colour("dark-green"),
     nhsuk-colour("white")
   ),
   "pale-orange": (
-    nhsapp-colour("pale-orange"),
-    nhsapp-colour("dark-orange")
+    nhsuk-colour("pale-orange"),
+    nhsuk-colour("dark-orange")
   ),
   "dark-orange": (
-    nhsapp-colour("dark-orange"),
+    nhsuk-colour("dark-orange"),
     nhsuk-colour("white")
   ),
   "pale-pink": (
-    nhsapp-colour("pale-pink"),
-    nhsapp-colour("dark-pink")
+    nhsuk-colour("pale-pink"),
+    nhsuk-colour("dark-pink")
   ),
   "dark-pink": (
-    nhsapp-colour("dark-pink"),
+    nhsuk-colour("dark-pink"),
     nhsuk-colour("white")
   ),
   "pale-purple": (
-    nhsapp-colour("pale-purple"),
-    nhsapp-colour("dark-purple")
+    nhsuk-colour("pale-purple"),
+    nhsuk-colour("dark-purple")
   ),
   "dark-purple": (
-    nhsapp-colour("dark-purple"),
+    nhsuk-colour("dark-purple"),
     nhsuk-colour("white")
   ),
   "pale-red": (
-    nhsapp-colour("pale-red"),
-    nhsapp-colour("dark-red")
+    nhsuk-colour("pale-red"),
+    nhsuk-colour("dark-red")
   ),
   "dark-red": (
-    nhsapp-colour("dark-red"),
+    nhsuk-colour("dark-red"),
     nhsuk-colour("white")
   ),
   "pale-yellow": (
-    nhsapp-colour("pale-yellow"),
-    nhsapp-colour("dark-yellow")
+    nhsuk-colour("pale-yellow"),
+    nhsuk-colour("dark-yellow")
   ),
   "dark-yellow": (
-    nhsapp-colour("dark-yellow"),
+    nhsuk-colour("dark-yellow"),
     nhsuk-colour("white")
   ),
   "proxy": (

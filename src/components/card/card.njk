@@ -1,4 +1,5 @@
 {% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
+{% from "nhsuk/macros/content.njk" import nhsukContent %}
 {% from "../badge/large/macro.njk" import nhsappBadgeLarge %}
 {% from "../../styles/icon/macro.njk" import nhsappIcon %}
 
@@ -37,15 +38,15 @@
         <a href="{{ params.href }}"
            class="nhsapp-card__link nhsuk-link--no-visited-state {{ params.titleClasses if params.titleClasses }}"
            {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
-          {{ params.titleHtml | safe if params.titleHtml else params.title }}
+          {{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}
         </a>
       {%- else -%}
         {%- if params.headingLevel -%}
           <h{{ params.headingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">
-            {{ params.titleHtml | safe if params.titleHtml else params.title }}
+            {{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}
           </h{{ params.headingLevel }}>
         {%- else -%}
-          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ params.titleHtml | safe if params.titleHtml else params.title }}</p>
+          <p class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">{{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}</p>
         {%- endif -%}
       {%- endif -%}
 
