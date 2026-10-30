@@ -22,6 +22,8 @@ $card-border-radius: 8px;
 
   padding: 0;
 
+  // `__title` is deprecated and will be removed in v6.0.0. Use `__heading` instead.
+  &__heading,
   &__title {
     @include nhsuk-font-size(19);
 
