@@ -1,5 +1,4 @@
 {% extends "./sidebar.njk" %}
-{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
 
 {%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
@@ -49,12 +48,13 @@
     classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
   })}}
 
-  {% if tags and "android" in tags %}
-    <span class="nhsuk-caption-xl">Android</span>
-  {% endif %}
-  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
-    {{ title }}
-  </h1>
+  {{ heading({
+    text: title,
+    level: 1,
+    size: "xl",
+    caption: { text: "Android" },
+    classes: "nhsuk-u-margin-bottom-5"
+  }) }}
   <p>{{ description }}</p>
   {{ content | safe }}
   {% if tags and "android" in tags %}

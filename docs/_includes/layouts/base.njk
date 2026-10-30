@@ -1,6 +1,7 @@
 {% extends "nhsuk/template-with-imports.njk" %}
 
 {% from "icon/macro.njk" import nhsappIcon %}
+{% from "nhsapp/components/tag/macro.njk" import nhsappTag %}
 
 {% block pageTitle -%}
   {% if title %}{{ title }} - {% endif %}NHS App design system
