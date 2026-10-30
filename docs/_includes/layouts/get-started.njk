@@ -50,13 +50,12 @@
 {% endset %}
 
 {% block content %}
-  {% if tags and "prototyping" in tags %}
-    <span class="nhsuk-caption-xl">Prototyping</span>
-  {% elif tags and "production" in tags %}
-    <span class="nhsuk-caption-xl">Production</span>
-  {% endif %}
-  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
-    {{ title }}
-  </h1>
+  {{ heading({
+    text: title,
+    level: 1,
+    size: "xl",
+    caption: { text: "Prototyping" } if tags and "prototyping" in tags else ({ text: "Production" } if tags and "production" in tags else none),
+    classes: "nhsuk-u-margin-bottom-5"
+  }) }}
   {{ content | safe }}
 {% endblock %}
