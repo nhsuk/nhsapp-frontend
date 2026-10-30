@@ -1,7 +1,6 @@
 {% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
 {% from "nhsuk/macros/content.njk" import nhsukContent %}
 {% set stackedClass = 'nhsapp-cards--stacked' if params.stacked else '' %}
-{% set headingLevel = params.headingLevel if params.headingLevel else 2 %}
 
 {#- Support description as string (with deprecated `descriptionHtml` option) #}
 {%- set description = params.description if params.description is mapping and params.description is not escaped else {
@@ -10,8 +9,11 @@
 } %}
 {%- set heading = params.heading if params.heading is mapping and params.heading is not escaped else {
   text: params.heading if params.heading is string or params.heading is number else undefined,
-  html: params.headingHtml
+  html: params.heading if params.heading is escaped else params.headingHtml
 } %}
+{% set headingLevel = heading.level or params.headingLevel or 2 %}
+{% set headingClass = heading.classes %}
+{% set descriptionClass = description.classes if description.classes is defined else params.descriptionClasses %}
 
 {% from "./macro.njk" import nhsappCard %}
 
@@ -38,6 +40,8 @@
 <{{ wrapperTag }} {%- if params.id %} id="{{ params.id }}"{% endif %} class="nhsapp-cards {{ stackedClass }} {{ params.classes if params.classes }}" {{- nhsukAttributes(params.attributes) }}>
   {% for cardItem in params.cards %}
     {{ nhsappCard({
+      heading: cardItem.heading,
+      headingHtml: cardItem.headingHtml,
       title: cardItem.title,
       titleHtml: cardItem.titleHtml,
       titleClasses: cardItem.titleClasses,
