@@ -22,7 +22,7 @@
       </svg>
     {% endif %}
     <div class="nhsapp-timeline__content">
-      <h{{ headingLevel }} class="nhsapp-timeline__header {{ headingBold }}">{{ nhsukContent({ text: heading.text, html: heading.html }) | trim }}</h{{ headingLevel }}>
+      <h{{ headingLevel }} class="nhsapp-timeline__header {{ headingBold }}">{{ nhsukContent(heading) | trim }}</h{{ headingLevel }}>
       {% if item.html %}
         {{ item.html | safe | trim }}
       {% elif item.text %}
