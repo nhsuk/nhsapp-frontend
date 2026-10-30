@@ -1,10 +1,15 @@
 ---
-layout: layouts/component.njk
+layout: layouts/docs.njk
 title: Timeline
 description: Use timelines to help people understand a process and what will happen next.
 backlogID: 28
 tags:
   - component
+section: Web
+subsection: Components
+theme: Components
+themeOrder: 1
+caption: Components
 ---
 
 {% example "timeline/timeline-inactive.njk" %}

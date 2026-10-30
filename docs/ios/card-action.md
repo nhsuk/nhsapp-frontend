@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Card action
 tags:
   - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 Card actions are tappable rows used to link onwards from a list of options.

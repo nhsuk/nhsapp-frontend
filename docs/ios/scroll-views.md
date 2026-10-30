@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Scroll views
 tags:
   - iosLayouts
+section: iOS
+subsection: Layouts
+theme: Layouts
 ---
 
 Scroll views display content as a vertically scrollable page.

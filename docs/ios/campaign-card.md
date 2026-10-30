@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Campaign card
 tags:
   - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 The campaign card is a tappable card that helps users learn about a public health campaign.

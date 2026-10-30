@@ -1,9 +1,13 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: Accessibility in the NHS App
 order: 4
 tags:
   - integration
+section: Web
+subsection: Get started
+theme: Integrating with the NHS App
+themeOrder: 3
 ---
 
 As a public sector body, your service must meet the accessibility standards set out in the [Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/952/contents/made). This applies to all teams within NHS organisations building websites or mobile apps.

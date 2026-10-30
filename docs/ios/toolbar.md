@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Toolbar
 tags:
   - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 Toolbars are a standard iOS component. See [Toolbars in the Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/toolbars).

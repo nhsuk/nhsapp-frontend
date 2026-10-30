@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Title
 tags:
   - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 The title is the main heading of a screen. It can also appear in the [toolbar](/ios/toolbar/).

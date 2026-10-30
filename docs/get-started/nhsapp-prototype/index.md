@@ -1,10 +1,15 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: NHS App prototype
 order: 1
 tags:
   - prototyping
 help: no
+section: Web
+subsection: Get started
+theme: Prototyping
+themeOrder: 1
+caption: Prototyping
 ---
 
 The NHS App lets you create interactive prototypes that look like real NHS App pages. It builds on the NHS prototype kit with added custom layouts and components tailored to the NHS App.

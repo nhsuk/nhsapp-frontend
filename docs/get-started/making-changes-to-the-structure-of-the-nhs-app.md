@@ -1,8 +1,13 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: Making changes to the structure of the NHS App
 tags:
   - production
+section: Web
+subsection: Get started
+theme: Production
+themeOrder: 2
+caption: Production
 ---
 
 Sometimes changes need to be made to the structure of the NHS App. This usually happens when:

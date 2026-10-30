@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Divider
 tags:
   - iosStyles
+section: iOS
+subsection: Styles
+theme: Styles
 ---
 
 Use `NHSDivider()` to add a divider between items within a custom [card style](/ios/card-style) component.

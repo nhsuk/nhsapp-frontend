@@ -1,9 +1,13 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: Integrating with the NHS App
 order: 3
 tags:
   - integration
+section: Web
+subsection: Get started
+theme: Integrating with the NHS App
+themeOrder: 3
 ---
 
 The NHS App has over 60 integrated services. This guidance is for teams who want to integrate a service with the NHS App, or who are preparing an existing integration for the NHS App.

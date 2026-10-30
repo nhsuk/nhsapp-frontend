@@ -1,9 +1,12 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Adding the Swift package
 tags:
   - ios
-order: 1  
+order: 1
+section: iOS
+subsection: Get started
+theme: Get started
 ---
 
 The iOS design system for the NHS app is available as a [Swift package](https://developer.apple.com/documentation/xcode/swift-packages).

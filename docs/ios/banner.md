@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Banner
 tags:
   - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 The banner is a highly visible, tappable card that draws attention to an important action, such as proving your identity or giving feedback.

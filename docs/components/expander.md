@@ -1,10 +1,15 @@
 ---
-layout: layouts/component.njk
+layout: layouts/docs.njk
 title: Expander
 description: Use expanders to make content easier to digest by letting users reveal more detailed information only if they need it.
 backlogID: 581
 tags:
   - component
+section: Web
+subsection: Components
+theme: Components
+themeOrder: 1
+caption: Components
 ---
 
 ## How to use

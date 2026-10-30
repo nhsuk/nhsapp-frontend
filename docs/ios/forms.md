@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Forms
 tags:
   - iosLayouts
+section: iOS
+subsection: Layouts
+theme: Layouts
 ---
 
 Form views let users answer questions.

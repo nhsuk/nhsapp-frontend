@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Card style
 tags:
   - iosStyles
+section: iOS
+subsection: Styles
+theme: Styles
 ---
 
 The `nhsCardStyle()` modifier applies NHS card styling to any view: a padded, rounded background with an optional border.

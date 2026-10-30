@@ -1,10 +1,16 @@
 ---
-layout: layouts/nhsapp-prototype.njk
+layout: layouts/docs.njk
 title: Using the NHS App prototype
 order: 3
 tags:
   - nhsappPrototype
 help: no
+section: Web
+subsection: Get started
+theme: NHS App prototype
+themeOrder: 1
+sidebarMode: theme
+caption: NHS App prototype
 ---
 
 To use the NHS App prototype, you’ll need some basic knowledge of HTML – like understanding tags and attributes, and how to copy and paste code.

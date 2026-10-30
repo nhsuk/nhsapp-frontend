@@ -1,10 +1,15 @@
 ---
-layout: layouts/component.njk
+layout: layouts/docs.njk
 title: Tag
 description: Use tags to show a status. Tags only display information and are not interactive.
 backlogID: 11
 tags:
   - component
+section: Web
+subsection: Components
+theme: Components
+themeOrder: 1
+caption: Components
 ---
 
 {% example "tags/tag.njk" %}

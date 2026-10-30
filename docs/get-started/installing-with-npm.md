@@ -1,6 +1,8 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: Installing NHS App frontend with npm
+section: Web
+subsection: Get started
 ---
 
 ## Requirements

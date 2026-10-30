@@ -160,6 +160,96 @@ export default function (eleventyConfig) {
     }
   )
 
+  eleventyConfig.addFilter(
+    'getSubsectionNavigationItems',
+    function (pages, currentSection, currentSubsection) {
+      return pages
+        .filter(
+          (page) =>
+            page.data.section === currentSection && page.data.subsectionIndex
+        )
+        .sort(
+          (left, right) =>
+            left.data.subsectionOrder - right.data.subsectionOrder
+        )
+        .map((page) => ({
+          href: page.url,
+          text: page.data.subsection,
+          current: page.data.subsection === currentSubsection
+        }))
+    }
+  )
+
+  eleventyConfig.addFilter(
+    'getSidebarGroups',
+    function (
+      pages,
+      currentSection,
+      currentSubsection,
+      currentTheme,
+      sidebarMode
+    ) {
+      const subsectionPages = pages.filter(
+        (page) =>
+          page.data.section === currentSection &&
+          page.data.subsection === currentSubsection &&
+          page.data.theme &&
+          !page.data.subsectionIndex &&
+          (!page.data.sidebarMode || page.data.sidebarMode === sidebarMode) &&
+          (sidebarMode !== 'theme' || page.data.theme === currentTheme)
+      )
+      const themes = [
+        ...new Set(subsectionPages.map((page) => page.data.theme))
+      ]
+      const visibleThemes =
+        sidebarMode === 'theme'
+          ? themes.filter((theme) => theme === currentTheme)
+          : themes
+
+      return visibleThemes
+        .map((theme) => {
+          const themePages = subsectionPages.filter(
+            (page) => page.data.theme === theme
+          )
+          const items = themePages
+            .filter((page) => !page.data.navParent)
+            .sort((left, right) => {
+              const leftOrder = left.data.order
+              const rightOrder = right.data.order
+              if (Number.isFinite(leftOrder) && Number.isFinite(rightOrder)) {
+                return (
+                  leftOrder - rightOrder ||
+                  left.data.title.localeCompare(right.data.title)
+                )
+              }
+              if (Number.isFinite(leftOrder)) return -1
+              if (Number.isFinite(rightOrder)) return 1
+              return left.data.title.localeCompare(right.data.title)
+            })
+            .map((page) => {
+              const children = themePages
+                .filter((child) => child.data.navParent === page.url)
+                .sort((left, right) => left.data.order - right.data.order)
+              return children.length ? { ...page, children } : page
+            })
+
+          return { theme, themeOrder: themePages[0].data.themeOrder, items }
+        })
+        .sort((left, right) => {
+          const leftOrder = left.themeOrder
+          const rightOrder = right.themeOrder
+          if (Number.isFinite(leftOrder) && Number.isFinite(rightOrder)) {
+            return (
+              leftOrder - rightOrder || left.theme.localeCompare(right.theme)
+            )
+          }
+          if (Number.isFinite(leftOrder)) return -1
+          if (Number.isFinite(rightOrder)) return 1
+          return left.theme.localeCompare(right.theme)
+        })
+    }
+  )
+
   // Add GitHub URL filter
   eleventyConfig.addFilter('toGitHubUrl', function (path) {
     // Remove leading './' if present

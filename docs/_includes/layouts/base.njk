@@ -36,91 +36,30 @@
         {
           href: '/get-started/',
           text: 'Web',
-          active: page and page.url and page.url != '/' and not ('/ios/' in page.url) and not ('/android/' in page.url) and not ('/community/' in page.url)
+          active: section == 'Web'
         },
         {
           href: '/ios/',
           text: 'iOS',
-          active: page and page.url and '/ios/' in page.url
+          active: section == 'iOS'
         },
         {
           href: '/android/',
           text: 'Android',
-          active: page and page.url and '/android/' in page.url
+          active: section == 'Android'
         },
         {
           href: '/community/',
           text: 'Community',
-          active: page and page.url and '/community/' in page.url
+          active: section == 'Community'
         }
       ]
     }
   }) }}
 
-  {% if section == "ios" %}
-    {% set sectionNavItems = [
-      {
-        href: '/ios/',
-        text: 'Get started',
-        current: (page.url == '/ios/') or (tags and 'ios' in tags)
-      },
-      {
-        href: '/ios/styles/',
-        text: 'Styles',
-        current: page.url == '/ios/styles/' or (tags and 'iosStyles' in tags)
-      },
-      {
-        href: '/ios/components/',
-        text: 'Components',
-        current: page.url == '/ios/components/' or (tags and 'iosComponents' in tags)
-      },
-      {
-        href: '/ios/layouts/',
-        text: 'Layouts',
-        current: page.url == '/ios/layouts/' or (tags and 'iosLayouts' in tags)
-      }
-    ] %}
-  {% elif section == "android" %}
-    {% set sectionNavItems = [
-      {
-        href: '/android/',
-        text: 'Get started',
-        current: (page.url == '/android/') or (tags and 'android' in tags)
-      },
-      {
-        href: '/android/styles/',
-        text: 'Styles',
-        current: page.url == '/android/styles/' or (tags and 'androidStyles' in tags)
-      }
-    ] %}
-  {% elif section == "web" %}
-    {% set sectionNavItems = [
-      {
-        href: '/get-started/',
-        text: 'Get started',
-        current: page and page.url and '/get-started/' in page.url
-      },
-      {
-        href: '/styles/',
-        text: 'Styles',
-        current: page and page.url and '/styles/' in page.url
-      },
-      {
-        href: '/components/',
-        text: 'Components',
-        current: page and page.url and '/components/' in page.url
-      },
-      {
-        href: '/patterns/',
-        text: 'Patterns',
-        current: page and page.url and '/patterns/' in page.url
-      }
-    ] %}
-  {% else %}
-    {% set sectionNavItems = [] %}
-  {% endif %}
+  {% set sectionNavItems = collections.all | getSubsectionNavigationItems(section, subsection) %}
 
-  {% if sectionNavItems and sectionNavItems.length %}
+  {% if sectionNavItems and sectionNavItems.length > 1 %}
     <div class="nhsuk-width-container">
       {{ sectionNavigation({
         ariaLabel: 'Section navigation',

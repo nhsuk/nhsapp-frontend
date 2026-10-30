@@ -1,11 +1,16 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Learn about health campaigns
 description: Help NHS App users learn about public health campaigns using the campaign card.  
 backlogID: 13
 order: 3
 tags:
   - helpUsers
+section: Web
+subsection: Patterns
+theme: Help users to
+themeOrder: 3
+caption: Help users to
 ---
 
 {% example "cards/card-link-with-image.njk" %}

@@ -1,6 +1,10 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: Get started
+section: Web
+subsection: Get started
+subsectionIndex: true
+subsectionOrder: 1
 ---
 
 The NHS App design system is a collection of building blocks and standards. It brings together agreed-upon components, patterns, guidance and tools, all of which have been created by designers and developers working on the NHS App.

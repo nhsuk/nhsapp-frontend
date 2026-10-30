@@ -1,5 +1,5 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Colour
 tags:
   - iosStyles
@@ -184,6 +184,9 @@ colourGroups:
         light: "#f7d4d1"
       - token: nhsPaleYellowOnly
         light: "#fff7b1"
+section: iOS
+subsection: Styles
+theme: Styles
 ---
 
 Colours are defined in the NHS iOS App Design as extensions on SwiftUI's `Color`.

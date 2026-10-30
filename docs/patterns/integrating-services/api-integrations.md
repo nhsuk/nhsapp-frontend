@@ -1,5 +1,5 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: API integration
 description: An API integration presents data or functionality from your service directly within NHS App screens, without loading an external web page.
 backlogID: 450
@@ -7,6 +7,12 @@ order: 3
 childPage: true
 tags:
   - integratingServices
+section: Web
+subsection: Patterns
+theme: Structure
+themeOrder: 2
+navParent: /patterns/integrating-services/
+caption: Integrating services into the NHS App
 ---
 
 This type of integration offers the most seamless experience for users. There is no web container, no site header to suppress, and no browser navigation to manage.

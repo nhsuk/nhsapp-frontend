@@ -1,10 +1,15 @@
 ---
-layout: layouts/component.njk
+layout: layouts/docs.njk
 title: Header (web)
 description: Use the header at the top of every web browser page, to show users they are using NHS App services.
 backlogID: 18
 tags:
   - component
+section: Web
+subsection: Components
+theme: Components
+themeOrder: 1
+caption: Components
 ---
 
 ## How to use

@@ -1,10 +1,15 @@
 ---
-layout: layouts/component.njk
+layout: layouts/docs.njk
 title: Buttons
 description: Use buttons to help users to carry out an action.
 backlogID: 12
 tags:
   - component
+section: Web
+subsection: Components
+theme: Components
+themeOrder: 1
+caption: Components
 ---
 
 ## How to use

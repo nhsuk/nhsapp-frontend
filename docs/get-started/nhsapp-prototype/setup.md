@@ -1,10 +1,16 @@
 ---
-layout: layouts/nhsapp-prototype.njk
+layout: layouts/docs.njk
 title: Setup and download
 order: 1
 tags:
   - nhsappPrototype
 help: no
+section: Web
+subsection: Get started
+theme: NHS App prototype
+themeOrder: 1
+sidebarMode: theme
+caption: NHS App prototype
 ---
 
 To use the NHS App prototype, you'll need a few tools installed. If you already have them, you can skip ahead and download a copy.

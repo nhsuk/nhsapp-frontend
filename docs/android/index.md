@@ -1,6 +1,10 @@
 ---
-layout: layouts/android.njk
+layout: layouts/docs.njk
 title: Android
+section: Android
+subsection: Get started
+subsectionIndex: true
+subsectionOrder: 1
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}

@@ -1,8 +1,12 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 isIndex: true
 title: Patterns
 description: Patterns are tested and agreed solutions to common needs.
+section: Web
+subsection: Patterns
+subsectionIndex: true
+subsectionOrder: 4
 ---
 
 Patterns often use one or more [components](/components/) and explain how to adapt them to the context.

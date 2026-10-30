@@ -1,10 +1,15 @@
 ---
-layout: layouts/component.njk
+layout: layouts/docs.njk
 title: Card links
 description: Use card links to help users reach the next stage of their NHS App journey.
 backlogID: 10
 tags:
   - component
+section: Web
+subsection: Components
+theme: Components
+themeOrder: 1
+caption: Components
 ---
 
 {% example "cards/card-link.njk" %}

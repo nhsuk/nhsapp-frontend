@@ -1,6 +1,8 @@
 ---
-layout: layouts/get-started.njk
+layout: layouts/docs.njk
 title: Add the NHS App frontend to the NHS prototype kit
+section: Web
+subsection: Get started
 ---
 
 This guide shows you how to add the [NHS App frontend](/get-started/nhsapp-frontend) to the [NHS prototype kit](https://prototype-kit.service-manual.nhs.uk/).

@@ -1,8 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Alerts
 tags:
   - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 Use alerts to interrupt users with important, unexpected information, to check how they want to proceed.

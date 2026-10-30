@@ -1,7 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 isIndex: true
 title: iOS
+section: iOS
+subsection: Get started
+subsectionIndex: true
+subsectionOrder: 1
 ---
 
 We are transforming the NHS App to be more platform-native.

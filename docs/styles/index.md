@@ -1,8 +1,12 @@
 ---
-layout: layouts/style.njk
+layout: layouts/docs.njk
 isIndex: true
 title: Styles
 description: Make services look and feel like the NHS App.
+section: Web
+subsection: Styles
+subsectionIndex: true
+subsectionOrder: 2
 ---
 
 Use these styles in addition to those in the [NHS design system](https://service-manual.nhs.uk/design-system).
