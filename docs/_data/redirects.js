@@ -52,7 +52,7 @@ export default [
     from: '/get-started/',
     to: '/web/'
   },
-  ...movedWebRoutes.map(route => ({
+  ...movedWebRoutes.map((route) => ({
     from: `/${route}`,
     to: `/web/${route}`
   }))
