@@ -30,7 +30,7 @@ There are 2 display modes:
 
 Large titles display at the top of the content, then move into the toolbar as the user scrolls down.
 
-<img src="/assets/images/ios/title-large.png">
+![Screenshot of 2 phone screens: on the left a large bold 'Large title' below the back button, on the right the same screen scrolled so the title appears smaller and centred in the toolbar](/assets/images/ios/title-large.png)
 
 {% from "details/macro.njk" import details %}
 {% call details({ summaryText: "Swift options" }) %}
@@ -54,7 +54,7 @@ Apply `nhsTitle()` to the screen's scrolling container, and lead the content wit
 
 Add a subtitle for supporting information about the whole screen.
 
-<img src="/assets/images/ios/title-with-subtitle.png" width="375">
+![Screenshot of the large bold title 'Title' with the grey text 'This is a subtitle' below it](/assets/images/ios/title-with-subtitle.png)
 
 ```swift { .nhsuk-code--button }
 ScrollView {
@@ -71,7 +71,7 @@ ScrollView {
 
 An icon may help users recognise a section. Only use it on the first screen the user opens from the home menu, not on later screens.
 
-<img src="/assets/images/ios/title-with-icon.png" width="375">
+![Screenshot of the large bold title 'Prescriptions' with a blue pills icon on the right](/assets/images/ios/title-with-icon.png)
 
 ```swift { .nhsuk-code--button }
 ScrollView {
@@ -104,7 +104,7 @@ List {
 
 On a screen that does not lead with a large title, use an inline title.
 
-<img src="/assets/images/ios/title-inline.png">
+![Screenshot of 2 phone screens with a small centred 'Inline title' next to the back button, shown before and after the content scrolls under the toolbar](/assets/images/ios/title-inline.png)
 
 ```swift { .nhsuk-code--button }
 List {

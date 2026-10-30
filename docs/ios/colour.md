@@ -16,6 +16,12 @@ colourGroups:
       - token: nhsSecondaryText
         light: "#4c6273"
         dark: "#c8d3d9"
+      - token: nhsBorder
+        light: "#ccdff0"
+        dark: "#4c6272"
+      - token: nhsChevron
+        light: "#80afdf"
+        dark: "#4787c2"
   - heading: Accent
     description: This can be used as an accent colour, and represents the NHS brand blue.
     colours:

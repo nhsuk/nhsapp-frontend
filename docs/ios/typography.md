@@ -5,9 +5,9 @@ tags:
   - iosStyles
 ---
 
-We are still deciding whether or how the native app should use a custom typeface (Frutiger).
+Our current thinking is that the native app will use Frutiger as a custom typeface for all text, to match the existing NHS website.
 
-We’ll update this page when we’ve decided how to approach custom typography within the app.
+To implement this, we’ve introduced some standard styles and support for custom sizes.
 
 ## Standard styles
 

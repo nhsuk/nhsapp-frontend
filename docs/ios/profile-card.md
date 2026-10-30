@@ -7,7 +7,7 @@ tags:
 
 The profile card is a tappable card showing whose profile the user is currently viewing.
 
-<img src="/assets/images/ios/profile-card.png" width="375">
+![Screenshot of a pale blue card with a person icon, the name 'Kevin Francis', the text 'NHS number: 485 777 3456' and a chevron](/assets/images/ios/profile-card.png)
 
 ## When to use
 
@@ -39,7 +39,7 @@ Each card has an icon, the name, a line of supporting text, and a chevron showin
 
 A pale blue card showing the user's name and NHS number:
 
-<img src="/assets/images/ios/profile-card.png" width="375">
+![Screenshot of a pale blue card with a person icon, the name 'Kevin Francis', the text 'NHS number: 485 777 3456' and a chevron](/assets/images/ios/profile-card.png)
 
 ```swift { .nhsuk-code--button }
 ProfileCard(
@@ -57,7 +57,7 @@ Format the NHS number in 3 groups of digits, as this is easier to read out and c
 
 Use the `actingFor` version when the user has switched to another person's profile. This shows a warm yellow card with the person's name and supporting text to manage the switch:
 
-<img src="/assets/images/ios/profile-card-switched.png" width="375">
+![Screenshot of a yellow card with a people icon, the text 'Acting for' above the bold name 'Sharon Francis-Williams', the text 'Manage another person's profile' and a chevron](/assets/images/ios/profile-card-switched.png)
 
 ```swift { .nhsuk-code--button }
 ProfileCard(
@@ -76,7 +76,7 @@ The warm yellow card keeps the same colours in both light and dark mode, so it s
 
 Use the compact size for the acting for card on screens other than the home screen. It uses smaller text and less padding, so it takes up less room above the screen's own content:
 
-<img src="/assets/images/ios/profile-card-compact.png" width="375">
+![Screenshot of a compact yellow card with a people icon, the bold text 'Acting for Sharon Francis-Williams' on one line, the text 'Manage another person's profile' and a chevron](/assets/images/ios/profile-card-compact.png)
 
 ```swift { .nhsuk-code--button }
 ProfileCard(

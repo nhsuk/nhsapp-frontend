@@ -7,7 +7,7 @@ tags:
 
 Toolbars are a standard iOS component. See [Toolbars in the Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/toolbars).
 
-<img src="/assets/images/ios/toolbar.png" width="320" alt="Screenshot showing several toolbar items: a back button, a bin button, and a flag button">
+![Screenshot showing several toolbar items: a back button, a bin button, and a flag button](/assets/images/ios/toolbar.png)
 
 The NHS design system for iOS adds some custom toolbar items that make it easier to use the NHS font, and to support some common actions within the NHS App.
 
@@ -48,7 +48,7 @@ If you need to add a different type of toolbar action, use one of these generic 
 
 ### Back button
 
-<img src="/assets/images/ios/back-button.png" width="320" alt="Screenshot showing a circular button on the left of a mobile screen with a left arrow within it">
+![Screenshot showing a circular button on the left of a mobile screen with a left arrow within it](/assets/images/ios/back-button.png)
 
 The back button will appear in the toolbar at the top left automatically when using the `NavigationStack`. You do not need to add this.
 
@@ -62,7 +62,7 @@ See our [title guidance](/ios/title/) for more details.
 
 ### Close button
 
-<img src="/assets/images/ios/close-button.png" width="320" alt="Screenshot showing a circular button on the right of a mobile screen with an X icon within it">
+![Screenshot showing a circular button on the right of a mobile screen with an X icon within it](/assets/images/ios/close-button.png)
 
 The close button should be added to most screens presented as a [web overlay](/patterns/access-web-journeys/), allowing the user to return to the screen beneath it. It should also be used on any native views presented as a sheet. Do not use it when the user has reached the end of a journey – use the 'done' button instead.
 
@@ -101,7 +101,7 @@ struct BookAppointmentView: View {
 
 ### Done button
 
-<img src="/assets/images/ios/done-button.png" width="320" alt="Screenshot showing a green button on the right of a mobile screen with the word 'Done' inside it in white text">
+![Screenshot showing a green button on the right of a mobile screen with the word 'Done' inside it in white text](/assets/images/ios/done-button.png)
 
 The 'done' button is added to any screens presented as [web overlay](/patterns/access-web-journeys/), when the user has reached the end of a journey and has completed a task. For example, after booking an appointment. The 'done' button should also be used at the end of any native journeys presented in a sheet.
 
@@ -132,7 +132,7 @@ struct BookAppointmentConfirmationView: View {
 
 ### Filter button
 
-<img src="/assets/images/ios/filter-button.png" width="320" alt="Screenshot showing a button on the right of a mobile screen with first an icon showing 3 stacked horizontal lines of descending width, and then the word 'Filter' in black text">
+![Screenshot showing a button on the right of a mobile screen with first an icon showing 3 stacked horizontal lines of descending width, and then the word 'Filter' in black text](/assets/images/ios/filter-button.png)
 
 The filter button can be added to list views, enabling a user to bring up options allowing the list to be filtered, or to change existing filters.
 
@@ -164,7 +164,7 @@ struct MessagesView: View {
 
 ### Flag button
 
-<img src="/assets/images/ios/flag-button.png" width="320" alt="Screenshot showing a button on the right of a mobile screen with an icon of a flag">
+![Screenshot showing a button on the right of a mobile screen with an icon of a flag](/assets/images/ios/flag-button.png)
 
 The flag button can be used on detail views for items which the user can flag, to mark the item.
 
@@ -198,7 +198,7 @@ struct MessageView: View {
 
 ### Messages button
 
-<img src="/assets/images/ios/messages-button.png" width="320" alt="Screenshot showing a button on the right of a mobile screen with an envelope icon and a red circle overlapping the top right of the button containing the number 3">
+![Screenshot showing a button on the right of a mobile screen with an envelope icon and a red circle overlapping the top right of the button containing the number 3](/assets/images/ios/messages-button.png)
 
 The messages button is used on the home screen only, and serves as both an indicator of any unread messages, and a way to navigate to the messages section.
 
@@ -228,7 +228,7 @@ struct HomeView: View {
 
 ### NHS logo item
 
-<img src="/assets/images/ios/nhs-logo-item.png" width="320" alt="Screenshot showing a blue NHS logo on the left of a mobile screen">
+![Screenshot showing a blue NHS logo on the left of a mobile screen](/assets/images/ios/nhs-logo-item.png)
 
 The NHS logo item is used on the home screen only, and appears in the top left position. It is not button, and does not do anything when tapped. It is there to provide the reassurance of the NHS identity.
 
@@ -251,7 +251,7 @@ struct HomeView: View {
 
 ### Icon toolbar button
 
-<img src="/assets/images/ios/icon-toolbar-item.png" width="320" alt="Screenshot showing a circular button on the right of a mobile screen containing a bin icon">
+![Screenshot showing a circular button on the right of a mobile screen containing a bin icon](/assets/images/ios/icon-toolbar-item.png)
 
 Use an icon toolbar button when you are confident through research that most users can understand the icon.
 
@@ -291,7 +291,7 @@ struct MessageView: View {
 
 ### Text toolbar button
 
-<img src="/assets/images/ios/text-toolbar-item.png" width="320" alt="Screenshot showing a circular button on the right of a mobile screen containing the word 'Restore' in black text">
+![Screenshot showing a circular button on the right of a mobile screen containing the word 'Restore' in black text](/assets/images/ios/text-toolbar-item.png)
 
 If you need to add a toolbar button which cannot be reliably identified using an icon, use a text toolbar button instead. This will use the NHS font.
 

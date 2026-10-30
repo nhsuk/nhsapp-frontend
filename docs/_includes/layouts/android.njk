@@ -1,14 +1,52 @@
----
-section: android
----
-
 {% extends "./sidebar.njk" %}
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
 
+{%- from "./partials/side-navigation.njk" import appSideNavigation %}
+
+{% block beforeContent %}
+  {% if title === "Android" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        }
+      ],
+      href: "/android",
+      text: "Android"
+    }) }}
+  {% endif %}
+{% endblock %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    currentPath: page.url,
+    sections: [
+      {
+        heading: {
+          text: 'Get started'
+        },
+        items: collections.android | sort(attribute="data.order")
+      },
+      {
+        heading: {
+          text: 'Styles'
+        },
+        items: collections.androidStyles | sort(attribute="data.title")
+      }
+    ]
+  }) }}
+{% endset %}
+
 {% block content %}
   {{ nhsappTag({
-  text: 'Work in progress',
-  classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
+    text: 'Work in progress',
+    classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
   })}}
 
   {% if tags and "android" in tags %}
@@ -19,5 +57,7 @@ section: android
   </h1>
   <p>{{ description }}</p>
   {{ content | safe }}
-
+  {% if tags and "android" in tags %}
+    {% include "layouts/partials/feedback-section.njk" %}
+  {% endif %}
 {% endblock %}

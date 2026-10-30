@@ -7,7 +7,7 @@ tags:
 
 Toggles let users switch a single option on or off. They are a standard iOS component (see [Apple's toggle guidance](https://developer.apple.com/design/human-interface-guidelines/toggles)).
 
-<img src="/assets/images/ios/toggle.png" width="375">
+![Screenshot of 2 toggles: a blue toggle labelled 'On' and a grey toggle labelled 'Off'](/assets/images/ios/toggle.png)
 
 ## How it works
 
@@ -32,7 +32,7 @@ var body: some View {
 
 ### In a form
 
-<img src="/assets/images/ios/toggle-on.png" width="375">
+![Screenshot of a white card containing the label 'Face ID' and a blue toggle switched on](/assets/images/ios/toggle-on.png)
 
 Apply the style to the `Form` to set it for every toggle inside.
 
@@ -49,7 +49,7 @@ var body: some View {
 
 ### Toggle with a subtitle
 
-<img src="/assets/images/ios/toggle-subtitle.png" width="375">
+![Screenshot of a white card with the bold label 'Allow optional analytic cookies', the grey supporting text 'I accept the use of optional analytic cookies used to improve the performance of the NHS App' and a blue toggle switched on](/assets/images/ios/toggle-subtitle.png)
 
 When a toggle needs supporting text, give it a two-part label.
 
@@ -81,7 +81,7 @@ VoiceOver announces the toggle's label and its on or off state. Disabled toggles
 
 ### On/Off Labels
 
-<img src="/assets/images/ios/toggle-accessibility.png" width="375">
+![Screenshot of 2 'Log in with Face ID' toggles with On/Off Labels turned on: the grey off toggle shows an 'O' and the blue on toggle shows an 'I'](/assets/images/ios/toggle-accessibility.png)
 
 The style also supports the On/Off Labels setting (**Settings > Accessibility > Display & Text Size > On/Off Labels**). When it is turned on, the toggle shows an "I" when on and an "O" when off, so the state does not rely on colour alone.
 

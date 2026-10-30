@@ -19,12 +19,55 @@ section: ios
   {% set sidebarItems = collections.iosLayouts %}
 {% endif %}
 
-{% block sidebar %}
-  {{ sectionNavigation({
-    ariaLabel: sidebarLabel,
-    direction: "vertical",
-    small: true,
-    items: sidebarItems | sort(attribute="data.title") | toSectionNavigationItems(page.url)
+{% block beforeContent %}
+  {% if title === "iOS" %}
+    {{ breadcrumb({
+      href: "/",
+      text: "Home"
+    }) }}
+  {% else %}
+    {{ breadcrumb({
+      items: [
+        {
+          href: "/",
+          text: "Home"
+        }
+      ],
+      href: "/ios",
+      text: "iOS"
+    }) }}
+  {% endif %}
+{% endblock %}
+
+{% set sidebar %}
+  {{ appSideNavigation({
+    currentPath: page.url,
+    sections: [
+      {
+        heading: {
+          text: 'Get started'
+        },
+        items: collections.ios | sort(attribute="data.order")
+      },
+      {
+        heading: {
+          text: 'Styles'
+        },
+        items: collections.iosStyles | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Components'
+        },
+        items: collections.iosComponents | sort(attribute="data.title")
+      },
+      {
+        heading: {
+          text: 'Layouts'
+        },
+        items: collections.iosLayouts | sort(attribute="data.title")
+      }
+    ]
   }) }}
 {% endblock %}
 

@@ -9,6 +9,10 @@ We are transforming the NHS App to be more platform-native.
 
 This page documents how that applies to the Android platform for phones and tablets.
 
+## Styles
+
+- [Colour](/android/colour/)
+
 ## Platform features
 
 The native app will support these Android features and accessibility settings:

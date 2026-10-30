@@ -1,18 +1,16 @@
 ---
 layout: layouts/pattern.njk
 title: Integrating services into the NHS App
-description: Guidance for teams preparing a service for integration into the NHS App, covering web views, browser overlays and API-driven integrations
+description: The NHS App is made up of over 60 different services. We integrate services into the app in ways that make them feel like a coherent part of the app experience.
 backlogID: 450
 order: 2
 tags:
   - structure
 ---
 
-The NHS App is made up of over 60 services working together to provide a coherent experience for users. When a user navigates to an integrated service within the NHS App, these users stay inside the app experience. This connection that allows a service to exist inside the NHS App is called an integration.
-
 This section covers the 3 integration types and the guidance you need to follow for each.
 
-Before you start, read [Integrating with the NHS App](/get-started/integrating-with-the-nhs-app/) in the Get started section for an overview of how integrations work and how to get onboarded.
+Before you start, read the [overview of integrating with the NHS App](/get-started/integrating-with-the-nhs-app/) to find out how integrations work and how to get onboarded.
 
 ## Integration types
 

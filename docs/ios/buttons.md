@@ -7,7 +7,7 @@ tags:
 
 Buttons are used to help users carry out an action.
 
-<img src="/assets/images/ios/button.png" width="375">
+![Screenshot of 4 buttons: a green 'Primary' button, a white 'Secondary' button with a blue border, a red 'Warning' button, and a white 'Primary reverse' button on a blue background](/assets/images/ios/button.png)
 
 ## How it works
 
@@ -35,7 +35,7 @@ Use a standard [SwiftUI Button](https://developer.apple.com/documentation/swiftu
 
 ### Primary button
 
-<img src="/assets/images/ios/button-primary.png" width="375">
+![Screenshot of a green button with white text labelled 'Primary'](/assets/images/ios/button-primary.png)
 
 ```swift { .nhsuk-code--button }
 Button("Continue") {
@@ -46,7 +46,7 @@ Button("Continue") {
 
 ### Secondary button
 
-<img src="/assets/images/ios/button-secondary.png" width="375">
+![Screenshot of a white button with a blue border and blue text labelled 'Secondary'](/assets/images/ios/button-secondary.png)
 
 ```swift { .nhsuk-code--button }
 Button("Cancel") {
@@ -57,7 +57,7 @@ Button("Cancel") {
 
 ### Warning button
 
-<img src="/assets/images/ios/button-warning.png" width="375">
+![Screenshot of a red button with white text labelled 'Warning'](/assets/images/ios/button-warning.png)
 
 ```swift { .nhsuk-code--button }
 Button("Delete account") {
@@ -68,7 +68,7 @@ Button("Delete account") {
 
 ### Primary reverse button
 
-<img src="/assets/images/ios/button-primary-reverse.png" width="375">
+![Screenshot of a white button with blue text labelled 'Primary reverse' on a blue background](/assets/images/ios/button-primary-reverse.png)
 
 Use this on a dark background, such as the NHS blue:
 
@@ -81,7 +81,7 @@ Button("Log in") {
 
 ### Fitted width
 
-<img src="/assets/images/ios/button-fitted.png" width="375">
+![Screenshot of a white button with a blue border, sized to fit a question mark icon and the label 'App help'](/assets/images/ios/button-fitted.png)
 
 By default, buttons fill the available width. To size a button to its label, chain `fitted`:
 
@@ -94,7 +94,7 @@ Button("App help", systemImage: "questionmark.circle.fill") {
 
 ### Grouped buttons
 
-<img src="/assets/images/ios/button-group.png" width="375">
+![Screenshot of a white 'Cancel' button with a blue border next to a green 'Confirm' button](/assets/images/ios/button-group.png)
 
 Place buttons side by side in an `HStack`:
 
@@ -109,7 +109,7 @@ HStack(spacing: 12) {
 
 ### Container-level style
 
-<img src="/assets/images/ios/button-container-level.png" width="375">
+![Screenshot of a green 'Primary' button above 3 white buttons with blue borders labelled 'Secondary 1', 'Secondary 2' and 'Secondary 3'](/assets/images/ios/button-container-level.png)
 
 Apply a style to a container to set the default for all buttons inside it. Buttons with their own style override the container:
 

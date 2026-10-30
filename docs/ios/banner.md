@@ -7,7 +7,7 @@ tags:
 
 The banner is a highly visible, tappable card that draws attention to an important action, such as proving your identity or giving feedback.
 
-<img src="/assets/images/ios/banner-solid.png">
+![Screenshot of a pale green banner with the text 'Tell us what you think about the NHS App', a bold green link 'Give feedback' and a green speech bubble icon](/assets/images/ios/banner-solid.png)
 
 ## When to use
 
@@ -56,7 +56,7 @@ The banner triggers an action when tapped. Specify this using the `action` closu
 
 Use the solid style for less important prompts, such as inviting users to give feedback.
 
-<img src="/assets/images/ios/banner-solid.png">
+![Screenshot of a pale green banner with the text 'Tell us what you think about the NHS App', a bold green link 'Give feedback' and a green speech bubble icon](/assets/images/ios/banner-solid.png)
 
 {% from "details/macro.njk" import details %}
 {% call details({ summary: "Swift options" }) %}
@@ -82,7 +82,7 @@ Use the outlined style to give a prompt more emphasis. For example, proving your
 
 If you are not sure which style to use, start with solid. Save outlined for the most important prompt on a screen.
 
-<img src="/assets/images/ios/banner-outlined.png">
+![Screenshot of a white banner with a purple border, the text 'Prove your identity to access all NHS App features', a bold purple link 'Prove who you are' and a purple person icon with a shield](/assets/images/ios/banner-outlined.png)
 
 This example presents a view as a modal sheet when tapped:
 
