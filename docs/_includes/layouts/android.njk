@@ -1,7 +1,9 @@
+---
+section: android
+---
+
 {% extends "./sidebar.njk" %}
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
-
-{%- from "./partials/side-navigation.njk" import appSideNavigation %}
 
 {% block beforeContent %}
   {% if title === "Android" %}
@@ -23,25 +25,23 @@
   {% endif %}
 {% endblock %}
 
-{% set sidebar %}
-  {{ appSideNavigation({
-    currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: 'Get started'
-        },
-        items: collections.android | sort(attribute="data.order")
-      },
-      {
-        heading: {
-          text: 'Styles'
-        },
-        items: collections.androidStyles | sort(attribute="data.title")
-      }
-    ]
+{% block sidebar %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Get started</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Get started",
+    direction: "vertical",
+    small: true,
+    items: collections.android | sort(attribute="data.order") | toSectionNavigationItems(page.url)
   }) }}
-{% endset %}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Styles</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Styles",
+    direction: "vertical",
+    small: true,
+    items: collections.androidStyles | sort(attribute="data.title") | toSectionNavigationItems(page.url)
+  }) }}
+{% endblock %}
 
 {% block content %}
   {{ nhsappTag({
@@ -49,7 +49,7 @@
     classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
   })}}
 
-  {% if tags and "android" in tags %}
+  {% if section == "android" %}
     <span class="nhsuk-caption-xl">Android</span>
   {% endif %}
   <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
@@ -57,7 +57,7 @@
   </h1>
   <p>{{ description }}</p>
   {{ content | safe }}
-  {% if tags and "android" in tags %}
+  {% if section == "android" %}
     {% include "layouts/partials/feedback-section.njk" %}
   {% endif %}
 {% endblock %}

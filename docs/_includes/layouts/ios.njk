@@ -39,35 +39,37 @@ section: ios
   {% endif %}
 {% endblock %}
 
-{% set sidebar %}
-  {{ appSideNavigation({
-    currentPath: page.url,
-    sections: [
-      {
-        heading: {
-          text: 'Get started'
-        },
-        items: collections.ios | sort(attribute="data.order")
-      },
-      {
-        heading: {
-          text: 'Styles'
-        },
-        items: collections.iosStyles | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Components'
-        },
-        items: collections.iosComponents | sort(attribute="data.title")
-      },
-      {
-        heading: {
-          text: 'Layouts'
-        },
-        items: collections.iosLayouts | sort(attribute="data.title")
-      }
-    ]
+{% block sidebar %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Get started</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Get started",
+    direction: "vertical",
+    small: true,
+    items: collections.ios | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+  }) }}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Styles</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Styles",
+    direction: "vertical",
+    small: true,
+    items: collections.iosStyles | sort(attribute="data.title") | toSectionNavigationItems(page.url)
+  }) }}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Components</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Components",
+    direction: "vertical",
+    small: true,
+    items: collections.iosComponents | sort(attribute="data.title") | toSectionNavigationItems(page.url)
+  }) }}
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Layouts</h3>
+  {{ sectionNavigation({
+    ariaLabel: "Layouts",
+    direction: "vertical",
+    small: true,
+    items: collections.iosLayouts | sort(attribute="data.title") | toSectionNavigationItems(page.url)
   }) }}
 {% endblock %}
 
