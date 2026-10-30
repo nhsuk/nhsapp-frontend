@@ -80,6 +80,19 @@
         current: page.url == '/ios/layouts/' or (tags and 'iosLayouts' in tags)
       }
     ] %}
+  {% elif section == "android" %}
+    {% set sectionNavItems = [
+      {
+        href: '/android/',
+        text: 'Get started',
+        current: (page.url == '/android/') or (tags and 'android' in tags)
+      },
+      {
+        href: '/android/styles/',
+        text: 'Styles',
+        current: page.url == '/android/styles/' or (tags and 'androidStyles' in tags)
+      }
+    ] %}
   {% elif section == "web" %}
     {% set sectionNavItems = [
       {

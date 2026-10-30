@@ -5,42 +5,24 @@ section: android
 {% extends "./sidebar.njk" %}
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
 
-{% block beforeContent %}
-  {% if title === "Android" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/android",
-      text: "Android"
-    }) }}
-  {% endif %}
-{% endblock %}
+{% if page.url == '/android/' or (tags and 'android' in tags) %}
+  {% set sidebarLabel = 'Get started' %}
+  {% set sidebarItems = collections.android | sort(attribute="data.order") %}
+{% elif page.url == '/android/styles/' or (tags and 'androidStyles' in tags) %}
+  {% set sidebarLabel = 'Styles' %}
+  {% set sidebarItems = collections.androidStyles | sort(attribute="data.title") %}
+{% endif %}
 
 {% block sidebar %}
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1 nhsuk-u-secondary-text-colour">Get started</h3>
+  {% if sidebarLabel and sidebarItems %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1 nhsuk-u-secondary-text-colour">{{ sidebarLabel }}</h3>
   {{ sectionNavigation({
-    ariaLabel: "Get started",
+    ariaLabel: sidebarLabel,
     direction: "vertical",
     small: true,
-    items: collections.android | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+    items: sidebarItems | toSectionNavigationItems(page.url)
   }) }}
-
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1 nhsuk-u-secondary-text-colour">Styles</h3>
-  {{ sectionNavigation({
-    ariaLabel: "Styles",
-    direction: "vertical",
-    small: true,
-    items: collections.androidStyles | sort(attribute="data.title") | toSectionNavigationItems(page.url)
-  }) }}
+  {% endif %}
 {% endblock %}
 
 {% block content %}
