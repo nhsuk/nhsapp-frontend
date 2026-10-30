@@ -4,12 +4,12 @@
   <div class="nhsuk-width-container">
     {% block beforeContent %}{% endblock %}
     <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-quarter nhsuk-u-padding-top-5">
+      <div class="nhsuk-grid-column-one-quarter nhsuk-u-padding-top-8">
         {% block sidebar %}{% endblock %}
       </div>
 
       <div class="nhsuk-grid-column-three-quarters">
-        <main role="main" id="maincontent" class="nhsuk-main-wrapper nhsuk-main-wrapper--s app-content">
+        <main role="main" id="maincontent" class="nhsuk-main-wrapper app-content">
           {% block content %}
             {{ content | safe }}
           {% endblock content %}
