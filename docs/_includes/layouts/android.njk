@@ -26,7 +26,7 @@ section: android
 {% endblock %}
 
 {% block sidebar %}
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Get started</h3>
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1 nhsuk-u-secondary-text-colour">Get started</h3>
   {{ sectionNavigation({
     ariaLabel: "Get started",
     direction: "vertical",
@@ -34,7 +34,7 @@ section: android
     items: collections.android | sort(attribute="data.order") | toSectionNavigationItems(page.url)
   }) }}
 
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Styles</h3>
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1 nhsuk-u-secondary-text-colour">Styles</h3>
   {{ sectionNavigation({
     ariaLabel: "Styles",
     direction: "vertical",
