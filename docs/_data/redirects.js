@@ -13,7 +13,6 @@ const movedWebRoutes = [
   'styles/',
   'styles/colour/',
   'styles/icons/',
-  'get-started/accessibility-in-the-nhs-app/',
   'get-started/install-nhsapp-frontend/',
   'get-started/installing-with-npm/',
   'get-started/integrating-with-the-nhs-app/',
@@ -43,6 +42,14 @@ export default [
   {
     from: '/get-started/github-and-heroku/',
     to: '/web/get-started/nhsapp-prototype/'
+  },
+  {
+    from: '/get-started/accessibility-in-the-nhs-app/',
+    to: '/accessibility/'
+  },
+  {
+    from: '/web/get-started/accessibility-in-the-nhs-app/',
+    to: '/accessibility/'
   },
   {
     from: '/web/get-started/',

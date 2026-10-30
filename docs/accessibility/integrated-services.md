@@ -1,17 +1,14 @@
 ---
 layout: layouts/docs.njk
-title: Accessibility in the NHS App
-order: 4
-section: Web
-subsection: Get started
-theme: Integrating with the NHS App
-themeOrder: 3
+sectionCaption: Accessibility
+title: Integrated services
+section: Accessibility
+subsection: Accessibility
+theme: Accessibility
+order: 2
 ---
 
-As a public sector body, your service must meet the accessibility standards set out in the [Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/952/contents/made). This applies to all teams within NHS organisations building websites or mobile apps.
-You will need to publish an accessibility statement for your service before you move into the [Public Beta](https://www.gov.uk/service-manual/agile-delivery/how-the-beta-phase-works) phase.
-
-The [NHS App accessibility statement](https://www.nhs.uk/nhs-app/about/privacy-legal-information/nhs-app-accessibility-statement/) covers the pages built by the NHS App team, but does not cover services that integrate with it that are built by other teams. Each integrating service team is responsible for its own accessibility compliance and accessibility statement.
+Each integrating service team is responsible for its own accessibility compliance and accessibility statement.
 
 ## Get an accessibility audit
 
