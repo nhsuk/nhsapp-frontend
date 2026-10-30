@@ -7,70 +7,28 @@ section: ios
 
 {% if page.url == '/ios/' or (tags and 'ios' in tags) %}
   {% set sidebarLabel = 'Get started' %}
-  {% set sidebarItems = collections.ios %}
+  {% set sidebarItems = collections.ios | sort(attribute="data.order") %}
 {% elif page.url == '/ios/styles/' or (tags and 'iosStyles' in tags) %}
   {% set sidebarLabel = 'Styles' %}
-  {% set sidebarItems = collections.iosStyles %}
+  {% set sidebarItems = collections.iosStyles | sort(attribute="data.title") %}
 {% elif page.url == '/ios/components/' or (tags and 'iosComponents' in tags) %}
   {% set sidebarLabel = 'Components' %}
-  {% set sidebarItems = collections.iosComponents %}
+  {% set sidebarItems = collections.iosComponents | sort(attribute="data.title") %}
 {% elif page.url == '/ios/layouts/' or (tags and 'iosLayouts' in tags) %}
   {% set sidebarLabel = 'Layouts' %}
-  {% set sidebarItems = collections.iosLayouts %}
+  {% set sidebarItems = collections.iosLayouts | sort(attribute="data.title") %}
 {% endif %}
 
-{% block beforeContent %}
-  {% if title === "iOS" %}
-    {{ breadcrumb({
-      href: "/",
-      text: "Home"
-    }) }}
-  {% else %}
-    {{ breadcrumb({
-      items: [
-        {
-          href: "/",
-          text: "Home"
-        }
-      ],
-      href: "/ios",
-      text: "iOS"
-    }) }}
-  {% endif %}
-{% endblock %}
-
 {% block sidebar %}
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Get started</h3>
+  {% if sidebarLabel and sidebarItems %}
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">{{ sidebarLabel }}</h3>
   {{ sectionNavigation({
-    ariaLabel: "Get started",
+    ariaLabel: sidebarLabel,
     direction: "vertical",
     small: true,
-    items: collections.ios | sort(attribute="data.order") | toSectionNavigationItems(page.url)
+    items: sidebarItems | toSectionNavigationItems(page.url)
   }) }}
-
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Styles</h3>
-  {{ sectionNavigation({
-    ariaLabel: "Styles",
-    direction: "vertical",
-    small: true,
-    items: collections.iosStyles | sort(attribute="data.title") | toSectionNavigationItems(page.url)
-  }) }}
-
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Components</h3>
-  {{ sectionNavigation({
-    ariaLabel: "Components",
-    direction: "vertical",
-    small: true,
-    items: collections.iosComponents | sort(attribute="data.title") | toSectionNavigationItems(page.url)
-  }) }}
-
-  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-1">Layouts</h3>
-  {{ sectionNavigation({
-    ariaLabel: "Layouts",
-    direction: "vertical",
-    small: true,
-    items: collections.iosLayouts | sort(attribute="data.title") | toSectionNavigationItems(page.url)
-  }) }}
+  {% endif %}
 {% endblock %}
 
 {% block content %}
