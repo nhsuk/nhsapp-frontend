@@ -2,8 +2,6 @@
 layout: layouts/docs.njk
 title: Accessibility in the NHS App
 order: 4
-tags:
-  - integration
 section: Web
 subsection: Get started
 theme: Integrating with the NHS App

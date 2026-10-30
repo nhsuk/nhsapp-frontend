@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Lists
-tags:
-  - iosLayouts
 section: iOS
 subsection: Layouts
 theme: Layouts

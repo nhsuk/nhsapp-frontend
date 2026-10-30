@@ -4,13 +4,11 @@ title: Error screens
 description: Use error screens to tell users there is an unexpected problem. Explain what has happened and what they can do next.
 backlogID: 119
 order: 4
-tags:
-  - screen
 section: Web
 subsection: Patterns
 theme: Screens
 themeOrder: 1
-caption: Screens
+sectionCaption: Screens
 ---
 
 {% example "error-pages/test-results.njk" %}

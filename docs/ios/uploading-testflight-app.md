@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Uploading to TestFlight
-tags:
-  - ios
 order: 3
 section: iOS
 subsection: Get started

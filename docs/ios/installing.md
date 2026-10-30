@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Adding the Swift package
-tags:
-  - ios
 order: 1
 section: iOS
 subsection: Get started

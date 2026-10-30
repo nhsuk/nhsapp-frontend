@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Version history
-tags:
-  - ios
 order: 5
 section: iOS
 subsection: Get started

@@ -1,13 +1,11 @@
 ---
 layout: layouts/docs.njk
 title: NHS App frontend
-tags:
-  - production
 section: Web
 subsection: Get started
 theme: Production
 themeOrder: 2
-caption: Production
+sectionCaption: Production
 ---
 
 The [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) is a CSS library built on top of the [NHS.UK frontend](https://github.com/nhsuk/nhsuk-frontend). It provides NHS App-specific styles and [components](/components).

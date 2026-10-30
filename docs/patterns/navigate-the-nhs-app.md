@@ -4,13 +4,11 @@ title: Move between areas of the NHS App
 description:
 backlogID: 63
 order: 1
-tags:
-  - helpUsers
 section: Web
 subsection: Patterns
 theme: Help users to
 themeOrder: 3
-caption: Help users to
+sectionCaption: Help users to
 ---
 
 There are different ways to help people move easily between areas of the NHS App.

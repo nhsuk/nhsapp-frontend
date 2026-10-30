@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Scroll views
-tags:
-  - iosLayouts
 section: iOS
 subsection: Layouts
 theme: Layouts

@@ -2,8 +2,6 @@
 layout: layouts/docs.njk
 title: Integrating with the NHS App
 order: 3
-tags:
-  - integration
 section: Web
 subsection: Get started
 theme: Integrating with the NHS App

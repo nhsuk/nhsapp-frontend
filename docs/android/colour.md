@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Colour
-tags:
-  - androidStyles
 colourGroups:
   - heading: Semantic
     description: Use semantic theme properties for their intended role.

@@ -3,13 +3,11 @@ layout: layouts/docs.njk
 title: Bottom navigation
 description: The bottom navigation helps users return to the homepage or move to a hub page.
 backlogID: 53
-tags:
-  - component
 section: Web
 subsection: Components
 theme: Components
 themeOrder: 1
-caption: Components
+sectionCaption: Components
 ---
 
 ![The bottom navigation menu. It contains three icons with text labels: Home, Messages and Profile.](/assets/images/bottom-navigation-2026.png)

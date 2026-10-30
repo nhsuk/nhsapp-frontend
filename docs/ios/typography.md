@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Typography
-tags:
-  - iosStyles
 section: iOS
 subsection: Styles
 theme: Styles

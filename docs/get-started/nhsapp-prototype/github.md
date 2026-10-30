@@ -2,15 +2,13 @@
 layout: layouts/docs.njk
 title: Store prototype code on GitHub
 order: 4
-tags:
-  - nhsappPrototype
 help: no
 section: Web
 subsection: Get started
 theme: NHS App prototype
 themeOrder: 1
 sidebarMode: theme
-caption: NHS App prototype
+sectionCaption: NHS App prototype
 ---
 
 Store your prototype as a repository in the GitHub NHS Digital organisation account.

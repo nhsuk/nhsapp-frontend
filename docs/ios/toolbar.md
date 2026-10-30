@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Toolbar
-tags:
-  - iosComponents
 section: iOS
 subsection: Components
 theme: Components

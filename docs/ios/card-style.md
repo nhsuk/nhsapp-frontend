@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Card style
-tags:
-  - iosStyles
 section: iOS
 subsection: Styles
 theme: Styles

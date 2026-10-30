@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Installing a test app from Google Play
-tags:
-  - android
 order: 1
 section: Android
 subsection: Get started

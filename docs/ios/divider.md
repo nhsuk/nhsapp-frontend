@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Divider
-tags:
-  - iosStyles
 section: iOS
 subsection: Styles
 theme: Styles

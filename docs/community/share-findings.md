@@ -3,13 +3,11 @@ layout: layouts/docs.njk
 title: Share your findings
 order: 2
 description: We want to hear how users experience components and patterns in your service. It helps us improve the design system.
-tags:
-  - contribution
 section: Community
 subsection: Community
 theme: Contributing
 themeOrder: 1
-caption: Contributing
+sectionCaption: Contributing
 ---
 
 You can do this by taking part in discussions on GitHub.

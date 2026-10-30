@@ -2,13 +2,11 @@
 layout: layouts/docs.njk
 title: Section heading
 backlogID: 26
-tags:
-  - archivedComponent
 section: Web
 subsection: Components
 theme: Archived
 themeOrder: 2
-caption: Components
+sectionCaption: Components
 ---
 
 We archived the NHS App section heading in September 2025.

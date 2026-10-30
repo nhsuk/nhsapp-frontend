@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Colour
-tags:
-  - iosStyles
 colourGroups:
   - heading: Semantic
     description: Use these colours in the context they’re designed for. In all ohter cases, use a named colour from the colour palette instead.

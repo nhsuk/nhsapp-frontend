@@ -5,14 +5,12 @@ description: This type of integration opens a service in the user's default brow
 backlogID: 450
 order: 1
 childPage: true
-tags:
-  - integratingServices
 section: Web
 subsection: Patterns
 theme: Structure
 themeOrder: 2
 navParent: /patterns/integrating-services/
-caption: Integrating services into the NHS App
+sectionCaption: Integrating services into the NHS App
 ---
 
 The default browser is normally Safari View (iOS) or Chrome Custom Tabs (Android). You do not need to adapt your web service to use this type of integration.

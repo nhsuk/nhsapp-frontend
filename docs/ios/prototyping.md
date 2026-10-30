@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Prototyping
-tags:
-  - ios
 order: 2
 section: iOS
 subsection: Get started

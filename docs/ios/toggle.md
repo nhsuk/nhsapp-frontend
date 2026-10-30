@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Toggles
-tags:
-  - iosComponents
 section: iOS
 subsection: Components
 theme: Components

@@ -2,15 +2,13 @@
 layout: layouts/docs.njk
 title: Publish prototypes online with Heroku
 order: 5
-tags:
-  - nhsappPrototype
 help: no
 section: Web
 subsection: Get started
 theme: NHS App prototype
 themeOrder: 1
 sidebarMode: theme
-caption: NHS App prototype
+sectionCaption: NHS App prototype
 ---
 
 You can host your NHS App prototype using Heroku and connect it directly to your GitHub repository.

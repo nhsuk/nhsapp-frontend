@@ -1,8 +1,6 @@
 ---
 layout: layouts/docs.njk
 title: Testing using TestFlight
-tags:
-  - ios
 order: 4
 section: iOS
 subsection: Get started

@@ -3,13 +3,11 @@ layout: layouts/docs.njk
 title: Badge
 description: Use badges to alert users to unread information. Badges can include a number count.
 backlogID: 21
-tags:
-  - component
 section: Web
 subsection: Components
 theme: Components
 themeOrder: 1
-caption: Components
+sectionCaption: Components
 ---
 
 ## When to use

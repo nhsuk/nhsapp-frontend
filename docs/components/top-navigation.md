@@ -3,13 +3,11 @@ layout: layouts/docs.njk
 title: Top navigation
 description: Use the top navigation to show the NHS logo and let users access help from anywhere in the app.   
 backlogID: 17
-tags:
-  - component
 section: Web
 subsection: Components
 theme: Components
 themeOrder: 1
-caption: Components
+sectionCaption: Components
 ---
 
 ![The top navigation menu. The NHS logo is on the left and a button with the text app help is on the right.](/assets/images/top-navigation-2026.png)

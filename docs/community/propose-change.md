@@ -3,13 +3,11 @@ layout: layouts/docs.njk
 title: Propose a content change to this website
 order: 3
 description: Help improve the NHS App design system website and our guidance by suggesting content edits or amends.
-tags:
-  - contribution
 section: Community
 subsection: Community
 theme: Contributing
 themeOrder: 1
-caption: Contributing
+sectionCaption: Contributing
 ---
 
 You can propose changes directly through GitHub.

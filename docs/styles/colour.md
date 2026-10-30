@@ -2,13 +2,11 @@
 layout: layouts/docs.njk
 title: Colour
 backlogID: 393
-tags:
-  - style
 section: Web
 subsection: Styles
 theme: Styles
 themeOrder: 1
-caption: Styles
+sectionCaption: Styles
 ---
 
 We have extended the [NHS design system colour palette](https://service-manual.nhs.uk/design-system/styles/colour#colour-palette) with tints and shades for usage on the [tag](/components/tag/) and [card links](/components/card-links/) components.
