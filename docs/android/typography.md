@@ -7,13 +7,13 @@ tags:
 
 The Android design system uses Frutiger for all text, to match the [NHS web design system](https://service-manual.nhs.uk/design-system/styles/typography) and the iOS app.
 
-The type scale follows the [Material 3 type scale](https://m3.material.io/styles/typography/type-scale-tokens), using the same roles, sizes, line heights and letter spacing, but rendered in Frutiger. `NHSAppTheme` passes the scale to `MaterialTheme`, so Material components use it automatically.
+The type scale follows the [Material 3 type scale](https://m3.material.io/styles/typography/type-scale-tokens), using the same style names, sizes, line heights and letter spacing, but rendered in Frutiger. `NHSAppTheme` passes the scale to `MaterialTheme`, so Material components use it automatically.
 
 Sizes are set in `sp` (scale-independent pixels), so all text scales with the user’s font size setting in their device’s accessibility settings.
 
 ## How to use
 
-Inside a composable, access the type styles through `MaterialTheme.typography`. Choose a role that matches the purpose of the text:
+Inside a composable, access the type styles through `MaterialTheme.typography`. Choose a style that matches the purpose of the text:
 
 ```kotlin
 Text(
@@ -22,9 +22,17 @@ Text(
 )
 ```
 
+Use `bodyLarge` for most reading text.
+
+Use `display` styles only for short, prominent text such as onboarding screens. 
+
+Use the `headline` styles for the title of a screen.
+
+Use the `title` styles within sections, cards and list items.
+
 ## Type styles
 
-| Role             | Size | Line height | Letter spacing | Weight  |
+| Style            | Size | Line height | Letter spacing | Weight  |
 | ---------------- | ---- | ----------- | -------------- | ------- |
 | `displayLarge`   | 57sp | 64sp        | -0.25sp        | Regular |
 | `displayMedium`  | 45sp | 52sp        | 0sp            | Regular |
@@ -42,11 +50,10 @@ Text(
 | `labelMedium`    | 12sp | 16sp        | 0.5sp          | Bold    |
 | `labelSmall`     | 11sp | 16sp        | 0.5sp          | Bold    |
 
-Use `display` styles only for short, prominent text such as onboarding screens. Use `bodyLarge` for most reading text.
 
 ## Weights
 
-Frutiger is available in Regular and Bold only. Material 3 uses a Medium weight for some roles, so the design system makes these changes:
+Frutiger is available in Regular and Bold only. Material 3 uses a Medium weight for some styles, so the design system makes these changes:
 
 - `headline` and `label` styles are Bold
 - `title` styles are Regular
