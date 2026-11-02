@@ -71,6 +71,8 @@ If none of the type styles fit, you can use the `Frutiger` font family with a cu
 Text(
     text = "Vaccinations",
     fontFamily = Frutiger,
-    fontSize = 20.sp
+    fontSize = 20.sp,
+    lineHeight = 28.sp,
+    letterSpacing = 0.sp
 )
 ```
