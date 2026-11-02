@@ -24,7 +24,7 @@ Text(
 
 Use `bodyLarge` for most reading text.
 
-Use `display` styles only for short, prominent text such as onboarding screens. 
+Use `display` styles only for short, prominent text such as onboarding screens.
 
 Use the `headline` styles for the title of a screen.
 
@@ -49,7 +49,6 @@ Use the `title` styles within sections, cards and list items.
 | `labelLarge`     | 14sp | 20sp        | 0.1sp          | Bold    |
 | `labelMedium`    | 12sp | 16sp        | 0.5sp          | Bold    |
 | `labelSmall`     | 11sp | 16sp        | 0.5sp          | Bold    |
-
 
 ## Weights
 
