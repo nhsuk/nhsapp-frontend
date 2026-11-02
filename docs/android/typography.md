@@ -24,23 +24,23 @@ Text(
 
 ## Type styles
 
-| Role             | Size | Line height | Weight  |
-| ---------------- | ---- | ----------- | ------- |
-| `displayLarge`   | 57sp | 64sp        | Regular |
-| `displayMedium`  | 45sp | 52sp        | Regular |
-| `displaySmall`   | 36sp | 44sp        | Regular |
-| `headlineLarge`  | 32sp | 40sp        | Bold    |
-| `headlineMedium` | 28sp | 36sp        | Bold    |
-| `headlineSmall`  | 24sp | 32sp        | Bold    |
-| `titleLarge`     | 22sp | 28sp        | Regular |
-| `titleMedium`    | 16sp | 24sp        | Regular |
-| `titleSmall`     | 14sp | 20sp        | Regular |
-| `bodyLarge`      | 16sp | 24sp        | Regular |
-| `bodyMedium`     | 14sp | 20sp        | Regular |
-| `bodySmall`      | 12sp | 16sp        | Regular |
-| `labelLarge`     | 14sp | 20sp        | Bold    |
-| `labelMedium`    | 12sp | 16sp        | Bold    |
-| `labelSmall`     | 11sp | 16sp        | Bold    |
+| Role             | Size | Line height | Letter spacing | Weight  |
+| ---------------- | ---- | ----------- | -------------- | ------- |
+| `displayLarge`   | 57sp | 64sp        | -0.25sp        | Regular |
+| `displayMedium`  | 45sp | 52sp        | 0sp            | Regular |
+| `displaySmall`   | 36sp | 44sp        | 0sp            | Regular |
+| `headlineLarge`  | 32sp | 40sp        | 0sp            | Bold    |
+| `headlineMedium` | 28sp | 36sp        | 0sp            | Bold    |
+| `headlineSmall`  | 24sp | 32sp        | 0sp            | Bold    |
+| `titleLarge`     | 22sp | 28sp        | 0sp            | Regular |
+| `titleMedium`    | 16sp | 24sp        | 0.15sp         | Regular |
+| `titleSmall`     | 14sp | 20sp        | 0.1sp          | Regular |
+| `bodyLarge`      | 16sp | 24sp        | 0.5sp          | Regular |
+| `bodyMedium`     | 14sp | 20sp        | 0.25sp         | Regular |
+| `bodySmall`      | 12sp | 16sp        | 0.4sp          | Regular |
+| `labelLarge`     | 14sp | 20sp        | 0.1sp          | Bold    |
+| `labelMedium`    | 12sp | 16sp        | 0.5sp          | Bold    |
+| `labelSmall`     | 11sp | 16sp        | 0.5sp          | Bold    |
 
 Use `display` styles only for short, prominent text such as onboarding screens. Use `bodyLarge` for most reading text.
 
