@@ -193,4 +193,3 @@ Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
 Button labels should describe the action and make sense out of context. Wrapping text is supported, so labels are not truncated when the font size is increased.
 
 Icon-only buttons must have a `contentDescription` for TalkBack.
-
