@@ -22,13 +22,13 @@ Text(
 )
 ```
 
-Use `bodyLarge` for most reading text.
+Use `bodyLarge` for most reading text including in lists.
 
-Use `display` styles only for short, prominent text such as onboarding screens.
+Use `display` styles only for short, prominent text such as onboarding and hero screens.
 
 Use the `headline` styles for the title of a screen.
 
-Use the `title` styles within sections, cards and list items.
+Use the `title` styles for section headings, in cards and in dialogs.
 
 ## Type styles
 
