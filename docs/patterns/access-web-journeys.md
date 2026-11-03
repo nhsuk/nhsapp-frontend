@@ -120,7 +120,7 @@ Do not include a confirmation dialog:
 - on journeys with no data input
 - on the first page of journeys, at which point users will not have entered any information yet
 
-<img class="app-image--no-border" src="/assets/images/web-overlay/close-action-sheet.png" alt="Screenshot of a confirmation dialog appearing over a prescriptions journey with the text 'This request will not be saved'.">
+<img class="app-image--no-border" src="/assets/images/web-overlay/close-action-sheet.png" alt="Screenshot of a confirmation dialog appearing over a prescriptions journey with the text 'Your request will not be saved'.">
 
 ### Open in-journey links in a sheet
 
