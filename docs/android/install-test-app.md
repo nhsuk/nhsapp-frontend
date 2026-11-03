@@ -1,9 +1,10 @@
 ---
-layout: layouts/android.njk
+layout: layouts/docs.njk
 title: Installing a test app from Google Play
-tags:
-  - android
 order: 1
+section: Android
+subsection: Get started
+theme: Get started
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}

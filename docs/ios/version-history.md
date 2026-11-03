@@ -1,9 +1,10 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Version history
-tags:
-  - ios
 order: 5
+section: iOS
+subsection: Get started
+theme: Get started
 ---
 
 A list of changes in each release of the iOS design system.

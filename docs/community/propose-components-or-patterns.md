@@ -1,10 +1,13 @@
 ---
-layout: layouts/community.njk
+layout: layouts/docs.njk
 title: Propose a component or pattern
 order: 1
 description: 
-tags:
-  - contribution
+section: Community
+subsection: Community
+theme: Contributing
+themeOrder: 1
+sectionCaption: Contributing
 ---
 
 Check what components and patterns are in progress using the [NHS App components and patterns backlog](https://github.com/orgs/nhsuk/projects/8).

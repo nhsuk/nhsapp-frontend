@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Toggles
-tags:
-  - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 Toggles let users switch a single option on or off. They are a standard iOS component (see [Apple's toggle guidance](https://developer.apple.com/design/human-interface-guidelines/toggles)).

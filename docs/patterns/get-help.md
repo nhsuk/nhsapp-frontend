@@ -1,10 +1,13 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Get help while using the NHS App 
 description: Use the app help button to let users access help information while they use the NHS App.  
 backlogID: 447
-tags:
-  - helpUsers
+section: Patterns
+subsection: Patterns
+theme: Help users to
+themeOrder: 3
+sectionCaption: Help users to
 ---
 
 This helps users overcome problems they experience in the app without having to contact their GP or the app support team.

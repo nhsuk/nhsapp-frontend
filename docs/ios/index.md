@@ -1,7 +1,11 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 isIndex: true
 title: iOS
+section: iOS
+subsection: Get started
+subsectionIndex: true
+subsectionOrder: 1
 ---
 
 We are transforming the NHS App to be more platform-native.
@@ -10,20 +14,16 @@ This page documents how that applies to the iOS platform for iPhones and iPads.
 
 ## Platform features
 
-The native app will support these iOS features and accessibility settings:
+The native app will support these iOS features:
 
-- [Dynamic Type](https://developer.apple.com/documentation/uikit/scaling-fonts-automatically)
 - [Dark Mode](https://developer.apple.com/design/human-interface-guidelines/dark-mode)
-- [Increase Contrast](https://developer.apple.com/documentation/swiftui/colorschemecontrast) mode
-- [VoiceOver](https://developer.apple.com/documentation/accessibility/voiceover)
 - Portrait and landscape orientation
-- Reduce Transparency mode
-- Differentiate Without Color mode
-- Reduce Motion mode
 
 We may also support:
 
 - iPad layouts
 - Offline access
+
+The native app will also support iOS accessibility settings. Read more about [accessibility in the iOS app](/accessibility/ios/).
 
 Many of these features we will get by default when using SwiftUI, however we may need to do extra work to support them for any custom features.

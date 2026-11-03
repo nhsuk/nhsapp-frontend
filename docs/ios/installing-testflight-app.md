@@ -1,9 +1,10 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Testing using TestFlight
-tags:
-  - ios
 order: 4
+section: iOS
+subsection: Get started
+theme: Get started
 ---
 
 If you've been invited, you can test new iOS versions of the NHS App using TestFlight. It's a free app made by Apple.

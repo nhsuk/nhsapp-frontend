@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Typography
-tags:
-  - iosStyles
+section: iOS
+subsection: Styles
+theme: Styles
 ---
 
 Our current thinking is that the native app will use Frutiger as a custom typeface for all text, to match the existing NHS website.

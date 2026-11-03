@@ -1,11 +1,21 @@
-{% if tags and ("page" in tags or "helpUsers" in tags or "component" in tags  or "style" in tags) %}
+{% set isComponent = subsection == "Components" %}
+{% set isStyle = subsection == "Styles" %}
+{% set isHelpPattern = theme == "Help users to" %}
+{% set feedbackSubject = "this pattern" %}
 
-  <h2>Help improve {% if tags and ("component" in tags) %}this component{% elif tags and ("style" in tags) %}these styles{% else %}this pattern{% endif %}</h2> 
+{% if isComponent %}
+  {% set feedbackSubject = "this component" %}
+{% elif isStyle %}
+  {% set feedbackSubject = "these styles" %}
+{% endif %}
+
+{% if isComponent or isStyle or isHelpPattern %}
+  <h2>Help improve {{ feedbackSubject }}</h2>
 
   <p>The NHS App design system team would like to hear:</p>
 
   <ul>
-    <li>how you have used {% if tags and ("component" in tags) %}this component{% elif tags and ("style" in tags) %}these styles{% else %}this pattern{% endif %} in your service</li>
+    <li>how you have used {{ feedbackSubject }} in your service</li>
     <li>any feedback you have about its usage, for example accessibility or ideas for improvement</li>
   </ul>
 
