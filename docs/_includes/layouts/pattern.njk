@@ -50,11 +50,22 @@
 {% endset %}
 
 {% block content %}
+  {%- if childPage -%}
+    {%- set caption = "Integrating services into the NHS App" -%}
+  {%- elif tags and "screen" in tags -%}
+    {%- set caption = "Screens" -%}
+  {%- elif tags and "structure" in tags -%}
+    {%- set caption = "Structure" -%}
+  {%- elif tags and "helpUsers" in tags -%}
+    {%- set caption = "Help users to" -%}
+  {%- else -%}
+    {%- set caption = none -%}
+  {%- endif -%}
   {{ heading({
     text: title,
     level: 1,
     size: "xl",
-    caption: { text: "Integrating services into the NHS App" } if childPage else ({ text: "Screens" } if tags and "screen" in tags else ({ text: "Structure" } if tags and "structure" in tags else ({ text: "Help users to" } if tags and "helpUsers" in tags else none))),
+    caption: caption,
     classes: "nhsuk-u-margin-bottom-5"
   }) }}
   {% if pageNotice %}
