@@ -48,7 +48,9 @@
     text: title,
     level: 1,
     size: "xl",
-    caption: { text: "Components" } if tags and ("component" in tags or "archivedComponent" in tags) else none,
+    caption: "Components" if tags and (
+      "component" in tags or "archivedComponent" in tags
+    ) else none,
     classes: "nhsuk-u-margin-bottom-5"
   }) }}
   <p>{{ description }}</p>
