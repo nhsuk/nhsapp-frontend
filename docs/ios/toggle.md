@@ -34,7 +34,7 @@ var body: some View {
 
 ![Screenshot of a white card containing the label 'Face ID' and a blue toggle switched on](/assets/images/ios/toggle-on.png)
 
-Apply the style to the `Form` to set it for every toggle inside.
+Within a [form](/ios/forms), the `.formStyle(.nhsForm)` will apply the toggle style automatically.
 
 ```swift { .nhsuk-code--button }
 @State private var faceID = true
@@ -43,7 +43,7 @@ var body: some View {
     Form {
         Toggle("Face ID", isOn: $faceID)
     }
-    .toggleStyle(.nhsToggle)
+    .formStyle(.nhsForm)
 }
 ```
 
