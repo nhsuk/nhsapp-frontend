@@ -50,7 +50,7 @@ var body: some View {
     .formStyle(.nhsForm)
     .formActions {
         Button("Continue") {
-            // Action would go here                
+            // Action would go here
         }
         .buttonStyle(.nhsPrimary)
     }
