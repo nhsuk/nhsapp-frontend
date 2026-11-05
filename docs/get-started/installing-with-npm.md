@@ -45,4 +45,4 @@ You need to import the NHS App frontend styles into the main Sass file in your p
 
 ## Importing assets
 
-The NHS App Frontend ships with all SVG icons. They can be found in `node_modules/nhsapp-frontend/assets/icons`.
+The NHS App Frontend ships with all SVG icons. They can be found in `node_modules/nhsapp-frontend/dist/assets/icons`.

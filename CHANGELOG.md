@@ -5,6 +5,18 @@
 ### 🆕 New features
 
 - Added `proxy` colour variant to the card component, using the class `nhsapp-card--proxy`. This uses the warm yellow colour and should only be used for proxy access, replacing the proxy banner
+- The `nhsappIcon` macro now accepts a `params` object with `classes`, `title` and `attributes` options, in line with the NHS.UK frontend icon macro. The `title` option adds an accessible name to the icon
+- The `nhsappIcon` macro now has a `size` option (25, 50, 75 or 100) which enlarges the icon by that percentage, and an `html` option to provide custom SVG content, in line with the NHS.UK frontend icon macro
+- The first argument of the `nhsappIcon` macro is now named `name`, in line with the NHS.UK frontend icon macro. The previous keyword argument `iconName` is deprecated and will be removed in v6.0.0. Use `name` instead. Passing the icon name as the first argument works as before
+- The `nhsappIcon` macro now accepts kebab-case icon names (for example `chevron-right`) as well as camelCase (`chevronRight`), and renders an empty SVG instead of throwing an error for unknown names
+
+### 🔧 Fixes
+
+- The `account-filled` icon from the `nhsappIcon` macro now uses the class `nhsapp-icon--account-filled`, consistent with the other icons, instead of `nhsapp-icon__account-filled`
+
+### ⚠️ Deprecations
+
+- Passing a string of classes as the second argument of the `nhsappIcon` macro is deprecated and will be removed in v6.0.0. Use `{ classes: "..." }` instead.
 
 ## `v5.3.0` - 18 September 2026
 

@@ -1,4 +1,6 @@
+import { mkdir, writeFile } from 'node:fs/promises'
 import gulp from 'gulp'
+import nunjucks from 'nunjucks'
 import * as dartSass from 'sass-embedded'
 import gulpSass from 'gulp-sass'
 import gulpClean from 'gulp-clean'
@@ -7,6 +9,7 @@ import rename from 'gulp-rename'
 import cleanCSS from 'gulp-clean-css'
 import packageJson from './package.json' with { type: 'json' }
 import PluginError from 'plugin-error'
+import { getNames } from './lib/icons.mjs'
 
 /* Configure the sass compiler */
 const sass = gulpSass(dartSass)
@@ -59,10 +62,23 @@ function minifyCSS() {
 }
 
 /**
- * Copy assets such as icons and images into the distribution
+ * Render the icons from the `nhsappIcon` macro into SVG files
  */
-function copyAssets() {
-  return gulp.src('src/assets/**').pipe(gulp.dest('dist/assets/'))
+async function renderIcons() {
+  const env = nunjucks.configure(['src', 'node_modules/nhsuk-frontend/dist'], {
+    autoescape: true
+  })
+
+  await mkdir('dist/assets/icons', { recursive: true })
+
+  for (const icon of getNames()) {
+    const svg = env.renderString(
+      '{% from "styles/icon/macro.njk" import nhsappIcon %}{{ nhsappIcon(icon) }}',
+      { icon }
+    )
+
+    await writeFile(`dist/assets/icons/${icon}.svg`, `${svg.trim()}\n`)
+  }
 }
 
 /**
@@ -96,7 +112,7 @@ const bundle = gulp.series([
   clean,
   compileCSS,
   minifyCSS,
-  copyAssets,
+  renderIcons,
   copySource
 ])
 
@@ -108,4 +124,4 @@ const release = gulp.series([
   createZip
 ])
 
-export { clean, bundle, compileCSS, release }
+export { clean, bundle, compileCSS, renderIcons, release }
