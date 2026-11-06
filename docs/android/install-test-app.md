@@ -36,7 +36,7 @@ You’ll need:
     <span class="nhsuk-details__summary-text">If you see an "item not found" screen</span>
   </summary>
   <div class="nhsuk-details__text">
-    <p>You may see a screen with the words "item not found" when you open the link to the Google Play store. It may also have a satellite image. Follow these steps if that happens.</p>
+    <p>You may see a screen with the words "item not found" when you open the link to the Google Play Store. It may also have a satellite image. Follow these steps if that happens.</p>
     <ol class="nhsuk-list nhsuk-list--number">
       <li>Open this first test invite link in a web browser on your Android device.</li> 
       <li>Select <strong>Accept</strong> to opt in to becoming a tester.</li>
