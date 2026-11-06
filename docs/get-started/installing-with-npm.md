@@ -31,18 +31,35 @@ After you have installed NHS App frontend the `nhsapp-frontend` package will app
 
 You need to import the NHS App frontend styles into the main Sass file in your project. You should place the below code before your own Sass rules (or Sass imports) if you want to override NHS App frontend with your own styles.
 
+You must add `node_modules` to Sass load paths, by either:
+
+- calling the Sass compiler from the command line with the `--load-path node_modules` flag
+- using the JavaScript API with `loadPaths: ['node_modules']` in the `options` object
+
 1. To import all components, add the below to your Sass file:
 
-```CSS
-@import "node_modules/nhsapp-frontend/dist/nhsapp/all";
+```css
+@import "nhsapp-frontend/dist/nhsapp";
 ```
 
-2. To import an individual component (for example a button), add the below to your Sass file:
+If you’re using Sass modules, use this instead:
 
-```CSS
-@import "node_modules/nhsapp-frontend/dist/nhsapp/components/button/button";
+```css
+@forward "nhsapp-frontend/dist/nhsapp";
+```
+
+2. To import an individual component (for example a button), add the below to your Sass file instead:
+
+```css
+@import "nhsapp-frontend/dist/nhsapp/components/button";
+```
+
+or using Sass modules:
+
+```css
+@forward "nhsapp-frontend/dist/nhsapp/components/button";
 ```
 
 ## Importing assets
 
-The NHS App Frontend ships with all SVG icons. They can be found in `node_modules/nhsapp-frontend/assets/icons`.
+The NHS App Frontend ships with all SVG icons. They can be found in `nhsapp-frontend/dist/assets/icons`.
