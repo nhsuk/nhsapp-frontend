@@ -6,9 +6,24 @@
 
 - Added `proxy` colour variant to the card component, using the class `nhsapp-card--proxy`. This uses the warm yellow colour and should only be used for proxy access, replacing the proxy banner
 - Updated to [NHS.UK frontend v10.7.0](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.7.0)
+- Added `text` option to the card component's `aboveContent` and `footer` options, as an alternative to `html` for plain text content
+- Added `heading` option to timeline items, which accepts a string or an object with `text` or `html`
+- The card and card group components' `description` option now also accepts an object with `text`, `html` or `classes`
+- Added `heading` option to the card component (and `cards[].heading` in the card group), replacing `title` and `headingLevel` to align with the NHS.UK frontend card component. It accepts a string or an object with `text`, `html`, `level`, `classes`, `size` or `id`
+- Added `heading.size` option to the card component, which adds the matching `nhsuk-heading-*` class (`xxs`, `xs`, `s`, `m`, `l` or `xl`)
+- Added `heading.id` option to the card component, to set an `id` on the heading or link
+- Added `heading.level` and `heading.classes` options to the card group's `heading` option
 
 ### ⚠️ Deprecations
 
+- The timeline item `headingText` option is deprecated and will be removed in v6.0.0. Use `heading.text` instead.
+- The card and card group components' `descriptionHtml` option is deprecated and will be removed in v6.0.0. Use `description.html` instead.
+- The card and card group components' `descriptionClasses` option is deprecated and will be removed in v6.0.0. Use `description.classes` instead.
+- The card `title` option and card group `cards[].title` option are deprecated and will be removed in v6.0.0. Use `heading` or `cards[].heading` instead.
+- The card `titleHtml`, `titleClasses` and `headingLevel` options and the card group `cards[].titleHtml`, `cards[].titleClasses` and `cards[].headingLevel` options are deprecated and will be removed in v6.0.0. Use `heading.html`, `heading.classes` and `heading.level` (or the `cards[].heading.*` equivalents) instead.
+- The card component's `nhsapp-card__title` class is deprecated and will be removed in v6.0.0. Use `nhsapp-card__heading` instead. The Nunjucks macros now output `nhsapp-card__heading`. If you're not using the Nunjucks macros, update the class in your HTML. Both classes are styled until then.
+- The card group `headingLevel` option is deprecated and will be removed in v6.0.0. Use `heading.level` instead.
+- The card group `headingHtml` option is deprecated and will be removed in v6.0.0. Use `heading.html` instead.
 - The NHS App colour palette (`$nhsapp-colours` and the `nhsapp-colour()` function) is deprecated in favour of the pale and dark colours added in NHS.UK frontend v10.7.0, and will be removed in v6.0.0. Replace `nhsapp-colour("...")` with `nhsuk-colour("...")`. The NHS App colours now use these NHS.UK frontend colours, and some of them have changed slightly:
   - `pale-aqua-green`: `#c9e3e0` to `#bae6e3`
   - `dark-aqua-green`: `#1e403d` to `#004a45`
