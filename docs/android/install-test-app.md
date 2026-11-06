@@ -4,6 +4,7 @@ title: Installing a test app from Google Play
 tags:
   - android
 order: 1
+help: no
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
@@ -30,3 +31,22 @@ You’ll need:
 3. You’ll see a screen confirming that you’re now a tester. Select **Download test app**.
 4. Google Play will open on the page for the test app. Select **Install**.
 5. Once the test app has finished installing, select **Open**. You can now use the test app.
+
+<details class="nhsuk-details" data-module="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">If you see an "item not found" screen</span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>You may see a screen with the words "item not found" when you open the link to the Google Play Store. It may also have a satellite image. Follow these steps if that happens.</p>
+    <ol class="nhsuk-list nhsuk-list--number">
+      <li>Open this <a href="https://play.google.com/apps/internaltest/4701696904694357838">first test invite link</a> in a web browser on your Android device.</li> 
+      <li>Select <strong>Accept</strong> to opt in to becoming a tester.</li>
+      <li>Open this <a href="https://play.google.com/store/apps/details?id=com.nhs.online.nhsonline.banana">second test invite link</a> in the browser.</li>
+      <li>If you see the "item not found" screen again, select <strong>Try again</strong> a few times and you'll hopefully get through.</li>
+    </ol>
+  </div>
+</details>
+
+## Get help
+
+Post in the <a href="https://nhsdigitalcorporate.enterprise.slack.com/archives/C0C4SSL2JLX">#native-internal-questions-feedback</a> Slack channel if you have any problems. A member of the team will get back to you.
