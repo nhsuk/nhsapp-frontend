@@ -39,7 +39,7 @@
            {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
           {{ params.titleHtml | safe if params.titleHtml else params.title }}
         </a>
-      {%- else -%}
+      {%- elif params.title or params.titleHtml -%}
         {%- if params.headingLevel -%}
           <h{{ params.headingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">
             {{ params.titleHtml | safe if params.titleHtml else params.title }}
