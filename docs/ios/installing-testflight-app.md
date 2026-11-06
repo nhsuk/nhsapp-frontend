@@ -4,6 +4,7 @@ title: Testing using TestFlight
 tags:
   - ios
 order: 4
+help: no
 ---
 
 If you've been invited, you can test new iOS versions of the NHS App using TestFlight. It's a free app made by Apple.
@@ -64,3 +65,7 @@ We'll release updated versions of the app while you're testing.
 <div class="nhsuk-inset-text">
   <p>Test versions expire 90 days after we upload them to TestFlight. If you see 'Expired', open TestFlight to get the latest version. If a new version is not showing, contact us.</p>
 </div>
+
+## Get help
+
+Post in the <a href="https://nhsdigitalcorporate.enterprise.slack.com/archives/C0C4SSL2JLX">#native-internal-questions-feedback</a> Slack channel if you have any problems. A member of the team will get back to you.

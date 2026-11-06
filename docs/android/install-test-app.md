@@ -4,6 +4,7 @@ title: Installing a test app from Google Play
 tags:
   - android
 order: 1
+help: no
 ---
 
 {% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
@@ -43,6 +44,9 @@ You’ll need:
       <li>Open this <a href="https://play.google.com/store/apps/details?id=com.nhs.online.nhsonline.banana">second test invite link</a> in the browser.</li>
       <li>If you see the "item not found" screen again, select <strong>Try again</strong> a few times and you'll hopefully get through.</li>
     </ol>
-    <p>Post in the <a href="https://nhsdigitalcorporate.enterprise.slack.com/archives/C0C4SSL2JLX">#native-internal-questions-feedback</a> Slack channel if you still have any problems. A member of the team will get back to you.
   </div>
 </details>
+
+## Get help
+
+Post in the <a href="https://nhsdigitalcorporate.enterprise.slack.com/archives/C0C4SSL2JLX">#native-internal-questions-feedback</a> Slack channel if you have any problems. A member of the team will get back to you.
