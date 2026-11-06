@@ -46,7 +46,7 @@ Use secondary card links to signpost information that is less important in the c
 
 ### Colour variations
 
-You can use [colour](/styles/colour) to highlight a card link. This can help draw attention to important content.
+You can use [colour](https://service-manual.nhs.uk/design-system/styles/colour) to highlight a card link. This can help draw attention to important content.
 
 Use colour sparingly and make sure there is enough contrast between text and background.
 

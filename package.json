@@ -46,7 +46,7 @@
     "highlight.js": "^11.11.1",
     "markdown-it-anchor": "^10.0.0",
     "markdown-it-attrs": "^5.0.0",
-    "nhsuk-frontend": "^10.6.1",
+    "nhsuk-frontend": "^10.7.0",
     "nunjucks": "^3.2.4",
     "outdent": "^0.8.0",
     "plugin-error": "^2.0.1",
@@ -54,7 +54,7 @@
     "sass-embedded": "^1.103.1"
   },
   "peerDependencies": {
-    "nhsuk-frontend": "^10.0.0"
+    "nhsuk-frontend": "^10.7.0"
   },
   "engines": {
     "node": "^24.11.0",
