@@ -6,13 +6,6 @@ tags:
 order: 1
 ---
 
-{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
-
-{{ nhsappTag({
-  text: 'Work in progress',
-  classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
-})}}
-
 If you’ve been invited, you can install a test version of the NHS App from Google Play.
 
 ## Before you start
