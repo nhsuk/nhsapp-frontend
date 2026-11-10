@@ -26,26 +26,22 @@ You’ll need:
 
 ## How to install the test app
 
-1. On your Android phone or tablet, <a href="https://play.google.com/apps/internaltest/4701696904694357838">open the invite link</a>. If you're opening it from an email, make sure to do so in an external browser or it may not work.
+1. On your Android phone or tablet, <a href="https://play.google.com/apps/internaltest/4701696904694357838">open the invite link to the Google Play Store page</a>. If you're opening it from an email, make sure to do so in an external browser or it may not work.
 2. You’ll see a screen asking you to confirm you want to accept the invite. Select **Accept**.
 3. You’ll see a screen confirming that you’re now a tester. Select **Download test app**.
 4. Google Play will open on the page for the test app. Select **Install**.
 5. Once the test app has finished installing, select **Open**. You can now use the test app.
 
-<details class="nhsuk-details" data-module="nhsuk-details">
-  <summary class="nhsuk-details__summary">
-    <span class="nhsuk-details__summary-text">If you see an "item not found" screen</span>
-  </summary>
-  <div class="nhsuk-details__text">
-    <p>You may see a screen with the words "item not found" when you open the link to the Google Play Store. It may also have a satellite image. Follow these steps if that happens.</p>
+<div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>You may see a screen with the words "item not found" when you open the link to the Google Play Store. It may also have a satellite image. Follow these steps if that happens.</p>
     <ol class="nhsuk-list nhsuk-list--number">
       <li>Open this <a href="https://play.google.com/apps/internaltest/4701696904694357838">first test invite link</a> in a web browser on your Android device.</li> 
       <li>Select <strong>Accept</strong> to opt in to becoming a tester.</li>
       <li>Open this <a href="https://play.google.com/store/apps/details?id=com.nhs.online.nhsonline.banana">second test invite link</a> in the browser.</li>
       <li>If you see the "item not found" screen again, select <strong>Try again</strong> a few times and you'll hopefully get through.</li>
     </ol>
-  </div>
-</details>
+</div>
 
 ## Get help
 
