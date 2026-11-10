@@ -26,7 +26,7 @@ You’ll need:
 
 ## How to install the test app
 
-1. Open the invite link. If you're opening it from an email, make sure to do so in an external browser or it may not work.
+1. On your Android phone or tablet, <a href="https://play.google.com/apps/internaltest/4701696904694357838">open the invite link</a>. If you're opening it from an email, make sure to do so in an external browser or it may not work.
 2. You’ll see a screen asking you to confirm you want to accept the invite. Select **Accept**.
 3. You’ll see a screen confirming that you’re now a tester. Select **Download test app**.
 4. Google Play will open on the page for the test app. Select **Install**.
