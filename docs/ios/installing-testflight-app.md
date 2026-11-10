@@ -4,6 +4,7 @@ title: Testing using TestFlight
 tags:
   - ios
 order: 4
+help: no
 ---
 
 If you've been invited, you can test new iOS versions of the NHS App using TestFlight. It's a free app made by Apple.
@@ -28,19 +29,22 @@ You'll need:
 ## Step 2: Open your invite email
 
 1. On the same iPhone or iPad, open the invite email from us.
-2. Select **View in TestFlight** (this may say **Start testing**).
+2. Select **View in TestFlight** (this may read **Start testing**).
 3. TestFlight opens automatically.
 
 <details class="nhsuk-details" data-module="nhsuk-details">
   <summary class="nhsuk-details__summary">
-    <span class="nhsuk-details__summary-text">If the invite button does not work</span>
+    <span class="nhsuk-details__summary-text">If you're asked for a redeem code</span>
   </summary>
   <div class="nhsuk-details__text">
-    <p>Your invite email also contains a redeem code.</p>
+    <p>You may see a screen with a <strong>Redeem</strong> button. Keep this screen open in TestFlight and then do the following.</p>
     <ol class="nhsuk-list nhsuk-list--number">
-      <li>Open TestFlight.</li>
-      <li>Select <strong>Redeem</strong>.</li>
-      <li>Enter the code from your email.</li>
+      <li>Go back to the invite email.</li> 
+      <li>Hold down your finger on the <strong>View in TestFlight</strong> or <strong>Start Testing</strong> link.</li>
+      <li>Copy the link.</li>
+      <li>Go to your web browser and paste the link.</li>
+      <li>On the screen that shows, you'll find a redeem code (a string of capital letters). Copy that code.</li>
+      <li>Go back to TestFlight, select the <strong>Redeem</strong> button and paste the code.</li>
     </ol>
   </div>
 </details>
@@ -61,3 +65,7 @@ We'll release updated versions of the app while you're testing.
 <div class="nhsuk-inset-text">
   <p>Test versions expire 90 days after we upload them to TestFlight. If you see 'Expired', open TestFlight to get the latest version. If a new version is not showing, contact us.</p>
 </div>
+
+## Get help
+
+Post in the <a href="https://nhsdigitalcorporate.enterprise.slack.com/archives/C0C4SSL2JLX">#native-internal-questions-feedback</a> Slack channel if you have any problems. A member of the team will get back to you.
