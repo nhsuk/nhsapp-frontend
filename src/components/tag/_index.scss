@@ -1,29 +1,28 @@
 @use "nhsuk-frontend/dist/nhsuk/core/tools" as *;
 @use "nhsuk-frontend/dist/nhsuk/core/helpers" as *;
-@use "../../settings/colours-applied" as *;
 
 /* ==========================================================================
   #TAG
   ========================================================================== */
 
-$color_tag-aqua-green-background: nhsapp-colour("pale-aqua-green");
-$color_tag-aqua-green-text: nhsapp-colour("dark-aqua-green");
-$color_tag-blue-background: nhsapp-colour("pale-blue");
-$color_tag-blue-text: nhsapp-colour("dark-blue");
-$color_tag-green-background: nhsapp-colour("pale-green");
-$color_tag-green-text: nhsapp-colour("dark-green");
+$color_tag-aqua-green-background: nhsuk-colour("pale-aqua-green");
+$color_tag-aqua-green-text: nhsuk-colour("dark-aqua-green");
+$color_tag-blue-background: nhsuk-colour("pale-blue");
+$color_tag-blue-text: nhsuk-colour("dark-blue");
+$color_tag-green-background: nhsuk-colour("pale-green");
+$color_tag-green-text: nhsuk-colour("dark-green");
 $color_tag-grey-background: nhsuk-colour("grey-4");
 $color_tag-grey-text: nhsuk-colour("black");
-$color_tag-purple-background: nhsapp-colour("pale-purple");
-$color_tag-purple-text: nhsapp-colour("dark-purple");
-$color_tag-orange-background: nhsapp-colour("pale-orange");
-$color_tag-orange-text: nhsapp-colour("dark-orange");
-$color_tag-pink-background: nhsapp-colour("pale-pink");
-$color_tag-pink-text: nhsapp-colour("dark-pink");
-$color_tag-red-background: nhsapp-colour("pale-red");
-$color_tag-red-text: nhsapp-colour("dark-red");
-$color_tag-yellow-background: nhsapp-colour("pale-yellow");
-$color_tag-yellow-text: nhsapp-colour("dark-yellow");
+$color_tag-purple-background: nhsuk-colour("pale-purple");
+$color_tag-purple-text: nhsuk-colour("dark-purple");
+$color_tag-orange-background: nhsuk-colour("pale-orange");
+$color_tag-orange-text: nhsuk-colour("dark-orange");
+$color_tag-pink-background: nhsuk-colour("pale-pink");
+$color_tag-pink-text: nhsuk-colour("dark-pink");
+$color_tag-red-background: nhsuk-colour("pale-red");
+$color_tag-red-text: nhsuk-colour("dark-red");
+$color_tag-yellow-background: nhsuk-colour("pale-yellow");
+$color_tag-yellow-text: nhsuk-colour("dark-yellow");
 
 .nhsapp-tag {
   @include nhsuk-font($size: 16, $weight: normal, $line-height: 1.25);
