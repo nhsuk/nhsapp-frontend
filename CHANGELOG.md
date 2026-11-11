@@ -27,7 +27,6 @@
   - `dark-yellow`: `#4c4612` to `#595215`
 - Passing a string of classes as the second argument of the `nhsappIcon` macro is deprecated and will be removed in v6.0.0. Use `{ classes: "..." }` instead.
 
-
 ## `v5.3.0` - 18 September 2026
 
 ### 🆕 New features
