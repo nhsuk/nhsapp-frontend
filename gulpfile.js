@@ -69,7 +69,13 @@ async function renderIcons() {
     autoescape: true
   })
 
-  await mkdir('dist/assets/icons', { recursive: true })
+  // `dist/assets/icons` is deprecated and will be removed in a future
+  // version. It is only published for backwards compatibility.
+  const destinations = ['dist/assets/icons', 'dist/nhsapp/assets/icons']
+
+  for (const destination of destinations) {
+    await mkdir(destination, { recursive: true })
+  }
 
   for (const icon of getNames()) {
     const svg = env.renderString(
@@ -77,7 +83,9 @@ async function renderIcons() {
       { icon }
     )
 
-    await writeFile(`dist/assets/icons/${icon}.svg`, `${svg.trim()}\n`)
+    for (const destination of destinations) {
+      await writeFile(`${destination}/${icon}.svg`, `${svg.trim()}\n`)
+    }
   }
 }
 
@@ -112,8 +120,8 @@ const bundle = gulp.series([
   clean,
   compileCSS,
   minifyCSS,
-  renderIcons,
-  copySource
+  copySource,
+  renderIcons
 ])
 
 const release = gulp.series([
@@ -121,6 +129,7 @@ const release = gulp.series([
   compileCSS,
   minifyCSS,
   copySource,
+  renderIcons,
   createZip
 ])
 

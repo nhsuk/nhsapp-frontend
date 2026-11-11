@@ -25,6 +25,7 @@
   - `dark-pink`: `#681645` to `#6e234b`
   - `pale-yellow`: `#fff7b1` to `#fff9c4`
   - `dark-yellow`: `#4c4612` to `#595215`
+- The `dist/assets/icons` folder is deprecated and will be removed in v6.0.0. The same icons are available in `dist/nhsapp/assets/icons`, so use that path instead
 - Passing a string of classes as the second argument of the `nhsappIcon` macro is deprecated and will be removed in v6.0.0. Use `{ classes: "..." }` instead.
 
 ## `v5.3.0` - 18 September 2026
