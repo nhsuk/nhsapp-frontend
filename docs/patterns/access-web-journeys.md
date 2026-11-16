@@ -105,7 +105,7 @@ This applies on every page apart from the final screen of transactional services
     <img class="app-image__fallback" src="/assets/images/web-overlay/done.png" alt="Video showing a confirmation screen closing when done is selected.">
 </figure>
 
-If users select the X at a point after they may have started entering data or making choices, show an alert to make sure they really want to close the overlay.
+If users select the X at a point after they may have started entering data or making choices, show a confirmation dialog to make sure they really want to close the overlay.
 
 <figure class="nhsuk-image">
   <video autoplay loop muted playsinline class="app-image__video">
@@ -115,14 +115,12 @@ If users select the X at a point after they may have started entering data or ma
     <img class="app-image__fallback" src="/assets/images/web-overlay/close-alert.png" alt="Video showing an alert overlaid on a screen, warning users their progress will not be saved if they exit.">
 </figure>
 
-Do not include an alert:
+Do not include a confirmation dialog:
 
 - on journeys with no data input
 - on the first page of journeys, at which point users will not have entered any information yet
 
-<img class="app-image--no-border" src="/assets/images/web-overlay/close-alert-message.png" alt="Video showing the alert content. The text is 'Exit this service? Your progress will not be saved' and there are buttons to cancel or exit.">
-
-We are currently researching and agreeing on a [content pattern for the alert content](https://github.com/NHSDigital/native-nhsapp-ucd-team/issues/69).
+<img class="app-image--no-border" src="/assets/images/web-overlay/close-action-sheet.png" alt="Screenshot of a confirmation dialog appearing over a prescriptions journey with the text 'Your request will not be saved'.">
 
 ### Open in-journey links in a sheet
 

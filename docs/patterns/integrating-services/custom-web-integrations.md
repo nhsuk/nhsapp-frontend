@@ -1,7 +1,7 @@
 ---
 layout: layouts/pattern.njk
 title: Custom web view integration
-description: How to adapt your website-based service so it works correctly when opened in the NHS App as a custom web view
+description: A custom web view is a browser-like container. Your team controls and adapts it to fit the NHS App context. This is the most common integration type in the NHS App.
 backlogID: 450
 order: 2
 childPage: true
@@ -9,12 +9,11 @@ tags:
   - integratingServices
 ---
 
-A custom web view is a browser-like container your team controls and adapts to fit the NHS App context.
-It is the most common integration type for NHS App services, and users are not informed they are using a service separate from the NHS App. As a result, it's important we consider end-to-end implications of this to support tickets, help and support content as users awareness of which service they are using is low.
+Users are not always aware that these services are separate from the NHS App. That means it's important to consider their end-to-end experiences, what help content they might need, and what support tickets they might raise.
 
 **In the current (web-based) NHS App**, the web view is embedded within the app's own header and footer. The NHS App navigation menus remain visible throughout.
 
-**In the future native NHS App**, the web view opens as a full-screen overlay on top of native screens. Users start their journeys from native menu screens and enter the web view when they select a website-hosted service. This approach tested well in user research, helping users understand where they were.
+**In the future native NHS App**, the web view will open as a full-screen overlay on top of native screens. Users will start their journeys from native menu screens and enter the web view when they select a website-hosted service. This approach tested well in user research, helping users understand where they were.
 
 ## When to use
 
@@ -44,21 +43,21 @@ Remove or hide website navigation elements that could confuse users or lead them
 - site navigation links
 - breadcrumb links
 
-On NHS UK website pages, also hide the NHS website header, including the search bar, and all breadcrumb links at the top of the page.
+On NHS website pages, also hide the NHS website header, including the search bar, and all breadcrumb links at the top of the page.
 
 Make sure hiding these elements does not affect the page title or the logical heading structure. Screen reader users rely on page titles and headings to understand where they are. These must remain in place even when the visual header is hidden.
 
 ![Two screens showing the NHS website in a web view within the NHS App. The first shows the NHS website header visible in the web view: it has a red cross against it. The second shows the header suppressed: it has a green tick against it.](/assets/images/integration-pattern/suppress-header.png)
 
-Work with NHS App Interaction Designers to identify other elements that should be removed. For example, contextual navigation links that could lead users deeper into your service without a clear way back.
+Work with NHS App interaction designers to identify other elements that should be removed. For example, contextual navigation links that could lead users deeper into your service without a clear way back.
 
 You can do this by attending the weekly NHS App Interaction Design Huddles, or by using the [NHS App Interaction Design slack channel](https://nhsdigitalcorporate.enterprise.slack.com/archives/C04GHLAPMPV) to ask for support.
 
 ### 2. Manage back navigation
 
-Users need a clear and reliable way to go back one step. This custom web integration ensures that users feel like they are still within the NHS App so it's important that we do not confuse them by providing "Back" actions that take them to places they don't expect.
+Users need a clear and reliable way to go back one step. This custom web integration ensures that users feel like they are still in the NHS App, so it's important we do not confuse them by providing "Back" actions that take them to places they do not expect.
 
-If you need to to allow users to move around in your service, it may be more appropriate to use a Default Web Broswer integration where it is more clear to users that they are not within the NHS App.
+If you need to to allow users to move around in your service, it may be more appropriate to use a [default browser integration](/patterns/integrating-services/default-web-integrations) where it is clearer to users that they are not within the NHS App.
 
 Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcrumbs reflect your own site's information architecture, which is not meaningful to users arriving from the NHS App.
 
@@ -66,11 +65,9 @@ Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcr
 
 **In the future native custom web view:** Hide the back button on the first page of the journey. Include the back button on every other page. This helps users understand they are at the start of a new journey, while still giving them a way to navigate back once they have moved forward.
 
-Do not use breadcrumb navigation on any pages viewed within the NHS App. Breadcrumbs reflect your own site's information architecture, which is not meaningful to users arriving from the NHS App.
-
 ![Two screens showing the NHS website opening in a web view within the NHS App. The first shows the breadcrumb link 'Home' at the top: it has a red cross against it. The second shows a 'Back' button used instead: it has a green tick against it.](/assets/images/integration-pattern/include-back-button.png)
 
-### 3. Simplify the site footer _(current web-based NHS App only)_
+### 3. Simplify the site footer
 
 Reduce the number of links in the footer to only those that are essential:
 
@@ -82,35 +79,9 @@ The footer should follow standard NHS design patterns in its visual appearance. 
 
 ![Two screens showing the NHS website opening in a web view within the NHS App. The first shows the full NHS website footer visible in the web view: it has a red cross against it. The second shows a simplified version of the footer: it has a green tick against it.](/assets/images/integration-pattern/simplify-footer.png)
 
-### 4. Add a title to the toolbar _(in the future-state NHS App native custom browser only)_
+### Other steps for the future native NHS App
 
-Give the web view a title matching the name of the service. This will usually match the card link that led the user into the service — for example, "Request a repeat prescription". Check with a content designer before finalising the title.
-
-### 5. Help users exit the overlay _(in the future-state NHS App native custom browser only)_
-
-Include an X button in the toolbar on every page so users can exit at any point. On the final screen of transactional journeys, replace the X button with a Done button instead.
-
-If a user selects X after they may have started entering data or making choices, show an alert to confirm they want to close the overlay.
-
-Do not show the alert:
-
-- on journeys with no data input
-- on the first page of a journey, before the user has entered any information
-
-### 6. Open in-journey links in a sheet _(in the future-state NHS App native custom browser only)_
-
-While users are in a full-screen overlay, links to other content should open in a sheet — a partial overlay that slides up over the main journey, keeping it visible underneath. This shows users they have taken a temporary step that they can dismiss to return to their main task.
-
-- Links to NHS website pages should open as a custom web view sheet
-- Links to third-party websites should open as a web browser overlay sheet (Safari View or Chrome Custom Tabs)
-
-**Exception:** The "Give feedback" journey uses a full-screen custom web view rather than a web browser overlay, so that NHS website links within it open as controlled custom web view sheets.
-
-### 7. Include an app help button _(in the future-state NHS App native custom browser only)_
-
-For website-based app journeys such as repeat prescriptions or GP appointment booking, display a persistent app help button at the bottom of the custom web view throughout the journey. This ensures users can always access support without leaving the journey.
-
-For guidance on routing the button, see [giving users access to help while they use the NHS App](/patterns/get-help/).
+If you're preparing a custom web integration for the future native NHS App, there are some other steps you'll need to take. Read our guidance on [helping users access a web journey in the native NHS App](/patterns/access-web-journeys).
 
 ## How not to use custom web view integration
 
