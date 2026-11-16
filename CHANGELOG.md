@@ -1,10 +1,10 @@
 # NHS App Frontend Changelog
 
-## Unreleased
+## `v5.4.0` - 16 November 2026
 
 ### 🆕 New features
 
-- Added `proxy` colour variant to the card component, using the class `nhsapp-card--proxy`. This uses the warm yellow colour and should only be used for proxy access, replacing the proxy banner
+- Added `proxy` colour variant to the card component, using the class `nhsapp-card--proxy`. This uses the warm yellow colour and should only be used for proxy access, replacing the proxy banner - [pull request #627](https://github.com/nhsuk/nhsapp-frontend/pull/627)
 - Updated to [NHS.UK frontend v10.7.0](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.7.0)
 
 ### ⚠️ Deprecations
