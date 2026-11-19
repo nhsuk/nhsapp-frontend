@@ -50,18 +50,24 @@
 {% endset %}
 
 {% block content %}
-  {% if childPage %}
-    <span class="nhsuk-caption-xl">Integrating services into the NHS App</span>
-  {% elif tags and "screen" in tags %}
-    <span class="nhsuk-caption-xl">Screens</span>
-  {% elif tags and "structure" in tags %}
-    <span class="nhsuk-caption-xl">Structure</span>  
-  {% elif tags and "helpUsers" in tags %}
-    <span class="nhsuk-caption-xl">Help users to</span>
-  {% endif %}
-  <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-5">
-    {{ title }}
-  </h1>
+  {%- if childPage -%}
+    {%- set caption = "Integrating services into the NHS App" -%}
+  {%- elif tags and "screen" in tags -%}
+    {%- set caption = "Screens" -%}
+  {%- elif tags and "structure" in tags -%}
+    {%- set caption = "Structure" -%}
+  {%- elif tags and "helpUsers" in tags -%}
+    {%- set caption = "Help users to" -%}
+  {%- else -%}
+    {%- set caption = none -%}
+  {%- endif -%}
+  {{ heading({
+    text: title,
+    level: 1,
+    size: "xl",
+    caption: caption,
+    classes: "nhsuk-u-margin-bottom-5"
+  }) }}
   {% if pageNotice %}
     {% include "layouts/partials/" + pageNotice + ".njk" %}
   {% endif %}
