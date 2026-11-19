@@ -9,7 +9,7 @@ Use a picker when users need to choose one answer from a fixed list.
 
 ![Medicine timing screen with four options. A blue checkmark marks “In 6 to 12 hours” as selected, and a Continue button appears at the bottom.](/assets/images/ios/full-page-picker.png)
 
-A inline picker is the iOS equivalent of [radios on the web](https://service-manual.nhs.uk/design-system/components/radios).
+An inline picker is the iOS equivalent of [radios on the web](https://service-manual.nhs.uk/design-system/components/radios).
 
 If the user can select more than one option, use a set of [toggles](/ios/toggle) instead.
 
@@ -57,7 +57,7 @@ var body: some View {
 
 ### If you're asking more than 1 question on the screen
 
-If you are asking more than 1 question on the screen, use a visble label and style it using `nhsSectionHeaderStyle()`.
+If you are asking more than 1 question on the screen, use a visible label and style it using `nhsSectionHeaderStyle()`.
 
 ![Inline picker labelled “How would you like to have your appointment?” A blue checkmark marks “In person” as selected. The other options are “By phone” and “No preference”.](/assets/images/ios/inline-picker.png)
 
