@@ -205,11 +205,10 @@ List {
 .nhsListStyle()
 ```
 
-This pattern has not yet been tested. 
+This pattern has not yet been tested.
 
 ## Research
 
 If your team has tested lists with users, please [share your research findings](/community/share-findings/).
 
 We do not yet have a pattern for loading more items in a list. We welcome research on loading items automatically as users scroll (infinite scrolling) or using a "Load more" button.
-
