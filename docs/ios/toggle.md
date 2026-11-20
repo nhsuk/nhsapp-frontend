@@ -47,6 +47,40 @@ var body: some View {
 }
 ```
 
+### More than one answer to a question
+
+When users can select more than one answer to a question, give each option its own toggle. Use the question as the form title.
+
+![A form asking which symptoms you have, with Cough and Runny nose switched on, Sore throat and Headache switched off, and a Continue button at the bottom](/assets/images/ios/toggle-multiple-selection.png)
+
+```swift { .nhsuk-code--button }
+@Binding var hasCough: Bool
+@Binding var hasSoreThroat: Bool
+@Binding var hasRunnyNose: Bool
+@Binding var hasHeadache: Bool
+
+var body: some View {
+    Form {
+        Title("Which symptoms do you have?")
+
+        Section {
+            Toggle("Cough", isOn: $hasCough)
+            Toggle("Sore throat", isOn: $hasSoreThroat)
+            Toggle("Runny nose", isOn: $hasRunnyNose)
+            Toggle("Headache", isOn: $hasHeadache)
+        }
+        .nhsSectionStyle()
+    }
+    .formStyle(.nhsForm)
+    .formActions {
+        Button("Continue") {
+            // Navigate to the next screen
+        }
+        .buttonStyle(.nhsPrimary)
+    }
+}
+```
+
 ### Toggle with a subtitle
 
 ![Screenshot of a white card with the bold label 'Allow optional analytic cookies', the grey supporting text 'I accept the use of optional analytic cookies used to improve the performance of the NHS App' and a blue toggle switched on](/assets/images/ios/toggle-subtitle.png)
