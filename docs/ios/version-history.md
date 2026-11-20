@@ -8,6 +8,22 @@ order: 5
 
 A list of changes in each release of the iOS design system.
 
+## 2.2.0 - 20 November 2026
+
+### New features
+
+- [Forms](/ios/forms) — apply NHS typography, colours and spacing, with actions fixed at the bottom of a scrolling screen
+- [Lists](/ios/lists) — apply NHS typography, colours and spacing
+- [Buttons](/ios/buttons) — added a plain button style and improved icon spacing
+- Top section background — add a coloured header area to a scrolling screen
+- [Secondary card action groups](/ios/card-action#secondary-card-action-group) now apply their plain row style automatically
+- [Home menu](/ios/home-menu) and [Title](/ios/title) icons now use a lighter weight
+
+### Fixes
+
+- [Toolbar items](/ios/toolbar) now use the correct NHS blue on earlier iOS versions
+- Long screen titles no longer hide the back button label on smaller phones
+
 ## 2.1.0 - 21 September 2026
 
 ### New features
