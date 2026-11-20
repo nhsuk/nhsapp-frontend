@@ -7,6 +7,8 @@ tags:
 
 List views present rows of data in a single column.
 
+![A list with three rows: Amoxicillin, Atorvastatin and Cetirizine](/assets/images/ios/list-basic.png)
+
 ## When to use
 
 Use a list view for a screen containing a collection of similar rows backed by data that isn’t fixed, such as messages, appointments or medications.
@@ -44,6 +46,8 @@ Examples:
 
 This example shows a basic list of prescriptions.
 
+![A list with three rows: Amoxicillin, Atorvastatin and Cetirizine](/assets/images/ios/list-basic.png)
+
 ```swift { .nhsuk-code--button }
 let prescriptions = [
     "Amoxicillin",
@@ -65,6 +69,8 @@ var body: some View {
 Use `Section` to group related rows and apply `.nhsSectionStyle()` to each section. Every section needs a header styled with `.nhsSectionHeaderStyle()`. If you include a footer, style it with `.nhsSectionFooterStyle()`.
 
 This example groups medicines into repeat and one-off prescriptions:
+
+![A medicines list grouped into Repeat prescriptions and One-off prescriptions, with explanatory text below each group](/assets/images/ios/list-sections.png)
 
 ```swift { .nhsuk-code--button }
 List {
@@ -101,6 +107,8 @@ Place a [Title](/ios/title) as the first item in the `List`, before any rows or 
 
 Apply `.nhsTitle()` to the list to set the heading text. `Title()` uses that text at the top of the list. If the list is inside a `NavigationStack`, the title appears in the bar at the top of the screen (the navigation bar) when the heading scrolls out of view.
 
+![The large Prescriptions heading above two medicine rows](/assets/images/ios/list-title.png)
+
 ```swift { .nhsuk-code--button }
 List {
     Title()
@@ -120,6 +128,8 @@ Use a [card action](/ios/card-action) for each row that opens another screen. Th
 
 In an existing `NavigationStack`, use `.navigationDestination(item:)` (iOS 17 and later) to open a detail view when the card action selects an item. This example does not need a navigation path. Replace the placeholder with your app's detail view.
 
+![A Vaccinations list with Flu and Shingles rows, each with a chevron on the right](/assets/images/ios/list-navigation.png)
+
 ```swift { .nhsuk-code--button }
 @State private var selectedVaccination: String?
 
@@ -137,8 +147,9 @@ var body: some View {
     }
     .nhsListStyle()
     .navigationTitle("Vaccinations")
-    .navigationDestination(item: $selectedVaccination) { _ in
+    .navigationDestination(item: $selectedVaccination) { vaccination in
         // Load the detail view
+        Text(vaccination)
     }
 }
 ```
@@ -146,6 +157,8 @@ var body: some View {
 ### Refreshable list
 
 Add SwiftUI's `.refreshable` modifier to let users pull down to reload the list. The refresh indicator stays visible until the refresh finishes.
+
+![A refresh spinner above the Atorvastatin and Levothyroxine rows on the Requested medicines screen](/assets/images/ios/list-refreshable.png)
 
 ```swift { .nhsuk-code--button }
 List {
@@ -164,6 +177,8 @@ This pattern has not yet been tested.
 For a very long alphabetical list, group medicines by their first letter. Add `.sectionIndexLabel()` to each section so users can jump to a letter using the an index on the right.
 
 This currently only works in iOS 26 and above.
+
+![Medicine names beginning with A continue below the bottom of the screenshot, with the full A to Z index on the right](/assets/images/ios/list-index.png)
 
 ```swift { .nhsuk-code--button }
 List {
