@@ -5,7 +5,7 @@ tags:
   - iosComponents
 ---
 
-Use a picker when users need to choose one answer from a fixed list. 
+Use a picker when users need to choose one answer from a fixed list.
 
 ![Medicine timing screen with four options. A blue checkmark marks “In 6 to 12 hours” as selected, and a Continue button appears at the bottom.](/assets/images/ios/full-page-picker.png)
 
