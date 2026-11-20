@@ -11,18 +11,21 @@ Buttons are used to help users carry out an action.
 
 ## How it works
 
-There are 4 styles:
+There are 5 styles:
 
 - [primary](#primary-button)
 - [secondary](#secondary-button)
 - [warning](#warning-button)
 - [primary reverse](#primary-reverse-button)
+- [plain](#plain-button)
 
 Follow the [NHS design system button guidance](https://service-manual.nhs.uk/design-system/components/buttons) for when to use primary, secondary and warning buttons.
 
 By default, buttons stretch to fill the width of their container. Use the [fitted modifier](#fitted-width) to size a button to its label instead.
 
-The button scales with Dynamic Type and adapts to Dark Mode. Text wraps onto multiple lines if needed and is never truncated.
+Buttons for a [form](/ios/forms), such as a ‘Continue’ button, should be placed in `.formActions` so that they remain at the bottom of the screen whilst the form scrolls.
+
+Buttons scale with Dynamic Type and adapt to Dark Mode. Text wraps onto multiple lines if needed and is never truncated.
 
 ## How to use
 
@@ -77,6 +80,30 @@ Button("Log in") {
     // handle tap
 }
 .buttonStyle(.nhsPrimaryReverse)
+```
+
+### Plain button
+
+Use a plain button for an action that needs less emphasis than a secondary button. It uses NHS blue text with no background or border.
+
+![Plain button labelled 'Give feedback' in blue text](/assets/images/ios/button-plain.png)
+
+```swift { .nhsuk-code--button }
+Button("Give feedback") {
+    // handle tap
+}
+.buttonStyle(.nhsPlain)
+```
+
+For an action that cancels or removes something, such as cancelling a booked appointment, set `role: .destructive` to show the plain button’s text in NHS red. Ask users to confirm before carrying out the action. You can ask for confirmation on a separate screen.
+
+![Plain button labelled 'Cancel appointment' in red text](/assets/images/ios/button-plain-destructive.png)
+
+```swift { .nhsuk-code--button }
+Button("Cancel appointment", role: .destructive) {
+    // handle tap
+}
+.buttonStyle(.nhsPlain)
 ```
 
 ### Fitted width
