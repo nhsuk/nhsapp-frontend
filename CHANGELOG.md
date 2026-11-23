@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Added support for Node.js 26 and npm 12 support while maintaining support for Node.js 24 and npm 11.
+- Added support for Node.js 26 while maintaining support for Node.js 24 - [pull request #652](https://github.com/nhsuk/nhsapp-frontend/pull/652)
 
 ## `v5.4.0` - 16 November 2026
 
