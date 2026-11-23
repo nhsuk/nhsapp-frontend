@@ -1,5 +1,9 @@
 # NHS App Frontend Changelog
 
+## Unreleased
+
+- Added support for Node.js 26 while maintaining support for Node.js 24 - [pull request #652](https://github.com/nhsuk/nhsapp-frontend/pull/652)
+
 ## `v5.4.0` - 16 November 2026
 
 ### 🆕 New features
