@@ -7,7 +7,7 @@ tags:
 
 Buttons are used to help users carry out an action.
 
-![Screenshot of 4 buttons: a green 'Primary' button, a white 'Secondary' button with a blue border, a red 'Warning' button, and a white 'Primary reverse' button on a blue background](/assets/images/ios/button.png)
+![Screenshot of buttons: green 'Primary', white 'Secondary' with a blue border, red 'Warning', blue 'Plain' text, red 'Plain destructive' text, and white 'Primary reverse' on a blue background](/assets/images/ios/button.png)
 
 ## How it works
 
