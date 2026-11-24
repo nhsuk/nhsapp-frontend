@@ -58,3 +58,13 @@ var body: some View {
 ```
 
 For full documentation, see [SwiftUI: Form](https://developer.apple.com/documentation/SwiftUI/Form) on the Apple developer documentation website.
+
+## Disabled Continue button
+
+When a screen asks a question, keep the Continue button disabled until the user has given a valid answer. Tapping a disabled button gives the user no feedback.
+
+We think this is acceptable, but only when it is obvious why the button is disabled. For example, ask a single question on the screen, such as a picker, a set of [toggles](/ios/toggle) or a text field, so users can tell what they need to do to continue.
+
+Avoid asking several questions on the same screen, because a disabled button may leave users unsure which answer is missing.
+
+This is an initial decision rather than settled guidance. We need further research into how users understand disabled buttons on question screens. If you have findings, [share them](/community/share-findings/).
