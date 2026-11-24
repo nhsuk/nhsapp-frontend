@@ -63,7 +63,7 @@ var body: some View {
 
 ### If you're asking more than 1 question on the screen
 
-If you are asking more than 1 question on the screen, use a visible label and style it using `nhsSectionHeaderStyle()`.
+For more than 1 question, use a visible label and style it using `nhsSectionHeaderStyle()`.
 
 ![Inline picker labelled “How would you like to have your appointment?” A blue checkmark marks “In person” as selected. The other options are “By phone” and “No preference”.](/assets/images/ios/inline-picker.png)
 
