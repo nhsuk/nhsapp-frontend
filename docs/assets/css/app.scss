@@ -1,6 +1,5 @@
 // Import NHS UK frontend styles
 @use "pkg:nhsuk-frontend/dist/nhsuk" as *;
-@use "pkg:nhsuk-frontend-preview/dist/nhsuk/components/section-navigation";
 
 // Import all styles from the NHS App frontend library
 @forward "../../../src/all";
@@ -22,6 +21,10 @@
 @forward "example";
 @forward "utilities";
 @forward "table";
+
+.app-section-navigation__item--child {
+  padding-left: $nhsuk-gutter-half + nhsuk-spacing(3);
+}
 
 // Add correct spacing around code highlighter and content
 pre {
