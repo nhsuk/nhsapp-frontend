@@ -9,7 +9,7 @@
   {% set feedbackSubject = "these styles" %}
 {% endif %}
 
-{% if isComponent or isStyle or isHelpPattern %}
+{% if backlogID and (isComponent or isStyle or isHelpPattern) %}
   <h2>Help improve {{ feedbackSubject }}</h2>
 
   <p>The NHS App design system team would like to hear:</p>

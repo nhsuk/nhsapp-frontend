@@ -2,6 +2,7 @@
 
 {% from "icon/macro.njk" import nhsappIcon %}
 {% from "nhsuk/components/section-navigation/macro.njk" import sectionNavigation %}
+{% from "nhsapp/components/tag/macro.njk" import nhsappTag %}
 
 {% block pageTitle -%}
   {% if title %}{{ title }} - {% endif %}NHS App design system
@@ -107,6 +108,8 @@
   <script type="module" src="/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js"></script>
   <script type="module">
     import { initAll } from '/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js'
+    import { createAll, SectionNavigation } from '/nhsuk-frontend-preview/nhsuk-frontend.min.js'
     initAll()
+    createAll(SectionNavigation)
   </script>
 {% endblock %}

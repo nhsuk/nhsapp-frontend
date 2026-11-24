@@ -6,6 +6,7 @@ subsection: Accessibility
 theme: Accessibility
 order: 1
 ---
+
 The NHS App should be accessible to everyone. This includes people with disabilities and people who use assistive technology, such as screen readers.
 
 As public sector bodies, we must meet the [Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018](https://www.legislation.gov.uk/uksi/2018/952/contents/made). This applies to all of us in NHS organisations who build websites or mobile apps.

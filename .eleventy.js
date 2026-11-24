@@ -26,7 +26,10 @@ const nunjucksEnv = nunjucks.configure(
     'node_modules/nhsuk-frontend/dist', // allow resolving paths like nhsuk/macros/attributes.njk
     'node_modules/nhsuk-frontend/dist/nhsuk',
     'node_modules/nhsuk-frontend/dist/nhsuk/components',
-    'node_modules/nhsuk-frontend/dist/nhsuk/macros'
+    'node_modules/nhsuk-frontend/dist/nhsuk/macros',
+
+    // Section navigation is not yet available in the stable release.
+    'node_modules/nhsuk-frontend-preview/dist'
   ],
   {
     // Match nhsuk-frontend's own nunjucks environment settings.
@@ -89,6 +92,10 @@ export default function (eleventyConfig) {
   // Add NHSUK frontend JS/components
   eleventyConfig.addPassthroughCopy({
     'node_modules/nhsuk-frontend/dist': 'nhsuk-frontend/dist'
+  })
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/nhsuk-frontend-preview/dist/nhsuk/nhsuk-frontend.min.js':
+      'nhsuk-frontend-preview/nhsuk-frontend.min.js'
   })
 
   // Copy the NHS assets folder to /assets so default assetPath (/assets) works

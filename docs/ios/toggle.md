@@ -35,7 +35,7 @@ var body: some View {
 
 ![Screenshot of a white card containing the label 'Face ID' and a blue toggle switched on](/assets/images/ios/toggle-on.png)
 
-Apply the style to the `Form` to set it for every toggle inside.
+Within a [form](/ios/forms), the `.formStyle(.nhsForm)` will apply the toggle style automatically.
 
 ```swift { .nhsuk-code--button }
 @State private var faceID = true
@@ -44,7 +44,41 @@ var body: some View {
     Form {
         Toggle("Face ID", isOn: $faceID)
     }
-    .toggleStyle(.nhsToggle)
+    .formStyle(.nhsForm)
+}
+```
+
+### More than one answer to a question
+
+When users can select more than one answer to a question, give each option its own toggle. Use the question as the form title.
+
+![A form asking which symptoms you have, with Cough and Runny nose switched on, Sore throat and Headache switched off, and a Continue button at the bottom](/assets/images/ios/toggle-multiple-selection.png)
+
+```swift { .nhsuk-code--button }
+@Binding var hasCough: Bool
+@Binding var hasSoreThroat: Bool
+@Binding var hasRunnyNose: Bool
+@Binding var hasHeadache: Bool
+
+var body: some View {
+    Form {
+        Title("Which symptoms do you have?")
+
+        Section {
+            Toggle("Cough", isOn: $hasCough)
+            Toggle("Sore throat", isOn: $hasSoreThroat)
+            Toggle("Runny nose", isOn: $hasRunnyNose)
+            Toggle("Headache", isOn: $hasHeadache)
+        }
+        .nhsSectionStyle()
+    }
+    .formStyle(.nhsForm)
+    .formActions {
+        Button("Continue") {
+            // Navigate to the next screen
+        }
+        .buttonStyle(.nhsPrimary)
+    }
 }
 ```
 
