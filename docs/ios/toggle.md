@@ -7,6 +7,8 @@ tags:
 
 Toggles let users switch a single option on or off. They are a standard iOS component (see [Apple's toggle guidance](https://developer.apple.com/design/human-interface-guidelines/toggles)).
 
+If users need to choose one answer from a fixed list, use a [picker](/ios/picker) instead.
+
 ![Screenshot of 2 toggles: a blue toggle labelled 'On' and a grey toggle labelled 'Off'](/assets/images/ios/toggle.png)
 
 ## How it works
