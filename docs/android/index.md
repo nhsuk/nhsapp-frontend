@@ -3,20 +3,9 @@ layout: layouts/android.njk
 title: Android
 ---
 
-{% from 'nhsapp/components/tag/macro.njk' import nhsappTag %}
-
-{{ nhsappTag({
-  text: 'Work in progress',
-  classes: 'nhsapp-tag--blue nhsuk-u-margin-bottom-4'
-})}}
-
 We are transforming the NHS App to be more platform-native.
 
-This page documents how that applies to the Android platform for phones and tablets.
-
-## Styles
-
-- [Colour](/android/colour/)
+These page document how that applies to the Android platform for phones and tablets.
 
 ## Platform features
 
@@ -40,7 +29,3 @@ We may also support:
 - Offline access
 
 Many of these features we will get by default when using Jetpack Compose, however we may need to do extra work to support them for any custom features.
-
-## Testing the app
-
-If you've been invited, you can [install a test app from Google Play](/android/install-test-app/).
