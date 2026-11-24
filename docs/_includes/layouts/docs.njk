@@ -33,7 +33,7 @@
     text: title,
     level: 1,
     size: "xl",
-    caption: section if section == 'Android' or section == 'iOS' else sectionCaption,
+    caption: section if (section == 'Android' or section == 'iOS') and title != section else sectionCaption,
     classes: "nhsuk-u-margin-bottom-5"
   }) }}
   {% if description %}
