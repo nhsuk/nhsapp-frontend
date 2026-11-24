@@ -19,7 +19,13 @@ Apply `.pickerStyle(.inline)` to a regular [SwiftUI Picker](https://developer.ap
 
 ### If you're asking 1 question on the screen
 
-If the picker is a question that takes up the whole screen, place the question in the [Title](/ios/title) component, use the same question as the picker label and hide it visually with `.labelsHidden()`. This makes sure that the label is still associated with the picker for VoiceOver users.
+If a question and its options take up the whole screen: 
+
+- place the question in the [Title](/ios/title) component
+- use the same question as the picker label 
+- hide it visually with `.labelsHidden()`
+
+This makes sure that the label is still associated with the picker for VoiceOver users.
 
 ```swift { .nhsuk-code--button }
 private let question = "When are you next due to take your medicine?"
