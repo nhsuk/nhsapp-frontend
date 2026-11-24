@@ -7,23 +7,12 @@ subsectionIndex: true
 subsectionOrder: 1
 ---
 
-We are transforming the NHS App to be more platform-native.
+Use this guidance to design and build native NHS App screens for Android phones and tablets using Jetpack Compose.
 
-This page documents how that applies to the Android platform for phones and tablets.
+The Android section includes [styles](/android/styles/) for things like colour and typography.
 
-## Platform features
+## Get started
 
-The native app will support these Android features:
+Find out how to [install a test app from Google Play](/android/install-test-app/).
 
-- [Dark theme](https://developer.android.com/develop/ui/views/theming/darktheme)
-- [Foldable devices](https://developer.android.com/phones-tablets-foldables)
-- Portrait and landscape orientation
-
-We may also support:
-
-- Tablet layouts
-- Offline access
-
-The native app will also support Android accessibility settings. Read more about [accessibility in the Android app](/accessibility/android/).
-
-Many of these features we will get by default when using Jetpack Compose, however we may need to do extra work to support them for any custom features.
+Use the [NHS App patterns](/patterns/) alongside the Android guidance, and read about [accessibility in the Android app](/accessibility/android/).

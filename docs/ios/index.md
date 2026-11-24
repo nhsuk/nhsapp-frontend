@@ -8,22 +8,16 @@ subsectionIndex: true
 subsectionOrder: 1
 ---
 
-We are transforming the NHS App to be more platform-native.
+Use this guidance to design and build native NHS App screens for iPhone and iPad using SwiftUI.
 
-This page documents how that applies to the iOS platform for iPhones and iPads.
+The iOS design system provides:
 
-## Platform features
+- [styles](/ios/styles/) for things like colour and typography
+- [components](/ios/components/) for reusable parts of the interface
+- [layouts](/ios/layouts/) for arranging content on screens
 
-The native app will support these iOS features:
+## Get started
 
-- [Dark Mode](https://developer.apple.com/design/human-interface-guidelines/dark-mode)
-- Portrait and landscape orientation
+To use the design system, [add the Swift package](/ios/installing/) to your app. You can also find guidance on [prototyping for iOS](/ios/prototyping/) and [testing the app using TestFlight](/ios/installing-testflight-app/).
 
-We may also support:
-
-- iPad layouts
-- Offline access
-
-The native app will also support iOS accessibility settings. Read more about [accessibility in the iOS app](/accessibility/ios/).
-
-Many of these features we will get by default when using SwiftUI, however we may need to do extra work to support them for any custom features.
+Use the [NHS App patterns](/patterns/) alongside the iOS guidance, and read about [accessibility in the iOS app](/accessibility/ios/).
