@@ -2,7 +2,7 @@
 layout: layouts/pattern.njk
 title: Access web journeys in the native NHS App
 description: 
-backlogID: 457
+backlogID: 458
 order: 5
 tags:
   - helpUsers
@@ -14,7 +14,7 @@ tags:
 
 <div class="nhsuk-inset-text">
   <span class="nhsuk-u-visually-hidden">Information: </span>
-  <p>This guidance is part of our work to prepare for <a href="https://design-history.nhsapp.service.nhs.uk/native/2026/01/exploring-a-spectrum-of-possibilities/">building a more native version of the NHS App</a>.</p>
+  <p>This guidance is part of our work to prepare for <a href="https://design-history.nhsapp.service.nhs.uk/native/2026/10/native-nutshell/">building a more native version of the NHS App</a>.</p>
 </div>
 
 How to adapt your web journey so users can access it in the native NHS App, using a web overlay.
