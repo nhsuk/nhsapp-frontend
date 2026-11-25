@@ -20,13 +20,14 @@ arguments: card
 {% endset %}
 
 {{ nhsappCard({
-  title: "Orthopaedic appointment",
+  heading: { text: "Orthopaedic appointment", classes: "nhsuk-u-font-size-22" },
   href: "#",
-  titleClasses: "nhsuk-u-font-size-22",
   linkAriaLabel: "Action needed: Orthopaedic appointment on Monday 3 June 2024 at 9:40am, at The Willows, Croydon University Hospital",
-  descriptionHtml: '
-    <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
-    <p aria-hidden="true">The Willows, Croydon University Hospital</p>
-  ',
+  description: {
+    html: '
+      <p aria-hidden="true" class="nhsuk-u-font-weight-bold nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-3">Monday 3 June 2024 <br> 9:40am</p>
+      <p aria-hidden="true">The Willows, Croydon University Hospital</p>
+    '
+  },
   aboveContent: { html: tag }
 }) }} 
