@@ -40,7 +40,7 @@
            {%- if params.linkAriaLabel %} aria-label="{{ params.linkAriaLabel }}"{% endif %}>
           {{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}
         </a>
-      {%- else -%}
+      {%- elif params.title or params.titleHtml -%}
         {%- if params.headingLevel -%}
           <h{{ params.headingLevel }} class="nhsapp-card__title {{ params.titleClasses if params.titleClasses }}">
             {{ nhsukContent({ text: params.title, html: params.titleHtml }) | trim }}
