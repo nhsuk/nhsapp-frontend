@@ -9,7 +9,7 @@ subsectionOrder: 1
 
 Use this guidance to design and build native NHS App screens for Android phones and tablets using Jetpack Compose.
 
-The Android section includes [styles](/android/styles/) for things like colour and typography.
+The Android section includes [styles](/android/styles/) for things like colour and typography, and [components](/android/components/) such as buttons.
 
 ## Get started
 
