@@ -13,7 +13,7 @@ A list of changes in each release of the NHS App frontend. The [full changelog](
 
 ### New features
 
-- Added a proxy colour variation to [card links](/web/components/card-links/#colour-variations). Only use it for proxy access, where it replaces the proxy banner
+- Added a proxy colour variation to [card links](/web/components/card-links/#proxy-card-links). Only use it for proxy access, where it replaces the proxy banner
 - Updated to NHS.UK frontend v10.7.0
 
 ### Deprecations
