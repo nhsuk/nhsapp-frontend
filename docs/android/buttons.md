@@ -1,8 +1,9 @@
 ---
-layout: layouts/android.njk
+layout: layouts/docs.njk
 title: Buttons
-tags:
-  - androidComponents
+section: Android
+subsection: Components
+theme: Components
 ---
 
 Buttons are used to help users carry out an action.

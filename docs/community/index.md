@@ -1,6 +1,8 @@
 ---
-layout: layouts/community.njk
+layout: layouts/docs.njk
 title: Community
+section: Community
+subsection: Community
 ---
 
 The NHS App design system helps us learn from each other, share knowledge and reuse as much as possible.

@@ -1,9 +1,10 @@
 ---
-layout: layouts/android.njk
+layout: layouts/docs.njk
 title: Installing a test app from Google Play
-tags:
-  - android
 order: 1
+section: Android
+subsection: Get started
+theme: Get started
 help: no
 ---
 
@@ -29,7 +30,7 @@ You’ll need:
   <span class="nhsuk-u-visually-hidden">Information: </span>
       <p>You may see a screen with the words "item not found" when you open the link to the Google Play Store. It may also have a satellite image. Follow these steps if that happens.</p>
     <ol class="nhsuk-list nhsuk-list--number">
-      <li>Open this <a href="https://play.google.com/apps/internaltest/4701696904694357838">first test invite link</a> in a web browser on your Android device.</li> 
+      <li>Open this <a href="https://play.google.com/apps/internaltest/4701696904694357838">first test invite link</a> in a web browser on your Android device.</li>
       <li>Select <strong>Accept</strong> to opt in to becoming a tester.</li>
       <li>Open this <a href="https://play.google.com/store/apps/details?id=com.nhs.online.nhsonline.banana">second test invite link</a> in the browser.</li>
       <li>If you see the "item not found" screen again, select <strong>Try again</strong> a few times and you'll hopefully get through.</li>

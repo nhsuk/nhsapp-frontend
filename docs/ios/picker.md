@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Pickers
-tags:
-  - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 Use a picker when users need to choose 1 answer from a list.

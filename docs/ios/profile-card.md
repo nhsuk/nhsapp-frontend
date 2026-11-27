@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Profile card
-tags:
-  - iosComponents
+section: iOS
+subsection: Components
+theme: Components
 ---
 
 The profile card is a tappable card showing whose profile the user is currently viewing.

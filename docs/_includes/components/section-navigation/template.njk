@@ -1,0 +1,92 @@
+{# Based on NHS.UK frontend preview 091bc51c2, with the app- prefix and badge support removed. #}
+{% from "nhsuk/macros/attributes.njk" import nhsukAttributes %}
+
+{#- Set variant for this component #}
+{%- set variant = params.variant -%}
+
+{#- Set classes for this component #}
+{%- set classNames = "app-section-navigation" -%}
+
+{%- if variant == "reverse" and (not params.classes or not "app-section-navigation--reverse" in params.classes) %}
+  {% set classNames = classNames ~ " app-section-navigation--" ~ variant %}
+{% endif %}
+
+{%- if params.small and (not params.classes or not "app-section-navigation--small" in params.classes) %}
+  {% set classNames = classNames ~ " app-section-navigation--small" %}
+{% endif %}
+
+{%- if params.direction and
+  params.direction in ["horizontal", "vertical"] and (
+    not params.classes or (
+      not "app-section-navigation--horizontal" in params.classes and
+      not "app-section-navigation--vertical" in params.classes
+    )
+  )
+%}
+  {% set classNames = classNames ~ " app-section-navigation--" ~ params.direction %}
+{% endif %}
+
+{%- if params.classes %}
+  {% set classNames = classNames ~ " " ~ params.classes %}
+{% endif %}
+
+{%- set items = params.items | select("mapping") | list if params.items else [] %}
+
+{%- set attributesHtml %}
+  {{- nhsukAttributes({
+    class: classNames,
+    id: {
+      value: params.id,
+      optional: true
+    },
+    "data-module": "app-section-navigation",
+    "aria-label": params.ariaLabel | default("Section information", true)
+  }) -}}
+
+  {{- nhsukAttributes(params.attributes) -}}
+{% endset %}
+
+<nav {{- attributesHtml | safe }}>
+  <ul class="app-section-navigation__list">
+  {% for item in items %}
+    {% set itemInnerAttributesHtml %}
+      {{- nhsukAttributes({
+        class: "app-section-navigation__link" if item.href
+          else "app-section-navigation__text",
+        href: {
+          value: item.href,
+          optional: true
+        },
+        "aria-current": {
+          value: ("page" if item.current else "true")
+            if item.active or item.current
+            else false,
+          optional: true
+        }
+      }) -}}
+    {% endset %}
+    {% set itemInnerContent %}
+      {#- Wrap active links in strong element so users who override colours
+          or styles still have some indicator of the current nav item. -#}
+      {%- if item.active or item.current -%}
+        <strong class="app-section-navigation__item-current-fallback">
+          {{- item.html | safe if item.html else item.text -}}
+        </strong>
+      {%- else -%}
+        {{- item.html | safe if item.html else item.text -}}
+      {%- endif -%}
+    {% endset %}
+    <li class="app-section-navigation__item {%- if item.active or item.current %} app-section-navigation__item--current{% endif %} {%- if item.classes %} {{ item.classes }}{% endif %}" {{- nhsukAttributes(item.attributes) }}>
+    {% if item.href %}
+      <a {{- itemInnerAttributesHtml | safe }}>
+        {{- itemInnerContent | safe -}}
+      </a>
+    {% else %}
+      <span {{- itemInnerAttributesHtml | safe }}>
+        {{- itemInnerContent | safe -}}
+      </span>
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</nav>

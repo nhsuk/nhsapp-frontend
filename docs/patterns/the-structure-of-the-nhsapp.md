@@ -1,11 +1,14 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: The structure of the NHS App
 description:
 backlogID: 66
 order: 2
-tags:
-  - structure
+section: Patterns
+subsection: Patterns
+theme: Structure
+themeOrder: 2
+sectionCaption: Structure
 ---
 
 The NHS App brings together many different features and services that help people manage their healthcare digitally. In total, there are over 60 services within the app.

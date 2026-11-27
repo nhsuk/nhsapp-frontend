@@ -1,0 +1,273 @@
+@use "nhsuk/core/settings" as *;
+@use "nhsuk/core/tools" as *;
+@use "nhsuk/core/helpers" as *;
+
+////
+/// Section navigation component
+///
+/// Stacks vertically by default and renders as a horizontal list on tablet,
+/// or when the layout is changed by JavaScript using modifier classes
+///
+/// @group components/section-navigation
+////
+
+$app-section-navigation-shadow: inset 0 -1px 0 $nhsuk-border-colour;
+$app-section-navigation-shadow-reverse: inset 0 -1px 0 rgba($nhsuk-reverse-text-colour, 0.4);
+$app-section-navigation-indicator: inset 0 ($nhsuk-border-width * -1) nhsuk-colour("blue");
+$app-section-navigation-indicator-reverse: inset 0 ($nhsuk-border-width * -1) $nhsuk-reverse-text-colour;
+
+/// Section navigation horizontal styles
+///
+/// @access private
+
+@mixin _section-navigation-horizontal {
+  // Items fit side-by-side: remove the mobile bleed to match horizontal layout
+  margin-right: auto;
+  margin-left: auto;
+
+  .app-section-navigation__list {
+    flex-flow: row wrap;
+    gap: nhsuk-spacing(2) nhsuk-spacing(3);
+    box-shadow: $app-section-navigation-shadow;
+
+    @include nhsuk-frontend-supported {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .app-section-navigation__item {
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .app-section-navigation__link[aria-current]:not(:focus),
+  .app-section-navigation__text[aria-current] {
+    box-shadow: $app-section-navigation-indicator;
+  }
+
+  .app-section-navigation__link[aria-current]::before,
+  .app-section-navigation__text[aria-current]::before {
+    content: none;
+  }
+
+  // Increase padding unless small
+  &:not(.app-section-navigation--small) {
+    .app-section-navigation__link,
+    .app-section-navigation__text {
+      padding: nhsuk-spacing(3) 2px;
+    }
+  }
+}
+
+/// Section navigation horizontal styles (desktop)
+///
+/// @access private
+
+@mixin _section-navigation-horizontal-desktop {
+  .app-section-navigation__list {
+    // Larger gap on desktop
+    gap: nhsuk-spacing(2) nhsuk-spacing(5);
+  }
+}
+
+/// Section navigation horizontal styles (reverse)
+///
+/// @access private
+
+@mixin _section-navigation-horizontal-reverse {
+  .app-section-navigation__list {
+    box-shadow: $app-section-navigation-shadow-reverse;
+  }
+
+  .app-section-navigation__link[aria-current]:not(:focus),
+  .app-section-navigation__text[aria-current] {
+    box-shadow: $app-section-navigation-indicator-reverse;
+  }
+}
+
+@include nhsuk-exports("app/components/section-navigation") {
+  .app-section-navigation {
+    // Bleed to full width on mobile by negating the page gutter
+    margin-right: #{$nhsuk-gutter-half * -1};
+    margin-left: #{$nhsuk-gutter-half * -1};
+
+    @include nhsuk-responsive-margin(5, "bottom");
+  }
+
+  .app-section-navigation__list {
+    display: flex;
+
+    flex-flow: column;
+
+    gap: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .app-section-navigation__item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;
+    padding: 0 $nhsuk-gutter-half;
+
+    .nhsuk-tag {
+      margin-left: nhsuk-spacing(2);
+    }
+  }
+
+  // This is a <strong> element used as a fallback mechanism for visually
+  // indicating current page in scenarios where CSS isn’t available.
+  // We don’t actually want it to be bold normally, so inherit parent font-weight.
+  .app-section-navigation__item-current-fallback {
+    font-weight: inherit;
+  }
+
+  .app-section-navigation__link,
+  .app-section-navigation__text {
+    position: relative;
+    padding: nhsuk-spacing(3) 0;
+
+    @include nhsuk-font(19);
+  }
+
+  // Text colour is explicitly set to prevent link styles overriding it.
+  .app-section-navigation__link[aria-current]:not(:focus),
+  .app-section-navigation__link[aria-current]:not(:focus):visited,
+  .app-section-navigation__text[aria-current] {
+    color: $nhsuk-text-colour;
+  }
+
+  .app-section-navigation__link:not(:focus) {
+    @include nhsuk-link-style-default;
+    @include nhsuk-link-style-no-visited-state;
+  }
+
+  // Use custom focus styles to keep focus and active indicators aligned
+  .app-section-navigation__link:focus {
+    box-shadow: inset 0 ($nhsuk-focus-width * -1) $nhsuk-focus-text-colour;
+  }
+
+  // =========================================================
+  // Vertical section navigation
+  // =========================================================
+
+  // Adjust padding for links and text when vertical
+  .app-section-navigation--vertical {
+    .app-section-navigation__link,
+    .app-section-navigation__text {
+      padding: nhsuk-spacing(2) 0;
+    }
+  }
+
+  // Current indicator sits in the item's gutter,
+  // outdented from the link text.
+  .app-section-navigation__link[aria-current]::before,
+  .app-section-navigation__text[aria-current]::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -$nhsuk-gutter-half;
+
+    width: 0;
+
+    border-left: $nhsuk-border-width solid nhsuk-colour("blue");
+  }
+
+  // =========================================================
+  // Horizontal section navigation
+  // =========================================================
+
+  .app-section-navigation:not(.app-section-navigation--vertical) {
+    @media #{nhsuk-from-breakpoint(tablet)} {
+      @include _section-navigation-horizontal;
+    }
+
+    @media #{nhsuk-from-breakpoint(desktop)} {
+      @include _section-navigation-horizontal-desktop;
+    }
+  }
+
+  .app-section-navigation--horizontal {
+    @media #{nhsuk-until-breakpoint(tablet)} {
+      @include _section-navigation-horizontal;
+    }
+  }
+
+  // =========================================================
+  // Reverse section navigation
+  // =========================================================
+
+  .app-section-navigation--reverse {
+    color: $nhsuk-reverse-text-colour;
+
+    .app-section-navigation__text {
+      color: $nhsuk-reverse-text-colour;
+    }
+
+    .app-section-navigation__link:not(:focus) {
+      @include nhsuk-link-style-reverse;
+    }
+
+    .app-section-navigation__link[aria-current]:not(:focus),
+    .app-section-navigation__link[aria-current]:not(:focus):visited,
+    .app-section-navigation__text[aria-current] {
+      color: $nhsuk-reverse-text-colour;
+    }
+
+    .app-section-navigation__link[aria-current]::before,
+    .app-section-navigation__text[aria-current]::before {
+      border-left-color: $nhsuk-reverse-text-colour;
+    }
+  }
+
+  .app-section-navigation--reverse:not(.app-section-navigation--vertical) {
+    @media #{nhsuk-from-breakpoint(tablet)} {
+      @include _section-navigation-horizontal-reverse;
+    }
+  }
+
+  .app-section-navigation--reverse.app-section-navigation--horizontal {
+    @media #{nhsuk-until-breakpoint(tablet)} {
+      @include _section-navigation-horizontal-reverse;
+    }
+  }
+
+  // =========================================================
+  // Small section navigation
+  // =========================================================
+
+  .app-section-navigation--small {
+    .app-section-navigation__link,
+    .app-section-navigation__text {
+      @include nhsuk-font-size(16);
+    }
+
+    @media #{nhsuk-until-breakpoint(tablet)} {
+      .app-section-navigation__link,
+      .app-section-navigation__text {
+        font-size: inherit;
+      }
+    }
+  }
+
+  .app-section-navigation--small.app-section-navigation--vertical {
+    .app-section-navigation__link,
+    .app-section-navigation__text {
+      padding: nhsuk-spacing(1, $adjustment: 2px) 0;
+    }
+  }
+
+  .app-section-navigation--small:not(.app-section-navigation--vertical) {
+    @media #{nhsuk-from-breakpoint(desktop)} {
+      .app-section-navigation__list {
+        gap: nhsuk-spacing(2) nhsuk-spacing(4);
+      }
+    }
+  }
+}

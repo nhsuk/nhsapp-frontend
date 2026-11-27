@@ -1,8 +1,9 @@
 ---
-layout: layouts/android.njk
+layout: layouts/docs.njk
 title: Typography
-tags:
-  - androidStyles
+section: Android
+subsection: Styles
+theme: Styles
 ---
 
 The Android design system uses Frutiger for all text, to match the [NHS web design system](https://service-manual.nhs.uk/design-system/styles/typography) and the iOS app.

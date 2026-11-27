@@ -1,0 +1,16 @@
+---
+layout: layouts/docs.njk
+title: Section heading
+backlogID: 26
+section: Web
+subsection: Components
+theme: Archived
+themeOrder: 2
+sectionCaption: Components
+---
+
+We archived the NHS App section heading in September 2025.
+
+If you need a heading for a group of card links, use the [card link group component](/components/card-links#using-headings).
+
+If you need a standalone section heading (without card links), use the [headings from the NHS design system](https://service-manual.nhs.uk/design-system/styles/typography#headings).

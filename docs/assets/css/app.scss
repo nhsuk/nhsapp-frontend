@@ -8,7 +8,7 @@
 @forward "pkg:nhsuk-frontend/lib/highlighter/styles";
 
 // Docs specific styles
-@forward "components/side-navigation";
+@forward "components/section-navigation";
 @forward "components/callout";
 @forward "components/bottom-nav-native";
 @forward "components/top-nav-native";
@@ -21,6 +21,10 @@
 @forward "example";
 @forward "utilities";
 @forward "table";
+
+.app-section-navigation__item--child {
+  padding-left: $nhsuk-gutter-half + nhsuk-spacing(3);
+}
 
 // Add correct spacing around code highlighter and content
 pre {

@@ -1,11 +1,14 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Move between areas of the NHS App
 description:
 backlogID: 63
 order: 1
-tags:
-  - helpUsers
+section: Patterns
+subsection: Patterns
+theme: Help users to
+themeOrder: 3
+sectionCaption: Help users to
 ---
 
 There are different ways to help people move easily between areas of the NHS App.

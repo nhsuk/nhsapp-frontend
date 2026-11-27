@@ -1,11 +1,14 @@
 ---
-layout: layouts/pattern.njk
+layout: layouts/docs.njk
 title: Error screens
 description: Use error screens to tell users there is an unexpected problem. Explain what has happened and what they can do next.
 backlogID: 119
 order: 4
-tags:
-  - screen
+section: Patterns
+subsection: Patterns
+theme: Screens
+themeOrder: 1
+sectionCaption: Screens
 ---
 
 {% example "error-pages/test-results.njk" %}

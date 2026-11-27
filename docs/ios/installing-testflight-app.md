@@ -1,9 +1,10 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Testing using TestFlight
-tags:
-  - ios
 order: 4
+section: iOS
+subsection: Get started
+theme: Get started
 help: no
 ---
 
@@ -39,7 +40,7 @@ You'll need:
   <div class="nhsuk-details__text">
     <p>You may see a screen with a <strong>Redeem</strong> button. Keep this screen open in TestFlight and then do the following.</p>
     <ol class="nhsuk-list nhsuk-list--number">
-      <li>Go back to the invite email.</li> 
+      <li>Go back to the invite email.</li>
       <li>Hold down your finger on the <strong>View in TestFlight</strong> or <strong>Start Testing</strong> link.</li>
       <li>Copy the link.</li>
       <li>Go to your web browser and paste the link.</li>

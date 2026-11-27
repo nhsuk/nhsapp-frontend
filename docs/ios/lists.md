@@ -1,8 +1,9 @@
 ---
-layout: layouts/ios.njk
+layout: layouts/docs.njk
 title: Lists
-tags:
-  - iosLayouts
+section: iOS
+subsection: Layouts
+theme: Layouts
 ---
 
 List views present rows of data in a single column.
