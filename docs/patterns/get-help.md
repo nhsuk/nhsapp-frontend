@@ -16,9 +16,9 @@ This helps users overcome problems they experience in the app without having to 
 
 ## When to use
 
-The button is part of the [top navigation]([../components/top-navigation) menu. It can be accessed from almost every screen of the app.
+The button is part of the [top navigation](/components/top-navigation/) menu. It can be accessed from almost every screen of the app.
 
-When a user is accessing NHS App services through a web browser, the help button is part of the persistent [header (web)](../components/header-web) menu.
+When a user is accessing NHS App services through a web browser, the help button is part of the persistent [header (web)](/web/components/header/) menu.
 
 ## How to use
 

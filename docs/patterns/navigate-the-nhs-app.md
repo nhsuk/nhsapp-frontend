@@ -23,7 +23,7 @@ The bottom navigation contains the buttons for the three main areas in the NHS A
 
 ## Screen structure
 
-Users do most of their navigation to the start of journeys through [hubs](/docs/patterns/hub-page.md) and [sub-hubs](/docs/patterns/sub-hub-page.md). They are designed to be easy to understand and progress through. These screens are typically made up of a main heading, section headings and card links.
+Users do most of their navigation to the start of journeys through [hubs](/patterns/hub-page/) and [sub-hubs](/patterns/sub-hub-page/). They are designed to be easy to understand and progress through. These screens are typically made up of a main heading, section headings and card links.
 
 <img src="/assets/images/helping-users-navigate-image2.png" alt="Three NHS App screens showing common page structure elemenets: main headings, section headings and card links." style="border: none; background-color: transparent;">
 

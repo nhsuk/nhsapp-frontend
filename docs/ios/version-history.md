@@ -37,7 +37,7 @@ A list of changes in each release of the iOS design system.
 
 #### Styles and modifiers
 
-- [Toggles](/ios/toggles) — the system switch tinted NHS blue with its label in the NHS body font
+- [Toggle](/ios/toggle/) — the system switch tinted NHS blue with its label in the NHS body font
 - Section style — sets the row background and separator colour for a section in a list or form, replacing the iOS defaults with colours from the NHS palette
 
 #### Colours

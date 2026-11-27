@@ -40,7 +40,7 @@ Sub-headings should also be used if a sub-hub has more than 5 card links. Resear
 
 ### Card links
 
-[Card links](/docs/components/card-links.md) on sub-hubs can take users to deeper layers of menu screens or the start of services and other journeys. Some card link labels in sub-hubs or deeper menu screens may be supported by a short description, if a user need for one has been uncovered.
+[Card links](/components/card-links/) on sub-hubs can take users to deeper layers of menu screens or the start of services and other journeys. Some card link labels in sub-hubs or deeper menu screens may be supported by a short description, if a user need for one has been uncovered.
 
 ## Sub-hubs in the app
 

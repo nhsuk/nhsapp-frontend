@@ -8,7 +8,7 @@ theme: Styles
 
 Use `NHSDivider()` to add a divider between items within a custom [card style](/ios/card-style) component.
 
-The divider works in the same way as the [SwiftUI Divider](https://developer.apple.com/documentation/swiftui/divider) component, but is styled using the NHS [colour](/ios/colours) palette.
+The divider works in the same way as the [SwiftUI Divider](https://developer.apple.com/documentation/swiftui/divider) component, but is styled using the NHS [colour](/ios/colour/) palette.
 
 ![Screenshot of a white card component with 'First item' and 'Second item' separated by a pale blue horizontal line](/assets/images/ios/divider.png)
 

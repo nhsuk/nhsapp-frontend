@@ -9,7 +9,7 @@ theme: Get started
 
 Before releasing a new version of the NHS App, you can upload it to TestFlight and invite people to try it.
 
-If you've been invited to test an app, see [Testing an app using TestFlight](./installing-testflight-app.md) instead.
+If you've been invited to test an app, see [Testing an app using TestFlight](/ios/installing-testflight-app/) instead.
 
 ## Before you start
 
@@ -129,7 +129,7 @@ Once the build is approved, invite people by email:
 2. Next to **Testers**, select the add button (**+**).
 3. Add testers by email address, or import a list from a CSV file.
 
-Tell testers to install the TestFlight app **before** opening the invite email, and to use the device signed in to the Apple ID for that email address. The [Testing an app using TestFlight](./installing-testflight-app.md) page explains this for them.
+Tell testers to install the TestFlight app **before** opening the invite email, and to use the device signed in to the Apple ID for that email address. The [Testing an app using TestFlight](/ios/installing-testflight-app/) page explains this for them.
 
 ## Step 8: Create a public link
 
