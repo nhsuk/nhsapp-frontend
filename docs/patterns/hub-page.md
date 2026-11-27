@@ -13,7 +13,7 @@ sectionCaption: Screens
 
 Hubs act as the primary navigation structure of the NHS App, helping users access the services and information they need.
 
-There are three hubs: Home, Messages and Profile. From these hubs, users can follow links to start various journeys or move deeper into lower menus called [sub-hubs](/docs/patterns/sub-hub-page.md).
+There are three hubs: Home, Messages and Profile. From these hubs, users can follow links to start various journeys or move deeper into lower menus called [sub-hubs](/patterns/sub-hub-page).
 
 Users navigate between hubs using the bottom navigation bar, which is accessible from wherever you are in the app.
 
