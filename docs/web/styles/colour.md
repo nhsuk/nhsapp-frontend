@@ -10,7 +10,7 @@ sectionCaption: Styles
 deprecated: true
 ---
 
-The NHS App design system used to extend the [NHS design system colour palette](https://service-manual.nhs.uk/design-system/styles/colour) with tints and shades, for use on the [tag](/components/tag/) and [card links](/components/card-links/) components.
+The NHS App design system used to extend the [NHS design system colour palette](https://service-manual.nhs.uk/design-system/styles/colour) with tints and shades, for use on the [tag](/web/components/tag/) and [card links](/web/components/card-links/) components.
 
 These tints and shades have now been added to the NHS design system, from version 1.7.0.
 

@@ -12,10 +12,10 @@ sectionCaption: Prototyping
 
 The NHS App lets you create interactive prototypes that look like real NHS App pages. It builds on the NHS prototype kit with added custom layouts and components tailored to the NHS App.
 
-- [Setup and download](/get-started/nhsapp-prototype/setup/)
-- [Using the NHS App prototype](/get-started/nhsapp-prototype/how-to-use/)
-- [Store prototype code on GitHub](/get-started/nhsapp-prototype/github/)
-- [Host prototypes on Heroku](/get-started/nhsapp-prototype/heroku/)
+- [Setup and download](/web/get-started/nhsapp-prototype/setup/)
+- [Using the NHS App prototype](/web/get-started/nhsapp-prototype/how-to-use/)
+- [Store prototype code on GitHub](/web/get-started/nhsapp-prototype/github/)
+- [Host prototypes on Heroku](/web/get-started/nhsapp-prototype/heroku/)
 
 You can also [read a blog about why prototyping in code is important](https://digital.nhs.uk/blog/design-matters/2025/why-we-are-reinvesting-in-the-nhs-prototype-kit).
 

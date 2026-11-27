@@ -8,7 +8,7 @@ themeOrder: 2
 sectionCaption: Production
 ---
 
-The [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) is a CSS library built on top of the [NHS.UK frontend](https://github.com/nhsuk/nhsuk-frontend). It provides NHS App-specific styles and [components](/components).
+The [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) is a CSS library built on top of the [NHS.UK frontend](https://github.com/nhsuk/nhsuk-frontend). It provides NHS App-specific styles and [components](/web/components/).
 
 This guide explains how to set up the NHS App frontend in production.
 
@@ -22,7 +22,7 @@ To start using NHS App styles, components, and patterns, you need to add the NHS
 
 ### Install using npm
 
-We recommend [installing the NHS App frontend using npm](/get-started/installing-with-npm/). This option lets you:
+We recommend [installing the NHS App frontend using npm](/web/get-started/installing-with-npm/). This option lets you:
 
 - select which component CSS to include
 - build your own styles or components using the palette, typography, and spacing mixins

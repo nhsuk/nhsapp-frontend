@@ -12,7 +12,7 @@ sectionCaption: Components
 
 ## How to use
 
-We extend the [NHS design system button](https://service-manual.nhs.uk/design-system/components/buttons) with the `nhsapp-button` modifier class so that its border radius matches the [card links](/components/card-links).
+We extend the [NHS design system button](https://service-manual.nhs.uk/design-system/components/buttons) with the `nhsapp-button` modifier class so that its border radius matches the [card links](/web/components/card-links/).
 
 ### Primary button
 

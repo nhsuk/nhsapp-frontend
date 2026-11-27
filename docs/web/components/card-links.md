@@ -37,7 +37,7 @@ Only use this variation if you have found a user need for more detailed links.
 
 ### Badges on card links
 
-Use [badges](/components/badge/) on card links to alert users to new, important information.
+Use [badges](/web/components/badge/) on card links to alert users to new, important information.
 
 {% example "cards/card-link-with-badge.njk" %}
 
@@ -49,7 +49,7 @@ Use secondary card links to signpost information that is less important in the c
 
 ### Colour variations
 
-You can use [colour](/styles/colour) to highlight a card link. This can help draw attention to important content.
+You can use [colour](/web/styles/colour/) to highlight a card link. This can help draw attention to important content.
 
 Use colour sparingly and make sure there is enough contrast between text and background.
 
